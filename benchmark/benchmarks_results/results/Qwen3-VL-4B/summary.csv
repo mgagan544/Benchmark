@@ -1,0 +1,2 @@
+model,videos_evaluated,questions_evaluated,ANLS,ANLS_star,BLEU_1,BERTScore_F1,mean_inference_time_sec
+Qwen3-VL-4B,1,7,0.0,0.0,0.0,0.0,0.018981524876185825

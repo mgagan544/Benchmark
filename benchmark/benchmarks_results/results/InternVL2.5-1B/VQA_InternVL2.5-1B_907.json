@@ -1,0 +1,70 @@
+{
+  "video_id": 907,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/907.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the text 25 A on the overhead street sign?",
+      "ground_truth": "Northern [entity_012] Bird [entity_013]",
+      "prediction": "The text located directly to the right of the text 25 A on the overhead street sign is 'Ave'.",
+      "inference_time_sec": 1.624,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the parked white box truck?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances mounted on the parked white box truck.",
+      "inference_time_sec": 1.285,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the text groups on the brick industrial building's banner are encountered?",
+      "ground_truth": "1st: DRIVERS [entity_001] and WANTED [entity_002], 2nd: 718 [entity_003] and 729-7777 [entity_004]",
+      "prediction": "The chronological order in which the text groups on the brick industrial building's banner are encountered is: 'DRIVERS WANT', 'DRIVERS WANT TO', 'DRIVERS WANT TO BE', and 'DRIVERS WANT TO BE FOR'.",
+      "inference_time_sec": 2.353,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the sign near the traffic light at the intersection?",
+      "ground_truth": "ENTER [entity_016]",
+      "prediction": "The sign near the traffic light at the intersection displays the text 'NO STOPPING OR STANDING ANYTIME', indicating a regulation or instruction for vehicles at the intersection.",
+      "inference_time_sec": 1.946,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?",
+      "ground_truth": "Industrial and commercial district",
+      "prediction": "The presence of contractor vehicle text and industrial building banners in the video suggests that the driving environment is likely a commercial or industrial area. These elements indicate that the location is not a residential neighborhood but rather a place where businesses operate, possibly including construction or manufacturing activities. The banners and text are typical of such environments, providing context to the surroundings and hinting at the nature of the road users, such as contractors or workers, who might be present.",
+      "inference_time_sec": 3.781,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the area code 718 found on the visible signs?",
+      "ground_truth": "New York City",
+      "prediction": "The area code 718 found on the visible signs suggests that the video is likely taken in the New York City area. This is inferred from the context of the video, which includes a city street scene and the presence of a taxi, which is a common mode of transportation in New York City.",
+      "inference_time_sec": 2.917,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the phone number 718.786.2505 on the parked white box truck visible?",
+      "ground_truth": "4.8 seconds to 6.233 seconds",
+      "prediction": "The phone number 718.786.2505 on the parked white box truck is visible during the daytime in the video.",
+      "inference_time_sec": 1.899,
+      "error": ""
+    }
+  ]
+}

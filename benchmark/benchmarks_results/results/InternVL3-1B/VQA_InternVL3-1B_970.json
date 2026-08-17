@@ -1,0 +1,70 @@
+{
+  "video_id": 970,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/970.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark destination is located directly below the highway number 278?",
+      "ground_truth": "Verrazano Br [entity_003]",
+      "prediction": "Verazza Br State Is",
+      "inference_time_sec": 1.006,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway sign text instances are described on the large overhead gantry?",
+      "ground_truth": "9",
+      "prediction": "Three",
+      "inference_time_sec": 0.861,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the highway number 278 and the airport destination JFK become clearly legible as the vehicle moves forward?",
+      "ground_truth": "1st: 278 [entity_002], 2nd: JFK [entity_009]",
+      "prediction": "As the vehicle moves forward, the highway number 278 becomes clearly legible, followed by the airport destination JFK becoming legible.",
+      "inference_time_sec": 1.728,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead gantry signs, what explicit exit number is indicated for drivers wishing to transition to the Prospect Expwy?",
+      "ground_truth": "EXIT 24 [entity_006]",
+      "prediction": "The overhead gantry signs indicate that drivers wishing to transition to the Prospect Expwy are directed to exit number 24.",
+      "inference_time_sec": 1.63,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a multi-lane divided highway and a massive overhead gantry with highway numbers and exit signs?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of a multi-lane divided highway and a massive overhead gantry with highway numbers and exit signs suggests a well-developed and regulated driving environment. The highway is likely part of a major road system, possibly a major highway or interstate, which is characterized by multiple lanes for different types of vehicles and clear signage for directions and exits. The presence of such infrastructure indicates a well-maintained and possibly urban or suburban area where traffic management is crucial for safety and efficiency.",
+      "inference_time_sec": 4.011,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any landmark destinations or highway labels suggest a specific metropolitan area or region for this highway?",
+      "ground_truth": "Verrazano Br [entity_003] and Staten is [entity_004] suggest New York",
+      "prediction": "Yes, the highway signs indicate 'Verazza Br State Is' and 'Staten Is', suggesting that this highway is likely in a metropolitan area with significant traffic flow and possibly a mix of residential and commercial zones.",
+      "inference_time_sec": 2.347,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the airport destination indicator JFK first become clearly legible on the sign?",
+      "ground_truth": "6.767 seconds",
+      "prediction": "The airport destination indicator JFK first becomes clearly legible on the sign at the 10-second mark in the video.",
+      "inference_time_sec": 1.68,
+      "error": ""
+    }
+  ]
+}

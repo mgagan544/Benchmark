@@ -1,0 +1,70 @@
+{
+  "video_id": 957,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/957.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What green information board is located directly to the left of the yellow speed advisory sign displaying 15 M P H?",
+      "ground_truth": "SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014] to the left of 15 M P H [entity_011]",
+      "prediction": "The green information board directly to the left of the yellow speed advisory sign displaying 15 M P H is labeled \"Museum of Modern Art.\"",
+      "inference_time_sec": 1.954,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances (such as license plates or vehicle tags) are visible between 1.2 and 1.767 seconds?",
+      "ground_truth": "5",
+      "prediction": "Between 1.2 and 1.767 seconds, there are two instances of vehicle-mounted text visible. One is a license plate on a red car, and the other is a license plate on a white van.",
+      "inference_time_sec": 2.367,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the orange construction warning sign, the yellow speed advisory sign, and the green overhead signs are encountered?",
+      "ground_truth": "1st ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010], 2nd 15 M P H [entity_011], 3rd SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014]",
+      "prediction": "The orange construction warning sign is first encountered, followed by the yellow speed advisory sign, and then the green overhead signs.",
+      "inference_time_sec": 1.664,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the right side of the road indicates a hazard or construction ahead?",
+      "ground_truth": "ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010]",
+      "prediction": "The warning text on the right side of the road indicates a hazard or construction ahead, which is a common sight on busy highways. The text is in a large, bold font and is placed on a green sign that is mounted on a pole. The text is not fully legible due to the distance and angle of the image, but it is clearly meant to alert drivers of potential construction or roadwork ahead.",
+      "inference_time_sec": 4.348,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, multiple highway lanes, and construction warning signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway, as indicated by the presence of multiple lanes and the overhead exit signs that suggest a well-developed road network. The construction warning signs imply that there is ongoing work or maintenance on the road, which is common in urban areas where there is a need for regular maintenance to ensure safety and efficiency.",
+      "inference_time_sec": 3.144,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or region is suggested by the green information board displaying SUNY State College Optometry?",
+      "ground_truth": "New York State",
+      "prediction": "The green information board displaying SUNY State College Optometry suggests that the city or region is likely New York City. This inference is based on the recognizable green color of the board, which is commonly associated with New York State. Additionally, the presence of the helicopter flying over the city skyline is a common sight in New York City, further supporting this identification.",
+      "inference_time_sec": 3.204,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range are the overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE visible in the clip?",
+      "ground_truth": "8.2 to 9.3 seconds",
+      "prediction": "The overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE are visible during the time range from the beginning of the video to the end of the clip.",
+      "inference_time_sec": 2.15,
+      "error": ""
+    }
+  ]
+}

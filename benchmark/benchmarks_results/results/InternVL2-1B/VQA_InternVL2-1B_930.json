@@ -1,0 +1,70 @@
+{
+  "video_id": 930,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/930.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?",
+      "ground_truth": "HONG [entity_005] KONG [entity_006]",
+      "prediction": "The storefront text, which is located between the party hall and the deli grocery, is the \"LONG KING\" store.",
+      "inference_time_sec": 1.715,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?",
+      "ground_truth": "3",
+      "prediction": "Between 3.9 and 5.6 seconds, the vehicle passes by two distinct storefront or sign text instances. The first is a yellow sign with black lettering on the left side of the frame, and the second is a red sign with white lettering on the right side of the frame.",
+      "inference_time_sec": 2.837,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign text is encountered immediately after the vehicle passes the sign for The Best?",
+      "ground_truth": "Best [entity_009]",
+      "prediction": "After passing the sign for \"The Best,\" the vehicle encounters a sign for \"The Best Restaurant.\"",
+      "inference_time_sec": 1.589,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?",
+      "ground_truth": "None",
+      "prediction": "The visible text in the clip includes \"LONG KING\" and \"Deli Grocery,\" which are both establishments that may have speed limits or other driving constraints. The presence of these signs suggests that the area is regulated by traffic laws, possibly requiring vehicles to adhere to specific speed limits or to follow certain driving guidelines. The text on the signs is not legible, so the exact speed limits or speed limits cannot be determined from the image alone. However, the presence of these signs indicates that the area is likely a commercial or residential zone where traffic regulations are in place.",
+      "inference_time_sec": 4.508,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The driving environment depicted in the video is likely to be a busy urban street with a mix of commercial and residential areas. The presence of various storefronts, including a restaurant, a grocery store, and a convenience store, suggests a commercial area with a mix of businesses catering to different needs. The variety of storefronts and the presence of pedestrians and vehicles indicate a bustling, possibly pedestrian-friendly street. The street is not overly crowded, which could imply a less congested area, but the density of the street and the variety of businesses suggest a moderately busy urban setting.",
+      "inference_time_sec": 4.562,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the storefront signs encountered by the vehicle?",
+      "ground_truth": "English",
+      "prediction": "The language used for all the storefront signs encountered by the vehicle is Chinese.",
+      "inference_time_sec": 1.378,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the sign for The Best continuously visible to the camera vehicle?",
+      "ground_truth": "3.9 to 4.8 seconds",
+      "prediction": "The sign for \"The Best\" is visible to the camera vehicle during the daytime, as indicated by the bright illumination and the clear visibility of the sign against the sky.",
+      "inference_time_sec": 1.907,
+      "error": ""
+    }
+  ]
+}

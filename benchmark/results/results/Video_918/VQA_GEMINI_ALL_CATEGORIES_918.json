@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "918",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What specific text is located directly to the right of the highway shield 280 on the overhead gantry?",
+        "answer": "San [entity_001]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances on the overhead highway gantry contain numbers?",
+        "answer": "3",
+        "reasoning": "The text instances containing numbers on the gantry are 280 [entity_008], 49A [entity_009], and 1 1/4 [entity_005]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the text instances 49A, EXIT, and John Daly Blvd become clearly visible or readable between 4.00 and 5.50 seconds?",
+        "answer": "1st: John Daly Blvd [entity_003], 2nd: 49A [entity_009], 3rd: EXIT [entity_010]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Based on the overhead gantry signs, what action is implied for a driver wishing to reach John Daly Blvd?",
+        "answer": "Take exit 49A [entity_009]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of overhead gantry signs with highway shields and exit numbers, what kind of driving environment is depicted?",
+        "answer": "Highway",
+        "reasoning": "The presence of overhead gantry signs with highway shields like 280 [entity_008] and exit numbers like 49A [entity_009] indicates a highway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which destination name visible on the overhead gantry suggests the vehicle is traveling near a major city in California?",
+        "answer": "San [entity_001] Francisco [entity_002]",
+        "reasoning": "The destination name San [entity_001] Francisco [entity_002] is a major city in California."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the exit number 49A first become clearly visible on the right panel of the gantry?",
+        "answer": "4.633 seconds",
+        "reasoning": "According to the temporal description, the exit number 49A [entity_009] is clearly visible at 4.633 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+nohup: ignoring input
+./run_4gpu.sh: line 3: /home2/gagandeep/benchmark/setup.sh: No such file or directory
+Started all 4 benchmarks.
+GPU 0: Qwen3-VL-4B
+GPU 1: Qwen2-VL-2B
+GPU 2: Qwen3-VL-2B
+./run_4gpu.sh: line 33: unexpected EOF while looking for matching `"'
+./run_4gpu.sh: line 34: syntax error: unexpected end of file

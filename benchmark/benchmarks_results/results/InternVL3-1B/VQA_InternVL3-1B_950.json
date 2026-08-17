@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "SHED is to the left of CHECKSCASH.",
+      "inference_time_sec": 1.34,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "Three distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds.",
+      "inference_time_sec": 1.737,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "First, the storefront SHED is encountered, followed by the boost store, and then the CHECKSCASH store.",
+      "inference_time_sec": 1.647,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The traffic regulator sign to the right of the signboard displaying 4CAR is likely indicating a speed limit of 40 miles per hour. This sign is commonly used in urban areas to regulate traffic speed and ensure safety for drivers. The presence of this sign suggests that the driver is following the speed limit, which is a standard practice to maintain order and safety on the roads.",
+      "inference_time_sec": 3.391,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The driving environment depicted in the video is urban, characterized by a mix of commercial and residential buildings. The presence of various storefronts suggests a diverse commercial area, with shops catering to both local and possibly international customers. The mix of vehicles, including cars and a truck, indicates a typical city street scene with moderate traffic flow. The presence of pedestrians crossing the street adds to the urban atmosphere, reflecting a bustling environment where people navigate through the city's infrastructure.",
+      "inference_time_sec": 3.913,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The street name 'Rockaway Pl' and the phone area code '114' are indicators of New York City. These are specific to the Rockaway neighborhood in Queens, which is a well-known area in New York City. The presence of these details in the video suggests that the scene is set in the city of New York.",
+      "inference_time_sec": 3.132,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The timestamp is 15 to 20 seconds.",
+      "inference_time_sec": 1.261,
+      "error": ""
+    }
+  ]
+}

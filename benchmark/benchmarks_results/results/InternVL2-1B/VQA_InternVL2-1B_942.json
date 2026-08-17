@@ -1,0 +1,70 @@
+{
+  "video_id": 942,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/942.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text Without relative to the Studio Prices text on the first billboard?",
+      "ground_truth": "To the right of Studio Prices [entity_003]",
+      "prediction": "The spatial position of the text \"Without Relative to the Studio Prices\" on the first billboard is not directly visible in the video. However, it can be inferred that it is located towards the top of the billboard, possibly in the middle or towards the right side, as it is positioned above the other text and is not obstructed by any other elements in the frame.",
+      "inference_time_sec": 3.221,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to street, highway, or regulatory signs in this clip?",
+      "ground_truth": "6",
+      "prediction": "In the video, there are three distinct pieces of text that belong to street, highway, or regulatory signs. These include the sign on the right side of the road, the billboard on the right side of the road, and the green sign on the right side of the road.",
+      "inference_time_sec": 2.683,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the billboard displaying Studio Closses and the billboard displaying eatenlightened.com are encountered?",
+      "ground_truth": "1st: Studio Closses [entity_001], 2nd: eatenlightened.com [entity_009]",
+      "prediction": "The order in which the billboard displaying Studio Closses and the billboard displaying eatenlightened.com are encountered is as follows:",
+      "inference_time_sec": 1.711,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a height restriction constraint? If so, what does it say and where is it located?",
+      "ground_truth": "12-6 [entity_013] adjacent to Lexington Avenue [entity_011]",
+      "prediction": "Yes, there is visible text in the clip that indicates a height restriction constraint. The text reads \"Height restriction 1.50m\" and is located on a sign located on the right side of the road.",
+      "inference_time_sec": 2.261,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible highway signs and large billboards, what kind of driving environment is depicted?",
+      "ground_truth": "Highway overpass or elevated highway ramp",
+      "prediction": "The driving environment depicted in the video is one of a busy urban highway, likely in a city with a significant amount of traffic. The presence of multiple lanes, the presence of a large billboard, and the variety of vehicles suggest a high volume of traffic. The weather conditions, with overcast skies and wet road, indicate that the driving environment is likely to be wet and potentially slippery, which is common in urban areas. The highway signs, including the \"24 Hour\" sign, suggest that the area is well-connected and has a significant amount of traffic, possibly indicating a busy metropolitan area.",
+      "inference_time_sec": 4.732,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street or highway names visible on the overhead signs suggest a specific city? If so, what text supports this?",
+      "ground_truth": "New York City, supported by FDR Drive SOUTH [entity_010] and Lexington Avenue [entity_011]",
+      "prediction": "Yes, the overhead signs in the video suggest a specific city. The text on the signs reads \"Lexington Avenue,\" which is a street name in Lexington, Massachusetts. This is supported by the presence of the Lexington Avenue sign, which is a well-known street in the city.",
+      "inference_time_sec": 2.699,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the overhead highway sign for 2 Avenue remain visible to the camera vehicle?",
+      "ground_truth": "8.733 seconds to 9.367 seconds",
+      "prediction": "The overhead highway sign for 2 Avenue remains visible to the camera vehicle throughout the duration of the video. It is always visible, indicating that the camera is positioned at a height that allows for the overhead sign to be seen from the perspective of the camera.",
+      "inference_time_sec": 2.581,
+      "error": ""
+    }
+  ]
+}

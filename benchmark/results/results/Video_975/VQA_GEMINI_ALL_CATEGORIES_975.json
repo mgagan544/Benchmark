@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "975",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is displayed on the overhead road sign located adjacent to the sign showing 20 AV?",
+        "answer": "WHITESTONE [entity_006] EXPWY [entity_007] adjacent to 20 AV [entity_001]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct pieces of text visible in the clip are mounted on vehicles?",
+        "answer": "3",
+        "reasoning": "The vehicle-mounted text includes TOWER [entity_003] and Star [entity_004] on the charter bus, and GKD-4491 [entity_005] on the SUV's license plate, totaling 3."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order in which the ego vehicle encounters the intersection street names and the highway directional signs?",
+        "answer": "1st: 20 AV [entity_001] and Parsons Blvd [entity_002], 2nd: WHITESTONE [entity_006] EXPWY [entity_007]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What directional text is displayed on the overhead sign near the traffic lights to guide drivers toward the expressway?",
+        "answer": "WHITESTONE [entity_006] EXPWY [entity_007]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of residential homes, hedges, and apartment buildings suggest about the driving environment?",
+        "answer": "Residential area",
+        "reasoning": "The scene contains suburban-style residential homes, green hedges, and a multi-story brick apartment building, indicating a residential neighborhood."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which street names and expressway abbreviations suggest this clip is set in New York City?",
+        "answer": "20 AV [entity_001], Parsons Blvd [entity_002], and WHITESTONE [entity_006] EXPWY [entity_007]",
+        "reasoning": "The combination of numbered avenues (20 AV), 'Blvd' (Parsons Blvd), and 'EXPWY' (Whitestone Expwy) is characteristic of Queens, New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the vehicle carrying the license plate GKD-4491 begin to accelerate through the intersection?",
+        "answer": "2.367 seconds",
+        "reasoning": "According to the temporal description, the SUV with license plate GKD-4491 [entity_005] begins to accelerate at 2.367 seconds."
+      }
+    ]
+  }
+]

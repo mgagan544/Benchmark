@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "913",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What readable text is located to the right of the orange construction signboard containing the word ROAD?",
+        "answer": "SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] on the digital display sign"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?",
+        "answer": "3",
+        "reasoning": "The orange construction signboard contains the words ROAD [entity_001], WORK [entity_002], and AHEAD [entity_003], which total 3 distinct pieces of text."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?",
+        "answer": "1st: ROAD [entity_001], 2nd: WORK [entity_002], 3rd: AHEAD [entity_003]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?",
+        "answer": "ROAD [entity_001] WORK [entity_002] AHEAD [entity_003] on the left side of the ramp"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?",
+        "answer": "An elevated highway construction zone",
+        "reasoning": "The presence of an orange construction signboard and a digital speed display sign on an elevated ramp suggests a highway construction zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for the text on the construction signboard and the digital display sign?",
+        "answer": "English",
+        "reasoning": "The words ROAD [entity_001], WORK [entity_002], AHEAD [entity_003], SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] are in English."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the word SPEED first become legible on the digital display sign?",
+        "answer": "7.967",
+        "reasoning": "According to the temporal description, the word SPEED [entity_004] is detected on the electronic sign at timestamp 7.967."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "978",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the regulatory road marking near the commercial building relative to the pavement marking on the multi-lane avenue?",
+        "answer": "To the right of ONLY [entity_001] across the access road"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct road markings containing painted text are mentioned in the scene description?",
+        "answer": "2",
+        "reasoning": "The scene description mentions exactly two road markings: ONLY [entity_001] and STOP [entity_002]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the distinct road markings are encountered by the camera vehicle?",
+        "answer": "1st: ONLY [entity_001], 2nd: STOP [entity_002]",
+        "reasoning": "The camera vehicle first drives over ONLY [entity_001] at 0.1 seconds, and later passes STOP [entity_002] around 5.7 seconds."
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What driving action is implied by the regulatory road marking located near the modern commercial building?",
+        "answer": "Stop, as indicated by STOP [entity_002]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of residential high-rises, commercial buildings, and multi-lane avenues suggest about the driving environment?",
+        "answer": "Urban commercial and residential district",
+        "reasoning": "The presence of high-rise residential buildings, a modern commercial building, multi-lane avenues, and pedestrian pathways indicates a developed urban commercial and residential zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language or script is used for the road markings in this scene?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp is the first pavement marking driven over, and at what timestamp is the regulatory road marking passed?",
+        "answer": "ONLY [entity_001] at 0.1 seconds, STOP [entity_002] around 5.7 seconds",
+        "reasoning": "The temporal description states the vehicle drives over ONLY [entity_001] at 0.1 seconds and passes STOP [entity_002] around 5.7 seconds."
+      }
+    ]
+  }
+]

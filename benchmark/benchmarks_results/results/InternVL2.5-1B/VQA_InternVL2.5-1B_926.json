@@ -1,0 +1,70 @@
+{
+  "video_id": 926,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/926.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the safety sign marked with AMER relative to the vehicle with license plate T679966C?",
+      "ground_truth": "AMER [entity_008] is to the right of T679966C [entity_007]",
+      "prediction": "The safety sign marked with AMER is positioned to the right of the vehicle with license plate T679966C, indicating a right turn lane.",
+      "inference_time_sec": 1.904,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to the highway direction sign pointing toward the wait area?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances in the highway direction sign pointing toward the wait area.",
+      "inference_time_sec": 1.387,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the airport facility sign, the highway direction sign, and the license plate are encountered between 0.9 and 5.0 seconds?",
+      "ground_truth": "1st: AMERICAN [entity_001] AIRLINES [entity_002], 2nd: Long [entity_003] Term [entity_004] Wait [entity_005] Area [entity_006], 3rd: T679966C [entity_007]",
+      "prediction": "Between 0.9 and 5.0 seconds, the highway direction sign is encountered first, followed by the airport facility sign, and then the license plate is encountered.",
+      "inference_time_sec": 1.976,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint? If so, what does it say and where is it located?",
+      "ground_truth": "AMER [entity_008] on a construction notice at the airport construction site",
+      "prediction": "Yes, a visible text overlay in the clip indicates a speed limit of 25 mph and a warning about a construction zone ahead.",
+      "inference_time_sec": 1.71,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible text mentioning airlines and long term wait area, what type of driving environment is depicted?",
+      "ground_truth": "Airport access road",
+      "prediction": "The video depicts a typical driving environment at an airport, as indicated by the presence of an American Airlines sign and the long-term wait area sign.",
+      "inference_time_sec": 1.683,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the airport hangar and highway direction sign written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the airport hangar and highway direction sign is written in English.",
+      "inference_time_sec": 1.316,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the gold lead SUV become clearly visible?",
+      "ground_truth": "4.0 seconds for T679966C [entity_007]",
+      "prediction": "The license plate on the gold lead SUV becomes clearly visible at the timestamp of 00:15:00.",
+      "inference_time_sec": 1.58,
+      "error": ""
+    }
+  ]
+}

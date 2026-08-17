@@ -1,0 +1,70 @@
+{
+  "video_id": 957,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/957.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What green information board is located directly to the left of the yellow speed advisory sign displaying 15 M P H?",
+      "ground_truth": "SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014] to the left of 15 M P H [entity_011]",
+      "prediction": "The green information board is located directly to the left of the yellow speed advisory sign displaying 15 M P H. It reads 'THE MUSEUM OF MODERN ART.'",
+      "inference_time_sec": 2.233,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances (such as license plates or vehicle tags) are visible between 1.2 and 1.767 seconds?",
+      "ground_truth": "5",
+      "prediction": "Two vehicle-mounted text instances are visible between 1.2 and 1.767 seconds. The first instance is on the red convertible car, and the second instance is on the black SUV.",
+      "inference_time_sec": 2.335,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the orange construction warning sign, the yellow speed advisory sign, and the green overhead signs are encountered?",
+      "ground_truth": "1st ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010], 2nd 15 M P H [entity_011], 3rd SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014]",
+      "prediction": "First, the orange construction warning sign is encountered, followed by the yellow speed advisory sign, and then the green overhead signs are seen.",
+      "inference_time_sec": 1.813,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the right side of the road indicates a hazard or construction ahead?",
+      "ground_truth": "ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010]",
+      "prediction": "The warning text on the right side of the road reads '1 MILE' with an orange diamond-shaped sign, indicating a hazard or construction ahead.",
+      "inference_time_sec": 2.006,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, multiple highway lanes, and construction warning signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway.",
+      "inference_time_sec": 1.233,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or region is suggested by the green information board displaying SUNY State College Optometry?",
+      "ground_truth": "New York State",
+      "prediction": "The green information board displaying SUNY State College Optometry suggests that the video is set in a region where SUNY State College is located, which is likely a college in the state of New York. The presence of the board indicates that the video is likely taken in a metropolitan area within the state, possibly in a city like New York, where SUNY State College is a significant educational institution.",
+      "inference_time_sec": 3.528,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range are the overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE visible in the clip?",
+      "ground_truth": "8.2 to 9.3 seconds",
+      "prediction": "The overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE are visible during the daytime when the sky is clear and blue, indicating a time range of daytime with good visibility.",
+      "inference_time_sec": 2.319,
+      "error": ""
+    }
+  ]
+}

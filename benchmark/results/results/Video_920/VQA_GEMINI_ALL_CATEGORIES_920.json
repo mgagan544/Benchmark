@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "920",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What yellow clearance warning text is located directly to the right of the overhead sign containing Terminals?",
+        "answer": "CLEARANCE [entity_018] 11-0 [entity_019]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct license plates are visible on vehicles in this clip?",
+        "answer": "3",
+        "reasoning": "The license plates mentioned in the description are N202894C [entity_001], T703802C [entity_007], and T639816C [entity_020], which totals 3."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of the first three distinct vehicle-mounted text instances encountered on the NYPD cruiser?",
+        "answer": "1st POLICE [entity_002], 2nd 50341 [entity_003], 3rd PLOW [entity_005]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What warning text on the yellow sign indicates a height restriction for vehicles passing under the gantry?",
+        "answer": "CLEARANCE [entity_018] 11-0 [entity_019]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of facility does the mix of overhead and roadside signs indicate the vehicle is approaching?",
+        "answer": "Airport terminal area",
+        "reasoning": "The signs mention Airport, Terminal, Arriving Flights, Departing Flights, Daily Pkg, and Wait Area, which suggest an airport terminal environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which city's police department is indicated by the markings on the parked patrol cruiser?",
+        "answer": "New York City",
+        "reasoning": "The NYPD patrol cruiser refers to the New York Police Department, which is located in New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the license plate N202894C first become visible in the travel lane?",
+        "answer": "2.933 seconds for N202894C [entity_001]",
+        "reasoning": "The temporal description states that the black sedan displaying the license plate N202894C [entity_001] is visible at 2.933 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 908,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/908.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the covered pedestrian structure marked WALKWAY relative to the Care emblem?",
+      "ground_truth": "To the left of Care [entity_004]",
+      "prediction": "The covered pedestrian structure marked WALKWAY is positioned to the left of the Care emblem, indicating it is adjacent to the vehicle's path.",
+      "inference_time_sec": 1.789,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in this clip are mounted on the transit bus?",
+      "ground_truth": 4,
+      "prediction": "There are three distinct pieces of text visible on the transit bus in this clip. The first is the number '710', the second is 'THE PORT AUTHORITY OF WY', and the third is 'CARE'.",
+      "inference_time_sec": 2.387,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the first three text instances detected on the transit bus?",
+      "ground_truth": "1st: 35627-88 [entity_001], 2nd: 710 [entity_002], 3rd: THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The first text instance appears on the left side of the bus, the second text instance appears on the right side of the bus, and the third text instance appears on the right side of the bus as well.",
+      "inference_time_sec": 2.295,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the pavement markings near the green commuter waiting shelters, what driving action is required?",
+      "ground_truth": "Stop at the painted 'STOP' stencil",
+      "prediction": "The pavement markings near the green commuter waiting shelters indicate that vehicles must yield to pedestrians. This is a common traffic rule in urban areas to ensure safety and prevent accidents. The presence of these markings suggests that the area is designed to accommodate both vehicular and pedestrian traffic, and the driver is expected to yield to pedestrians when approaching the shelters.",
+      "inference_time_sec": 3.114,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of transit bus markings and a walkway sign suggest about the driving environment?",
+      "ground_truth": "Transit hub or commuter terminal area",
+      "prediction": "The presence of transit bus markings and a walkway sign indicates that the area is likely a transit hub or a location where buses are frequently used. These markings are typically found in urban or suburban areas where public transportation is a common mode of travel. The walkway sign suggests that there is a pedestrian-friendly area nearby, which is common in areas with high foot traffic or in areas that require accessibility for people with disabilities. The combination of these elements suggests that the driving environment is designed to accommodate both vehicular and pedestrian traffic, with the transit bus serving as a primary mode of public transportation.",
+      "inference_time_sec": 4.851,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible text suggests the geographical region where this clip was recorded?",
+      "ground_truth": "THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The text 'THE PORT AUTHORITY OF WY' on the back of the bus suggests that the clip was recorded in the Wyoming region.",
+      "inference_time_sec": 2.143,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the fleet designation number 710 first become clearly detected on the bus?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The fleet designation number 710 is first clearly detected on the bus at the timestamp of 00:10.",
+      "inference_time_sec": 1.766,
+      "error": ""
+    }
+  ]
+}

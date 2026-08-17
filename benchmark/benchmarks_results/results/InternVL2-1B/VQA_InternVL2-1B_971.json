@@ -1,0 +1,70 @@
+{
+  "video_id": 971,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/971.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead sign adjacent to the Prospect Expwy sign?",
+      "ground_truth": "WEST [entity_006] Verrazano Br [entity_007] Staten is [entity_008]",
+      "prediction": "The overhead sign adjacent to the Prospect Expwy sign displays the text \"NEW LOWER PRICES START HERE.\"",
+      "inference_time_sec": 1.529,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the roadside billboard on the right side of the highway?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances displayed on the roadside billboard on the right side of the highway. One is a large, bold text that reads \"NEW LOWER PRICES START HERE,\" and the other is a smaller, less prominent text that says \"NEW LOWER PRICES START HERE.\"",
+      "inference_time_sec": 2.605,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate, the billboard text, and the overhead highway signs are first encountered in the clip?",
+      "ground_truth": "1st: license plate, 2nd: billboard text, 3rd: overhead highway signs",
+      "prediction": "The order of the license plate, the billboard text, and the overhead highway signs encountered in the clip is as follows: the first is the license plate of a silver sedan, followed by the billboard text, and then the overhead highway signs.",
+      "inference_time_sec": 2.419,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead signs, what direction should a driver follow for the Prospect Expwy?",
+      "ground_truth": "EAST [entity_011]",
+      "prediction": "The driver should follow the green sign on the right, which indicates the direction to Prospect Expwy. This sign is likely to direct drivers to the correct exit or lane for the highway, which is a common practice to ensure safe and efficient travel.",
+      "inference_time_sec": 2.438,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, a steel guardrail, and a license plate, what type of driving environment is depicted?",
+      "ground_truth": "highway",
+      "prediction": "The driving environment depicted is a typical urban highway, likely in a city with a significant amount of traffic. The presence of overhead exit signs indicates that the highway is part of a major road network, and the steel guardrail is a common safety feature to prevent vehicles from veering off the road. The license plate on the car suggests that the vehicle is registered in the United States, and the overall condition of the road and the surrounding environment suggests that it is a well-maintained highway, possibly in a suburban or urban area.",
+      "inference_time_sec": 4.283,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any names on the overhead highway signs suggest a specific region, and what text supports this?",
+      "ground_truth": "New York, supported by Verrazano Br [entity_007] and Staten is [entity_008]",
+      "prediction": "Yes, the overhead highway signs suggest a specific region. The text on the signs reads \"New York City,\" indicating that the highway is located in New York City. This is further supported by the presence of the New York City logo on the sign, which is a well-known symbol of the city.",
+      "inference_time_sec": 2.754,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the billboard slogan More Saving, More doing. first become clearly visible?",
+      "ground_truth": "6.6 seconds",
+      "prediction": "The billboard slogan \"More Saving, More Doing\" first becomes clearly visible at approximately 1:00 PM.",
+      "inference_time_sec": 1.547,
+      "error": ""
+    }
+  ]
+}

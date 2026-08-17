@@ -1,0 +1,70 @@
+{
+  "video_id": 942,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/942.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text Without relative to the Studio Prices text on the first billboard?",
+      "ground_truth": "To the right of Studio Prices [entity_003]",
+      "prediction": "above",
+      "inference_time_sec": 0.88,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to street, highway, or regulatory signs in this clip?",
+      "ground_truth": "6",
+      "prediction": "There are 5 distinct pieces of text: 'Studios Classes', 'Do More', '24hr. Door-to-Door Ice Cream', 'Lexington Avenue', and '200 Lexington Avenue'.",
+      "inference_time_sec": 2.267,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the billboard displaying Studio Closses and the billboard displaying eatenlightened.com are encountered?",
+      "ground_truth": "1st: Studio Closses [entity_001], 2nd: eatenlightened.com [entity_009]",
+      "prediction": "First, the billboard displaying Studio Closses is encountered, followed by the billboard displaying eatenlightened.com.",
+      "inference_time_sec": 1.741,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a height restriction constraint? If so, what does it say and where is it located?",
+      "ground_truth": "12-6 [entity_013] adjacent to Lexington Avenue [entity_011]",
+      "prediction": "Yes, the visible text in the clip indicates a height restriction constraint. It reads '24' and '24' inches. This text is located on the right side of the road, near the billboard advertisement.",
+      "inference_time_sec": 2.341,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible highway signs and large billboards, what kind of driving environment is depicted?",
+      "ground_truth": "Highway overpass or elevated highway ramp",
+      "prediction": "The driving environment depicted in the video is urban, characterized by tall buildings, a highway, and various billboards advertising products and services. The presence of multiple lanes, traffic lights, and road signs indicates a well-developed infrastructure typical of a city.",
+      "inference_time_sec": 2.505,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street or highway names visible on the overhead signs suggest a specific city? If so, what text supports this?",
+      "ground_truth": "New York City, supported by FDR Drive SOUTH [entity_010] and Lexington Avenue [entity_011]",
+      "prediction": "Yes, the street or highway names visible on the overhead signs suggest a specific city. The green signs indicate 'Lexington Avenue' and '24 Hour Ice Cream,' which are typical of a city's commercial areas.",
+      "inference_time_sec": 2.378,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the overhead highway sign for 2 Avenue remain visible to the camera vehicle?",
+      "ground_truth": "8.733 seconds to 9.367 seconds",
+      "prediction": "The overhead highway sign for 2 Avenue remains visible to the camera vehicle during the daytime, specifically from the time range of 10:00 AM to 10:00 PM.",
+      "inference_time_sec": 2.213,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 978,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/978.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory road marking near the commercial building relative to the pavement marking on the multi-lane avenue?",
+      "ground_truth": "To the right of ONLY [entity_001] across the access road",
+      "prediction": "The regulatory road marking near the commercial building is located on the right side of the pavement marking on the multi-lane avenue. It is positioned parallel to the pavement marking, indicating that it is a separate lane designated for traffic flow.",
+      "inference_time_sec": 2.429,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct road markings containing painted text are mentioned in the scene description?",
+      "ground_truth": "2",
+      "prediction": "Three",
+      "inference_time_sec": 0.942,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the distinct road markings are encountered by the camera vehicle?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: STOP [entity_002]",
+      "prediction": "The camera vehicle first encounters the 'ONLY' road marking, then the 'ONLY' road marking again, and finally the 'ONLY' road marking once more.",
+      "inference_time_sec": 1.903,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving action is implied by the regulatory road marking located near the modern commercial building?",
+      "ground_truth": "Stop, as indicated by STOP [entity_002]",
+      "prediction": "The regulatory road marking near the modern commercial building, which reads 'ONLY,' implies that the road is designated for a specific lane or section, possibly indicating a one-way or restricted traffic zone. This marking suggests that the driver is following a specific lane or direction, which is crucial for maintaining order and safety on the road.",
+      "inference_time_sec": 3.013,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential high-rises, commercial buildings, and multi-lane avenues suggest about the driving environment?",
+      "ground_truth": "Urban commercial and residential district",
+      "prediction": "The presence of a mix of residential high-rises, commercial buildings, and multi-lane avenues in the driving environment suggests a bustling urban setting. The buildings vary in height and design, indicating a diverse architectural landscape. The presence of multiple lanes and the mix of vehicles, including a black SUV with its brake lights on, imply that the road is well-used and possibly a major thoroughfare within the city. The urban environment is further emphasized by the presence of streetlights and the overall lighting conditions, which are typical of evening or early morning hours.",
+      "inference_time_sec": 4.581,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is used for the road markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The road markings in this scene are in english.",
+      "inference_time_sec": 1.241,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the first pavement marking driven over, and at what timestamp is the regulatory road marking passed?",
+      "ground_truth": "ONLY [entity_001] at 0.1 seconds, STOP [entity_002] around 5.7 seconds",
+      "prediction": "The first pavement marking driven over is at the beginning of the video, and the regulatory road marking is passed at the end of the video.",
+      "inference_time_sec": 1.821,
+      "error": ""
+    }
+  ]
+}

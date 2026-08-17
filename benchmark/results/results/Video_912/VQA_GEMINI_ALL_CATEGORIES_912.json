@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "912",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What numbers are located directly to the right of the address number 1033 on the low stone retaining wall?",
+        "answer": "The numbers '35' and '37' beside 1033 [entity_001]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct numeric text instances are displayed on the low stone retaining wall?",
+        "answer": "3",
+        "reasoning": "The stone wall displays the address 1033, followed by the numbers '35' and '37', which are 3 distinct numeric instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order are the distinct numbers on the stone wall encountered as the vehicle drives forward?",
+        "answer": "1st: 1033 [entity_001], 2nd: '35', 3rd: '37'"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Does any visible text on the stone wall or near the dealership indicate a driving constraint or hazard?",
+        "answer": "No driving constraints or hazards are indicated by the visible text."
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of a car dealership and address numbers suggest about the driving environment?",
+        "answer": "Suburban commercial roadway",
+        "reasoning": "The presence of a car dealership lot with rows of parked vehicles and address markings indicates a suburban commercial zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What script is used for the address and numbers displayed on the stone wall?",
+        "answer": "Latin script and Arabic numerals"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the address number 1033 first become visible on the stone wall?",
+        "answer": "At timestamp 6.0",
+        "reasoning": "The temporal description states that the address 1033 [entity_001] begins to appear at timestamp 6.0."
+      }
+    ]
+  }
+]

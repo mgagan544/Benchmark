@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "960",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the SCHOOL road marking relative to the SLOW road marking as the vehicle moves forward?",
+        "answer": "Beside SLOW [entity_001]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many yellow road markings are painted on the asphalt of this residential street?",
+        "answer": "3",
+        "reasoning": "There are exactly three yellow road markings painted on the asphalt: SLOW [entity_001], SCHOOL [entity_002], and XING [entity_003]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order in which the yellow road markings are passed by the vehicle between 3.00 and 7.50 seconds?",
+        "answer": "1st: SLOW [entity_001], 2nd: SCHOOL [entity_002], 3rd: XING [entity_003]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What warning or instructional text is painted on the road surface to advise the driver to reduce speed?",
+        "answer": "SLOW [entity_001]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the road markings indicating a school crossing and the surrounding buildings, what type of driving environment is depicted?",
+        "answer": "Residential school zone",
+        "reasoning": "The combination of the road markings SLOW [entity_001], SCHOOL [entity_002], and XING [entity_003] along with residential apartment buildings indicates a residential school zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for the road markings painted on the asphalt?",
+        "answer": "English",
+        "reasoning": "The road markings SLOW [entity_001], SCHOOL [entity_002], and XING [entity_003] are written in English."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the vehicle roll over the yellow road marking SCHOOL?",
+        "answer": "5.867 seconds",
+        "reasoning": "The temporal description states that the vehicle rolls over the yellow road marking SCHOOL [entity_002] at 5.867 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "907",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is located directly to the right of the text 25 A on the overhead street sign?",
+        "answer": "Northern [entity_012] Bird [entity_013]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are mounted on the parked white box truck?",
+        "answer": "6",
+        "reasoning": "The text instances on the truck are CONTRACTORS, SHEET, METAL, LLC, SHEET METAL LLC, and 718.786.2505, totaling 6."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order in which the text groups on the brick industrial building's banner are encountered?",
+        "answer": "1st: DRIVERS [entity_001] and WANTED [entity_002], 2nd: 718 [entity_003] and 729-7777 [entity_004]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What instructional or regulatory text is visible on the sign near the traffic light at the intersection?",
+        "answer": "ENTER [entity_016]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?",
+        "answer": "Industrial and commercial district",
+        "reasoning": "The text refers to drivers wanted, sheet metal contractors, and street signs near a bridge, indicating an industrial/commercial area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What city or region is suggested by the area code 718 found on the visible signs?",
+        "answer": "New York City",
+        "reasoning": "The area code 718 is a well-known telephone area code for New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range is the phone number 718.786.2505 on the parked white box truck visible?",
+        "answer": "4.8 seconds to 6.233 seconds",
+        "reasoning": "The temporal description states the vehicle drives past the truck displaying 718.786.2505 from 4.8 to 6.233 seconds."
+      }
+    ]
+  }
+]

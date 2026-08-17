@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "958",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+        "answer": "PARK [entity_004] to the left of AT * 665J [entity_006]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+        "answer": "6",
+        "reasoning": "The automotive service building features AUTO REPAIR [entity_013], BODY SHOP [entity_014], 212-643-6770 [entity_015], N.Y.S [entity_016], INSPECTION [entity_017], and STATION [entity_018], which totals 6 distinct text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+        "answer": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+        "answer": "TURNS [entity_010]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+        "answer": "Commercial business district",
+        "reasoning": "The presence of digital billboards, parking signs, commercial storefronts, and automotive repair shops indicates a commercial business district."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+        "answer": "New York City, New York State",
+        "reasoning": "The area code 212 is for Manhattan, New York City, and N.Y.S stands for New York State."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+        "answer": "0.0s to 0.233s",
+        "reasoning": "The temporal description states that the digital billboard displaying THE [entity_001], DISPLAYERS [entity_002], and Snycom [entity_003] is passed from 0.0s to 0.233s."
+      }
+    ]
+  }
+]

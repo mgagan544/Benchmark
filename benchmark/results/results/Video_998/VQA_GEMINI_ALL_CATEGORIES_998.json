@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "998",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Which restaurant is located to the right of the BARBERSHOP on the left side of the street?",
+        "answer": "DELI MEXICAN FOOD [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct license plates are mentioned on the grey vehicles in the traffic lane?",
+        "answer": "2",
+        "reasoning": "The text mentions two license plates on grey vehicles: HJG-2334 [entity_004] on the Hyundai Sonata and FHN-9486 [entity_009] on the Toyota Camry."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order in which the license plates HJG-2334 and FHN-9486 are encountered or approached by the camera vehicle?",
+        "answer": "1st: HJG-2334 [entity_004], 2nd: FHN-9486 [entity_009]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Does any visible text in the clip indicate a driving hazard, speed limit, or regulatory constraint?",
+        "answer": "None is present"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment is suggested by the presence of storefronts, a gas station, and a car wash?",
+        "answer": "Commercial business district",
+        "reasoning": "The mix of retail storefronts, a gas station, and a car wash indicates a commercial zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What regional area code is shared by the phone numbers visible on the storefronts in this scene?",
+        "answer": "718",
+        "reasoning": "The phone numbers 718-628-9801 [entity_001] and 718-417-5872 [entity_011] both begin with the 718 area code."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the car wash facility displaying the CAR and WASH signs first become clearer on the right?",
+        "answer": "4.967 seconds",
+        "reasoning": "The temporal description states that the car wash facility displaying CAR [entity_005] and WASH [entity_006] becomes clearer around 4.967 seconds."
+      }
+    ]
+  }
+]

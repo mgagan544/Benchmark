@@ -1,0 +1,70 @@
+{
+  "video_id": 989,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/989.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks?",
+      "ground_truth": "A residential concrete pathway and sidewalk between the driveways and the crosswalks.",
+      "prediction": "Between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks, there is a sidewalk.",
+      "inference_time_sec": 1.735,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct moving vehicles cross the intersection between 00:01 and 00:08?",
+      "ground_truth": "3",
+      "prediction": "In the 00:01 to 00:08 timeframe, there are a total of six distinct moving vehicles that cross the intersection.",
+      "inference_time_sec": 1.815,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the white SUV, black SUV, and large black pickup truck clear the intersection?",
+      "ground_truth": "1st: white SUV, 2nd: black SUV, 3rd: large black pickup truck",
+      "prediction": "The white SUV first crosses the intersection, followed by the black SUV, and then the large black pickup truck.",
+      "inference_time_sec": 1.527,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What signal hanging in the center of the intersection indicates that the driver should proceed with caution?",
+      "ground_truth": "The overhead flashing yellow traffic light.",
+      "prediction": "The signal hanging in the center of the intersection is a red traffic light. This is indicated by the bright red color of the light, which is a universal signal for stopping. The presence of this signal, along with the pedestrian crossing, suggests that the driver should proceed with caution, as it is a common traffic signal that requires attention and caution.",
+      "inference_time_sec": 3.033,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the surrounding environment, including houses, lawns, and private driveways, what type of area is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The area appears to be a residential neighborhood, likely a suburban or urban residential area. The presence of houses with white siding and the private driveways suggests a community where individual homes are separated by yards or driveways. The houses are spaced apart, and the lawns are maintained, indicating a level of care and upkeep typical of residential neighborhoods. The trees lining the street and the overall layout of the street with houses and driveways further support the residential nature of the area.",
+      "inference_time_sec": 3.908,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What written language or script is visible on the signs in this intersection?",
+      "ground_truth": "No signs with visible text are present in the clip.",
+      "prediction": "The video does not provide any clear or visible signs with written language or script in the intersection. The focus is on the visual elements of the scene, such as the traffic lights, the road markings, and the surrounding environment.",
+      "inference_time_sec": 2.328,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the large black pickup truck visible crossing the intersection?",
+      "ground_truth": "00:06 to 00:08",
+      "prediction": "The large black pickup truck is visible crossing the intersection during the time range from approximately 10:00 to 11:00 AM. This is determined by the timestamp on the windshield, which shows the truck's position at that time.",
+      "inference_time_sec": 2.488,
+      "error": ""
+    }
+  ]
+}

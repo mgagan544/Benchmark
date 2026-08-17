@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "To the right of the marked zebra crossing, there is a sidewalk and a grassy area with palm trees.",
+      "inference_time_sec": 1.626,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "Two distinct signboards containing numbers are visible on the right side of the road at the start of the clip.",
+      "inference_time_sec": 1.564,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "A landmark that appears to be a gas station is encountered on the far left after the vehicle passes the signboard 9999.",
+      "inference_time_sec": 1.765,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "Yes, the presence of the signboard with the number '9999' suggests that there are specific driving rules or regulations being followed, such as maintaining a safe distance from other vehicles and adhering to traffic signals.",
+      "inference_time_sec": 2.339,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road, a gas station, and a signboard in the video suggests that the driving environment is urban and well-developed. The road is marked with white and red curbs, indicating a regulated traffic flow, and the presence of a gas station and a signboard with a green background and white text suggests that the area is likely a commercial or residential zone. The combination of these elements points to a typical cityscape where vehicles navigate through well-organized traffic systems and urban infrastructure.",
+      "inference_time_sec": 4.437,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The script on the signboard is in hebrew, indicating that the location is likely in a hebrew-speaking country.",
+      "inference_time_sec": 1.967,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard 9999 becomes visible at the beginning of the video, and it is passed by the ego vehicle towards the end of the video.",
+      "inference_time_sec": 2.268,
+      "error": ""
+    }
+  ]
+}

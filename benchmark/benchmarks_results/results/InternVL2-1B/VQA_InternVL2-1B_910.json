@@ -1,0 +1,70 @@
+{
+  "video_id": 910,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/910.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the sign for Broad St on the overhead gantry?",
+      "ground_truth": "Grove St [entity_006] directly beneath Broad St [entity_005]",
+      "prediction": "The text located directly beneath the sign for Broad St on the overhead gantry is \"Broad St.\"",
+      "inference_time_sec": 1.474,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are encountered after the vehicle passes the medical office building at 5.100 seconds?",
+      "ground_truth": "4",
+      "prediction": "After the vehicle passes the medical office building at 5.100 seconds, two distinct text instances containing numbers are encountered: \"19\" and \"19\".",
+      "inference_time_sec": 2.009,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle encounters the text CENTER, Broad St, and Enrite?",
+      "ground_truth": "1st: CENTER [entity_003], 2nd: Broad St [entity_005], 3rd: Enrite [entity_015]",
+      "prediction": "The vehicle encounters the text \"CENTER\" first, then \"Broad St,\" and finally \"Enrite\" at the end of the video.",
+      "inference_time_sec": 1.762,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead gantry, what driving action is indicated for reaching Passaic?",
+      "ground_truth": "Exit in 1/2 mile as indicated by EXIT 1/2 MILE [entity_012]",
+      "prediction": "The text on the overhead gantry indicates that the driver is to take the exit for Passaic, which is marked with a green arrow pointing to the right. This suggests that the driver is being directed to proceed to the right to reach the exit for Passaic.",
+      "inference_time_sec": 2.55,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a large overhead gantry and multiple roadside businesses?",
+      "ground_truth": "highway corridor with commercial zones",
+      "prediction": "The presence of a large overhead gantry and multiple roadside businesses suggests a commercial driving environment. The gantry is likely used for traffic management, such as directing traffic onto the highway or directing vehicles onto the expressway, which is common in urban or suburban areas where commercial traffic is significant. The variety of businesses, including a convenience store, suggests that the area is a hub for both local and possibly long-distance travelers, indicating a mixed-use area that caters to both residents and visitors.",
+      "inference_time_sec": 4.03,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city names visible on the overhead highway gantry suggest the geographic region of the route?",
+      "ground_truth": "Clifton [entity_010] and Passaic [entity_011]",
+      "prediction": "The specific city names visible on the overhead highway gantry include \"Broad St.,\" \"North,\" \"Van Houten Ave,\" and \"Clifton Passaic.\" These names suggest that the route is in the New Jersey region, as Broad Street is a street in New Jersey, and Van Houten Ave is a street in Newark, New Jersey. The presence of these names indicates that the route is likely in or near Newark, New Jersey.",
+      "inference_time_sec": 3.815,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the overhead highway sign displaying Broad St remain visible as the vehicle drives underneath it?",
+      "ground_truth": "6.667 to 7.433 seconds",
+      "prediction": "The overhead highway sign displaying Broad St remains visible for approximately 10-15 seconds as the vehicle drives underneath it. This duration is indicated by the position of the sign relative to the camera's perspective and the angle at which the vehicle is traveling.",
+      "inference_time_sec": 2.506,
+      "error": ""
+    }
+  ]
+}

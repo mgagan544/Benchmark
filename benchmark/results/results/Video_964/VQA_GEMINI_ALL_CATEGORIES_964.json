@@ -1,0 +1,51 @@
+[
+  {
+    "video_id": "964",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What overhead sign is located to the right of the exit sign for E 138 St?",
+        "answer": "Macombs [entity_003] Dam [entity_002] and E 161 St [entity_001] to the right of E 138 St [entity_005]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are mounted on the white commercial pickup truck?",
+        "answer": "10",
+        "reasoning": "The text instances on the truck are LONGO [entity_014], 973-537-0400 [entity_015], MOTORS [entity_016], PUMPS [entity_017], CONTROLS [entity_018], FANS [entity_019], SWITCHGEAR [entity_020], WWW.elongo.com [entity_021], XCD-P37 [entity_022], and L60 CBA [entity_023], which sum up to 10."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What text is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass?",
+        "answer": "WORK [entity_008] ZONE [entity_009] SPEED [entity_010] LIMIT [entity_011] 35"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text on the concrete median barrier restricts certain vehicles from using the left lane?",
+        "answer": "TRUCKS [entity_025], BUSES [entity_026], and TRAILERS [entity_027] from the LEFT LANE [entity_028]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of overhead exit signs, route shields, and speed limit signs, what kind of driving environment does this clip depict?",
+        "answer": "Highway through-route"
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which street names and bridge names visible in the clip suggest the setting is in New York City?",
+        "answer": "E 138 St [entity_005], Madison [entity_006] Ave Br [entity_007], and W 161 St [entity_013]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range is the white pickup truck's contact number visible in the clip?",
+        "answer": "0.833 to 4.267 seconds",
+        "reasoning": "The temporal description states that the vehicle follows the white pickup truck showing the phone number 973-537-0400 [entity_015] between 0.833 and 4.267 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 993,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/993.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the ticket windows relative to the regulatory sign that says NO STANDING ANYTIME?",
+      "ground_truth": "TICKETS [entity_009] windows to the right of NO STANDING [entity_007] ANYTIME [entity_008]",
+      "prediction": "The ticket windows are positioned on the right side of the road, slightly ahead of the camera's viewpoint. They are aligned with the regulatory sign that reads \"NO STANDING ANYTIME,\" which is located on the right side of the road, just beyond the edge of the image. The sign is mounted on a pole and is visible to the right of the road, indicating that it is meant to be seen by drivers.",
+      "inference_time_sec": 3.582,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory parking-related signs are mentioned along the stadium's exterior?",
+      "ground_truth": "2",
+      "prediction": "Based on the video, there are at least two distinct regulatory parking-related signs visible along the stadium's exterior. One is a blue sign with white lettering, and the other is a red and white sign with a white arrow pointing to the right.",
+      "inference_time_sec": 2.504,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the stadium entrance gate, the ticket windows, and the large banner are encountered as the vehicle drives forward?",
+      "ground_truth": "1st: BULLPEN [entity_006] GATE [entity_005], 2nd: TICKETS [entity_009], 3rd: AMWAY [entity_010]",
+      "prediction": "The order of the stadium entrance gate, ticket windows, and the large banner encountered as the vehicle drives forward is as follows: the entrance gate is first, followed by the ticket windows, and then the large banner.",
+      "inference_time_sec": 2.193,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the stadium's exterior indicates a parking or stopping restriction near the entrance gate?",
+      "ground_truth": "NO STANDING [entity_007] ANYTIME [entity_008]",
+      "prediction": "The text on the stadium's exterior that indicates a parking or stopping restriction near the entrance gate is \"BULLPEN GATE.\"",
+      "inference_time_sec": 1.74,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the stadium gate, ticket windows, and commercial banners?",
+      "ground_truth": "sports and commercial district",
+      "prediction": "The driving environment suggested by the stadium gate, ticket windows, and commercial banners indicates a commercial area with a focus on retail and entertainment. The presence of a stadium gate suggests that the area may be a sports venue or a venue for large events, which is common in urban settings. The ticket windows imply that the area is likely a commercial district where tickets are sold, possibly for events or attractions. The commercial banners, including one that reads \"BULLPEN GATE,\" suggest that the area is a hub for businesses and possibly a tourist destination, as such banners are often used to attract visitors to specific locations. The overall setting is one",
+      "inference_time_sec": 4.936,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the legible signs and banners in this scene?",
+      "ground_truth": "English",
+      "prediction": "The video does not provide audio, so it is not possible to determine the language used for the signs and banners.",
+      "inference_time_sec": 1.626,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range are the ticket windows and the large commercial banner on the right side of the road visible?",
+      "ground_truth": "2.2s to 4.133s",
+      "prediction": "The ticket windows and the large commercial banner on the right side of the road are visible during the daytime, as indicated by the bright sunlight and the clear visibility of the scene.",
+      "inference_time_sec": 1.986,
+      "error": ""
+    }
+  ]
+}

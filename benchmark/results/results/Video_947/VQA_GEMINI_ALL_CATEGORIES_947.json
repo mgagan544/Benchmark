@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "947",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the sign containing the text STATE relative to the speed warning sign?",
+        "answer": "To the right of SPEED [entity_005]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are mounted on the silver minivan?",
+        "answer": "2",
+        "reasoning": "The silver minivan has two vehicle-mounted text instances: the license plate HEG-1344 [entity_010] and the state text NEW YORK [entity_011]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the green exit sign, the white regulatory sign, and the minivan's license plate are first encountered?",
+        "answer": "1st: EXIT [entity_001], 2nd: STATE [entity_006], 3rd: HEG-1344 [entity_010]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text on the regulatory sign indicates a financial penalty for driving too fast?",
+        "answer": "STATE [entity_006] LAW [entity_007] fines DOUBLED FOR [entity_008] SPEEDING [entity_009]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of road environment is suggested by the presence of exit signs, speed warning signs, and regulatory signs?",
+        "answer": "Highway",
+        "reasoning": "The presence of a green exit sign with mile markers and speed warning signs is characteristic of a highway."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific state or region is indicated by the text on the silver minivan's license plate?",
+        "answer": "NEW YORK [entity_011]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range is the license plate HEG-1344 clearly legible on the silver minivan?",
+        "answer": "6.167s to 9.2s",
+        "reasoning": "The temporal description states that the ego vehicle closes in behind the silver minivan, making its license plate HEG-1344 [entity_010] clearly legible from 6.167s to 9.2s."
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 929,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/929.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the signboard displaying Gabinst relative to the signboard displaying Natural?",
+      "ground_truth": "To the left of Natural [entity_003]",
+      "prediction": "The signboard displaying \"Gabinst\" is located on the right side of the road, while the signboard displaying \"Natural\" is on the left side of the road. The signboard displaying \"Gabinst\" is positioned further down the road, closer to the center of the image, while the signboard displaying \"Natural\" is located further back on the right side of the road.",
+      "inference_time_sec": 3.396,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belonging to storefront or real estate signboards are visible in this clip?",
+      "ground_truth": "9",
+      "prediction": "Based on the given information, there are multiple distinct pieces of text visible on the storefront or real estate signboards. These include a yellow sign with black text, a blue sign with white text, and a red sign with white text.",
+      "inference_time_sec": 2.91,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle?",
+      "ground_truth": "1st: TILE [entity_002], 2nd: Gabinst [entity_005], 3rd: KAPLON [entity_006]",
+      "prediction": "The order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle is as follows: the first signboard is on the left side of the road, displaying TILE, followed by the second signboard on the right side, which displays Gabinst, and finally, the third signboard on the far right, displaying KAPLON.",
+      "inference_time_sec": 3.42,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "No regulatory or warning text is visible in the clip.",
+      "prediction": "Yes, there is a sign on the wall of the building that reads \"PARKING,\" indicating a parking restriction. This suggests that the area is not a designated parking zone and drivers must adhere to parking regulations.",
+      "inference_time_sec": 2.278,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of storefront signboards and real estate signs suggest about this driving environment?",
+      "ground_truth": "An urban commercial or industrial district",
+      "prediction": "The mix of storefront signboards and real estate signs suggests that this driving environment is a commercial area with a mix of businesses and real estate. The presence of multiple signs indicates that the area is likely to attract a variety of customers and businesses, which could include retail stores, restaurants, and possibly real estate companies. The variety of signs also implies that the area is a hub of activity, with different types of businesses and services catering to the needs of the local community.",
+      "inference_time_sec": 3.884,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional convention is suggested by the phone number format containing the area code (718)?",
+      "ground_truth": "North American numbering plan, specifically New York City",
+      "prediction": "The regional convention suggested by the phone number format containing the area code (718) is that of New York City. This is indicated by the use of the \"718\" prefix, which is a common format for New York City's phone numbers.",
+      "inference_time_sec": 2.593,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the real estate sign displaying KAPLON first align with the camera, and when does the vehicle pass the area code (718)?",
+      "ground_truth": "KAPLON [entity_006] aligns at 6.6 seconds; (718) [entity_010] is passed at 8.2 seconds",
+      "prediction": "The real estate sign displaying KAPLON first aligns with the camera at approximately 1:00 PM, as indicated by the timestamp on the sign. The vehicle passes the area code (718) at approximately 1:00 PM, as seen in the timestamp on the rearview mirror.",
+      "inference_time_sec": 2.947,
+      "error": ""
+    }
+  ]
+}

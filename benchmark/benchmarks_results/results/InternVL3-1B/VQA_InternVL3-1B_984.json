@@ -1,0 +1,70 @@
+{
+  "video_id": 984,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/984.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly above the identifier 91204-MD on the white shredding truck?",
+      "ground_truth": "DRIVERS WANTED [entity_009]",
+      "prediction": "The text '91204-MD' is located directly above the identifier 91204-MD on the white shredding truck.",
+      "inference_time_sec": 2.06,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the commercial delivery van branded with GoodMart?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct text instances visible on the commercial delivery van branded with GoodMart.",
+      "inference_time_sec": 1.438,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the two delivery van brands are encountered on the right side of the road?",
+      "ground_truth": "1st: GoodMart [entity_012], 2nd: IBC [entity_017]",
+      "prediction": "The first delivery van encountered is the one with the 'American Security Shredding' branding, followed by the 'Googly' van.",
+      "inference_time_sec": 1.878,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text near the intersection indicates a direction restriction for drivers?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_022]",
+      "prediction": "The regulatory text near the intersection indicates a direction restriction for drivers, which is 'NO TURN ON RED.' This sign is typically placed at intersections to prevent drivers from making turns unintentionally, especially when the light is red. It serves as a safety measure to ensure the smooth flow of traffic and prevent accidents caused by drivers attempting to make a turn while the light is red.",
+      "inference_time_sec": 3.34,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggest about the driving environment?",
+      "ground_truth": "Busy urban commercial district",
+      "prediction": "The presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding in the video suggests that the driving environment is a busy urban area with significant vehicular traffic. The presence of these vehicles indicates that the road is likely a major thoroughfare, possibly in a city where such commercial activities are common. The construction scaffolding and the presence of pedestrians also point to an area that is actively used for both vehicular and pedestrian traffic, typical of a bustling city environment.",
+      "inference_time_sec": 4.249,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the shredding truck and delivery vans written in?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 0.907,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the GoodMart delivery van text visible before being replaced by the IBC van?",
+      "ground_truth": "0.000 seconds to 5.967 seconds",
+      "prediction": "The text 'GoodMart' is visible on the GoodMart delivery van before being replaced by the IBC van. This suggests that the video captures a moment where the GoodMart van is in the foreground, and the IBC van is in the background, possibly indicating a change in traffic or a different vehicle passing by.",
+      "inference_time_sec": 2.988,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "972",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
+        "answer": "To the right of VIDE [entity_002]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
+        "answer": "5",
+        "reasoning": "The dark grey pickup truck displays F150 [entity_007], P150 [entity_010], 4X4 [entity_009], Ford [entity_011], and license plate 08209W1 [entity_012], totaling 5 vehicle-mounted text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
+        "answer": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
+        "answer": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
+        "answer": "Commercial district",
+        "reasoning": "The presence of commercial signs VIDE [entity_002] and CLOUR [entity_006] alongside parking regulations indicates a commercial area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
+        "answer": "English",
+        "reasoning": "The signs use English words such as MON WED FRI [entity_001] and STREET CLEANING [entity_008]."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
+        "answer": "3.033s",
+        "reasoning": "The temporal description states that the STREET CLEANING [entity_008] sign becomes clearly readable at 3.033s."
+      }
+    ]
+  }
+]

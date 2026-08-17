@@ -1,0 +1,70 @@
+{
+  "video_id": 922,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/922.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lane indicator is visible overhead at 0.0 seconds to the right of the Airport Exit sign?",
+      "ground_truth": "EXIT [entity_004] to the right of Airport Exit [entity_002]",
+      "prediction": "The lane indicator visible overhead at 0.0 seconds to the right of the Airport Exit sign is the 'EXIT ONLY' lane indicator. This is a standard traffic sign used to indicate that vehicles should only proceed in the designated exit lane.",
+      "inference_time_sec": 2.568,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street, regulatory, or warning text elements are visible in this clip?",
+      "ground_truth": "7",
+      "prediction": "There are six distinct street, regulatory, or warning text elements visible in this clip.",
+      "inference_time_sec": 1.534,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the text elements on the orange warning sign encountered after passing the concrete overpass?",
+      "ground_truth": "1st: ROAD [entity_005], 2nd: WORK [entity_006], 3rd: AHEAD [entity_007]",
+      "prediction": "The order of the text elements on the orange warning sign encountered after passing the concrete overpass is 'DO NOT ENTER'. This sign is positioned on the left side of the road, just before the construction area, and is a common traffic sign to alert drivers to potential hazards or restrictions ahead.",
+      "inference_time_sec": 2.982,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint, which is 'STOP'. This sign is a common traffic control device used to alert drivers to halt their vehicles when approaching construction zones or other restricted areas.",
+      "inference_time_sec": 2.744,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs like Airport Exit and ROAD WORK AHEAD, what kind of driving environment is depicted?",
+      "ground_truth": "Highway construction zone",
+      "prediction": "The driving environment depicted in the video is a typical urban or suburban road with construction activities, as indicated by the presence of a road sign directing traffic to the Airport Exit and the construction barriers and equipment visible under the bridge.",
+      "inference_time_sec": 2.446,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead and warning signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 0.931,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the STOP sign held by the construction flagger visible and legible?",
+      "ground_truth": "0.0 to 2.633 seconds",
+      "prediction": "The STOP sign held by the construction flagger is visible and legible during the daytime, specifically from the time around 10:00 AM to 10:30 AM.",
+      "inference_time_sec": 2.248,
+      "error": ""
+    }
+  ]
+}

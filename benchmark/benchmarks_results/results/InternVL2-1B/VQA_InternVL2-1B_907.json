@@ -1,0 +1,70 @@
+{
+  "video_id": 907,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/907.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the text 25 A on the overhead street sign?",
+      "ground_truth": "Northern [entity_012] Bird [entity_013]",
+      "prediction": "The text located directly to the right of the text \"25 A\" on the overhead street sign is \"North Avenue.\"",
+      "inference_time_sec": 1.639,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the parked white box truck?",
+      "ground_truth": "6",
+      "prediction": "There are two distinct text instances mounted on the parked white box truck.",
+      "inference_time_sec": 1.286,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the text groups on the brick industrial building's banner are encountered?",
+      "ground_truth": "1st: DRIVERS [entity_001] and WANTED [entity_002], 2nd: 718 [entity_003] and 729-7777 [entity_004]",
+      "prediction": "The text groups on the brick industrial building's banner are encountered in the following chronological order: \"DRIVERS WANTED,\" \"OFF ROAD,\" \"TOWING,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\" \"REPAIRS,\"",
+      "inference_time_sec": 4.991,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the sign near the traffic light at the intersection?",
+      "ground_truth": "ENTER [entity_016]",
+      "prediction": "The sign near the traffic light contains text that is not clearly legible in the video. However, it appears to be a regulatory sign, possibly indicating a speed limit or a warning for pedestrians, as it is placed near the intersection and is commonly found in areas with pedestrian crossings.",
+      "inference_time_sec": 2.669,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?",
+      "ground_truth": "Industrial and commercial district",
+      "prediction": "The presence of the contractor vehicle with the text \"CONTRACTORS\" and the industrial building banners suggests that the driving environment is likely to be a commercial or industrial area. The text implies that the area may be involved in construction or renovation work, which could indicate that the road is a thoroughfare for commercial vehicles or that it is a route for transporting goods or materials. The banners on the building could be for advertising or indicating the presence of businesses or services in the vicinity. The overall setting implies a functional and possibly busy area with a mix of commercial and industrial activities.",
+      "inference_time_sec": 4.587,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the area code 718 found on the visible signs?",
+      "ground_truth": "New York City",
+      "prediction": "The area code 718 suggests that the location is in the New York metropolitan area, as this code is commonly used in New York City.",
+      "inference_time_sec": 1.849,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the phone number 718.786.2505 on the parked white box truck visible?",
+      "ground_truth": "4.8 seconds to 6.233 seconds",
+      "prediction": "The phone number 718.786.2505 on the parked white box truck is visible in the first frame of the video.",
+      "inference_time_sec": 1.845,
+      "error": ""
+    }
+  ]
+}

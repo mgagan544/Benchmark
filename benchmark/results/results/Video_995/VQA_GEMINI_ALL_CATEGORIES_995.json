@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "995",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What readable text is located directly to the right of the 1042 number on the first parked school bus?",
+        "answer": "738-7373 [entity_005] to the right of 1042 [entity_004]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances containing numbers are visible on the first parked school bus?",
+        "answer": "3",
+        "reasoning": "The text instances containing numbers on the first bus are 1042 [entity_004], 738-7373 [entity_005], and 718 [entity_007]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the text labels Richie, Service, and 4290 are passed by the ego vehicle?",
+        "answer": "1st: 4290 [entity_011], 2nd: Service [entity_012], 3rd: Richie [entity_013]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text on the first parked school bus indicates a potential driving constraint or warning?",
+        "answer": "STOP [entity_002]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of area does the combination of residential buildings, a public park, and school buses suggest?",
+        "answer": "residential school zone",
+        "reasoning": "The presence of residential buildings, a public park, and school buses indicates a residential school zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific telephone area code visible on the first school bus suggests the vehicle is in New York City?",
+        "answer": "718 [entity_007]",
+        "reasoning": "The area code 718 [entity_007] is historically associated with New York City outer boroughs."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During which time range is the text Little Linda visible on the first parked school bus?",
+        "answer": "00:02 - 00:04",
+        "reasoning": "The temporal description states that the ego vehicle passes the first couple of buses displaying Little Linda [entity_010] between 00:02 and 00:04."
+      }
+    ]
+  }
+]

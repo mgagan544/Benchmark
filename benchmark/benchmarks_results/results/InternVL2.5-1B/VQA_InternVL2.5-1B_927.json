@@ -1,0 +1,70 @@
+{
+  "video_id": 927,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/927.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text New Jersey relative to the G W Bridge text?",
+      "ground_truth": "Below G W Bridge [entity_003]",
+      "prediction": "The text New Jersey is located to the right of the G W Bridge text, as seen in the video.",
+      "inference_time_sec": 1.537,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the overhead gantry signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are three distinct text instances displayed on the overhead gantry signs in this clip.",
+      "inference_time_sec": 1.364,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?",
+      "ground_truth": "1st: NORTH [entity_002]; 2nd: New Jersey [entity_008]",
+      "prediction": "The texts NORTH and New Jersey are visible in the first frame, but as the vehicle progresses, the visibility of these texts decreases. In the second frame, the texts NORTH and New Jersey are no longer visible, indicating that the vehicle has passed these signs.",
+      "inference_time_sec": 2.512,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?",
+      "ground_truth": "NO TRUCKS [entity_006] and ALL TRUCKS TO NJ [entity_007]",
+      "prediction": "The text 'NO TRUCKS' is displayed on the overhead gantry, indicating that trucks are not allowed to drive on the highway.",
+      "inference_time_sec": 1.778,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the density and type of overhead text suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The density and type of overhead text suggest a well-structured and organized driving environment. The green highway signs with white lettering provide clear and concise directions to various destinations, such as 'G W Bridge', 'W 178 St', 'New Jersey', and 'Lower Level'. This type of signage is typical for highways, as it helps drivers navigate through the complex network of roads and intersections. The presence of multiple signs indicates that the highway is likely a major thoroughfare, facilitating smooth traffic flow and reducing congestion. The text is well-lit and easily readable, which is essential for drivers to follow the correct routes and avoid accidents",
+      "inference_time_sec": 5.049,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which metropolitan area is suggested by the visible overhead signs, and what text supports this?",
+      "ground_truth": "New York metropolitan area, supported by Cr Bronx Expy [entity_004] and New Jersey [entity_008]",
+      "prediction": "The visible overhead signs suggest that the vehicle is approaching the New Jersey area. The text supporting this is 'New Jersey' and 'G W Bridge' on the green highway signs, indicating the direction towards the New Jersey area.",
+      "inference_time_sec": 2.404,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?",
+      "ground_truth": "0.033s",
+      "prediction": "The texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible at the timestamp of 00:10:00.",
+      "inference_time_sec": 2.07,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 969,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/969.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the text Prospect?",
+      "ground_truth": "Expwy [entity_001] to the right of Prospect [entity_002]",
+      "prediction": "The text \"Prospect\" is directly to the right of the text \"Verazano Br Station is\" on the green signboard.",
+      "inference_time_sec": 1.811,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds?",
+      "ground_truth": "3",
+      "prediction": "Between 2.1 and 2.8 seconds, the first distinct, legible text instances detected are \"Exit 12\" and \"Exit 13.\"",
+      "inference_time_sec": 2.004,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of detection for the signs Prospect and EXIT 24?",
+      "ground_truth": "1st: Prospect [entity_002], 2nd: EXIT 24 [entity_003]",
+      "prediction": "The order of detection for the signs Prospect and EXIT 24 is as follows:\n\n1. **Prospect** - The first sign on the left side of the highway, indicating the direction to Prospect.\n2. **EXIT 24** - The second sign on the right side of the highway, indicating the direction to EXIT 24.\n\nThis order ensures that drivers can easily identify the correct exit routes based on the signs placed on the highway.",
+      "inference_time_sec": 3.793,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific vehicle types are restricted from the left lane according to the white regulatory sign?",
+      "ground_truth": "TRUCKS [entity_009], BUSES [entity_010], and TRAILERS [entity_011]",
+      "prediction": "The specific vehicle types restricted from the left lane are commercial vehicles, as indicated by the white regulatory sign on the right side of the road.",
+      "inference_time_sec": 1.782,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of directional signs, exit indicators, and lane restrictions suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of directional signs, exit indicators, and lane restrictions suggests that the driving environment is complex and regulated. The presence of multiple lanes with different directional signs indicates that drivers must navigate through multiple exits and possibly through different traffic conditions. The lane restrictions imply that drivers must adhere to specific rules and possibly adhere to speed limits, as indicated by the speed limit sign. The mix of signs and the presence of a speed limit sign also suggest that the area is likely a busy interchange with multiple exits and possibly a significant amount of traffic.",
+      "inference_time_sec": 4.277,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge and island names visible on the directional signs suggest the vehicle is in the New York City area?",
+      "ground_truth": "Verrazano Br [entity_008] and Staten Is [entity_005]",
+      "prediction": "The specific bridge and island names visible on the directional signs include \"Prospect Br\" and \"Verazano Br Station,\" which are both located in New York City. These signs are indicative of the New York City Bridge and Island Park, which are known for their iconic status in the city's transportation network.",
+      "inference_time_sec": 2.9,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the distant skyline advertisement text PEPSI first become visible?",
+      "ground_truth": "4.533 seconds",
+      "prediction": "The distant skyline advertisement text PEPSI first becomes visible at the beginning of the video.",
+      "inference_time_sec": 1.488,
+      "error": ""
+    }
+  ]
+}

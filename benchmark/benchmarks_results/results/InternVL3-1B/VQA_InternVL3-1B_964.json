@@ -1,0 +1,70 @@
+{
+  "video_id": 964,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/964.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What overhead sign is located to the right of the exit sign for E 138 St?",
+      "ground_truth": "Macombs [entity_003] Dam [entity_002] and E 161 St [entity_001] to the right of E 138 St [entity_005]",
+      "prediction": "A green sign for W 161 St.",
+      "inference_time_sec": 1.32,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the white commercial pickup truck?",
+      "ground_truth": "10",
+      "prediction": "Three distinct text instances are mounted on the white commercial pickup truck.",
+      "inference_time_sec": 1.282,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What text is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass?",
+      "ground_truth": "WORK [entity_008] ZONE [entity_009] SPEED [entity_010] LIMIT [entity_011] 35",
+      "prediction": "The text visible on the left side of the highway right before the vehicle passes the green pedestrian overpass reads 'WORK ZONE SPEED LIMIT 35'. This sign is a traffic regulation indicating the speed limit for the area where the overpass is located. It serves as a reminder for drivers to adhere to the speed limit while navigating through the area.",
+      "inference_time_sec": 3.164,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the concrete median barrier restricts certain vehicles from using the left lane?",
+      "ground_truth": "TRUCKS [entity_025], BUSES [entity_026], and TRAILERS [entity_027] from the LEFT LANE [entity_028]",
+      "prediction": "The text on the concrete median barrier reads 'NO TRUCKS TRAVELS LEFT LANE.' This sign is a traffic regulation that prevents trucks from using the leftmost lane of the highway, ensuring that other vehicles have the right of way.",
+      "inference_time_sec": 2.484,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, route shields, and speed limit signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The clip depicts a typical urban driving environment with a mix of commercial and personal vehicles. The presence of overhead exit signs, route shields, and speed limit signs indicates a well-organized traffic system, ensuring safety and order on the road. The clear sky and daylight conditions suggest it is daytime, and the presence of trees along the roadside adds a touch of greenery to the urban landscape.",
+      "inference_time_sec": 3.438,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and bridge names visible in the clip suggest the setting is in New York City?",
+      "ground_truth": "E 138 St [entity_005], Madison [entity_006] Ave Br [entity_007], and W 161 St [entity_013]",
+      "prediction": "The street names and bridge names visible in the clip suggest the setting is in New York City. The 'Madison Ave Br' and 'E 161 St' street signs are indicative of the city's urban layout, while the 'W 161 ST' bridge name is a common feature in New York City's transportation infrastructure. These elements collectively point towards the location being in New York City.",
+      "inference_time_sec": 3.637,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the white pickup truck's contact number visible in the clip?",
+      "ground_truth": "0.833 to 4.267 seconds",
+      "prediction": "The white pickup truck's contact number, '1-800-500-4000', is visible in the video during the daytime, specifically in the second and third frames. This suggests that the video was taken during the daytime, possibly in the morning or late afternoon, when the truck's headlights are on, and the visibility is clear.",
+      "inference_time_sec": 3.346,
+      "error": ""
+    }
+  ]
+}

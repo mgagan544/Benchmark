@@ -1,0 +1,70 @@
+{
+  "video_id": 944,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/944.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the PASSENGER CARS ONLY sign located relative to the Drive SOUTH sign?",
+      "ground_truth": "Adjacent to Drive [entity_006] SOUTH [entity_007]",
+      "prediction": "The PASSENGER CARS ONLY sign is located on the right side of the road, adjacent to the Drive SOUTH sign.",
+      "inference_time_sec": 1.69,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities make up the construction warning sign visible at the start of the clip?",
+      "ground_truth": "4",
+      "prediction": "The construction warning sign visible at the start of the clip consists of three distinct text entities: \"No Parking,\" \"No Left Turn,\" and \"No U-turn.\"",
+      "inference_time_sec": 1.897,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the low clearance warning sign, the construction warning signs, and the PASSENGER CARS ONLY sign?",
+      "ground_truth": "1st: 12-6 [entity_005] and construction signs, 2nd: PASSENGER CARS ONLY [entity_009]",
+      "prediction": "The vehicle encounters the low clearance warning sign first, followed by the construction warning signs, and then the PASSENGER CARS ONLY sign.",
+      "inference_time_sec": 1.788,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What low clearance limit is indicated by the warning sign to the right of the concrete barrier?",
+      "ground_truth": "12-6 [entity_005]",
+      "prediction": "The warning sign to the right of the concrete barrier indicates a low clearance limit of 100 feet. This is a standard safety measure to prevent vehicles from veering off the road and to ensure the safety of pedestrians and cyclists.",
+      "inference_time_sec": 2.398,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the transition from a curved ramp with construction signs to a highway depict?",
+      "ground_truth": "Highway transition zone",
+      "prediction": "The transition from a curved ramp with construction signs to a highway depicts a driving environment that is characterized by a mix of urban infrastructure and natural elements. The presence of construction barriers and road signs indicates that the area is undergoing some form of development or maintenance. The highway, with its smooth asphalt and clear lanes, suggests a more modern and possibly more trafficked road. The combination of these elements suggests a dynamic environment where urban development meets the demands of a busy highway.",
+      "inference_time_sec": 3.872,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction warning signs and overhead directional signs?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction warning signs and overhead directional signs is in English.",
+      "inference_time_sec": 1.359,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Drive SOUTH sign first come into view, and when does the vehicle pass it?",
+      "ground_truth": "First visible at 3.767 seconds, passed at 5.133 seconds",
+      "prediction": "The Drive SOUTH sign first appears in the middle of the video, after the yellow traffic lights and the green sign indicating a right turn. The vehicle then passes the sign, indicating the direction it is heading.",
+      "inference_time_sec": 2.138,
+      "error": ""
+    }
+  ]
+}

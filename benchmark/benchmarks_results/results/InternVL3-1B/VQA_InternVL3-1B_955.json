@@ -1,0 +1,70 @@
+{
+  "video_id": 955,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/955.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the word OVER on the weight limit sign to the left of Waterside Plaza?",
+      "ground_truth": "VEHICLES [entity_002]",
+      "prediction": "The text '600' is located directly below the word 'OVER' on the weight limit sign to the left of Waterside Plaza.",
+      "inference_time_sec": 1.874,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 1.500 and 3.000 seconds?",
+      "ground_truth": "4",
+      "prediction": "There are four distinct, legible text instances encountered by the vehicle between 1.500 and 3.000 seconds.",
+      "inference_time_sec": 1.953,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the signs encountered by the vehicle between 3.500 and 4.500 seconds?",
+      "ground_truth": "1st: E 25 ST [entity_005], 2nd: E 34 ST [entity_006] FERRY [entity_007] HELIPORT [entity_009] LANDING [entity_008], 3rd: ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "Between 3.500 and 4.500 seconds, the vehicle encounters the 'E 42 St' sign, then the 'E 34 St' sign, and finally the 'Midtown Twin' sign.",
+      "inference_time_sec": 2.536,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the orange construction sign passed at 4.367 seconds?",
+      "ground_truth": "ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The warning text displayed on the orange construction sign passed at 4.367 seconds is 'WARNING: CONSTRUCTION IN PROGRESS'.",
+      "inference_time_sec": 1.804,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multiple exit signs, route markers, and overpasses, what driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the video is a typical urban highway setting with multiple exit signs, route markers, and overpasses. This indicates a well-developed road infrastructure designed to manage traffic flow efficiently, with clear signage for drivers to navigate through the city. The presence of tall buildings and the clear sky suggest a bustling metropolitan area with significant vehicular traffic.",
+      "inference_time_sec": 3.266,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street names and route markers suggest this clip is filmed in New York City?",
+      "ground_truth": "E 25 ST [entity_005], E 34 ST [entity_006], E 42 ST [entity_017], 495 [entity_016]",
+      "prediction": "The specific street names and route markers visible in the video include 'E 42 St' and 'E 34 St Midtown Twin', which are typical for New York City. These names and markers are used to guide drivers to specific routes and intersections, indicating that the footage is indeed taken in New York City.",
+      "inference_time_sec": 3.061,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the weight-limit sign containing the text 8000 Lbs first appear in view?",
+      "ground_truth": "2.633 seconds, as 8000 Lbs [entity_004] becomes visible.",
+      "prediction": "The weight-limit sign containing the text 8000 Lbs first appears in view towards the beginning of the video, just after the white van passes by.",
+      "inference_time_sec": 2.118,
+      "error": ""
+    }
+  ]
+}

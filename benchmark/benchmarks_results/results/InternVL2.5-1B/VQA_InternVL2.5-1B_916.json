@@ -1,0 +1,70 @@
+{
+  "video_id": 916,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/916.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the overhead Terminal sign located relative to the delivery truck?",
+      "ground_truth": "To the left of GOLDEN RULE [entity_001] and PRODUCE INC [entity_002]",
+      "prediction": "The overhead Terminal sign is located above the delivery truck, indicating the direction to the terminal.",
+      "inference_time_sec": 1.399,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this clip are mounted on vehicles?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct text instances mounted on vehicles in this clip. The first is the 'Golden Bridge Products' logo on the white truck, and the second is the 'Terminal 3' sign on the building.",
+      "inference_time_sec": 2.255,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds?",
+      "ground_truth": "1st: Terminal [entity_004], 2nd: BUS [entity_005], 3rd: STOP [entity_006]",
+      "prediction": "The legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds are 'Terminal 3', 'Terminal 2', 'Terminal 1', and 'Terminal 1'.",
+      "inference_time_sec": 2.301,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What road markings indicating driving constraints or lane designations are painted on the road surface just before passing the shuttle van?",
+      "ground_truth": "BUS [entity_005] and STOP [entity_006]",
+      "prediction": "The road markings indicating driving constraints or lane designations painted on the road surface just before passing the shuttle van include a 'BUS ONLY' lane, which is indicated by a white line on the road surface. This lane is typically reserved for buses and is distinct from the regular traffic lanes. The presence of this lane suggests that the area is designed to accommodate specific types of vehicles, possibly for the purpose of shuttle services or other transportation needs.",
+      "inference_time_sec": 3.725,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment is suggested by the presence of terminal, bus, and cell phone lot signs?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "The presence of terminal, bus, and cell phone lot signs suggests a well-organized and structured driving environment typical of an airport terminal. These signs indicate the presence of various facilities and services, such as a bus stop, a cell phone area, and possibly a parking lot or shuttle service. The terminal's design, with its structured layout and directional signage, is consistent with the design of airport terminals, which are designed to facilitate easy navigation and provide essential services to travelers.",
+      "inference_time_sec": 3.988,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language are all the legible signs and road markings written?",
+      "ground_truth": "English",
+      "prediction": "The signs and road markings in the video are written in English.",
+      "inference_time_sec": 1.289,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the phone number 1-800-497-4972 first become legible on the delivery truck?",
+      "ground_truth": "1.367 seconds",
+      "prediction": "The phone number 1-800-497-4972 first becomes legible on the delivery truck at the beginning of the video.",
+      "inference_time_sec": 1.887,
+      "error": ""
+    }
+  ]
+}

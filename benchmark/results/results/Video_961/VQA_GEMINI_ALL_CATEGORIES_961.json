@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "961",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is located directly below Sheridan Expwy on the right overhead signboard?",
+        "answer": "RFK Br [entity_005] directly below Sheridan Expwy [entity_004]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are visible on the left overhead signboard between 1.833 seconds and 3.967 seconds?",
+        "answer": "5",
+        "reasoning": "The left overhead signboard contains: 1) EXIT 4 [entity_006], 2) Cross Bronx Expwy [entity_007], 3) Throgs Neck Br [entity_008], 4) G Washington Br [entity_009], and 5) 1/4 MILE [entity_011]. This totals 5 distinct text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the overhead signs, the yellow warning sign, and the speed limit sign are encountered?",
+        "answer": "1st: overhead signs, 2nd: yellow warning sign, 3rd: SPEED [entity_013] LIMIT [entity_014]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text on the left concrete barrier indicates a speed restriction near the end of the clip?",
+        "answer": "SPEED [entity_013] LIMIT [entity_014]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of road environment is suggested by the presence of multiple overhead guide signs, exit indicators, and highway numbers?",
+        "answer": "Highway",
+        "reasoning": "The presence of overhead green guide signs, exit numbers, and highway designations indicates a highway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific bridge names visible on the overhead signs suggest this clip is filmed in the New York City region?",
+        "answer": "Throgs Neck Br [entity_008], G Washington Br [entity_009], RFK Br [entity_005]",
+        "reasoning": "Throgs Neck Bridge, George Washington Bridge, and RFK Bridge are major bridges in the New York City area."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During what specific time range do the overhead green guide signs remain continuously visible in the clip?",
+        "answer": "1.833 seconds to 3.967 seconds",
+        "reasoning": "The temporal description states that the vehicle approaches and travels beneath the overhead signs from 1.833 seconds to 3.967 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "1000",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "As the vehicle drives forward from the wrapping business at 0.0s, what is the spatial position of the HOME TILE CENTER SHOWROOM relative to the LETTERS & WRAPS SIGN?",
+        "answer": "To the right of LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances containing numbers, such as phone numbers or license plates, are mentioned in the clip?",
+        "answer": "3",
+        "reasoning": "There are two phone numbers, 784-9545 [entity_005] and 433-2677 [entity_006], and one license plate, 94075-JE [entity_040]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the vehicle passes the LETTERS & WRAPS SIGN and the HOME TILE CENTER?",
+        "answer": "1st: LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001], 2nd: HOME [entity_011] TILE [entity_009] CENTER [entity_008]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Does any visible text in the clip indicate a driving constraint or warning, and where is it located?",
+        "answer": "DO NOT BLOCK [entity_019] on the ACTIVE [entity_018] DRIVE WAY [entity_017]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the density and type of storefronts and commercial vehicles, what kind of driving environment does this clip depict?",
+        "answer": "Commercial strip",
+        "reasoning": "The presence of a vehicle wrapping shop, tile showroom, and commercial vehicles indicates a commercial area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language or script is the visible text on the storefronts and vehicles written in?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range is the LETTERS & WRAPS SIGN visible before transitioning to the HOME TILE CENTER?",
+        "answer": "0.0s to 1.133s",
+        "reasoning": "The LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001] is passed at 0.0s and transitions at 1.133s."
+      }
+    ]
+  }
+]

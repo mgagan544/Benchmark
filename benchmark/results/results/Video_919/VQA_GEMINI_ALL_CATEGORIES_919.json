@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "919",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is located across the street relative to the overhead crossing sign displaying AHE?",
+        "answer": "CASH 4 [entity_003] to the left of AHE [entity_002]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?",
+        "answer": "7",
+        "reasoning": "The bus features BUS [entity_004], 107 [entity_005], 718-759-6969 [entity_006], INC. [entity_007], TRANSPORTATION [entity_008], ARJ [entity_009], and STOP [entity_010]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?",
+        "answer": "1st: SCHOOL [entity_001], 2nd: AHE [entity_002], 3rd: CASH 4 [entity_003]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?",
+        "answer": "PARKING [entity_011]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?",
+        "answer": "School zone",
+        "reasoning": "The SCHOOL [entity_001] sign, AHE [entity_002] crossing sign, and school bus suggest a school zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What city is suggested by the contact number displayed on the side of the school bus?",
+        "answer": "New York City",
+        "reasoning": "The area code 718 in 718-759-6969 [entity_006] is associated with New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range does the regulatory parking sign remain continuously visible in the clip?",
+        "answer": "6.400 seconds to 7.367 seconds",
+        "reasoning": "The temporal description states PARKING [entity_011] is visible from 6.400 seconds to 7.367 seconds."
+      }
+    ]
+  }
+]

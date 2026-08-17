@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "odwalla",
+      "inference_time_sec": 1.036,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct text instances visible in the clip: 'Arrowhead direct', 'odwalla', and '1-800-647-7777'.",
+      "inference_time_sec": 2.203,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "The text instances TAXI, Odwalla, and ARROWHEAD are encountered in that order as the vehicle moves forward. The first instance is TAXI, which is encountered at the beginning of the video. The second instance is Odwalla, which appears later in the video. The third instance is ARROWHEAD, which is encountered towards the end of the video.",
+      "inference_time_sec": 3.386,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs indicate height clearance limits for vehicles entering the covered underpass. Specifically, there are signs that read '12 FT 3 IN' and '12 FT 6 IN', which suggest that the underpass is designed to accommodate vehicles up to 12 feet 3 inches and 12 feet 6 inches in height, respectively. These signs are crucial for ensuring the safety and orderly movement of vehicles within the underpass, preventing accidents and maintaining the integrity of the transportation infrastructure.",
+      "inference_time_sec": 4.357,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The presence of various text and landmarks in the clip suggests that the driving environment is a well-organized and structured one, likely within a city or urban area. The text and landmarks provide essential information for navigation and direction, indicating that the driver is following a clear route through the city. The mix of text and landmarks also suggests that the area is well-developed, with clear signage and infrastructure to support vehicular movement.",
+      "inference_time_sec": 3.687,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The measurement system and phone format indicated by the visible text are the US Customary System and the US phone number, which is '1-800-400-4000'.",
+      "inference_time_sec": 2.243,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "The TAXI sign first becomes visible in the segregated transit lane at the beginning of the video, just after the camera passes the white car.",
+      "inference_time_sec": 1.75,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "930",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?",
+        "answer": "HONG [entity_005] KONG [entity_006]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?",
+        "answer": "3",
+        "reasoning": "Between 3.9 and 5.6 seconds, the vehicle passes DELI GROCERY [entity_007], The Best [entity_008], and Best [entity_009], totaling 3 distinct instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What sign text is encountered immediately after the vehicle passes the sign for The Best?",
+        "answer": "Best [entity_009]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?",
+        "answer": "None"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?",
+        "answer": "Commercial district",
+        "reasoning": "The presence of multiple storefronts like RESTAURANT [entity_001], The [entity_004] Venue [entity_002] PARTY HALL [entity_003], DELI GROCERY [entity_007], and FINE WINES [entity_013] LIQUOR [entity_011] LIQUORS [entity_012] STORE [entity_010] indicates a commercial district."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for all the storefront signs encountered by the vehicle?",
+        "answer": "English",
+        "reasoning": "All visible storefront signs such as RESTAURANT [entity_001], The [entity_004] Venue [entity_002] PARTY HALL [entity_003], and DELI GROCERY [entity_007] are in English."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During what time range is the sign for The Best continuously visible to the camera vehicle?",
+        "answer": "3.9 to 4.8 seconds",
+        "reasoning": "According to the temporal description, the vehicle passes the sign for The Best [entity_008] between 3.9 and 4.8 seconds."
+      }
+    ]
+  }
+]

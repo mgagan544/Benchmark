@@ -1,0 +1,70 @@
+{
+  "video_id": 931,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/931.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
+      "ground_truth": "S E [entity_005]",
+      "prediction": "The text between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck is 'milea parts delivery'.",
+      "inference_time_sec": 1.766,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct vehicle-mounted text elements visible on the semi-truck on the right side of the host vehicle. The first is 'milea' and 'PARTS DELIVERY' in large white letters, the second is 'www.milealagroup.com' in smaller white letters, and the third is 'TULLY' in smaller white letters.",
+      "inference_time_sec": 3.288,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
+      "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
+      "prediction": "The text elements FUEL CO, milea, and HINO appear in the order they appear as the host vehicle moves forward. The first text element, FUEL CO, is visible on the right side of the host vehicle, followed by milea, and then HINO, which is also visible on the right side of the host vehicle.",
+      "inference_time_sec": 3.174,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "None",
+      "prediction": "Yes, the visible text on the white truck in the right lane indicates that it is a 'milea parts delivery' service, which suggests that there may be a hazard or a warning related to the delivery service. Additionally, the presence of a 'www.milealagroup.com' website on the truck's side further implies that there might be additional information or services related to the delivery service.",
+      "inference_time_sec": 3.606,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The host vehicle is traveling on a multi-lane highway, which is a type of road designed for high traffic volumes and is typically found in urban or suburban areas. The presence of multiple commercial trucks suggests that the road is used for commercial traffic, possibly indicating a well-developed road network in the area.",
+      "inference_time_sec": 2.915,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
+      "ground_truth": "Elizabeth N.J. [entity_003]",
+      "prediction": "The text 'milea' and 'parts delivery' on the semi-truck suggest that the vehicle is associated with a city in New Jersey, as these are likely the names of the companies or services the truck is part of.",
+      "inference_time_sec": 2.492,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
+      "ground_truth": "1.2s to 1.3s",
+      "prediction": "The text elements FUEL CO and S J first become visible on the semi-truck during the transition from the first to the second frame, where the truck is moving past the bridge.",
+      "inference_time_sec": 2.094,
+      "error": ""
+    }
+  ]
+}

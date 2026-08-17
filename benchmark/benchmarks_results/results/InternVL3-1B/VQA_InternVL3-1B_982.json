@@ -1,0 +1,70 @@
+{
+  "video_id": 982,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/982.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of Las Vegas relative to WEST on the overhead gantry?",
+      "ground_truth": "to the right of WEST [entity_005]",
+      "prediction": "The yellow school bus is on the left side of the road, while the white car is on the right side. The road is elevated, so the bus is above the road, and the car is below the road.",
+      "inference_time_sec": 2.349,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the green roadside sign on the right side of the road?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances located on the green roadside sign on the right side of the road.",
+      "inference_time_sec": 1.557,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances NSKI, STOPS AT, and Rental are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Rental [entity_009], 2nd: NSKI [entity_014], 3rd: STOPS AT [entity_015]",
+      "prediction": "The order in which the text instances NSKI, STOPS AT, and Rental appear as the vehicle moves forward is: NSKI is first encountered, followed by STOPS AT, and then Rental.",
+      "inference_time_sec": 2.224,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional text on the green roadside sign indicates where a driver should turn to return a rental car?",
+      "ground_truth": "NEXT RIGHT [entity_010]",
+      "prediction": "The green roadside sign on the highway indicates where a driver should turn to return a rental car. It reads 'Las Vegas Rental Car Return SEAT ONLY' with a percentage symbol, suggesting that the driver should only return a rental car if it is a Seat model. This sign is part of the highway infrastructure designed to assist drivers in navigating the rental car return process efficiently.",
+      "inference_time_sec": 3.357,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the overhead route signs and roadside signs, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the video is a typical highway setting with multiple lanes, clear skies, and a mix of urban and natural elements. The presence of a school bus and a white car indicates a well-maintained road infrastructure, while the overhead route signs and roadside signs provide essential information for drivers. The overall scene suggests a well-organized and safe driving environment.",
+      "inference_time_sec": 3.442,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city name visible on the overhead gantry suggests the geographical region of the clip?",
+      "ground_truth": "Las Vegas [entity_006]",
+      "prediction": "The city name 'Las Vegas' visible on the overhead gantry suggests that the clip is set in the city of Las Vegas, Nevada. This is inferred from the context of the highway and the presence of the Las Vegas sign, which is a well-known landmark in the city.",
+      "inference_time_sec": 2.779,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text NSKI first become visible on the back of the bus?",
+      "ground_truth": "4.467 seconds",
+      "prediction": "The text NSKI first becomes visible on the back of the bus at the beginning of the video, just before the bus starts moving.",
+      "inference_time_sec": 1.839,
+      "error": ""
+    }
+  ]
+}

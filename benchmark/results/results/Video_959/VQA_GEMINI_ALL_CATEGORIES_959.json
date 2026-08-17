@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "959",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is visible on the green utility post located to the left of the OUTFRONT media branding?",
+        "answer": "West Side [entity_006] way [entity_007] to the left of OUTFRONT [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are visible on the vehicles in the active roadway lanes?",
+        "answer": "6",
+        "reasoning": "There are 4 text instances on the FDNY SUV (FDNY, 101, 25DD, LOW) and 2 on the garbage truck (DON'T, LITTER), totaling 6."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order does the vehicle encounter the text on the construction fence, the FDNY SUV, and the garbage truck?",
+        "answer": "1st: GATE [entity_008], 2nd: FDNY [entity_012], 3rd: DON'T [entity_013] LITTER [entity_014]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What warning text is displayed on the rear right side of the silver garbage truck?",
+        "answer": "DON'T [entity_013] LITTER [entity_014]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment is suggested by the presence of a construction fence, municipal vehicles, and a large billboard?",
+        "answer": "Urban city street",
+        "reasoning": "The combination of a billboard, construction gate, street sign, and municipal vehicles indicates an urban environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which text on the emergency SUV suggests the clip is filmed in New York City?",
+        "answer": "FDNY [entity_012]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During which time range is the billboard text simple ingredients not a lot of sugar visible?",
+        "answer": "0.0s to 1.3s",
+        "reasoning": "The temporal description states that the billboard text is visible from 0.0s to 1.3s."
+      }
+    ]
+  }
+]

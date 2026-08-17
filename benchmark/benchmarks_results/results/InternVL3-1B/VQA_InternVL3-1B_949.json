@@ -1,0 +1,70 @@
+{
+  "video_id": 949,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/949.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located directly to the right of the building section displaying FAITH at 301-303?",
+      "ground_truth": "BBF PRINTING [entity_014] to the right of FAITH [entity_012]",
+      "prediction": "AUTO CO",
+      "inference_time_sec": 0.989,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned in the text for parked vehicles?",
+      "ground_truth": "2",
+      "prediction": "Two",
+      "inference_time_sec": 0.953,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle passes the FAITH storefront, the BBF PRINTING storefront, and the DOLLAR TREE plaza?",
+      "ground_truth": "1st: FAITH [entity_012], 2nd: BBF PRINTING [entity_014], 3rd: DOLLAR [entity_032] TREE [entity_033]",
+      "prediction": "The vehicle passes the FAITH storefront first, then the BBF PRINTING storefront, and finally the DOLLAR TREE plaza.",
+      "inference_time_sec": 1.903,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional text is displayed on the traffic post located on the sidewalk corner near the pedestrian?",
+      "ground_truth": "PED [entity_029] SIGNAL [entity_030] USE [entity_031]",
+      "prediction": "The traffic post displays the text 'NO TURN ON RED' in white letters on a red background, indicating that drivers are not allowed to make a turn on the red light.",
+      "inference_time_sec": 2.077,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, promotional signs, and retail plaza visible in this clip?",
+      "ground_truth": "commercial district",
+      "prediction": "The storefronts, promotional signs, and retail plaza visible in the clip suggest a commercial area with a mix of retail and possibly service businesses. The presence of these establishments indicates a bustling urban environment where various businesses cater to the needs of the local population. The storefronts, promotional signs, and retail plaza collectively contribute to the dynamic and diverse driving environment depicted in the video.",
+      "inference_time_sec": 3.397,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the visible storefront signs and promotional text in this clip?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 1.005,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range does the DOLLAR TREE retail plaza and its entrance signs remain visible in the clip?",
+      "ground_truth": "4.3 seconds to 6.9 seconds",
+      "prediction": "The DOLLAR TREE retail plaza and its entrance signs remain visible in the clip during the daytime, specifically from the time the car is stopped at the intersection to the time it is driving down the street.",
+      "inference_time_sec": 2.422,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 973,
+  "model": "Qwen2.5-VL-3B",
+  "video": "/home2/gagandeep/benchmark/videos/900/973.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the Harrison sign?",
+      "ground_truth": "ANY [entity_004] and TIME [entity_005] below Harrison [entity_003]",
+      "prediction": "The text \"PUBLIC PARKING\" is located directly below the Harrison sign.",
+      "inference_time_sec": 4.455,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are passed by the vehicle on the right side of the road between 0.0s and 2.0s?",
+      "ground_truth": "5",
+      "prediction": "There is one distinct text instance passed by the vehicle on the right side of the road between 0.0s and 2.0s, which is \"PUBLIC PARKING\".",
+      "inference_time_sec": 5.626,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the parking signs and advertisements visible between 3.5s and 6.4s?",
+      "ground_truth": "1st: PUBLIC [entity_006] PARKING [entity_007], 2nd: eaze [entity_008], 3rd: FLAT RATE [entity_009], 4th: WEEK [entity_010]",
+      "prediction": "The parking sign is encountered first, followed by the advertisement.",
+      "inference_time_sec": 4.201,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed near the end of the clip to alert drivers about the bridge?",
+      "ground_truth": "CAUTION [entity_012] VERTOCAL [entity_013] BRIDGE [entity_014] VERTICAL [entity_015] CLEARANCE [entity_016]",
+      "prediction": "The warning text displayed near the end of the clip is \"WARNING: BRIDGE OVERHEAD.\"",
+      "inference_time_sec": 4.774,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of parking rates, advertisements, and a highway overpass?",
+      "ground_truth": "urban commercial zone under highway overpass",
+      "prediction": "The presence of parking rates, advertisements, and a highway overpass suggests an urban or suburban setting with significant traffic and commercial activity. The parking rates indicate that this area is likely a busy part of town where parking is in high demand, possibly near commercial districts or shopping centers. The advertisements suggest commercial establishments, while the highway overpass indicates a major road or highway passing through the area, contributing to the bustling nature of the environment.",
+      "inference_time_sec": 10.402,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the legible signs in this scene?",
+      "ground_truth": "English",
+      "prediction": "The language used for all the legible signs in this scene is English.",
+      "inference_time_sec": 4.467,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the advertisement for eaze visible in the clip?",
+      "ground_truth": "3.5s to 4.067s",
+      "prediction": "The advertisement for eaze is visible from 0:00 to 0:12 seconds in the video clip.",
+      "inference_time_sec": 4.803,
+      "error": ""
+    }
+  ]
+}

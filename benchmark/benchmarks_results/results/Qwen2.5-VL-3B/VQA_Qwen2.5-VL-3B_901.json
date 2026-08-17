@@ -1,0 +1,70 @@
+{
+  "video_id": 901,
+  "model": "Qwen2.5-VL-3B",
+  "video": "/home2/gagandeep/benchmark/videos/900/901.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which readable text instances appear between the ONE WAY sign and the CARS CASH sign on the commercial facade?",
+      "ground_truth": "BREAKFAST [entity_004], FREE DELIV [entity_002], and 718-392-6 [entity_003]",
+      "prediction": "The readable text instances between the \"ONE WAY\" sign and the \"CARS CASH\" sign on the commercial facade are:\n\n- \"DRIVERS WANTED\"\n- \"718 392-6707\"\n- \"718 392-6707\" (repeated)",
+      "inference_time_sec": 7.904,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances representing phone numbers or parts of phone numbers are visible on the commercial facade and the brick building?",
+      "ground_truth": "7",
+      "prediction": "",
+      "inference_time_sec": 1.475,
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 812.00 MiB. GPU 0 has a total capacity of 10.57 GiB of which 584.06 MiB is free. Including non-PyTorch memory, this process has 10.00 GiB memory in use. Of the allocated memory 9.09 GiB is allocated by PyTorch, and 738.90 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the address markers 35-11 and 42-11 are encountered as the vehicle drives forward?",
+      "ground_truth": "1st: 35-11 [entity_017], 2nd: 42-11 [entity_018]",
+      "prediction": "",
+      "inference_time_sec": 1.398,
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 814.00 MiB. GPU 0 has a total capacity of 10.57 GiB of which 582.06 MiB is free. Including non-PyTorch memory, this process has 10.00 GiB memory in use. Of the allocated memory 9.09 GiB is allocated by PyTorch, and 737.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the road surface and adjacent sign near the end of the clip?",
+      "ground_truth": "SLOW [entity_020] and STOP [entity_019]",
+      "prediction": "",
+      "inference_time_sec": 1.319,
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 810.00 MiB. GPU 0 has a total capacity of 10.57 GiB of which 582.06 MiB is free. Including non-PyTorch memory, this process has 10.00 GiB memory in use. Of the allocated memory 9.08 GiB is allocated by PyTorch, and 742.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.0s and 2.10s suggest about the type of area?",
+      "ground_truth": "Commercial district",
+      "prediction": "",
+      "inference_time_sec": 1.309,
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 814.00 MiB. GPU 0 has a total capacity of 10.57 GiB of which 582.06 MiB is free. Including non-PyTorch memory, this process has 10.00 GiB memory in use. Of the allocated memory 9.09 GiB is allocated by PyTorch, and 739.35 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which regional telephone area codes visible in the clip suggest the video was filmed in New York City?",
+      "ground_truth": "718 [entity_015] and (917) [entity_012]",
+      "prediction": "",
+      "inference_time_sec": 1.334,
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 810.00 MiB. GPU 0 has a total capacity of 10.57 GiB of which 582.06 MiB is free. Including non-PyTorch memory, this process has 10.00 GiB memory in use. Of the allocated memory 9.08 GiB is allocated by PyTorch, and 743.50 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the license plate of the lead vehicle visible in the clip?",
+      "ground_truth": "0.0s to 1.37s",
+      "prediction": "",
+      "inference_time_sec": 1.337,
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 808.00 MiB. GPU 0 has a total capacity of 10.57 GiB of which 582.06 MiB is free. Including non-PyTorch memory, this process has 10.00 GiB memory in use. Of the allocated memory 9.08 GiB is allocated by PyTorch, and 744.54 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    }
+  ]
+}

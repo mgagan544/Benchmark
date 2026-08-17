@@ -1,0 +1,70 @@
+{
+  "video_id": 978,
+  "model": "Qwen2.5-VL-3B",
+  "video": "/home2/gagandeep/benchmark/videos/900/978.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory road marking near the commercial building relative to the pavement marking on the multi-lane avenue?",
+      "ground_truth": "To the right of ONLY [entity_001] across the access road",
+      "prediction": "The regulatory road marking near the commercial building is located on the left side of the image, while the pavement marking on the multi-lane avenue is located on the right side of the image.",
+      "inference_time_sec": 5.886,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct road markings containing painted text are mentioned in the scene description?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct road markings containing painted text: \"ONLY\" and \"ONLY.\"",
+      "inference_time_sec": 4.156,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the distinct road markings are encountered by the camera vehicle?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: STOP [entity_002]",
+      "prediction": "The camera vehicle encounters the \"ONLY\" markings first, followed by the \"ONE WAY\" markings.",
+      "inference_time_sec": 4.433,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving action is implied by the regulatory road marking located near the modern commercial building?",
+      "ground_truth": "Stop, as indicated by STOP [entity_002]",
+      "prediction": "The regulatory road marking \"ONLY\" near the modern commercial building implies that vehicles in this lane are restricted to a specific type of traffic, such as buses or taxis, and are not allowed to turn right onto the street. This marking helps to guide drivers and ensure that only authorized vehicles use the designated lane, promoting orderly traffic flow and safety.",
+      "inference_time_sec": 7.663,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential high-rises, commercial buildings, and multi-lane avenues suggest about the driving environment?",
+      "ground_truth": "Urban commercial and residential district",
+      "prediction": "The mix of residential high-rises, commercial buildings, and multi-lane avenues suggests that this is an urban or suburban area with a well-developed infrastructure. The presence of multiple lanes indicates a busy road, likely used by both local residents and commuters. The residential high-rises imply a densely populated area, while the commercial buildings suggest a mix of retail and office spaces, contributing to a vibrant business district. This type of environment typically requires careful navigation due to the higher volume of traffic and the need to manage both personal and commercial vehicles efficiently.",
+      "inference_time_sec": 10.423,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is used for the road markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The road markings in this scene use English, as indicated by the words \"ONLY\" and \"LEFT TURN ONLY.\"",
+      "inference_time_sec": 4.554,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the first pavement marking driven over, and at what timestamp is the regulatory road marking passed?",
+      "ground_truth": "ONLY [entity_001] at 0.1 seconds, STOP [entity_002] around 5.7 seconds",
+      "prediction": "The first pavement marking is driven over at 15:00, and the regulatory road marking is passed at 15:05.",
+      "inference_time_sec": 5.076,
+      "error": ""
+    }
+  ]
+}

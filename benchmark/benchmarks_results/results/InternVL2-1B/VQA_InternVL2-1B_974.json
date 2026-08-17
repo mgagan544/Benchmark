@@ -1,0 +1,70 @@
+{
+  "video_id": 974,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/974.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark is located to the left of the yellow directional sign pointing to Terminal C?",
+      "ground_truth": "Hilton [entity_003] to the left of Terminal [entity_004] C",
+      "prediction": "The landmark located to the left of the yellow directional sign pointing to Terminal C is the New York City Subway station, which is identifiable by its distinctive red and white color scheme and the iconic yellow sign.",
+      "inference_time_sec": 2.152,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct destinations are listed to the right of the Food and Gas signs?",
+      "ground_truth": "4",
+      "prediction": "To the right of the Food and Gas signs, there are two distinct destinations listed: \"McConnell St\" and \"Exit 10.\"",
+      "inference_time_sec": 1.76,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the Hilton hotel, the Terminal C sign, and the Clellan street exit sign are encountered by the vehicle?",
+      "ground_truth": "1st: Hilton [entity_003], 2nd: Terminal [entity_004] C, 3rd: Clellan [entity_007]",
+      "prediction": "The order in which the Hilton hotel, the Terminal C sign, and the Clellan street exit sign are encountered by the vehicle is as follows: the car is first seen approaching the Hilton hotel, then it moves towards the Terminal C sign, and finally, it exits the highway and heads towards the Clellan street exit sign.",
+      "inference_time_sec": 3.02,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instruction is given to drivers on the overhead green gantry signs directing to Newark Airport?",
+      "ground_truth": "USE BOTH LANES [entity_011]",
+      "prediction": "The overhead green gantry signs indicate that drivers are instructed to take the Newark Airport Exit.",
+      "inference_time_sec": 1.443,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by signs for airport terminals, parking, and rental car returns?",
+      "ground_truth": "Airport access highway",
+      "prediction": "The driving environment suggested by signs for airport terminals, parking, and rental car returns indicates a commercial and possibly urban setting. The presence of multiple signs for different services and destinations implies a high volume of traffic and a need for clear navigation. The signs are designed to guide drivers to various points of interest, such as the airport, parking, and rental car returns, which are common in busy urban areas. The signs are also likely to be updated regularly to reflect changes in traffic patterns and road conditions, indicating a well-maintained and organized transportation infrastructure.",
+      "inference_time_sec": 4.411,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific airport is indicated by the overhead green directional signs?",
+      "ground_truth": "Newark Airport [entity_012]",
+      "prediction": "The specific airport indicated by the overhead green directional signs is \"Mc Allen International Airport.\"",
+      "inference_time_sec": 1.469,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "Between what timestamps is the yellow directional sign for Terminal C visible to the driver?",
+      "ground_truth": "2.3 seconds to 3.433 seconds",
+      "prediction": "The yellow directional sign for Terminal C is visible to the driver at approximately 1:00 and 2:00 minutes.",
+      "inference_time_sec": 1.992,
+      "error": ""
+    }
+  ]
+}

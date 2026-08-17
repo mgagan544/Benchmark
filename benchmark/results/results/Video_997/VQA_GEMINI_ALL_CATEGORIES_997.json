@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "997",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+        "answer": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+        "answer": "1",
+        "reasoning": "Only signboard 9999 [entity_001] is mentioned on the right side of the road in the description."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+        "answer": "A distant gas station"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+        "answer": "None is present"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+        "answer": "Suburban commercial thoroughfare",
+        "reasoning": "The combination of a multi-lane road, a gas station, and a signboard indicates a suburban commercial thoroughfare."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What script or numbering system is used for the text on the signboard on the right?",
+        "answer": "Arabic numerals"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+        "answer": "First visible at 0.0 seconds, passed by 2.533 seconds",
+        "reasoning": "The temporal description states the vehicle passes signboard 9999 [entity_001] at 0.0 seconds, and by 2.533 seconds, the road curves sharply as the vehicle continues past other elements."
+      }
+    ]
+  }
+]

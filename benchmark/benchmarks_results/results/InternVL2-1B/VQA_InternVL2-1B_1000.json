@@ -1,0 +1,70 @@
+{
+  "video_id": 1000,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/1000.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle drives forward from the wrapping business at 0.0s, what is the spatial position of the HOME TILE CENTER SHOWROOM relative to the LETTERS & WRAPS SIGN?",
+      "ground_truth": "To the right of LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001]",
+      "prediction": "The HOME TILE CENTER SHOWROOM is located to the right of the lettering and wrapping sign, which is situated to the left of the white van.",
+      "inference_time_sec": 1.902,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers, such as phone numbers or license plates, are mentioned in the clip?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct instances of text containing numbers, such as the phone number \"416-555-1234\" and the license plate \"JH 1234.\"",
+      "inference_time_sec": 2.213,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle passes the LETTERS & WRAPS SIGN and the HOME TILE CENTER?",
+      "ground_truth": "1st: LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001], 2nd: HOME [entity_011] TILE [entity_009] CENTER [entity_008]",
+      "prediction": "The vehicle passes the LETTERS & WRAPS sign first, then the HOME TILE CENTER.",
+      "inference_time_sec": 1.486,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving constraint or warning, and where is it located?",
+      "ground_truth": "DO NOT BLOCK [entity_019] on the ACTIVE [entity_018] DRIVE WAY [entity_017]",
+      "prediction": "Yes, there is a visible text in the clip that reads \"NO TRUCKS\" located on a sign on the right side of the road. This text is located on a sign that is part of the road's infrastructure, indicating a restriction or warning for drivers to avoid driving trucks.",
+      "inference_time_sec": 2.744,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefronts and commercial vehicles, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial strip",
+      "prediction": "The driving environment depicted in the clip shows a busy urban street with a mix of commercial and residential vehicles. The presence of a variety of storefronts, including a \"HOME CENTER\" and a \"VAN WASHING,\" suggests a commercial area with a mix of retail and service businesses. The vehicles, including cars and vans, are parked and moving, indicating that the street is used for both personal and commercial traffic. The traffic lights and the presence of construction barriers suggest that the area is undergoing development or maintenance, which is common in urban settings. Overall, the driving environment is one of active commercial activity with a mix of personal and commercial",
+      "inference_time_sec": 6.296,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the storefronts and vehicles written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the storefronts and vehicles is written in English. The storefronts have signs with the words \"HOME CENTER\" and \"LETTERS & WRAPS,\" and the vehicles have license plates that are not clearly readable.",
+      "inference_time_sec": 2.407,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the LETTERS & WRAPS SIGN visible before transitioning to the HOME TILE CENTER?",
+      "ground_truth": "0.0s to 1.133s",
+      "prediction": "The LETTERS & WRAPS SIGN is visible in the first part of the video, before transitioning to the HOME TILE CENTER. It is located on the left side of the road, near the intersection, and is clearly visible against the background of the other vehicles and buildings.",
+      "inference_time_sec": 2.651,
+      "error": ""
+    }
+  ]
+}

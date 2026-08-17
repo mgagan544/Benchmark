@@ -1,0 +1,70 @@
+{
+  "video_id": 951,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/951.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the storefront extension directly to the right of the 4CARS decals?",
+      "ground_truth": "VILLAGE [entity_009] to the right of 4CARS [entity_006] decals",
+      "prediction": "The storefront extension directly to the right of the 4CARS decals displays the text \"EAT\" in large, bold letters.",
+      "inference_time_sec": 1.751,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 2.2s and 2.9s?",
+      "ground_truth": "6",
+      "prediction": "Between 2.2s and 2.9s, the vehicle encounters the following text instances: \"FREE,\" \"STOP,\" \"ON,\" \"ROAD,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP,\" \"STOP",
+      "inference_time_sec": 5.014,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three text signs encountered on the right side of the street at the start of the clip?",
+      "ground_truth": "1st: boost [entity_001], 2nd: Switch Now [entity_002], 3rd: FREE PHONE [entity_003]",
+      "prediction": "The first text sign on the right side of the street reads \"Burger King,\" the second sign reads \"Pizza Hut,\" and the third sign reads \"Pizza Hut.\"",
+      "inference_time_sec": 1.996,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional instruction is displayed on a sign near the entrance of the gas station driveway?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_020]",
+      "prediction": "The sign near the entrance of the gas station driveway displays a directional instruction that reads \"EXIT ONLY.\"",
+      "inference_time_sec": 1.496,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, markets, and a gas station, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The driving environment depicted in the video is one of a bustling urban setting, likely a commercial area. The presence of multiple storefronts, markets, and a gas station suggests a vibrant commercial district where businesses are closely packed together. The density of signs and the variety of storefronts indicate a place where people might frequent for shopping, dining, or other commercial activities. The overall atmosphere is one of activity and commerce, with a focus on accessibility and convenience for the drivers.",
+      "inference_time_sec": 3.842,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible phone number area code suggests the driving location is in New York City?",
+      "ground_truth": "(917) [entity_008]",
+      "prediction": "The visible phone number area code \"718\" suggests that the driving location is in New York City. This area code is commonly used in New York City and is associated with the city's phone network.",
+      "inference_time_sec": 2.273,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "On how many distinct storefronts does the text VILLAGE appear in the clip?",
+      "ground_truth": "2",
+      "prediction": "The text VILLAGE appears in the clip in two distinct storefronts.",
+      "inference_time_sec": 1.333,
+      "error": ""
+    }
+  ]
+}

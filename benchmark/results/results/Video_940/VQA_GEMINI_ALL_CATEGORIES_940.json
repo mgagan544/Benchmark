@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "940",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
+        "answer": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
+        "answer": "6",
+        "reasoning": "The storefront signs and banners on the left side include FALLAS [entity_004], School Uniforms [entity_005], SUPPLY [entity_007], ENTIRE STORE [entity_008], OFF [entity_009], and ALL [entity_010], totaling 6."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
+        "answer": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
+        "answer": "Stop"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
+        "answer": "Commercial strip mall",
+        "reasoning": "The presence of multiple storefronts like MODELL'S and FALLAS, along with a parking area, indicates a commercial strip mall."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
+        "answer": "5.233s to 5.6s",
+        "reasoning": "The temporal description states that the camera vehicle approaches the storefront windows of FALLAS [entity_004] showing promotional text between 5.233s and 5.6s."
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 979,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/979.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the DUNKIN DONUTS signboard located relative to the Speedway gas station sign?",
+      "ground_truth": "to the right of Speedway [entity_002] sign",
+      "prediction": "The DUNKIN DONUTS signboard is located to the right of the Speedway gas station sign.",
+      "inference_time_sec": 1.567,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct price numbers are displayed on the Speedway gas station sign?",
+      "ground_truth": "4",
+      "prediction": "The video shows three distinct price numbers displayed on the Speedway gas station sign.",
+      "inference_time_sec": 1.327,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the speed limit sign, the PENSKE truck, and the CAR WASH sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: speed limit 25, 2nd: PENSKE [entity_010], 3rd: CAR [entity_011] WASH [entity_012]",
+      "prediction": "The order in which the speed limit sign, the PENSKE truck, and the CAR WASH sign are encountered as the vehicle moves forward is as follows: the speed limit sign is first seen on the left side of the road, the PENSKE truck is seen on the right side of the road, and the CAR WASH sign is seen on the right side of the road as well.",
+      "inference_time_sec": 3.414,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed near the road ramp?",
+      "ground_truth": "speed limit 25",
+      "prediction": "The regulatory text that constrains the vehicle's speed near the road ramp is not visible in the video. However, it is common for road signs to include such text to ensure safety and to prevent vehicles from exceeding the speed limit.",
+      "inference_time_sec": 2.374,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of gas station, donut shop, and car wash signs suggest?",
+      "ground_truth": "commercial strip",
+      "prediction": "The mix of gas station, donut shop, and car wash signs suggests a typical urban driving environment where convenience and convenience are valued. Gas stations are often found in busy city centers, providing essential services to commuters and travelers. The presence of a donut shop indicates a local business catering to the convenience of the local population, offering quick and easy food options. The car wash sign implies that there are commercial establishments that offer services related to vehicle maintenance and cleaning, which is common in urban areas where there is a high demand for such services. This mix of services points to a bustling, possibly commercial area where convenience and accessibility are prioritized.",
+      "inference_time_sec": 5.012,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the combination of 39 St, yellow taxicabs, and US commercial brands?",
+      "ground_truth": "New York City",
+      "prediction": "The combination of 39 St, yellow taxicabs, and US commercial brands suggests that the city is New York City. The presence of yellow taxicabs is a distinctive feature of New York City's taxi service, and the combination of the street number and the US commercial brands is consistent with the New York City taxi fleet.",
+      "inference_time_sec": 3.067,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the parked PENSKE truck first become visible in the clip?",
+      "ground_truth": "2.433 seconds",
+      "prediction": "The parked PENSKE truck first becomes visible in the clip at the beginning of the video.",
+      "inference_time_sec": 1.484,
+      "error": ""
+    }
+  ]
+}

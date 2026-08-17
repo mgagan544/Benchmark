@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "928",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What sign is located directly to the right of the guide sign indicating Bron EXPWY?",
+        "answer": "178 [entity_007] and NORTH [entity_008] to the right of Bron [entity_004] EXPWY [entity_005]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances containing numbers are visible in this clip?",
+        "answer": "4",
+        "reasoning": "The text instances containing numbers are the roadside marker 3030 [entity_001], the clearance sign CLEARANCE 13-6 [entity_006], the exit sign 178 [entity_007], and the license plate T612385C [entity_009]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?",
+        "answer": "1st: 3030 [entity_001], 2nd: SPEED [entity_002] LIMIT [entity_003], 3rd: Bron [entity_004] EXPWY [entity_005]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What warning text is displayed on the overhead structure to indicate a height restriction?",
+        "answer": "CLEARANCE 13-6 [entity_006]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?",
+        "answer": "Highway",
+        "reasoning": "The presence of expressway guide signs, clearance warnings, and exit signs indicates a highway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What region or city is suggested by the guide sign indicating Bron EXPWY?",
+        "answer": "Bronx, New York",
+        "reasoning": "The abbreviation 'Bron EXPWY' refers to the Bronx Expressway located in New York."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the license plate on the vehicle directly ahead become clearly readable?",
+        "answer": "8.7",
+        "reasoning": "The temporal description states that the license plate T612385C [entity_009] becomes clearly readable at timestamp 8.7."
+      }
+    ]
+  }
+]

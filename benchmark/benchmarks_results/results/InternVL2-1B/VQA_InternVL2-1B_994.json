@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located on the right side of the road, near the green directional sign.",
+      "inference_time_sec": 1.451,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are two distinct text entities visible on the signs in this clip.",
+      "inference_time_sec": 1.306,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "The three signs encountered as the vehicle moves forward between 2.5 and 4.0 seconds are the green sign with white lettering, the green sign with white lettering, and the green sign with white lettering.",
+      "inference_time_sec": 2.349,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The text on a sign that indicates a weight restriction for vehicles near the overpass structure is not clearly visible in the video. The camera angle does not allow for a clear view of the sign, and the text is not legible in the provided information.",
+      "inference_time_sec": 2.487,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names and weight limit signs suggests that this is a multi-lane road segment that accommodates both heavy and light traffic. The presence of multiple highway names indicates that this is a major thoroughfare, likely serving as a major route for both local and long-distance travel. The weight limit signs, which are standard for highways, indicate that this road is designed to handle a significant volume of traffic, which is consistent with the heavy traffic observed in the video.",
+      "inference_time_sec": 3.925,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The abbreviations on the green directional sign suggest a city or region in the northeastern United States, possibly New York or New Jersey, given the style of the sign and the presence of a bridge that resembles the Brooklyn Bridge, which is a well-known landmark in New York City.",
+      "inference_time_sec": 2.67,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text \"DELIVERIES ENTRANCE 9\" first becomes visible in the clip at approximately 1.00 seconds into the video.",
+      "inference_time_sec": 1.862,
+      "error": ""
+    }
+  ]
+}

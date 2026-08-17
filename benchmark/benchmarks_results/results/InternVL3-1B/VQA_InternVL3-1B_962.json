@@ -1,0 +1,70 @@
+{
+  "video_id": 962,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/962.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located to the right of the ONLY lane marking?",
+      "ground_truth": "LINK-SHUT [entity_010] to the right of ONLY [entity_009]",
+      "prediction": "The text \"ONLY\" is located to the right of the ONLY lane marking.",
+      "inference_time_sec": 1.472,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "Three",
+      "inference_time_sec": 0.958,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the text instances AHEAD, SCHOOL, and Hampton Inv between 3.767s and 4.433s?",
+      "ground_truth": "1st: AHEAD [entity_011], 2nd: SCHOOL [entity_012], 3rd: Hampton Inv [entity_013]",
+      "prediction": "The order of encounter for the text instances AHEAD, SCHOOL, and Hampton Inv between 3.767s and 4.433s is as follows: SCHOOL is encountered at 3.767s, then Hampton Inv is encountered at 4.433s.",
+      "inference_time_sec": 3.059,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text indicating a driving constraint is visible between the Starbucks Coffee storefront and the Diner outlet?",
+      "ground_truth": "ONE WAY [entity_020]",
+      "prediction": "The regulatory text indicating a driving constraint visible between the Starbucks Coffee storefront and the Diner outlet reads 'NO PARKING'. This sign is a common traffic regulation in urban areas to prevent vehicles from parking in designated parking spaces, which can obstruct traffic flow and potentially lead to accidents.",
+      "inference_time_sec": 2.768,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of environment does the high density of storefronts and business signs suggest?",
+      "ground_truth": "commercial district",
+      "prediction": "The environment is likely a commercial district, possibly in a downtown area of a city.",
+      "inference_time_sec": 1.485,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the storefronts and street signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the storefronts and street signs is written in chinese.",
+      "inference_time_sec": 1.347,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the ONLY lane marking visible in the clip?",
+      "ground_truth": "0.6s to 1.333s",
+      "prediction": "The ONLY lane marking is visible in the first and last frames of the clip.",
+      "inference_time_sec": 1.531,
+      "error": ""
+    }
+  ]
+}

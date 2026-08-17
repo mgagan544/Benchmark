@@ -1,0 +1,70 @@
+{
+  "video_id": 963,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/963.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is visible on the orange sign located to the left of the EXIT 3 marker across the lanes?",
+      "ground_truth": "WORK [entity_015] ZONE [entity_016]",
+      "prediction": "The text on the orange sign reads 'P 35'.",
+      "inference_time_sec": 1.359,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the billboard that comes into view around 4.7 seconds?",
+      "ground_truth": "5",
+      "prediction": "Three",
+      "inference_time_sec": 0.833,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs for E 138 St and E 161 St are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: E 138 St [entity_008], 2nd: E 161 St [entity_010]",
+      "prediction": "First, the overhead sign for E 138 St is encountered, followed by the sign for E 161 St.",
+      "inference_time_sec": 1.724,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit constraint is indicated by the regulatory sign passed on the left shoulder at 1.867 seconds?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002] 35",
+      "prediction": "The regulatory sign passed on the left shoulder at 1.867 seconds indicates a speed limit of 35 mph. This sign is part of the traffic control system to regulate the speed of vehicles on the highway, ensuring safety and order on the road.",
+      "inference_time_sec": 2.591,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead signs for E 138 St and E 161 St, what type of driving environment is depicted?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The driving environment depicted is urban, characterized by the presence of multiple lanes of traffic, multiple lanes of driving, and the overhead signs indicating exits for Madison Ave and Macombs Dam Br. This suggests a city highway or major road system with organized traffic flow and multiple directions of travel.",
+      "inference_time_sec": 2.723,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street and bridge names visible on the overhead signs suggest this clip is filmed in New York City?",
+      "ground_truth": "E 138 St [entity_008] and Madison Ave Br [entity_009]",
+      "prediction": "The specific street and bridge names visible on the overhead signs in the video are 'E 138 St Madison Ave B 1 Mile' and 'E 161 St Macombs Dam Br'. These names are indicative of the famous Macombs Dam Bridge, which is a significant landmark in New York City. The presence of these names suggests that the location is likely in the Manhattan area, where the Macombs Dam Bridge is a notable feature. The specific street names and the bridge name are key identifiers of the location within the cityscape captured in the video.",
+      "inference_time_sec": 4.737,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible?",
+      "ground_truth": "Near 7.4 seconds",
+      "prediction": "The timestamp '5' in the video indicates that the signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible around the 5th second mark.",
+      "inference_time_sec": 2.06,
+      "error": ""
+    }
+  ]
+}

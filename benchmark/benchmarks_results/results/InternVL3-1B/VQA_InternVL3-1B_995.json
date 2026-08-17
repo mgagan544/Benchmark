@@ -1,0 +1,70 @@
+{
+  "video_id": 995,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/995.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the 1042 number on the first parked school bus?",
+      "ground_truth": "738-7373 [entity_005] to the right of 1042 [entity_004]",
+      "prediction": "The text 'Lorinda Ed., Ltd.' is visible on the side of the first parked school bus.",
+      "inference_time_sec": 1.661,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the first parked school bus?",
+      "ground_truth": "3",
+      "prediction": "Two distinct text instances containing numbers are visible on the first parked school bus.",
+      "inference_time_sec": 1.407,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text labels Richie, Service, and 4290 are passed by the ego vehicle?",
+      "ground_truth": "1st: 4290 [entity_011], 2nd: Service [entity_012], 3rd: Richie [entity_013]",
+      "prediction": "The order in which the text labels Richie, Service, and 4290 are passed by the ego vehicle is: Richie, Service, 4290.",
+      "inference_time_sec": 2.079,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the first parked school bus indicates a potential driving constraint or warning?",
+      "ground_truth": "STOP [entity_002]",
+      "prediction": "The text 'STOP' on the first parked school bus indicates a potential driving constraint or warning. This suggests that the bus driver may need to stop to ensure safety or to make a turn, which is a common practice in traffic management to prevent accidents and ensure the safety of all road users.",
+      "inference_time_sec": 2.825,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of area does the combination of residential buildings, a public park, and school buses suggest?",
+      "ground_truth": "residential school zone",
+      "prediction": "The combination of residential buildings, a public park, and school buses suggests a suburban or semi-urban area. The presence of residential buildings indicates a neighborhood setting, while the public park and school buses suggest a community with facilities for both residents and students. This combination of elements points towards a well-developed area with amenities for both daily commutes and educational purposes.",
+      "inference_time_sec": 3.289,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific telephone area code visible on the first school bus suggests the vehicle is in New York City?",
+      "ground_truth": "718 [entity_007]",
+      "prediction": "The first school bus in the video has a visible telephone area code '17-4290' on its rear side, which is a specific area code for New York City. This code is a unique identifier for the city's telephone network, allowing for easy identification and communication within the city.",
+      "inference_time_sec": 2.937,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the text Little Linda visible on the first parked school bus?",
+      "ground_truth": "00:02 - 00:04",
+      "prediction": "The text 'Little Linda, Ed., Ltd.' is visible on the first parked school bus in the second segment of the video.",
+      "inference_time_sec": 1.78,
+      "error": ""
+    }
+  ]
+}

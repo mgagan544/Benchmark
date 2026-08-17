@@ -1,0 +1,70 @@
+{
+  "video_id": 906,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/906.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
+      "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
+      "prediction": "The warning text on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922 is \"KEEP BACK.\"",
+      "inference_time_sec": 1.729,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the parked white box truck?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances displayed on the parked white box truck.",
+      "inference_time_sec": 1.264,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
+      "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle is as follows: the ATM sign is on the left side of the road, the address 43-02 37th ST. is on the right side of the road, and the yellow warning sign is on the right side of the road.",
+      "inference_time_sec": 3.661,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
+      "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The warning text posted on the utility pole is not clearly visible in the video. Therefore, it is not possible to provide the exact text from the video.",
+      "inference_time_sec": 1.876,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial and industrial district",
+      "prediction": "The mix of text visible between 3.0 seconds and 7.0 seconds suggests that the driving environment is likely a busy urban area with multiple businesses and services. The presence of a truck with a phone number and a sign for a business indicates that the area is commercial, and the text on the truck could be for advertising or providing contact information for the business. The text on the building in the background, which includes a sign for \"DRIVERS WANTED,\" implies that there is a need for drivers, which is common in urban settings where there is a high demand for transportation services. The text on the truck and the building also",
+      "inference_time_sec": 4.947,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
+      "ground_truth": "L.I.C., N.Y. [entity_016]",
+      "prediction": "The specific text on the brick commercial building's facade that suggests the city or region where this clip was filmed is \"DRIVERS WANTED.\" This text is located on the building's facade, which is a common practice for businesses to advertise their services or products.",
+      "inference_time_sec": 2.586,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
+      "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
+      "prediction": "The ambulance displaying the identifier 592 starts moving forward at the beginning of the video.",
+      "inference_time_sec": 1.431,
+      "error": ""
+    }
+  ]
+}

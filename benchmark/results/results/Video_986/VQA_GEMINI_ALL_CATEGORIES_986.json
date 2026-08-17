@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "986",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Where is the address number located relative to the residential house on the right side of the street?",
+        "answer": "On the residential house displaying the address number 149 [entity_001]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many address signs or house numbers are visible on the residential houses in this clip?",
+        "answer": "1",
+        "reasoning": "Only one address sign, residential house displaying the address number 149 [entity_001], is mentioned as visible in the scene."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order does the vehicle cross the intersection and the address sign come into focus?",
+        "answer": "1st: cross intersection, 2nd: residential house displaying the address number 149 [entity_001] comes into focus"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What driving constraints or regulatory instructions are written on the signs visible in this clip?",
+        "answer": "None"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of a residential house displaying address number 149, what type of environment is this?",
+        "answer": "Residential area",
+        "reasoning": "The presence of the residential house displaying the address number 149 [entity_001] suggests a residential area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What script or numbering system is used for the address number displayed on the residential house?",
+        "answer": "Arabic numerals"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what specific time range does the address sign 149 come into focus in the clip?",
+        "answer": "Between 6.4 and 6.8 seconds",
+        "reasoning": "The temporal description states that the residential house displaying the address number 149 [entity_001] comes into focus specifically around 6.4 to 6.8 seconds."
+      }
+    ]
+  }
+]

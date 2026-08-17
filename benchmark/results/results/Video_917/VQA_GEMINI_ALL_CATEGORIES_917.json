@@ -1,0 +1,51 @@
+[
+  {
+    "video_id": "917",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
+        "answer": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
+        "answer": "3",
+        "reasoning": "The markings observed are '03' at 1.933 seconds, 'AXI' at 4.1 seconds, and '06' at 7.433 seconds, totaling 3 markings."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
+        "answer": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
+        "answer": "TAXI [entity_001]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
+        "answer": "Airport terminal arrival area",
+        "reasoning": "The combination of taxi lanes, terminal seating, and airline signage is characteristic of an airport terminal arrival area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for the airline signage and pavement markings in this scene?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
+        "answer": "4.1 seconds"
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "925",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the word Eastern relative to the word EAST on the overhead gantry?",
+        "answer": "To the right of EAST [entity_008]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are located on the overhead steel gantry?",
+        "answer": "7",
+        "reasoning": "The overhead gantry contains Grand [entity_005], Central [entity_006], Pkwy [entity_007], Triboro [entity_010], EAST [entity_008], Eastern [entity_009], and L 1 [entity_011], which totals 7 text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What sign is encountered on the right side of the road immediately after the vehicle passes the roadside sign displaying Grand Central Pkwy on the left?",
+        "answer": "Terminals [entity_004]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Which direction is indicated for Triboro Br on the roadside sign passed at 0.0s?",
+        "answer": "WEST [entity_002]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of signs like Grand Central Pkwy and Terminals, what type of driving environment is depicted?",
+        "answer": "Highway near an airport",
+        "reasoning": "The signs indicate Grand Central Pkwy, Triboro Br, and Terminals, which are typical for a highway leading to an airport."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What airline brand is visible on the terminal building at 9.933s?",
+        "answer": "AMERICAN AIRLINES [entity_013]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the license plate AJC-1541 first become clearly visible on the grey sedan?",
+        "answer": "7.9s",
+        "reasoning": "According to the temporal description, the grey sedan with the license plate AJC-1541 [entity_012] is clearly visible traveling in the adjacent lane at 7.9s."
+      }
+    ]
+  }
+]

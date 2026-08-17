@@ -1,0 +1,51 @@
+[
+  {
+    "video_id": "931",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
+        "answer": "S E [entity_005]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
+        "answer": "7",
+        "reasoning": "The semi-truck displays RAY'S TRUCKS, RAY'S TRUCK SALES, Elizabeth N.J., 908-436-0033, S E, FUEL CO, and S J, totaling 7 elements."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
+        "answer": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+        "answer": "None"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
+        "answer": "Highway"
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
+        "answer": "Elizabeth N.J. [entity_003]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
+        "answer": "1.2s to 1.3s",
+        "reasoning": "The temporal description states that FUEL CO and S J are visible at 1.2s and 1.3s."
+      }
+    ]
+  }
+]

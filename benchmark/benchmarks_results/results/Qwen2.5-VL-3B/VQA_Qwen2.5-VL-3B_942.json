@@ -1,0 +1,70 @@
+{
+  "video_id": 942,
+  "model": "Qwen2.5-VL-3B",
+  "video": "/home2/gagandeep/benchmark/videos/900/942.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text Without relative to the Studio Prices text on the first billboard?",
+      "ground_truth": "To the right of Studio Prices [entity_003]",
+      "prediction": "The text \"Without\" is located below and to the right of the \"Studio Prices\" text on the first billboard.",
+      "inference_time_sec": 4.722,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to street, highway, or regulatory signs in this clip?",
+      "ground_truth": "6",
+      "prediction": "There are 4 distinct pieces of text that belong to street, highway, or regulatory signs in this clip.",
+      "inference_time_sec": 4.952,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the billboard displaying Studio Closses and the billboard displaying eatenlightened.com are encountered?",
+      "ground_truth": "1st: Studio Closses [entity_001], 2nd: eatenlightened.com [entity_009]",
+      "prediction": "The billboard displaying Studio Closses is encountered first, followed by the billboard displaying eatenlightened.com.",
+      "inference_time_sec": 4.578,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a height restriction constraint? If so, what does it say and where is it located?",
+      "ground_truth": "12-6 [entity_013] adjacent to Lexington Avenue [entity_011]",
+      "prediction": "Yes, there is a text indicating a height restriction constraint. It says \"HEIGHT LIMIT 10'6\" and is located on a sign near the highway.",
+      "inference_time_sec": 5.347,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible highway signs and large billboards, what kind of driving environment is depicted?",
+      "ground_truth": "Highway overpass or elevated highway ramp",
+      "prediction": "The driving environment depicted in the video appears to be an urban or suburban area with significant commercial activity. The presence of multiple billboards advertising various products and services suggests that this is likely a busy, well-trafficked road in a city or town. The large traffic lights and the overall infrastructure indicate that it is a major thoroughfare, possibly a freeway or a major highway. The mix of vehicles, including cars and trucks, further supports the idea of a bustling, active driving environment.",
+      "inference_time_sec": 9.478,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street or highway names visible on the overhead signs suggest a specific city? If so, what text supports this?",
+      "ground_truth": "New York City, supported by FDR Drive SOUTH [entity_010] and Lexington Avenue [entity_011]",
+      "prediction": "Yes, the overhead signs indicate that the location is in New York City. The signs show directions to \"FDR Drive South\" and \"Lexington Avenue South,\" which are well-known streets in Manhattan, New York City.",
+      "inference_time_sec": 6.058,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the overhead highway sign for 2 Avenue remain visible to the camera vehicle?",
+      "ground_truth": "8.733 seconds to 9.367 seconds",
+      "prediction": "The overhead highway sign for 2 Avenue remains visible from approximately 10:30 AM to 4:30 PM.",
+      "inference_time_sec": 4.901,
+      "error": ""
+    }
+  ]
+}

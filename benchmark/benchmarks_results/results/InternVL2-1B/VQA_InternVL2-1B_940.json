@@ -1,0 +1,70 @@
+{
+  "video_id": 940,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/940.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
+      "ground_truth": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]",
+      "prediction": "Adjacent to the parking area on the right side of the driving lane, there are two signs. One is a red sign with white lettering that reads \"Dance,\" and the other is a blue sign with white lettering that reads \"Dance.\"",
+      "inference_time_sec": 2.503,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
+      "ground_truth": "6",
+      "prediction": "Based on the given information, there are three distinct pieces of text that appear to be storefront signs or banners on the left side of the driving lane. These include the word \"SUPPLY\" on the leftmost sign, the word \"PALLAS\" on the second sign, and the word \"DANICE\" on the third sign.",
+      "inference_time_sec": 3.123,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]",
+      "prediction": "The order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle is as follows: the camera starts with the view of the parking lot, where the storefront of FALLAS is visible. Then, the camera moves forward to the area where the Danice store is located, which is also visible. Finally, the camera moves back to the parking lot, where the Danice store is also visible.",
+      "inference_time_sec": 3.778,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
+      "ground_truth": "Stop",
+      "prediction": "The painted road marking adjacent to the concrete sidewalk on the left implies a deliberate intention to guide drivers through the parking lot. It is likely a directional sign, possibly indicating a specific lane or path that is intended to direct traffic or pedestrians to a particular area within the parking lot. This marking is a common feature in parking lots to help manage traffic flow and ensure that vehicles are directed to the correct parking spots.",
+      "inference_time_sec": 3.552,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
+      "ground_truth": "Commercial strip mall",
+      "prediction": "The driving environment depicted in the video is a typical suburban shopping area, likely in a region where parking is a common mode of transportation. The presence of multiple parking spaces, the variety of stores, and the clear, sunny weather suggest a well-maintained and organized shopping area. The cars are parked in a manner that indicates a level of order and organization, which is typical of suburban shopping centers. The absence of any visible traffic congestion or signs of a busy urban environment further supports the idea that this is a suburban setting.",
+      "inference_time_sec": 4.285,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
+      "ground_truth": "English",
+      "prediction": "The storefront signs and promotional banners in the clip are in English.",
+      "inference_time_sec": 1.284,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
+      "ground_truth": "5.233s to 5.6s",
+      "prediction": "The camera vehicle approaches the storefront windows of FALLAS showing promotional text during the daytime, as indicated by the clear sky and the presence of sunlight. The promotional text is visible on the windows, suggesting that the store is currently offering discounts or promotions.",
+      "inference_time_sec": 2.429,
+      "error": ""
+    }
+  ]
+}

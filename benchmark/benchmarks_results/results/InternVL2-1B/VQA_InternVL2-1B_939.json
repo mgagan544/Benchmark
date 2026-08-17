@@ -1,0 +1,70 @@
+{
+  "video_id": 939,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/939.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What promotional signs are located directly overhead of the Big K mart storefront?",
+      "ground_truth": "NOBODY HAS [entity_012] and MORE PARTY FOR LESS [entity_013] above BIG K [entity_003] mart [entity_010]",
+      "prediction": "The promotional signs directly overhead of the Big K mart storefront include the words \"NOW OPEN\" and \"BIG K\" in large, bold letters.",
+      "inference_time_sec": 1.819,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct promotional text instances are associated with the Danice storefront?",
+      "ground_truth": "3",
+      "prediction": "Based on the video, there are two distinct promotional text instances associated with the Danice storefront. One is a red and white sign that reads \"NAILS\" and another is a blue and white sign that says \"NAILS.\"",
+      "inference_time_sec": 2.366,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three storefronts passed by the vehicle starting from 4.8 seconds?",
+      "ground_truth": "1st: NAILS [entity_009] Essence [entity_011] SPA [entity_016], 2nd: JIMMY JAZZ [entity_006], 3rd: FALLAS [entity_023]",
+      "prediction": "The first three storefronts passed by the vehicle in the order: Payless Kids, Payless Shoesource, and Nail's Essence.",
+      "inference_time_sec": 1.817,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, are there any explicit driving actions or constraints implied near the storefronts? If none is present, state that.",
+      "ground_truth": "None is present",
+      "prediction": "Yes, there are explicit driving actions and constraints implied near the storefronts. The presence of a red line on the road indicates a no-parking zone, which is a common restriction near retail establishments. Additionally, the absence of visible vehicles or people suggests that the area is not currently in use for driving purposes.",
+      "inference_time_sec": 2.892,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible storefront text, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial shopping center parking lot",
+      "prediction": "The driving environment depicted in the clip appears to be a typical urban commercial area, likely a shopping district. The presence of multiple stores, including a shoe store and a nail salon, suggests a commercial area with a mix of retail and service-oriented businesses. The variety of storefronts, including one with a large red and blue sign, indicates a diverse commercial district where different types of businesses coexist. The overall setting is busy and active, with cars parked and pedestrians visible, which is typical of a commercial area where foot traffic is high.",
+      "inference_time_sec": 4.388,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text in the video is written in English.",
+      "inference_time_sec": 1.252,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the vehicle passing and parallel to the storefront of NAILS Essence SPA?",
+      "ground_truth": "4.8 seconds to 6.1 seconds",
+      "prediction": "The vehicle is passing parallel to the storefront of NAILS Essence SPA during the daytime, as indicated by the clear sky and the presence of sunlight.",
+      "inference_time_sec": 1.869,
+      "error": ""
+    }
+  ]
+}

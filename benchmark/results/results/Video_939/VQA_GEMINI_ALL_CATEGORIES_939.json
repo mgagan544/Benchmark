@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "939",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What promotional signs are located directly overhead of the Big K mart storefront?",
+        "answer": "NOBODY HAS [entity_012] and MORE PARTY FOR LESS [entity_013] above BIG K [entity_003] mart [entity_010]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct promotional text instances are associated with the Danice storefront?",
+        "answer": "3",
+        "reasoning": "The Danice [entity_025] storefront features signs containing SUPER [entity_026], DEAL [entity_027], and OPEN [entity_028]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of the first three storefronts passed by the vehicle starting from 4.8 seconds?",
+        "answer": "1st: NAILS [entity_009] Essence [entity_011] SPA [entity_016], 2nd: JIMMY JAZZ [entity_006], 3rd: FALLAS [entity_023]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Based on the visible text, are there any explicit driving actions or constraints implied near the storefronts? If none is present, state that.",
+        "answer": "None is present"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the density and type of legible storefront text, what kind of driving environment does this clip depict?",
+        "answer": "Commercial shopping center parking lot",
+        "reasoning": "The presence of multiple retail storefronts like Party City [entity_001], BIG K [entity_003], and Payless [entity_007] along with diagonal parking spaces indicates a commercial shopping center parking lot."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language or script is the visible text written in?",
+        "answer": "English",
+        "reasoning": "All visible storefront names and signs such as NOW OPEN [entity_002] and SPORTING GOODS [entity_030] are written in English."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During what time range is the vehicle passing and parallel to the storefront of NAILS Essence SPA?",
+        "answer": "4.8 seconds to 6.1 seconds",
+        "reasoning": "The temporal description states that the vehicle moves parallel to the storefront sidewalk, passing NAILS [entity_009] Essence [entity_011] SPA [entity_016] between 4.8 seconds and 6.1 seconds."
+      }
+    ]
+  }
+]

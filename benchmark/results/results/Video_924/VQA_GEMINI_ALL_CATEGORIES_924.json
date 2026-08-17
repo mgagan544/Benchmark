@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "924",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What readable text is located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry?",
+        "answer": "Long [entity_005] Term [entity_006] Parking [entity_007]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are visible on the green overhead exit sign located on the left side of the roadway?",
+        "answer": "3",
+        "reasoning": "The green exit sign contains the words Long [entity_005], Term [entity_006], and Parking [entity_007], which total 3 distinct text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the text on the overhead gantry, the roadside infrastructure, and the green exit sign are first encountered as the vehicle moves forward?",
+        "answer": "1st: B C D [entity_001] Terminals [entity_003] RIGHT LANE [entity_002], 2nd: RIZZO [entity_004], 3rd: Long [entity_005] Term [entity_006] Parking [entity_007]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What directional or instructional text is displayed on the large overhead gantry above the multi-lane roadway?",
+        "answer": "RIGHT LANE [entity_002]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the visible signs indicating terminals and parking, what type of facility is this roadway accessing?",
+        "answer": "Airport access road",
+        "reasoning": "The signs mention Terminals [entity_003] and Parking [entity_007], which are characteristic of an airport environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "In what language and script is the text on the overhead gantry and exit signs written?",
+        "answer": "English in Latin script",
+        "reasoning": "The words 'Terminals', 'RIGHT LANE', and 'Parking' are in English and written in Latin script."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the text B C D first become visible, and when does the full layout of that gantry sign become readable?",
+        "answer": "Visible at 5.1 seconds, fully readable at 5.233 seconds",
+        "reasoning": "The temporal description states B C D [entity_001] is visible at 5.1 seconds and the full layout is readable at 5.233 seconds."
+      }
+    ]
+  }
+]

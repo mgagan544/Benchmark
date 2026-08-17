@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "As the vehicle approaches the junction, it passes by a bus that is parked on the right side of the road. The bus is white with a black roof and has a large advertisement on its side.",
+      "inference_time_sec": 2.152,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "There are two distinct signboards containing numbers visible on the right side of the road at the start of the clip. One sign is a large billboard with a white background and a red border, and the other is a smaller sign with a black background and a white border.",
+      "inference_time_sec": 2.574,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "After passing the signboard 9999, the vehicle encounters a large billboard advertising a product.",
+      "inference_time_sec": 1.521,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "The signboard in the background has text that reads \"9999,\" which is a common abbreviation for the emergency number in Israel. This suggests that the driver is likely in a situation where they need to call for help or report an emergency. The presence of the signboard implies that the driver is aware of the need to communicate with emergency services, which is a standard practice in many countries to ensure safety and prompt response in case of an emergency.",
+      "inference_time_sec": 3.783,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road, a gas station, and a signboard suggests that the driving environment is likely to be a busy urban or suburban area with a mix of commercial and residential zones. The curved road indicates that the road is designed to accommodate vehicles in a way that allows for a smooth flow of traffic, which is common in areas with significant vehicular traffic. The gas station, with its visible fuel pumps, implies that the area is accessible to residents and possibly has a commercial aspect to it, catering to the needs of the local population. The signboard, although not legible in the video, is likely to",
+      "inference_time_sec": 5.003,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The text on the signboard on the right uses Hebrew script, which is a script used for writing the Hebrew language. The numbers are not clearly visible in the video, so it's not possible to determine the exact script or numbering system used for the text.",
+      "inference_time_sec": 2.559,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard 9999 first becomes visible at the beginning of the video, just before the ego vehicle starts moving. It is passed by the ego vehicle at approximately 10:00 AM, as indicated by the timestamp on the signboard.",
+      "inference_time_sec": 2.604,
+      "error": ""
+    }
+  ]
+}

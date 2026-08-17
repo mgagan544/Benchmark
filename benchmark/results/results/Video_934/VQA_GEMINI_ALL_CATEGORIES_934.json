@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "934",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is located to the left of the pavement marking 'ONLY' as the vehicle moves forward?",
+        "answer": "A prominent chain-link fence to the left of 'ONLY' [entity_001]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many pavement markings with legible text are visible in the lane after the vehicle completes its left turn?",
+        "answer": "1",
+        "reasoning": "The only legible pavement marking mentioned in the description is 'ONLY' [entity_001], which becomes visible at 00:05."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order of the legible text instances encountered on the road surface during the clip?",
+        "answer": "1st: 'ONLY' [entity_001]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What instructional text is painted on the lane surface to guide the driver's lane choice after turning?",
+        "answer": "'ONLY' [entity_001]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggest about the driving environment?",
+        "answer": "Residential or urban fringe area",
+        "reasoning": "The combination of parked vehicles, sidewalks, and open space suggests a residential or urban fringe area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is the pavement marking 'ONLY' written in?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the pavement marking 'ONLY' first become visible in the clip?",
+        "answer": "00:05",
+        "reasoning": "According to the temporal description, the pavement marking 'ONLY' [entity_001] becomes visible around 00:05."
+      }
+    ]
+  }
+]
