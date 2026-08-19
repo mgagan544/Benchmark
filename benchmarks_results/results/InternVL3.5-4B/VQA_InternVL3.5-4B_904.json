@@ -1,0 +1,70 @@
+{
+  "video_id": 904,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/904.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What street sign text is located beside the price signboard displaying 299, CASH, and 9/10?",
+      "ground_truth": "Citrus Ave [entity_008]",
+      "prediction": "The street sign text located beside the price signboard is \"Palm Dr\".",
+      "inference_time_sec": 2.902,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in the clip are mounted on the white moving truck?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct pieces of text visible on the white moving truck: 'BECK'S' and 'Moving'.",
+      "inference_time_sec": 3.579,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the moving truck text, the gas station brand, and the cross street sign are encountered?",
+      "ground_truth": "1st: BEKINS [entity_003] and USA [entity_004], 2nd: FLYERS [entity_005], 3rd: Citrus Ave [entity_008]",
+      "prediction": "The moving truck text, the gas station brand, and the cross street sign are encountered in that order.",
+      "inference_time_sec": 3.369,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text visible at the start of the clip indicates a speed restriction on the roadway?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
+      "prediction": "At the beginning of the video, a 'SPEED LIMIT 35' sign is visible on the right side of the road, indicating that the maximum speed allowed on this section of the roadway is 35 miles per hour. This sign is a regulatory measure to ensure that vehicles adhere to a safe speed limit, particularly in areas with high pedestrian activity or where traffic conditions may require slower speeds for safety reasons. The presence of this sign suggests that the area is likely a commercial or urban zone where traffic management is a priority.",
+      "inference_time_sec": 10.116,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the presence of a gas station, price signboard, and street sign suggest?",
+      "ground_truth": "commercial strip",
+      "prediction": "The presence of a gas station, price signboard, and street sign suggests a commercial or urban driving environment.",
+      "inference_time_sec": 3.41,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the visible text on the speed limit sign and street sign written in?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 1.695,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range does the price board displaying 299, CASH, and 9/10 become clearly visible as the vehicle approaches the intersection?",
+      "ground_truth": "7.1 seconds to 8.333 seconds",
+      "prediction": "The price board displaying 299, CASH, and 9/10 becomes clearly visible as the vehicle approaches the intersection in the middle of the video.",
+      "inference_time_sec": 4.163,
+      "error": ""
+    }
+  ]
+}

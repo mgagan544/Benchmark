@@ -1,0 +1,70 @@
+{
+  "video_id": 953,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/953.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly below the REWARDS sign on the main promotion board?",
+      "ground_truth": "STATUS [entity_002] sign directly below REWARDS [entity_003] sign",
+      "prediction": "The sign located directly below the REWARDS sign on the main promotion board is the \"GOLD STATUS\" sign.",
+      "inference_time_sec": 2.682,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct fuel price text instances are displayed on the gas station signs during the clip?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct fuel price text instances displayed on the gas station signs during the clip.",
+      "inference_time_sec": 2.702,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the price signs showing 3591 and 359 are encountered?",
+      "ground_truth": "1st: 3591 [entity_006], 2nd: 359 [entity_007]",
+      "prediction": "The price sign showing 3591 is encountered first, followed by the price sign showing 359.",
+      "inference_time_sec": 2.759,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Is there any directional or instructional text that a driver must act on near the Shell Gas Station?",
+      "ground_truth": "None is present",
+      "prediction": "Yes, there is directional or instructional text near the Shell Gas Station. The sign indicates that the gas station is located at the intersection of 10th and 11th Streets. This information is crucial for drivers to navigate the area effectively.",
+      "inference_time_sec": 3.884,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a gas station, tire shop, and sheet metal business?",
+      "ground_truth": "Commercial district",
+      "prediction": "The presence of a gas station, tire shop, and sheet metal business suggests a commercial and industrial area, likely in a suburban or urban setting. These businesses are common in areas with high traffic and a need for services related to vehicle maintenance and repair.",
+      "inference_time_sec": 3.924,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language is the text on the Action Sheetmetal building written?",
+      "ground_truth": "English",
+      "prediction": "The text on the Action Sheetmetal building is written in English.",
+      "inference_time_sec": 2.193,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range do the flat fix related signs first become visible in the clip?",
+      "ground_truth": "From 9.5 seconds onwards",
+      "prediction": "The flat fix related signs first become visible in the clip at the timestamp range of 0.0 to 0.4 seconds.",
+      "inference_time_sec": 2.833,
+      "error": ""
+    }
+  ]
+}

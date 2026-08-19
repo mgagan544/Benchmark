@@ -1,0 +1,45 @@
+
+======================================================================
+VIDEO VQA BENCHMARK
+======================================================================
+Model       : InternVL2.5-2B
+HF checkpoint: OpenGVLab/InternVL2_5-2B
+Video range : 901 - 1000
+GT root     : results/results
+Video root  : videos/900
+Output      : benchmarks_results/results/InternVL2.5-2B
+======================================================================
+
+Loading OpenGVLab/InternVL2_5-2B
+Traceback (most recent call last):
+  File "/home2/gagandeep/benchmark/benchmark.py", line 1206, in <module>
+    main()
+  File "/home2/gagandeep/benchmark/benchmark.py", line 1085, in main
+    runner = create_runner(
+             ^^^^^^^^^^^^^^
+  File "/home2/gagandeep/benchmark/benchmark.py", line 793, in create_runner
+    return InternVLRunner(
+           ^^^^^^^^^^^^^^^
+  File "/home2/gagandeep/benchmark/benchmark.py", line 519, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/gagandeep/internvl_env/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 891, in from_pretrained
+    return tokenizer_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/gagandeep/internvl_env/lib/python3.12/site-packages/transformers/tokenization_utils_base.py", line 1747, in from_pretrained
+    return cls._from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/gagandeep/internvl_env/lib/python3.12/site-packages/transformers/tokenization_utils_base.py", line 1956, in _from_pretrained
+    raise e
+  File "/home2/gagandeep/internvl_env/lib/python3.12/site-packages/transformers/tokenization_utils_base.py", line 1943, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd_scratch/cvit/hf_cache/modules/transformers_modules/OpenGVLab/InternVL2_5_hyphen_2B/573169ee54df216786bb9a189e9a32a060a008cf/tokenization_internlm2.py", line 68, in __init__
+    self.sp_model.Load(vocab_file)
+  File "/home2/gagandeep/internvl_env/lib/python3.12/site-packages/sentencepiece/__init__.py", line 209, in Load
+    return self.LoadFromFile(model_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/gagandeep/internvl_env/lib/python3.12/site-packages/sentencepiece/__init__.py", line 213, in LoadFromFile
+    return self._processor.LoadFromFile(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: INTERNAL: piece must not include null character.

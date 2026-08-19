@@ -1,0 +1,70 @@
+{
+  "video_id": 989,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/989.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks?",
+      "ground_truth": "A residential concrete pathway and sidewalk between the driveways and the crosswalks.",
+      "prediction": "Between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks, there is a white fence. This fence separates the driveways from the pedestrian crossing area, providing a clear boundary and enhancing safety for pedestrians. The fence is likely made of wood or metal and is painted white to stand out against the surrounding environment. It also helps to delineate the property lines and maintain the aesthetic of the neighborhood.",
+      "inference_time_sec": 9.526,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct moving vehicles cross the intersection between 00:01 and 00:08?",
+      "ground_truth": "3",
+      "prediction": "3",
+      "inference_time_sec": 3.081,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the white SUV, black SUV, and large black pickup truck clear the intersection?",
+      "ground_truth": "1st: white SUV, 2nd: black SUV, 3rd: large black pickup truck",
+      "prediction": "The white SUV clears the intersection first, followed by the black SUV, and then the large black pickup truck.",
+      "inference_time_sec": 4.474,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What signal hanging in the center of the intersection indicates that the driver should proceed with caution?",
+      "ground_truth": "The overhead flashing yellow traffic light.",
+      "prediction": "The signal hanging in the center of the intersection that indicates the driver should proceed with caution is a yellow traffic light. A yellow light typically means that the traffic signal is about to change to red, and drivers should prepare to stop if it is safe to do so. However, if the driver is already close to the intersection and cannot stop safely, they may proceed with caution.",
+      "inference_time_sec": 8.433,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the surrounding environment, including houses, lawns, and private driveways, what type of area is this?",
+      "ground_truth": "Residential area",
+      "prediction": "This is a residential area, characterized by single-family homes, well-maintained lawns, and private driveways. The presence of parked cars and the quiet, tree-lined streets further suggest a suburban neighborhood.",
+      "inference_time_sec": 6.142,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What written language or script is visible on the signs in this intersection?",
+      "ground_truth": "No signs with visible text are present in the clip.",
+      "prediction": "There is no visible written language or script on the signs in this intersection. The signs are primarily traffic control devices, such as a red traffic light, and there are no visible signs with text or script.",
+      "inference_time_sec": 5.83,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the large black pickup truck visible crossing the intersection?",
+      "ground_truth": "00:06 to 00:08",
+      "prediction": "The large black pickup truck is visible crossing the intersection from 0.1 to 0.3 seconds.",
+      "inference_time_sec": 4.623,
+      "error": ""
+    }
+  ]
+}

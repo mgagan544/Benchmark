@@ -1,0 +1,70 @@
+{
+  "video_id": 944,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/944.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the PASSENGER CARS ONLY sign located relative to the Drive SOUTH sign?",
+      "ground_truth": "Adjacent to Drive [entity_006] SOUTH [entity_007]",
+      "prediction": "To the left",
+      "inference_time_sec": 1.787,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities make up the construction warning sign visible at the start of the clip?",
+      "ground_truth": "4",
+      "prediction": "The construction warning sign visible at the start of the clip contains three distinct text entities: 'CONSTRUCTION', 'AHEAD', and 'CAUTION'. These words are arranged vertically on the sign, with 'CONSTRUCTION' at the top, 'AHEAD' in the middle, and 'CAUTION' at the bottom. The sign is designed to alert drivers to potential hazards or changes in road conditions ahead due to construction work. The use of capital letters and the placement of these words are intended to catch the attention of drivers and convey the message clearly and effectively.",
+      "inference_time_sec": 10.448,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the low clearance warning sign, the construction warning signs, and the PASSENGER CARS ONLY sign?",
+      "ground_truth": "1st: 12-6 [entity_005] and construction signs, 2nd: PASSENGER CARS ONLY [entity_009]",
+      "prediction": "The vehicle first encounters the low clearance warning sign, followed by the construction warning signs, and finally the PASSENGER CARS ONLY sign.",
+      "inference_time_sec": 3.903,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What low clearance limit is indicated by the warning sign to the right of the concrete barrier?",
+      "ground_truth": "12-6 [entity_005]",
+      "prediction": "The warning sign indicates a low clearance limit of 12 feet 6 inches.",
+      "inference_time_sec": 3.09,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the transition from a curved ramp with construction signs to a highway depict?",
+      "ground_truth": "Highway transition zone",
+      "prediction": "The transition from a curved ramp with construction signs to a highway depicts a shift from a more congested and controlled urban environment to a more open and expansive highway setting. The curved ramp with construction signs suggests a section of the road undergoing maintenance or development, indicating a potentially busy and regulated area. In contrast, the highway scene portrays a broader and more open space, likely designed for higher-speed travel and less congestion. This transition highlights the diversity of urban road infrastructure, catering to different traffic needs and flow dynamics.",
+      "inference_time_sec": 9.659,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction warning signs and overhead directional signs?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction warning signs and overhead directional signs is in both english and chinese.",
+      "inference_time_sec": 2.998,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Drive SOUTH sign first come into view, and when does the vehicle pass it?",
+      "ground_truth": "First visible at 3.767 seconds, passed at 5.133 seconds",
+      "prediction": "The Drive SOUTH sign first comes into view at the 5-second mark, and the vehicle passes it shortly after, around the 10-second mark.",
+      "inference_time_sec": 4.042,
+      "error": ""
+    }
+  ]
+}

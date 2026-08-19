@@ -1,0 +1,70 @@
+{
+  "video_id": 927,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/927.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text New Jersey relative to the G W Bridge text?",
+      "ground_truth": "Below G W Bridge [entity_003]",
+      "prediction": "The text New Jersey is located below the G W Bridge text.",
+      "inference_time_sec": 2.165,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the overhead gantry signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are 6 distinct text instances displayed on the overhead gantry signs in this clip.",
+      "inference_time_sec": 2.41,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?",
+      "ground_truth": "1st: NORTH [entity_002]; 2nd: New Jersey [entity_008]",
+      "prediction": "The text NORTH is visible first, followed by the text New Jersey.",
+      "inference_time_sec": 2.258,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?",
+      "ground_truth": "NO TRUCKS [entity_006] and ALL TRUCKS TO NJ [entity_007]",
+      "prediction": "The text on the overhead gantry that indicates driving restrictions or instructions for trucks is \"ALL TRUCKS TO N1\".",
+      "inference_time_sec": 2.74,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the density and type of overhead text suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The density and type of overhead text suggest that the driving environment is a busy urban or suburban area with a high volume of traffic. The presence of multiple signs, including those indicating directions to major highways and specific destinations, indicates that the road is likely part of a major transportation network. The signs are likely designed to guide drivers efficiently through the area, which is common in densely populated regions where traffic flow is crucial. The combination of multiple signs and the presence of vehicles in the lanes further supports the idea of a high-traffic, well-maintained roadway.",
+      "inference_time_sec": 6.447,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which metropolitan area is suggested by the visible overhead signs, and what text supports this?",
+      "ground_truth": "New York metropolitan area, supported by Cr Bronx Expy [entity_004] and New Jersey [entity_008]",
+      "prediction": "The visible overhead signs suggest that the location is in New York, as indicated by the text \"Cr Bronx Expy\" and \"G W Bridge New Jersey.\" The \"Cr Bronx Expy\" refers to the Bronx Expressway, which is a major highway in New York City, and \"G W Bridge New Jersey\" indicates the G W Bridge, a bridge crossing into New Jersey. These signs are typical of the New York metropolitan area.",
+      "inference_time_sec": 6.812,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?",
+      "ground_truth": "0.033s",
+      "prediction": "The texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible at 0.0 seconds.",
+      "inference_time_sec": 3.049,
+      "error": ""
+    }
+  ]
+}

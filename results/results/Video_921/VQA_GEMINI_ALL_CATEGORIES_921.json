@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "921",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the MUST EXIT sign relative to the WORK ZONE sign that appears around 0.467 seconds?",
+        "answer": "To the right of WORK [entity_006] ZONE [entity_007] sign"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct license plates are visible in this video clip?",
+        "answer": "2",
+        "reasoning": "The description mentions two license plates: PTY-7961 [entity_028] on the black Ford [entity_029] SUV and T478010 [entity_014] on the grey sedan."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of signs encountered on the right side of the road between 0.0 and 1.0 seconds?",
+        "answer": "1st: SPEED [entity_004] LIMIT [entity_005], 2nd: WORK [entity_006] ZONE [entity_007], 3rd: MUST [entity_008] EXIT [entity_009]",
+        "reasoning": "Between 0.0s and 0.4s, the vehicle passes SPEED [entity_004] LIMIT [entity_005]. Around 0.467s, WORK [entity_006] ZONE [entity_007] and MUST [entity_008] EXIT [entity_009] appear."
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What warning sign is located beside the construction flagger holding the STOP paddle near the end of the clip?",
+        "answer": "ROAD [entity_031] WORK [entity_006] AHEAD [entity_012] sign"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of area does the mix of airport terminal, parking, and exit signs suggest?",
+        "answer": "Airport access road",
+        "reasoning": "The signs mention Airport [entity_018] Terminal [entity_015], Daily Parking [entity_016], Central Terminal [entity_020], Departing Flights [entity_021], and Airport Exit [entity_022], indicating an airport access road."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used on the signs such as ROAD WORK AHEAD and MUST EXIT?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range is the RAMP speed limit sign visible in the clip?",
+        "answer": "6.333 seconds to 9.733 seconds",
+        "reasoning": "The temporal description states that the vehicle navigates the underpass where a RAMP [entity_023] advisory speed of 10 M P H [entity_027] is visible from 6.333 seconds to 9.733 seconds."
+      }
+    ]
+  }
+]

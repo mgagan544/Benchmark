@@ -1,0 +1,50 @@
+[
+  {
+    "video_id": "941",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What regulatory sign is located directly below the overhead sign that says \"To Belt Pkwy\"?",
+        "answer": "KEEP RIGHT [entity_005] below To Belt Pkwy [entity_004]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are painted on the road surface or function as regulatory signs in this clip?",
+        "answer": "2",
+        "reasoning": "The regulatory sign is KEEP RIGHT [entity_005] and the road marking is ONLY [entity_006]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of encounter for the first overhead sign structure, the road marking, and the second overhead gantry?",
+        "answer": "1st: Airport Exit [entity_001], 2nd: ONLY [entity_006], 3rd: Long Term Parking [entity_007]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What regulatory instruction is displayed on the lane surface below the sign that says \"KEEP RIGHT\"?",
+        "answer": "ONLY [entity_006]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of transportation hub is the vehicle navigating, based on the visible signs?",
+        "answer": "Airport"
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific New York airport expressway is indicated by the signs on the first overhead structure?",
+        "answer": "JFK Expwy [entity_003]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the vehicle pass over the road marking that says \"ONLY\"?",
+        "answer": "5.367 seconds"
+      }
+    ]
+  }
+]

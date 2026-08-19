@@ -1,0 +1,70 @@
+{
+  "video_id": 906,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/906.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
+      "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
+      "prediction": "The vehicle to the left of the black Chevrolet SUV has the text 'KEEP BACK' on its side, indicating a warning for other drivers to maintain a safe distance from the ambulance.",
+      "inference_time_sec": 4.407,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the parked white box truck?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances on the parked white box truck: 'Soundtone Floors, Inc.', a phone number '718-392-4001', and an American flag.",
+      "inference_time_sec": 4.959,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
+      "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed in that order.",
+      "inference_time_sec": 3.894,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
+      "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The warning text posted on a utility pole reads 'YIELD TO TRUCKS' with an arrow pointing to the right, indicating that drivers should be prepared for trucks to be traveling in the opposite direction.",
+      "inference_time_sec": 4.855,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial and industrial district",
+      "prediction": "The mix of text visible between 3.0 seconds and 7.0 seconds suggests a busy urban environment with various businesses and services. The presence of 'Soundtone Floors, Inc.' indicates a commercial area with businesses that cater to interior design or construction. The 'FDNY Ambulance' text implies the presence of emergency services, which is common in urban settings. The 'Driver Wanted' sign suggests a local business looking for employees, which is typical in city streets where various businesses operate. The combination of these texts, along with the traffic lights and street signs, paints a picture of a typical city street with a mix of commercial and",
+      "inference_time_sec": 11.671,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
+      "ground_truth": "L.I.C., N.Y. [entity_016]",
+      "prediction": "The text 'E.D. NY AMBULANCE' on the ambulance indicates that the video was likely filmed in New York City or a region within New York.",
+      "inference_time_sec": 4.157,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
+      "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
+      "prediction": "The ambulance displaying the identifier 592 starts moving forward at the beginning of the video, as it is initially seen parked on the left side of the road.",
+      "inference_time_sec": 4.163,
+      "error": ""
+    }
+  ]
+}

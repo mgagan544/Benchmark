@@ -1,0 +1,70 @@
+{
+  "video_id": 958,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/958.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+      "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
+      "prediction": "The parking sign text located to the left of the license registration AT * 665J is 'PARKING'.",
+      "inference_time_sec": 1.756,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances located on the automotive service building on the left side of the street.",
+      "inference_time_sec": 1.541,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+      "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
+      "prediction": "The first text instance encountered is 'fame' on the billboard, followed by 'Coca-Cola' on the building, and then 'Coca-Cola' again on the billboard.",
+      "inference_time_sec": 2.112,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+      "ground_truth": "TURNS [entity_010]",
+      "prediction": "The text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign.",
+      "inference_time_sec": 1.61,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The driving environment in the video suggests a commercial and urban setting. The storefronts, with their large windows and signage, indicate a mix of retail and possibly office spaces. The digital billboards display advertisements, which are common in urban areas to promote products or services. The presence of commercial signs, such as the 'Coca-Cola' sign, further supports the notion of a commercial district. These elements collectively create a typical urban driving environment where businesses operate and pedestrians navigate through the city.",
+      "inference_time_sec": 4.269,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+      "ground_truth": "New York City, New York State",
+      "prediction": "The phone number area code '212' and the inspection sign text 'CITY OF NEW YORK' suggest that the video is likely taken in New York City. The area code is a common identifier for New York City, and the inspection sign indicates that the vehicle is being inspected by the New York City Department of Transportation.",
+      "inference_time_sec": 3.209,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+      "ground_truth": "0.0s to 0.233s",
+      "prediction": "The digital billboard texts THE, DISPLAYERS, and Snycom are tracked at the start of the clip during the daytime, as indicated by the clear visibility of the texts and the absence of any nighttime lighting.",
+      "inference_time_sec": 2.307,
+      "error": ""
+    }
+  ]
+}

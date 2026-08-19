@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "946",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of G Washington Br relative to the route sign 19-N-S-W?",
+        "answer": "to the right of 19-N-S-W [entity_005]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct highway or regulatory signs are visible on the overhead gantry in this clip?",
+        "answer": "7",
+        "reasoning": "There are 7 distinct signs mentioned on the overhead gantry: NORTH, PASSENGER CARS ONLY, Hutechinson Pkwy, G Washington Br, 19-N-S-W, WEST, and 278."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order in which the signs NORTH, PASSENGER CARS ONLY, and Hutechinson Pkwy become visible?",
+        "answer": "1st: NORTH [entity_001], 2nd: PASSENGER CARS ONLY [entity_002], 3rd: Hutechinson Pkwy [entity_003]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Which overhead sign indicates a vehicle type restriction on the highway lanes?",
+        "answer": "PASSENGER CARS ONLY [entity_002]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the overhead signs visible between 8.2 and 8.9 seconds, what type of road is the vehicle traveling on?",
+        "answer": "Highway",
+        "reasoning": "The signs indicate route numbers, directions, and parkway exits, typical of a highway."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which destination name on the overhead gantry suggests the vehicle is in the New York metropolitan area?",
+        "answer": "G Washington Br [entity_004]",
+        "reasoning": "G Washington Br refers to the George Washington Bridge in New York."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the route marker 278 first become fully displayed?",
+        "answer": "8.867 seconds"
+      }
+    ]
+  }
+]

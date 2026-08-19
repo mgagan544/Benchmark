@@ -1,0 +1,70 @@
+{
+  "video_id": 993,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/993.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the ticket windows relative to the regulatory sign that says NO STANDING ANYTIME?",
+      "ground_truth": "TICKETS [entity_009] windows to the right of NO STANDING [entity_007] ANYTIME [entity_008]",
+      "prediction": "The ticket windows are located to the left of the regulatory sign that says NO STANDING ANYTIME.",
+      "inference_time_sec": 4.348,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory parking-related signs are mentioned along the stadium's exterior?",
+      "ground_truth": "2",
+      "prediction": "Two distinct regulatory parking-related signs are mentioned: a \"NO STANDING ANYTIME\" sign and a \"NO STANDING\" sign.",
+      "inference_time_sec": 4.998,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the stadium entrance gate, the ticket windows, and the large banner are encountered as the vehicle drives forward?",
+      "ground_truth": "1st: BULLPEN [entity_006] GATE [entity_005], 2nd: TICKETS [entity_009], 3rd: AMWAY [entity_010]",
+      "prediction": "As the vehicle drives forward, the order in which these elements are encountered is: first the stadium entrance gate, then the ticket windows, and finally the large banner.",
+      "inference_time_sec": 5.41,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the stadium's exterior indicates a parking or stopping restriction near the entrance gate?",
+      "ground_truth": "NO STANDING [entity_007] ANYTIME [entity_008]",
+      "prediction": "The text \"NO STANDING ANYTIME\" is visible on the stadium's exterior, indicating a parking or stopping restriction near the entrance gate.",
+      "inference_time_sec": 4.976,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the stadium gate, ticket windows, and commercial banners?",
+      "ground_truth": "sports and commercial district",
+      "prediction": "The presence of a stadium gate, ticket windows, and commercial banners suggests a driving environment that is likely near a sports venue or entertainment complex. This could indicate that the driver is navigating through a city or town that hosts sporting events or concerts, where such facilities are common. The environment is urban, with commercial activity and public infrastructure, and the snow on the sides of the road suggests it might be a winter season, possibly in a region with cold weather. The presence of a stadium gate and ticket windows implies that the area is frequented by visitors, possibly for events, and the commercial banners indicate that there are businesses or services catering to these",
+      "inference_time_sec": 14.629,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the legible signs and banners in this scene?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 3.14,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range are the ticket windows and the large commercial banner on the right side of the road visible?",
+      "ground_truth": "2.2s to 4.133s",
+      "prediction": "The ticket windows and the large commercial banner on the right side of the road are visible from 0.0 to 0.2 seconds.",
+      "inference_time_sec": 5.551,
+      "error": ""
+    }
+  ]
+}

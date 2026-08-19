@@ -1,0 +1,70 @@
+{
+  "video_id": 969,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/969.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the text Prospect?",
+      "ground_truth": "Expwy [entity_001] to the right of Prospect [entity_002]",
+      "prediction": "Verrazano Br Staten Is",
+      "inference_time_sec": 1.707,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds?",
+      "ground_truth": "3",
+      "prediction": "Three distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds.",
+      "inference_time_sec": 1.862,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of detection for the signs Prospect and EXIT 24?",
+      "ground_truth": "1st: Prospect [entity_002], 2nd: EXIT 24 [entity_003]",
+      "prediction": "The order of detection for the signs Prospect and EXIT 24 is Prospect first, then EXIT 24.",
+      "inference_time_sec": 1.678,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific vehicle types are restricted from the left lane according to the white regulatory sign?",
+      "ground_truth": "TRUCKS [entity_009], BUSES [entity_010], and TRAILERS [entity_011]",
+      "prediction": "The white regulatory sign indicates that vehicles in the left lane are restricted from the Interstate 295 Exwy. This restriction is likely due to construction or maintenance work on the interstate.",
+      "inference_time_sec": 2.087,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of directional signs, exit indicators, and lane restrictions suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of multiple directional signs, exit indicators, and lane restrictions on the highway suggests a well-structured and regulated traffic environment. These signs indicate the direction of travel, the presence of exits, and the need to maintain a certain speed and distance from other vehicles. The signs are strategically placed to guide drivers safely through the highway, ensuring smooth and efficient movement of traffic.",
+      "inference_time_sec": 3.486,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge and island names visible on the directional signs suggest the vehicle is in the New York City area?",
+      "ground_truth": "Verrazano Br [entity_008] and Staten Is [entity_005]",
+      "prediction": "The directional signs visible on the highway indicate that the vehicle is in the New York City area. Specifically, the green sign on the left side of the road reads 'Prospect Expwy' and 'Verrazano Br Staten Is,' which are both names associated with the Brooklyn Bridge and Staten Island Bridge, respectively. These names are iconic landmarks in New York City, suggesting that the vehicle is likely in the vicinity of these bridges.",
+      "inference_time_sec": 3.865,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the distant skyline advertisement text PEPSI first become visible?",
+      "ground_truth": "4.533 seconds",
+      "prediction": "The distant skyline advertisement text PEPSI becomes visible towards the end of the video, after the car has passed the 'Prospect Expwy' sign.",
+      "inference_time_sec": 2.009,
+      "error": ""
+    }
+  ]
+}

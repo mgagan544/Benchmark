@@ -1,0 +1,70 @@
+{
+  "video_id": 931,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/931.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
+      "ground_truth": "S E [entity_005]",
+      "prediction": "The text located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck is \"miles.\"",
+      "inference_time_sec": 1.652,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
+      "ground_truth": "7",
+      "prediction": "There are two distinct vehicle-mounted text elements visible on the semi-truck on the right side of the host vehicle. One is a logo, and the other is a web address.",
+      "inference_time_sec": 1.984,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
+      "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
+      "prediction": "The order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward is as follows:\n\n1. FUEL CO: This text is located on the back of the white truck on the right side of the road.\n2. milea: This text is located on the back of the white truck on the right side of the road.\n3. HINO: This text is located on the back of the white truck on the right side of the road.",
+      "inference_time_sec": 4.079,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "None",
+      "prediction": "Yes, there is visible text in the clip that indicates a hazard. The text on the side of the white truck reads \"MILE 1000,\" which is a common phrase used to indicate that the driver is nearing the end of a mile. This suggests that the driver may need to slow down or take a break to ensure safe driving.",
+      "inference_time_sec": 3.257,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The host vehicle is traveling on a multi-lane highway, which is a common feature of major urban and intercity roads. The presence of route number 278 suggests that this highway is part of a larger network of roads that are likely to be used by a variety of vehicles, including commercial trucks. The highway's design, with multiple lanes and a wide shoulder, indicates that it is intended for heavy traffic and possibly for commercial or industrial use. The road's condition, with visible wear and tear, suggests that it is a well-used route, possibly serving as a major thoroughfare for both local and long-distance traffic.",
+      "inference_time_sec": 5.038,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
+      "ground_truth": "Elizabeth N.J. [entity_003]",
+      "prediction": "The specific text on the semi-truck that suggests it is associated with a city in New Jersey is \"MILE 400\" on the side of the truck. This text is part of a larger logo that includes a stylized \"M\" and the word \"MILE,\" which is a common abbreviation for miles and kilometers, indicating that the truck is likely used for long-distance travel or delivery services.",
+      "inference_time_sec": 3.597,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
+      "ground_truth": "1.2s to 1.3s",
+      "prediction": "The text elements FUEL CO and S J first become visible on the semi-truck in the middle of the video.",
+      "inference_time_sec": 1.677,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 991,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/991.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the instruction to use the other side relative to the sidewalk sign?",
+      "ground_truth": "To the right of SIDEWALK [entity_001]",
+      "prediction": "The instruction to use the other side is to the left of the sidewalk sign.",
+      "inference_time_sec": 2.783,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the blue police barricades?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances visible on the blue police barricades: 'POLICE LINE DO NOT CROSS' and 'KEEP OUT.'",
+      "inference_time_sec": 3.811,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances on the blue barricades are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: POLICE LINE [entity_005], 2nd: DO NOT CROSS [entity_006], 3rd: NYPD [entity_007]",
+      "prediction": "The text instances on the blue barricades are encountered in the following order: 'POLICE LINE DO NOT CROSS' on the first barricade, 'NO WORKING BEYOND THIS POINT' on the second barricade, and 'NO WORKING BEYOND THIS POINT' on the third barricade.",
+      "inference_time_sec": 6.619,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the large orange sign on the left side of the road?",
+      "ground_truth": "CLOSED [entity_002]",
+      "prediction": "The large orange sign on the left side of the road displays the text \"POLICE LINE DO NOT CROSS.\" This sign is a standard warning used to indicate that the area is restricted and unauthorized access is prohibited. It is typically placed at the scene of an incident or construction site to alert individuals to the presence of law enforcement and to maintain a safe distance from the restricted area. The sign's bright orange color and bold lettering are designed to be highly visible and to convey a clear message to passersby.",
+      "inference_time_sec": 9.759,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of construction barriers, police barricades, and a commercial building, what kind of driving environment is depicted?",
+      "ground_truth": "Urban construction zone",
+      "prediction": "The video shows a mixed-use driving environment with both residential and commercial elements. The presence of construction barriers and police barricades suggests ongoing construction or maintenance work, while the commercial building indicates a business area. The combination of these elements creates a diverse driving environment that includes both urban and suburban characteristics.",
+      "inference_time_sec": 6.189,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which abbreviation on the blue barricades suggests the city where this clip was filmed?",
+      "ground_truth": "NYPD [entity_007]",
+      "prediction": "The abbreviation 'NYC' on the blue barricades suggests that the clip was filmed in New York City.",
+      "inference_time_sec": 3.442,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the instruction to use the other side first become visible on the left?",
+      "ground_truth": "0.133 seconds",
+      "prediction": "The instruction to use the other side first becomes visible on the left at the 5-second mark.",
+      "inference_time_sec": 3.251,
+      "error": ""
+    }
+  ]
+}

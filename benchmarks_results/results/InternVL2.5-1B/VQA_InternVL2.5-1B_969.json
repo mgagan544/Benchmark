@@ -1,0 +1,70 @@
+{
+  "video_id": 969,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/969.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the text Prospect?",
+      "ground_truth": "Expwy [entity_001] to the right of Prospect [entity_002]",
+      "prediction": "The readable text directly to the right of the text Prospect is \"Expy\".",
+      "inference_time_sec": 1.461,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds?",
+      "ground_truth": "3",
+      "prediction": "Two distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds.",
+      "inference_time_sec": 1.705,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of detection for the signs Prospect and EXIT 24?",
+      "ground_truth": "1st: Prospect [entity_002], 2nd: EXIT 24 [entity_003]",
+      "prediction": "The first sign, Prospect, is detected first, followed by the EXIT 24 sign.",
+      "inference_time_sec": 1.472,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific vehicle types are restricted from the left lane according to the white regulatory sign?",
+      "ground_truth": "TRUCKS [entity_009], BUSES [entity_010], and TRAILERS [entity_011]",
+      "prediction": "The white regulatory sign indicates that vehicles in the left lane are restricted from the highway exit ramp.",
+      "inference_time_sec": 1.501,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of directional signs, exit indicators, and lane restrictions suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of directional signs, exit indicators, and lane restrictions in the video suggests a complex and potentially congested driving environment. The presence of multiple signs, including one for Interstate 295 West, indicates that the driver is approaching a major highway with multiple exits and directions. The exit indicators, such as 'Exit 295 West' and 'Exit 295 West Expy', provide specific directions to the nearest exits, which are essential for navigating the highway. The lane restrictions, such as 'No Left Turn' and 'No U-Turn', are crucial for maintaining a safe and orderly flow of traffic. These",
+      "inference_time_sec": 5.304,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge and island names visible on the directional signs suggest the vehicle is in the New York City area?",
+      "ground_truth": "Verrazano Br [entity_008] and Staten Is [entity_005]",
+      "prediction": "The specific bridge and island names visible on the directional signs that suggest the vehicle is in the New York City area are 'Prospect' and 'Verazano Br Staten Is'. These names are commonly associated with the New York City skyline, particularly with the Prospect Bridge, which is a significant landmark in the city. The presence of these names on the highway signs indicates that the vehicle is likely in the New York City area, as these are well-known landmarks and locations within the city.",
+      "inference_time_sec": 4.185,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the distant skyline advertisement text PEPSI first become visible?",
+      "ground_truth": "4.533 seconds",
+      "prediction": "The distant skyline advertisement text PEPSI first becomes visible at the timestamp of 00:10:00.",
+      "inference_time_sec": 1.836,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 986,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/986.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the address number located relative to the residential house on the right side of the street?",
+      "ground_truth": "On the residential house displaying the address number 149 [entity_001]",
+      "prediction": "The address number is located on the right side of the street, adjacent to the residential house. It is visible as a white number on a red background, which is typical for street addresses in the United States.",
+      "inference_time_sec": 2.185,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many address signs or house numbers are visible on the residential houses in this clip?",
+      "ground_truth": "1",
+      "prediction": "Based on the given video, there are no visible address signs or house numbers on the residential houses in this clip. The houses appear to be in a row, with no distinct markings or numbers on the visible side of the houses.",
+      "inference_time_sec": 2.399,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle cross the intersection and the address sign come into focus?",
+      "ground_truth": "1st: cross intersection, 2nd: residential house displaying the address number 149 [entity_001] comes into focus",
+      "prediction": "The vehicle crosses the intersection in the middle of the video, as indicated by the first frame. The address sign, on the other hand, comes into focus towards the end of the video, after the vehicle has passed the intersection.",
+      "inference_time_sec": 2.372,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints or regulatory instructions are written on the signs visible in this clip?",
+      "ground_truth": "None",
+      "prediction": "The signs visible in the video include a red and white sign that appears to be a traffic sign, possibly indicating a stop or a warning for drivers. There is also a sign that is partially obscured, but it seems to be a directional sign, possibly indicating the direction of the road or a specific lane. However, the specific text on the signs is not legible in the video, so the exact driving constraints or regulatory instructions cannot be determined from the given content.",
+      "inference_time_sec": 3.92,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a residential house displaying address number 149, what type of environment is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The presence of a residential house with an address number 149 suggests that this is a neighborhood with a mix of residential and possibly commercial properties. The house is likely a private residence, as indicated by the address number, which is common for personal property. The presence of a street sign and traffic lights also implies that this is a well-maintained area with infrastructure in place to manage traffic and pedestrian flow. The environment appears to be orderly and well-organized, with a focus on residential and possibly commercial use of the space.",
+      "inference_time_sec": 4.406,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the address number displayed on the residential house?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The address number displayed on the residential house is \"10001.\"",
+      "inference_time_sec": 1.361,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what specific time range does the address sign 149 come into focus in the clip?",
+      "ground_truth": "Between 6.4 and 6.8 seconds",
+      "prediction": "The address sign 149 comes into focus in the clip during the time when the traffic light is green, as indicated by the illuminated green light on the traffic signal.",
+      "inference_time_sec": 1.991,
+      "error": ""
+    }
+  ]
+}

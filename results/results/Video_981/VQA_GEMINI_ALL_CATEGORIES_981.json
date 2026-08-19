@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "981",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What temporary sign is located to the left of the concrete retaining wall on the shoulder beneath the overpass?",
+        "answer": "TRS [entity_009] NOW [entity_010] OPEN [entity_011] to the left of the concrete retaining wall"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct overhead highway signs or route markers are mentioned on the two overpasses?",
+        "answer": "3",
+        "reasoning": "The first overpass has 215 [entity_003] EAST [entity_004] Henderson [entity_005] and 215 [entity_003] WEST [entity_006] Las Vegas [entity_007]. The second overpass has JCT [entity_013] with 215 [entity_003] EAST [entity_004] Henderson [entity_005] and 215 [entity_003] WEST [entity_006] Las Vegas [entity_007] in 1/4 MILE [entity_012]. This totals 3 distinct overhead signs."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the SPEED LIMIT sign, the RTC transit sign, and the TRS NOW OPEN sign are encountered by the vehicle?",
+        "answer": "1st: SPEED [entity_001] LIMIT [entity_002], 2nd: RTC [entity_008], 3rd: TRS [entity_009] NOW [entity_010] OPEN [entity_011]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What regulatory text constrains the vehicle's speed at the beginning of the clip?",
+        "answer": "SPEED [entity_001] LIMIT [entity_002]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of multi-lane overhead gantries, route markers, and speed limit signs, what kind of driving environment is depicted?",
+        "answer": "Highway",
+        "reasoning": "The presence of multi-lane overhead gantries with route markers like 215 EAST and 215 WEST, along with speed limit signs, indicates a highway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What regional cities or destinations are indicated by the overhead highway signs?",
+        "answer": "Henderson [entity_005] and Las Vegas [entity_007]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the SPEED LIMIT sign first become legible to the vehicle?",
+        "answer": "0.3 seconds",
+        "reasoning": "The temporal description states that the vehicle passes the SPEED [entity_001] LIMIT [entity_002] sign at 0.3 seconds."
+      }
+    ]
+  }
+]

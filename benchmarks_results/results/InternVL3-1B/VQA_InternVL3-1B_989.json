@@ -1,0 +1,70 @@
+{
+  "video_id": 989,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/989.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks?",
+      "ground_truth": "A residential concrete pathway and sidewalk between the driveways and the crosswalks.",
+      "prediction": "The private concrete driveways on the right side of the intersection are separated from the pedestrian crosswalks by a white fence.",
+      "inference_time_sec": 2.609,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct moving vehicles cross the intersection between 00:01 and 00:08?",
+      "ground_truth": "3",
+      "prediction": "Three",
+      "inference_time_sec": 0.879,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the white SUV, black SUV, and large black pickup truck clear the intersection?",
+      "ground_truth": "1st: white SUV, 2nd: black SUV, 3rd: large black pickup truck",
+      "prediction": "The white SUV clears the intersection first, followed by the black SUV, and then the large black pickup truck.",
+      "inference_time_sec": 1.549,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What signal hanging in the center of the intersection indicates that the driver should proceed with caution?",
+      "ground_truth": "The overhead flashing yellow traffic light.",
+      "prediction": "The red traffic light hanging in the center of the intersection indicates that the driver should proceed with caution.",
+      "inference_time_sec": 1.515,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the surrounding environment, including houses, lawns, and private driveways, what type of area is this?",
+      "ground_truth": "Residential area",
+      "prediction": "This appears to be a suburban area.",
+      "inference_time_sec": 1.095,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What written language or script is visible on the signs in this intersection?",
+      "ground_truth": "No signs with visible text are present in the clip.",
+      "prediction": "The signs in the intersection are not legible, so it is not possible to determine the written language or script.",
+      "inference_time_sec": 1.671,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the large black pickup truck visible crossing the intersection?",
+      "ground_truth": "00:06 to 00:08",
+      "prediction": "The large black pickup truck is visible crossing the intersection during the daytime, specifically between 9:00 and 10:00.",
+      "inference_time_sec": 1.752,
+      "error": ""
+    }
+  ]
+}

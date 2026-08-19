@@ -1,0 +1,70 @@
+{
+  "video_id": 965,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/965.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the word BUSES on the regulatory sign?",
+      "ground_truth": "TRAILERS [entity_003]",
+      "prediction": "The text located directly to the right of the word \"BUSES\" on the regulatory sign is \"TRAILERS\".",
+      "inference_time_sec": 3.311,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this video clip?",
+      "ground_truth": "2",
+      "prediction": "In the video, there are three distinct license plates visible on vehicles.",
+      "inference_time_sec": 3.113,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the driver encounter the text TRUCKS, Macombs Dam Br, and EXIT as the vehicle travels forward?",
+      "ground_truth": "1st: TRUCKS [entity_001], 2nd: Macombs Dam Br [entity_006], 3rd: EXIT [entity_011]",
+      "prediction": "The driver encounters the text in the following order:\n\n1. TRUCKS\n2. Macombs Dam Br\n3. EXIT",
+      "inference_time_sec": 3.444,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the regulatory sign on the left side of the road restricts certain vehicles from the left lane?",
+      "ground_truth": "TRUCKS [entity_001], BUSES [entity_002], TRAILERS [entity_003], LEFT [entity_004], LANE [entity_005]",
+      "prediction": "The regulatory sign on the left side of the road restricts certain vehicles from the left lane. The text on the sign reads \"NO TRUCKS, BUSES, TRAILERS, LEAVES, OR STONES.\"",
+      "inference_time_sec": 4.259,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway or expressway. The presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic indicates that this is a well-maintained and organized road infrastructure.",
+      "inference_time_sec": 4.106,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location in New York is suggested by the overhead exit signage text?",
+      "ground_truth": "Macombs Dam Br [entity_006]",
+      "prediction": "The overhead exit signage text suggests that the location is in the New York region.",
+      "inference_time_sec": 2.943,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the yellow advisory exit sign displaying EXIT first come clearly into view, and what text is located directly below it?",
+      "ground_truth": "4.633s, M P H [entity_012]",
+      "prediction": "The yellow advisory exit sign displaying \"EXIT first\" comes into view at the timestamp of 0.25 seconds. Directly below it, the text reads \"EXIT 20\".",
+      "inference_time_sec": 3.888,
+      "error": ""
+    }
+  ]
+}

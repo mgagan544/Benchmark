@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "923",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What destination text is located directly below the route name Van Wyck Expwy on the overhead gantry?",
+        "answer": "Kennedy Airport [entity_004] directly below Van Wyck Expwy [entity_002]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are visible on the overhead highway gantry signs at the start of the clip?",
+        "answer": "9",
+        "reasoning": "The overhead gantry contains 678 [entity_003], SOUTH [entity_001], Van Wyck Expwy [entity_002], Kennedy Airport [entity_004], Hillside Ave [entity_005], Jamaica Ave [entity_006], EXIT 6 [entity_009], EXIT [entity_007], and ONLY [entity_008], totaling 9."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order are the overhead sign Kennedy Airport and the taxi license plate T642185C encountered as legible text in the clip?",
+        "answer": "1st: Kennedy Airport [entity_004], 2nd: T642185C [entity_010]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Based on the indicators below the Exit 6 sign, what explicit driving constraint is implied for that lane?",
+        "answer": "EXIT [entity_007] and ONLY [entity_008]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment is depicted in this clip based on the overhead signs and road layout?",
+        "answer": "Highway",
+        "reasoning": "The presence of an overhead gantry with expressway names, airport directions, and exit signs indicates a highway."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific destination and route names visible on the overhead gantry suggest this clip is filmed in the New York City area?",
+        "answer": "Van Wyck Expwy [entity_002] and Kennedy Airport [entity_004]",
+        "reasoning": "The Van Wyck Expressway and Kennedy Airport are prominent landmarks located in New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the license plate T642185C on the lime-green taxi first become readable?",
+        "answer": "3.433s for license plate T642185C [entity_010]",
+        "reasoning": "The temporal description states that at 3.433s, the license plate T642185C [entity_010] becomes readable."
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "video_id": "968",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What regulatory sign is located directly below the street signs for Hancock and Evergreen?",
+        "answer": "ONE WAY [entity_004] below Hancock [entity_006] and Evergreen [entity_007]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances in this scene represent storefront names, commercial advertisements, or business contact details?",
+        "answer": "8",
+        "reasoning": "The commercial text instances are LOS [entity_009], Naranjos [entity_010], FOOD [entity_002], cor [entity_003], CORP. [entity_005], FOODCORP. [entity_011], HOT FOOD [entity_012], and 718-443-7192 [entity_013]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of appearance for the regulatory ONE WAY sign, the signboard FOODCORP., and the contact number 718-443-7192?",
+        "answer": "1st: ONE WAY [entity_004], 2nd: FOODCORP. [entity_011], 3rd: 718-443-7192 [entity_013]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Based on the visible text, what driving action is implied at the starting intersection?",
+        "answer": "STOP [entity_001]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the density of storefront signs, food advertisements, and street signs, what kind of driving environment is depicted?",
+        "answer": "Urban commercial area"
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific text instance suggests the region or city where this clip was recorded?",
+        "answer": "718-443-7192 [entity_013]",
+        "reasoning": "The area code 718 in the contact number 718-443-7192 [entity_013] is associated with New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During which time range do the street signs for Hancock and Evergreen come into clearer view?",
+        "answer": "1.333s - 2.033s"
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 903,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/903.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What manufacturer name is located to the left of the license plate 63:816.70. on the rear of the grey bus?",
+      "ground_truth": "MERKAVIM [entity_011] to the left of 63:816.70. [entity_007]",
+      "prediction": "The manufacturer name located to the left of the license plate 63:816.70. on the rear of the grey bus is 'MAN'. This can be seen in the video as the bus is stationary, and the name is clearly visible on the bus's body. The name 'MAN' is associated with the German manufacturer of buses and trucks, which is known for producing a wide range of commercial vehicles. The presence of this name indicates that the bus is likely part of a fleet operated by a company that uses MAN-branded vehicles, which is common in many urban transit systems around the world.",
+      "inference_time_sec": 11.5,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on the transit buses in this clip?",
+      "ground_truth": "2",
+      "prediction": "Two",
+      "inference_time_sec": 1.639,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plates of the two Metropoline transit buses are encountered by the camera vehicle?",
+      "ground_truth": "1st: 63:816.70. [entity_007], 2nd: 63:709:70 [entity_018]",
+      "prediction": "The camera vehicle first encounters the bus with the license plate '63.6.1670' and then the bus with the license plate '544.110'.",
+      "inference_time_sec": 4.69,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text in the scene, are there any explicit driving constraints or speed limits indicated?",
+      "ground_truth": "None",
+      "prediction": "No, there are no explicit driving constraints or speed limits visible in the scene. The video only shows the buses and the surrounding city environment.",
+      "inference_time_sec": 3.81,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text on the transit buses suggest about the type of driving environment?",
+      "ground_truth": "Urban transit corridor",
+      "prediction": "The mix of Hebrew and English text on the transit buses suggests that the driving environment is likely in a bilingual region, possibly in Israel, where both languages are commonly used. This indicates a diverse and possibly tourist-friendly area where English is understood and used alongside Hebrew.",
+      "inference_time_sec": 5.75,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which website link on the grey bus advertisement suggests a specific country of origin or region?",
+      "ground_truth": "Suzuki.co.ill [entity_006]",
+      "prediction": "The website link 'www.winterfam.com' on the grey bus advertisement suggests a specific country of origin or region, which is likely Israel, as indicated by the Hebrew text and the context of the advertisement.",
+      "inference_time_sec": 4.856,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range does the white bus identifier 2443 first become revealed to the camera vehicle?",
+      "ground_truth": "4.467 seconds to 5.0 seconds",
+      "prediction": "The white bus identifier 2443 first becomes revealed to the camera vehicle between the timestamps 10 to 15 seconds.",
+      "inference_time_sec": 3.921,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 967,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/967.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the left of MARTIAL?",
+      "ground_truth": "RESTAURANT BAR [entity_008]",
+      "prediction": "ARTS",
+      "inference_time_sec": 1.745,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are associated with the EL TEQ storefront?",
+      "ground_truth": "3",
+      "prediction": "2",
+      "inference_time_sec": 1.693,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for DENTIST, CHURCH, and BUSES ONLY are encountered between 1.3s and 2.8s?",
+      "ground_truth": "1st: DENTIST [entity_009], 2nd: CHURCH [entity_010], 3rd: BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The order in which the signs are encountered is DENTIST, then CHURCH, then BUSES ONLY.",
+      "inference_time_sec": 2.821,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the signs near the DENTIST sign constrains vehicle movement or lane usage?",
+      "ground_truth": "ONE WAY [entity_013], BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The text on the signs near the DENTIST sign includes \"MARTIAL ARTS\" and \"HALAL DENTIST,\" which are likely to constrain vehicle movement or lane usage by indicating specific business types or services. The \"MARTIAL ARTS\" sign might suggest that the area is a place for martial arts training, possibly restricting vehicle access or usage for certain activities. The \"HALAL DENTIST\" sign indicates a religious or dietary requirement, which may influence vehicle movement or lane usage, especially if the area is designated for specific services or if the dentist is operating under a religious or cultural requirement.",
+      "inference_time_sec": 7.203,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible text, such as MARTIAL ARTS, HALAL, and PARA TI, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts a densely populated urban environment with a mix of commercial and residential buildings. The presence of multiple businesses, including a martial arts studio, a halal restaurant, and a Colombian restaurant, suggests a diverse cultural and ethnic community. The street is busy with vehicles and pedestrians, indicating a high level of activity. The clear visibility of the text on signs and storefronts further supports the idea of a vibrant, bustling city area.",
+      "inference_time_sec": 5.562,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location is suggested by the area codes in the phone numbers on the storefronts?",
+      "ground_truth": "New York City",
+      "prediction": "The area codes in the phone numbers on the storefronts suggest that the location is in the United States, specifically in the New York area. The area code 718 is commonly associated with New York City, and the phone numbers are likely from a local business in that region.",
+      "inference_time_sec": 4.19,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AC-91331 first become legible in the clip?",
+      "ground_truth": "0.5s",
+      "prediction": "The license plate AC-91331 first becomes legible at 0:01.",
+      "inference_time_sec": 2.522,
+      "error": ""
+    }
+  ]
+}

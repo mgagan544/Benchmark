@@ -1,0 +1,70 @@
+{
+  "video_id": 987,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/987.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory sign displaying the word STANDING relative to the parked dark green SUV?",
+      "ground_truth": "Adjacent to the dark green SUV, as STANDING [entity_001]",
+      "prediction": "The regulatory sign displaying the word STANDING is positioned to the right of the parked dark green SUV.",
+      "inference_time_sec": 4.393,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory signs are visible in this clip?",
+      "ground_truth": "1",
+      "prediction": "2",
+      "inference_time_sec": 3.066,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles passed by the ego vehicle on the right side of the road between 00:00 and 00:06?",
+      "ground_truth": "1st: white sedan, 2nd: dark sedan, 3rd: silver sedan, 4th: grey minivan",
+      "prediction": "The order of vehicles passed by the ego vehicle on the right side of the road between 00:00 and 00:06 is as follows: first, a black SUV; then, a white pickup truck; next, a silver sedan; and finally, a green SUV.",
+      "inference_time_sec": 7.426,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the regulatory sign visible at the intersection near the end of the clip?",
+      "ground_truth": "STANDING [entity_001] indicates a standing restriction",
+      "prediction": "The regulatory sign visible at the intersection near the end of the clip indicates a speed limit. This sign is typically used to inform drivers of the maximum legal speed they can travel in that area, ensuring safety and compliance with traffic laws.",
+      "inference_time_sec": 6.436,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the environment and the parked vehicles, what type of area is the vehicle traveling through?",
+      "ground_truth": "Residential area",
+      "prediction": "The vehicle is traveling through a residential area. This is evident from the presence of houses lining the street, the parked cars along the sides, and the trees that provide shade and a suburban feel. The street appears to be a typical neighborhood road with moderate traffic, suggesting a quiet, residential setting rather than a commercial or industrial zone.",
+      "inference_time_sec": 7.914,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the regulatory sign at the intersection written in?",
+      "ground_truth": "English",
+      "prediction": "The regulatory sign at the intersection is written in English.",
+      "inference_time_sec": 3.843,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text on the regulatory sign first become visible to the ego vehicle?",
+      "ground_truth": "00:08",
+      "prediction": "0.3 seconds",
+      "inference_time_sec": 3.278,
+      "error": ""
+    }
+  ]
+}

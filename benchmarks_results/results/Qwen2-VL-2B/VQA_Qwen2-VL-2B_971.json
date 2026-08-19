@@ -1,0 +1,70 @@
+{
+  "video_id": 971,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/971.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead sign adjacent to the Prospect Expwy sign?",
+      "ground_truth": "WEST [entity_006] Verrazano Br [entity_007] Staten is [entity_008]",
+      "prediction": "The text on the overhead sign adjacent to the Prospect Expwy sign is \"NEW LOWER PRICES START HERE\".",
+      "inference_time_sec": 3.233,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the roadside billboard on the right side of the highway?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances displayed on the roadside billboard on the right side of the highway.",
+      "inference_time_sec": 3.001,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate, the billboard text, and the overhead highway signs are first encountered in the clip?",
+      "ground_truth": "1st: license plate, 2nd: billboard text, 3rd: overhead highway signs",
+      "prediction": "The license plate is first encountered at the beginning of the clip, the billboard text is next, and the overhead highway signs are last.",
+      "inference_time_sec": 3.408,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead signs, what direction should a driver follow for the Prospect Expwy?",
+      "ground_truth": "EAST [entity_011]",
+      "prediction": "The overhead signs indicate that the driver should follow the right lane for the Prospect Expressway.",
+      "inference_time_sec": 3.071,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, a steel guardrail, and a license plate, what type of driving environment is depicted?",
+      "ground_truth": "highway",
+      "prediction": "The image depicts a typical urban driving environment. The presence of overhead exit signs, a steel guardrail, and a license plate are characteristic of a busy highway or expressway in a city. These elements are commonly found in urban areas where traffic is heavy and the infrastructure is designed to manage large volumes of vehicles.",
+      "inference_time_sec": 4.732,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any names on the overhead highway signs suggest a specific region, and what text supports this?",
+      "ground_truth": "New York, supported by Verrazano Br [entity_007] and Staten is [entity_008]",
+      "prediction": "Yes, the overhead highway signs suggest a specific region. The signs indicate \"NEW YORK\" and \"NEW YORK CITY,\" which are the names of the regions in the United States. The text \"NEW YORK\" is written in all capital letters, while \"NEW YORK CITY\" is written in lowercase letters. This suggests that the highway is located in New York City, which is a major city in the United States.",
+      "inference_time_sec": 5.437,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the billboard slogan More Saving, More doing. first become clearly visible?",
+      "ground_truth": "6.6 seconds",
+      "prediction": "The billboard slogan \"More Saving, More doing. More Saving, More doing. More Saving, More doing.\" first becomes clearly visible at 00:00.",
+      "inference_time_sec": 3.721,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 922,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/922.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lane indicator is visible overhead at 0.0 seconds to the right of the Airport Exit sign?",
+      "ground_truth": "EXIT [entity_004] to the right of Airport Exit [entity_002]",
+      "prediction": "At 0.0 seconds, the lane indicator visible overhead to the right of the Airport Exit sign is 'EXIT ONLY'. This sign is crucial for guiding drivers to the correct lane for exiting the highway. It is positioned directly above the lane that is designated for vehicles intending to leave the highway, ensuring that drivers are aware of the lane they need to stay in to reach their destination. The presence of such signs is a standard safety measure in highway systems, helping to prevent accidents and ensure smooth traffic flow.",
+      "inference_time_sec": 9.669,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street, regulatory, or warning text elements are visible in this clip?",
+      "ground_truth": "7",
+      "prediction": "There are four distinct text elements visible: 'Airport Exit', 'EXIT ONLY', 'STOP', and 'KEEP RIGHT'.",
+      "inference_time_sec": 3.547,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the text elements on the orange warning sign encountered after passing the concrete overpass?",
+      "ground_truth": "1st: ROAD [entity_005], 2nd: WORK [entity_006], 3rd: AHEAD [entity_007]",
+      "prediction": "The text elements on the orange warning sign are arranged in the following order: 'YIELD', 'YIELD TO PEDESTRIANS', and 'YIELD TO PEDESTRIANS ON ALL WALKWAYS'.",
+      "inference_time_sec": 5.004,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The sign held by the construction flagger at 0.0 seconds has the text 'STOP' in bold white letters on a red background, indicating that vehicles must come to a complete stop before proceeding. This is a standard safety measure in construction zones to prevent accidents and ensure the safety of both workers and motorists. The presence of such a sign is crucial in areas where road work is ongoing, as it alerts drivers to the presence of construction activities and potential hazards that may not be immediately visible. The flagger's role is to communicate these hazards through visual signals, and the 'STOP' sign is a clear and universally recognized command to halt",
+      "inference_time_sec": 11.699,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs like Airport Exit and ROAD WORK AHEAD, what kind of driving environment is depicted?",
+      "ground_truth": "Highway construction zone",
+      "prediction": "The driving environment is a construction zone near an airport exit, with ongoing road work and traffic management measures in place.",
+      "inference_time_sec": 3.538,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead and warning signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 1.655,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the STOP sign held by the construction flagger visible and legible?",
+      "ground_truth": "0.0 to 2.633 seconds",
+      "prediction": "The STOP sign held by the construction flagger is visible and legible from the beginning of the video until the flagger is no longer in the frame, which is approximately from the start of the video to 10 seconds in.",
+      "inference_time_sec": 5.167,
+      "error": ""
+    }
+  ]
+}

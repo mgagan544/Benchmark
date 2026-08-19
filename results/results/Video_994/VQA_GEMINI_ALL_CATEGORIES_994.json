@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "994",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Where is the deliveries sign located relative to the green directional sign?",
+        "answer": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text entities are visible on the signs in this clip?",
+        "answer": "9",
+        "reasoning": "There are 6 text entities on the green directional sign (GRAND CENTRAL [entity_001], PKWY [entity_002], RFK BR [entity_003], BKLYN-ONS [entity_004], EXPWY [entity_005], 278 [entity_006]), 2 on the delivery sign (DELIVERIES [entity_007], ENTRANCE 9 [entity_008]), and 1 on the weight limit sign (25 TONE [entity_009]), totaling 9."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+        "answer": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+        "answer": "25 TONE [entity_009]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+        "answer": "Highway through-route",
+        "reasoning": "The presence of GRAND CENTRAL [entity_001] PKWY [entity_002] and BKLYN-ONS [entity_004] EXPWY [entity_005] 278 [entity_006] indicates a highway through-route."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+        "answer": "New York City",
+        "reasoning": "BKLYN-ONS [entity_004] and RFK BR [entity_003] refer to Brooklyn-Queens and Robert F. Kennedy Bridge in New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+        "answer": "3.033 seconds",
+        "reasoning": "The temporal description states that DELIVERIES [entity_007] ENTRANCE 9 [entity_008] comes into view at timestamp 3.033 seconds."
+      }
+    ]
+  }
+]

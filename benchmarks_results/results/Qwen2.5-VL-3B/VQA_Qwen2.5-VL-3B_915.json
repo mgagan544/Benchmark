@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "Qwen2.5-VL-3B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "The text \"direct\" is located directly to the right of the \"ARROWHEAD\" brand on the red delivery truck.",
+      "inference_time_sec": 4.816,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct text instances visible in the clip that are mounted on delivery trucks: \"Direct,\" \"Direct,\" and \"Direct.\"",
+      "inference_time_sec": 4.8,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "The text instances are encountered in the following order: Odwalla, TAXI, and ARROWHEAD.",
+      "inference_time_sec": 4.635,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs that indicate height clearance limits for vehicles entering the covered underpass are yellow diamond-shaped signs with black text. These signs typically display the maximum height allowed for vehicles to pass through the underpass without obstruction.",
+      "inference_time_sec": 5.983,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The mix of text and landmarks visible in the video suggests that the driving environment is likely an urban or suburban area with a mix of commercial and possibly industrial zones. The presence of multiple signs, including those for \"odwalla\" and \"Direct,\" indicates that there are businesses or stores along the route. The mention of \"Buses\" and \"Bus Terminal\" suggests that public transportation is available, which is common in areas with significant foot traffic or where public transit is a primary mode of transportation. The combination of these elements points to a well-developed infrastructure with a blend of retail, commercial, and possibly industrial activities.",
+      "inference_time_sec": 11.289,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The text indicates that the measurement system is imperial (feet) and the phone format is 1-800-123-4567.",
+      "inference_time_sec": 5.343,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "The TAXI sign becomes visible in the segregated transit lane at approximately 10:25.",
+      "inference_time_sec": 4.486,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "914",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What sign is located directly to the right of the digital YOUR SPEED MPH feedback sign?",
+        "answer": "ONLY [entity_005] sign to the right of YOUR [entity_001] SPEED [entity_002] MPH [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct regulatory or feedback signs are located on the right side of the exit ramp?",
+        "answer": "3",
+        "reasoning": "The three signs are ONE WAY [entity_004], YOUR [entity_001] SPEED [entity_002] MPH [entity_003], and ONLY [entity_005]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order does the camera vehicle pass the ONE WAY sign, the digital YOUR SPEED MPH feedback sign, and the ONLY sign?",
+        "answer": "1st: ONE WAY [entity_004], 2nd: YOUR [entity_001] SPEED [entity_002] MPH [entity_003], 3rd: ONLY [entity_005]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Which sign indicates that traffic must flow in a single direction at the start of the ramp?",
+        "answer": "ONE WAY [entity_004] sign"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the exit ramp, elevated structure, and multi-story brick buildings, what kind of driving environment is depicted?",
+        "answer": "urban exit ramp",
+        "reasoning": "The presence of an exit ramp, elevated underpass, and brick buildings indicates an urban highway exit."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for the text on the regulatory and feedback signs along the ramp?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the ONLY sign first become visible as the vehicle enters the underpass?",
+        "answer": "4.4 seconds for ONLY [entity_005]",
+        "reasoning": "The temporal description states that at 4.4 seconds, the vehicle enters the underpass where the ONLY [entity_005] sign is visible."
+      }
+    ]
+  }
+]

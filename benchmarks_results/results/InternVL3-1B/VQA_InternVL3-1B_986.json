@@ -1,0 +1,70 @@
+{
+  "video_id": 986,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/986.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the address number located relative to the residential house on the right side of the street?",
+      "ground_truth": "On the residential house displaying the address number 149 [entity_001]",
+      "prediction": "The address number is located on the right side of the street, as seen in the video.",
+      "inference_time_sec": 2.219,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many address signs or house numbers are visible on the residential houses in this clip?",
+      "ground_truth": "1",
+      "prediction": "Two",
+      "inference_time_sec": 0.966,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle cross the intersection and the address sign come into focus?",
+      "ground_truth": "1st: cross intersection, 2nd: residential house displaying the address number 149 [entity_001] comes into focus",
+      "prediction": "The vehicle crosses the intersection, the address sign comes into focus, and then the vehicle continues driving down the street.",
+      "inference_time_sec": 1.589,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints or regulatory instructions are written on the signs visible in this clip?",
+      "ground_truth": "None",
+      "prediction": "The signs indicate that the driver must yield to pedestrians and that the intersection is a one-way street.",
+      "inference_time_sec": 1.652,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a residential house displaying address number 149, what type of environment is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The environment is suburban.",
+      "inference_time_sec": 0.975,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the address number displayed on the residential house?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The address number displayed on the residential house is in a standard numerical format, likely representing the street number and the block number. This is common in residential addresses where the house number is clearly visible and easily readable. The format is typically a three-digit number followed by a street name and a number, such as '123 Main St.' or '456 Elm St.' This system is widely used in the United States and other countries where such addresses are common.",
+      "inference_time_sec": 4.085,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what specific time range does the address sign 149 come into focus in the clip?",
+      "ground_truth": "Between 6.4 and 6.8 seconds",
+      "prediction": "The address sign 149 comes into focus at the beginning of the video, indicating the start of the journey.",
+      "inference_time_sec": 1.733,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "The text located directly to the right of the ARROWHEAD brand on the red delivery truck is \"odwalla.\"",
+      "inference_time_sec": 1.63,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct text instances visible in the clip that are mounted on delivery trucks. One is on the side of the truck, and the other is on the back of the truck.",
+      "inference_time_sec": 2.032,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "The text instances encountered in the order from left to right are TAXI, Odwalla, and ARROWHEAD.",
+      "inference_time_sec": 1.612,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs indicate height clearance limits for vehicles entering the covered underpass. One sign reads \"12 ft 3 in,\" which suggests that vehicles must be at least 12 feet (3.7 meters) tall to pass through the underpass. Another sign, partially obscured, appears to read \"12 ft 4 in,\" likely indicating a higher clearance limit. These signs are crucial for ensuring that vehicles are not only safe to pass through but also that they do not exceed the height clearance limits, which is essential for safety and compliance with local traffic regulations.",
+      "inference_time_sec": 4.608,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The mix of text and landmarks visible in the clip suggests that the driving environment is likely a busy urban area with a mix of commercial and possibly residential zones. The presence of signs and the variety of vehicles indicate a location that is frequented by both locals and visitors, with the commercial signs likely indicating a business district or a shopping area. The mix of text and landmarks also implies that the area is well-connected, with multiple points of interest and services, which is typical of a city's commercial and residential zones.",
+      "inference_time_sec": 4.228,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The visible text in the image includes \"1234\" and \"1000,\" which are part of the United Kingdom's telephone format. This format is used in the United Kingdom, Ireland, and some Commonwealth countries.",
+      "inference_time_sec": 2.438,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "The TAXI sign first becomes visible in the segregated transit lane at approximately 1:00 PM, as indicated by the timestamp on the sign.",
+      "inference_time_sec": 1.781,
+      "error": ""
+    }
+  ]
+}

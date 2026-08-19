@@ -1,0 +1,70 @@
+{
+  "video_id": 967,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/967.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the left of MARTIAL?",
+      "ground_truth": "RESTAURANT BAR [entity_008]",
+      "prediction": "The text directly to the left of MARTIAL is \"HALAL\".",
+      "inference_time_sec": 2.901,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are associated with the EL TEQ storefront?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances containing numbers associated with the EL TEQ storefront.",
+      "inference_time_sec": 3.057,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for DENTIST, CHURCH, and BUSES ONLY are encountered between 1.3s and 2.8s?",
+      "ground_truth": "1st: DENTIST [entity_009], 2nd: CHURCH [entity_010], 3rd: BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The signs for DENTIST, CHURCH, and BUSES ONLY are encountered in the following order:\n\n1. DENTIST\n2. CHURCH\n3. BUSES ONLY",
+      "inference_time_sec": 3.889,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the signs near the DENTIST sign constrains vehicle movement or lane usage?",
+      "ground_truth": "ONE WAY [entity_013], BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The signs near the DENTIST sign constrains vehicle movement or lane usage by indicating that the road is one-way.",
+      "inference_time_sec": 3.265,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible text, such as MARTIAL ARTS, HALAL, and PARA TI, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The driving environment depicted in the clip shows a busy urban area with a mix of commercial and residential buildings. The presence of multiple storefronts, including a martial arts studio, a halal restaurant, and a variety of other businesses, suggests a diverse and active community. The cars and motorcycles are parked or moving along the street, indicating a typical day in a bustling city. The overall scene is indicative of a busy urban environment with a mix of commercial and residential areas.",
+      "inference_time_sec": 5.895,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location is suggested by the area codes in the phone numbers on the storefronts?",
+      "ground_truth": "New York City",
+      "prediction": "The regional location suggested by the area codes in the phone numbers on the storefronts is Colombia. The phone numbers listed are for a restaurant and a martial arts school, both of which are located in Colombia.",
+      "inference_time_sec": 4.039,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AC-91331 first become legible in the clip?",
+      "ground_truth": "0.5s",
+      "prediction": "The license plate AC-91331 first becomes legible in the clip at 00:00:00.",
+      "inference_time_sec": 3.62,
+      "error": ""
+    }
+  ]
+}

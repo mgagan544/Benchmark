@@ -1,0 +1,70 @@
+{
+  "video_id": 927,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/927.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text New Jersey relative to the G W Bridge text?",
+      "ground_truth": "Below G W Bridge [entity_003]",
+      "prediction": "The text New Jersey is to the left of the G W Bridge text.",
+      "inference_time_sec": 1.616,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the overhead gantry signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "Four",
+      "inference_time_sec": 0.903,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?",
+      "ground_truth": "1st: NORTH [entity_002]; 2nd: New Jersey [entity_008]",
+      "prediction": "The texts NORTH and New Jersey are visible in the first frame, then they are not visible in the second frame.",
+      "inference_time_sec": 1.589,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?",
+      "ground_truth": "NO TRUCKS [entity_006] and ALL TRUCKS TO NJ [entity_007]",
+      "prediction": "The overhead gantry displays green signs with white text that read 'NO TRUCKS' and 'SOUTH' indicating driving restrictions or instructions for trucks.",
+      "inference_time_sec": 2.06,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the density and type of overhead text suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The overhead green signs with white lettering provide clear directional information, indicating exits for different routes. The signs are well-lit, enhancing visibility for drivers. The presence of multiple signs suggests a well-organized and regulated traffic system, ensuring that drivers can easily navigate the highway. The signs also indicate that the highway is likely a major thoroughfare, given the number of exits and the presence of multiple signs. The text on the signs is legible, and the highway appears to be well-maintained, contributing to the overall safety and efficiency of the driving environment.",
+      "inference_time_sec": 4.801,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which metropolitan area is suggested by the visible overhead signs, and what text supports this?",
+      "ground_truth": "New York metropolitan area, supported by Cr Bronx Expy [entity_004] and New Jersey [entity_008]",
+      "prediction": "The visible overhead signs suggest that the metropolitan area is New Jersey. The text 'W Bridge' and 'G W Bridge' on the green signs indicates the proximity to the New Jersey metropolitan area.",
+      "inference_time_sec": 2.188,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?",
+      "ground_truth": "0.033s",
+      "prediction": "The texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ become legible at the beginning of the video, just after the first car passes the 'NOW TRUCKS, LOWER LEVEL' sign.",
+      "inference_time_sec": 2.468,
+      "error": ""
+    }
+  ]
+}

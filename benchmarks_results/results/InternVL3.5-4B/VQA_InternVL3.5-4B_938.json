@@ -1,0 +1,70 @@
+{
+  "video_id": 938,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/938.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable sign is located directly to the left of the Parking sign on the overhead gantry, which becomes visible at 0.767s?",
+      "ground_truth": "KEEP LEFT [entity_005] signboard, to the left of Parking [entity_003] sign",
+      "prediction": "The sign that is located directly to the left of the Parking sign on the overhead gantry is the 'Airport Exit' sign. It is blue with white lettering and is positioned above the road, providing directions to the airport terminal and exit. This sign becomes visible as the vehicle approaches the intersection, and it is accompanied by the 'Keep Left' and 'Keep Right' instructions, guiding drivers on the appropriate lanes to take for their intended destination.",
+      "inference_time_sec": 8.704,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many street, regulatory, or airport signs are identified in the scene description, including those passed between 0.0s and 2.933s?",
+      "ground_truth": "8",
+      "prediction": "There are a total of 10 signs identified in the scene description, including street, regulatory, and airport signs.",
+      "inference_time_sec": 3.576,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the Airport sign, the Blue Parking sign, and the ONE WAY sign are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Airport [entity_001], 2nd: Blue Parking [entity_007], 3rd: ONE WAY [entity_009]",
+      "prediction": "The chronological order is: first, the Airport sign is encountered, followed by the Blue Parking sign, and finally, the ONE WAY sign.",
+      "inference_time_sec": 3.772,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory sign on a roadside post, passed at 2.933s, indicates a directional constraint for drivers?",
+      "ground_truth": "ONE WAY [entity_009] sign",
+      "prediction": "The regulatory sign on the roadside post, which is passed at 2.933 seconds, is a blue sign with white text that reads 'Airport Parking Terminal Exit KEEP LEFT KEEP RIGHT.' This sign indicates that drivers should maintain their lane position to ensure a smooth flow of traffic towards the airport parking terminal exit. The sign is positioned on the right side of the road, adjacent to the lane that the vehicles are traveling in. It serves as a directional guide for drivers to follow the correct lane to reach their destination efficiently. The presence of this sign is crucial for traffic management, especially in areas with high vehicle density, such as near airport",
+      "inference_time_sec": 11.701,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is depicted, given the presence of the Terminal and Parking signs on the gantry and the Blue Parking Garage?",
+      "ground_truth": "Airport terminal roadway",
+      "prediction": "The video depicts a driving environment that is characteristic of an airport vicinity. The presence of the 'Airport Terminal' and 'Parking' signs on the gantry, along with the 'Blue Parking Garage' sign, indicates that the location is near an airport. The traffic lights and road signs are typical of a controlled intersection, guiding vehicles towards the airport facilities. The environment is urban, with a mix of vehicles, including cars and a bus, suggesting a busy area with regular vehicular movement. The infrastructure, such as the overpasses and the multi-level parking structure, is designed to accommodate the high volume of traffic associated with airport areas. The",
+      "inference_time_sec": 11.624,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead gantry signs and the ONE WAY sign?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 1.651,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Blue Parking Garage structure first become fully visible on the left side of the roadway?",
+      "ground_truth": "2.133s with Blue Parking Garage [entity_008]",
+      "prediction": "The Blue Parking Garage structure first becomes fully visible on the left side of the roadway at the beginning of the video, as the camera moves forward.",
+      "inference_time_sec": 3.779,
+      "error": ""
+    }
+  ]
+}

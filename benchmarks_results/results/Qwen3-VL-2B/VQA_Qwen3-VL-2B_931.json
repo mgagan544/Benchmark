@@ -1,0 +1,70 @@
+{
+  "video_id": 931,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/931.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
+      "ground_truth": "S E [entity_005]",
+      "prediction": "808-438-0018",
+      "inference_time_sec": 2.106,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
+      "ground_truth": "7",
+      "prediction": "There are 2 distinct vehicle-mounted text elements visible on the semi-truck on the right side of the host vehicle.",
+      "inference_time_sec": 2.801,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
+      "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
+      "prediction": "The text elements appear in the following order: FUEL CO, milea, HINO.",
+      "inference_time_sec": 2.543,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "None",
+      "prediction": "No, there is no visible text in the clip that indicates a hazard, warning, or driving constraint.",
+      "inference_time_sec": 2.565,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The host vehicle is traveling on a highway, as indicated by the presence of route number 278 and multiple commercial trucks. The road is likely a major highway with multiple lanes and a clear, well-maintained surface, typical of a highway designed for high-speed travel and commercial traffic.",
+      "inference_time_sec": 4.341,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
+      "ground_truth": "Elizabeth N.J. [entity_003]",
+      "prediction": "The text on the semi-truck that suggests the vehicle is associated with a city in New Jersey is \"Newark, NJ.\"",
+      "inference_time_sec": 3.173,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
+      "ground_truth": "1.2s to 1.3s",
+      "prediction": "The text elements FUEL CO and S J first become visible on the semi-truck in the time range of 0.0 to 0.2 seconds.",
+      "inference_time_sec": 3.249,
+      "error": ""
+    }
+  ]
+}

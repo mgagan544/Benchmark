@@ -1,0 +1,70 @@
+{
+  "video_id": 910,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/910.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the sign for Broad St on the overhead gantry?",
+      "ground_truth": "Grove St [entity_006] directly beneath Broad St [entity_005]",
+      "prediction": "The text located directly beneath the sign for Broad St on the overhead gantry is \"North 4\".",
+      "inference_time_sec": 4.569,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are encountered after the vehicle passes the medical office building at 5.100 seconds?",
+      "ground_truth": "4",
+      "prediction": "Two distinct text instances containing numbers are encountered after the vehicle passes the medical office building at 5.100 seconds: \"26.30\" and \"27.18\".",
+      "inference_time_sec": 6.686,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle encounters the text CENTER, Broad St, and Enrite?",
+      "ground_truth": "1st: CENTER [entity_003], 2nd: Broad St [entity_005], 3rd: Enrite [entity_015]",
+      "prediction": "The vehicle encounters the text in the following order: first \"CENTER\", then \"Broad St\", and finally \"Enrite\".",
+      "inference_time_sec": 5.391,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead gantry, what driving action is indicated for reaching Passaic?",
+      "ground_truth": "Exit in 1/2 mile as indicated by EXIT 1/2 MILE [entity_012]",
+      "prediction": "The text on the overhead gantry indicates that to reach Passaic, drivers should take the exit to the right.",
+      "inference_time_sec": 4.725,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a large overhead gantry and multiple roadside businesses?",
+      "ground_truth": "highway corridor with commercial zones",
+      "prediction": "The presence of a large overhead gantry and multiple roadside businesses suggests a commercial or urban driving environment. The gantry typically indicates a major highway or arterial road with multiple exits or interchanges, often serving as a key transportation corridor. The roadside businesses, such as gas stations and convenience stores, further imply that this is a location where drivers can access services and amenities, typical of urban or suburban areas. This environment is designed to facilitate both commuter and commercial traffic, with infrastructure supporting efficient movement and access to services.",
+      "inference_time_sec": 10.542,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city names visible on the overhead highway gantry suggest the geographic region of the route?",
+      "ground_truth": "Clifton [entity_010] and Passaic [entity_011]",
+      "prediction": "The specific city names visible on the overhead highway gantry are \"Groves St,\" \"Van Houten,\" and \"Curtin.\" These names suggest the route is located in a region that includes parts of the United States, likely in a state such as New York or New Jersey, where such street names are common. The presence of these names indicates a suburban or urban setting, typical of the northeastern United States.",
+      "inference_time_sec": 9.3,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the overhead highway sign displaying Broad St remain visible as the vehicle drives underneath it?",
+      "ground_truth": "6.667 to 7.433 seconds",
+      "prediction": "The overhead highway sign displaying Broad St remains visible from 0:00 to 0:02 as the vehicle drives underneath it.",
+      "inference_time_sec": 5.082,
+      "error": ""
+    }
+  ]
+}

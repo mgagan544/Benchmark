@@ -1,0 +1,70 @@
+{
+  "video_id": 932,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/932.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
+      "ground_truth": "CLEANERS [entity_019]",
+      "prediction": "The business name located adjacent to the storefront of COAST FOR GOLD is 'The Coffee Bean & Tea Leaf'. This can be seen in the video as the car approaches the intersection, with the storefront clearly visible on the right side of the street. The Coffee Bean & Tea Leaf has a distinctive yellow and blue sign, which is a recognizable feature of the brand. The presence of this business indicates a commercial area with various retail options for pedestrians and drivers.",
+      "inference_time_sec": 8.878,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances visible on the regulatory sign post: 'SCHOOL BUS ONLY', 'SCHOOL', and 'BUS'.",
+      "inference_time_sec": 3.839,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
+      "prediction": "Only, buses only, school bus",
+      "inference_time_sec": 2.125,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
+      "ground_truth": "ONE WAY [entity_004]",
+      "prediction": "The regulatory sign post has a yellow sign with a black arrow pointing to the left, indicating that vehicles are restricted to moving in that direction.",
+      "inference_time_sec": 3.724,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
+      "ground_truth": "Commercial urban street",
+      "prediction": "The video shows a commercial urban environment with various businesses lining the street, indicating a typical city setting.",
+      "inference_time_sec": 3.222,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific phone number on the first school bus suggests a New York City location?",
+      "ground_truth": "(718)852-0286 [entity_011]",
+      "prediction": "The phone number '212-555-0195' on the first school bus suggests a New York City location.",
+      "inference_time_sec": 4.069,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
+      "ground_truth": "4.267 seconds",
+      "prediction": "The text BUSES ONLY first becomes visible in the clip at the beginning, as the vehicle approaches the intersection.",
+      "inference_time_sec": 3.459,
+      "error": ""
+    }
+  ]
+}

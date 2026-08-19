@@ -1,0 +1,70 @@
+{
+  "video_id": 940,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/940.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
+      "ground_truth": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]",
+      "prediction": "Directly adjacent to the parking area on the right side of the driving lane, there is a blue trash can and a blue recycling bin.",
+      "inference_time_sec": 1.797,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct pieces of text that belong to storefront signs or banners on the left side of the driving lane.",
+      "inference_time_sec": 1.625,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]",
+      "prediction": "The camera vehicle first encounters the storefront of FALLAS, followed by the signs for Danice.",
+      "inference_time_sec": 1.516,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
+      "ground_truth": "Stop",
+      "prediction": "The painted road marking adjacent to the concrete sidewalk on the left implies that the car is driving in the direction indicated by the arrow on the road. This arrow is a common feature in parking lots and shopping centers to guide drivers towards the parking spaces. The presence of this marking suggests that the car is likely moving towards the parking lot, possibly to park or to continue driving in the direction of the arrow.",
+      "inference_time_sec": 3.57,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
+      "ground_truth": "Commercial strip mall",
+      "prediction": "The driving environment depicted in the video is a typical suburban or urban shopping area. The presence of multiple storefronts, including a grocery store, a department store, and a school uniform store, along with the parking lot filled with cars, indicates a commercial area where people are likely to be shopping or commuting. The clear sky and the absence of any traffic signs or vehicles in motion suggest that the video captures a moment of calm during the day, possibly before or after peak shopping hours.",
+      "inference_time_sec": 4.165,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
+      "ground_truth": "English",
+      "prediction": "The storefront signs and promotional banners in the video are in English.",
+      "inference_time_sec": 1.405,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
+      "ground_truth": "5.233s to 5.6s",
+      "prediction": "The camera vehicle approaches the storefront windows of FALLAS, showing promotional text, during the daytime.",
+      "inference_time_sec": 1.498,
+      "error": ""
+    }
+  ]
+}

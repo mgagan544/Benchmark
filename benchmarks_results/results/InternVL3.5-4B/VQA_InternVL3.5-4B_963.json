@@ -1,0 +1,70 @@
+{
+  "video_id": 963,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/963.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is visible on the orange sign located to the left of the EXIT 3 marker across the lanes?",
+      "ground_truth": "WORK [entity_015] ZONE [entity_016]",
+      "prediction": "The orange sign to the left of the EXIT 3 marker across the lanes has the text 'EXIT 3' in white letters, indicating the exit number for the upcoming exit.",
+      "inference_time_sec": 4.569,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the billboard that comes into view around 4.7 seconds?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct text instances displayed on the billboard: 'E 138 St', 'Madison Ave Br', and 'E 161 St'.",
+      "inference_time_sec": 4.18,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs for E 138 St and E 161 St are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: E 138 St [entity_008], 2nd: E 161 St [entity_010]",
+      "prediction": "The overhead signs for E 138 St and E 161 St are encountered in the following order: first, the sign for E 138 St Madison Ave Br is visible, followed by the sign for E 161 St Macombs Dam Br.",
+      "inference_time_sec": 5.991,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit constraint is indicated by the regulatory sign passed on the left shoulder at 1.867 seconds?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002] 35",
+      "prediction": "The regulatory sign indicates a speed limit of 35 mph.",
+      "inference_time_sec": 2.636,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead signs for E 138 St and E 161 St, what type of driving environment is depicted?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of overhead signs for E 138 St and E 161 St indicates that the driving environment is an urban or suburban area with a well-developed road network, likely in a city or near a city.",
+      "inference_time_sec": 5.387,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street and bridge names visible on the overhead signs suggest this clip is filmed in New York City?",
+      "ground_truth": "E 138 St [entity_008] and Madison Ave Br [entity_009]",
+      "prediction": "The overhead signs display 'Madison Ave' and 'Macombs Dam Bridge', which are specific to New York City. These names are indicative of the location as they refer to well-known streets and bridges within the city. The presence of these signs suggests that the clip is filmed in an area of New York City, likely near the Manhattan Bridge, which is a significant landmark in the city. The signs provide directional information for drivers, indicating exits and distances to various streets, which is typical for urban roadways. The inclusion of these specific names helps to identify the location as being within the city's infrastructure, contributing to the urban setting of the",
+      "inference_time_sec": 11.583,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible?",
+      "ground_truth": "Near 7.4 seconds",
+      "prediction": "The signs displaying '1 MILE', 'EXIT', and 'EXIT 3' become fully legible as the vehicle approaches the overpass. This occurs after the vehicle has passed the initial 'EXIT 35' sign and is nearing the exit ramp. The exact timestamp is not provided in the video, but it is clear that the signs are visible and legible once the vehicle is close enough to the overpass, which is after the vehicle has passed the first 'EXIT 35' sign and is approaching the exit ramp.",
+      "inference_time_sec": 10.071,
+      "error": ""
+    }
+  ]
+}

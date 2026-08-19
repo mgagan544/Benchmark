@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "977",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Where is the regulatory sign displaying NO PARKING ANY TIME located relative to the speed limit sign?",
+        "answer": "Adjacent to the speed limit sign displaying SPEED [entity_002] and LIMIT [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are visible on the regulatory sign that restricts parking?",
+        "answer": "3",
+        "reasoning": "The regulatory sign displays three distinct text instances: NO PARKING [entity_004], ANY [entity_005], and TIME [entity_006]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of the signs passed on the right side of the road between 00:02 and 00:06?",
+        "answer": "1st: SPEED [entity_002] LIMIT [entity_003], 2nd: NO PARKING [entity_004] ANY [entity_005] TIME [entity_006]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What painted warning on the road surface indicates a driving constraint as the vehicle drives between 00:02 and 00:03?",
+        "answer": "SCHOOL [entity_001] on the road surface"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of single-family homes and the painted road warning, what type of area is this?",
+        "answer": "residential school zone",
+        "reasoning": "The presence of single-family homes and the painted warning SCHOOL [entity_001] suggests a residential school zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is the text on the road surface and regulatory signs written in?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range is the regulatory sign indicating NO PARKING ANY TIME visible in the clip?",
+        "answer": "00:04 to 00:06",
+        "reasoning": "The temporal description states the vehicle passes the regulatory sign containing NO PARKING [entity_004] ANY [entity_005] TIME [entity_006] between 00:04 and 00:06."
+      }
+    ]
+  }
+]

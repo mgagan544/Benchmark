@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "903",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What manufacturer name is located to the left of the license plate 63:816.70. on the rear of the grey bus?",
+        "answer": "MERKAVIM [entity_011] to the left of 63:816.70. [entity_007]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct license plates are visible on the transit buses in this clip?",
+        "answer": "2",
+        "reasoning": "The grey bus has license plate 63:816.70. [entity_007] and the white bus has license plate 63:709:70 [entity_018]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the license plates of the two Metropoline transit buses are encountered by the camera vehicle?",
+        "answer": "1st: 63:816.70. [entity_007], 2nd: 63:709:70 [entity_018]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Based on the visible text in the scene, are there any explicit driving constraints or speed limits indicated?",
+        "answer": "None"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of text on the transit buses suggest about the type of driving environment?",
+        "answer": "Urban transit corridor",
+        "reasoning": "The text is on transit buses with commercial advertisements, indicating an urban transit corridor."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which website link on the grey bus advertisement suggests a specific country of origin or region?",
+        "answer": "Suzuki.co.ill [entity_006]",
+        "reasoning": "The top-level domain '.co.ill' (representing Israel) in Suzuki.co.ill [entity_006] suggests the region is Israel."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp range does the white bus identifier 2443 first become revealed to the camera vehicle?",
+        "answer": "4.467 seconds to 5.0 seconds",
+        "reasoning": "The temporal description states that the white bus with identifier 2443 [entity_017] is revealed between 4.467 seconds and 5.0 seconds."
+      }
+    ]
+  }
+]

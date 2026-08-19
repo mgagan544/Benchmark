@@ -1,0 +1,70 @@
+{
+  "video_id": 911,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/911.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the storefront displaying Clifton Tile relative to the sports facility operated by SDA?",
+      "ground_truth": "To the right of SDA [entity_007]",
+      "prediction": "The storefront displaying Clifton Tile is located on the right side of the road, while the sports facility operated by SDA is situated further down the road, on the left side.",
+      "inference_time_sec": 2.03,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the buildings and billboard between House 46 and the parked minivan?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct text instances containing numbers visible on the buildings and billboard between House 46 and the parked minivan.",
+      "inference_time_sec": 1.655,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds?",
+      "ground_truth": "1st: HOUSE 46 [entity_001], 2nd: 1075 [entity_004], 3rd: CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "The order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds is as follows: the camera passes House 46, the camera passes the building at 1075, and then the camera passes Clifton Tile.",
+      "inference_time_sec": 3.342,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37?",
+      "ground_truth": "EXIT [entity_031] ONLY [entity_032], DO NOT [entity_033] ENTRY [entity_034]",
+      "prediction": "The text 'NO PARKING' is visible on the sign between building 1033 and the entrance way displaying 35-37, indicating a driving restriction or direction constraint at that location.",
+      "inference_time_sec": 2.337,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, tile shops, and commercial billboards, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts a typical suburban driving environment with a mix of commercial establishments and residential areas. The presence of various storefronts, billboards, and signs indicates a bustling area with a variety of businesses catering to different needs and interests. The road is well-maintained, with clear lane markings and a few vehicles, suggesting a moderate traffic flow typical of suburban settings.",
+      "inference_time_sec": 3.324,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any business names visible in the clip suggest a specific regional location or city name?",
+      "ground_truth": "CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "Yes, the business names visible in the clip suggest a specific regional location or city name. For instance, the 'Ride-On Trucking' sign indicates a trucking company, while the 'Mall' sign suggests a shopping center or mall. These names provide clues about the location's identity and possibly the type of businesses present in the area.",
+      "inference_time_sec": 3.389,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the building at address 1075 first come into view?",
+      "ground_truth": "Between 1.6 and 1.86 seconds",
+      "prediction": "After 15 seconds",
+      "inference_time_sec": 1.08,
+      "error": ""
+    }
+  ]
+}

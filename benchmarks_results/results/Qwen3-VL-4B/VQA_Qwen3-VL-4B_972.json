@@ -1,0 +1,70 @@
+{
+  "video_id": 972,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/972.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
+      "ground_truth": "To the right of VIDE [entity_002]",
+      "prediction": "The regulatory text MON WED FRI is positioned above the commercial sign VIDE.",
+      "inference_time_sec": 4.392,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
+      "ground_truth": "5",
+      "prediction": "1",
+      "inference_time_sec": 3.114,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
+      "ground_truth": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]",
+      "prediction": "The markings F150, 4X4, and P150 on the pickup truck become visible in the following order: first, the \"F150\" marking is visible on the rear of the truck, then the \"4X4\" marking appears next to it, and finally, the \"P150\" marking is visible on the side of the truck. This sequence is observed as the truck moves into the frame and the camera angle shifts slightly to reveal more of the truck's details.",
+      "inference_time_sec": 10.773,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
+      "ground_truth": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]",
+      "prediction": "The text on the regulatory sign near the commercial building that constrains parking actions is \"MON WED FRI\" and \"EVENING CLEANUP.\"",
+      "inference_time_sec": 5.312,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of commercial signs and parking regulations suggests that the driving environment is urban and likely busy, with a high density of businesses and commercial activity. The presence of commercial signs indicates that the area is frequented by shoppers, diners, and possibly office workers, which contributes to the volume of traffic. The parking regulations, such as the \"AUTHORIZED VEHICLE\" sticker on the windshield, imply that there are specific rules and restrictions in place to manage parking and ensure orderly traffic flow. This combination points to a city environment where traffic management is essential to accommodate both commercial needs and the daily commute of residents and visitors. The presence of bike lanes and",
+      "inference_time_sec": 12.244,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory parking sign and the commercial building is in English.",
+      "inference_time_sec": 4.459,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
+      "ground_truth": "3.033s",
+      "prediction": "0:00",
+      "inference_time_sec": 3.377,
+      "error": ""
+    }
+  ]
+}

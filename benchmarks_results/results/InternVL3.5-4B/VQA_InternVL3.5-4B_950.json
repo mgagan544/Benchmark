@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "To the left",
+      "inference_time_sec": 1.758,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "Two distinct, legible text instances are encountered by the vehicle. The first is 'HISTORIC' on the street sign, and the second is 'Coca-Cola Zero Sugar' on the billboard.",
+      "inference_time_sec": 4.834,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "The vehicle first passes the storefront 'SHED', then 'boost', and finally 'CHECKSCASH' as it moves forward.",
+      "inference_time_sec": 3.736,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The traffic regulator sign, which is a red octagonal sign with a white border, is typically used to indicate a stop or halt. In the context of the video, it is positioned to the right of the signboard displaying '4CAR', which suggests that the sign is meant to instruct drivers to stop or yield before proceeding. This is a common traffic regulation to ensure safety and order at intersections or areas where multiple lanes of traffic converge. The presence of this sign implies that drivers should be cautious and possibly stop before entering the intersection, especially considering the presence of pedestrians and the flow of traffic in the video.",
+      "inference_time_sec": 11.288,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The video shows a dense urban driving environment with multiple storefronts lining the streets, indicating a commercial area with a variety of businesses.",
+      "inference_time_sec": 3.646,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The street name \"hudson st\" and the phone area code \"718\" suggest this clip is filmed in New York City.",
+      "inference_time_sec": 3.745,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The vehicle passes the storefront of SHED at the 10-second mark.",
+      "inference_time_sec": 2.993,
+      "error": ""
+    }
+  ]
+}

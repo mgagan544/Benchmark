@@ -1,0 +1,70 @@
+{
+  "video_id": 965,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/965.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the word BUSES on the regulatory sign?",
+      "ground_truth": "TRAILERS [entity_003]",
+      "prediction": "Macombs Dam Br",
+      "inference_time_sec": 1.874,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this video clip?",
+      "ground_truth": "2",
+      "prediction": "Three",
+      "inference_time_sec": 0.878,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the driver encounter the text TRUCKS, Macombs Dam Br, and EXIT as the vehicle travels forward?",
+      "ground_truth": "1st: TRUCKS [entity_001], 2nd: Macombs Dam Br [entity_006], 3rd: EXIT [entity_011]",
+      "prediction": "The driver encounters the text TRUCKS first, then Macombs Dam Br, and finally EXIT as the vehicle travels forward.",
+      "inference_time_sec": 1.824,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the regulatory sign on the left side of the road restricts certain vehicles from the left lane?",
+      "ground_truth": "TRUCKS [entity_001], BUSES [entity_002], TRAILERS [entity_003], LEFT [entity_004], LANE [entity_005]",
+      "prediction": "The regulatory sign on the left side of the road restricts vehicles from the left lane to '20 MPH'. This restriction is indicated by the text '20 MPH' on a yellow background, which is a common traffic sign used to control speed limits on highways and expressways. The sign is positioned above the road, ensuring that drivers are aware of the speed limit and the potential for congestion or accidents in the left lane.",
+      "inference_time_sec": 3.839,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway.",
+      "inference_time_sec": 1.189,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location in New York is suggested by the overhead exit signage text?",
+      "ground_truth": "Macombs Dam Br [entity_006]",
+      "prediction": "The overhead exit signage text 'E 161 St Macombs Dam Br' suggests that the location is in the Macombs Dam area of New York. Macombs Dam is a significant location in the city of New York, known for its historical significance and proximity to the Hudson River. The presence of this sign indicates that the viewer is likely in or near the Macombs Dam area, which is a notable feature of the city's landscape.",
+      "inference_time_sec": 4.005,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the yellow advisory exit sign displaying EXIT first come clearly into view, and what text is located directly below it?",
+      "ground_truth": "4.633s, M P H [entity_012]",
+      "prediction": "The yellow advisory exit sign displaying EXIT first comes clearly into view at the beginning of the video, and the text located directly below it reads 'EXIT 5'.",
+      "inference_time_sec": 2.03,
+      "error": ""
+    }
+  ]
+}

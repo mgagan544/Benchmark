@@ -1,0 +1,70 @@
+{
+  "video_id": 904,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/904.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What street sign text is located beside the price signboard displaying 299, CASH, and 9/10?",
+      "ground_truth": "Citrus Ave [entity_008]",
+      "prediction": "The street sign text beside the price signboard reads 'NO U-turnS ONLY ON RIGHT LANE.' This indicates that drivers are not allowed to make any U-turns on the right side of the road.",
+      "inference_time_sec": 2.683,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in the clip are mounted on the white moving truck?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct pieces of text visible in the clip that are mounted on the white moving truck.",
+      "inference_time_sec": 1.793,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the moving truck text, the gas station brand, and the cross street sign are encountered?",
+      "ground_truth": "1st: BEKINS [entity_003] and USA [entity_004], 2nd: FLYERS [entity_005], 3rd: Citrus Ave [entity_008]",
+      "prediction": "First, the moving truck text is encountered, followed by the gas station brand, and then the cross street sign.",
+      "inference_time_sec": 1.751,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text visible at the start of the clip indicates a speed restriction on the roadway?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
+      "prediction": "The regulatory text visible at the start of the clip indicates a speed restriction on the roadway. It reads 'SPEED LIMIT 35'. This text is displayed on a yellow sticker on the windshield of the vehicle, which is a common way to communicate speed restrictions to other drivers. The presence of this text suggests that the driver is aware of the speed limit and is adhering to it while navigating the traffic.",
+      "inference_time_sec": 3.908,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the presence of a gas station, price signboard, and street sign suggest?",
+      "ground_truth": "commercial strip",
+      "prediction": "The presence of a gas station, price signboard, and street sign suggests that the driving environment is urban or suburban, as these elements are common in such areas.",
+      "inference_time_sec": 2.079,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the visible text on the speed limit sign and street sign written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the speed limit sign and street sign is written in English.",
+      "inference_time_sec": 1.516,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range does the price board displaying 299, CASH, and 9/10 become clearly visible as the vehicle approaches the intersection?",
+      "ground_truth": "7.1 seconds to 8.333 seconds",
+      "prediction": "The price board displaying 299, CASH, and 9/10 becomes clearly visible as the vehicle approaches the intersection during the transition from the first to the second traffic light change.",
+      "inference_time_sec": 2.239,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 965,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/965.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the word BUSES on the regulatory sign?",
+      "ground_truth": "TRAILERS [entity_003]",
+      "prediction": "The text \"ONE WAY\" is located directly to the right of the word BUSES on the regulatory sign.",
+      "inference_time_sec": 3.447,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this video clip?",
+      "ground_truth": "2",
+      "prediction": "At least 3",
+      "inference_time_sec": 2.0,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the driver encounter the text TRUCKS, Macombs Dam Br, and EXIT as the vehicle travels forward?",
+      "ground_truth": "1st: TRUCKS [entity_001], 2nd: Macombs Dam Br [entity_006], 3rd: EXIT [entity_011]",
+      "prediction": "The driver first encounters the text TRUCKS, then Macombs Dam Br, and finally EXIT as the vehicle travels forward.",
+      "inference_time_sec": 3.578,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the regulatory sign on the left side of the road restricts certain vehicles from the left lane?",
+      "ground_truth": "TRUCKS [entity_001], BUSES [entity_002], TRAILERS [entity_003], LEFT [entity_004], LANE [entity_005]",
+      "prediction": "The regulatory sign on the left side of the road has text that reads 'NO TRUCKS OR BUSES,' indicating that trucks and buses are not permitted to use the left lane. This sign is a traffic regulation designed to manage the flow of larger vehicles and ensure safety on the highway. The presence of such a sign suggests that the left lane is reserved for smaller vehicles or for specific traffic conditions, such as high-speed travel or merging traffic. The sign's placement on the road is strategic, allowing drivers to be aware of the lane restrictions as they approach the area, enabling them to adjust their driving accordingly. The sign's design is simple",
+      "inference_time_sec": 11.653,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a highway.",
+      "inference_time_sec": 2.228,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location in New York is suggested by the overhead exit signage text?",
+      "ground_truth": "Macombs Dam Br [entity_006]",
+      "prediction": "The overhead exit signage indicates the location is near Macombs Dam Bridge, which is a known bridge in the New York City area.",
+      "inference_time_sec": 3.497,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the yellow advisory exit sign displaying EXIT first come clearly into view, and what text is located directly below it?",
+      "ground_truth": "4.633s, M P H [entity_012]",
+      "prediction": "The yellow advisory exit sign displaying EXIT first comes clearly into view at the beginning of the video. Directly below the yellow sign, there is a green sign with the text 'E 161 St Macombs Dam Br'.",
+      "inference_time_sec": 5.396,
+      "error": ""
+    }
+  ]
+}

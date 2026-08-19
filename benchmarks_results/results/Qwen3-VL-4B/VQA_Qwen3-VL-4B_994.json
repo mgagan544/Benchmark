@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located to the left of the green directional sign.",
+      "inference_time_sec": 4.041,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "2",
+      "inference_time_sec": 2.951,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "The order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds is: first, the green sign indicating \"BRAND-CENTRAL PKWY\" and \"Bklyn Br\" and \"EXPWY\"; second, the green sign indicating \"BRAND-CENTRAL PKWY\" and \"Bklyn Br\" and \"EXPWY\"; third, the green sign indicating \"BRAND-CENTRAL PKWY\" and \"Bklyn Br\" and \"EXPWY\".",
+      "inference_time_sec": 11.292,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The text \"MAX 20 TON\" on a sign indicates a weight restriction for vehicles near the overpass structure.",
+      "inference_time_sec": 4.89,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names and weight limit signs suggests that this road segment is a major arterial road or highway that serves both general traffic and heavy commercial vehicles. The presence of highway names (like \"BRAND-CENTRAL PKWY\" and \"Bklyn Br\") indicates that it is a significant route, likely connecting different parts of the city or region. The weight limit signs imply that the road is designed to handle heavy trucks and large vehicles, which is typical for highways that carry commercial traffic or are part of a major transportation network. This combination points to a road that is both a primary commuter route and a corridor for freight and",
+      "inference_time_sec": 12.219,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The abbreviations on the green directional sign suggest the city or region of New York, as \"Bklyn\" stands for Brooklyn and \"NY\" stands for New York.",
+      "inference_time_sec": 5.63,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "0:01",
+      "inference_time_sec": 3.401,
+      "error": ""
+    }
+  ]
+}

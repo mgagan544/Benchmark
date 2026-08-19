@@ -1,0 +1,70 @@
+{
+  "video_id": 939,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/939.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What promotional signs are located directly overhead of the Big K mart storefront?",
+      "ground_truth": "NOBODY HAS [entity_012] and MORE PARTY FOR LESS [entity_013] above BIG K [entity_003] mart [entity_010]",
+      "prediction": "The promotional signs located directly overhead of the Big K mart storefront read “NOBODY HAS MORE PARTY FOR LESS” and “NOW OPEN.”",
+      "inference_time_sec": 4.808,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct promotional text instances are associated with the Danice storefront?",
+      "ground_truth": "3",
+      "prediction": "There is one distinct promotional text instance associated with the Danice storefront: \"NOW OPEN\".",
+      "inference_time_sec": 4.165,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three storefronts passed by the vehicle starting from 4.8 seconds?",
+      "ground_truth": "1st: NAILS [entity_009] Essence [entity_011] SPA [entity_016], 2nd: JIMMY JAZZ [entity_006], 3rd: FALLAS [entity_023]",
+      "prediction": "The order of the first three storefronts passed by the vehicle starting from 4.8 seconds is: Payless Shoesource, Big Kmart, and Nails Essence.",
+      "inference_time_sec": 5.448,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, are there any explicit driving actions or constraints implied near the storefronts? If none is present, state that.",
+      "ground_truth": "None is present",
+      "prediction": "No explicit driving actions or constraints are implied near the storefronts. The video shows a parking lot with cars parked and people walking, but there are no visible signs or indicators suggesting specific driving actions or constraints such as speed limits, parking restrictions, or driving directions.",
+      "inference_time_sec": 6.88,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible storefront text, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial shopping center parking lot",
+      "prediction": "This clip depicts a suburban shopping mall environment. The presence of multiple retail stores such as “Party City,” “Big Kmart,” “Payless Shoesource,” “NAILS Essence,” and “Super Deal” indicates a commercial area designed for consumer shopping. The parking lot is moderately filled with cars, suggesting moderate foot traffic, and the storefronts are clearly visible with large, legible signage, typical of a well-established shopping center. The overall setting is not a busy urban street or a highway, but rather a planned commercial zone catering to local shoppers.",
+      "inference_time_sec": 11.029,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text is written in English.",
+      "inference_time_sec": 3.652,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the vehicle passing and parallel to the storefront of NAILS Essence SPA?",
+      "ground_truth": "4.8 seconds to 6.1 seconds",
+      "prediction": "0.3 - 0.4 seconds",
+      "inference_time_sec": 3.735,
+      "error": ""
+    }
+  ]
+}

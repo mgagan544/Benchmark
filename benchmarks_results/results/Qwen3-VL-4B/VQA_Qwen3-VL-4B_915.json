@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "The text located directly to the right of the ARROWHEAD brand on the red delivery truck is \"direct\".",
+      "inference_time_sec": 4.663,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "2",
+      "inference_time_sec": 3.163,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "The order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward is: TAXI, then Odwalla, then ARROWHEAD.",
+      "inference_time_sec": 5.905,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs indicate height clearance limits for vehicles entering the covered underpass by displaying a height restriction of 13 feet. These signs are typically placed at strategic points along the underpass to alert drivers of the maximum height allowed for safe passage. The signs are often marked with a clear, bold font and may include a visual representation of the height limit to ensure drivers can easily understand the restriction. This helps prevent accidents and ensures that vehicles can pass through the underpass without hitting the overhead structures.",
+      "inference_time_sec": 10.321,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The mix of text and landmarks visible in this clip suggests that the driving environment is a busy, commercial area, likely near an airport or a large transportation hub. The presence of multiple trucks, including one with “Arrowhead direct” branding, indicates that this is a logistics or delivery zone. The signage, such as “Air Return” and “Exit,” along with the pedestrian crossings and overhead walkways, implies that this area is designed to handle both vehicular and pedestrian traffic efficiently. The combination of commercial branding, directional signs, and infrastructure like overhead walkways and lighting suggests a well-organized, high-traffic environment where logistics and passenger",
+      "inference_time_sec": 12.323,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The visible text indicates the United States measurement system and phone format, as it shows \"1-800-1\" which is a typical U.S. toll-free number format.",
+      "inference_time_sec": 5.751,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "0:00",
+      "inference_time_sec": 3.358,
+      "error": ""
+    }
+  ]
+}

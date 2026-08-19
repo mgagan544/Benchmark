@@ -1,0 +1,70 @@
+{
+  "video_id": 901,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/901.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which readable text instances appear between the ONE WAY sign and the CARS CASH sign on the commercial facade?",
+      "ground_truth": "BREAKFAST [entity_004], FREE DELIV [entity_002], and 718-392-6 [entity_003]",
+      "prediction": "The readable text instances between the ONE WAY sign and the CARS CASH sign on the commercial facade are \"CARS CASH\" and \"DRIVERS WANTED\".",
+      "inference_time_sec": 2.974,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances representing phone numbers or parts of phone numbers are visible on the commercial facade and the brick building?",
+      "ground_truth": "7",
+      "prediction": "There are two distinct text instances representing phone numbers or parts of phone numbers visible on the commercial facade and the brick building.",
+      "inference_time_sec": 1.766,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the address markers 35-11 and 42-11 are encountered as the vehicle drives forward?",
+      "ground_truth": "1st: 35-11 [entity_017], 2nd: 42-11 [entity_018]",
+      "prediction": "The order in which the address markers 35-11 and 42-11 are encountered as the vehicle drives forward is 35-11, then 42-11.",
+      "inference_time_sec": 2.48,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the road surface and adjacent sign near the end of the clip?",
+      "ground_truth": "SLOW [entity_020] and STOP [entity_019]",
+      "prediction": "The video shows a white bicycle symbol on the road surface, indicating a bike lane or a designated area for cyclists. Additionally, there is a sign with the text 'Bicycle Lane' near the curb, reinforcing the presence of a bike path.",
+      "inference_time_sec": 2.687,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.0s and 2.10s suggest about the type of area?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of text visible between 0.0s and 2.10s suggests that the area is a commercial or mixed-use zone. This is indicated by the presence of a 'Drivers Wanted' sign, which is typically used for job postings, and the 'Drivers Wanted' sign on a building, which is common for businesses that need to hire drivers. The text also includes a phone number, which is often used for business inquiries or advertisements.",
+      "inference_time_sec": 4.112,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which regional telephone area codes visible in the clip suggest the video was filmed in New York City?",
+      "ground_truth": "718 [entity_015] and (917) [entity_012]",
+      "prediction": "The video shows the presence of regional telephone area codes such as 212, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236,",
+      "inference_time_sec": 5.276,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the license plate of the lead vehicle visible in the clip?",
+      "ground_truth": "0.0s to 1.37s",
+      "prediction": "The license plate of the lead vehicle is visible throughout the entire video, indicating that it is captured in a single continuous shot without any time lapse.",
+      "inference_time_sec": 1.988,
+      "error": ""
+    }
+  ]
+}

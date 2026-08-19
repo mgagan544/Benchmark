@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "950",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+        "answer": "to the left of SHED [entity_002]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+        "answer": "5",
+        "reasoning": "Between 4.0 and 7.0 seconds, the vehicle passes SHED [entity_002], CHECKSCASH [entity_003], boost [entity_004], Switch Now [entity_005], and FREE PHONE [entity_006], totaling 5 text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+        "answer": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+        "answer": "STOP [entity_015]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+        "answer": "urban commercial district",
+        "reasoning": "The presence of multiple retail storefronts, check cashing, and markets indicates an urban commercial district."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+        "answer": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+        "reasoning": "Rockaway Parkway is in Brooklyn, and 917 is a New York City area code."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+        "answer": "4.7 seconds",
+        "reasoning": "The vehicle passes SHED [entity_002] at 4.7 seconds, which is located to the right of CHECKSCASH [entity_003]."
+      }
+    ]
+  }
+]

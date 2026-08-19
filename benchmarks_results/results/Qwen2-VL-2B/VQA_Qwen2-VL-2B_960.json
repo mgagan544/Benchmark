@@ -1,0 +1,70 @@
+{
+  "video_id": 960,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/960.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the SCHOOL road marking relative to the SLOW road marking as the vehicle moves forward?",
+      "ground_truth": "Beside SLOW [entity_001]",
+      "prediction": "As the vehicle moves forward, the SCHOOL road marking is located to the left of the SLOW road marking. The SCHOOL marking is closer to the front of the vehicle, while the SLOW marking is further back.",
+      "inference_time_sec": 4.512,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many yellow road markings are painted on the asphalt of this residential street?",
+      "ground_truth": "3",
+      "prediction": "There are three yellow road markings painted on the asphalt of this residential street.",
+      "inference_time_sec": 2.912,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the yellow road markings are passed by the vehicle between 3.00 and 7.50 seconds?",
+      "ground_truth": "1st: SLOW [entity_001], 2nd: SCHOOL [entity_002], 3rd: XING [entity_003]",
+      "prediction": "The yellow road markings are passed by the vehicle between 3.00 and 7.50 seconds as follows:\n\n1. The vehicle passes the yellow road markings at 3.00 seconds.\n2. The vehicle passes the yellow road markings at 3.15 seconds.\n3. The vehicle passes the yellow road markings at 3.30 seconds.\n4. The vehicle passes the yellow road markings at 3.45 seconds.\n5. The vehicle passes the yellow road markings at 3.60 seconds.\n6. The vehicle passes the yellow road markings at 3.75 seconds.\n7",
+      "inference_time_sec": 7.5,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning or instructional text is painted on the road surface to advise the driver to reduce speed?",
+      "ground_truth": "SLOW [entity_001]",
+      "prediction": "The warning or instructional text painted on the road surface is \"SLOW.\"",
+      "inference_time_sec": 3.09,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the road markings indicating a school crossing and the surrounding buildings, what type of driving environment is depicted?",
+      "ground_truth": "Residential school zone",
+      "prediction": "The driving environment depicted is a residential area with a school crossing. The presence of the school crossing sign and the surrounding buildings suggests a neighborhood with a school nearby. The road markings indicate that the area is designed to accommodate pedestrian traffic, which is common in residential neighborhoods.",
+      "inference_time_sec": 4.38,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the road markings painted on the asphalt?",
+      "ground_truth": "English",
+      "prediction": "The road markings painted on the asphalt in the video are in English.",
+      "inference_time_sec": 2.874,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle roll over the yellow road marking SCHOOL?",
+      "ground_truth": "5.867 seconds",
+      "prediction": "The vehicle rolls over the yellow road marking \"SCHOOL\" at the timestamp of 0:00:00.",
+      "inference_time_sec": 3.322,
+      "error": ""
+    }
+  ]
+}

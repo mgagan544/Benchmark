@@ -1,0 +1,70 @@
+{
+  "video_id": 905,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/905.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly below the BEDROOM sign on the commercial storefront?",
+      "ground_truth": "MATTRESS [entity_009] directly below BEDROOM [entity_010]",
+      "prediction": "The readable text located directly below the BEDROOM sign on the commercial storefront is \"MUST\".",
+      "inference_time_sec": 4.263,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the semi-truck trailer and cab?",
+      "ground_truth": "10",
+      "prediction": "There are two distinct text instances mounted on the semi-truck trailer and cab.",
+      "inference_time_sec": 3.101,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Sign-On Bonus [entity_006], 2nd: LOGISTICS-010 [entity_007], 3rd: myBekins.com [entity_008]",
+      "prediction": "The order in which the text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered as the vehicle moves forward is as follows:\n\n1. Sign-On Bonus\n2. LOGISTICS-010\n3. myBekins.com",
+      "inference_time_sec": 4.709,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the regulatory sign near the roadside sidewalk, what explicit driving action is required for vehicles in the right lane?",
+      "ground_truth": "TURN RIGHT [entity_019]",
+      "prediction": "The regulatory sign near the roadside sidewalk indicates that vehicles in the right lane must yield to pedestrians.",
+      "inference_time_sec": 3.561,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.6s and 2.0s suggest about the type of area?",
+      "ground_truth": "commercial retail zone",
+      "prediction": "The mix of text visible between 0.6s and 2.0s suggests that the area is a mix of residential and commercial zones. The presence of a \"BEDROOM\" sign indicates that there are residential areas, while the \"MUST\" sign suggests that there are parking regulations in place. The presence of a \"PARKING\" sign further supports the idea that there are designated parking areas in the area.",
+      "inference_time_sec": 6.22,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text in this clip written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text in the clip is written in English.",
+      "inference_time_sec": 2.762,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the website myBekins.com first become legible as the host vehicle passes the semi-truck?",
+      "ground_truth": "0.2s",
+      "prediction": "The website myBekins.com first becomes legible as the host vehicle passes the semi-truck at 00:00:00.",
+      "inference_time_sec": 3.581,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 905,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/905.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly below the BEDROOM sign on the commercial storefront?",
+      "ground_truth": "MATTRESS [entity_009] directly below BEDROOM [entity_010]",
+      "prediction": "The readable text located directly below the BEDROOM sign on the commercial storefront is 'OUTLET'.",
+      "inference_time_sec": 1.504,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the semi-truck trailer and cab?",
+      "ground_truth": "10",
+      "prediction": "There are two distinct text instances mounted on the semi-truck trailer and cab.",
+      "inference_time_sec": 1.48,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Sign-On Bonus [entity_006], 2nd: LOGISTICS-010 [entity_007], 3rd: myBekins.com [entity_008]",
+      "prediction": "The text instances 'Sign-On Bonus', 'LOGISTICS-010', and 'myBekins.com' are first encountered in the order they appear as the vehicle moves forward. The 'Sign-On Bonus' text is seen on the dashboard of the vehicle, the 'LOGISTICS-010' text is displayed on the side of the road, and the 'myBekins.com' text is visible on the vehicle's dashboard as the vehicle continues to move forward.",
+      "inference_time_sec": 4.208,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the regulatory sign near the roadside sidewalk, what explicit driving action is required for vehicles in the right lane?",
+      "ground_truth": "TURN RIGHT [entity_019]",
+      "prediction": "The regulatory sign near the roadside sidewalk indicates that vehicles in the right lane must stop. This sign is typically used to instruct drivers to halt their vehicles at a specific time or location, ensuring safety and compliance with traffic regulations.",
+      "inference_time_sec": 2.388,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.6s and 2.0s suggest about the type of area?",
+      "ground_truth": "commercial retail zone",
+      "prediction": "The mix of text visible between 0.6s and 2.0s suggests that the area is a commercial or mixed-use zone. This is inferred from the presence of a 'DUGGAN'S' sign, which is commonly associated with commercial establishments, and the 'BANK OF AMERICA' sign, which is a well-known financial institution. The combination of these signs indicates a location that is likely to have a mix of commercial and possibly residential or office spaces.",
+      "inference_time_sec": 4.201,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text in this clip written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text in this clip is written in English, as it is a common language for traffic signs and road markings.",
+      "inference_time_sec": 1.719,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the website myBekins.com first become legible as the host vehicle passes the semi-truck?",
+      "ground_truth": "0.2s",
+      "prediction": "The website 'myBekins.com' becomes legible as the host vehicle passes the semi-truck at the timestamp of 00:10:00.",
+      "inference_time_sec": 2.124,
+      "error": ""
+    }
+  ]
+}

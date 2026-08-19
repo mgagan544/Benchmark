@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "949",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What business name is located directly to the right of the building section displaying FAITH at 301-303?",
+        "answer": "BBF PRINTING [entity_014] to the right of FAITH [entity_012]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct license plates are mentioned in the text for parked vehicles?",
+        "answer": "2",
+        "reasoning": "The text mentions two license plates on parked vehicles: CBV-9988 [entity_038] and HAL-7236 [entity_039]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the vehicle passes the FAITH storefront, the BBF PRINTING storefront, and the DOLLAR TREE plaza?",
+        "answer": "1st: FAITH [entity_012], 2nd: BBF PRINTING [entity_014], 3rd: DOLLAR [entity_032] TREE [entity_033]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What instructional text is displayed on the traffic post located on the sidewalk corner near the pedestrian?",
+        "answer": "PED [entity_029] SIGNAL [entity_030] USE [entity_031]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment is suggested by the storefronts, promotional signs, and retail plaza visible in this clip?",
+        "answer": "commercial district",
+        "reasoning": "The presence of auto shops, printing services, and a retail plaza indicates a commercial district."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for all the visible storefront signs and promotional text in this clip?",
+        "answer": "English",
+        "reasoning": "All visible text such as 'COLLISION', 'PRINTING', and 'OPEN' is written in English."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During what time range does the DOLLAR TREE retail plaza and its entrance signs remain visible in the clip?",
+        "answer": "4.3 seconds to 6.9 seconds",
+        "reasoning": "The temporal description states the DOLLAR [entity_032] TREE [entity_033] plaza is visible from 4.3 to 6.9 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 954,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/954.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text EXIT relative to the word Ave on the overhead sign?",
+      "ground_truth": "directly below Ave [entity_002]",
+      "prediction": "The text EXIT is positioned to the right of the word Ave on the overhead sign.",
+      "inference_time_sec": 4.415,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are visible on the overhead green exit sign?",
+      "ground_truth": "4",
+      "prediction": "Two distinct pieces of text are visible on the overhead green exit sign: \"EXIT\" and \"ONLY\".",
+      "inference_time_sec": 4.98,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan?",
+      "ground_truth": "1st: passing Bradley [entity_001], 2nd: slow crawl behind red sedan",
+      "prediction": "The order of events is: first, the car passes the overhead exit sign, and then it comes to a slow crawl behind the red sedan.",
+      "inference_time_sec": 5.175,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead sign, what driving action is indicated for the lane below it?",
+      "ground_truth": "EXIT [entity_003] only [entity_004]",
+      "prediction": "The overhead sign indicates that the lane below it is for \"EXIT ONLY.\"",
+      "inference_time_sec": 4.101,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the overhead exit sign and the multi-lane road layout?",
+      "ground_truth": "highway",
+      "prediction": "The overhead exit sign and the multi-lane road layout suggest a highway or major arterial road environment. This type of road is typically designed for high-speed travel and often includes multiple lanes for different directions of traffic, as well as exit ramps for vehicles to leave the main road. The presence of an overhead sign indicating an exit (such as \"Exit 10\") further confirms that this is a highway or major road with designated exits for drivers to exit at specific points. The road is likely part of a larger transportation network, possibly connecting different cities or regions, and is designed to handle a high volume of traffic efficiently.",
+      "inference_time_sec": 12.069,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead exit sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead exit sign is in English.",
+      "inference_time_sec": 3.786,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text Bradley first become clearly displayed on the overhead sign?",
+      "ground_truth": "Bradley [entity_001] at 2.7 seconds",
+      "prediction": "0:02",
+      "inference_time_sec": 3.245,
+      "error": ""
+    }
+  ]
+}

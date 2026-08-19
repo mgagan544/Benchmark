@@ -1,0 +1,70 @@
+{
+  "video_id": 977,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/977.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the regulatory sign displaying NO PARKING ANY TIME located relative to the speed limit sign?",
+      "ground_truth": "Adjacent to the speed limit sign displaying SPEED [entity_002] and LIMIT [entity_003]",
+      "prediction": "The regulatory sign displaying NO PARKING ANY TIME is located on the right side of the road, while the speed limit sign is on the left side.",
+      "inference_time_sec": 3.407,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign that restricts parking?",
+      "ground_truth": "3",
+      "prediction": "There are 2 distinct text instances visible on the regulatory sign that restricts parking.",
+      "inference_time_sec": 2.472,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the signs passed on the right side of the road between 00:02 and 00:06?",
+      "ground_truth": "1st: SPEED [entity_002] LIMIT [entity_003], 2nd: NO PARKING [entity_004] ANY [entity_005] TIME [entity_006]",
+      "prediction": "The signs passed on the right side of the road between 00:02 and 00:06 are a \"SCHOOL\" sign, followed by a \"20\" speed limit sign.",
+      "inference_time_sec": 3.621,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What painted warning on the road surface indicates a driving constraint as the vehicle drives between 00:02 and 00:03?",
+      "ground_truth": "SCHOOL [entity_001] on the road surface",
+      "prediction": "The painted warning on the road surface that indicates a driving constraint is \"SCHOOL.\" This marking is typically used to alert drivers to the presence of a school zone, where traffic control measures may be in place to ensure safety for students and staff.",
+      "inference_time_sec": 3.916,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of single-family homes and the painted road warning, what type of area is this?",
+      "ground_truth": "residential school zone",
+      "prediction": "This appears to be a residential neighborhood, likely in a suburban or semi-urban area. The presence of single-family homes, the painted road warning indicating a school, and the overall layout suggest a community where residents live in close proximity to each other, with a focus on family and local amenities.",
+      "inference_time_sec": 4.335,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the road surface and regulatory signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the road surface and regulatory signs is written in English.",
+      "inference_time_sec": 2.426,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the regulatory sign indicating NO PARKING ANY TIME visible in the clip?",
+      "ground_truth": "00:04 to 00:06",
+      "prediction": "The regulatory sign indicating NO PARKING ANY TIME is visible from 0:00 to 0:03.",
+      "inference_time_sec": 2.741,
+      "error": ""
+    }
+  ]
+}

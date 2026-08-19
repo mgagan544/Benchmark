@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "910",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is located directly beneath the sign for Broad St on the overhead gantry?",
+        "answer": "Grove St [entity_006] directly beneath Broad St [entity_005]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances containing numbers are encountered after the vehicle passes the medical office building at 5.100 seconds?",
+        "answer": "4",
+        "reasoning": "After 5.100 seconds, the vehicle encounters 1 1/4 [entity_009], EXIT 1/2 MILE [entity_012], 2638 [entity_013], and 271 [entity_014], which contain numbers. Total is 4."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the vehicle encounters the text CENTER, Broad St, and Enrite?",
+        "answer": "1st: CENTER [entity_003], 2nd: Broad St [entity_005], 3rd: Enrite [entity_015]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Based on the text on the overhead gantry, what driving action is indicated for reaching Passaic?",
+        "answer": "Exit in 1/2 mile as indicated by EXIT 1/2 MILE [entity_012]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment is suggested by the presence of a large overhead gantry and multiple roadside businesses?",
+        "answer": "highway corridor with commercial zones",
+        "reasoning": "The presence of an overhead highway gantry alongside a car dealership, medical office, and gas station indicates a highway corridor passing through a commercial zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific city names visible on the overhead highway gantry suggest the geographic region of the route?",
+        "answer": "Clifton [entity_010] and Passaic [entity_011]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range does the overhead highway sign displaying Broad St remain visible as the vehicle drives underneath it?",
+        "answer": "6.667 to 7.433 seconds",
+        "reasoning": "The temporal description states the vehicle drives underneath the overhead sign displaying Broad St [entity_005] between 6.667 and 7.433 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 999,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/999.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What store is located to the left of the pharmacy named PIEKIELKO ONE PHARMACY?",
+      "ground_truth": "Walgreen [entity_022] to the left of PIEKIELKO [entity_021] ONE [entity_019] PHARMACY [entity_020]",
+      "prediction": "The store located to the left of the pharmacy named PIEKIELKO ONE PHARMACY is WALGREENS.",
+      "inference_time_sec": 4.945,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are displayed on the corner building featuring BUFFALO JO'S?",
+      "ground_truth": "11",
+      "prediction": "Three distinct text entities are displayed: \"BUFFALO JO'S\", \"WE SERVE 366 WING\", and \"WE HEAR YOU\".",
+      "inference_time_sec": 5.534,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which FOREST, BUFFALO JO'S, and SPEED are encountered by the vehicle?",
+      "ground_truth": "1st: FOREST [entity_001], 2nd: BUFFALO JO'S [entity_003], 3rd: SPEED [entity_016]",
+      "prediction": "The vehicle encounters FOREST first, then BUFFALO JO'S, and finally SPEED.",
+      "inference_time_sec": 4.584,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the road sign indicates a speed restriction after the vehicle turns left past the corner building?",
+      "ground_truth": "SPEED [entity_016] LIMIT [entity_014] 25",
+      "prediction": "The text on the road sign that indicates a speed restriction after the vehicle turns left past the corner building is \"25\".",
+      "inference_time_sec": 5.28,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, pharmacies, and medical offices, what type of driving environment is depicted?",
+      "ground_truth": "commercial district",
+      "prediction": "The driving environment depicted is a commercial urban street. The presence of numerous storefronts, pharmacies, and medical offices indicates a bustling area with high foot traffic and business activity. This type of environment is typical of downtown or city centers where retail and service establishments are concentrated, and the streets are designed to accommodate both vehicular and pedestrian traffic. The density of these establishments suggests that the area is likely a hub for daily commerce and services, making it a busy and dynamic part of the city.",
+      "inference_time_sec": 12.689,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area code visible on the corner building's signage suggests the driving location is in New York City?",
+      "ground_truth": "718-366 [entity_012]",
+      "prediction": "The telephone area code visible on the corner building's signage is 212, which is a well-known area code for New York City. This code is typically associated with Manhattan and other parts of the city, indicating that the driving location is indeed in New York City.",
+      "inference_time_sec": 8.656,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the speed limit sign displaying SPEED visible as the vehicle continues forward?",
+      "ground_truth": "3.1s to 5.0s",
+      "prediction": "The speed limit sign displaying \"SPEED\" is visible from 0.0 to 0.2 seconds as the vehicle continues forward.",
+      "inference_time_sec": 5.658,
+      "error": ""
+    }
+  ]
+}

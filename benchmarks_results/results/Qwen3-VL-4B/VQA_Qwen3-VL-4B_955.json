@@ -1,0 +1,70 @@
+{
+  "video_id": 955,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/955.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the word OVER on the weight limit sign to the left of Waterside Plaza?",
+      "ground_truth": "VEHICLES [entity_002]",
+      "prediction": "8000 LBS",
+      "inference_time_sec": 3.948,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 1.500 and 3.000 seconds?",
+      "ground_truth": "4",
+      "prediction": "2",
+      "inference_time_sec": 3.129,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the signs encountered by the vehicle between 3.500 and 4.500 seconds?",
+      "ground_truth": "1st: E 25 ST [entity_005], 2nd: E 34 ST [entity_006] FERRY [entity_007] HELIPORT [entity_009] LANDING [entity_008], 3rd: ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The order of the signs encountered by the vehicle between 3.500 and 4.500 seconds is: first, the \"E 42 St\" sign, then the \"E 34 St\" sign, and finally the \"Midtown Tun\" sign.",
+      "inference_time_sec": 7.346,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the orange construction sign passed at 4.367 seconds?",
+      "ground_truth": "ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The warning text displayed on the orange construction sign is \"WORK ZONE\".",
+      "inference_time_sec": 4.16,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multiple exit signs, route markers, and overpasses, what driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a busy urban highway, likely within a major city. The presence of multiple exit signs, route markers, and overpasses indicates that the vehicle is traveling on a multi-lane highway with complex traffic management and directional guidance. This environment is typical of large metropolitan areas where traffic flow is regulated by infrastructure such as overpasses and exit ramps to manage the movement of vehicles efficiently. The signs also suggest that the driver is navigating through a well-organized road network, possibly with multiple destinations and exits, which is common in cities with high traffic volume and dense urban development.",
+      "inference_time_sec": 11.567,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street names and route markers suggest this clip is filmed in New York City?",
+      "ground_truth": "E 25 ST [entity_005], E 34 ST [entity_006], E 42 ST [entity_017], 495 [entity_016]",
+      "prediction": "The specific street names and route markers that suggest this clip is filmed in New York City include “E 42 St,” “E 34 St,” and “Midtown Tun.” These are well-known street names and route markers in New York City, particularly in the Midtown area. Additionally, the presence of the “495” route marker, which refers to the New York State Thruway, further confirms the location as New York City. The urban environment, with tall buildings and busy streets, is also characteristic of New York City’s downtown areas.",
+      "inference_time_sec": 11.49,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the weight-limit sign containing the text 8000 Lbs first appear in view?",
+      "ground_truth": "2.633 seconds, as 8000 Lbs [entity_004] becomes visible.",
+      "prediction": "0:01",
+      "inference_time_sec": 3.358,
+      "error": ""
+    }
+  ]
+}

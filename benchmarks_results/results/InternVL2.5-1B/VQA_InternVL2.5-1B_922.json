@@ -1,0 +1,70 @@
+{
+  "video_id": 922,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/922.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lane indicator is visible overhead at 0.0 seconds to the right of the Airport Exit sign?",
+      "ground_truth": "EXIT [entity_004] to the right of Airport Exit [entity_002]",
+      "prediction": "An orange pedestrian crossing sign is visible overhead at 0.0 seconds to the right of the Airport Exit sign.",
+      "inference_time_sec": 1.861,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street, regulatory, or warning text elements are visible in this clip?",
+      "ground_truth": "7",
+      "prediction": "There are six distinct street, regulatory, or warning text elements visible in this clip.",
+      "inference_time_sec": 1.592,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the text elements on the orange warning sign encountered after passing the concrete overpass?",
+      "ground_truth": "1st: ROAD [entity_005], 2nd: WORK [entity_006], 3rd: AHEAD [entity_007]",
+      "prediction": "After passing the concrete overpass, the order of the text elements on the orange warning sign encountered is 'DO NOT ENTER'.",
+      "inference_time_sec": 1.783,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint with the text 'STOP HERE'.",
+      "inference_time_sec": 1.797,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs like Airport Exit and ROAD WORK AHEAD, what kind of driving environment is depicted?",
+      "ground_truth": "Highway construction zone",
+      "prediction": "The driving environment depicted in the video is that of a typical urban or suburban area with construction activity. The presence of the 'Airport Exit' sign indicates that the area is likely near an airport, which could mean that the road is undergoing some form of construction or maintenance. The 'ROAD WORK AHEAD' sign suggests that there are ongoing road work ahead, which is common in areas undergoing development or expansion. The overall scene is one of a busy, possibly urban, environment with signs of ongoing development or maintenance.",
+      "inference_time_sec": 4.53,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead and warning signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead and warning signs in this clip is in English.",
+      "inference_time_sec": 1.481,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the STOP sign held by the construction flagger visible and legible?",
+      "ground_truth": "0.0 to 2.633 seconds",
+      "prediction": "The STOP sign held by the construction flagger is visible and legible during the daytime, as indicated by the clear visibility of the sign against the sky.",
+      "inference_time_sec": 2.021,
+      "error": ""
+    }
+  ]
+}

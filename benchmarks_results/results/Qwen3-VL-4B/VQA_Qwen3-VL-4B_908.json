@@ -1,0 +1,70 @@
+{
+  "video_id": 908,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/908.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the covered pedestrian structure marked WALKWAY relative to the Care emblem?",
+      "ground_truth": "To the left of Care [entity_004]",
+      "prediction": "The covered pedestrian structure marked WALKWAY is to the left of the Care emblem.",
+      "inference_time_sec": 4.555,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in this clip are mounted on the transit bus?",
+      "ground_truth": 4,
+      "prediction": "3",
+      "inference_time_sec": 3.05,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the first three text instances detected on the transit bus?",
+      "ground_truth": "1st: 35627-88 [entity_001], 2nd: 710 [entity_002], 3rd: THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The order of appearance of the first three text instances detected on the transit bus is: \"710\", \"THE PORT AUTHORITY OF NY & NJ\", and \"Care\".",
+      "inference_time_sec": 5.549,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the pavement markings near the green commuter waiting shelters, what driving action is required?",
+      "ground_truth": "Stop at the painted 'STOP' stencil",
+      "prediction": "The pavement markings near the green commuter waiting shelters indicate that drivers must stop. The markings include a \"STOP\" sign painted on the road, which is a clear directive for drivers to halt before proceeding. This is typically used to ensure safety and order at intersections or designated stopping areas, especially in areas with pedestrian crossings or transit stops.",
+      "inference_time_sec": 8.08,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of transit bus markings and a walkway sign suggest about the driving environment?",
+      "ground_truth": "Transit hub or commuter terminal area",
+      "prediction": "The presence of transit bus markings and a walkway sign suggests that the driving environment is likely a public transportation hub or a designated area for buses and pedestrians. The bus markings, such as the number \"710\" and the logo of \"The Port Authority of NY & NJ,\" indicate that this is a bus operated by a major public transportation authority, which typically serves commuters and travelers in urban or suburban areas. The \"WALKWAY\" sign implies that there is a designated pedestrian path or area, likely for people to safely cross or walk near the bus stop or station. This environment is designed to facilitate the movement of both vehicles and",
+      "inference_time_sec": 12.341,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible text suggests the geographical region where this clip was recorded?",
+      "ground_truth": "THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "THE PORT AUTHORITY OF NY & NJ",
+      "inference_time_sec": 3.628,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the fleet designation number 710 first become clearly detected on the bus?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "0.1 seconds",
+      "inference_time_sec": 3.458,
+      "error": ""
+    }
+  ]
+}

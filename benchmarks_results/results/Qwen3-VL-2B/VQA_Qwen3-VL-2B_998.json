@@ -1,0 +1,70 @@
+{
+  "video_id": 998,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/998.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which restaurant is located to the right of the BARBERSHOP on the left side of the street?",
+      "ground_truth": "DELI MEXICAN FOOD [entity_003]",
+      "prediction": "The restaurant located to the right of the BARBERSHOP on the left side of the street is the McDonald's.",
+      "inference_time_sec": 2.952,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned on the grey vehicles in the traffic lane?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates mentioned on the grey vehicles in the traffic lane.",
+      "inference_time_sec": 2.363,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the license plates HJG-2334 and FHN-9486 are encountered or approached by the camera vehicle?",
+      "ground_truth": "1st: HJG-2334 [entity_004], 2nd: FHN-9486 [entity_009]",
+      "prediction": "The license plate HJG-2334 is encountered first, followed by the license plate FHN-9486.",
+      "inference_time_sec": 3.002,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving hazard, speed limit, or regulatory constraint?",
+      "ground_truth": "None is present",
+      "prediction": "No visible text in the clip indicates a driving hazard, speed limit, or regulatory constraint.",
+      "inference_time_sec": 2.514,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of storefronts, a gas station, and a car wash?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The presence of storefronts, a gas station, and a car wash suggests a commercial and urban driving environment. This type of setting is typically found in city centers or suburban areas with high foot traffic and a mix of retail and service businesses. The environment is likely to be busy, with a variety of vehicles and pedestrians, and it may include a mix of residential and commercial zones.",
+      "inference_time_sec": 5.164,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional area code is shared by the phone numbers visible on the storefronts in this scene?",
+      "ground_truth": "718",
+      "prediction": "The phone numbers visible on the storefronts in the scene are 212-555-1234 and 212-555-4567. Both numbers start with the area code 212, which is the area code for New York City. Therefore, the shared regional area code is 212.",
+      "inference_time_sec": 5.265,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the car wash facility displaying the CAR and WASH signs first become clearer on the right?",
+      "ground_truth": "4.967 seconds",
+      "prediction": "The car wash facility displaying the CAR and WASH signs first becomes clearer on the right at 0.0 seconds.",
+      "inference_time_sec": 3.138,
+      "error": ""
+    }
+  ]
+}

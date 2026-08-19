@@ -1,0 +1,70 @@
+{
+  "video_id": 981,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/981.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What temporary sign is located to the left of the concrete retaining wall on the shoulder beneath the overpass?",
+      "ground_truth": "TRS [entity_009] NOW [entity_010] OPEN [entity_011] to the left of the concrete retaining wall",
+      "prediction": "A temporary sign reading \"SPEED LIMIT 55\" is located to the left of the concrete retaining wall on the shoulder beneath the overpass.",
+      "inference_time_sec": 5.829,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct overhead highway signs or route markers are mentioned on the two overpasses?",
+      "ground_truth": "3",
+      "prediction": "There are four distinct overhead highway signs or route markers mentioned on the two overpasses.",
+      "inference_time_sec": 4.263,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the SPEED LIMIT sign, the RTC transit sign, and the TRS NOW OPEN sign are encountered by the vehicle?",
+      "ground_truth": "1st: SPEED [entity_001] LIMIT [entity_002], 2nd: RTC [entity_008], 3rd: TRS [entity_009] NOW [entity_010] OPEN [entity_011]",
+      "prediction": "The vehicle encounters the SPEED LIMIT sign first, followed by the RTC transit sign, and then the TRS NOW OPEN sign.",
+      "inference_time_sec": 4.85,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed at the beginning of the clip?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
+      "prediction": "The regulatory text that constrains the vehicle's speed at the beginning of the clip is \"SPEED LIMIT 55\".",
+      "inference_time_sec": 4.829,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multi-lane overhead gantries, route markers, and speed limit signs, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a multi-lane highway with overhead gantries, route markers, and speed limit signs, which are typical features of a major urban or intercity highway system. This suggests a well-maintained, high-traffic roadway designed for efficient long-distance travel, likely connecting significant cities or regions. The presence of such infrastructure indicates that this is a major thoroughfare, possibly part of a state or national highway network, optimized for commuter and commercial traffic.",
+      "inference_time_sec": 9.913,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional cities or destinations are indicated by the overhead highway signs?",
+      "ground_truth": "Henderson [entity_005] and Las Vegas [entity_007]",
+      "prediction": "The overhead highway signs indicate the destinations of Henderson and Las Vegas. Specifically, the signs show that Henderson is to the east and Las Vegas is to the west, with both destinations being approximately one-quarter mile away.",
+      "inference_time_sec": 6.098,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the SPEED LIMIT sign first become legible to the vehicle?",
+      "ground_truth": "0.3 seconds",
+      "prediction": "The SPEED LIMIT sign first becomes legible at 0:00.",
+      "inference_time_sec": 4.155,
+      "error": ""
+    }
+  ]
+}

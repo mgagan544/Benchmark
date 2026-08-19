@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is to the right of the green directional sign.",
+      "inference_time_sec": 1.975,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "Three",
+      "inference_time_sec": 0.904,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "The first sign encountered is the 'No Parking' sign, followed by the 'Grand Central Parkway Exit' sign, and then the 'No Left Turn' sign.",
+      "inference_time_sec": 2.03,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The sign on the right side of the road indicates a weight restriction for vehicles near the overpass structure. It reads '1000 lbs' and '1000 lbs per axle.' This sign is likely part of the traffic control measures in place to ensure safety and manage the flow of vehicles near the overpass.",
+      "inference_time_sec": 3.254,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of multiple highway names and weight limit signs on the road suggests that this segment of the highway is a multi-lane road with different traffic regulations. The names indicate the different lanes and the weight limits for vehicles, which are essential for ensuring safe and efficient traffic flow on the road.",
+      "inference_time_sec": 2.951,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The abbreviations on the green directional sign suggest that the city or region is in the city of Chicago, specifically the Chicago River District.",
+      "inference_time_sec": 1.844,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text 'DELIVERIES ENTRANCE 9' becomes visible at the 10-second mark in the clip.",
+      "inference_time_sec": 1.681,
+      "error": ""
+    }
+  ]
+}

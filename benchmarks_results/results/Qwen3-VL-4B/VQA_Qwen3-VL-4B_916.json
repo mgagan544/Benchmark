@@ -1,0 +1,70 @@
+{
+  "video_id": 916,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/916.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the overhead Terminal sign located relative to the delivery truck?",
+      "ground_truth": "To the left of GOLDEN RULE [entity_001] and PRODUCE INC [entity_002]",
+      "prediction": "The overhead Terminal sign is located to the right of the delivery truck.",
+      "inference_time_sec": 4.018,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this clip are mounted on vehicles?",
+      "ground_truth": "5",
+      "prediction": "2",
+      "inference_time_sec": 3.125,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds?",
+      "ground_truth": "1st: Terminal [entity_004], 2nd: BUS [entity_005], 3rd: STOP [entity_006]",
+      "prediction": "The chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds is: \"Terminal 3\", \"Terminal 2\", \"Terminal 1\", \"Terminal 3\".",
+      "inference_time_sec": 6.858,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What road markings indicating driving constraints or lane designations are painted on the road surface just before passing the shuttle van?",
+      "ground_truth": "BUS [entity_005] and STOP [entity_006]",
+      "prediction": "Just before passing the shuttle van, the road surface features a painted \"STOP\" marking, which indicates a mandatory stop for vehicles. Additionally, there are lane markings that delineate the lanes for traffic, ensuring orderly movement and safety for drivers. These markings are crucial for guiding drivers and maintaining traffic flow in the area.",
+      "inference_time_sec": 8.067,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment is suggested by the presence of terminal, bus, and cell phone lot signs?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "The presence of signs indicating \"Terminal,\" \"Bus,\" and \"Cell Phone Lot\" suggests that the driving environment is an airport. These signs are typically found in airport parking areas or near terminal entrances, guiding drivers to various facilities such as terminals for boarding flights, bus stops for airport shuttles, and areas where passengers can recharge their cell phones or access other amenities. The environment is likely designed to facilitate the movement of vehicles and passengers between different airport services.",
+      "inference_time_sec": 9.843,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language are all the legible signs and road markings written?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 2.949,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the phone number 1-800-497-4972 first become legible on the delivery truck?",
+      "ground_truth": "1.367 seconds",
+      "prediction": "The phone number 1-800-497-4972 first becomes legible on the delivery truck at 0:01.",
+      "inference_time_sec": 5.407,
+      "error": ""
+    }
+  ]
+}

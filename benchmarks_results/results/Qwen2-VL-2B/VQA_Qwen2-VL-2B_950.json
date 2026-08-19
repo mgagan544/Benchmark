@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "The CHECKSCASH is located to the left of the SHED as the vehicle moves forward.",
+      "inference_time_sec": 3.04,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "The video captures a total of 10 distinct, legible text instances between 4.0 and 7.0 seconds.",
+      "inference_time_sec": 3.524,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "The order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward is SHED, boost, and CHECKSCASH.",
+      "inference_time_sec": 3.659,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The traffic regulator sign located to the right of the signboard displaying \"4CAR\" implies that the traffic is regulated by a traffic officer or a traffic signal system. This suggests that the driver should follow the traffic signals and regulations to ensure safety and order on the road.",
+      "inference_time_sec": 4.475,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The driving environment depicted in the video shows a busy urban area with a mix of commercial and residential buildings. The presence of storefronts like SHED, boost, and MARKET indicates a diverse commercial district. The traffic lights and the overall flow of vehicles suggest a well-maintained urban road system. The scene also shows pedestrians crossing the street, which adds to the urban atmosphere.",
+      "inference_time_sec": 6.226,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The clip is filmed in New York City, as indicated by the street name \"Hockaway Pkwy\" and the presence of the \"Boost\" advertisement, which is a well-known brand in New York City.",
+      "inference_time_sec": 4.232,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The vehicle passes the storefront of SHED at 00:00:00.",
+      "inference_time_sec": 3.35,
+      "error": ""
+    }
+  ]
+}

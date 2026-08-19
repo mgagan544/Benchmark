@@ -1,0 +1,70 @@
+{
+  "video_id": 918,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/918.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What specific text is located directly to the right of the highway shield 280 on the overhead gantry?",
+      "ground_truth": "San [entity_001]",
+      "prediction": "The text located directly to the right of the highway shield 280 on the overhead gantry is \"San Francisco\".",
+      "inference_time_sec": 4.818,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances on the overhead highway gantry contain numbers?",
+      "ground_truth": "3",
+      "prediction": "2",
+      "inference_time_sec": 2.892,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances 49A, EXIT, and John Daly Blvd become clearly visible or readable between 4.00 and 5.50 seconds?",
+      "ground_truth": "1st: John Daly Blvd [entity_003], 2nd: 49A [entity_009], 3rd: EXIT [entity_010]",
+      "prediction": "The order in which the text instances 49A, EXIT, and John Daly Blvd become clearly visible or readable between 4.00 and 5.50 seconds is: 49A, EXIT, John Daly Blvd.",
+      "inference_time_sec": 6.606,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead gantry signs, what action is implied for a driver wishing to reach John Daly Blvd?",
+      "ground_truth": "Take exit 49A [entity_009]",
+      "prediction": "The overhead gantry sign indicates that John Daly Blvd is 11/4 miles ahead, implying that a driver wishing to reach John Daly Blvd should continue straight ahead on the current highway. The sign also shows that the destination is on the northbound direction, so drivers should stay on the northbound lane to reach it.",
+      "inference_time_sec": 7.598,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead gantry signs with highway shields and exit numbers, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of overhead gantry signs with highway shields and exit numbers indicates that the driving environment is a **highway or freeway**. These signs are typical of major highways in the United States, providing drivers with directional information, exit numbers, and distances to destinations. The signs also suggest that the road is part of a larger, well-maintained transportation network, likely serving both local and long-distance travel needs. The presence of multiple lanes, traffic flow, and the structure of the road further support this conclusion.",
+      "inference_time_sec": 10.677,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which destination name visible on the overhead gantry suggests the vehicle is traveling near a major city in California?",
+      "ground_truth": "San [entity_001] Francisco [entity_002]",
+      "prediction": "The destination name \"San Francisco\" visible on the overhead gantry suggests the vehicle is traveling near a major city in California.",
+      "inference_time_sec": 4.944,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the exit number 49A first become clearly visible on the right panel of the gantry?",
+      "ground_truth": "4.633 seconds",
+      "prediction": "0.2 seconds",
+      "inference_time_sec": 3.372,
+      "error": ""
+    }
+  ]
+}

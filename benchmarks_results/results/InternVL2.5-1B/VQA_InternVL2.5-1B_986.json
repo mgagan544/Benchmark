@@ -1,0 +1,70 @@
+{
+  "video_id": 986,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/986.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the address number located relative to the residential house on the right side of the street?",
+      "ground_truth": "On the residential house displaying the address number 149 [entity_001]",
+      "prediction": "The address number is located on the right side of the street, as indicated by the street sign with the number '1600' on the right side of the frame.",
+      "inference_time_sec": 2.139,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many address signs or house numbers are visible on the residential houses in this clip?",
+      "ground_truth": "1",
+      "prediction": "There are two address signs visible on the residential houses in this clip. One is a street sign with the number '1700', and the other is a house number '1700'.",
+      "inference_time_sec": 2.256,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle cross the intersection and the address sign come into focus?",
+      "ground_truth": "1st: cross intersection, 2nd: residential house displaying the address number 149 [entity_001] comes into focus",
+      "prediction": "The vehicle crosses the intersection in the first frame, and the address sign comes into focus in the second frame.",
+      "inference_time_sec": 1.619,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints or regulatory instructions are written on the signs visible in this clip?",
+      "ground_truth": "None",
+      "prediction": "The signs visible in the video indicate that the driver must yield to pedestrians and follow traffic rules. The pedestrian crossing sign is a clear indication that the driver must stop and wait for the pedestrian to cross before proceeding. Additionally, the traffic light is green, allowing the driver to proceed through the intersection.",
+      "inference_time_sec": 2.986,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a residential house displaying address number 149, what type of environment is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The environment appears to be a residential area, as indicated by the presence of a single-story house with a white picket fence and a single garage door. The address number suggests that the location is within a neighborhood, possibly in a suburban or urban setting.",
+      "inference_time_sec": 2.79,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the address number displayed on the residential house?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The address number displayed on the residential house is in a script that resembles the Georgian or Georgian-Plains script, which is commonly used in the United States. This script is characterized by its distinctive lettering and the use of a capital letter for the first letter of the address. The number is also in a numerically structured format, which is typical for residential addresses in the United States.",
+      "inference_time_sec": 3.637,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what specific time range does the address sign 149 come into focus in the clip?",
+      "ground_truth": "Between 6.4 and 6.8 seconds",
+      "prediction": "The address sign 149 comes into focus in the second frame of the video, indicating that it is a specific point of interest within the scene.",
+      "inference_time_sec": 1.96,
+      "error": ""
+    }
+  ]
+}

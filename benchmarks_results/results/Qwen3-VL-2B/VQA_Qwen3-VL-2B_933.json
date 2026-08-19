@@ -1,0 +1,70 @@
+{
+  "video_id": 933,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/933.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly beneath the sign TRAFFIC on the wooden utility pole?",
+      "ground_truth": "DETOUR [entity_003] directly beneath TRAFFIC [entity_002]",
+      "prediction": "The sign located directly beneath the sign that says \"TRAFFIC\" on the wooden utility pole is a \"NO TURN\" sign.",
+      "inference_time_sec": 2.965,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street or regulatory signs are visible on the wooden utility pole and the adjacent signpost combined?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct street or regulatory signs visible on the wooden utility pole and the adjacent signpost combined.",
+      "inference_time_sec": 2.629,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs on the adjacent signpost are encountered after the vehicle completes its turn?",
+      "ground_truth": "1st: 56\"Road [entity_004], 2nd: ANYTIME [entity_005]",
+      "prediction": "The signs on the adjacent signpost are encountered in the following order: first, the \"ALL TRAFFIC\" sign, followed by the \"NO TURN\" sign, and finally the \"NO ENTRY\" sign.",
+      "inference_time_sec": 3.529,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What detour instruction is displayed on the wooden utility pole at the T-junction?",
+      "ground_truth": "ALL [entity_001] TRAFFIC [entity_002] DETOUR [entity_003]",
+      "prediction": "The detour instruction displayed on the wooden utility pole at the T-junction is \"ALL TRAFFIC DETOUR.\"",
+      "inference_time_sec": 2.82,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a detour sign, concrete barriers, orange barrels, and a light tower, what type of zone is this?",
+      "ground_truth": "Active road construction zone",
+      "prediction": "This is a construction zone. The presence of a detour sign, concrete barriers, orange barrels, and a light tower are all typical indicators of a construction zone, which is designed to manage traffic and ensure safety during construction activities.",
+      "inference_time_sec": 3.689,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the signs visible along the road?",
+      "ground_truth": "English",
+      "prediction": "The text on the signs is in English.",
+      "inference_time_sec": 2.138,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the sign 56\"Road first become visible to the camera?",
+      "ground_truth": "0.833s for 56\"Road [entity_004]",
+      "prediction": "The sign 56\"Road first becomes visible to the camera at 0:00.",
+      "inference_time_sec": 2.508,
+      "error": ""
+    }
+  ]
+}

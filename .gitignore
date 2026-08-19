@@ -1,0 +1,26 @@
+# Videos
+videos/
+*.mp4
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+
+# Model/cache files
+.cache/
+huggingface/
+hf_cache/
+
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Temporary files
+tmp/
+temp/

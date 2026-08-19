@@ -1,0 +1,70 @@
+{
+  "video_id": 929,
+  "model": "Qwen2.5-VL-3B",
+  "video": "/home2/gagandeep/benchmark/videos/900/929.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the signboard displaying Gabinst relative to the signboard displaying Natural?",
+      "ground_truth": "To the left of Natural [entity_003]",
+      "prediction": "The signboard displaying Gabinst is located to the right of the signboard displaying Natural.",
+      "inference_time_sec": 4.705,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belonging to storefront or real estate signboards are visible in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are 3 distinct pieces of text belonging to storefront or real estate signboards visible in this clip.",
+      "inference_time_sec": 4.462,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle?",
+      "ground_truth": "1st: TILE [entity_002], 2nd: Gabinst [entity_005], 3rd: KAPLON [entity_006]",
+      "prediction": "The signboards are encountered in the following order: \"Tile,\" \"Gabinst,\" and then \"KAPLON.\"",
+      "inference_time_sec": 4.764,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "No regulatory or warning text is visible in the clip.",
+      "prediction": "Yes, there is a sign that reads \"No Parking\" on the right side of the road.",
+      "inference_time_sec": 4.443,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of storefront signboards and real estate signs suggest about this driving environment?",
+      "ground_truth": "An urban commercial or industrial district",
+      "prediction": "The mix of storefront signboards and real estate signs suggests that this driving environment is likely in an urban or suburban area with a mix of commercial and residential properties. The presence of both types of signs indicates that there are businesses and properties for sale or rent, which are common in areas with active commercial activity and diverse property types. This setting might be part of a bustling city street or a neighborhood with a blend of retail and residential spaces.",
+      "inference_time_sec": 8.905,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional convention is suggested by the phone number format containing the area code (718)?",
+      "ground_truth": "North American numbering plan, specifically New York City",
+      "prediction": "The phone number format with the area code 718 suggests that the location is in New York City, specifically in Brooklyn. The area code 718 is commonly associated with Brooklyn, New York.",
+      "inference_time_sec": 5.703,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the real estate sign displaying KAPLON first align with the camera, and when does the vehicle pass the area code (718)?",
+      "ground_truth": "KAPLON [entity_006] aligns at 6.6 seconds; (718) [entity_010] is passed at 8.2 seconds",
+      "prediction": "The real estate sign displaying KAPLON first aligns with the camera at approximately 0:05 seconds. The vehicle passes the area code (718) at around 0:10 seconds.",
+      "inference_time_sec": 6.087,
+      "error": ""
+    }
+  ]
+}

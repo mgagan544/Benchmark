@@ -1,0 +1,70 @@
+{
+  "video_id": 961,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/961.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Sheridan Expwy on the right overhead signboard?",
+      "ground_truth": "RFK Br [entity_005] directly below Sheridan Expwy [entity_004]",
+      "prediction": "RFK Br",
+      "inference_time_sec": 3.228,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the left overhead signboard between 1.833 seconds and 3.967 seconds?",
+      "ground_truth": "5",
+      "prediction": "3",
+      "inference_time_sec": 2.957,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs, the yellow warning sign, and the speed limit sign are encountered?",
+      "ground_truth": "1st: overhead signs, 2nd: yellow warning sign, 3rd: SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The overhead signs are encountered first, followed by the yellow warning sign, and then the speed limit sign.",
+      "inference_time_sec": 4.513,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the left concrete barrier indicates a speed restriction near the end of the clip?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "SPEED LIMIT 45",
+      "inference_time_sec": 3.339,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of multiple overhead guide signs, exit indicators, and highway numbers?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of multiple overhead guide signs, exit indicators, and highway numbers suggests a multi-lane highway or expressway environment. These features are typical of highways designed for high-speed travel with multiple exits and directional guidance, often found in urban or suburban areas where traffic flow needs to be managed efficiently. The overhead signs provide drivers with information about upcoming exits, destinations, and speed limits, helping to ensure safe and informed navigation. The presence of such signs indicates that the road is part of a larger transportation network, likely serving as a major route for commuters and travelers.",
+      "inference_time_sec": 11.252,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge names visible on the overhead signs suggest this clip is filmed in the New York City region?",
+      "ground_truth": "Throgs Neck Br [entity_008], G Washington Br [entity_009], RFK Br [entity_005]",
+      "prediction": "The specific bridge names visible on the overhead signs that suggest this clip is filmed in the New York City region are \"Cross Bronx Expy\" and \"Sheridan Expy.\" These are well-known highways and bridges within the New York City area, with the Cross Bronx Expressway being a major thoroughfare connecting the Bronx to Manhattan, and the Sheridan Expressway being a key route in the Bronx and Queens. The presence of these names, along with the mention of \"RFK Br\" (Robert F. Kennedy Bridge), further confirms the location as being within New York City.",
+      "inference_time_sec": 11.504,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range do the overhead green guide signs remain continuously visible in the clip?",
+      "ground_truth": "1.833 seconds to 3.967 seconds",
+      "prediction": "The overhead green guide signs remain continuously visible from 0:00 to 0:02.",
+      "inference_time_sec": 4.487,
+      "error": ""
+    }
+  ]
+}

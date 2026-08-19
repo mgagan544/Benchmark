@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "927",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the text New Jersey relative to the G W Bridge text?",
+        "answer": "Below G W Bridge [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are displayed on the overhead gantry signs in this clip?",
+        "answer": "9",
+        "reasoning": "The overhead gantry signs display NORTH, G W Bridge, New Jersey, LOWER LEVEL, NO TRUCKS, ALL TRUCKS TO NJ, Cr Bronx Expy, SOUTH, and W 178 St, which total 9 distinct text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?",
+        "answer": "1st: NORTH [entity_002]; 2nd: New Jersey [entity_008]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?",
+        "answer": "NO TRUCKS [entity_006] and ALL TRUCKS TO NJ [entity_007]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the density and type of overhead text suggest about the driving environment?",
+        "answer": "Highway through-route",
+        "reasoning": "The overhead signs indicate major highway routes and exits with no commercial storefronts, suggesting a highway through-route."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which metropolitan area is suggested by the visible overhead signs, and what text supports this?",
+        "answer": "New York metropolitan area, supported by Cr Bronx Expy [entity_004] and New Jersey [entity_008]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?",
+        "answer": "0.033s",
+        "reasoning": "The temporal description states that these four texts become visible at 0.033s as the vehicle gets closer."
+      }
+    ]
+  }
+]

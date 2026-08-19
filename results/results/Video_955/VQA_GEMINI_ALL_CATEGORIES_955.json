@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "955",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is located directly below the word OVER on the weight limit sign to the left of Waterside Plaza?",
+        "answer": "VEHICLES [entity_002]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct, legible text instances are encountered by the vehicle between 1.500 and 3.000 seconds?",
+        "answer": "4",
+        "reasoning": "At 1.567 seconds, WATERSIDE PLAZA [entity_001] is passed. At 2.633 seconds, the weight-limit sign containing 8000 Lbs [entity_004], OVER [entity_003], and VEHICLES [entity_002] appears. This totals 4 distinct text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of the signs encountered by the vehicle between 3.500 and 4.500 seconds?",
+        "answer": "1st: E 25 ST [entity_005], 2nd: E 34 ST [entity_006] FERRY [entity_007] HELIPORT [entity_009] LANDING [entity_008], 3rd: ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What warning text is displayed on the orange construction sign passed at 4.367 seconds?",
+        "answer": "ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of multiple exit signs, route markers, and overpasses, what driving environment is depicted?",
+        "answer": "Highway",
+        "reasoning": "The presence of exit signs (EXIT 8, EXIT 9), route marker 495, and overpasses indicates a highway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific street names and route markers suggest this clip is filmed in New York City?",
+        "answer": "E 25 ST [entity_005], E 34 ST [entity_006], E 42 ST [entity_017], 495 [entity_016]",
+        "reasoning": "The combination of East 25th, 34th, and 42nd streets along with Interstate 495 (Midtown Tunnel) strongly points to Manhattan, New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the weight-limit sign containing the text 8000 Lbs first appear in view?",
+        "answer": "2.633 seconds, as 8000 Lbs [entity_004] becomes visible.",
+        "reasoning": "The temporal description states that at 2.633 seconds, the weight-limit sign reading 8000 Lbs [entity_004] appears in view."
+      }
+    ]
+  }
+]

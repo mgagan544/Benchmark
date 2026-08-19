@@ -1,0 +1,70 @@
+{
+  "video_id": 913,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/913.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the right of the orange construction signboard containing the word ROAD?",
+      "ground_truth": "SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] on the digital display sign",
+      "prediction": "The readable text to the right of the orange construction signboard is \"WORK AHEAD.\"",
+      "inference_time_sec": 3.025,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?",
+      "ground_truth": "3",
+      "prediction": "The orange construction signboard displays two distinct pieces of text: '5 MPH' and 'ROAD WORK AHEAD'.",
+      "inference_time_sec": 3.479,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?",
+      "ground_truth": "1st: ROAD [entity_001], 2nd: WORK [entity_002], 3rd: AHEAD [entity_003]",
+      "prediction": "The text on the orange construction signboard is encountered in the following order: 'ROAD WORK AHEAD' is seen first, followed by 'SLOW DOWN' in the subsequent frames.",
+      "inference_time_sec": 4.764,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?",
+      "ground_truth": "ROAD [entity_001] WORK [entity_002] AHEAD [entity_003] on the left side of the ramp",
+      "prediction": "Yes, there is a \"Road Work Ahead\" sign visible on the left side of the bridge, indicating that there may be construction or maintenance activities ahead that could affect traffic.",
+      "inference_time_sec": 4.482,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "An elevated highway construction zone",
+      "prediction": "The clip depicts a driving environment with ongoing construction, as indicated by the 'ROAD WORK AHEAD' sign. The presence of a speed limit sign displaying '30 MPH' suggests that the area is likely a controlled speed zone, possibly due to the proximity of the construction site or the bridge's structural elements. The combination of these signs indicates that drivers are in an urban setting with infrastructure development and traffic management measures in place.",
+      "inference_time_sec": 8.257,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction signboard and the digital display sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction signboard and the digital display sign is in english.",
+      "inference_time_sec": 3.094,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the word SPEED first become legible on the digital display sign?",
+      "ground_truth": "7.967",
+      "prediction": "The word SPEED first becomes legible on the digital display sign at the 5-second mark.",
+      "inference_time_sec": 3.135,
+      "error": ""
+    }
+  ]
+}

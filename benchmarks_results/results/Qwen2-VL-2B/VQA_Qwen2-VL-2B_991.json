@@ -1,0 +1,70 @@
+{
+  "video_id": 991,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/991.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the instruction to use the other side relative to the sidewalk sign?",
+      "ground_truth": "To the right of SIDEWALK [entity_001]",
+      "prediction": "The instruction to use the other side is located to the left of the sidewalk sign.",
+      "inference_time_sec": 3.211,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the blue police barricades?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances visible on the blue police barricades: \"POLICE LINE\" and \"NO CROSS\".",
+      "inference_time_sec": 3.315,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances on the blue barricades are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: POLICE LINE [entity_005], 2nd: DO NOT CROSS [entity_006], 3rd: NYPD [entity_007]",
+      "prediction": "The text instances on the blue barricades are encountered in the following order as the vehicle moves forward:\n\n1. \"NO STOPPING\" (top left)\n2. \"NO STANDING\" (top right)\n3. \"NO PARKING\" (bottom left)\n4. \"NO STOPPING\" (bottom right)\n5. \"NO STANDING\" (middle left)\n6. \"NO PARKING\" (middle right)",
+      "inference_time_sec": 5.65,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the large orange sign on the left side of the road?",
+      "ground_truth": "CLOSED [entity_002]",
+      "prediction": "The large orange sign on the left side of the road displays the warning text \"SCHEDULED WORK AHEAD\".",
+      "inference_time_sec": 3.569,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of construction barriers, police barricades, and a commercial building, what kind of driving environment is depicted?",
+      "ground_truth": "Urban construction zone",
+      "prediction": "The driving environment depicted is an urban area with construction activities. The presence of construction barriers, police barricades, and a commercial building suggests that the area is undergoing development or renovation. The construction barriers and barricades indicate that the area is not currently in use for vehicular traffic, and the commercial building suggests that the area is likely a business district or a mixed-use area.",
+      "inference_time_sec": 5.209,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which abbreviation on the blue barricades suggests the city where this clip was filmed?",
+      "ground_truth": "NYPD [entity_007]",
+      "prediction": "The abbreviation on the blue barricades suggests that the city where this clip was filmed is New York City.",
+      "inference_time_sec": 3.176,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the instruction to use the other side first become visible on the left?",
+      "ground_truth": "0.133 seconds",
+      "prediction": "The instruction to use the other side first becomes visible on the left at 00:00:00.",
+      "inference_time_sec": 3.622,
+      "error": ""
+    }
+  ]
+}

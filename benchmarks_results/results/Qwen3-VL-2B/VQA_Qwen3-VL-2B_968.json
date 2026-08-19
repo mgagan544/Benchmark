@@ -1,0 +1,70 @@
+{
+  "video_id": 968,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/968.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located directly below the street signs for Hancock and Evergreen?",
+      "ground_truth": "ONE WAY [entity_004] below Hancock [entity_006] and Evergreen [entity_007]",
+      "prediction": "The regulatory sign located directly below the street signs for Hancock and Evergreen is a stop sign.",
+      "inference_time_sec": 2.503,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this scene represent storefront names, commercial advertisements, or business contact details?",
+      "ground_truth": "8",
+      "prediction": "3",
+      "inference_time_sec": 1.744,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance for the regulatory ONE WAY sign, the signboard FOODCORP., and the contact number 718-443-7192?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: FOODCORP. [entity_011], 3rd: 718-443-7192 [entity_013]",
+      "prediction": "The regulatory ONE WAY sign appears first, followed by the signboard FOODCORP., and finally the contact number 718-443-7192.",
+      "inference_time_sec": 3.27,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is implied at the starting intersection?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The driving action implied at the starting intersection is to stop. This is indicated by the \"STOP\" sign and the painted \"STOP\" markings on the road.",
+      "inference_time_sec": 3.039,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, food advertisements, and street signs, what kind of driving environment is depicted?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The driving environment depicted is a densely populated urban area with a mix of commercial and residential buildings. The presence of multiple storefronts, food advertisements, and street signs suggests a bustling neighborhood with a high concentration of businesses and activity. The street signs and the layout of the road indicate a well-organized urban setting, likely in a city or town with a strong local economy. The presence of a food court and a variety of shops suggests a vibrant community with a focus on local commerce and dining. The overall scene is indicative of a busy, active urban environment.",
+      "inference_time_sec": 6.592,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text instance suggests the region or city where this clip was recorded?",
+      "ground_truth": "718-443-7192 [entity_013]",
+      "prediction": "The text instance that suggests the region or city where this clip was recorded is \"Narajos\".",
+      "inference_time_sec": 2.675,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the street signs for Hancock and Evergreen come into clearer view?",
+      "ground_truth": "1.333s - 2.033s",
+      "prediction": "The street signs for Hancock and Evergreen come into clearer view during the time range of 0.0 to 0.3 seconds.",
+      "inference_time_sec": 2.856,
+      "error": ""
+    }
+  ]
+}

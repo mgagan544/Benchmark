@@ -1,0 +1,70 @@
+{
+  "video_id": 946,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/946.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of G Washington Br relative to the route sign 19-N-S-W?",
+      "ground_truth": "to the right of 19-N-S-W [entity_005]",
+      "prediction": "The route sign 19-N-S-W is to the right of G Washington Br.",
+      "inference_time_sec": 1.833,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway or regulatory signs are visible on the overhead gantry in this clip?",
+      "ground_truth": "7",
+      "prediction": "Three",
+      "inference_time_sec": 0.872,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the signs NORTH, PASSENGER CARS ONLY, and Hutechinson Pkwy become visible?",
+      "ground_truth": "1st: NORTH [entity_001], 2nd: PASSENGER CARS ONLY [entity_002], 3rd: Hutechinson Pkwy [entity_003]",
+      "prediction": "The chronological order in which the signs NORTH, PASSENGER CARS ONLY, and Hutechinson Pkwy become visible is as follows: the camera view shifts from the highway to the left side of the road, then the camera view shifts to the right side of the road, and finally, the camera view shifts back to the left side of the road.",
+      "inference_time_sec": 3.364,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which overhead sign indicates a vehicle type restriction on the highway lanes?",
+      "ground_truth": "PASSENGER CARS ONLY [entity_002]",
+      "prediction": "The overhead sign that indicates a vehicle type restriction on the highway lanes is the 'PASSENGER CARS ONLY' sign. This sign is typically used to restrict the movement of certain types of vehicles, such as passenger cars, to ensure safety and order on the highway.",
+      "inference_time_sec": 2.665,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the overhead signs visible between 8.2 and 8.9 seconds, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a highway.",
+      "inference_time_sec": 1.136,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which destination name on the overhead gantry suggests the vehicle is in the New York metropolitan area?",
+      "ground_truth": "G Washington Br [entity_004]",
+      "prediction": "The destination name 'New Haven Ct' on the overhead gantry suggests that the vehicle is in the New York metropolitan area. This is inferred from the context of the highway signs, which are typically used to direct drivers to specific locations within a city or region. The presence of 'New Haven Ct' indicates that the vehicle is likely heading towards or has recently passed through the New Haven area, which is a significant part of the New York metropolitan area.",
+      "inference_time_sec": 3.936,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the route marker 278 first become fully displayed?",
+      "ground_truth": "8.867 seconds",
+      "prediction": "The route marker 278 becomes fully displayed at the 15-second mark.",
+      "inference_time_sec": 1.445,
+      "error": ""
+    }
+  ]
+}

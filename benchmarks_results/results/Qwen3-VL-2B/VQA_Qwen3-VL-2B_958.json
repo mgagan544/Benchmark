@@ -1,0 +1,70 @@
+{
+  "video_id": 958,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/958.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+      "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
+      "prediction": "The parking sign text located to the left of the license registration AT * 665J is \"PARK\".",
+      "inference_time_sec": 2.711,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+      "ground_truth": "6",
+      "prediction": "There are 2 distinct text instances on the automotive service building on the left side of the street.",
+      "inference_time_sec": 2.559,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+      "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
+      "prediction": "The first three text instances encountered on the right side of the street, in chronological order, are: 'FAME', 'SUNSET', and 'THE DISPLAYERS'.",
+      "inference_time_sec": 3.205,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+      "ground_truth": "TURNS [entity_010]",
+      "prediction": "The text on the regulatory traffic sign that indicates a driving constraint or instruction across from the DAK sign is \"No Parking.\"",
+      "inference_time_sec": 2.817,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The driving environment is a bustling urban area with a mix of commercial and modern architecture. The presence of storefronts, digital billboards, and commercial signs suggests a vibrant city center with a focus on commerce and modern design.",
+      "inference_time_sec": 4.317,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+      "ground_truth": "New York City, New York State",
+      "prediction": "The phone number area code 212 suggests New York City, and the inspection sign text \"N.Y. INSPECTION STATION\" further confirms the location as New York City.",
+      "inference_time_sec": 3.331,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+      "ground_truth": "0.0s to 0.233s",
+      "prediction": "The digital billboard texts THE, DISPLAYERS, and Snycom are tracked from 0.0 to 0.3 seconds.",
+      "inference_time_sec": 2.858,
+      "error": ""
+    }
+  ]
+}

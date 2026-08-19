@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "983",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What commercial restaurant billboard is located to the right of the gantry displaying Gilespie St?",
+        "answer": "ROBERT [entity_033] IRVINE'S [entity_032] LOCATED AT [entity_035] Tropicana [entity_034]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct billboards advertising commercial services, events, or businesses are mentioned in the scene description?",
+        "answer": "3",
+        "reasoning": "The scene description mentions three distinct billboards: the DALLAS HORTON [entity_002] billboard, the RICK ROSS [entity_016] billboard, and the ROBERT [entity_033] IRVINE'S [entity_032] billboard."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order are the DALLAS HORTON billboard, the first 215 gantry, and the RICK ROSS billboard encountered?",
+        "answer": "1st: DALLAS HORTON [entity_002], 2nd: 215 [entity_005] gantry, 3rd: RICK ROSS [entity_016]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What advisory speed limit is indicated on the yellow sign located below the RICK ROSS billboard?",
+        "answer": "45 M P H [entity_018] for the RAMP [entity_017]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of road environment is indicated by the presence of multiple overhead gantries and exit signs?",
+        "answer": "Highway",
+        "reasoning": "Multiple overhead gantries, exit signs, and large billboards are characteristic of a highway."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which city and resort mentioned on the signs and billboards suggest the location is in Nevada?",
+        "answer": "Las Vegas [entity_011] and MANDALAY BAY [entity_020]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what duration is the billboard featuring DALLAS HORTON continuously visible at the beginning of the video?",
+        "answer": "0.0 seconds to 0.4 seconds",
+        "reasoning": "The temporal description states the DALLAS HORTON [entity_002] billboard is visible from 0.0 to 0.4 seconds."
+      }
+    ]
+  }
+]

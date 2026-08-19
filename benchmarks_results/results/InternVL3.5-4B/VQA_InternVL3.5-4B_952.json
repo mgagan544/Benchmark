@@ -1,0 +1,70 @@
+{
+  "video_id": 952,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/952.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the motto \"Common Sense Solutions To Your Environmental Concerns\" on the service vehicle?",
+      "ground_truth": "Water Trearment & Environmental Specialists [entity_012]",
+      "prediction": "The text directly beneath the motto reads \"CASCAD WATER SERVICES,\" followed by the service number \"516-922-3030\" and the website \"www.cascadewaterservices.com.\" This information is printed on the back of the service vehicle, which is white with blue and yellow text. The vehicle is a van, and it is positioned in the center of the frame throughout the video. The text is clearly legible and serves as a means for potential customers to identify the company and contact them for water-related services. The presence of this text indicates that the vehicle is likely used for business purposes",
+      "inference_time_sec": 11.674,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are printed on or designate the yellow school vehicle?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances printed on the yellow school vehicle: 'SCHOOL BUS' on the front, 'SCHOOL BUS' on the side, and 'SCHOOL BUS' on the back.",
+      "inference_time_sec": 4.851,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the decals MOBILINK, 2626, and 379 CR become visible on the service vehicle?",
+      "ground_truth": "1st: MOBILINK [entity_005], 2nd: 2626 [entity_006], 3rd: 379 CR [entity_007]",
+      "prediction": "The decals MOBILINK, 2626, and 379 CR become visible in the following order: first, MOBILINK is visible, followed by 2626, and finally, 379 CR.",
+      "inference_time_sec": 5.793,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the yellow school vehicle indicates an emergency designation?",
+      "ground_truth": "EMERGENCY 0008 [entity_022]",
+      "prediction": "The text 'EMERGENCY VEHICLE' is visible on the yellow school vehicle, indicating that it is designated for emergency use.",
+      "inference_time_sec": 3.821,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign?",
+      "ground_truth": "Residential neighborhood",
+      "prediction": "The presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign suggests a mixed-use driving environment, likely in a residential or mixed residential-commercial area. The school bus indicates the proximity to a school zone, while the pedestrians and the garage sale sign imply a neighborhood setting with local businesses and community activities.",
+      "inference_time_sec": 6.652,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area codes visible on the vehicles suggest this clip was filmed in the New York metropolitan area?",
+      "ground_truth": "516.932.3030 [entity_003] and 718-335-6363 [entity_021]",
+      "prediction": "The area codes 718 and 347 are visible on the vehicles, which are associated with the New York metropolitan area.",
+      "inference_time_sec": 4.001,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle identification number 2626 first become clearly visible on the service vehicle?",
+      "ground_truth": "0.933s",
+      "prediction": "The vehicle identification number 2626 first becomes clearly visible on the service vehicle at the beginning of the video, as the camera captures the rear of the white van with the service company's details.",
+      "inference_time_sec": 5.006,
+      "error": ""
+    }
+  ]
+}

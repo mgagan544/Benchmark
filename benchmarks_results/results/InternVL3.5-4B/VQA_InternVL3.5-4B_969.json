@@ -1,0 +1,70 @@
+{
+  "video_id": 969,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/969.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the text Prospect?",
+      "ground_truth": "Expwy [entity_001] to the right of Prospect [entity_002]",
+      "prediction": "Verazano Br",
+      "inference_time_sec": 1.993,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds?",
+      "ground_truth": "3",
+      "prediction": "Between 2.1 and 2.8 seconds, the video captures two distinct, legible text instances. The first is 'Propect Expy' on the overhead sign, and the second is 'Verazano Br Staten Is' on the same sign. These text instances are part of the directional signage that provides information about upcoming exits and destinations.",
+      "inference_time_sec": 7.133,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of detection for the signs Prospect and EXIT 24?",
+      "ground_truth": "1st: Prospect [entity_002], 2nd: EXIT 24 [entity_003]",
+      "prediction": "The signs Prospect and EXIT 24 are detected in the same order.",
+      "inference_time_sec": 2.874,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific vehicle types are restricted from the left lane according to the white regulatory sign?",
+      "ground_truth": "TRUCKS [entity_009], BUSES [entity_010], and TRAILERS [entity_011]",
+      "prediction": "The white regulatory sign indicates that buses, trucks, and RVs are restricted from the left lane. This sign is positioned on the right side of the highway, just before the green overhead sign that provides directional information for the upcoming exits. The sign is clearly visible and serves as a warning to drivers in the left lane to be cautious of larger vehicles that may not be able to maneuver into the left lane due to their size and weight. The sign's placement and the clear visibility of the text ensure that drivers are well-informed about the lane restrictions as they approach the area where the left lane is not available for certain types of vehicles.",
+      "inference_time_sec": 11.602,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of directional signs, exit indicators, and lane restrictions suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of directional signs, exit indicators, and lane restrictions suggests that the driving environment is a well-organized and regulated highway system. The presence of multiple signs provides drivers with clear guidance on the routes they can take, the exits available, and any lane-specific instructions they need to follow. This level of organization is typical of major highways that connect different regions and facilitate efficient traffic flow. The signs also indicate that the highway is likely part of a larger network, with multiple routes and destinations available to drivers. Overall, the signs and lane markings contribute to a safe and orderly driving experience, allowing drivers to navigate the highway with confidence and ease.",
+      "inference_time_sec": 11.76,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge and island names visible on the directional signs suggest the vehicle is in the New York City area?",
+      "ground_truth": "Verrazano Br [entity_008] and Staten Is [entity_005]",
+      "prediction": "The directional signs indicate the presence of the 'Verazzano Br' and 'Staten Is' which are specific to the New York City area, particularly near the Manhattan Bridge and Staten Island.",
+      "inference_time_sec": 4.766,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the distant skyline advertisement text PEPSI first become visible?",
+      "ground_truth": "4.533 seconds",
+      "prediction": "The distant skyline advertisement text PEPSI first becomes visible at the beginning of the video, as the car approaches the highway.",
+      "inference_time_sec": 3.69,
+      "error": ""
+    }
+  ]
+}

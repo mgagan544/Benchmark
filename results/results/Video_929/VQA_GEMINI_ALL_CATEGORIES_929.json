@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "929",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the signboard displaying Gabinst relative to the signboard displaying Natural?",
+        "answer": "To the left of Natural [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct pieces of text belonging to storefront or real estate signboards are visible in this clip?",
+        "answer": "9",
+        "reasoning": "The storefront signs are TILE [entity_002], Gabinst [entity_005], Natural [entity_003], and Stone [entity_004] (4 signs). The real estate signs are KAPLON [entity_006], BELO [entity_007], 392-3456 [entity_008], Available [entity_009], and (718) [entity_010] (5 signs). 4 + 5 = 9."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle?",
+        "answer": "1st: TILE [entity_002], 2nd: Gabinst [entity_005], 3rd: KAPLON [entity_006]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+        "answer": "No regulatory or warning text is visible in the clip."
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of storefront signboards and real estate signs suggest about this driving environment?",
+        "answer": "An urban commercial or industrial district",
+        "reasoning": "The presence of storefronts like TILE [entity_002] and real estate signs indicates a commercial zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What regional convention is suggested by the phone number format containing the area code (718)?",
+        "answer": "North American numbering plan, specifically New York City",
+        "reasoning": "The area code (718) [entity_010] is a well-known code for New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the real estate sign displaying KAPLON first align with the camera, and when does the vehicle pass the area code (718)?",
+        "answer": "KAPLON [entity_006] aligns at 6.6 seconds; (718) [entity_010] is passed at 8.2 seconds",
+        "reasoning": "The temporal description states KAPLON [entity_006] aligns between 6.6 and 6.8 seconds, and (718) [entity_010] is captured at 8.2 seconds."
+      }
+    ]
+  }
+]

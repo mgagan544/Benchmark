@@ -1,0 +1,70 @@
+{
+  "video_id": 951,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/951.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the storefront extension directly to the right of the 4CARS decals?",
+      "ground_truth": "VILLAGE [entity_009] to the right of 4CARS [entity_006] decals",
+      "prediction": "The storefront extension directly to the right of the 4CARS decals displays the text 'GREEN WAVE SUPERMAR'.",
+      "inference_time_sec": 1.701,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 2.2s and 2.9s?",
+      "ground_truth": "6",
+      "prediction": "Three distinct, legible text instances are encountered by the vehicle between 2.2s and 2.9s.",
+      "inference_time_sec": 1.787,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three text signs encountered on the right side of the street at the start of the clip?",
+      "ground_truth": "1st: boost [entity_001], 2nd: Switch Now [entity_002], 3rd: FREE PHONE [entity_003]",
+      "prediction": "The first three text signs encountered on the right side of the street at the start of the clip are 'GREEN WOODS', 'GREEN WOODS MARKET', and 'GREEN WOODS MARKET'.",
+      "inference_time_sec": 2.385,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional instruction is displayed on a sign near the entrance of the gas station driveway?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_020]",
+      "prediction": "The sign near the entrance of the gas station driveway displays a directional arrow indicating the direction to 'SCHOOL' and 'PARK'.",
+      "inference_time_sec": 1.895,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, markets, and a gas station, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The driving environment depicted in the video is urban, characterized by a mix of commercial establishments and residential areas. The presence of storefronts, a gas station, and a market suggests a bustling cityscape where various businesses operate, catering to the needs of the local population. The density of these establishments indicates a lively and active urban setting, with a variety of activities taking place within the city.",
+      "inference_time_sec": 3.658,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible phone number area code suggests the driving location is in New York City?",
+      "ground_truth": "(917) [entity_008]",
+      "prediction": "The visible phone number area code '212' suggests that the driving location is in New York City.",
+      "inference_time_sec": 1.713,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "On how many distinct storefronts does the text VILLAGE appear in the clip?",
+      "ground_truth": "2",
+      "prediction": "The text VILLAGE appears on two distinct storefronts in the clip.",
+      "inference_time_sec": 1.405,
+      "error": ""
+    }
+  ]
+}

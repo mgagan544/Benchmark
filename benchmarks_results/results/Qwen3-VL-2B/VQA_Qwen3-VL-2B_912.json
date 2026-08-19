@@ -1,0 +1,70 @@
+{
+  "video_id": 912,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/912.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What numbers are located directly to the right of the address number 1033 on the low stone retaining wall?",
+      "ground_truth": "The numbers '35' and '37' beside 1033 [entity_001]",
+      "prediction": "The numbers located directly to the right of the address number 1033 on the low stone retaining wall are 35-37.",
+      "inference_time_sec": 3.06,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct numeric text instances are displayed on the low stone retaining wall?",
+      "ground_truth": "3",
+      "prediction": "There are 4 distinct numeric text instances displayed on the low stone retaining wall.",
+      "inference_time_sec": 2.379,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the distinct numbers on the stone wall encountered as the vehicle drives forward?",
+      "ground_truth": "1st: 1033 [entity_001], 2nd: '35', 3rd: '37'",
+      "prediction": "The distinct numbers on the stone wall are encountered in the following order: 1033-35-37.",
+      "inference_time_sec": 2.772,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text on the stone wall or near the dealership indicate a driving constraint or hazard?",
+      "ground_truth": "No driving constraints or hazards are indicated by the visible text.",
+      "prediction": "No, there is no visible text on the stone wall or near the dealership that indicates a driving constraint or hazard. The image shows a clear view of the road, vehicles, and the dealership, but no signs or warnings are visible on the stone wall or near the dealership.",
+      "inference_time_sec": 4.103,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of a car dealership and address numbers suggest about the driving environment?",
+      "ground_truth": "Suburban commercial roadway",
+      "prediction": "The mix of a car dealership and address numbers suggests that the driving environment is likely in a commercial or suburban area, possibly near a residential or business district. The presence of a car dealership indicates that the area is likely frequented by people who are either buying or selling vehicles, which could be a sign of a growing local economy or a community with a strong automotive interest. The address numbers, such as \"1033-35-37,\" further support this, as they are typically used for identifying specific locations, which could be a business or a residential area. The combination of these elements suggests that the driving environment is likely",
+      "inference_time_sec": 7.399,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script is used for the address and numbers displayed on the stone wall?",
+      "ground_truth": "Latin script and Arabic numerals",
+      "prediction": "The script used for the address and numbers displayed on the stone wall is a combination of uppercase and lowercase letters, with the numbers being in a bold, sans-serif font. The address is written in a clear, legible font, and the numbers are in a bold, sans-serif font. The script is not a traditional script like cursive or calligraphy, but rather a modern, clean font style.",
+      "inference_time_sec": 5.37,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the address number 1033 first become visible on the stone wall?",
+      "ground_truth": "At timestamp 6.0",
+      "prediction": "The address number 1033 first becomes visible on the stone wall at timestamp 0.0 seconds.",
+      "inference_time_sec": 2.701,
+      "error": ""
+    }
+  ]
+}

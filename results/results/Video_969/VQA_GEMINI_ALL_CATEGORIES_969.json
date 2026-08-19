@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "969",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What readable text is located directly to the right of the text Prospect?",
+        "answer": "Expwy [entity_001] to the right of Prospect [entity_002]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds?",
+        "answer": "3",
+        "reasoning": "The text instances Prospect [entity_002] and Expwy [entity_001] appear between 2.1 and 2.5 seconds, and EXIT 24 [entity_003] is detected at 2.733 seconds, totaling 3."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of detection for the signs Prospect and EXIT 24?",
+        "answer": "1st: Prospect [entity_002], 2nd: EXIT 24 [entity_003]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What specific vehicle types are restricted from the left lane according to the white regulatory sign?",
+        "answer": "TRUCKS [entity_009], BUSES [entity_010], and TRAILERS [entity_011]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of directional signs, exit indicators, and lane restrictions suggest about the driving environment?",
+        "answer": "Highway through-route",
+        "reasoning": "The presence of exit signs, expressway names, route numbers, and lane restrictions for trucks/buses indicates a highway."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific bridge and island names visible on the directional signs suggest the vehicle is in the New York City area?",
+        "answer": "Verrazano Br [entity_008] and Staten Is [entity_005]",
+        "reasoning": "Verrazano Bridge and Staten Island are prominent landmarks in New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the distant skyline advertisement text PEPSI first become visible?",
+        "answer": "4.533 seconds",
+        "reasoning": "The temporal description states that the distant skyline advertisement for PEPSI [entity_014] becomes visible around 4.533 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 930,
+  "model": "Qwen2.5-VL-3B",
+  "video": "/home2/gagandeep/benchmark/videos/900/930.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?",
+      "ground_truth": "HONG [entity_005] KONG [entity_006]",
+      "prediction": "The storefront text located between The Venue Party Hall and the deli grocery is \"Hong Kong.\"",
+      "inference_time_sec": 4.293,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct storefront or sign text instances passed by the vehicle between 3.9 and 5.6 seconds: \"The Venue Party Hall,\" \"Hong Kong,\" and \"DEL GROCERY.\"",
+      "inference_time_sec": 5.919,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign text is encountered immediately after the vehicle passes the sign for The Best?",
+      "ground_truth": "Best [entity_009]",
+      "prediction": "Immediately after passing the sign for The Best, the next sign encountered is \"DEL GROCERY.\"",
+      "inference_time_sec": 4.399,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?",
+      "ground_truth": "None",
+      "prediction": "The visible text in the video does not provide any specific driving constraints, hazards, or speed limits. The text appears to be part of store signs and advertisements, such as \"The Venue Party Hall\" and \"Hong Kong,\" but it does not include any regulatory information related to driving.",
+      "inference_time_sec": 6.761,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The video depicts a busy urban street with a mix of commercial and residential buildings. The presence of numerous storefront signs, including those for restaurants, bars, and convenience stores, suggests a bustling commercial area. The variety of signs indicates a diverse range of businesses catering to different needs, from dining to retail and entertainment. The overall scene conveys a lively and active neighborhood typical of a downtown or commercial district in a city.",
+      "inference_time_sec": 8.646,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the storefront signs encountered by the vehicle?",
+      "ground_truth": "English",
+      "prediction": "The storefront signs encountered by the vehicle are in English.",
+      "inference_time_sec": 3.933,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the sign for The Best continuously visible to the camera vehicle?",
+      "ground_truth": "3.9 to 4.8 seconds",
+      "prediction": "The sign for The Best is continuously visible to the camera vehicle from 0:00 to 0:12.",
+      "inference_time_sec": 4.801,
+      "error": ""
+    }
+  ]
+}

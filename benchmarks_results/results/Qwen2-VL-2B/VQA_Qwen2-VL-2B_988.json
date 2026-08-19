@@ -1,0 +1,70 @@
+{
+  "video_id": 988,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/988.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the red bus stop sign relative to the concrete sidewalk where the pedestrian walks?",
+      "ground_truth": "to the right of the concrete sidewalk",
+      "prediction": "The red bus stop sign is located on the right side of the concrete sidewalk where the pedestrian walks.",
+      "inference_time_sec": 3.212,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct traffic signs or signals are described in the scene?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct traffic signs or signals described in the scene: a traffic light and a pedestrian crossing.",
+      "inference_time_sec": 3.31,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles that cross or clear the intersection after the ego vehicle begins decelerating at 0.6 seconds?",
+      "ground_truth": "1st: gray SUV, 2nd: black sedan",
+      "prediction": "The order of vehicles that cross or clear the intersection after the ego vehicle begins decelerating at 0.6 seconds is as follows:\n\n1. The black car in front of the ego vehicle.\n2. The black car behind the ego vehicle.\n3. The black car in front of the black car in front of the ego vehicle.\n4. The black car behind the black car in front of the ego vehicle.\n5. The black car in front of the black car behind the black car in front of the ego vehicle.\n6. The black car behind the black car in front of the ego vehicle.\n7. The black car in",
+      "inference_time_sec": 7.348,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving constraints or actions are implied for the ego vehicle by the red bus stop sign near the crosswalk?",
+      "ground_truth": "None",
+      "prediction": "The red bus stop sign near the crosswalk implies that the bus stop is active and that vehicles must stop before proceeding. This is a safety measure to ensure that pedestrians can safely cross the street and that the bus can safely stop at the bus stop.",
+      "inference_time_sec": 4.35,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the landmarks and surroundings described, what type of driving environment does this clip depict?",
+      "ground_truth": "residential area",
+      "prediction": "The driving environment depicted in the clip is a suburban or residential area with a mix of residential and commercial buildings. The presence of houses, parked cars, and a traffic light suggests a typical street scene in a neighborhood. The clear sky and the presence of trees indicate a pleasant weather, which is common in suburban areas. The overall setting suggests a calm and orderly driving environment.",
+      "inference_time_sec": 5.178,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Based on the position of the parked silver sedan and the pedestrian's sidewalk, what is the local driving side convention?",
+      "ground_truth": "right side",
+      "prediction": "The local driving side convention in the image appears to be right-hand driving. This is indicated by the position of the parked silver sedan and the pedestrian's sidewalk. In right-hand driving, the driver's side of the road is on the right side of the vehicle, while the passenger side is on the left.",
+      "inference_time_sec": 4.67,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ego vehicle come to a complete halt before the crosswalk stop line?",
+      "ground_truth": "0.867 seconds",
+      "prediction": "The ego vehicle comes to a complete halt before the crosswalk stop line at 0:00:00.",
+      "inference_time_sec": 3.189,
+      "error": ""
+    }
+  ]
+}

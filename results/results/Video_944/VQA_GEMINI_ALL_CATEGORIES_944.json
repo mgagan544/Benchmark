@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "944",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Where is the PASSENGER CARS ONLY sign located relative to the Drive SOUTH sign?",
+        "answer": "Adjacent to Drive [entity_006] SOUTH [entity_007]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text entities make up the construction warning sign visible at the start of the clip?",
+        "answer": "4",
+        "reasoning": "The construction warning sign consists of RIGHT [entity_001], LANE [entity_002], CLOSED [entity_003], and 500 FT [entity_004], totaling 4 entities."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order does the vehicle encounter the low clearance warning sign, the construction warning signs, and the PASSENGER CARS ONLY sign?",
+        "answer": "1st: 12-6 [entity_005] and construction signs, 2nd: PASSENGER CARS ONLY [entity_009]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What low clearance limit is indicated by the warning sign to the right of the concrete barrier?",
+        "answer": "12-6 [entity_005]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment does the transition from a curved ramp with construction signs to a highway depict?",
+        "answer": "Highway transition zone",
+        "reasoning": "The presence of a curved roadway ramp, low clearance signs, construction warnings, and overhead highway directional signs indicates a highway transition zone."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for the text on the construction warning signs and overhead directional signs?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the Drive SOUTH sign first come into view, and when does the vehicle pass it?",
+        "answer": "First visible at 3.767 seconds, passed at 5.133 seconds",
+        "reasoning": "The temporal description states that the Drive [entity_006] SOUTH [entity_007] sign comes into view at 3.767 seconds and the vehicle passes it at 5.133 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "935",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Where is the painted road marking SCHOOL, passed at 0.967 seconds, located relative to the MPH marking?",
+        "answer": "To the right of MPH [entity_002]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances painted directly on the road pavement does the vehicle pass over in the first second of the clip?",
+        "answer": "3",
+        "reasoning": "Between 0.0 and 1.0 seconds, the vehicle passes over 2020 [entity_001] and MPH [entity_002] at 0.867 seconds, and SCHOOL [entity_003] at 0.967 seconds, totaling 3 road markings."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the vehicle encounters the road marking SCHOOL, the storefront JACKSON HO, and the sign RECTAURA?",
+        "answer": "1st: SCHOOL [entity_003], 2nd: JACKSON HO [entity_004], 3rd: RECTAURA [entity_005]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What speed limit and warning text markings are passed by the vehicle on the road pavement before 1.0 second?",
+        "answer": "2020 [entity_001], MPH [entity_002], and SCHOOL [entity_003]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment is suggested by the storefronts JACKSON HO and RECTAURA appearing on the right side of the street at 2.533 seconds?",
+        "answer": "Commercial business district",
+        "reasoning": "The presence of storefronts like JACKSON HO [entity_004] and RECTAURA [entity_005] indicates a commercial area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Based on the road markings and storefronts encountered between 0.867 and 2.533 seconds, what language is used in this area?",
+        "answer": "English",
+        "reasoning": "The text instances MPH [entity_002], SCHOOL [entity_003], JACKSON HO [entity_004], and RECTAURA [entity_005] are in English."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the vehicle drive past the painted SCHOOL zone marker on the road?",
+        "answer": "0.967 seconds",
+        "reasoning": "The temporal description states that the vehicle drives past the painted SCHOOL [entity_003] zone marker at 0.967 seconds."
+      }
+    ]
+  }
+]

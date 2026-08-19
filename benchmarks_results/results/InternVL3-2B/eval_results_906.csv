@@ -1,0 +1,8 @@
+video_id,category_id,category_name,ANLS,ANLS_star,BLEU_1,BERTScore_F1,inference_time_sec
+906,1,spatial_ordinal_navigation,0.0,0.0,0.0,0.7053934931755066,6.0688745975494385
+906,2,entity_aggregation_semantic_filtering,0.0,0.0,0.0,0.715019702911377,6.179216623306274
+906,3,temporal_sequencing_order,0.0,0.0,0.0,0.6805948615074158,6.188374757766724
+906,4,navigational_reasoning_hazard_awareness,0.0,0.0,0.0,0.6912949681282043,6.1416614055633545
+906,5,semantic_area_inference,0.0,0.0,0.0,0.7235701084136963,5.969186544418335
+906,6,cultural_language_inference,0.0,0.0,0.0,0.7189019918441772,6.044086456298828
+906,7,entity_tracking_persistence,0.0,0.0,0.0,0.7078124284744263,5.913014650344849

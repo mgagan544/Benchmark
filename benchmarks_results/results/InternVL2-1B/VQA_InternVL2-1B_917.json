@@ -1,0 +1,70 @@
+{
+  "video_id": 917,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/917.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
+      "ground_truth": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane",
+      "prediction": "The pavement marking showing \"AXI\" is located on the right side of the lane, adjacent to the taxi lane. It is positioned at the edge of the lane, slightly to the right, and is clearly visible to the driver of the taxi.",
+      "inference_time_sec": 2.487,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "There are at least four distinct pavement or infrastructure markings visible on the roadway throughout the entire clip. These include a white line on the left side of the road, a dashed line in the center, and a solid white line on the right side. Additionally, there is a yellow line running parallel to the road, and a red line on the left side of the road.",
+      "inference_time_sec": 3.225,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
+      "ground_truth": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'",
+      "prediction": "The order of the pavement markings encountered by the vehicle is '03', 'AXI', and '06'.",
+      "inference_time_sec": 1.704,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
+      "ground_truth": "TAXI [entity_001]",
+      "prediction": "The text on the pavement designates the lane reserved for specific transport vehicles on the left as \"BUS LANE.\"",
+      "inference_time_sec": 1.593,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
+      "ground_truth": "Airport terminal arrival area",
+      "prediction": "The environment depicted is a commercial airport terminal, as indicated by the presence of taxi lanes, which are typically used for taxis, and the airline signage, which is common in airports for airline information. The terminal seating and the overall layout suggest a space designed for passengers to wait for their flights, with amenities like seating and possibly retail or dining options. The presence of taxis and the organized layout of the terminal are typical features of a commercial airport environment.",
+      "inference_time_sec": 3.745,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the airline signage and pavement markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The language used for the airline signage and pavement markings in this scene is English. The signage is in English, and the pavement markings are also in English, indicating that the location is likely in the United States.",
+      "inference_time_sec": 2.24,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
+      "ground_truth": "4.1 seconds",
+      "prediction": "The timestamp for the pavement marking showing \"AXI\" passing by the host vehicle is approximately 1:00:00.",
+      "inference_time_sec": 1.663,
+      "error": ""
+    }
+  ]
+}

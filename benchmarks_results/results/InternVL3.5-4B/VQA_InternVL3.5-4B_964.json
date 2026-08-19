@@ -1,0 +1,70 @@
+{
+  "video_id": 964,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/964.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What overhead sign is located to the right of the exit sign for E 138 St?",
+      "ground_truth": "Macombs [entity_003] Dam [entity_002] and E 161 St [entity_001] to the right of E 138 St [entity_005]",
+      "prediction": "The overhead sign to the right of the exit sign for E 138 St is for Madison Ave Br.",
+      "inference_time_sec": 3.566,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the white commercial pickup truck?",
+      "ground_truth": "10",
+      "prediction": "There are four distinct text instances on the white commercial pickup truck. The text includes 'L.O.N.G.O. TRANSPORTATION', 'NORTHWESTERN', 'PASSENGER CARRIAGE', and 'L.O.N.G.O. TRANSPORTATION'.",
+      "inference_time_sec": 6.149,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What text is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass?",
+      "ground_truth": "WORK [entity_008] ZONE [entity_009] SPEED [entity_010] LIMIT [entity_011] 35",
+      "prediction": "The text 'Madison Ave Br 1 M' is visible on the left side of the highway, indicating the proximity to Madison Avenue Bridge and the distance to it.",
+      "inference_time_sec": 4.346,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the concrete median barrier restricts certain vehicles from using the left lane?",
+      "ground_truth": "TRUCKS [entity_025], BUSES [entity_026], and TRAILERS [entity_027] from the LEFT LANE [entity_028]",
+      "prediction": "The concrete median barrier has a sign that reads 'NO TRUCKS, BUSES, OR VANS BEYOND THIS POINT,' indicating that vehicles larger than a certain size are not permitted to use the left lane beyond this point.",
+      "inference_time_sec": 5.275,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, route shields, and speed limit signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The clip depicts a typical urban driving environment with clear road signage indicating exits, routes, and speed limits. The presence of multiple vehicles, including trucks and cars, suggests a busy traffic scenario. The overhead signs provide information about upcoming exits and routes, while the speed limit sign indicates a regulated driving environment. The overall scene is consistent with a highway or major road in an urban area, where drivers need to be aware of their surroundings and follow traffic rules.",
+      "inference_time_sec": 8.664,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and bridge names visible in the clip suggest the setting is in New York City?",
+      "ground_truth": "E 138 St [entity_005], Madison [entity_006] Ave Br [entity_007], and W 161 St [entity_013]",
+      "prediction": "The street signs in the video display 'Madison Ave Br' and 'E 161 St', which are typical of New York City's street naming conventions. Additionally, the presence of a bridge sign 'Madison Ave Br' further indicates that the setting is within the urban landscape of New York City.",
+      "inference_time_sec": 6.525,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the white pickup truck's contact number visible in the clip?",
+      "ground_truth": "0.833 to 4.267 seconds",
+      "prediction": "The white pickup truck's contact number is visible throughout the entire duration of the video.",
+      "inference_time_sec": 2.959,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 990,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/990.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the Linden Blvd and JUNIUS street signs relative to the white commuter van?",
+      "ground_truth": "Directly above HAPPY [entity_019] ISLAND [entity_020] SENOR [entity_021] CENTER [entity_022]",
+      "prediction": "The Linden Blvd and JUNIUS street signs are located on the right side of the frame, while the white commuter van is on the left side of the frame.",
+      "inference_time_sec": 2.666,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to street or regulatory signs in this scene?",
+      "ground_truth": "9",
+      "prediction": "There are six distinct text instances: 'Burger King', 'Drive Thru', 'FAMILY', 'Drive Thru', 'FAMILY', 'FAMILY'.",
+      "inference_time_sec": 2.023,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the DRIVE sign, the Linden Plaza sign, and the DO NOT ENTER sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: DRIVE [entity_002], 2nd: Linden Plaza [entity_006], 3rd: DO NOT [entity_017] ENTER [entity_016]",
+      "prediction": "First, the DRIVE sign is encountered as the vehicle moves forward, followed by the Linden Plaza sign, and then the DO NOT ENTER sign.",
+      "inference_time_sec": 1.873,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text constrains movement near the drive-thru lane entrance?",
+      "ground_truth": "DO NOT [entity_017] ENTER [entity_016]",
+      "prediction": "The warning text 'Drive thru is closed until 10:00 PM' is visible on the right side of the frame, indicating that the drive-thru lane is not open until 10 PM.",
+      "inference_time_sec": 2.375,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs like Burger King and Family Dollar, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts a typical urban driving environment with a mix of commercial establishments and residential areas. The presence of Burger King and Family Dollar suggests a blend of fast-food and convenience stores, indicating a bustling city setting. The traffic signs and the variety of vehicles, including a white van and a black sedan, further emphasize the urban traffic scenario.",
+      "inference_time_sec": 3.218,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the area code in the phone number displayed on the commuter van?",
+      "ground_truth": "New York City",
+      "prediction": "The area code '186' suggests that the city is likely New York City, as New York City has an area code that starts with '186'.",
+      "inference_time_sec": 2.108,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the Linden Plaza sign remain continuously visible in the clip?",
+      "ground_truth": "0.6s to 1.33s for Linden Plaza [entity_006]",
+      "prediction": "The Linden Plaza sign remains continuously visible from the beginning to the end of the video, indicating its presence throughout the traffic scene.",
+      "inference_time_sec": 1.757,
+      "error": ""
+    }
+  ]
+}

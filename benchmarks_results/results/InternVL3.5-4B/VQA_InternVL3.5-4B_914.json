@@ -1,0 +1,70 @@
+{
+  "video_id": 914,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/914.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the digital YOUR SPEED MPH feedback sign?",
+      "ground_truth": "ONLY [entity_005] sign to the right of YOUR [entity_001] SPEED [entity_002] MPH [entity_003]",
+      "prediction": "A yellow diamond-shaped sign with a black car symbol indicating a car wash ahead.",
+      "inference_time_sec": 2.946,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory or feedback signs are located on the right side of the exit ramp?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct signs on the right side of the exit ramp. The first is a 'Your Speed' sign, which is a digital display that likely shows the speed of the vehicle in front. The second is a 'Speed Limit 20' sign, which is a static sign indicating the maximum speed allowed on the ramp. These signs are positioned at different heights and angles, with the 'Your Speed' sign being higher and more centrally located, while the 'Speed Limit 20' sign is lower and closer to the edge of the ramp.",
+      "inference_time_sec": 10.664,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the camera vehicle pass the ONE WAY sign, the digital YOUR SPEED MPH feedback sign, and the ONLY sign?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: YOUR [entity_001] SPEED [entity_002] MPH [entity_003], 3rd: ONLY [entity_005]",
+      "prediction": "The camera vehicle passes the digital YOUR SPEED MPH feedback sign first, followed by the ONLY sign, and then the ONE WAY sign.",
+      "inference_time_sec": 3.789,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which sign indicates that traffic must flow in a single direction at the start of the ramp?",
+      "ground_truth": "ONE WAY [entity_004] sign",
+      "prediction": "The sign that indicates traffic must flow in a single direction at the start of the ramp is the 'ONLY' sign.",
+      "inference_time_sec": 3.617,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the exit ramp, elevated structure, and multi-story brick buildings, what kind of driving environment is depicted?",
+      "ground_truth": "urban exit ramp",
+      "prediction": "The video shows a driving environment that is urban and possibly in a city setting. The presence of an exit ramp, elevated structure, and multi-story brick buildings suggests that the driver is navigating through a cityscape with various infrastructure elements. The combination of these features creates a typical urban driving environment where drivers encounter different road conditions and structures.",
+      "inference_time_sec": 6.795,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory and feedback signs along the ramp?",
+      "ground_truth": "English",
+      "prediction": "The text on the signs is in english.",
+      "inference_time_sec": 2.273,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ONLY sign first become visible as the vehicle enters the underpass?",
+      "ground_truth": "4.4 seconds for ONLY [entity_005]",
+      "prediction": "The ONLY sign first becomes visible as the vehicle enters the underpass at the beginning of the video, specifically at the 0-second mark.",
+      "inference_time_sec": 3.914,
+      "error": ""
+    }
+  ]
+}

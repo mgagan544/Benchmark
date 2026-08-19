@@ -1,0 +1,70 @@
+{
+  "video_id": 940,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/940.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
+      "ground_truth": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]",
+      "prediction": "The signs located directly adjacent to the parking area on the right side of the driving lane are for 'Dance' and 'Models'.",
+      "inference_time_sec": 3.678,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct pieces of text on storefront signs or banners on the left side of the driving lane. These include 'TJ Maxx' on the building to the far left, 'Bath & Body Works' on the building next to it, and 'School & Office' on the sign above the entrance of the 'FALLAS' store.",
+      "inference_time_sec": 7.309,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]",
+      "prediction": "The camera vehicle first encounters the storefront of FALLAS, followed by the signs for Danice.",
+      "inference_time_sec": 3.036,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
+      "ground_truth": "Stop",
+      "prediction": "The painted road marking adjacent to the concrete sidewalk on the left is a 'STOP' sign. This implies that the driver is expected to come to a complete halt before proceeding, indicating a controlled intersection or a pedestrian crossing area. The presence of the 'STOP' marking suggests that the driver should yield to pedestrians and other vehicles that may have the right of way, ensuring safety at the intersection.",
+      "inference_time_sec": 7.813,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
+      "ground_truth": "Commercial strip mall",
+      "prediction": "The video shows a typical suburban shopping center parking lot with various retail stores such as 'TJ Maxx', 'Falls', 'Danice', and 'SchoolCrafters'. The presence of these stores and the layout of the parking area suggest a commercial driving environment where shoppers park their vehicles to visit these stores. The parking lot is well-organized with clearly marked spaces and pedestrian walkways, indicating a structured and accessible shopping area. The clear skies and the presence of people walking around further emphasize the active and open nature of this commercial setting.",
+      "inference_time_sec": 10.128,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 1.731,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
+      "ground_truth": "5.233s to 5.6s",
+      "prediction": "The camera vehicle approaches the storefront windows of FALLAS showing promotional text from 15:00 to 15:05.",
+      "inference_time_sec": 3.718,
+      "error": ""
+    }
+  ]
+}

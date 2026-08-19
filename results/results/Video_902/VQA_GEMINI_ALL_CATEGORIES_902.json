@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "902",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What bike route sign, which first appears at 0.3s, is located adjacent to the Northern Blvd sign?",
+        "answer": "Honeywell St [entity_005] Bridge [entity_006] adjacent to Northern [entity_003] Blvd [entity_004]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many graffiti tags are visible on the concrete structures as the vehicle ascends the bridge between 6.5s and 6.967s?",
+        "answer": "2",
+        "reason": "The concrete structures feature two graffiti tags: HISS [entity_011] and TCAPS [entity_010]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the signs for Honeywell St Bridge, DO NOT ENTER, and ONE WAY are encountered as the vehicle moves forward?",
+        "answer": "1st: Honeywell St [entity_005] Bridge [entity_006], 2nd: DO NOT [entity_007] ENTER [entity_008], 3rd: ONE WAY [entity_009]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What regulatory text on the corner, visible at 3.633s, indicates a restriction on entering as the vehicle transitions onto the bridge ramp?",
+        "answer": "DO NOT [entity_007] ENTER [entity_008]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of route signs, regulatory signs, and a bridge ramp, what kind of driving environment does this clip depict?",
+        "answer": "Urban roadway and bridge approach",
+        "reasoning": "The presence of street signs, regulatory signs, and a bridge ramp indicates an urban roadway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which street and bridge name visible on the bike route sign suggests the local geographic setting?",
+        "answer": "Honeywell St [entity_005] Bridge [entity_006]",
+        "reasoning": "The bike route sign displays Honeywell St [entity_005] Bridge [entity_006], which is a specific local landmark."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the DO NOT ENTER sign first become visible as the vehicle transitions onto the bridge ramp?",
+        "answer": "3.633s",
+        "reasoning": "The temporal description states that the DO NOT [entity_007] ENTER [entity_008] sign is seen at 3.633s."
+      }
+    ]
+  }
+]

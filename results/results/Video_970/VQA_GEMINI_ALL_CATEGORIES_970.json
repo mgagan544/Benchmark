@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "970",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What landmark destination is located directly below the highway number 278?",
+        "answer": "Verrazano Br [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct highway sign text instances are described on the large overhead gantry?",
+        "answer": "9",
+        "reasoning": "The scene description lists WEST, 278, Verrazano Br, Staten is, EAST, EXIT 24, Prospect, Expwy, and JFK, which sum to 9 distinct text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order do the highway number 278 and the airport destination JFK become clearly legible as the vehicle moves forward?",
+        "answer": "1st: 278 [entity_002], 2nd: JFK [entity_009]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Based on the overhead gantry signs, what explicit exit number is indicated for drivers wishing to transition to the Prospect Expwy?",
+        "answer": "EXIT 24 [entity_006]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment is suggested by the presence of a multi-lane divided highway and a massive overhead gantry with highway numbers and exit signs?",
+        "answer": "Highway through-route",
+        "reasoning": "The presence of a multi-lane divided highway, overhead gantry, highway numbers (278), and exit signs (EXIT 24) indicates a highway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Do any landmark destinations or highway labels suggest a specific metropolitan area or region for this highway?",
+        "answer": "Verrazano Br [entity_003] and Staten is [entity_004] suggest New York",
+        "reasoning": "Verrazano Bridge and Staten Island are prominent landmarks in the New York City area."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the airport destination indicator JFK first become clearly legible on the sign?",
+        "answer": "6.767 seconds",
+        "reasoning": "According to the temporal description, the airport indicator JFK becomes clearly legible near the end of the clip at 6.767 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 933,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/933.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly beneath the sign TRAFFIC on the wooden utility pole?",
+      "ground_truth": "DETOUR [entity_003] directly beneath TRAFFIC [entity_002]",
+      "prediction": "The sign directly beneath the TRAFFIC sign on the wooden utility pole is labeled 'ALL VEHICLES'.",
+      "inference_time_sec": 3.284,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street or regulatory signs are visible on the wooden utility pole and the adjacent signpost combined?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct signs visible. The wooden utility pole has a 'No Parking' sign, and the adjacent signpost has a 'No Parking' sign and a 'All Mute' sign.",
+      "inference_time_sec": 4.748,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs on the adjacent signpost are encountered after the vehicle completes its turn?",
+      "ground_truth": "1st: 56\"Road [entity_004], 2nd: ANYTIME [entity_005]",
+      "prediction": "After the vehicle completes its turn, the order in which the signs on the adjacent signpost are encountered is: 'ALL VEHICLES MUST TURN RIGHT,' followed by 'ONLY PASSENGER CARS,' and then 'ONLY PASSENGER CARS' again.",
+      "inference_time_sec": 6.111,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What detour instruction is displayed on the wooden utility pole at the T-junction?",
+      "ground_truth": "ALL [entity_001] TRAFFIC [entity_002] DETOUR [entity_003]",
+      "prediction": "The wooden utility pole at the T-junction displays a sign that reads 'ALL TRAFFIC RIGHT 2 MILES,' indicating a detour for all vehicles to proceed right for two miles.",
+      "inference_time_sec": 4.723,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a detour sign, concrete barriers, orange barrels, and a light tower, what type of zone is this?",
+      "ground_truth": "Active road construction zone",
+      "prediction": "Construction zone",
+      "inference_time_sec": 1.908,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the signs visible along the road?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 1.555,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the sign 56\"Road first become visible to the camera?",
+      "ground_truth": "0.833s for 56\"Road [entity_004]",
+      "prediction": "The sign 56\"Road first becomes visible to the camera at the 5-second mark.",
+      "inference_time_sec": 3.167,
+      "error": ""
+    }
+  ]
+}

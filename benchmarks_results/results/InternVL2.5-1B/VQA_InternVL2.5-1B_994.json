@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located on the right side of the green directional sign, indicating the direction to the delivery center.",
+      "inference_time_sec": 1.743,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are three distinct text entities visible on the signs in this clip.",
+      "inference_time_sec": 1.376,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "The order in which the three signs are encountered is: the first sign is a green road sign with white text, the second sign is a white sign with black text, and the third sign is a green road sign with white text.",
+      "inference_time_sec": 2.508,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The sign on the overpass indicates a weight restriction of 1,500 lbs for vehicles.",
+      "inference_time_sec": 1.732,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of multiple highway names and weight limit signs, such as '420' and '420-420', suggests that the road segment is likely a multi-lane highway with a mix of interstate and state highways. These signs are typically used to indicate the names of the highways and the weight limit restrictions for vehicles traveling on them. The variety of highway names and weight limit signs indicates that the road is designed to accommodate a range of traffic volumes and types of vehicles, from light to heavy, and is likely part of a larger transportation network that includes both interstate and state highways.",
+      "inference_time_sec": 5.063,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The green directional sign in the video displays the abbreviations 'NYC' and 'BKK', which are likely to be New York City and Bangkok, respectively. This suggests that the video is taken in a city where these abbreviations are commonly used, possibly indicating the location of the vehicle's journey.",
+      "inference_time_sec": 3.034,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text 'DELIVERIES ENTRANCE 9' first becomes visible in the clip at the timestamp of 00:10:00.",
+      "inference_time_sec": 1.966,
+      "error": ""
+    }
+  ]
+}

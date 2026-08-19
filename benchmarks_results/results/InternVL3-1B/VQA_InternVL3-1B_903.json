@@ -1,0 +1,70 @@
+{
+  "video_id": 903,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/903.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What manufacturer name is located to the left of the license plate 63:816.70. on the rear of the grey bus?",
+      "ground_truth": "MERKAVIM [entity_011] to the left of 63:816.70. [entity_007]",
+      "prediction": "Mercedes-Benz",
+      "inference_time_sec": 0.969,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on the transit buses in this clip?",
+      "ground_truth": "2",
+      "prediction": "Two",
+      "inference_time_sec": 0.843,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plates of the two Metropoline transit buses are encountered by the camera vehicle?",
+      "ground_truth": "1st: 63:816.70. [entity_007], 2nd: 63:709:70 [entity_018]",
+      "prediction": "The camera vehicle first encounters the bus with the license plate '63.8167 70', then the bus with the license plate '5414 76', and finally the bus with the license plate '17'.",
+      "inference_time_sec": 2.747,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text in the scene, are there any explicit driving constraints or speed limits indicated?",
+      "ground_truth": "None",
+      "prediction": "No, there are no explicit driving constraints or speed limits indicated in the video. The scene shows a typical urban traffic scenario with buses and other vehicles moving in the same direction, but there are no visible signs or markings that suggest any specific speed limits or restrictions on the road.",
+      "inference_time_sec": 2.767,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text on the transit buses suggest about the type of driving environment?",
+      "ground_truth": "Urban transit corridor",
+      "prediction": "The mix of text on the transit buses in the video suggests a diverse driving environment. The bus on the left displays a mix of Hebrew and English text, indicating it is likely operating in a region where both languages are used. The bus on the right also features Hebrew text, which could imply it is operating in a Hebrew-speaking country. The presence of these languages on the buses suggests that the transit system is designed to cater to a multicultural population, providing services in multiple languages to accommodate diverse needs and preferences.",
+      "inference_time_sec": 4.512,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which website link on the grey bus advertisement suggests a specific country of origin or region?",
+      "ground_truth": "Suzuki.co.ill [entity_006]",
+      "prediction": "The website link on the grey bus advertisement, which reads 'www.meraki.com', suggests a specific country of origin or region. This is a common practice for advertising in countries where the website is known to be in Hebrew or another Hebrew-speaking language, indicating that the advertisement is likely targeting a Hebrew-speaking audience in a region where such websites are prevalent.",
+      "inference_time_sec": 3.631,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range does the white bus identifier 2443 first become revealed to the camera vehicle?",
+      "ground_truth": "4.467 seconds to 5.0 seconds",
+      "prediction": "The white bus identifier 2443 first becomes visible to the camera vehicle around the 15th second mark in the video.",
+      "inference_time_sec": 2.013,
+      "error": ""
+    }
+  ]
+}

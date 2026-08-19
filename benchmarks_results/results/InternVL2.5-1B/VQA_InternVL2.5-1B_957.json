@@ -1,0 +1,70 @@
+{
+  "video_id": 957,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/957.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What green information board is located directly to the left of the yellow speed advisory sign displaying 15 M P H?",
+      "ground_truth": "SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014] to the left of 15 M P H [entity_011]",
+      "prediction": "The green information board located directly to the left of the yellow speed advisory sign displaying 15 M P H is not specified in the video.",
+      "inference_time_sec": 1.857,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances (such as license plates or vehicle tags) are visible between 1.2 and 1.767 seconds?",
+      "ground_truth": "5",
+      "prediction": "There are two vehicle-mounted text instances visible between 1.2 and 1.767 seconds.",
+      "inference_time_sec": 1.643,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the orange construction warning sign, the yellow speed advisory sign, and the green overhead signs are encountered?",
+      "ground_truth": "1st ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010], 2nd 15 M P H [entity_011], 3rd SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014]",
+      "prediction": "The order in which the orange construction warning sign, the yellow speed advisory sign, and the green overhead signs are encountered is as follows: the orange construction warning sign is seen first, followed by the yellow speed advisory sign, and then the green overhead signs.",
+      "inference_time_sec": 2.664,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the right side of the road indicates a hazard or construction ahead?",
+      "ground_truth": "ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010]",
+      "prediction": "The warning text on the right side of the road reads 'WARNING: HILL TRUCKS WILL CROSS THIS WAY AT U.S. 78'. This text indicates that there is a hill ahead that requires caution and that hill trucks will be crossing the road at U.S. 78.",
+      "inference_time_sec": 3.153,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, multiple highway lanes, and construction warning signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway with multiple lanes, as indicated by the presence of overhead exit signs and the clear lane markings. The construction warning signs suggest that the road is undergoing some form of maintenance or construction work.",
+      "inference_time_sec": 2.544,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or region is suggested by the green information board displaying SUNY State College Optometry?",
+      "ground_truth": "New York State",
+      "prediction": "The green information board displaying SUNY State College Optometry suggests that the location is likely in or near a city with a significant presence of educational institutions, such as a university or college. The presence of the board indicates that the area is likely to be a hub for educational activities, which could be a college campus or a university campus. The specific details of the board, such as the name of the institution and the nature of the information provided, are not discernible from the video alone, but the context of the board implies that the area is likely to be a place of learning and education.",
+      "inference_time_sec": 5.051,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range are the overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE visible in the clip?",
+      "ground_truth": "8.2 to 9.3 seconds",
+      "prediction": "The overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE are visible during the time range of 00:00 to 00:00, indicating the start of the recording.",
+      "inference_time_sec": 2.691,
+      "error": ""
+    }
+  ]
+}

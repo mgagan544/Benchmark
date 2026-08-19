@@ -1,0 +1,70 @@
+{
+  "video_id": 972,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/972.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
+      "ground_truth": "To the right of VIDE [entity_002]",
+      "prediction": "Below",
+      "inference_time_sec": 1.714,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct pieces of text visible on the dark grey pickup truck. The first is '4X4' written in white on the side of the truck, indicating the vehicle's four-wheel-drive capability. The second is 'FORD' written in white on the rear of the truck, identifying the brand of the vehicle.",
+      "inference_time_sec": 6.643,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
+      "ground_truth": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]",
+      "prediction": "F150, 4X4, P150",
+      "inference_time_sec": 2.77,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
+      "ground_truth": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]",
+      "prediction": "The regulatory sign near the commercial building has the text 'NO PARKING ANYTIME' which indicates that parking is prohibited at any time in that area. This sign is a common traffic regulation used to manage parking spaces and ensure that they are available for use by other vehicles, particularly in busy urban areas where space is limited. The presence of such a sign suggests that the location is likely a high-traffic zone where maintaining open spaces for vehicle movement is essential. The sign's placement near the sidewalk and the commercial building also implies that it is intended to be visible to both pedestrians and drivers, reinforcing the parking restrictions to the public.",
+      "inference_time_sec": 11.358,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
+      "ground_truth": "Commercial district",
+      "prediction": "The presence of commercial signs and parking regulations suggests that the driving environment is urban and regulated, with businesses and parking rules in place.",
+      "inference_time_sec": 3.717,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory parking sign and the commercial building is in spanish.",
+      "inference_time_sec": 2.659,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
+      "ground_truth": "3.033s",
+      "prediction": "The STREET CLEANING sign first becomes clearly readable at the beginning of the video, as it is visible from the start.",
+      "inference_time_sec": 3.413,
+      "error": ""
+    }
+  ]
+}

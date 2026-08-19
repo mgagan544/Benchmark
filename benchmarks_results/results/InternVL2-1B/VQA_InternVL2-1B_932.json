@@ -1,0 +1,70 @@
+{
+  "video_id": 932,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/932.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
+      "ground_truth": "CLEANERS [entity_019]",
+      "prediction": "The business name located adjacent to the storefront of COAST FOR GOLD on the right side of the street is \"COAST FOR GOLD.\"",
+      "inference_time_sec": 1.856,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances visible on the regulatory sign post to the right of the lane marking.",
+      "inference_time_sec": 1.64,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
+      "prediction": "In the clip, the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS is as follows:\n\n1. SCHOOL BUS\n2. ONLY\n3. BUSES ONLY",
+      "inference_time_sec": 2.243,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
+      "ground_truth": "ONE WAY [entity_004]",
+      "prediction": "The text on the regulatory sign post indicates a direction restriction for vehicle movement by stating \"ONLY BUS\" in capital letters. This sign is typically used to indicate that vehicles are not allowed to pass through or enter the designated bus lane.",
+      "inference_time_sec": 2.409,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
+      "ground_truth": "Commercial urban street",
+      "prediction": "The presence of storefronts like COAST FOR GOLD and CLEANERS, which are typically found in urban areas, suggests that the driving environment depicted is likely a city or town. These businesses are common in such settings and are often found in areas with a mix of residential and commercial activity. The variety of storefronts indicates a diverse and possibly busy urban environment where businesses are accessible to the public.",
+      "inference_time_sec": 3.48,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific phone number on the first school bus suggests a New York City location?",
+      "ground_truth": "(718)852-0286 [entity_011]",
+      "prediction": "The specific phone number on the first school bus is \"2846,\" which is visible on the side of the bus. This number is a common format for New York City bus routes, where the first number is the route number and the last number is the route number.",
+      "inference_time_sec": 2.776,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
+      "ground_truth": "4.267 seconds",
+      "prediction": "The text \"BUSES ONLY\" first becomes visible in the clip at the beginning of the video.",
+      "inference_time_sec": 1.65,
+      "error": ""
+    }
+  ]
+}

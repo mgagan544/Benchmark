@@ -1,0 +1,70 @@
+{
+  "video_id": 938,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/938.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable sign is located directly to the left of the Parking sign on the overhead gantry, which becomes visible at 0.767s?",
+      "ground_truth": "KEEP LEFT [entity_005] signboard, to the left of Parking [entity_003] sign",
+      "prediction": "The sign that is directly to the left of the Parking sign on the overhead gantry is a blue sign that reads \"Airport Exit\" and \"KEEP RIGHT\".",
+      "inference_time_sec": 3.119,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many street, regulatory, or airport signs are identified in the scene description, including those passed between 0.0s and 2.933s?",
+      "ground_truth": "8",
+      "prediction": "There are 4 signs identified in the scene description, including those passed between 0.0s and 2.933s.",
+      "inference_time_sec": 2.909,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the Airport sign, the Blue Parking sign, and the ONE WAY sign are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Airport [entity_001], 2nd: Blue Parking [entity_007], 3rd: ONE WAY [entity_009]",
+      "prediction": "The Airport sign is first encountered by the camera vehicle, followed by the Blue Parking sign, and then the ONE WAY sign.",
+      "inference_time_sec": 2.945,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory sign on a roadside post, passed at 2.933s, indicates a directional constraint for drivers?",
+      "ground_truth": "ONE WAY [entity_009] sign",
+      "prediction": "The regulatory sign on the roadside post, passed at 2.933s, indicates a directional constraint for drivers. It is a blue sign with white text that reads \"Parking Terminal 4 KEEP LEFT KEEP RIGHT,\" which suggests that drivers must keep to the left or right side of the road as per the sign's instructions.",
+      "inference_time_sec": 4.674,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is depicted, given the presence of the Terminal and Parking signs on the gantry and the Blue Parking Garage?",
+      "ground_truth": "Airport terminal roadway",
+      "prediction": "The driving environment depicted is an airport terminal area, specifically a parking lot with a blue parking garage. The presence of the Terminal and Parking signs on the gantry indicates that the vehicle is in a controlled, organized area with designated parking and access points. The Blue Parking Garage is likely a designated parking facility for vehicles, and the surrounding infrastructure suggests a busy, high-traffic area with multiple lanes and traffic signals.",
+      "inference_time_sec": 5.249,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead gantry signs and the ONE WAY sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead gantry signs and the ONE WAY sign is in English.",
+      "inference_time_sec": 2.735,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Blue Parking Garage structure first become fully visible on the left side of the roadway?",
+      "ground_truth": "2.133s with Blue Parking Garage [entity_008]",
+      "prediction": "The Blue Parking Garage structure first becomes fully visible on the left side of the roadway at 0:00.",
+      "inference_time_sec": 2.654,
+      "error": ""
+    }
+  ]
+}

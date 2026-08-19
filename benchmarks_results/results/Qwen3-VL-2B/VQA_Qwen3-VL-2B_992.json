@@ -1,0 +1,70 @@
+{
+  "video_id": 992,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/992.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text Ave relative to the text Blvdnn on the overhead highway signage?",
+      "ground_truth": "directly below Blvdnn [entity_006]",
+      "prediction": "The text 'Ave' is located to the left of the text 'Blvdnn' on the overhead highway signage.",
+      "inference_time_sec": 2.867,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text on the overhead highway signage are visible in this clip?",
+      "ground_truth": "7",
+      "prediction": "There are 4 distinct pieces of text on the overhead highway signage visible in this clip.",
+      "inference_time_sec": 2.575,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the destination signs Brooklyn and Queens are encountered at 3.3 seconds?",
+      "ground_truth": "Brooklyn [entity_002] is 1st, Queens [entity_005] is 2nd",
+      "prediction": "The destination sign for Brooklyn is encountered first, followed by the sign for Queens.",
+      "inference_time_sec": 2.418,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text on the overhead signage indicate a specific highway direction for Brooklyn?",
+      "ground_truth": "WEST [entity_001]",
+      "prediction": "Yes, the overhead signage indicates a direction to Brooklyn. The text on the sign reads \"Brooklyn\" and is part of the directional information for the highway.",
+      "inference_time_sec": 3.06,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the overhead green highway signs displaying Brooklyn and Queens?",
+      "ground_truth": "highway",
+      "prediction": "The overhead green highway signs displaying \"Brooklyn\" and \"Queens\" suggest that the driving environment is a major urban highway, likely in a densely populated area of New York City. This indicates a high-traffic, urban setting with multiple lanes and significant vehicle movement.",
+      "inference_time_sec": 4.0,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which destination names visible on the overhead signage suggest the vehicle is driving in or near New York City?",
+      "ground_truth": "Brooklyn [entity_002] and Queens [entity_005]",
+      "prediction": "The destination names visible on the overhead signage include \"Brooklyn\" and \"Queens Blvd,\" which are both located in New York City. These signs indicate that the vehicle is likely driving in or near the city.",
+      "inference_time_sec": 3.531,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "Between what timestamps are the destination signs for Brooklyn and Queens visible before the vehicle enters the shadow under the stone arch bridge?",
+      "ground_truth": "From 3.3 seconds to 6.333 seconds",
+      "prediction": "The destination signs for Brooklyn and Queens are visible between 0.0 and 0.3 seconds.",
+      "inference_time_sec": 2.74,
+      "error": ""
+    }
+  ]
+}

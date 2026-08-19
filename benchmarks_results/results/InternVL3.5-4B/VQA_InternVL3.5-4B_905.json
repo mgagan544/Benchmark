@@ -1,0 +1,70 @@
+{
+  "video_id": 905,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/905.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly below the BEDROOM sign on the commercial storefront?",
+      "ground_truth": "MATTRESS [entity_009] directly below BEDROOM [entity_010]",
+      "prediction": "The text 'MATRESS OFFER' is located directly below the BEDROOM sign on the commercial storefront.",
+      "inference_time_sec": 3.744,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the semi-truck trailer and cab?",
+      "ground_truth": "10",
+      "prediction": "There are three distinct text instances visible on the semi-truck. The trailer has 'SUNBELT' written in large letters, and the cab has 'SUNBELT TRANSPORTATION' written on it. Additionally, there is a red and white sticker with text on the rear of the trailer, but the specific text is not clearly visible.",
+      "inference_time_sec": 8.658,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Sign-On Bonus [entity_006], 2nd: LOGISTICS-010 [entity_007], 3rd: myBekins.com [entity_008]",
+      "prediction": "The text instances are encountered in the following order: first, 'myBekins.com' is seen on the windshield, followed by 'LOGISTICS-010' on the same windshield, and finally, 'Sign-On Bonus' is visible on the side of the truck.",
+      "inference_time_sec": 6.001,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the regulatory sign near the roadside sidewalk, what explicit driving action is required for vehicles in the right lane?",
+      "ground_truth": "TURN RIGHT [entity_019]",
+      "prediction": "The regulatory sign near the roadside sidewalk indicates that vehicles in the right lane must stop at the stop line. This is a standard traffic regulation to ensure safety and orderly traffic flow at intersections. The sign is clearly visible in the video, positioned on the right side of the road, near the curb. It is a white sign with a red border and features a red circle with a horizontal white line, which universally signifies a 'stop' command. The presence of this sign is crucial for drivers to understand their obligations when approaching an intersection, especially in areas with multiple lanes and traffic signals. The sign's placement and design are consistent with traffic regulations in",
+      "inference_time_sec": 11.631,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.6s and 2.0s suggest about the type of area?",
+      "ground_truth": "commercial retail zone",
+      "prediction": "The mix of text visible suggests a commercial area with various businesses.",
+      "inference_time_sec": 3.05,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text in this clip written in?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 1.742,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the website myBekins.com first become legible as the host vehicle passes the semi-truck?",
+      "ground_truth": "0.2s",
+      "prediction": "The website myBekins.com first becomes legible as the host vehicle passes the semi-truck at the beginning of the video, just after the semi-truck has passed by.",
+      "inference_time_sec": 5.068,
+      "error": ""
+    }
+  ]
+}

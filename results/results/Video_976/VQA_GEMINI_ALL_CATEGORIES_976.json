@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "976",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What regulatory sign is located to the left of the MDX vehicle with license plate GTR-8482?",
+        "answer": "SPEED [entity_010] LIMIT [entity_011] 50 sign to the left of MDX [entity_008]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct license plates are visible on vehicles in this clip?",
+        "answer": "2",
+        "reasoning": "The grey crossover has license plate T1711804C [entity_001] and the MDX [entity_008] has license plate GTR-8482 [entity_009]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered?",
+        "answer": "1st: T1711804C [entity_001], 2nd: GTR-8482 [entity_009], 3rd: SPEED [entity_010] LIMIT [entity_011] 50"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text visible near the end of the clip indicates a speed restriction on this road?",
+        "answer": "SPEED [entity_010] LIMIT [entity_011] 50"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of highway exit signs and speed limit signs, what type of road is the vehicle traveling on?",
+        "answer": "Highway",
+        "reasoning": "The presence of exit signs for Long Island [entity_003] and a speed limit sign on a concrete median indicates a highway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What region in New York is suggested by the text on the green highway sign?",
+        "answer": "Long Island [entity_003]",
+        "reasoning": "The green highway sign contains the text Long Island [entity_003], which is a well-known region in New York."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During what specific time range is the license plate GTR-8482 on the overtaking MDX vehicle visible?",
+        "answer": "4.5 to 4.767 seconds",
+        "reasoning": "The temporal description states that the MDX [entity_008] vehicle with license plate GTR-8482 [entity_009] is seen overtaking from 4.5 to 4.767 seconds."
+      }
+    ]
+  }
+]

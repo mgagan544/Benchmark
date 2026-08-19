@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "909",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the THRU road text relative to the LANE road text?",
+        "answer": "To the left of LANE [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct mounted signs are visible in this clip?",
+        "answer": "2",
+        "reasoning": "The mounted signs are the STOP [entity_004] sign and the EXIT [entity_005] sign."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order in which the three road text markings are first encountered in the clip?",
+        "answer": "THRU [entity_001] 1st, BUS [entity_002] 2nd, LANE [entity_003] 3rd"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What explicit driving action is required near the zebra-striped pedestrian crosswalk based on the visible signage?",
+        "answer": "Stop at the STOP [entity_004] sign"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What kind of driving environment does the mix of waiting structures and road markings suggest?",
+        "answer": "Airport shuttle terminal",
+        "reasoning": "The presence of waiting structures, BUS, LANE, and THRU markings indicates an airport shuttle terminal."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for the road markings and signs in this clip?",
+        "answer": "English",
+        "reasoning": "The words THRU, BUS, LANE, STOP, and EXIT are in English."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the green directional EXIT sign first come into full view?",
+        "answer": "EXIT [entity_005] sign at 5.933 seconds",
+        "reasoning": "The temporal description states that the green EXIT [entity_005] sign comes into full view at 5.933 seconds."
+      }
+    ]
+  }
+]

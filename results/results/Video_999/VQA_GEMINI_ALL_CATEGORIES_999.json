@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "999",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What store is located to the left of the pharmacy named PIEKIELKO ONE PHARMACY?",
+        "answer": "Walgreen [entity_022] to the left of PIEKIELKO [entity_021] ONE [entity_019] PHARMACY [entity_020]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text entities are displayed on the corner building featuring BUFFALO JO'S?",
+        "answer": "11",
+        "reasoning": "The corner building displays BUFFALO JO'S [entity_003], WING [entity_004], WINGS [entity_005], BONELESS [entity_006], PIZZA [entity_007], Carvel [entity_008], ICE [entity_009], CREAM [entity_010], CAKES [entity_011], 718-366 [entity_012], and TACOS [entity_013], which sum up to 11 distinct text entities."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which FOREST, BUFFALO JO'S, and SPEED are encountered by the vehicle?",
+        "answer": "1st: FOREST [entity_001], 2nd: BUFFALO JO'S [entity_003], 3rd: SPEED [entity_016]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What text on the road sign indicates a speed restriction after the vehicle turns left past the corner building?",
+        "answer": "SPEED [entity_016] LIMIT [entity_014] 25"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the density of storefronts, pharmacies, and medical offices, what type of driving environment is depicted?",
+        "answer": "commercial district",
+        "reasoning": "The presence of multiple retail storefronts, food signs, a pharmacy, and a medical office indicates a commercial district."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which telephone area code visible on the corner building's signage suggests the driving location is in New York City?",
+        "answer": "718-366 [entity_012]",
+        "reasoning": "The area code 718 is a well-known telephone area code for New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During which time range is the speed limit sign displaying SPEED visible as the vehicle continues forward?",
+        "answer": "3.1s to 5.0s",
+        "reasoning": "The temporal description states that the vehicle passes the speed limit sign displaying SPEED [entity_016] between 3.1s and 5.0s."
+      }
+    ]
+  }
+]

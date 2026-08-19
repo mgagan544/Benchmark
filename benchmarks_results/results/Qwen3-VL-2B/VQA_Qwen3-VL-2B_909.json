@@ -1,0 +1,70 @@
+{
+  "video_id": 909,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/909.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the THRU road text relative to the LANE road text?",
+      "ground_truth": "To the left of LANE [entity_003]",
+      "prediction": "The THRU road text is located to the right of the LANE road text.",
+      "inference_time_sec": 2.405,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct mounted signs are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are 3 distinct mounted signs visible in the clip.",
+      "inference_time_sec": 2.269,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the three road text markings are first encountered in the clip?",
+      "ground_truth": "THRU [entity_001] 1st, BUS [entity_002] 2nd, LANE [entity_003] 3rd",
+      "prediction": "The first road text marking encountered is \"LANE THRU\" on the road surface, followed by \"STOP\" on a sign, and then \"EXIT\" on a sign.",
+      "inference_time_sec": 3.758,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is required near the zebra-striped pedestrian crosswalk based on the visible signage?",
+      "ground_truth": "Stop at the STOP [entity_004] sign",
+      "prediction": "The driving action required near the zebra-striped pedestrian crosswalk is to stop. This is indicated by the \"STOP\" sign visible in the image, which is a standard traffic sign that requires drivers to halt their vehicles before the crosswalk.",
+      "inference_time_sec": 3.819,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment does the mix of waiting structures and road markings suggest?",
+      "ground_truth": "Airport shuttle terminal",
+      "prediction": "The mix of waiting structures and road markings suggests a busy urban or suburban area with a focus on public transportation. The presence of a bus stop, a \"LANE THRU\" sign, and a \"STOP\" sign indicates a well-organized and regulated traffic environment, likely designed to accommodate both vehicles and public transit. This setup is typical of a city or town with a significant number of commuters and a need for efficient traffic flow.",
+      "inference_time_sec": 6.767,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the road markings and signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "The road markings and signs in the clip are in English.",
+      "inference_time_sec": 2.289,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the green directional EXIT sign first come into full view?",
+      "ground_truth": "EXIT [entity_005] sign at 5.933 seconds",
+      "prediction": "The green directional EXIT sign first comes into full view at 0:03.",
+      "inference_time_sec": 2.409,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 996,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/996.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of Messubim relative to NEXT EXITS on the overhead gantry?",
+      "ground_truth": "To the left of NEXT EXITS [entity_006]",
+      "prediction": "The overhead gantry sign for \"Messubim\" is located next to the exit for \"Mesubim Interchange.\" This indicates that the viewer is currently approaching the exit for \"Mesubim Interchange,\" which is the next exit on the highway.",
+      "inference_time_sec": 4.27,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "In the video, there are 10 distinct license plates visible on vehicles.",
+      "inference_time_sec": 2.988,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the code 67. 487. 75, the roadside sign showing Mesubim, and the overhead gantry displaying NEXT EXITS are encountered?",
+      "ground_truth": "1st: 67. 487. 75 [entity_002], 2nd: Mesubim [entity_003], 3rd: NEXT EXITS [entity_006]",
+      "prediction": "The code 67. 487. 75 is encountered first, followed by the roadside sign showing Mesubim, and then the overhead gantry displaying NEXT EXITS.",
+      "inference_time_sec": 4.331,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the roadside sign visible on the right, what driving action is indicated at a distance of 1000 meters?",
+      "ground_truth": "Exit at the Mesubim [entity_003] interchange [entity_005]",
+      "prediction": "The roadside sign on the right indicates that the distance to the next exit is 1000 meters. This suggests that drivers should prepare to make a right turn or continue straight if they are not at the exit.",
+      "inference_time_sec": 4.073,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of overhead gantries, exit signs, and multiple license plates?",
+      "ground_truth": "Multi-lane highway",
+      "prediction": "The presence of overhead gantries, exit signs, and multiple license plates suggests that the driving environment is likely to be busy and congested. These elements are commonly found in urban areas with heavy traffic, where drivers need to be aware of their surroundings and be prepared to adjust their driving behavior to avoid accidents.",
+      "inference_time_sec": 4.588,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific location names visible on the overhead gantry suggest the region or country this highway is located in?",
+      "ground_truth": "Messubim [entity_007], Gannot [entity_008], and HaShiv's [entity_009]",
+      "prediction": "The overhead gantry displays signs with the names \"Mesopotamia\" and \"Mesopotamia Interchange.\" These names suggest that the highway is located in Mesopotamia, which is a region in Iraq. The presence of these signs indicates that the highway is likely part of a larger network of roads and highways that traverse the region.",
+      "inference_time_sec": 5.016,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate 55:007 34 first become visible in the clip?",
+      "ground_truth": "6.933 seconds",
+      "prediction": "The license plate 55:007 34 first becomes visible in the clip at the timestamp 00:00:00.",
+      "inference_time_sec": 3.587,
+      "error": ""
+    }
+  ]
+}

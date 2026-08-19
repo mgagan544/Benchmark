@@ -1,0 +1,70 @@
+{
+  "video_id": 961,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/961.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Sheridan Expwy on the right overhead signboard?",
+      "ground_truth": "RFK Br [entity_005] directly below Sheridan Expwy [entity_004]",
+      "prediction": "The text 'RFK Br' is located directly below Sheridan Expwy on the right overhead signboard.",
+      "inference_time_sec": 1.99,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the left overhead signboard between 1.833 seconds and 3.967 seconds?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct text instances visible on the left overhead signboard between 1.833 seconds and 3.967 seconds.",
+      "inference_time_sec": 1.852,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs, the yellow warning sign, and the speed limit sign are encountered?",
+      "ground_truth": "1st: overhead signs, 2nd: yellow warning sign, 3rd: SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "First, the overhead green signs with directions to various exits are encountered. Following that, the yellow warning sign appears, and finally, the speed limit sign is seen, which is 45 mph.",
+      "inference_time_sec": 2.224,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the left concrete barrier indicates a speed restriction near the end of the clip?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The text on the left concrete barrier indicates a speed restriction of '45'. This is a common traffic sign used to control vehicle speed on highways, ensuring safety and preventing accidents. The specific number '45' is likely a reference to the speed limit in the area, which is typically set at 45 mph in many regions to maintain a safe driving environment.",
+      "inference_time_sec": 3.51,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of multiple overhead guide signs, exit indicators, and highway numbers?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of multiple overhead guide signs, exit indicators, and highway numbers suggests a well-organized and regulated road environment. These elements indicate that the road is likely part of a major highway system, possibly in a metropolitan area. The presence of these signs and indicators is typical for highways where traffic management and safety are prioritized. The road appears to be well-maintained, with clear lane markings and a structured traffic flow, which is essential for efficient and safe travel on major highways.",
+      "inference_time_sec": 4.221,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge names visible on the overhead signs suggest this clip is filmed in the New York City region?",
+      "ground_truth": "Throgs Neck Br [entity_008], G Washington Br [entity_009], RFK Br [entity_005]",
+      "prediction": "The specific bridge names visible on the overhead signs in the video are 'Cross Bronx Expwy', 'Throgo Neck Br', 'G Washington Br', and 'Sheridan Expwy'. These names are indicative of the New York City area, specifically the Bronx, Throgo Neck, G Washington, and Sheridan Expwy bridges, which are landmarks in the city known for their proximity to the Bronx. The presence of these names suggests that the clip is filmed in the New York City region, likely during a time when these bridges are in use, such as during rush hour or when the vehicles are traveling towards or away from the Bronx.",
+      "inference_time_sec": 5.14,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range do the overhead green guide signs remain continuously visible in the clip?",
+      "ground_truth": "1.833 seconds to 3.967 seconds",
+      "prediction": "The overhead green guide signs remain continuously visible throughout the entire duration of the video, indicating directions to various exits and highways. This suggests that the video captures a continuous drive through the city at night, with the traffic signs providing clear guidance for drivers.",
+      "inference_time_sec": 2.735,
+      "error": ""
+    }
+  ]
+}

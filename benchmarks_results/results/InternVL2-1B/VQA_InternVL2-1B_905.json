@@ -1,0 +1,70 @@
+{
+  "video_id": 905,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/905.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly below the BEDROOM sign on the commercial storefront?",
+      "ground_truth": "MATTRESS [entity_009] directly below BEDROOM [entity_010]",
+      "prediction": "The readable text located directly below the BEDROOM sign on the commercial storefront is \"BEDROOM & OFFICES.\"",
+      "inference_time_sec": 1.671,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the semi-truck trailer and cab?",
+      "ground_truth": "10",
+      "prediction": "There are two distinct text instances mounted on the semi-truck trailer and cab.",
+      "inference_time_sec": 1.352,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Sign-On Bonus [entity_006], 2nd: LOGISTICS-010 [entity_007], 3rd: myBekins.com [entity_008]",
+      "prediction": "The order in which the text instances \"Sign-On Bonus,\" \"LOGISTICS-010,\" and \"myBekins.com\" are first encountered as the vehicle moves forward is as follows:\n\n1. \"Sign-On Bonus\"\n2. \"LOGISTICS-010\"\n3. \"myBekins.com\"",
+      "inference_time_sec": 2.979,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the regulatory sign near the roadside sidewalk, what explicit driving action is required for vehicles in the right lane?",
+      "ground_truth": "TURN RIGHT [entity_019]",
+      "prediction": "The explicit driving action required for vehicles in the right lane is to stop, as indicated by the yellow sign with red text that reads \"STOP\" and the red arrow pointing to the right. This sign is a common traffic regulation that instructs drivers to come to a complete stop at the intersection to allow for safe stopping and turning.",
+      "inference_time_sec": 3.06,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.6s and 2.0s suggest about the type of area?",
+      "ground_truth": "commercial retail zone",
+      "prediction": "The mix of text visible between 0.6s and 2.0s suggests that the area is likely a commercial or mixed-use zone. The presence of a sign that reads \"DUGGAN'S\" and \"MORTUARY\" indicates that the area is likely a commercial district, possibly with businesses catering to both residential and commercial needs. The other text, although not entirely legible, seems to be related to the establishment, which could be a restaurant, a shop, or a service provider. The overall layout and the presence of multiple signs and storefronts in the vicinity further support the idea that this is a commercial area",
+      "inference_time_sec": 5.016,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text in this clip written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text in the clip is written in the Spanish language.",
+      "inference_time_sec": 1.322,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the website myBekins.com first become legible as the host vehicle passes the semi-truck?",
+      "ground_truth": "0.2s",
+      "prediction": "The website \"myBekins.com\" first becomes legible as the host vehicle passes the semi-truck at approximately 1:00 PM.",
+      "inference_time_sec": 1.824,
+      "error": ""
+    }
+  ]
+}

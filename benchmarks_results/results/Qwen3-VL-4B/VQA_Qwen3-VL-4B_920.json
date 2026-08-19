@@ -1,0 +1,70 @@
+{
+  "video_id": 920,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/920.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What yellow clearance warning text is located directly to the right of the overhead sign containing Terminals?",
+      "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
+      "prediction": "The yellow clearance warning text located directly to the right of the overhead sign containing Terminals is \"CLEARANCE 11-0'\".",
+      "inference_time_sec": 5.092,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "3",
+      "prediction": "2",
+      "inference_time_sec": 3.056,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three distinct vehicle-mounted text instances encountered on the NYPD cruiser?",
+      "ground_truth": "1st POLICE [entity_002], 2nd 50341 [entity_003], 3rd PLOW [entity_005]",
+      "prediction": "The first three distinct vehicle-mounted text instances encountered on the NYPD cruiser, in order, are:\n\n1. \"50341\" — This is the license plate number visible on the cruiser.\n2. \"NYPD\" — This is the text on the side of the cruiser, indicating its affiliation.\n3. \"POLICE\" — This is the text on the side of the cruiser, often displayed in large letters for visibility.\n\nThese text instances appear sequentially as the cruiser passes by the camera's viewpoint.",
+      "inference_time_sec": 10.597,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the yellow sign indicates a height restriction for vehicles passing under the gantry?",
+      "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
+      "prediction": "The warning text on the yellow sign indicates a height restriction of \"CLEARANCE 11-0\" for vehicles passing under the gantry.",
+      "inference_time_sec": 5.229,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of facility does the mix of overhead and roadside signs indicate the vehicle is approaching?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "The mix of overhead and roadside signs indicates that the vehicle is approaching an airport. The signs mention \"Central Terminal,\" \"Arrival Flights,\" \"Departing Flights,\" \"Daily Pkg Wait Area,\" and \"Airport Exit,\" which are typical features of an airport's highway approach.",
+      "inference_time_sec": 7.267,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city's police department is indicated by the markings on the parked patrol cruiser?",
+      "ground_truth": "New York City",
+      "prediction": "The markings on the parked patrol cruiser indicate that it belongs to the New York City Police Department.",
+      "inference_time_sec": 4.42,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate N202894C first become visible in the travel lane?",
+      "ground_truth": "2.933 seconds for N202894C [entity_001]",
+      "prediction": "0:00",
+      "inference_time_sec": 3.375,
+      "error": ""
+    }
+  ]
+}

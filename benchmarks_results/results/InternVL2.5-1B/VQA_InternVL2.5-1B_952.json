@@ -1,0 +1,70 @@
+{
+  "video_id": 952,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/952.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the motto \"Common Sense Solutions To Your Environmental Concerns\" on the service vehicle?",
+      "ground_truth": "Water Trearment & Environmental Specialists [entity_012]",
+      "prediction": "The text located directly beneath the motto \"Common Sense Solutions To Your Environmental Concerns\" on the service vehicle is \"WATER SERVICES\".",
+      "inference_time_sec": 1.82,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are printed on or designate the yellow school vehicle?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances printed on or designate the yellow school vehicle.",
+      "inference_time_sec": 1.438,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the decals MOBILINK, 2626, and 379 CR become visible on the service vehicle?",
+      "ground_truth": "1st: MOBILINK [entity_005], 2nd: 2626 [entity_006], 3rd: 379 CR [entity_007]",
+      "prediction": "The decals MOBILINK, 2626, and 379 CR become visible on the service vehicle in the following chronological order: first, the 'MOBILINK' decal appears on the back of the vehicle, followed by the '2626' decal, and finally, the '379 CR' decal is seen on the side of the vehicle.",
+      "inference_time_sec": 3.735,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the yellow school vehicle indicates an emergency designation?",
+      "ground_truth": "EMERGENCY 0008 [entity_022]",
+      "prediction": "The yellow school vehicle has a text 'EMERGENCY' on the side, indicating an emergency designation.",
+      "inference_time_sec": 1.782,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign?",
+      "ground_truth": "Residential neighborhood",
+      "prediction": "The presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign suggests a mixed-use environment where commercial and residential areas coexist. The school bus indicates the presence of a school nearby, while the pedestrians and the garage sale sign suggest the presence of a commercial area with shops and possibly a market or event happening. This environment is typical of urban settings where different types of activities and services are available, catering to the needs of both residents and visitors.",
+      "inference_time_sec": 4.203,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area codes visible on the vehicles suggest this clip was filmed in the New York metropolitan area?",
+      "ground_truth": "516.932.3030 [entity_003] and 718-335-6363 [entity_021]",
+      "prediction": "The visible telephone area codes on the vehicles include 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212, 212",
+      "inference_time_sec": 5.341,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle identification number 2626 first become clearly visible on the service vehicle?",
+      "ground_truth": "0.933s",
+      "prediction": "The vehicle identification number 2626 becomes clearly visible on the service vehicle at the timestamp of 00:10:00.",
+      "inference_time_sec": 2.048,
+      "error": ""
+    }
+  ]
+}

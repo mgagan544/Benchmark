@@ -1,0 +1,70 @@
+{
+  "video_id": 981,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/981.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What temporary sign is located to the left of the concrete retaining wall on the shoulder beneath the overpass?",
+      "ground_truth": "TRS [entity_009] NOW [entity_010] OPEN [entity_011] to the left of the concrete retaining wall",
+      "prediction": "The temporary sign located to the left of the concrete retaining wall on the shoulder beneath the overpass is a green highway sign with white text. It indicates directions to Henderson and Las Vegas, with arrows pointing left and right, respectively. This sign is a common feature on highways to provide drivers with clear guidance on their route.",
+      "inference_time_sec": 3.972,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct overhead highway signs or route markers are mentioned on the two overpasses?",
+      "ground_truth": "3",
+      "prediction": "Two distinct overhead highway signs or route markers are mentioned on the two overpasses.",
+      "inference_time_sec": 1.555,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the SPEED LIMIT sign, the RTC transit sign, and the TRS NOW OPEN sign are encountered by the vehicle?",
+      "ground_truth": "1st: SPEED [entity_001] LIMIT [entity_002], 2nd: RTC [entity_008], 3rd: TRS [entity_009] NOW [entity_010] OPEN [entity_011]",
+      "prediction": "The SPEED LIMIT sign is encountered first, followed by the RTC transit sign, and then the TRS NOW OPEN sign.",
+      "inference_time_sec": 1.87,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed at the beginning of the clip?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
+      "prediction": "The regulatory text visible on the highway signs at the beginning of the clip indicates that the vehicle is traveling at a speed of 55 mph. This speed limit is a standard safety measure to ensure that drivers maintain a safe distance from other vehicles and pedestrians while navigating the highway.",
+      "inference_time_sec": 2.921,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multi-lane overhead gantries, route markers, and speed limit signs, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the video is a typical urban highway setting. The presence of multi-lane overhead gantries suggests a well-developed road infrastructure, while the route markers and speed limit signs indicate a regulated traffic system. The vehicles, including a white van and a black sedan, are moving at a moderate speed, typical for a highway. The overcast sky and the presence of palm trees add to the urban landscape, suggesting a city environment.",
+      "inference_time_sec": 4.064,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional cities or destinations are indicated by the overhead highway signs?",
+      "ground_truth": "Henderson [entity_005] and Las Vegas [entity_007]",
+      "prediction": "The overhead highway signs indicate the following regional cities or destinations: Henderson, Nevada, Las Vegas, and East. These signs are positioned above the highway, providing clear directions for drivers to navigate to these destinations. The presence of these signs suggests that the highway is part of a larger transportation network that connects various cities and regions within the state of Nevada and beyond.",
+      "inference_time_sec": 3.349,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the SPEED LIMIT sign first become legible to the vehicle?",
+      "ground_truth": "0.3 seconds",
+      "prediction": "The SPEED LIMIT sign first becomes legible to the vehicle at the beginning of the video, just after the white car passes under the overpass.",
+      "inference_time_sec": 1.907,
+      "error": ""
+    }
+  ]
+}

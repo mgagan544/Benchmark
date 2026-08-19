@@ -1,0 +1,70 @@
+{
+  "video_id": 925,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/925.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the word Eastern relative to the word EAST on the overhead gantry?",
+      "ground_truth": "To the right of EAST [entity_008]",
+      "prediction": "The word \"EAST\" is located on the left side of the overhead gantry, while the word \"EUI\" is on the right side. The word \"EAST\" is positioned to the right of the word \"EUI,\" indicating that it is the word that is to the right of \"EUI\" on the overhead gantry.",
+      "inference_time_sec": 3.904,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the overhead steel gantry?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct text instances on the overhead steel gantry.",
+      "inference_time_sec": 1.364,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign is encountered on the right side of the road immediately after the vehicle passes the roadside sign displaying Grand Central Pkwy on the left?",
+      "ground_truth": "Terminals [entity_004]",
+      "prediction": "After passing the roadside sign displaying Grand Central Pkwy on the left, the vehicle encounters a construction site on the right side of the road.",
+      "inference_time_sec": 2.062,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which direction is indicated for Triboro Br on the roadside sign passed at 0.0s?",
+      "ground_truth": "WEST [entity_002]",
+      "prediction": "The roadside sign indicates that Triboro Br is on the right side of the road.",
+      "inference_time_sec": 1.532,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of signs like Grand Central Pkwy and Terminals, what type of driving environment is depicted?",
+      "ground_truth": "Highway near an airport",
+      "prediction": "The presence of signs like Grand Central Pkwy and Terminals indicates that the driving environment is likely a commercial or business area, where traffic is regulated and monitored for safety and efficiency. The signs are designed to guide drivers through the complex network of roads and highways, ensuring that traffic flows smoothly and safely. This environment is typically found in urban or suburban areas where there is a need for structured traffic management to accommodate the flow of commercial vehicles and pedestrians.",
+      "inference_time_sec": 4.723,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What airline brand is visible on the terminal building at 9.933s?",
+      "ground_truth": "AMERICAN AIRLINES [entity_013]",
+      "prediction": "The video does not provide any information about the airline brand visible on the terminal building at 9.933s.",
+      "inference_time_sec": 1.712,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AJC-1541 first become clearly visible on the grey sedan?",
+      "ground_truth": "7.9s",
+      "prediction": "The license plate AJC-1541 first becomes clearly visible on the grey sedan in the second second of the video.",
+      "inference_time_sec": 1.679,
+      "error": ""
+    }
+  ]
+}

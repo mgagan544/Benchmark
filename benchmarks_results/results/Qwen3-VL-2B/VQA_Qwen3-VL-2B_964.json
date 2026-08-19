@@ -1,0 +1,70 @@
+{
+  "video_id": 964,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/964.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What overhead sign is located to the right of the exit sign for E 138 St?",
+      "ground_truth": "Macombs [entity_003] Dam [entity_002] and E 161 St [entity_001] to the right of E 138 St [entity_005]",
+      "prediction": "The overhead sign located to the right of the exit sign for E 138 St is for E 161 St.",
+      "inference_time_sec": 2.85,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the white commercial pickup truck?",
+      "ground_truth": "10",
+      "prediction": "There are 4 distinct text instances mounted on the white commercial pickup truck.",
+      "inference_time_sec": 2.609,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What text is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass?",
+      "ground_truth": "WORK [entity_008] ZONE [entity_009] SPEED [entity_010] LIMIT [entity_011] 35",
+      "prediction": "The text visible on the left side of the highway right before the vehicle passes the green pedestrian overpass is \"NO TRUCKS BUSES TRAILERS LEFT LANE\".",
+      "inference_time_sec": 3.12,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the concrete median barrier restricts certain vehicles from using the left lane?",
+      "ground_truth": "TRUCKS [entity_025], BUSES [entity_026], and TRAILERS [entity_027] from the LEFT LANE [entity_028]",
+      "prediction": "The text on the concrete median barrier reads \"NO TRUCKS BUSES TRAILERS LEFT LANE.\"",
+      "inference_time_sec": 2.663,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, route shields, and speed limit signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The clip depicts a busy urban highway environment, likely in a city or metropolitan area. The presence of multiple lanes, overhead exit signs, route shields, and speed limit signs indicates a well-organized and regulated traffic system. The vehicles, including trucks and cars, are moving in a structured manner, suggesting a high volume of traffic typical of a major city. The surrounding greenery and buildings further support the urban setting.",
+      "inference_time_sec": 5.274,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and bridge names visible in the clip suggest the setting is in New York City?",
+      "ground_truth": "E 138 St [entity_005], Madison [entity_006] Ave Br [entity_007], and W 161 St [entity_013]",
+      "prediction": "The street names and bridge names visible in the clip suggest the setting is in New York City. The signs indicate \"E 138 St\" and \"E 161 St,\" which are common street names in New York City. Additionally, the bridge name \"Macombs Dam Bridge\" is a well-known landmark in the city. The presence of these specific street and bridge names, along with the overall urban environment, strongly supports the conclusion that the location is in New York City.",
+      "inference_time_sec": 6.064,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the white pickup truck's contact number visible in the clip?",
+      "ground_truth": "0.833 to 4.267 seconds",
+      "prediction": "The white pickup truck's contact number is visible from 0:02 to 0:04.",
+      "inference_time_sec": 3.013,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 949,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/949.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located directly to the right of the building section displaying FAITH at 301-303?",
+      "ground_truth": "BBF PRINTING [entity_014] to the right of FAITH [entity_012]",
+      "prediction": "The business name located directly to the right of the building section displaying \"FAITH\" at 301-303 is \"AUTO COLLISION SPECIALISTS.\"",
+      "inference_time_sec": 3.74,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned in the text for parked vehicles?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates mentioned for parked vehicles: one is \"JH-3144\" and the other is \"JH-3145\".",
+      "inference_time_sec": 3.881,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle passes the FAITH storefront, the BBF PRINTING storefront, and the DOLLAR TREE plaza?",
+      "ground_truth": "1st: FAITH [entity_012], 2nd: BBF PRINTING [entity_014], 3rd: DOLLAR [entity_032] TREE [entity_033]",
+      "prediction": "The order in which the vehicle passes the FAITH storefront, the BBF PRINTING storefront, and the DOLLAR TREE plaza is as follows:\n\n1. The vehicle passes the FAITH storefront.\n2. The vehicle passes the BBF PRINTING storefront.\n3. The vehicle passes the DOLLAR TREE plaza.",
+      "inference_time_sec": 4.842,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional text is displayed on the traffic post located on the sidewalk corner near the pedestrian?",
+      "ground_truth": "PED [entity_029] SIGNAL [entity_030] USE [entity_031]",
+      "prediction": "The traffic post displays the text \"AUTO COLLISION SPECIALS\" and \"AUTO COLLISION SPECIALS\" in red and white letters.",
+      "inference_time_sec": 3.425,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, promotional signs, and retail plaza visible in this clip?",
+      "ground_truth": "commercial district",
+      "prediction": "The storefronts, promotional signs, and retail plaza visible in the clip suggest a bustling urban environment. The presence of multiple businesses, including a car dealership, suggests a commercial area. The traffic lights and the overall layout of the street indicate a busy intersection, which is typical in urban settings. The presence of pedestrians and vehicles also indicates a lively and active area.",
+      "inference_time_sec": 5.114,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the visible storefront signs and promotional text in this clip?",
+      "ground_truth": "English",
+      "prediction": "The visible storefront signs and promotional text in the clip are in English.",
+      "inference_time_sec": 2.947,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range does the DOLLAR TREE retail plaza and its entrance signs remain visible in the clip?",
+      "ground_truth": "4.3 seconds to 6.9 seconds",
+      "prediction": "The DOLLAR TREE retail plaza and its entrance signs remain visible in the clip from 0:00 to 0:30.",
+      "inference_time_sec": 3.572,
+      "error": ""
+    }
+  ]
+}

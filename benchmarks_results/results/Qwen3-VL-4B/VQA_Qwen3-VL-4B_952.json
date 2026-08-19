@@ -1,0 +1,70 @@
+{
+  "video_id": 952,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/952.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the motto \"Common Sense Solutions To Your Environmental Concerns\" on the service vehicle?",
+      "ground_truth": "Water Trearment & Environmental Specialists [entity_012]",
+      "prediction": "The text located directly beneath the motto \"Common Sense Solutions To Your Environmental Concerns\" on the service vehicle is \"24 Hours Emergency Service\".",
+      "inference_time_sec": 7.451,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are printed on or designate the yellow school vehicle?",
+      "ground_truth": "6",
+      "prediction": "2",
+      "inference_time_sec": 3.14,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the decals MOBILINK, 2626, and 379 CR become visible on the service vehicle?",
+      "ground_truth": "1st: MOBILINK [entity_005], 2nd: 2626 [entity_006], 3rd: 379 CR [entity_007]",
+      "prediction": "The decals appear in the following chronological order: first, \"MOBILINK\" and \"2626\" are visible, followed by \"379 CR\".",
+      "inference_time_sec": 6.257,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the yellow school vehicle indicates an emergency designation?",
+      "ground_truth": "EMERGENCY 0008 [entity_022]",
+      "prediction": "The text \"EMERGENCY SERVICE\" is visible on the yellow school vehicle, indicating an emergency designation.",
+      "inference_time_sec": 4.882,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign?",
+      "ground_truth": "Residential neighborhood",
+      "prediction": "The presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign suggests a suburban or residential driving environment. This setting typically features mixed-use areas where schools, homes, and local businesses coexist, and traffic is often moderate with a mix of vehicles and foot traffic. The school bus indicates that the area is likely near a school, while the pedestrians suggest a walkable neighborhood. The garage sale sign implies a local community event, further reinforcing the residential nature of the area.",
+      "inference_time_sec": 10.561,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area codes visible on the vehicles suggest this clip was filmed in the New York metropolitan area?",
+      "ground_truth": "516.932.3030 [entity_003] and 718-335-6363 [entity_021]",
+      "prediction": "The telephone area codes visible on the vehicles are 917 and 718. These are both New York metropolitan area area codes. 917 is a New York City area code, and 718 is the area code for the borough of Queens, which is part of New York City. Therefore, the presence of these area codes suggests that the clip was filmed in the New York metropolitan area.",
+      "inference_time_sec": 9.196,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle identification number 2626 first become clearly visible on the service vehicle?",
+      "ground_truth": "0.933s",
+      "prediction": "The vehicle identification number 2626 first becomes clearly visible on the service vehicle at 0:01.",
+      "inference_time_sec": 4.612,
+      "error": ""
+    }
+  ]
+}

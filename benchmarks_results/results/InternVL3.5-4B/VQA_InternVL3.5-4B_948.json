@@ -1,0 +1,70 @@
+{
+  "video_id": 948,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/948.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which sign, located directly below the FDR DR SOUTH sign on the overhead gantry, comes into view between 2.4 and 2.567 seconds?",
+      "ground_truth": "LEFT 2 LANES [entity_006]",
+      "prediction": "Between 2.4 and 2.567 seconds, the sign that comes into view directly below the FDR DR SOUTH sign on the overhead gantry is the 'PARKING DEPT. 2 AVENUE 15-17' sign. This sign is part of the directional signage that provides information about parking facilities and is located on the right side of the road, just below the FDR DR SOUTH sign. It is illuminated in green, matching the color of the traffic lights, and is positioned to guide drivers towards the parking department's location. The sign is an essential piece of information for drivers,",
+      "inference_time_sec": 11.61,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signs containing lane designations or lane restrictions are visible on the overhead gantry before the vehicle enters the steel truss structure?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct signs visible on the overhead gantry. The first sign indicates 'TUNNELS CLOSED FOR MAINTENANCE' with a time frame of '2:45 A.M. TO 5:45 A.M. SUN & MON.' The second sign shows 'PENN ST N 2.4 MILES' with a lane designation 'LANE 2 ONLY.' The third sign is partially obscured but appears to indicate 'LANE 3 ONLY.'",
+      "inference_time_sec": 9.446,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs 2 Ave-12S st, FDR DR SOUTH, and FINE + POINTS are encountered by the vehicle?",
+      "ground_truth": "1st: 2 Ave-12S st [entity_001], 2nd: FDR DR SOUTH [entity_005], 3rd: FINE + POINTS [entity_010]",
+      "prediction": "The signs are encountered in the following order: FINE + POINTS, 2 Ave-12S st, FDR DR SOUTH.",
+      "inference_time_sec": 4.025,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text, located to the left of the STRICTLY ENFORCED sign, becomes visible at 2.733 seconds to indicate traffic penalties?",
+      "ground_truth": "FINE + POINTS [entity_010]",
+      "prediction": "At 2.733 seconds, the warning text 'Fines Up To $250 Penalties For Violations' becomes visible to the left of the 'STRICTLY ENFORCED' sign, indicating the potential financial consequences of traffic violations on the bridge.",
+      "inference_time_sec": 6.153,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggest about the driving environment?",
+      "ground_truth": "Expressway bridge approach",
+      "prediction": "The mix of highway signs and lane restrictions visible during that time frame suggests that the driving environment is regulated and structured, with specific rules and directions for drivers. The presence of signs indicates that the driver is in an area where traffic management is active, and lane restrictions are in place to ensure orderly traffic flow. This could be a part of a larger highway system with multiple entry and exit points, or it could be a section of the highway that is experiencing variable traffic conditions, requiring clear guidance for drivers. The signs likely provide information about upcoming exits, tolls, or other important traffic-related information that drivers need to be aware of to navigate the",
+      "inference_time_sec": 11.803,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city is suggested by the highway names FDR DR SOUTH and Harlem RIv Dr visible on the overhead gantry?",
+      "ground_truth": "New York City",
+      "prediction": "The highway names suggest that the location is in New York City, as FDR Drive is a major route in the city, and Harlem River Drive is a well-known street in Manhattan.",
+      "inference_time_sec": 4.41,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the lead blue vehicle with license plate FOD-3149 tracked at the beginning of the clip?",
+      "ground_truth": "00:00 to 00:02",
+      "prediction": "The lead blue vehicle with license plate FOD-3149 is tracked from 00:00:00 to 00:00:05 at the beginning of the clip.",
+      "inference_time_sec": 4.898,
+      "error": ""
+    }
+  ]
+}

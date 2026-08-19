@@ -1,0 +1,1303 @@
+
+======================================================================
+VIDEO VQA BENCHMARK
+======================================================================
+Model       : InternVL3-2B
+HF checkpoint: OpenGVLab/InternVL3-2B
+Video range : 901 - 1000
+GT root     : results/results
+Video root  : videos/900
+Output      : benchmarks_results/results/InternVL3-2B
+======================================================================
+
+Loading OpenGVLab/InternVL3-2B
+[transformers] The tokenizer you are loading from 'OpenGVLab/InternVL3-2B' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+FlashAttention2 is not installed.
+Loading weights:   0%|          | 0/685 [00:00<?, ?it/s]Loading weights:   0%|          | 2/685 [00:00<00:35, 19.40it/s]Loading weights:  38%|███▊      | 258/685 [00:00<00:00, 1467.83it/s]Loading weights:  74%|███████▎  | 505/685 [00:00<00:00, 1917.49it/s]Loading weights: 100%|██████████| 685/685 [00:00<00:00, 1896.99it/s]
+Loaded: OpenGVLab/InternVL3-2B
+
+======================================================================
+VIDEO 901
+/home2/gagandeep/benchmark/videos/900/901.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: Which readable text instances appear between the ONE WAY sign and the CARS CASH sign on the commercial facade?
+petrel_client is not installed. If you read data locally instead of from ceph, ignore it.
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Loading BERTScore model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 4198.78it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances representing phone numbers or parts of phone numbers are visible on the commercial facade and the brick building?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the address markers 35-11 and 42-11 are encountered as the vehicle drives forward?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What instructional or regulatory text is visible on the road surface and adjacent sign near the end of the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the mix of text visible between 0.0s and 2.10s suggest about the type of area?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which regional telephone area codes visible in the clip suggest the video was filmed in New York City?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: For what time range is the license plate of the lead vehicle visible in the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_901.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_901.csv
+
+======================================================================
+VIDEO 902
+/home2/gagandeep/benchmark/videos/900/902.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What bike route sign, which first appears at 0.3s, is located adjacent to the Northern Blvd sign?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many graffiti tags are visible on the concrete structures as the vehicle ascends the bridge between 6.5s and 6.967s?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the signs for Honeywell St Bridge, DO NOT ENTER, and ONE WAY are encountered as the vehicle moves forward?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What regulatory text on the corner, visible at 3.633s, indicates a restriction on entering as the vehicle transitions onto the bridge ramp?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the presence of route signs, regulatory signs, and a bridge ramp, what kind of driving environment does this clip depict?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which street and bridge name visible on the bike route sign suggests the local geographic setting?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the DO NOT ENTER sign first become visible as the vehicle transitions onto the bridge ramp?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_902.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_902.csv
+
+======================================================================
+VIDEO 903
+/home2/gagandeep/benchmark/videos/900/903.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What manufacturer name is located to the left of the license plate 63:816.70. on the rear of the grey bus?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct license plates are visible on the transit buses in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the license plates of the two Metropoline transit buses are encountered by the camera vehicle?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Based on the visible text in the scene, are there any explicit driving constraints or speed limits indicated?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the mix of text on the transit buses suggest about the type of driving environment?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which website link on the grey bus advertisement suggests a specific country of origin or region?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp range does the white bus identifier 2443 first become revealed to the camera vehicle?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_903.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_903.csv
+
+======================================================================
+VIDEO 904
+/home2/gagandeep/benchmark/videos/900/904.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What street sign text is located beside the price signboard displaying 299, CASH, and 9/10?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct pieces of text visible in the clip are mounted on the white moving truck?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the moving truck text, the gas station brand, and the cross street sign are encountered?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What regulatory text visible at the start of the clip indicates a speed restriction on the roadway?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What type of driving environment does the presence of a gas station, price signboard, and street sign suggest?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is the visible text on the speed limit sign and street sign written in?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: During what time range does the price board displaying 299, CASH, and 9/10 become clearly visible as the vehicle approaches the intersection?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_904.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_904.csv
+
+======================================================================
+VIDEO 905
+/home2/gagandeep/benchmark/videos/900/905.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What readable text is located directly below the BEDROOM sign on the commercial storefront?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances are mounted on the semi-truck trailer and cab?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered as the vehicle moves forward?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Based on the regulatory sign near the roadside sidewalk, what explicit driving action is required for vehicles in the right lane?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the mix of text visible between 0.6s and 2.0s suggest about the type of area?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language or script is the visible text in this clip written in?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the website myBekins.com first become legible as the host vehicle passes the semi-truck?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_905.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_905.csv
+
+======================================================================
+VIDEO 906
+/home2/gagandeep/benchmark/videos/900/906.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances are displayed on the parked white box truck?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the ambulance displaying the identifier 592 start moving forward?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_906.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_906.csv
+
+======================================================================
+VIDEO 907
+/home2/gagandeep/benchmark/videos/900/907.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What text is located directly to the right of the text 25 A on the overhead street sign?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances are mounted on the parked white box truck?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the chronological order in which the text groups on the brick industrial building's banner are encountered?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What instructional or regulatory text is visible on the sign near the traffic light at the intersection?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What city or region is suggested by the area code 718 found on the visible signs?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: For what time range is the phone number 718.786.2505 on the parked white box truck visible?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_907.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_907.csv
+
+======================================================================
+VIDEO 908
+/home2/gagandeep/benchmark/videos/900/908.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What is the spatial position of the covered pedestrian structure marked WALKWAY relative to the Care emblem?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct pieces of text visible in this clip are mounted on the transit bus?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order of appearance of the first three text instances detected on the transit bus?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Based on the pavement markings near the green commuter waiting shelters, what driving action is required?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the presence of transit bus markings and a walkway sign suggest about the driving environment?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which visible text suggests the geographical region where this clip was recorded?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the fleet designation number 710 first become clearly detected on the bus?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_908.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_908.csv
+
+======================================================================
+VIDEO 909
+/home2/gagandeep/benchmark/videos/900/909.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What is the spatial position of the THRU road text relative to the LANE road text?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct mounted signs are visible in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the chronological order in which the three road text markings are first encountered in the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What explicit driving action is required near the zebra-striped pedestrian crosswalk based on the visible signage?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What kind of driving environment does the mix of waiting structures and road markings suggest?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is used for the road markings and signs in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the green directional EXIT sign first come into full view?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_909.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_909.csv
+
+======================================================================
+VIDEO 910
+/home2/gagandeep/benchmark/videos/900/910.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What text is located directly beneath the sign for Broad St on the overhead gantry?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances containing numbers are encountered after the vehicle passes the medical office building at 5.100 seconds?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the vehicle encounters the text CENTER, Broad St, and Enrite?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Based on the text on the overhead gantry, what driving action is indicated for reaching Passaic?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What type of driving environment is suggested by the presence of a large overhead gantry and multiple roadside businesses?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which specific city names visible on the overhead highway gantry suggest the geographic region of the route?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: For what time range does the overhead highway sign displaying Broad St remain visible as the vehicle drives underneath it?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_910.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_910.csv
+
+======================================================================
+VIDEO 911
+/home2/gagandeep/benchmark/videos/900/911.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What is the spatial position of the storefront displaying Clifton Tile relative to the sports facility operated by SDA?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances containing numbers are visible on the buildings and billboard between House 46 and the parked minivan?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What text indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the density of storefronts, tile shops, and commercial billboards, what kind of driving environment does this clip depict?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Do any business names visible in the clip suggest a specific regional location or city name?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the building at address 1075 first come into view?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_911.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_911.csv
+
+======================================================================
+VIDEO 912
+/home2/gagandeep/benchmark/videos/900/912.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What numbers are located directly to the right of the address number 1033 on the low stone retaining wall?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct numeric text instances are displayed on the low stone retaining wall?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: In what order are the distinct numbers on the stone wall encountered as the vehicle drives forward?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Does any visible text on the stone wall or near the dealership indicate a driving constraint or hazard?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the mix of a car dealership and address numbers suggest about the driving environment?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What script is used for the address and numbers displayed on the stone wall?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the address number 1033 first become visible on the stone wall?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_912.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_912.csv
+
+======================================================================
+VIDEO 913
+/home2/gagandeep/benchmark/videos/900/913.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What readable text is located to the right of the orange construction signboard containing the word ROAD?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is used for the text on the construction signboard and the digital display sign?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the word SPEED first become legible on the digital display sign?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_913.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_913.csv
+
+======================================================================
+VIDEO 914
+/home2/gagandeep/benchmark/videos/900/914.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What sign is located directly to the right of the digital YOUR SPEED MPH feedback sign?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct regulatory or feedback signs are located on the right side of the exit ramp?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: In what order does the camera vehicle pass the ONE WAY sign, the digital YOUR SPEED MPH feedback sign, and the ONLY sign?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Which sign indicates that traffic must flow in a single direction at the start of the ramp?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the exit ramp, elevated structure, and multi-story brick buildings, what kind of driving environment is depicted?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is used for the text on the regulatory and feedback signs along the ramp?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the ONLY sign first become visible as the vehicle enters the underpass?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_914.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_914.csv
+
+======================================================================
+VIDEO 915
+/home2/gagandeep/benchmark/videos/900/915.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances visible in the clip are mounted on delivery trucks?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the mix of text and landmarks visible in this clip suggest about the driving environment?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What country's measurement system and phone format are indicated by the visible text?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the TAXI sign first become visible in the segregated transit lane?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_915.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_915.csv
+
+======================================================================
+VIDEO 916
+/home2/gagandeep/benchmark/videos/900/916.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: Where is the overhead Terminal sign located relative to the delivery truck?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances in this clip are mounted on vehicles?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What road markings indicating driving constraints or lane designations are painted on the road surface just before passing the shuttle van?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What kind of driving environment is suggested by the presence of terminal, bus, and cell phone lot signs?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: In what language are all the legible signs and road markings written?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the phone number 1-800-497-4972 first become legible on the delivery truck?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_916.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_916.csv
+
+======================================================================
+VIDEO 917
+/home2/gagandeep/benchmark/videos/900/917.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: Where is the pavement marking showing AXI located relative to the designated taxi lane?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What text on the pavement designates the lane reserved for specific transport vehicles on the left?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is used for the airline signage and pavement markings in this scene?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp is the pavement marking showing AXI passed by the host vehicle?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_917.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_917.csv
+
+======================================================================
+VIDEO 918
+/home2/gagandeep/benchmark/videos/900/918.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What specific text is located directly to the right of the highway shield 280 on the overhead gantry?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances on the overhead highway gantry contain numbers?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the text instances 49A, EXIT, and John Daly Blvd become clearly visible or readable between 4.00 and 5.50 seconds?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Based on the overhead gantry signs, what action is implied for a driver wishing to reach John Daly Blvd?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the presence of overhead gantry signs with highway shields and exit numbers, what kind of driving environment is depicted?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which destination name visible on the overhead gantry suggests the vehicle is traveling near a major city in California?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the exit number 49A first become clearly visible on the right panel of the gantry?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_918.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_918.csv
+
+======================================================================
+VIDEO 919
+/home2/gagandeep/benchmark/videos/900/919.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What text is located across the street relative to the overhead crossing sign displaying AHE?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What city is suggested by the contact number displayed on the side of the school bus?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: For what time range does the regulatory parking sign remain continuously visible in the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_919.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_919.csv
+
+======================================================================
+VIDEO 920
+/home2/gagandeep/benchmark/videos/900/920.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What yellow clearance warning text is located directly to the right of the overhead sign containing Terminals?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct license plates are visible on vehicles in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order of the first three distinct vehicle-mounted text instances encountered on the NYPD cruiser?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What warning text on the yellow sign indicates a height restriction for vehicles passing under the gantry?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What type of facility does the mix of overhead and roadside signs indicate the vehicle is approaching?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which city's police department is indicated by the markings on the parked patrol cruiser?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the license plate N202894C first become visible in the travel lane?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_920.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_920.csv
+
+======================================================================
+VIDEO 921
+/home2/gagandeep/benchmark/videos/900/921.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What is the spatial position of the MUST EXIT sign relative to the WORK ZONE sign that appears around 0.467 seconds?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct license plates are visible in this video clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order of signs encountered on the right side of the road between 0.0 and 1.0 seconds?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What warning sign is located beside the construction flagger holding the STOP paddle near the end of the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What type of area does the mix of airport terminal, parking, and exit signs suggest?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is used on the signs such as ROAD WORK AHEAD and MUST EXIT?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: For what time range is the RAMP speed limit sign visible in the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_921.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_921.csv
+
+======================================================================
+VIDEO 922
+/home2/gagandeep/benchmark/videos/900/922.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What lane indicator is visible overhead at 0.0 seconds to the right of the Airport Exit sign?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct street, regulatory, or warning text elements are visible in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order of the text elements on the orange warning sign encountered after passing the concrete overpass?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the visible signs like Airport Exit and ROAD WORK AHEAD, what kind of driving environment is depicted?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is used for the text on the overhead and warning signs in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: During what time range is the STOP sign held by the construction flagger visible and legible?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_922.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_922.csv
+
+======================================================================
+VIDEO 923
+/home2/gagandeep/benchmark/videos/900/923.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What destination text is located directly below the route name Van Wyck Expwy on the overhead gantry?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances are visible on the overhead highway gantry signs at the start of the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: In what order are the overhead sign Kennedy Airport and the taxi license plate T642185C encountered as legible text in the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Based on the indicators below the Exit 6 sign, what explicit driving constraint is implied for that lane?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What type of driving environment is depicted in this clip based on the overhead signs and road layout?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which specific destination and route names visible on the overhead gantry suggest this clip is filmed in the New York City area?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the license plate T642185C on the lime-green taxi first become readable?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_923.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_923.csv
+
+======================================================================
+VIDEO 924
+/home2/gagandeep/benchmark/videos/900/924.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What readable text is located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances are visible on the green overhead exit sign located on the left side of the roadway?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the text on the overhead gantry, the roadside infrastructure, and the green exit sign are first encountered as the vehicle moves forward?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What directional or instructional text is displayed on the large overhead gantry above the multi-lane roadway?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the visible signs indicating terminals and parking, what type of facility is this roadway accessing?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: In what language and script is the text on the overhead gantry and exit signs written?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the text B C D first become visible, and when does the full layout of that gantry sign become readable?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_924.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_924.csv
+
+======================================================================
+VIDEO 925
+/home2/gagandeep/benchmark/videos/900/925.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What is the spatial position of the word Eastern relative to the word EAST on the overhead gantry?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances are located on the overhead steel gantry?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What sign is encountered on the right side of the road immediately after the vehicle passes the roadside sign displaying Grand Central Pkwy on the left?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Which direction is indicated for Triboro Br on the roadside sign passed at 0.0s?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the presence of signs like Grand Central Pkwy and Terminals, what type of driving environment is depicted?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What airline brand is visible on the terminal building at 9.933s?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the license plate AJC-1541 first become clearly visible on the grey sedan?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_925.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_925.csv
+
+======================================================================
+VIDEO 926
+/home2/gagandeep/benchmark/videos/900/926.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What is the spatial position of the safety sign marked with AMER relative to the vehicle with license plate T679966C?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances belong to the highway direction sign pointing toward the wait area?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the airport facility sign, the highway direction sign, and the license plate are encountered between 0.9 and 5.0 seconds?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Does any visible text in the clip indicate a hazard, warning, or driving constraint? If so, what does it say and where is it located?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the visible text mentioning airlines and long term wait area, what type of driving environment is depicted?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language or script is the visible text on the airport hangar and highway direction sign written in?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the license plate on the gold lead SUV become clearly visible?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_926.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_926.csv
+
+======================================================================
+VIDEO 927
+/home2/gagandeep/benchmark/videos/900/927.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What is the spatial position of the text New Jersey relative to the G W Bridge text?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances are displayed on the overhead gantry signs in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the density and type of overhead text suggest about the driving environment?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which metropolitan area is suggested by the visible overhead signs, and what text supports this?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_927.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_927.csv
+
+======================================================================
+VIDEO 928
+/home2/gagandeep/benchmark/videos/900/928.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What sign is located directly to the right of the guide sign indicating Bron EXPWY?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances containing numbers are visible in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What warning text is displayed on the overhead structure to indicate a height restriction?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What region or city is suggested by the guide sign indicating Bron EXPWY?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the license plate on the vehicle directly ahead become clearly readable?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_928.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_928.csv
+
+======================================================================
+VIDEO 929
+/home2/gagandeep/benchmark/videos/900/929.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What is the spatial position of the signboard displaying Gabinst relative to the signboard displaying Natural?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct pieces of text belonging to storefront or real estate signboards are visible in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Does any visible text in the clip indicate a hazard, warning, or driving constraint?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the mix of storefront signboards and real estate signs suggest about this driving environment?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What regional convention is suggested by the phone number format containing the area code (718)?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the real estate sign displaying KAPLON first align with the camera, and when does the vehicle pass the area code (718)?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_929.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_929.csv
+
+======================================================================
+VIDEO 930
+/home2/gagandeep/benchmark/videos/900/930.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What sign text is encountered immediately after the vehicle passes the sign for The Best?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is used for all the storefront signs encountered by the vehicle?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: During what time range is the sign for The Best continuously visible to the camera vehicle?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_930.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_930.csv
+
+======================================================================
+VIDEO 931
+/home2/gagandeep/benchmark/videos/900/931.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: Does any visible text in the clip indicate a hazard, warning, or driving constraint?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_931.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_931.csv
+
+======================================================================
+VIDEO 932
+/home2/gagandeep/benchmark/videos/900/932.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What text on the regulatory sign post indicates a direction restriction for vehicle movement?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What specific phone number on the first school bus suggests a New York City location?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the text BUSES ONLY first become visible in the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_932.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_932.csv
+
+======================================================================
+VIDEO 933
+/home2/gagandeep/benchmark/videos/900/933.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What sign is located directly beneath the sign TRAFFIC on the wooden utility pole?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many distinct street or regulatory signs are visible on the wooden utility pole and the adjacent signpost combined?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the order in which the signs on the adjacent signpost are encountered after the vehicle completes its turn?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What detour instruction is displayed on the wooden utility pole at the T-junction?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: Based on the presence of a detour sign, concrete barriers, orange barrels, and a light tower, what type of zone is this?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is used for the text on the signs visible along the road?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the sign 56"Road first become visible to the camera?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_933.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_933.csv
+
+======================================================================
+VIDEO 934
+/home2/gagandeep/benchmark/videos/900/934.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: What is located to the left of the pavement marking 'ONLY' as the vehicle moves forward?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[2/7] Category 2: entity_aggregation_semantic_filtering
+Question: How many pavement markings with legible text are visible in the lane after the vehicle completes its left turn?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[3/7] Category 3: temporal_sequencing_order
+Question: What is the chronological order of the legible text instances encountered on the road surface during the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[4/7] Category 4: navigational_reasoning_hazard_awareness
+Question: What instructional text is painted on the lane surface to guide the driver's lane choice after turning?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[5/7] Category 5: semantic_area_inference
+Question: What does the presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggest about the driving environment?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[6/7] Category 6: cultural_language_inference
+Question: What language is the pavement marking 'ONLY' written in?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[7/7] Category 7: entity_tracking_persistence
+Question: At what timestamp does the pavement marking 'ONLY' first become visible in the clip?
+Prediction: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Saved predictions: benchmarks_results/results/InternVL3-2B/VQA_InternVL3-2B_934.json
+Saved metrics: benchmarks_results/results/InternVL3-2B/eval_results_934.csv
+
+======================================================================
+VIDEO 935
+/home2/gagandeep/benchmark/videos/900/935.mp4
+Questions: 7
+======================================================================
+
+[1/7] Category 1: spatial_ordinal_navigation
+Question: Where is the painted road marking SCHOOL, passed at 0.967 seconds, located relative to the MPH marking?

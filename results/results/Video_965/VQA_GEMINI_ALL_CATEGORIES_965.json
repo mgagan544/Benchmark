@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "965",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is located directly to the right of the word BUSES on the regulatory sign?",
+        "answer": "TRAILERS [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct license plates are visible on vehicles in this video clip?",
+        "answer": "2",
+        "reasoning": "The video shows two license plates: FSY-2177 [entity_007] on the commercial truck and GST-6604 [entity_013] on the dark Jeep SUV."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "In what order does the driver encounter the text TRUCKS, Macombs Dam Br, and EXIT as the vehicle travels forward?",
+        "answer": "1st: TRUCKS [entity_001], 2nd: Macombs Dam Br [entity_006], 3rd: EXIT [entity_011]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What specific text on the regulatory sign on the left side of the road restricts certain vehicles from the left lane?",
+        "answer": "TRUCKS [entity_001], BUSES [entity_002], TRAILERS [entity_003], LEFT [entity_004], LANE [entity_005]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic, what type of road is the vehicle traveling on?",
+        "answer": "Highway",
+        "reasoning": "The presence of overhead exit gantries and multi-lane regulatory signs indicates a highway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What regional location in New York is suggested by the overhead exit signage text?",
+        "answer": "Macombs Dam Br [entity_006]",
+        "reasoning": "Macombs Dam Bridge is a well-known landmark in New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the yellow advisory exit sign displaying EXIT first come clearly into view, and what text is located directly below it?",
+        "answer": "4.633s, M P H [entity_012]",
+        "reasoning": "At 4.633s, the yellow advisory exit sign displaying EXIT [entity_011] above M P H [entity_012] comes into view."
+      }
+    ]
+  }
+]

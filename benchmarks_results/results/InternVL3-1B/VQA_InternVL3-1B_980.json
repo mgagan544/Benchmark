@@ -1,0 +1,70 @@
+{
+  "video_id": 980,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/980.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Upper Happy on the overhead sign?",
+      "ground_truth": "Valley Rd [entity_003] directly below Upper Happy [entity_002]",
+      "prediction": "The text 'Upper Happy' is located directly below it.",
+      "inference_time_sec": 1.763,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the highway signs mentioned in the scene?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances displayed on the highway signs.",
+      "inference_time_sec": 1.277,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds?",
+      "ground_truth": "1st: Acalanes Rd [entity_001], Upper Happy [entity_002], Valley Rd [entity_003]; 2nd: EXIT [entity_004]",
+      "prediction": "The sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds includes: first, a green highway sign indicating 'Acadiana Blvd Super Happy Exit' with an arrow pointing left; second, a yellow sign with a black arrow pointing right; third, a green sign with a white arrow pointing left; fourth, a yellow sign with a black arrow pointing right; fifth, a yellow sign with a black arrow pointing left; sixth, a yellow sign with a black arrow pointing right; seventh, a yellow sign with a black arrow pointing left; eighth, a yellow sign with a black arrow pointing right;",
+      "inference_time_sec": 5.141,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is indicated near the green gore sign?",
+      "ground_truth": "An exit action is indicated by the EXIT [entity_004] sign.",
+      "prediction": "The green gore sign indicates a right turn, which is a common traffic sign used to direct drivers to turn right onto a particular road or intersection. The presence of this sign suggests that the driver is approaching a turn and is likely following the instructions to proceed in that direction.",
+      "inference_time_sec": 3.042,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of signs like Acalanes Rd and EXIT suggest?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of multiple signs like Acalanes Rd and EXIT suggests that the driving environment is likely a well-maintained highway with clear road markings and traffic signs. The signs indicate directions and exits, which are essential for navigation and safety. The clear sky and the presence of trees and hills in the background further suggest that the highway is in a scenic area, possibly in a suburban or rural region.",
+      "inference_time_sec": 3.682,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the overhead and gore signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead and gore signs is written in English.",
+      "inference_time_sec": 1.431,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the vehicle pass the green gore sign displaying EXIT?",
+      "ground_truth": "Between 2.633 and 2.733 seconds for EXIT [entity_004]",
+      "prediction": "The vehicle passes the green gore sign displaying EXIT at the end of the highway, which is around the 10th minute of the video.",
+      "inference_time_sec": 1.997,
+      "error": ""
+    }
+  ]
+}

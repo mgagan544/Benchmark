@@ -1,0 +1,70 @@
+{
+  "video_id": 951,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/951.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the storefront extension directly to the right of the 4CARS decals?",
+      "ground_truth": "VILLAGE [entity_009] to the right of 4CARS [entity_006] decals",
+      "prediction": "The text displayed on the storefront extension is 'Green Veggie Supermarket'.",
+      "inference_time_sec": 2.964,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 2.2s and 2.9s?",
+      "ground_truth": "6",
+      "prediction": "Two",
+      "inference_time_sec": 1.858,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three text signs encountered on the right side of the street at the start of the clip?",
+      "ground_truth": "1st: boost [entity_001], 2nd: Switch Now [entity_002], 3rd: FREE PHONE [entity_003]",
+      "prediction": "The first sign is 'Greenfield Supermarket', followed by 'Burger King', and then '7-Eleven'.",
+      "inference_time_sec": 3.491,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional instruction is displayed on a sign near the entrance of the gas station driveway?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_020]",
+      "prediction": "The sign near the entrance of the gas station driveway displays the instruction 'DO NOT ENTER,' indicating that vehicles are not permitted to enter that particular section of the gas station.",
+      "inference_time_sec": 4.312,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, markets, and a gas station, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The video shows a dense urban environment with numerous storefront signs, markets, and a gas station, indicating a bustling city setting.",
+      "inference_time_sec": 3.598,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible phone number area code suggests the driving location is in New York City?",
+      "ground_truth": "(917) [entity_008]",
+      "prediction": "The phone number area code '212' is visible on a sign, which is commonly associated with New York City.",
+      "inference_time_sec": 3.696,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "On how many distinct storefronts does the text VILLAGE appear in the clip?",
+      "ground_truth": "2",
+      "prediction": "The text 'VILLAGE' appears on two distinct storefronts in the clip.",
+      "inference_time_sec": 2.9,
+      "error": ""
+    }
+  ]
+}

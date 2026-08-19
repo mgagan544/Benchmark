@@ -1,0 +1,70 @@
+{
+  "video_id": 995,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/995.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the 1042 number on the first parked school bus?",
+      "ground_truth": "738-7373 [entity_005] to the right of 1042 [entity_004]",
+      "prediction": "The readable text located directly to the right of the 1042 number on the first parked school bus is \"738-7373\".",
+      "inference_time_sec": 5.5,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the first parked school bus?",
+      "ground_truth": "3",
+      "prediction": "Two distinct text instances containing numbers are visible on the first parked school bus: \"4290\" and \"738-7373\".",
+      "inference_time_sec": 5.417,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text labels Richie, Service, and 4290 are passed by the ego vehicle?",
+      "ground_truth": "1st: 4290 [entity_011], 2nd: Service [entity_012], 3rd: Richie [entity_013]",
+      "prediction": "The order in which the text labels \"Richie,\" \"Service,\" and \"4290\" are passed by the ego vehicle is as follows:\n\n1. **Richie** — This label appears on the side of the school bus that is closest to the ego vehicle as it passes by.\n2. **Service** — This label appears on the side of the school bus that is slightly further away from the ego vehicle, after \"Richie\" has passed.\n3. **4290** — This label appears on the side of the school bus that is furthest from the ego vehicle, after \"Service\" has passed",
+      "inference_time_sec": 12.265,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the first parked school bus indicates a potential driving constraint or warning?",
+      "ground_truth": "STOP [entity_002]",
+      "prediction": "The text \"STOP\" on the first parked school bus indicates a potential driving constraint or warning. This is a standard safety feature on school buses, signaling drivers to stop and yield to the bus, especially when it is picking up or dropping off students. The \"STOP\" sign is typically illuminated and visible to other drivers, ensuring safety around the bus.",
+      "inference_time_sec": 8.284,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of area does the combination of residential buildings, a public park, and school buses suggest?",
+      "ground_truth": "residential school zone",
+      "prediction": "The combination of residential buildings, a public park, and school buses suggests a suburban or urban neighborhood with a focus on education and community living. This area likely serves as a residential zone where families live, children attend school, and there is a public space for recreation and community activities. The presence of school buses indicates that this is a school district, and the residential buildings imply that it is a populated area with homes and possibly local businesses. The public park adds to the community's recreational and social aspects, making it a well-rounded and family-friendly environment.",
+      "inference_time_sec": 11.03,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific telephone area code visible on the first school bus suggests the vehicle is in New York City?",
+      "ground_truth": "718 [entity_007]",
+      "prediction": "The telephone area code visible on the first school bus is 738, which is associated with New York City. This area code is commonly used in New York City and helps identify the location of the bus.",
+      "inference_time_sec": 6.287,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the text Little Linda visible on the first parked school bus?",
+      "ground_truth": "00:02 - 00:04",
+      "prediction": "The text \"Little Linda\" is visible on the first parked school bus during the time range 0:00 to 0:03.",
+      "inference_time_sec": 5.892,
+      "error": ""
+    }
+  ]
+}

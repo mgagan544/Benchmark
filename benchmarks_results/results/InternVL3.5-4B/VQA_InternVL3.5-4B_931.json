@@ -1,0 +1,70 @@
+{
+  "video_id": 931,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/931.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
+      "ground_truth": "S E [entity_005]",
+      "prediction": "The text located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck is \"miles parts & delivery\".",
+      "inference_time_sec": 3.903,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct vehicle-mounted text elements visible on the semi-truck. The first is 'Milea Parts & Supply' on the side of the truck, the second is 'www.mileaparts.com' below the first text, and the third is 'Milea' on the back of the truck.",
+      "inference_time_sec": 6.643,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
+      "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
+      "prediction": "As the host vehicle moves forward, the text elements appear in the following order: first, 'FUEL CO' is visible on the side of a white van, followed by 'milea PARTS & JELLY' on a white truck, and finally 'HINO' on the side of a black truck.",
+      "inference_time_sec": 6.625,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "None",
+      "prediction": "No",
+      "inference_time_sec": 1.555,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The host vehicle is traveling on a highway.",
+      "inference_time_sec": 2.113,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
+      "ground_truth": "Elizabeth N.J. [entity_003]",
+      "prediction": "The text 'MILEA PAINT & DELIVERY' along with the website 'www.mileadgroup.com' on the semi-truck suggests that the vehicle is associated with a city in New Jersey, as indicated by the 'PAINT & DELIVERY' part of the text, which is a common service offered by companies in urban areas.",
+      "inference_time_sec": 7.176,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
+      "ground_truth": "1.2s to 1.3s",
+      "prediction": "The text elements FUEL CO and S J first become visible on the semi-truck in the first frame of the video.",
+      "inference_time_sec": 3.549,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 944,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/944.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the PASSENGER CARS ONLY sign located relative to the Drive SOUTH sign?",
+      "ground_truth": "Adjacent to Drive [entity_006] SOUTH [entity_007]",
+      "prediction": "The PASSENGER CARS ONLY sign is located to the left of the Drive SOUTH sign.",
+      "inference_time_sec": 3.134,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities make up the construction warning sign visible at the start of the clip?",
+      "ground_truth": "4",
+      "prediction": "The construction warning sign visible at the start of the clip contains the following text entities:\n\n- Right Lane Closed\n- 500 ft\n- 12-6",
+      "inference_time_sec": 3.647,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the low clearance warning sign, the construction warning signs, and the PASSENGER CARS ONLY sign?",
+      "ground_truth": "1st: 12-6 [entity_005] and construction signs, 2nd: PASSENGER CARS ONLY [entity_009]",
+      "prediction": "The vehicle encounters the low clearance warning sign first, then the construction warning signs, and finally the PASSENGER CARS ONLY sign.",
+      "inference_time_sec": 3.943,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What low clearance limit is indicated by the warning sign to the right of the concrete barrier?",
+      "ground_truth": "12-6 [entity_005]",
+      "prediction": "The warning sign to the right of the concrete barrier indicates a low clearance limit of 500 feet.",
+      "inference_time_sec": 3.297,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the transition from a curved ramp with construction signs to a highway depict?",
+      "ground_truth": "Highway transition zone",
+      "prediction": "The transition from a curved ramp with construction signs to a highway depicts a typical urban driving environment. The ramp is likely a part of a construction site or a road under construction, while the highway is a more typical road used for regular traffic. The presence of construction signs and barriers indicates that the area is undergoing some form of development or maintenance work.",
+      "inference_time_sec": 5.924,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction warning signs and overhead directional signs?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction warning signs and overhead directional signs is in English.",
+      "inference_time_sec": 3.005,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Drive SOUTH sign first come into view, and when does the vehicle pass it?",
+      "ground_truth": "First visible at 3.767 seconds, passed at 5.133 seconds",
+      "prediction": "The Drive SOUTH sign first comes into view at 00:00:00, and the vehicle passes it at 00:00:00.",
+      "inference_time_sec": 3.876,
+      "error": ""
+    }
+  ]
+}

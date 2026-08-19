@@ -1,0 +1,70 @@
+{
+  "video_id": 937,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/937.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the ONE WAY sign relative to the word RIGHT near the intersection?",
+      "ground_truth": "To the right of RIGHT [entity_002]",
+      "prediction": "The ONE WAY sign is positioned to the left of the word RIGHT.",
+      "inference_time_sec": 4.013,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the large promotional billboard structure on the left side of the road?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct text instances displayed on the large promotional billboard structure on the left side of the road: \"WE WERE BETTER OFF ALONE,\" \"LIFE,\" and \"MARCH 24.\"",
+      "inference_time_sec": 6.16,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the words on the street-side pole sign passed at the 6.533s mark?",
+      "ground_truth": "1st: Mount [entity_012], 2nd: Sinai [entity_013], 3rd: Queens [entity_014]",
+      "prediction": "The order of the words on the street-side pole sign passed at the 6.533s mark is: \"ONE WAY\".",
+      "inference_time_sec": 5.074,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or regulatory text must the driver follow near the Vernon Blvd intersection at the start of the clip?",
+      "ground_truth": "KEEP [entity_001] RIGHT [entity_002] and ONE WAY [entity_003]",
+      "prediction": "The driver must follow the \"KEEP RIGHT\" sign near the Vernon Blvd intersection at the start of the clip. This indicates that vehicles should stay on the right side of the road, which is a standard traffic regulation in many jurisdictions to ensure orderly and safe traffic flow.",
+      "inference_time_sec": 6.94,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a large movie billboard and multiple street signs suggest about the driving environment?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The presence of a large movie billboard and multiple street signs suggests that the driving environment is urban and likely in a city with high traffic and commercial activity. The billboard indicates that the area is frequented by pedestrians and drivers who are exposed to advertising, which is common in urban centers. The multiple street signs imply that the driver is navigating a complex network of roads, possibly with multiple intersections and directions, requiring attention to traffic rules and signage. This environment is typical of a busy city street, where drivers must be vigilant and aware of their surroundings to ensure safe travel.",
+      "inference_time_sec": 11.262,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific borough or region is suggested by the street-side pole sign passed at 6.533s?",
+      "ground_truth": "Queens [entity_014]",
+      "prediction": "The street-side pole sign passed at 6.533s suggests the location is in the borough of Queens, as it indicates \"Queens Blvd\" and \"Queens Blvd\" is a well-known street in Queens, New York City.",
+      "inference_time_sec": 7.633,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range do the movie tagline and release date on the billboard come into full view?",
+      "ground_truth": "1.967s to 2.367s",
+      "prediction": "The movie tagline and release date on the billboard come into full view between 0:00 and 0:01.",
+      "inference_time_sec": 5.043,
+      "error": ""
+    }
+  ]
+}

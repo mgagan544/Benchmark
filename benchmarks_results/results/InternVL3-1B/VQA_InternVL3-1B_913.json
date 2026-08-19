@@ -1,0 +1,70 @@
+{
+  "video_id": 913,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/913.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the right of the orange construction signboard containing the word ROAD?",
+      "ground_truth": "SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] on the digital display sign",
+      "prediction": "The readable text on the orange construction signboard is '20 MPH ROAD WORK AHEAD'.",
+      "inference_time_sec": 2.129,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?",
+      "ground_truth": "3",
+      "prediction": "Two distinct pieces of text are displayed on the orange construction signboard.",
+      "inference_time_sec": 1.375,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?",
+      "ground_truth": "1st: ROAD [entity_001], 2nd: WORK [entity_002], 3rd: AHEAD [entity_003]",
+      "prediction": "The order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5 is: '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '20 MPH ROAD WORK AHEAD', '2",
+      "inference_time_sec": 5.3,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?",
+      "ground_truth": "ROAD [entity_001] WORK [entity_002] AHEAD [entity_003] on the left side of the ramp",
+      "prediction": "Yes, a yellow road sign with the text '20 MPH ROAD WORK AHEAD' is visible in the clip. This sign indicates that there is a road work ahead, which could pose a hazard to drivers.",
+      "inference_time_sec": 2.489,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "An elevated highway construction zone",
+      "prediction": "The clip depicts a typical urban driving environment with a mix of construction and traffic elements. The presence of a bridge, elevated road, and multiple vehicles indicates a bustling cityscape. The construction signs suggest ongoing infrastructure work, while the speed display signs imply traffic regulations and safety measures. The combination of these elements paints a picture of a dynamic urban setting where both vehicular and pedestrian traffic coexist.",
+      "inference_time_sec": 3.664,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction signboard and the digital display sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction signboard and the digital display sign is in Chinese.",
+      "inference_time_sec": 1.563,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the word SPEED first become legible on the digital display sign?",
+      "ground_truth": "7.967",
+      "prediction": "The word 'SPEED' becomes legible on the digital display sign at the 10-second mark.",
+      "inference_time_sec": 1.816,
+      "error": ""
+    }
+  ]
+}

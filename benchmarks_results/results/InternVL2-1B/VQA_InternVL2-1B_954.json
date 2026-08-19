@@ -1,0 +1,70 @@
+{
+  "video_id": 954,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/954.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text EXIT relative to the word Ave on the overhead sign?",
+      "ground_truth": "directly below Ave [entity_002]",
+      "prediction": "The text \"EXIT\" is located on the right side of the overhead sign, while the word \"AVE\" is on the left side. The text \"EXIT\" is positioned above the word \"AVE,\" indicating that the EXIT is to the right of the word \"AVE.\"",
+      "inference_time_sec": 2.577,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are visible on the overhead green exit sign?",
+      "ground_truth": "4",
+      "prediction": "The green exit sign in the video has multiple distinct pieces of text. It includes the words \"EXIT ONLY\" and \"BRADLEY AV.\"",
+      "inference_time_sec": 1.813,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan?",
+      "ground_truth": "1st: passing Bradley [entity_001], 2nd: slow crawl behind red sedan",
+      "prediction": "The order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan is as follows: the red sedan is seen approaching the exit sign, which is marked with an arrow pointing to the right. The red sedan then passes the exit sign, indicating a change in direction. Following the exit sign, the red sedan continues to move forward, passing other vehicles on the road. Finally, the red sedan comes to a stop at the intersection, where it is seen waiting for the light to change, indicating a slow crawl behind the red sedan.",
+      "inference_time_sec": 4.491,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead sign, what driving action is indicated for the lane below it?",
+      "ground_truth": "EXIT [entity_003] only [entity_004]",
+      "prediction": "The text on the overhead sign indicates that the lane below it is designated for EXIT ONLY, which means that vehicles are not permitted to enter this lane. This suggests that the lane is likely a restricted area, possibly a bypass or a less-traveled route, and drivers must adhere to this restriction to avoid any potential hazards or to maintain the flow of traffic.",
+      "inference_time_sec": 3.125,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the overhead exit sign and the multi-lane road layout?",
+      "ground_truth": "highway",
+      "prediction": "The overhead exit sign indicates that the road is part of a multi-lane highway, which is a common feature in urban and suburban areas where traffic is managed to accommodate multiple lanes. The presence of multiple lanes suggests that the road is designed to handle a significant volume of traffic, which is typical of highways or major arterial roads. The road layout, with its clear lane markings and the absence of any visible congestion, implies that the highway is designed to manage high traffic volumes efficiently. The environment suggests a well-maintained and possibly well-regulated traffic flow, which is characteristic of urban or suburban highways.",
+      "inference_time_sec": 4.745,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead exit sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead exit sign is in English.",
+      "inference_time_sec": 1.196,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text Bradley first become clearly displayed on the overhead sign?",
+      "ground_truth": "Bradley [entity_001] at 2.7 seconds",
+      "prediction": "The text \"Bradley Ave\" first becomes clearly displayed on the overhead sign at the beginning of the video.",
+      "inference_time_sec": 1.538,
+      "error": ""
+    }
+  ]
+}

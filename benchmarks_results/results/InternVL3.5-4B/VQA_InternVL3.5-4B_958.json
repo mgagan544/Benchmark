@@ -1,0 +1,70 @@
+{
+  "video_id": 958,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/958.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+      "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
+      "prediction": "The parking sign to the left of the license registration AT * 665J reads \"PARKING ONLY 9AM-5PM\".",
+      "inference_time_sec": 4.027,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances on the automotive service building. The first is 'AUTO CARE' in red letters on a white background, the second is 'SERVICE' in white letters on a red background, and the third is 'SALE' in yellow letters on a black background.",
+      "inference_time_sec": 6.252,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+      "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
+      "prediction": "The first text instance is 'fame', the second is 'famous', and the third is 'famous game'.",
+      "inference_time_sec": 3.738,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+      "ground_truth": "TURNS [entity_010]",
+      "prediction": "The text 'NO TURN ON RED' is visible on a regulatory traffic sign across from the DAK sign, indicating that vehicles are not permitted to make a turn on a red light. This sign is a standard traffic regulation designed to enhance safety by preventing vehicles from turning when the traffic signal is red, which could lead to potential collisions with oncoming traffic or pedestrians. The presence of such signs is crucial in urban environments where traffic flow is dense and the risk of accidents is higher. The sign is positioned on the right side of the road, near the sidewalk, and is easily visible to drivers approaching the intersection. It serves as a clear directive",
+      "inference_time_sec": 11.778,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The presence of storefronts, digital billboards, and commercial signs suggests a commercial or business district.",
+      "inference_time_sec": 3.31,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+      "ground_truth": "New York City, New York State",
+      "prediction": "The phone number area code and inspection sign text suggest the state of Illinois and the city of Chicago.",
+      "inference_time_sec": 3.114,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+      "ground_truth": "0.0s to 0.233s",
+      "prediction": "The digital billboard texts THE, DISPLAYERS, and Snycom are tracked at the start of the clip for a time range of 0 to 5 seconds.",
+      "inference_time_sec": 4.33,
+      "error": ""
+    }
+  ]
+}

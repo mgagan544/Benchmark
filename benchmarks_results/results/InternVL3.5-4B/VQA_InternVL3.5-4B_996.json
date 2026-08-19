@@ -1,0 +1,70 @@
+{
+  "video_id": 996,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/996.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of Messubim relative to NEXT EXITS on the overhead gantry?",
+      "ground_truth": "To the left of NEXT EXITS [entity_006]",
+      "prediction": "Messubim is to the left of NEXT EXITS.",
+      "inference_time_sec": 2.6,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "There are at least five distinct license plates visible on vehicles throughout the clip.",
+      "inference_time_sec": 2.887,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the code 67. 487. 75, the roadside sign showing Mesubim, and the overhead gantry displaying NEXT EXITS are encountered?",
+      "ground_truth": "1st: 67. 487. 75 [entity_002], 2nd: Mesubim [entity_003], 3rd: NEXT EXITS [entity_006]",
+      "prediction": "The code 67. 487. 75 is first encountered, followed by the roadside sign showing Mesubim, and then the overhead gantry displaying NEXT EXITS.",
+      "inference_time_sec": 4.739,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the roadside sign visible on the right, what driving action is indicated at a distance of 1000 meters?",
+      "ground_truth": "Exit at the Mesubim [entity_003] interchange [entity_005]",
+      "prediction": "The roadside sign on the right indicates a 'RED' light ahead at a distance of 1000 meters. This suggests that the driver should prepare to stop or slow down as the traffic light is expected to turn red. The sign is green with white text and is positioned on a metal pole alongside the road, providing clear visibility to drivers. The presence of such signage is crucial for traffic management, as it allows drivers to anticipate changes in traffic flow and adjust their speed accordingly. The sign's placement and color contrast with the surrounding environment ensure that it is easily noticeable, even from a distance. This is an example of how infrastructure aids",
+      "inference_time_sec": 11.722,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of overhead gantries, exit signs, and multiple license plates?",
+      "ground_truth": "Multi-lane highway",
+      "prediction": "The presence of overhead gantries with exit signs and multiple license plates suggests a busy urban or suburban driving environment, likely in a city or near a city.",
+      "inference_time_sec": 3.946,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific location names visible on the overhead gantry suggest the region or country this highway is located in?",
+      "ground_truth": "Messubim [entity_007], Gannot [entity_008], and HaShiv's [entity_009]",
+      "prediction": "The overhead gantry displays location names such as 'Rabat-Salé', 'Benslimane', 'Marrakech', and 'Fez', which are all cities in Morocco. This suggests that the highway is located in Morocco, as these are well-known cities in that country. The presence of these location names on the gantry is a clear indicator of the region or country the highway is situated in.",
+      "inference_time_sec": 8.455,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate 55:007 34 first become visible in the clip?",
+      "ground_truth": "6.933 seconds",
+      "prediction": "The license plate 55:007 34 first becomes visible in the clip at the beginning, as it is seen on the white car directly ahead in the center lane.",
+      "inference_time_sec": 4.712,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 945,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/945.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located to the left of the regulatory notice warning about doubled speeding fines?",
+      "ground_truth": "ROAD [entity_011] WORK [entity_012] AHEAD [entity_004] sign",
+      "prediction": "To the left of the regulatory notice warning about doubled speeding fines, there is a sign indicating a 'No Parking' zone.",
+      "inference_time_sec": 2.033,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 0.2 seconds and 2.0 seconds?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct, legible text instances encountered by the vehicle between 0.2 seconds and 2.0 seconds.",
+      "inference_time_sec": 1.898,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence in which the speed limit sign, the sidewalk closed placard, and the road work warning sign are encountered?",
+      "ground_truth": "1st: ROAD [entity_011] WORK [entity_012] AHEAD [entity_004], 2nd: SPEED [entity_013] LIMIT [entity_014], 3rd: SIDEWALK [entity_015] closed FOR CONST [entity_016]",
+      "prediction": "The speed limit sign is encountered first, followed by the sidewalk closed placard, and then the road work warning sign.",
+      "inference_time_sec": 1.735,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the speed limit sign located to the left of the sidewalk closed placard?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014] of 30",
+      "prediction": "The speed limit sign to the left of the sidewalk closed placard indicates a speed limit of 30, suggesting that the vehicle is adhering to a speed limit of 30 miles per hour on the road.",
+      "inference_time_sec": 2.474,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the signs for exits, street names, and work zones, what kind of driving environment is depicted?",
+      "ground_truth": "Urban highway construction zone",
+      "prediction": "The video depicts a typical urban driving environment with signs for exits, street names, and work zones. The presence of construction barriers and the 'Road Lane Closed Ahead' sign indicates that the driver is navigating through an area undergoing construction or maintenance. The overcast sky and the presence of snow on the ground suggest that the weather is cold and possibly winter. The driver is likely following traffic rules and maintaining a safe distance from the construction zone to ensure the smooth passage of vehicles and pedestrians.",
+      "inference_time_sec": 4.318,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street names visible on the overhead gantry suggest a specific city? What text supports this?",
+      "ground_truth": "New York City, supported by E 125 St [entity_019] and 2Ave [entity_021]",
+      "prediction": "Yes, the street names visible on the overhead gantry suggest a specific city. The text '12 St' supports this observation.",
+      "inference_time_sec": 1.944,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the regulatory sign warning about doubled speeding fines first become legible, and when does it become illegible?",
+      "ground_truth": "Legible at 0.467 seconds, illegible at 0.6 seconds",
+      "prediction": "The regulatory sign warning about doubled speeding fines becomes legible at the timestamp of 00:10:00, and it becomes illegible at the timestamp of 00:10:15.",
+      "inference_time_sec": 2.483,
+      "error": ""
+    }
+  ]
+}

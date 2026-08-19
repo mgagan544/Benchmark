@@ -1,0 +1,70 @@
+{
+  "video_id": 951,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/951.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the storefront extension directly to the right of the 4CARS decals?",
+      "ground_truth": "VILLAGE [entity_009] to the right of 4CARS [entity_006] decals",
+      "prediction": "The text displayed on the storefront extension directly to the right of the 4CARS decals is \"GREEN VILLAGE SUPERMARKET\".",
+      "inference_time_sec": 5.125,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 2.2s and 2.9s?",
+      "ground_truth": "6",
+      "prediction": "2",
+      "inference_time_sec": 3.019,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three text signs encountered on the right side of the street at the start of the clip?",
+      "ground_truth": "1st: boost [entity_001], 2nd: Switch Now [entity_002], 3rd: FREE PHONE [entity_003]",
+      "prediction": "The order of the first three text signs encountered on the right side of the street at the start of the clip is: \"GREEN VILLAGE SUPERMARKET,\" \"GULF,\" and \"KEEP RIGHT.\"",
+      "inference_time_sec": 6.962,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional instruction is displayed on a sign near the entrance of the gas station driveway?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_020]",
+      "prediction": "The sign near the entrance of the gas station driveway displays the instruction \"KEEP RIGHT.\"",
+      "inference_time_sec": 4.291,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, markets, and a gas station, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The driving environment depicted is urban, characterized by a high density of storefronts, markets, and a gas station. This suggests a bustling city street with commercial activity, likely in a downtown or suburban commercial district. The presence of multiple businesses and a gas station indicates a well-traveled area with significant foot and vehicle traffic, typical of urban centers. The overhead bridge and traffic lights further reinforce the urban setting, as they are common infrastructure in cities to manage traffic flow and connectivity.",
+      "inference_time_sec": 10.001,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible phone number area code suggests the driving location is in New York City?",
+      "ground_truth": "(917) [entity_008]",
+      "prediction": "The visible phone number area code 212 suggests the driving location is in New York City.",
+      "inference_time_sec": 4.522,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "On how many distinct storefronts does the text VILLAGE appear in the clip?",
+      "ground_truth": "2",
+      "prediction": "2",
+      "inference_time_sec": 3.171,
+      "error": ""
+    }
+  ]
+}

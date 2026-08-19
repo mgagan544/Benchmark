@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "938",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What readable sign is located directly to the left of the Parking sign on the overhead gantry, which becomes visible at 0.767s?",
+        "answer": "KEEP LEFT [entity_005] signboard, to the left of Parking [entity_003] sign"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many street, regulatory, or airport signs are identified in the scene description, including those passed between 0.0s and 2.933s?",
+        "answer": "8",
+        "reasoning": "The 8 signs are Airport [entity_001], Exit [entity_002], KEEP RIGHT [entity_006], Terminal [entity_004], Parking [entity_003], KEEP LEFT [entity_005], Blue Parking [entity_007], and ONE WAY [entity_009]."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the chronological order in which the Airport sign, the Blue Parking sign, and the ONE WAY sign are first encountered by the camera vehicle?",
+        "answer": "1st: Airport [entity_001], 2nd: Blue Parking [entity_007], 3rd: ONE WAY [entity_009]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What regulatory sign on a roadside post, passed at 2.933s, indicates a directional constraint for drivers?",
+        "answer": "ONE WAY [entity_009] sign"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment is depicted, given the presence of the Terminal and Parking signs on the gantry and the Blue Parking Garage?",
+        "answer": "Airport terminal roadway",
+        "reasoning": "The presence of Terminal [entity_004], Parking [entity_003], and Blue Parking Garage [entity_008] indicates an airport terminal roadway."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is used for the text on the overhead gantry signs and the ONE WAY sign?",
+        "answer": "English",
+        "reasoning": "The signs use English words such as Airport [entity_001], Terminal [entity_004], and ONE WAY [entity_009]."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the Blue Parking Garage structure first become fully visible on the left side of the roadway?",
+        "answer": "2.133s with Blue Parking Garage [entity_008]"
+      }
+    ]
+  }
+]

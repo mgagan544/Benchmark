@@ -1,0 +1,70 @@
+{
+  "video_id": 927,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/927.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text New Jersey relative to the G W Bridge text?",
+      "ground_truth": "Below G W Bridge [entity_003]",
+      "prediction": "The text \"New Jersey\" is located below the text \"G W Bridge\" on the same green highway sign.",
+      "inference_time_sec": 4.595,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the overhead gantry signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are 5 distinct text instances displayed on the overhead gantry signs in this clip.",
+      "inference_time_sec": 4.321,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?",
+      "ground_truth": "1st: NORTH [entity_002]; 2nd: New Jersey [entity_008]",
+      "prediction": "The text \"NORTH\" becomes visible first, followed by \"New Jersey\" as the vehicle drives.",
+      "inference_time_sec": 4.465,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?",
+      "ground_truth": "NO TRUCKS [entity_006] and ALL TRUCKS TO NJ [entity_007]",
+      "prediction": "The text \"ALL TRUCKS TO NJ\" on the overhead gantry indicates driving restrictions or instructions for trucks.",
+      "inference_time_sec": 4.704,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the density and type of overhead text suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The density and type of overhead text suggest that the driving environment is a busy, well-marked highway with multiple exits and directional guidance. The presence of multiple green signs with clear directional information (e.g., \"Cr Bronx Expy W 178 St,\" \"G W Bridge New Jersey\") indicates that drivers need to be aware of various destinations and exits, which is typical of a major highway with high traffic volume. The signs also include specific instructions such as \"ALL TRUCKS TO NJ\" and \"NO TRUCKS,\" which imply that this highway serves as a critical route for both passenger and commercial vehicles, with specific regulations",
+      "inference_time_sec": 12.308,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which metropolitan area is suggested by the visible overhead signs, and what text supports this?",
+      "ground_truth": "New York metropolitan area, supported by Cr Bronx Expy [entity_004] and New Jersey [entity_008]",
+      "prediction": "The metropolitan area suggested by the visible overhead signs is New York City, as indicated by the text \"Cr Bronx Expy W 178 St\" on the central sign. This refers to the Bronx Expressway, which is part of the New York City highway system. The signs also mention \"G W Bridge New Jersey,\" indicating proximity to the George Washington Bridge, which connects New York City to New Jersey. The presence of these signs suggests the driver is in or near the New York City metropolitan area.",
+      "inference_time_sec": 10.513,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?",
+      "ground_truth": "0.033s",
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.34,
+      "error": ""
+    }
+  ]
+}

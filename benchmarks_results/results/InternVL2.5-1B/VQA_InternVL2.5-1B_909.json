@@ -1,0 +1,70 @@
+{
+  "video_id": 909,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/909.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the THRU road text relative to the LANE road text?",
+      "ground_truth": "To the left of LANE [entity_003]",
+      "prediction": "The spatial position of the THRU road text is to the right of the LANE road text, indicating that the THRU lane is on the right side of the lane.",
+      "inference_time_sec": 2.06,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct mounted signs are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct mounted signs visible in this clip. One is a blue sign with white lettering, and the other is a white sign with black lettering.",
+      "inference_time_sec": 1.965,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the three road text markings are first encountered in the clip?",
+      "ground_truth": "THRU [entity_001] 1st, BUS [entity_002] 2nd, LANE [entity_003] 3rd",
+      "prediction": "The first road text marking encountered is 'LANE', followed by 'THRU', and finally 'BUS'.",
+      "inference_time_sec": 1.703,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is required near the zebra-striped pedestrian crosswalk based on the visible signage?",
+      "ground_truth": "Stop at the STOP [entity_004] sign",
+      "prediction": "The explicit driving action required near the zebra-striped pedestrian crosswalk is to stop. This is indicated by the presence of a red stop sign, which is a universal symbol for stopping vehicles at pedestrian crossings. The stop sign is positioned at the edge of the crosswalk, ensuring that drivers are aware of the pedestrian's right of way. The stop sign's placement and the red color are consistent with standard traffic regulations for pedestrian crossings, which are typically marked with red signs to alert drivers to halt their vehicles.",
+      "inference_time_sec": 4.437,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment does the mix of waiting structures and road markings suggest?",
+      "ground_truth": "Airport shuttle terminal",
+      "prediction": "The mix of waiting structures and road markings suggests a typical urban or suburban driving environment. The presence of the bus stop shelter indicates a public transportation hub, which is common in areas with frequent public transit. The road markings, including the 'LANE THRU BUS' sign, are standard for guiding vehicles through designated lanes, ensuring safety and order in traffic flow. The overall setting appears to be a well-maintained roadway with clear signage and infrastructure, typical of a city or suburban area designed for organized traffic movement.",
+      "inference_time_sec": 4.394,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the road markings and signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "The road markings and signs in this clip are in English.",
+      "inference_time_sec": 1.397,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the green directional EXIT sign first come into full view?",
+      "ground_truth": "EXIT [entity_005] sign at 5.933 seconds",
+      "prediction": "The green directional EXIT sign first comes into full view at the timestamp of 00:15:00.",
+      "inference_time_sec": 1.65,
+      "error": ""
+    }
+  ]
+}

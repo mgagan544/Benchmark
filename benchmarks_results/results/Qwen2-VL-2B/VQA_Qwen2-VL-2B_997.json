@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "The right side of the marked zebra crossing as the vehicle approaches the junction is a grassy area.",
+      "inference_time_sec": 3.216,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "There are two distinct signboards containing numbers on the right side of the road at the start of the clip.",
+      "inference_time_sec": 3.21,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "The landmark encountered on the far left after the vehicle passes the signboard 9999 is a palm tree.",
+      "inference_time_sec": 3.349,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "The signboard with the number \"9999\" appears to be a billboard or advertisement, but without additional context or information, it is not possible to determine any explicit driving actions or constraints implied by the number. The signboard could be promoting a product, service, or event, but without more details, it is not possible to provide a specific answer.",
+      "inference_time_sec": 5.143,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road, a gas station, and a signboard suggests that the driving environment is likely to be busy and well-maintained. The curved road indicates that the area might have some traffic congestion, but the presence of a gas station suggests that there is a nearby fuel source, which can be convenient for drivers. The signboard may provide information about the location or the services available, which can be helpful for drivers navigating through the area.",
+      "inference_time_sec": 7.047,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The text on the signboard on the right appears to be in Hebrew. The script is Hebrew, which is a language spoken in Israel. The number \"99\" is also visible on the signboard.",
+      "inference_time_sec": 3.966,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard 9999 first becomes visible at 00:00:00, and it is passed by the ego vehicle at 00:00:00.",
+      "inference_time_sec": 3.953,
+      "error": ""
+    }
+  ]
+}

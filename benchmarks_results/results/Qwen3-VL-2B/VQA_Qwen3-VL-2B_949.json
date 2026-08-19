@@ -1,0 +1,70 @@
+{
+  "video_id": 949,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/949.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located directly to the right of the building section displaying FAITH at 301-303?",
+      "ground_truth": "BBF PRINTING [entity_014] to the right of FAITH [entity_012]",
+      "prediction": "The business name located directly to the right of the building section displaying FAITH at 301-303 is K&W CHUNG.",
+      "inference_time_sec": 3.016,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned in the text for parked vehicles?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates mentioned in the text for parked vehicles: one on a black car and another on a white car.",
+      "inference_time_sec": 2.698,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle passes the FAITH storefront, the BBF PRINTING storefront, and the DOLLAR TREE plaza?",
+      "ground_truth": "1st: FAITH [entity_012], 2nd: BBF PRINTING [entity_014], 3rd: DOLLAR [entity_032] TREE [entity_033]",
+      "prediction": "The vehicle passes the FAITH storefront first, followed by the BBF PRINTING storefront, and then the DOLLAR TREE plaza.",
+      "inference_time_sec": 2.969,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional text is displayed on the traffic post located on the sidewalk corner near the pedestrian?",
+      "ground_truth": "PED [entity_029] SIGNAL [entity_030] USE [entity_031]",
+      "prediction": "The traffic post on the sidewalk corner near the pedestrian displays the text \"USE PEL SIGNAL\".",
+      "inference_time_sec": 2.475,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, promotional signs, and retail plaza visible in this clip?",
+      "ground_truth": "commercial district",
+      "prediction": "The driving environment suggests a commercial and urban setting, likely in a densely populated area with a mix of retail and business establishments. The presence of a \"Dollar Tree\" store, \"BBF Printing & Signs,\" and \"Auto Collision Special\" indicates a focus on consumer goods and services, with a strong emphasis on retail and automotive services. The street is lined with parked cars and a variety of vehicles, suggesting a busy and active commercial zone. The presence of a \"USE PETS SIGNAL\" sign and a \"CITY\" sign further supports the idea of a well-developed urban area with a focus on both residential and commercial activity.",
+      "inference_time_sec": 7.378,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the visible storefront signs and promotional text in this clip?",
+      "ground_truth": "English",
+      "prediction": "The visible storefront signs and promotional text in the clip are primarily in English.",
+      "inference_time_sec": 2.374,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range does the DOLLAR TREE retail plaza and its entrance signs remain visible in the clip?",
+      "ground_truth": "4.3 seconds to 6.9 seconds",
+      "prediction": "The DOLLAR TREE retail plaza and its entrance signs remain visible from 0:00 to 0:03.",
+      "inference_time_sec": 3.169,
+      "error": ""
+    }
+  ]
+}

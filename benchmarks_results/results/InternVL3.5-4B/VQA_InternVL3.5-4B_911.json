@@ -1,0 +1,70 @@
+{
+  "video_id": 911,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/911.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the storefront displaying Clifton Tile relative to the sports facility operated by SDA?",
+      "ground_truth": "To the right of SDA [entity_007]",
+      "prediction": "The storefront displaying Clifton Tile is located to the right of the sports facility operated by SDA.",
+      "inference_time_sec": 3.325,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the buildings and billboard between House 46 and the parked minivan?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct text instances containing numbers visible. On the billboard, the number '46' is part of 'House 46'. On the building to the right, the number '24' is visible on the sign '24 HOURS'. Additionally, there is a phone number '914-241-0000' on the same building.",
+      "inference_time_sec": 7.902,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds?",
+      "ground_truth": "1st: HOUSE 46 [entity_001], 2nd: 1075 [entity_004], 3rd: CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "Clifton Tile, House 46, the building at 1075",
+      "inference_time_sec": 3.033,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37?",
+      "ground_truth": "EXIT [entity_031] ONLY [entity_032], DO NOT [entity_033] ENTRY [entity_034]",
+      "prediction": "The text 'NO TURN' is visible on a sign at the driveway, indicating that vehicles are not permitted to make a turn at this location. This sign is positioned on the right side of the road, near the entrance way displaying the numbers 35-37, which likely refers to a range of addresses or a specific location within the commercial area. The presence of this sign suggests that the area is designed to manage traffic flow and ensure safety, possibly due to the proximity of the commercial establishments or the need to direct traffic towards a particular route. The sign is clearly visible against the backdrop of the commercial buildings and the sky, making",
+      "inference_time_sec": 11.735,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, tile shops, and commercial billboards, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts a commercial driving environment with a mix of retail and service establishments. The presence of multiple storefronts, including a tile shop, suggests a business district with various commercial activities. The density of commercial billboards and signs indicates a well-developed area with advertising and marketing efforts targeting local traffic. The variety of businesses and the infrastructure, such as the highway and utility poles, point to a suburban or semi-urban setting where commercial and residential areas coexist. The traffic flow and the presence of multiple vehicles, including a car directly ahead, imply a moderate to busy driving environment, typical of a commercial thoroughfare.",
+      "inference_time_sec": 12.882,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any business names visible in the clip suggest a specific regional location or city name?",
+      "ground_truth": "CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "Yes, the business \"kroger\" is visible, which is a well-known regional supermarket chain, suggesting the location could be in a region where Kroger operates.",
+      "inference_time_sec": 4.86,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the building at address 1075 first come into view?",
+      "ground_truth": "Between 1.6 and 1.86 seconds",
+      "prediction": "The building at address 1075 first comes into view at timestamp 0:00.",
+      "inference_time_sec": 3.384,
+      "error": ""
+    }
+  ]
+}

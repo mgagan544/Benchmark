@@ -1,0 +1,51 @@
+[
+  {
+    "video_id": "906",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
+        "answer": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are displayed on the parked white box truck?",
+        "answer": "4",
+        "reasoning": "The parked white box truck displays Soundtons [entity_003], 718-392-4001 [entity_004], FOLLRS, [entity_021], and INC. [entity_019], which equals 4 distinct text instances."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
+        "answer": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
+        "answer": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
+        "answer": "Commercial and industrial district",
+        "reasoning": "The presence of Blinks [entity_012] Deli [entity_010] with an ATM [entity_002] sign and industrial addresses like 43-01 35th St [entity_015] indicates a mixed commercial and industrial area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
+        "answer": "L.I.C., N.Y. [entity_016]"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
+        "answer": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]"
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 926,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/926.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the safety sign marked with AMER relative to the vehicle with license plate T679966C?",
+      "ground_truth": "AMER [entity_008] is to the right of T679966C [entity_007]",
+      "prediction": "The safety sign marked with AMER is located to the right of the vehicle with license plate T679966C. It is positioned at a distance that allows for visibility from the vehicle's perspective, indicating that it is not directly in front of the vehicle but rather to the right.",
+      "inference_time_sec": 3.398,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to the highway direction sign pointing toward the wait area?",
+      "ground_truth": "4",
+      "prediction": "Based on the given video, there are two distinct text instances that belong to the highway direction sign pointing toward the wait area. These instances are the sign that reads \"Exit 4\" and the sign that reads \"Exit 4.\"",
+      "inference_time_sec": 2.871,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the airport facility sign, the highway direction sign, and the license plate are encountered between 0.9 and 5.0 seconds?",
+      "ground_truth": "1st: AMERICAN [entity_001] AIRLINES [entity_002], 2nd: Long [entity_003] Term [entity_004] Wait [entity_005] Area [entity_006], 3rd: T679966C [entity_007]",
+      "prediction": "Between 0.9 and 5.0 seconds, the order of the airport facility sign, highway direction sign, and license plate encountered is as follows:\n\n1. Airport facility sign: The sign is seen on the left side of the highway, indicating directions and facilities.\n2. Highway direction sign: The sign is seen on the right side of the highway, indicating directions and directions.\n3. License plate: The license plate is seen on the rightmost car in the lane, indicating the vehicle's registration.",
+      "inference_time_sec": 4.318,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint? If so, what does it say and where is it located?",
+      "ground_truth": "AMER [entity_008] on a construction notice at the airport construction site",
+      "prediction": "Yes, there is visible text in the clip that indicates a hazard or driving constraint. It is located on a green sign located on the right side of the road, near the highway. The text on the sign reads \"No Parking,\" which is a warning to drivers to avoid parking in that area.",
+      "inference_time_sec": 2.829,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible text mentioning airlines and long term wait area, what type of driving environment is depicted?",
+      "ground_truth": "Airport access road",
+      "prediction": "The visible text mentioning airlines and a long-term wait area suggests that the driving environment depicted is a commercial airport. The presence of a long-term wait area indicates that the airport is likely a hub for long-haul flights, where passengers can wait for their flights. The infrastructure, including the construction barriers and the construction crane, also supports the idea that this is a busy, operational airport.",
+      "inference_time_sec": 3.366,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the airport hangar and highway direction sign written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the airport hangar and highway direction sign is written in English, specifically \"Airport\" and \"Exit 4.\" The script appears to be a mix of English and possibly other languages, but the exact language cannot be determined from the image alone.",
+      "inference_time_sec": 2.605,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the gold lead SUV become clearly visible?",
+      "ground_truth": "4.0 seconds for T679966C [entity_007]",
+      "prediction": "The license plate on the gold lead SUV becomes clearly visible at the beginning of the video, just before the SUV is seen driving down the highway.",
+      "inference_time_sec": 1.791,
+      "error": ""
+    }
+  ]
+}

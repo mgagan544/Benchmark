@@ -1,0 +1,70 @@
+{
+  "video_id": 956,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/956.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What instruction is located directly to the left of the SERVICE signboard?",
+      "ground_truth": "PERMIT [entity_014] to the left of SERVICE [entity_013]",
+      "prediction": "The instruction located directly to the left of the SERVICE signboard is \"DO NOT ENTER.\"",
+      "inference_time_sec": 3.12,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text instances are visible on the white transport van between 1.133s and 1.767s?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct vehicle-mounted text instances visible on the white transport van. The first is 'POLICE' written in blue on the side of the van, and the second is 'NYPD' also written in blue on the side of the van. These text instances are visible throughout the specified time frame, indicating the vehicle's affiliation with the New York Police Department.",
+      "inference_time_sec": 7.488,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead sign texts are encountered at the very beginning of the clip?",
+      "ground_truth": "1st: 7314 [entity_001], 2nd: EXIT [entity_002]",
+      "prediction": "The order is: \"Exit 10A Brooklyn Br\" on the left, \"Exit 10B Brooklyn Br\" in the middle, and \"Exit 11 Brooklyn Br\" on the right.",
+      "inference_time_sec": 5.183,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What weight limit restriction is displayed on the gantry to restrict vehicle weight?",
+      "ground_truth": "8000 Lbs [entity_022]",
+      "prediction": "The gantry displays a weight limit of 10 tons.",
+      "inference_time_sec": 2.576,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, lane-use restrictions, and weight limits, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The video depicts a driving environment that is urban and regulated, with clear signage indicating exits, lane restrictions, and weight limits. This suggests a controlled and structured traffic system, likely in a city or metropolitan area.",
+      "inference_time_sec": 4.882,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific city is indicated by the markings on the white transport van?",
+      "ground_truth": "NYC [entity_003]",
+      "prediction": "The markings on the white transport van indicate that it is associated with the city of new york.",
+      "inference_time_sec": 3.217,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the vehicle-mounted markings NYC, CHILDREN'S, SERVICES, DIV, and OF SOUTH AND FAMILY JUSTICE continuously visible on the white transport van?",
+      "ground_truth": "1.133s to 1.767s",
+      "prediction": "The vehicle-mounted markings are continuously visible on the white transport van from the beginning to the end of the video.",
+      "inference_time_sec": 3.485,
+      "error": ""
+    }
+  ]
+}

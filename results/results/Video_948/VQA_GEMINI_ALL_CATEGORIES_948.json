@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "948",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Which sign, located directly below the FDR DR SOUTH sign on the overhead gantry, comes into view between 2.4 and 2.567 seconds?",
+        "answer": "LEFT 2 LANES [entity_006]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct signs containing lane designations or lane restrictions are visible on the overhead gantry before the vehicle enters the steel truss structure?",
+        "answer": "3",
+        "reasoning": "The signs with lane designations or restrictions are RIGHT 2 LANES [entity_003], LEFT 2 LANES [entity_006], and PASSENGER CARS ONLY [entity_004], totaling 3."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the signs 2 Ave-12S st, FDR DR SOUTH, and FINE + POINTS are encountered by the vehicle?",
+        "answer": "1st: 2 Ave-12S st [entity_001], 2nd: FDR DR SOUTH [entity_005], 3rd: FINE + POINTS [entity_010]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What warning text, located to the left of the STRICTLY ENFORCED sign, becomes visible at 2.733 seconds to indicate traffic penalties?",
+        "answer": "FINE + POINTS [entity_010]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What does the mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggest about the driving environment?",
+        "answer": "Expressway bridge approach",
+        "reasoning": "The presence of highway signs like FDR DR SOUTH [entity_005], Harlem RIv Dr [entity_002], lane restrictions, and speed enforcement indicates a major highway or expressway bridge approach."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific city is suggested by the highway names FDR DR SOUTH and Harlem RIv Dr visible on the overhead gantry?",
+        "answer": "New York City",
+        "reasoning": "The signs FDR DR SOUTH [entity_005] (Franklin D. Roosevelt East River Drive) and Harlem RIv Dr [entity_002] (Harlem River Drive) are iconic highways in New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range is the lead blue vehicle with license plate FOD-3149 tracked at the beginning of the clip?",
+        "answer": "00:00 to 00:02",
+        "reasoning": "The temporal description states that the ego-vehicle trails the lead blue Honda CR-V with license plate FOD-3149 [entity_012] from 00:00 to 00:02."
+      }
+    ]
+  }
+]

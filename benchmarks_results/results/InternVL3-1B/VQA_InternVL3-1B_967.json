@@ -1,0 +1,70 @@
+{
+  "video_id": 967,
+  "model": "InternVL3-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/967.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the left of MARTIAL?",
+      "ground_truth": "RESTAURANT BAR [entity_008]",
+      "prediction": "The text \"Martial Arts\" is located to the left of MARTIAL.",
+      "inference_time_sec": 2.286,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are associated with the EL TEQ storefront?",
+      "ground_truth": "3",
+      "prediction": "Three",
+      "inference_time_sec": 0.974,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for DENTIST, CHURCH, and BUSES ONLY are encountered between 1.3s and 2.8s?",
+      "ground_truth": "1st: DENTIST [entity_009], 2nd: CHURCH [entity_010], 3rd: BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The signs for DENTIST, CHURCH, and BUSES ONLY are encountered in the following order: 1.3s - the 'DENTIST' sign is encountered, 2.8s - the 'CHURCH' sign is encountered, and 3.5s - the 'BUSES ONLY' sign is encountered.",
+      "inference_time_sec": 3.403,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the signs near the DENTIST sign constrains vehicle movement or lane usage?",
+      "ground_truth": "ONE WAY [entity_013], BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The text on the signs near the DENTIST sign reads 'HALAL', 'RESTAURANT BAR', and 'EL TECA RESTAURANT'. These signs likely indicate the types of businesses that are allowed or restricted in the area, potentially affecting vehicle movement or lane usage.",
+      "inference_time_sec": 2.845,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible text, such as MARTIAL ARTS, HALAL, and PARA TI, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts a typical urban driving environment with a mix of commercial establishments and residential buildings. The presence of various shops, including a martial arts studio and a restaurant, indicates a diverse and active street scene. The vehicles, including a silver SUV and a white sedan, suggest a busy traffic flow typical of city streets. The pedestrians, including a person walking with a child on a scooter, add to the dynamic nature of the scene, reflecting a bustling urban setting.",
+      "inference_time_sec": 4.343,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location is suggested by the area codes in the phone numbers on the storefronts?",
+      "ground_truth": "New York City",
+      "prediction": "The area codes in the phone numbers on the storefronts suggest that the location is in a region with multiple languages spoken, likely a multicultural area. The presence of both English and Spanish area codes indicates that the area is likely in a city with significant Hispanic or Latino populations, where both languages are commonly used. This is further supported by the presence of a restaurant bar, which is a common feature in Spanish-speaking countries, and the presence of a martial arts studio, which is also a popular choice for both Spanish-speaking and English-speaking communities.",
+      "inference_time_sec": 4.69,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AC-91331 first become legible in the clip?",
+      "ground_truth": "0.5s",
+      "prediction": "The license plate AC-91331 becomes legible at the beginning of the video, just after the car passes the 'Martial Arts' shop.",
+      "inference_time_sec": 2.08,
+      "error": ""
+    }
+  ]
+}

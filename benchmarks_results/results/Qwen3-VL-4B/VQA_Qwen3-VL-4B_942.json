@@ -1,0 +1,70 @@
+{
+  "video_id": 942,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/942.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text Without relative to the Studio Prices text on the first billboard?",
+      "ground_truth": "To the right of Studio Prices [entity_003]",
+      "prediction": "The text \"Without\" is positioned directly above the text \"Studio Prices\" on the first billboard.",
+      "inference_time_sec": 4.415,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to street, highway, or regulatory signs in this clip?",
+      "ground_truth": "6",
+      "prediction": "3",
+      "inference_time_sec": 3.096,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the billboard displaying Studio Closses and the billboard displaying eatenlightened.com are encountered?",
+      "ground_truth": "1st: Studio Closses [entity_001], 2nd: eatenlightened.com [entity_009]",
+      "prediction": "The billboard displaying \"Studio Classes\" is encountered first, followed by the billboard displaying \"eatenlightened.com\".",
+      "inference_time_sec": 4.72,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a height restriction constraint? If so, what does it say and where is it located?",
+      "ground_truth": "12-6 [entity_013] adjacent to Lexington Avenue [entity_011]",
+      "prediction": "Yes, there is visible text in the clip that indicates a height restriction constraint. The text reads “20 FT” and is located on a sign positioned on the right side of the road, near the bridge. This sign is typically used to inform drivers of the maximum height allowed for vehicles passing under the bridge, ensuring safety and preventing damage to the structure or vehicles.",
+      "inference_time_sec": 9.769,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible highway signs and large billboards, what kind of driving environment is depicted?",
+      "ground_truth": "Highway overpass or elevated highway ramp",
+      "prediction": "The driving environment depicted is an urban highway setting. The presence of large billboards, such as the one advertising \"24 Fitness\" and \"Enlightened Ice Cream,\" suggests a commercial area with advertising aimed at drivers and pedestrians. The highway signs, including directional signs for \"For Drive South\" and \"Lexington Avenue,\" indicate that the driver is navigating through a city with multiple routes and destinations. The traffic lights and the presence of multiple lanes suggest a busy, well-maintained urban roadway. The backdrop of tall buildings further confirms that this is a city environment, likely with a mix of residential, commercial, and possibly industrial areas",
+      "inference_time_sec": 12.318,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street or highway names visible on the overhead signs suggest a specific city? If so, what text supports this?",
+      "ground_truth": "New York City, supported by FDR Drive SOUTH [entity_010] and Lexington Avenue [entity_011]",
+      "prediction": "Yes, the overhead signs indicate specific street or highway names that suggest the location is in a major urban area, likely in the United States. The text on the green overhead signs reads “FOR Drive SOUTH” and “Lexington Avenue,” which are common street names in New York City. The presence of “Lexington Avenue” is particularly telling, as it is a well-known major thoroughfare in New York City, running through Manhattan. Additionally, the sign for “FOR Drive SOUTH” is consistent with the naming conventions of New York City’s streets, which often include “Drive” or “Avenue” in their names. The combination of",
+      "inference_time_sec": 14.715,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the overhead highway sign for 2 Avenue remain visible to the camera vehicle?",
+      "ground_truth": "8.733 seconds to 9.367 seconds",
+      "prediction": "The overhead highway sign for 2 Avenue remains visible to the camera vehicle from 0:00 to 0:04.",
+      "inference_time_sec": 4.979,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "To the right of the marked zebra crossing, there is a sidewalk bordered by a curb painted with red and white stripes. This sidewalk is adjacent to a grassy area with palm trees and other greenery, which is part of the roadside landscape. The presence of the sidewalk indicates a pedestrian pathway designed for people to walk safely alongside the road. The curb serves as a visual and physical boundary between the road and the sidewalk, enhancing the safety of pedestrians by preventing vehicles from encroaching onto the sidewalk. The grassy area with palm trees adds a touch of greenery to the urban environment, providing a natural contrast to the built structures and",
+      "inference_time_sec": 11.631,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "Two distinct signboards containing numbers are visible on the right side of the road at the start of the clip. The first is a large billboard with the number '99' prominently displayed, and the second is a smaller signboard with the number '17' on it.",
+      "inference_time_sec": 6.018,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "After passing the signboard 9999, the vehicle encounters a tall building with a flat roof on the far left.",
+      "inference_time_sec": 3.619,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "The signboard 9999 does not provide explicit driving actions or constraints. It appears to be a commercial sign, possibly advertising a product or service, and does not contain any traffic-related information.",
+      "inference_time_sec": 4.769,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road, a gas station, and a signboard suggests that the driving environment is urban or suburban, with infrastructure for commercial activities and traffic management.",
+      "inference_time_sec": 4.629,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The text on the signboard is in hebrew.",
+      "inference_time_sec": 2.571,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard 9999 first becomes visible at the beginning of the video, and it is passed by the ego vehicle as the vehicle moves forward, which is evident from the changing perspective of the signboard in the frames.",
+      "inference_time_sec": 5.403,
+      "error": ""
+    }
+  ]
+}

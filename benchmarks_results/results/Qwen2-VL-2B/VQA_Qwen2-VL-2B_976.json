@@ -1,0 +1,70 @@
+{
+  "video_id": 976,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/976.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located to the left of the MDX vehicle with license plate GTR-8482?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50 sign to the left of MDX [entity_008]",
+      "prediction": "The regulatory sign located to the left of the MDX vehicle with license plate GTR-8482 is a green sign with white text that reads \"Eastern Long Island.\"",
+      "inference_time_sec": 3.82,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "2",
+      "prediction": "In the video, there are at least five distinct license plates visible on vehicles.",
+      "inference_time_sec": 3.031,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered?",
+      "ground_truth": "1st: T1711804C [entity_001], 2nd: GTR-8482 [entity_009], 3rd: SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered is GTR-8482, T1711804C, and then the speed limit sign.",
+      "inference_time_sec": 4.699,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text visible near the end of the clip indicates a speed restriction on this road?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The speed restriction is \"30E - 29E - 25A\".",
+      "inference_time_sec": 3.087,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of highway exit signs and speed limit signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway, as indicated by the presence of multiple lanes and the presence of exit signs. The speed limit sign suggests that the vehicle is traveling at a speed that complies with the posted limit.",
+      "inference_time_sec": 4.822,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region in New York is suggested by the text on the green highway sign?",
+      "ground_truth": "Long Island [entity_003]",
+      "prediction": "The green highway sign suggests the region of Eastern Long Island in New York.",
+      "inference_time_sec": 3.051,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the license plate GTR-8482 on the overtaking MDX vehicle visible?",
+      "ground_truth": "4.5 to 4.767 seconds",
+      "prediction": "The license plate GTR-8482 is visible on the overtaking MDX vehicle during the time range of 10:00 AM to 11:00 AM.",
+      "inference_time_sec": 4.072,
+      "error": ""
+    }
+  ]
+}

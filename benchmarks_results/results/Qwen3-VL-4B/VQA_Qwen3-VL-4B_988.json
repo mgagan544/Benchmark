@@ -1,0 +1,70 @@
+{
+  "video_id": 988,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/988.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the red bus stop sign relative to the concrete sidewalk where the pedestrian walks?",
+      "ground_truth": "to the right of the concrete sidewalk",
+      "prediction": "The red bus stop sign is positioned on the concrete sidewalk where the pedestrian walks, indicating it is directly adjacent to the pedestrian’s path. This placement suggests the sign is meant to be easily visible to pedestrians as they move along the sidewalk, likely to inform them about bus stop availability or directions.",
+      "inference_time_sec": 7.281,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct traffic signs or signals are described in the scene?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct traffic signs or signals described in the scene: a traffic light and a stop sign.",
+      "inference_time_sec": 4.501,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles that cross or clear the intersection after the ego vehicle begins decelerating at 0.6 seconds?",
+      "ground_truth": "1st: gray SUV, 2nd: black sedan",
+      "prediction": "After the ego vehicle begins decelerating at 0.6 seconds, the order of vehicles that cross or clear the intersection is as follows:\n\n1. The black SUV on the left side of the road crosses the intersection first.\n2. The silver sedan on the right side of the road clears the intersection next.\n3. The black sedan on the right side of the road follows, clearing the intersection after the silver sedan.\n\nThis sequence reflects the order in which the vehicles move through the intersection after the ego vehicle starts to slow down.",
+      "inference_time_sec": 10.917,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving constraints or actions are implied for the ego vehicle by the red bus stop sign near the crosswalk?",
+      "ground_truth": "None",
+      "prediction": "The red bus stop sign near the crosswalk implies that the ego vehicle must stop and wait for pedestrians or buses to safely cross or board. This is a standard traffic regulation to ensure pedestrian safety and orderly transit. The ego vehicle should not proceed through the crosswalk until it is safe to do so, as indicated by the red sign.",
+      "inference_time_sec": 7.918,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the landmarks and surroundings described, what type of driving environment does this clip depict?",
+      "ground_truth": "residential area",
+      "prediction": "The clip depicts a suburban driving environment. This is evident from the presence of residential houses with fences, parked cars along the sides of the road, and the relatively quiet, tree-lined streets. The traffic lights and crosswalks suggest a well-regulated intersection typical of suburban neighborhoods, where vehicles and pedestrians share the road in a structured manner. The overall setting is calm and orderly, characteristic of a suburban area rather than a bustling urban or rural setting.",
+      "inference_time_sec": 9.507,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Based on the position of the parked silver sedan and the pedestrian's sidewalk, what is the local driving side convention?",
+      "ground_truth": "right side",
+      "prediction": "The local driving side convention is right-hand drive. This is evident from the position of the parked silver sedan and the pedestrian's sidewalk. The pedestrian is standing on the sidewalk to the right of the road, which is typical in countries where vehicles drive on the right side of the road. Additionally, the parked silver sedan is positioned on the right side of the road, further confirming that vehicles drive on the right. This is consistent with the driving side convention in many countries, including the United States, where vehicles drive on the right side of the road.",
+      "inference_time_sec": 11.137,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ego vehicle come to a complete halt before the crosswalk stop line?",
+      "ground_truth": "0.867 seconds",
+      "prediction": "0.1 seconds",
+      "inference_time_sec": 3.358,
+      "error": ""
+    }
+  ]
+}

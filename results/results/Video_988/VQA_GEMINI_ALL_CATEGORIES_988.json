@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "988",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the red bus stop sign relative to the concrete sidewalk where the pedestrian walks?",
+        "answer": "to the right of the concrete sidewalk"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct traffic signs or signals are described in the scene?",
+        "answer": "2",
+        "reasoning": "The scene description mentions a red bus stop sign and an overhead traffic signal, making a total of 2."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of vehicles that cross or clear the intersection after the ego vehicle begins decelerating at 0.6 seconds?",
+        "answer": "1st: gray SUV, 2nd: black sedan"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What explicit driving constraints or actions are implied for the ego vehicle by the red bus stop sign near the crosswalk?",
+        "answer": "None"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the landmarks and surroundings described, what type of driving environment does this clip depict?",
+        "answer": "residential area",
+        "reasoning": "The presence of residential homes with white picket fences and green trees indicates a residential area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Based on the position of the parked silver sedan and the pedestrian's sidewalk, what is the local driving side convention?",
+        "answer": "right side"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the ego vehicle come to a complete halt before the crosswalk stop line?",
+        "answer": "0.867 seconds",
+        "reasoning": "The temporal description states that the ego vehicle comes to a complete halt at 0.867 seconds."
+      }
+    ]
+  }
+]

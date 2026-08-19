@@ -1,0 +1,70 @@
+{
+  "video_id": 980,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/980.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Upper Happy on the overhead sign?",
+      "ground_truth": "Valley Rd [entity_003] directly below Upper Happy [entity_002]",
+      "prediction": "Valley Rd",
+      "inference_time_sec": 3.159,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the highway signs mentioned in the scene?",
+      "ground_truth": "4",
+      "prediction": "Two distinct text instances are displayed on the highway signs: \"Acalanes Rd\" and \"Upper Happy Valley Rd\".",
+      "inference_time_sec": 4.714,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds?",
+      "ground_truth": "1st: Acalanes Rd [entity_001], Upper Happy [entity_002], Valley Rd [entity_003]; 2nd: EXIT [entity_004]",
+      "prediction": "The sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds is as follows:\n\n1. **Acalanes Rd / Upper Happy Valley Rd** — This is the first sign encountered, located on the right side of the road at the beginning of the clip.\n2. **Exit 31** — As the vehicle continues forward, it passes a sign indicating Exit 31, which is positioned on the right side of the road.\n3. **Exit 32** — The vehicle then encounters another sign indicating Exit 32, also on the right side of the road.\n4.",
+      "inference_time_sec": 12.234,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is indicated near the green gore sign?",
+      "ground_truth": "An exit action is indicated by the EXIT [entity_004] sign.",
+      "prediction": "The green sign indicates an upcoming exit for Acalanes Rd and Upper Happy Valley Rd, suggesting that drivers should prepare to exit the highway.",
+      "inference_time_sec": 5.667,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of signs like Acalanes Rd and EXIT suggest?",
+      "ground_truth": "Highway",
+      "prediction": "The mix of signs like \"Acalanes Rd\" and \"EXIT\" suggests a driving environment that is a combination of a highway and a local road network. The \"Acalanes Rd\" sign indicates an upcoming exit to a local road, while the \"EXIT\" sign suggests that the driver is approaching an exit ramp from the highway. This environment is typical of a highway that connects to local roads, allowing drivers to exit the highway and access nearby areas. The presence of both signs implies that the driver is in a transitional zone between the highway and local streets, which is common in many regions where highways intersect with local roads.",
+      "inference_time_sec": 12.19,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the overhead and gore signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead and gore signs is written in English.",
+      "inference_time_sec": 3.814,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the vehicle pass the green gore sign displaying EXIT?",
+      "ground_truth": "Between 2.633 and 2.733 seconds for EXIT [entity_004]",
+      "prediction": "The vehicle passes the green gore sign displaying EXIT between 0.0 and 0.1 seconds.",
+      "inference_time_sec": 5.003,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "963",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is visible on the orange sign located to the left of the EXIT 3 marker across the lanes?",
+        "answer": "WORK [entity_015] ZONE [entity_016]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances are displayed on the billboard that comes into view around 4.7 seconds?",
+        "answer": "5",
+        "reasoning": "The billboard displays the text instances THE [entity_003], BRONT [entity_004], OF THE [entity_005], VOTE [entity_006], and ARTS [entity_007], which totals 5."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the overhead signs for E 138 St and E 161 St are encountered as the vehicle moves forward?",
+        "answer": "1st: E 138 St [entity_008], 2nd: E 161 St [entity_010]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What speed limit constraint is indicated by the regulatory sign passed on the left shoulder at 1.867 seconds?",
+        "answer": "SPEED [entity_001] LIMIT [entity_002] 35"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the presence of overhead signs for E 138 St and E 161 St, what type of driving environment is depicted?",
+        "answer": "Highway through-route",
+        "reasoning": "The presence of multiple overhead signs indicating exits, street names, and distances suggests a highway or major through-route."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Which specific street and bridge names visible on the overhead signs suggest this clip is filmed in New York City?",
+        "answer": "E 138 St [entity_008] and Madison Ave Br [entity_009]",
+        "reasoning": "E 138 St and Madison Avenue Bridge are well-known locations in New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp do the signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible?",
+        "answer": "Near 7.4 seconds",
+        "reasoning": "According to the temporal description, the signs displaying 1 MILE [entity_012], EXIT [entity_013], and EXIT 3 [entity_014] become fully legible near 7.4 seconds."
+      }
+    ]
+  }
+]

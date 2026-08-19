@@ -1,0 +1,70 @@
+{
+  "video_id": 968,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/968.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located directly below the street signs for Hancock and Evergreen?",
+      "ground_truth": "ONE WAY [entity_004] below Hancock [entity_006] and Evergreen [entity_007]",
+      "prediction": "The regulatory sign located directly below the street signs for Hancock and Evergreen is a red stop sign.",
+      "inference_time_sec": 1.463,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this scene represent storefront names, commercial advertisements, or business contact details?",
+      "ground_truth": "8",
+      "prediction": "In the scene, there are three distinct text instances representing storefront names, commercial advertisements, and business contact details. These include the \"Food Corps\" sign, the \"HOT FOOD\" sign, and the \"HOT FOOD\" sign.",
+      "inference_time_sec": 2.437,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance for the regulatory ONE WAY sign, the signboard FOODCORP., and the contact number 718-443-7192?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: FOODCORP. [entity_011], 3rd: 718-443-7192 [entity_013]",
+      "prediction": "The ONE WAY sign appears first, followed by the signboard of FOODCORP., and then the contact number 718-443-7192.",
+      "inference_time_sec": 2.12,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is implied at the starting intersection?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The driving action implied at the starting intersection is the driver's intention to stop at the intersection. This is indicated by the presence of the stop sign, the pedestrian crossing, and the parked cars, which are all in a ready-to-stop position. The driver is likely waiting for the pedestrian to cross the street before proceeding.",
+      "inference_time_sec": 2.979,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, food advertisements, and street signs, what kind of driving environment is depicted?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The driving environment depicted is one of a bustling commercial area, likely a downtown or a commercial district in a city. The presence of multiple food-related signs, such as \"Food Corps\" and \"HOT FOOD,\" along with the variety of storefronts, suggests a vibrant commercial area with a focus on food and possibly retail. The density of signs and the variety of storefronts indicate a place where businesses are closely packed, catering to a high volume of customers. The street signs, including the \"STOP\" sign, are standard for urban areas, indicating a regulated traffic flow. The overall atmosphere is one of activity and commerce, typical of",
+      "inference_time_sec": 5.014,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text instance suggests the region or city where this clip was recorded?",
+      "ground_truth": "718-443-7192 [entity_013]",
+      "prediction": "The specific text instance that suggests the region or city where this clip was recorded is the \"Food Corps\" sign on the building on the left side of the street. This sign is a clear indicator of the location, as it is a well-known sign associated with the Food Corps, a federal agency that provides food assistance to low-income families.",
+      "inference_time_sec": 3.158,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the street signs for Hancock and Evergreen come into clearer view?",
+      "ground_truth": "1.333s - 2.033s",
+      "prediction": "The street signs for Hancock and Evergreen come into clearer view during the time range where the traffic light changes from red to green. This change occurs after the intersection of Hancock and Evergreen, where the traffic light turns green, allowing vehicles to proceed.",
+      "inference_time_sec": 2.564,
+      "error": ""
+    }
+  ]
+}

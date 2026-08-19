@@ -1,0 +1,70 @@
+{
+  "video_id": 948,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/948.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which sign, located directly below the FDR DR SOUTH sign on the overhead gantry, comes into view between 2.4 and 2.567 seconds?",
+      "ground_truth": "LEFT 2 LANES [entity_006]",
+      "prediction": "The sign that comes into view directly below the FDR DR SOUTH sign on the overhead gantry is the \"West Side Expressway\" sign.",
+      "inference_time_sec": 1.814,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signs containing lane designations or lane restrictions are visible on the overhead gantry before the vehicle enters the steel truss structure?",
+      "ground_truth": "3",
+      "prediction": "There are at least three distinct signs visible on the overhead gantry before the vehicle enters the steel truss structure. These signs include a green sign with white lettering that reads \"PARKING,\" a yellow sign with black lettering that reads \"PARKING,\" and a red sign with white lettering that reads \"PARKING.\"",
+      "inference_time_sec": 3.2,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs 2 Ave-12S st, FDR DR SOUTH, and FINE + POINTS are encountered by the vehicle?",
+      "ground_truth": "1st: 2 Ave-12S st [entity_001], 2nd: FDR DR SOUTH [entity_005], 3rd: FINE + POINTS [entity_010]",
+      "prediction": "The order in which the signs 2 Ave-12S st, FDR DR SOUTH, and FINE + POINTS are encountered by the vehicle is as follows:\n\n1. The first sign is \"2 Ave-12S st,\" which is located on the left side of the road.\n2. The second sign is \"FDR DR SOUTH,\" which is located on the right side of the road.\n3. The third sign is \"FINE + POINTS,\" which is located on the right side of the road.\n\nThe vehicle is following the traffic flow and moving from the left side of the road to the right side",
+      "inference_time_sec": 6.326,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text, located to the left of the STRICTLY ENFORCED sign, becomes visible at 2.733 seconds to indicate traffic penalties?",
+      "ground_truth": "FINE + POINTS [entity_010]",
+      "prediction": "The warning text located to the left of the STRICTLY ENFORCED sign becomes visible at 2.733 seconds, indicating traffic penalties.",
+      "inference_time_sec": 2.178,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggest about the driving environment?",
+      "ground_truth": "Expressway bridge approach",
+      "prediction": "The mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggests that the driving environment is complex and possibly congested. The presence of multiple lanes with different signs indicates that drivers must navigate through various traffic conditions, such as merging lanes, merging onto multi-lane roads, and possibly merging onto the bridge itself. The signs likely provide information on lane changes, speed limits, and other traffic regulations, which are essential for safe driving. The fact that the car is in the middle of a bridge suggests that the driving environment is challenging, requiring careful attention to the road signs and the need",
+      "inference_time_sec": 6.217,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city is suggested by the highway names FDR DR SOUTH and Harlem RIv Dr visible on the overhead gantry?",
+      "ground_truth": "New York City",
+      "prediction": "The highway names FDR DR SOUTH and Harlem RIv Dr visible on the overhead gantry suggest that the city is New York City. The FDR Dr is a well-known route in New York City, and Harlem is a neighborhood in Manhattan, both of which are well-known landmarks in New York City.",
+      "inference_time_sec": 2.878,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the lead blue vehicle with license plate FOD-3149 tracked at the beginning of the clip?",
+      "ground_truth": "00:00 to 00:02",
+      "prediction": "The lead blue vehicle with license plate FOD-3149 is tracked from the beginning of the clip until the end.",
+      "inference_time_sec": 1.997,
+      "error": ""
+    }
+  ]
+}

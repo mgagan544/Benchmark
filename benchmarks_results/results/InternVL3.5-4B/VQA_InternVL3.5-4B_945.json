@@ -1,0 +1,70 @@
+{
+  "video_id": 945,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/945.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located to the left of the regulatory notice warning about doubled speeding fines?",
+      "ground_truth": "ROAD [entity_011] WORK [entity_012] AHEAD [entity_004] sign",
+      "prediction": "The sign to the left of the regulatory notice is a 'No Parking' sign.",
+      "inference_time_sec": 2.946,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 0.2 seconds and 2.0 seconds?",
+      "ground_truth": "4",
+      "prediction": "Between 0.2 seconds and 2.0 seconds, the vehicle encounters three distinct, legible text instances. These are the 'NO TRUCKS' sign, the 'NO LANE CROSSING AHEAD' sign, and the 'SPEED LIMIT 30' sign. Each of these signs is clearly visible and provides specific information to the driver regarding traffic regulations and road conditions.",
+      "inference_time_sec": 8.143,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence in which the speed limit sign, the sidewalk closed placard, and the road work warning sign are encountered?",
+      "ground_truth": "1st: ROAD [entity_011] WORK [entity_012] AHEAD [entity_004], 2nd: SPEED [entity_013] LIMIT [entity_014], 3rd: SIDEWALK [entity_015] closed FOR CONST [entity_016]",
+      "prediction": "The sequence is: first, the speed limit sign indicating '30', then the sidewalk closed placard, and finally the road work warning sign.",
+      "inference_time_sec": 4.121,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the speed limit sign located to the left of the sidewalk closed placard?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014] of 30",
+      "prediction": "The speed limit sign indicates a maximum speed of 30 mph.",
+      "inference_time_sec": 2.694,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the signs for exits, street names, and work zones, what kind of driving environment is depicted?",
+      "ground_truth": "Urban highway construction zone",
+      "prediction": "The video shows a driving environment that is urban and under construction. The presence of street signs indicating exits and street names, such as 'E 14 St' and 'E 17 St', suggests that the car is navigating through a city. The signs for 'Road Lane Closures Ahead' and 'Work Zone' indicate that there is ongoing construction work, which requires drivers to be cautious and follow specific traffic rules. The combination of these elements creates a scenario where the driver must be attentive to both the urban layout and the construction-related traffic management measures.",
+      "inference_time_sec": 10.805,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street names visible on the overhead gantry suggest a specific city? What text supports this?",
+      "ground_truth": "New York City, supported by E 125 St [entity_019] and 2Ave [entity_021]",
+      "prediction": "Yes, the street names 'E 147 St' and 'E 149 St' suggest a specific city. The text 'E 147 St' and 'E 149 St' is visible on the overhead gantry.",
+      "inference_time_sec": 6.04,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the regulatory sign warning about doubled speeding fines first become legible, and when does it become illegible?",
+      "ground_truth": "Legible at 0.467 seconds, illegible at 0.6 seconds",
+      "prediction": "The regulatory sign warning about doubled speeding fines first becomes legible at the 5-second mark of the video. It becomes illegible at the 10-second mark.",
+      "inference_time_sec": 4.219,
+      "error": ""
+    }
+  ]
+}

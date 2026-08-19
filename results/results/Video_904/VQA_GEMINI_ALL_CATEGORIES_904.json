@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "904",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What street sign text is located beside the price signboard displaying 299, CASH, and 9/10?",
+        "answer": "Citrus Ave [entity_008]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct pieces of text visible in the clip are mounted on the white moving truck?",
+        "answer": "2",
+        "reasoning": "The white moving truck displays BEKINS [entity_003] and USA [entity_004], which are 2 distinct pieces of text."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the moving truck text, the gas station brand, and the cross street sign are encountered?",
+        "answer": "1st: BEKINS [entity_003] and USA [entity_004], 2nd: FLYERS [entity_005], 3rd: Citrus Ave [entity_008]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What regulatory text visible at the start of the clip indicates a speed restriction on the roadway?",
+        "answer": "SPEED [entity_001] LIMIT [entity_002]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment does the presence of a gas station, price signboard, and street sign suggest?",
+        "answer": "commercial strip",
+        "reasoning": "The presence of a FLYERS [entity_005] gas station, price signboard, and street sign indicates a commercial area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is the visible text on the speed limit sign and street sign written in?",
+        "answer": "English",
+        "reasoning": "The words SPEED [entity_001], LIMIT [entity_002], and Citrus Ave [entity_008] are written in English."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "During what time range does the price board displaying 299, CASH, and 9/10 become clearly visible as the vehicle approaches the intersection?",
+        "answer": "7.1 seconds to 8.333 seconds",
+        "reasoning": "According to the temporal description, the price board is clearly visible from 7.1 seconds to 8.333 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "989",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What lies between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks?",
+        "answer": "A residential concrete pathway and sidewalk between the driveways and the crosswalks."
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct moving vehicles cross the intersection between 00:01 and 00:08?",
+        "answer": "3",
+        "reasoning": "A white SUV crosses from 00:01 to 00:03, a black SUV crosses from 00:01 to 00:05, and a large black pickup truck crosses from 00:06 to 00:08."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the white SUV, black SUV, and large black pickup truck clear the intersection?",
+        "answer": "1st: white SUV, 2nd: black SUV, 3rd: large black pickup truck",
+        "reasoning": "The white SUV clears at 00:03, the black SUV clears at 00:05, and the large black pickup truck clears at 00:08."
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What signal hanging in the center of the intersection indicates that the driver should proceed with caution?",
+        "answer": "The overhead flashing yellow traffic light."
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the surrounding environment, including houses, lawns, and private driveways, what type of area is this?",
+        "answer": "Residential area",
+        "reasoning": "The presence of houses, lawns, private driveways, and sidewalks suggests a residential neighborhood."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What written language or script is visible on the signs in this intersection?",
+        "answer": "No signs with visible text are present in the clip."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range is the large black pickup truck visible crossing the intersection?",
+        "answer": "00:06 to 00:08",
+        "reasoning": "The large black pickup truck pulls out at 00:06 and clears the frame to the left by 00:08."
+      }
+    ]
+  }
+]

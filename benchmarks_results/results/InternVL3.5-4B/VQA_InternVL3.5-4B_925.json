@@ -1,0 +1,70 @@
+{
+  "video_id": 925,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/925.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the word Eastern relative to the word EAST on the overhead gantry?",
+      "ground_truth": "To the right of EAST [entity_008]",
+      "prediction": "The word Eastern is to the right of the word EAST.",
+      "inference_time_sec": 2.593,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the overhead steel gantry?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct text instances on the overhead steel gantry. The first is 'Grand Central Pkwy', the second is 'Tribble Br East', and the third is 'Exit 1'.",
+      "inference_time_sec": 4.976,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign is encountered on the right side of the road immediately after the vehicle passes the roadside sign displaying Grand Central Pkwy on the left?",
+      "ground_truth": "Terminals [entity_004]",
+      "prediction": "After passing the roadside sign displaying 'Grand Central Pkwy' on the left, the vehicle encounters a green sign on the right side of the road that reads 'Grand Central Pkwy' with an arrow pointing straight ahead, indicating the direction to continue for the Grand Central Parkway. This sign is positioned above the road, mounted on a metal structure, and is accompanied by a 'No Turn' sign, indicating that vehicles are not allowed to make a turn at this point. The presence of this sign, along with the construction barriers and the ongoing construction work, suggests that the vehicle is approaching an exit or a significant junction within the Grand",
+      "inference_time_sec": 11.625,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which direction is indicated for Triboro Br on the roadside sign passed at 0.0s?",
+      "ground_truth": "WEST [entity_002]",
+      "prediction": "West",
+      "inference_time_sec": 1.641,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of signs like Grand Central Pkwy and Terminals, what type of driving environment is depicted?",
+      "ground_truth": "Highway near an airport",
+      "prediction": "The driving environment is an urban or suburban highway with proximity to major transportation hubs, such as airports or train stations.",
+      "inference_time_sec": 3.354,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What airline brand is visible on the terminal building at 9.933s?",
+      "ground_truth": "AMERICAN AIRLINES [entity_013]",
+      "prediction": "Delta",
+      "inference_time_sec": 1.749,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AJC-1541 first become clearly visible on the grey sedan?",
+      "ground_truth": "7.9s",
+      "prediction": "The license plate AJC-1541 on the grey sedan becomes clearly visible at the beginning of the video, as the car approaches the intersection.",
+      "inference_time_sec": 3.904,
+      "error": ""
+    }
+  ]
+}

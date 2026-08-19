@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "979",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "Where is the DUNKIN DONUTS signboard located relative to the Speedway gas station sign?",
+        "answer": "to the right of Speedway [entity_002] sign"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct price numbers are displayed on the Speedway gas station sign?",
+        "answer": "4",
+        "reasoning": "The Speedway gas station sign displays the price numbers 269, 285, 289, and 309, which totals 4."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the speed limit sign, the PENSKE truck, and the CAR WASH sign are encountered as the vehicle moves forward?",
+        "answer": "1st: speed limit 25, 2nd: PENSKE [entity_010], 3rd: CAR [entity_011] WASH [entity_012]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What regulatory text constrains the vehicle's speed near the road ramp?",
+        "answer": "speed limit 25"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of driving environment does the mix of gas station, donut shop, and car wash signs suggest?",
+        "answer": "commercial strip",
+        "reasoning": "The presence of a gas station, donut shop, and car wash indicates a commercial business area."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What city is suggested by the combination of 39 St, yellow taxicabs, and US commercial brands?",
+        "answer": "New York City",
+        "reasoning": "Numbered streets like 39 St combined with yellow taxicabs strongly suggest New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what timestamp does the parked PENSKE truck first become visible in the clip?",
+        "answer": "2.433 seconds"
+      }
+    ]
+  }
+]

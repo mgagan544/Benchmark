@@ -1,0 +1,70 @@
+{
+  "video_id": 908,
+  "model": "InternVL2-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/908.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the covered pedestrian structure marked WALKWAY relative to the Care emblem?",
+      "ground_truth": "To the left of Care [entity_004]",
+      "prediction": "The covered pedestrian structure marked WALKWAY is located to the left of the Care emblem, which is situated to the right of the bus. The structure is situated at a distance from the bus, and its position relative to the Care emblem suggests it is a designated area for pedestrians to walk or cross the street.",
+      "inference_time_sec": 2.868,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in this clip are mounted on the transit bus?",
+      "ground_truth": 4,
+      "prediction": "There are two distinct pieces of text visible on the transit bus in the clip. One is the license plate, which reads \"710,\" and the other is the logo of \"The Port Authority of New York and New Jersey.\"",
+      "inference_time_sec": 2.434,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the first three text instances detected on the transit bus?",
+      "ground_truth": "1st: 35627-88 [entity_001], 2nd: 710 [entity_002], 3rd: THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The first three text instances detected on the transit bus are \"710,\" \"CARE,\" and \"THE PORT AUTHORITY OF WYLL.\"",
+      "inference_time_sec": 1.913,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the pavement markings near the green commuter waiting shelters, what driving action is required?",
+      "ground_truth": "Stop at the painted 'STOP' stencil",
+      "prediction": "The driving action required near the green commuter waiting shelters is to slow down, as indicated by the yellow lines on the pavement. This is a standard safety measure to prevent accidents and ensure the safety of pedestrians and cyclists waiting for the bus.",
+      "inference_time_sec": 2.375,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of transit bus markings and a walkway sign suggest about the driving environment?",
+      "ground_truth": "Transit hub or commuter terminal area",
+      "prediction": "The presence of transit bus markings and a walkway sign suggests that the driving environment is regulated and organized. The bus is marked with a specific route number and destination, indicating that it is part of a public transportation system. The walkway sign, which is a common feature in urban areas, implies that the area is designed for pedestrian traffic, possibly to manage foot traffic and ensure safety. The combination of these elements suggests that the area is well-maintained and likely frequented by both vehicles and pedestrians, reflecting a well-planned urban transit system.",
+      "inference_time_sec": 4.503,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible text suggests the geographical region where this clip was recorded?",
+      "ground_truth": "THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The visible text that suggests the geographical region where this clip was recorded is \"THE PORT AUTHORITY OF WYOMING.\" This text is located on the side of the bus, indicating that the scene is likely set in the United States, specifically in Wyoming.",
+      "inference_time_sec": 2.538,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the fleet designation number 710 first become clearly detected on the bus?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The fleet designation number 710 first becomes clearly detected on the bus at the beginning of the video. This is indicated by the first visible red light on the rear of the bus, which is a common indicator of the bus's status or the time of day.",
+      "inference_time_sec": 2.671,
+      "error": ""
+    }
+  ]
+}

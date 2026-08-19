@@ -1,0 +1,70 @@
+{
+  "video_id": 972,
+  "model": "Qwen2.5-VL-3B",
+  "video": "/home2/gagandeep/benchmark/videos/900/972.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
+      "ground_truth": "To the right of VIDE [entity_002]",
+      "prediction": "The regulatory text \"MON WED FRI\" is located above and to the right of the commercial sign \"VIDE.\"",
+      "inference_time_sec": 4.782,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
+      "ground_truth": "5",
+      "prediction": "There is one distinct piece of vehicle-mounted text visible on the dark grey pickup truck, which reads \"FORD.\"",
+      "inference_time_sec": 4.609,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
+      "ground_truth": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]",
+      "prediction": "The markings on the pickup truck become visible in the following order:\n\n1. **F150**: This is the first marking that becomes visible as the truck approaches the camera.\n2. **4X4**: This marking appears next, indicating the truck's off-road capabilities.\n3. **P150**: The final marking, \"P150,\" is the last to be seen as the truck passes by.\n\nSo, the sequence of visibility is: F150 → 4X4 → P150.",
+      "inference_time_sec": 10.335,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
+      "ground_truth": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]",
+      "prediction": "The regulatory sign near the commercial building reads \"MON WED FRI.\" This likely indicates that parking is restricted or prohibited on those days.",
+      "inference_time_sec": 4.807,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of commercial signs and parking regulations suggests that this is an urban area with a blend of commercial activity and regulated parking spaces. The presence of multiple billboards indicates that there are businesses or shops nearby, contributing to the commercial nature of the area. The parking regulations, such as the green bike lane and the yellow parking tickets, indicate that the city has implemented measures to manage traffic and ensure proper parking, which is common in busy urban environments where both commercial activities and parking management are crucial for maintaining order and functionality.",
+      "inference_time_sec": 10.161,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory parking sign and the commercial building appears to be in English.",
+      "inference_time_sec": 4.16,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
+      "ground_truth": "3.033s",
+      "prediction": "The STREET CLEANING sign becomes clearly readable at approximately 1:00 PM in the video.",
+      "inference_time_sec": 4.446,
+      "error": ""
+    }
+  ]
+}

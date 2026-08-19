@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "990",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the Linden Blvd and JUNIUS street signs relative to the white commuter van?",
+        "answer": "Directly above HAPPY [entity_019] ISLAND [entity_020] SENOR [entity_021] CENTER [entity_022]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct text instances belong to street or regulatory signs in this scene?",
+        "answer": "9",
+        "reasoning": "The street and regulatory signs include DRIVE [entity_002], THRU [entity_007], DO NOT [entity_017], ENTER [entity_016], Linden [entity_013], Bivd [entity_023], JUNIUS [entity_029], Hegeman [entity_024], and Ave [entity_025], which sum to 9."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the DRIVE sign, the Linden Plaza sign, and the DO NOT ENTER sign are encountered as the vehicle moves forward?",
+        "answer": "1st: DRIVE [entity_002], 2nd: Linden Plaza [entity_006], 3rd: DO NOT [entity_017] ENTER [entity_016]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What warning text constrains movement near the drive-thru lane entrance?",
+        "answer": "DO NOT [entity_017] ENTER [entity_016]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the density and type of storefront signs like Burger King and Family Dollar, what kind of driving environment does this clip depict?",
+        "answer": "Commercial business district",
+        "reasoning": "The presence of commercial signs like BURGER [entity_009] KING [entity_005] and FAMILY [entity_012] DOLLAR [entity_015] indicates a commercial business district."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What city is suggested by the area code in the phone number displayed on the commuter van?",
+        "answer": "New York City",
+        "reasoning": "The area code 347 in the phone number (347) 560-6575 [entity_034] is a New York City area code."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range does the Linden Plaza sign remain continuously visible in the clip?",
+        "answer": "0.6s to 1.33s for Linden Plaza [entity_006]",
+        "reasoning": "The temporal description states that the Plaza [entity_006] sign comes clearly into view around 0.6s to 1.33s."
+      }
+    ]
+  }
+]

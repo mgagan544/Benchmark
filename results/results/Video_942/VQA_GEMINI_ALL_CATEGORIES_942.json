@@ -1,0 +1,54 @@
+[
+  {
+    "video_id": "942",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What is the spatial position of the text Without relative to the Studio Prices text on the first billboard?",
+        "answer": "To the right of Studio Prices [entity_003]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many distinct pieces of text belong to street, highway, or regulatory signs in this clip?",
+        "answer": "6",
+        "reasoning": "The street, highway, and regulatory signs are 2 Avenue [entity_012], FDR Drive SOUTH [entity_010], Lexington Avenue [entity_011], 12-6 [entity_013], AVENUE [entity_014], and BRIDGE [entity_015], totaling 6."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order in which the billboard displaying Studio Closses and the billboard displaying eatenlightened.com are encountered?",
+        "answer": "1st: Studio Closses [entity_001], 2nd: eatenlightened.com [entity_009]",
+        "reasoning": "Studio Closses is on the first billboard encountered at 1.4 seconds, while eatenlightened.com is on the second billboard encountered at 5.633 seconds."
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "Does any visible text in the clip indicate a height restriction constraint? If so, what does it say and where is it located?",
+        "answer": "12-6 [entity_013] adjacent to Lexington Avenue [entity_011]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "Based on the visible highway signs and large billboards, what kind of driving environment is depicted?",
+        "answer": "Highway overpass or elevated highway ramp",
+        "reasoning": "The presence of overhead highway signs (FDR Drive, 2 Avenue) and large billboards on an elevated ramp indicates a highway environment."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "Do any street or highway names visible on the overhead signs suggest a specific city? If so, what text supports this?",
+        "answer": "New York City, supported by FDR Drive SOUTH [entity_010] and Lexington Avenue [entity_011]",
+        "reasoning": "FDR Drive and Lexington Avenue are well-known roadways located in New York City."
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "At what time range does the overhead highway sign for 2 Avenue remain visible to the camera vehicle?",
+        "answer": "8.733 seconds to 9.367 seconds",
+        "reasoning": "The temporal description states that the vehicle passes under the overhead highway gantry signs, including 2 Avenue, from 8.733 seconds to 9.367 seconds."
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "video_id": 917,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/917.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
+      "ground_truth": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane",
+      "prediction": "To the right of the designated taxi lane.",
+      "inference_time_sec": 2.342,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "There are at least 10 distinct pavement or infrastructure markings visible: pedestrian crossing lines, lane dividers, and various directional signs.",
+      "inference_time_sec": 3.514,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
+      "ground_truth": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'",
+      "prediction": "The vehicle first encounters '03', then 'AXI', and finally '06'.",
+      "inference_time_sec": 3.191,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
+      "ground_truth": "TAXI [entity_001]",
+      "prediction": "The text \"BUS ONLY\" is painted on the pavement, designating the lane reserved for specific transport vehicles on the left.",
+      "inference_time_sec": 3.645,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
+      "ground_truth": "Airport terminal arrival area",
+      "prediction": "The environment depicted is an airport terminal.",
+      "inference_time_sec": 2.324,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the airline signage and pavement markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 1.528,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
+      "ground_truth": "4.1 seconds",
+      "prediction": "The pavement marking showing AXI is passed by the host vehicle at 10 seconds.",
+      "inference_time_sec": 3.051,
+      "error": ""
+    }
+  ]
+}

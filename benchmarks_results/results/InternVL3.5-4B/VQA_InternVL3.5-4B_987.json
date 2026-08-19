@@ -1,0 +1,70 @@
+{
+  "video_id": 987,
+  "model": "InternVL3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/987.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory sign displaying the word STANDING relative to the parked dark green SUV?",
+      "ground_truth": "Adjacent to the dark green SUV, as STANDING [entity_001]",
+      "prediction": "The regulatory sign is positioned to the right of the parked dark green SUV.",
+      "inference_time_sec": 2.998,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory signs are visible in this clip?",
+      "ground_truth": "1",
+      "prediction": "Two",
+      "inference_time_sec": 1.627,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles passed by the ego vehicle on the right side of the road between 00:00 and 00:06?",
+      "ground_truth": "1st: white sedan, 2nd: dark sedan, 3rd: silver sedan, 4th: grey minivan",
+      "prediction": "The order of vehicles passed by the ego vehicle on the right side of the road between 00:00 and 00:06 is: white car, silver car, blue minivan, white pickup truck.",
+      "inference_time_sec": 5.24,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the regulatory sign visible at the intersection near the end of the clip?",
+      "ground_truth": "STANDING [entity_001] indicates a standing restriction",
+      "prediction": "The regulatory sign visible at the intersection near the end of the clip indicates a 'No Turn' restriction. This sign is typically used to inform drivers that they are not permitted to make a turn at that particular point on the road. The presence of this sign suggests that the intersection is designed to maintain traffic flow in a specific direction or to prevent vehicles from entering a certain area. It is a common traffic control measure to ensure safety and order in areas where turning could lead to congestion or accidents. The sign is positioned on the right side of the road, near the pedestrian crossing, which is a strategic placement to alert drivers of their restrictions as they",
+      "inference_time_sec": 11.719,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the environment and the parked vehicles, what type of area is the vehicle traveling through?",
+      "ground_truth": "Residential area",
+      "prediction": "The vehicle is traveling through a residential area.",
+      "inference_time_sec": 2.328,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the regulatory sign at the intersection written in?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 1.719,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text on the regulatory sign first become visible to the ego vehicle?",
+      "ground_truth": "00:08",
+      "prediction": "The text on the regulatory sign first becomes visible to the ego vehicle at the 10-second mark.",
+      "inference_time_sec": 3.312,
+      "error": ""
+    }
+  ]
+}

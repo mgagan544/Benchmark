@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "The spatial position of CHECKSCASH relative to SHED changes as the vehicle moves forward. Initially, CHECKSCASH is ahead of SHED, but as the vehicle progresses, CHECKSCASH moves to the right side of the frame, indicating it is moving past SHED.",
+      "inference_time_sec": 2.776,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "Three distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds.",
+      "inference_time_sec": 1.742,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "The order in which the storefronts SHED, boost, and CHECKSCASH are encountered is as follows: the first storefront is identified as SHED, the second as boost, and the third as CHECKSCASH.",
+      "inference_time_sec": 2.442,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The traffic regulator sign to the right of the signboard displaying 4CAR implies that the vehicle is adhering to a speed limit of 40 miles per hour. This sign is typically used to regulate traffic speed and ensure safety on the roads. The presence of this sign suggests that the driver is mindful of traffic regulations and is likely following the speed limit to maintain a safe driving environment.",
+      "inference_time_sec": 3.63,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The video depicts a bustling urban driving environment with a mix of commercial and residential areas. The presence of various storefronts suggests a diverse commercial district, while the mix of vehicles and pedestrians indicates a busy street scene. The overcast sky and the presence of a bridge overpass suggest an urban setting with infrastructure that supports both vehicular and pedestrian traffic.",
+      "inference_time_sec": 3.242,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The street name 'Hudson Pkwy' and the phone area code '212' suggest that this clip is filmed in New York City.",
+      "inference_time_sec": 1.939,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The vehicle passes the storefront of SHED, which is located to the right of CHECKSCASH, at the timestamp of 00:15:00.",
+      "inference_time_sec": 2.061,
+      "error": ""
+    }
+  ]
+}

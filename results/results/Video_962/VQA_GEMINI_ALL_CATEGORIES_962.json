@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "962",
+    "qa_pairs": [
+      {
+        "category_id": 1,
+        "category_name": "spatial_ordinal_navigation",
+        "question": "What text is located to the right of the ONLY lane marking?",
+        "answer": "LINK-SHUT [entity_010] to the right of ONLY [entity_009]"
+      },
+      {
+        "category_id": 2,
+        "category_name": "entity_aggregation_semantic_filtering",
+        "question": "How many vehicle-mounted text instances are visible in this clip?",
+        "answer": "2",
+        "reasoning": "The vehicle-mounted texts are A DUIE PYLE [entity_014] and A DULE PYLE [entity_017], totaling 2."
+      },
+      {
+        "category_id": 3,
+        "category_name": "temporal_sequencing_order",
+        "question": "What is the order of encounter for the text instances AHEAD, SCHOOL, and Hampton Inv between 3.767s and 4.433s?",
+        "answer": "1st: AHEAD [entity_011], 2nd: SCHOOL [entity_012], 3rd: Hampton Inv [entity_013]"
+      },
+      {
+        "category_id": 4,
+        "category_name": "navigational_reasoning_hazard_awareness",
+        "question": "What regulatory text indicating a driving constraint is visible between the Starbucks Coffee storefront and the Diner outlet?",
+        "answer": "ONE WAY [entity_020]"
+      },
+      {
+        "category_id": 5,
+        "category_name": "semantic_area_inference",
+        "question": "What type of environment does the high density of storefronts and business signs suggest?",
+        "answer": "commercial district",
+        "reasoning": "The presence of numerous shops, banks, and diners indicates a commercial district."
+      },
+      {
+        "category_id": 6,
+        "category_name": "cultural_language_inference",
+        "question": "What language is the text on the storefronts and street signs written in?",
+        "answer": "English"
+      },
+      {
+        "category_id": 7,
+        "category_name": "entity_tracking_persistence",
+        "question": "For what time range is the ONLY lane marking visible in the clip?",
+        "answer": "0.6s to 1.333s",
+        "reasoning": "The temporal description states the vehicle passes ONLY [entity_009] between 0.6s and 1.333s."
+      }
+    ]
+  }
+]

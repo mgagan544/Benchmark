@@ -1,0 +1,70 @@
+{
+  "video_id": 979,
+  "model": "Qwen2-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/979.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the DUNKIN DONUTS signboard located relative to the Speedway gas station sign?",
+      "ground_truth": "to the right of Speedway [entity_002] sign",
+      "prediction": "The Dunkin Donuts signboard is located to the left of the Speedway gas station signboard.",
+      "inference_time_sec": 3.105,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct price numbers are displayed on the Speedway gas station sign?",
+      "ground_truth": "4",
+      "prediction": "The Speedway gas station sign displays three distinct price numbers: 269, 209, and 309.",
+      "inference_time_sec": 3.452,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the speed limit sign, the PENSKE truck, and the CAR WASH sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: speed limit 25, 2nd: PENSKE [entity_010], 3rd: CAR [entity_011] WASH [entity_012]",
+      "prediction": "The speed limit sign is encountered first, followed by the PENSKE truck, and then the CAR WASH sign.",
+      "inference_time_sec": 3.277,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed near the road ramp?",
+      "ground_truth": "speed limit 25",
+      "prediction": "The regulatory text that constrains the vehicle's speed near the road ramp is \"Speed Limit 60.\"",
+      "inference_time_sec": 3.191,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of gas station, donut shop, and car wash signs suggest?",
+      "ground_truth": "commercial strip",
+      "prediction": "The mix of gas station, donut shop, and car wash signs suggests a busy urban environment with various services and amenities available to residents and visitors. The presence of a gas station indicates a need for fuel, while the donut shop and car wash suggest that the area is well-equipped for daily needs and convenience. The car wash sign further indicates that the area is accessible to those who need to clean their vehicles.",
+      "inference_time_sec": 5.645,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the combination of 39 St, yellow taxicabs, and US commercial brands?",
+      "ground_truth": "New York City",
+      "prediction": "The combination of 39 St, yellow taxicabs, and US commercial brands suggests that the city is New York City.",
+      "inference_time_sec": 3.335,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the parked PENSKE truck first become visible in the clip?",
+      "ground_truth": "2.433 seconds",
+      "prediction": "The parked PENSKE truck first becomes visible in the clip at 00:00:00.",
+      "inference_time_sec": 3.289,
+      "error": ""
+    }
+  ]
+}

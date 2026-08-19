@@ -1,0 +1,70 @@
+{
+  "video_id": 906,
+  "model": "Qwen3-VL-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/906.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
+      "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
+      "prediction": "The warning text on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922 is \"KEEP BACK\".",
+      "inference_time_sec": 5.187,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the parked white box truck?",
+      "ground_truth": "4",
+      "prediction": "Three distinct text instances are displayed on the parked white box truck: \"Soundstone Floors, Inc.\", \"43-02 37th St.\", and \"718-392-4001\".",
+      "inference_time_sec": 6.239,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
+      "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The ego vehicle passes the ATM sign first, then the address \"43-02 37th ST.\", and finally the yellow warning sign.",
+      "inference_time_sec": 5.275,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
+      "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The warning text posted on a utility pole is \"DRIVERS WANTED\".",
+      "inference_time_sec": 4.037,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial and industrial district",
+      "prediction": "The mix of text visible between 3.0 seconds and 7.0 seconds suggests that the driving environment is urban and commercial, with a variety of businesses and services in the area. The text includes “DRIVERS WANTED,” “ATM,” “Soundstone Floors, Inc.,” and “43 Av,” indicating the presence of a business that hires drivers, an ATM for convenience, a flooring company, and a street name. This combination implies a bustling, possibly busy neighborhood with both commercial and public services, which is typical of urban or suburban areas with active street life and diverse establishments.",
+      "inference_time_sec": 11.948,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
+      "ground_truth": "L.I.C., N.Y. [entity_016]",
+      "prediction": "The text \"L.I.C., N.Y.\" on the brick commercial building's facade suggests that the clip was filmed in Long Island City, New York.",
+      "inference_time_sec": 5.329,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
+      "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
+      "prediction": "The ambulance displaying the identifier 592 starts moving forward at 0:01.",
+      "inference_time_sec": 4.386,
+      "error": ""
+    }
+  ]
+}

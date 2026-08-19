@@ -1,0 +1,70 @@
+{
+  "video_id": 903,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/903.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What manufacturer name is located to the left of the license plate 63:816.70. on the rear of the grey bus?",
+      "ground_truth": "MERKAVIM [entity_011] to the left of 63:816.70. [entity_007]",
+      "prediction": "The manufacturer name located to the left of the license plate 63:816.70 on the rear of the grey bus is PIONEER.",
+      "inference_time_sec": 3.349,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on the transit buses in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates visible on the transit buses in this clip.",
+      "inference_time_sec": 2.342,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plates of the two Metropoline transit buses are encountered by the camera vehicle?",
+      "ground_truth": "1st: 63:816.70. [entity_007], 2nd: 63:709:70 [entity_018]",
+      "prediction": "The camera vehicle encounters the license plate of the first bus first, followed by the license plate of the second bus.",
+      "inference_time_sec": 2.879,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text in the scene, are there any explicit driving constraints or speed limits indicated?",
+      "ground_truth": "None",
+      "prediction": "No, there are no explicit driving constraints or speed limits indicated in the scene. The video does not show any signs or markings that specify a speed limit or other driving restrictions.",
+      "inference_time_sec": 3.319,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text on the transit buses suggest about the type of driving environment?",
+      "ground_truth": "Urban transit corridor",
+      "prediction": "The mix of text on the transit buses suggests a diverse and possibly multicultural driving environment. The presence of both Hebrew and English text indicates that the buses are likely operating in a region where both languages are commonly used, such as Israel. This bilingualism reflects the cultural and linguistic diversity of the area, where residents may speak Hebrew as their primary language, but also use English in certain contexts, such as in business or tourism. The use of both languages on the buses could also suggest that the transit system is designed to serve a broad range of passengers, including those who may not be fluent in Hebrew or English. This could be particularly important in a",
+      "inference_time_sec": 7.287,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which website link on the grey bus advertisement suggests a specific country of origin or region?",
+      "ground_truth": "Suzuki.co.ill [entity_006]",
+      "prediction": "The website link on the grey bus advertisement is 'suzuki.co.il', which suggests that the advertisement is from Israel, as the country code 'IL' is included in the domain name.",
+      "inference_time_sec": 3.386,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range does the white bus identifier 2443 first become revealed to the camera vehicle?",
+      "ground_truth": "4.467 seconds to 5.0 seconds",
+      "prediction": "The white bus identifier 2443 first becomes revealed to the camera vehicle at the timestamp range of 0.0 to 0.3 seconds.",
+      "inference_time_sec": 2.983,
+      "error": ""
+    }
+  ]
+}

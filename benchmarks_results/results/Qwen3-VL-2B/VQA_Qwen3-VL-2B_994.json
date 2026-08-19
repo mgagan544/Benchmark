@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "Qwen3-VL-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located to the right of the green directional sign.",
+      "inference_time_sec": 2.386,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are 3 distinct text entities visible on the signs in this clip.",
+      "inference_time_sec": 2.279,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "The three signs encountered in order are: the green sign indicating the direction to Grand Central Parkway, the green sign indicating the direction to the Brooklyn-Queens Expressway, and the green sign indicating the direction to the Brooklyn-Queens Expressway.",
+      "inference_time_sec": 4.225,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The text on the sign indicates a weight restriction for vehicles near the overpass structure. The sign reads \"WEIGHT LIMIT 10,000 LBS\" and \"WEIGHT LIMIT 10,000 LBS\" is repeated, indicating that vehicles must not exceed 10,000 pounds in weight.",
+      "inference_time_sec": 5.048,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names and weight limit signs suggests that the road segment is a major highway or a significant road in a city, likely part of a larger transportation network. The presence of highway names like \"Grand Central Parkway\" and \"Bklyn-ONS\" indicates it's a major route, possibly in a metropolitan area. The weight limit signs are a common feature on highways and major roads to ensure safety and compliance with vehicle weight regulations, which are crucial for road infrastructure and traffic flow. This combination implies that the road is designed to handle high volumes of traffic and is likely part of a larger transportation system.",
+      "inference_time_sec": 7.14,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The abbreviations on the green directional sign suggest the city of New York.",
+      "inference_time_sec": 2.372,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text DELIVERIES ENTRANCE 9 first becomes visible at 0:00.",
+      "inference_time_sec": 2.684,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 985,
+  "model": "InternVL2.5-1B",
+  "video": "/home2/gagandeep/benchmark/videos/900/985.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle moves forward and the overhead signs come into view at 6.233 seconds, which sign is positioned to the right of the Riverhead sign?",
+      "ground_truth": "WEST [entity_001] sign",
+      "prediction": "The sign positioned to the right of the Riverhead sign is the 'Overhead Toll' sign.",
+      "inference_time_sec": 1.665,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway signs are positioned above the divided roadway that come into clear view at 6.233 seconds?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct highway signs positioned above the divided roadway that come into clear view at 6.233 seconds.",
+      "inference_time_sec": 1.792,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the following events: (1) the traffic light turns green, (2) the school bus passes on the left, (3) the highway signs come into view?",
+      "ground_truth": "1st: school bus passes, 2nd: traffic light turns green, 3rd: highway signs come into view",
+      "prediction": "The order of the following events is: (1) the traffic light turns green, (2) the school bus passes on the left, (3) the highway signs come into view.",
+      "inference_time_sec": 2.216,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the signs that come into view at 6.233 seconds, what directional routes are indicated for the driver?",
+      "ground_truth": "EAST [entity_003] and WEST [entity_001]",
+      "prediction": "The signs indicate directions to 'Overhead' and 'New York' for the driver.",
+      "inference_time_sec": 1.473,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the combination of a commercial building and overhead highway signs coming into view at 6.233 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial highway corridor",
+      "prediction": "The combination of a commercial building and overhead highway signs coming into view at 6.233 seconds suggests that the driving environment is a typical urban setting with commercial establishments and road infrastructure. The presence of the commercial building indicates the proximity of a business district, while the overhead highway signs provide information about the road's direction and possibly the location of the next exit or intersection. This scene captures a moment of everyday driving in a city, where vehicles are navigating through the urban landscape, likely following traffic rules and maintaining a safe distance from each other.",
+      "inference_time_sec": 4.687,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or state name is visible on the highway signs that come into view at 6.233 seconds?",
+      "ground_truth": "New York [entity_005]",
+      "prediction": "The highway signs that come into view at 6.233 seconds display the name 'New York' on the right side, indicating the location of the highway.",
+      "inference_time_sec": 2.071,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For how long after the traffic light turns green at 2.633 seconds does it take for the 495 sign to come into clear view?",
+      "ground_truth": "3.6 seconds",
+      "prediction": "The 495 sign comes into clear view after the traffic light turns green at 2.633 seconds, indicating that the traffic light has been green for 0.633 seconds.",
+      "inference_time_sec": 2.302,
+      "error": ""
+    }
+  ]
+}
