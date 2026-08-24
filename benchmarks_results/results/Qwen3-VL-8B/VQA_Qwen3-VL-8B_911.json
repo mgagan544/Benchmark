@@ -1,0 +1,70 @@
+{
+  "video_id": 911,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/911.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the storefront displaying Clifton Tile relative to the sports facility operated by SDA?",
+      "ground_truth": "To the right of SDA [entity_007]",
+      "prediction": "The storefront displaying Clifton Tile is located to the right of the sports facility operated by SDA.",
+      "inference_time_sec": 5.483,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the buildings and billboard between House 46 and the parked minivan?",
+      "ground_truth": "3",
+      "prediction": "There are 3 distinct text instances containing numbers visible on the buildings and billboard between House 46 and the parked minivan.",
+      "inference_time_sec": 5.657,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds?",
+      "ground_truth": "1st: HOUSE 46 [entity_001], 2nd: 1075 [entity_004], 3rd: CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "Between 0.40 and 2.40 seconds, the order in which the locations are encountered is:\n\n1. **Clifton Tile** — appears first at 0.40 seconds.\n2. **House 46** — appears next at 1.00 seconds.\n3. **Building at 1075** — appears last at 2.40 seconds.\n\nThis sequence is determined by the timestamps provided in the video description, which indicate the order of appearance of each location as the camera moves forward.",
+      "inference_time_sec": 12.594,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37?",
+      "ground_truth": "EXIT [entity_031] ONLY [entity_032], DO NOT [entity_033] ENTRY [entity_034]",
+      "prediction": "The text \"NO TURN\" indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37.",
+      "inference_time_sec": 7.114,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, tile shops, and commercial billboards, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "This clip depicts a **suburban or urban commercial corridor** environment.\n\nHere’s why:\n\n- **High Density of Commercial Activity**: The presence of multiple storefronts (e.g., “Public House,” “Culton Tiles,” “United” sign, “Multi-Sport Camps” billboard) indicates this is a commercial strip, not a residential or rural area.\n- **Billboards and Signage**: Large, visible billboards (e.g., “United,” “Multi-Sport Camps”) are typical of commercial zones designed to attract passing traffic.\n- **Mixed Land Use**: You see both retail stores and parking lots, suggesting a",
+      "inference_time_sec": 15.956,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any business names visible in the clip suggest a specific regional location or city name?",
+      "ground_truth": "CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "Yes, the business name “**Public House**” visible in the clip suggests a specific regional location or city name.\n\nIn the frame at 0:00, a sign for “**PUBLIC HOUSE**” is visible on the right side of the road. While “Public House” is a common name for pubs or casual dining establishments found in many regions, the context of the surrounding signage and the general urban/suburban setting (with multiple commercial buildings, power lines, and traffic) suggests this is likely a specific location in the United States.\n\nAdditionally, the presence of a “**United**” sign (possibly United Parcel Service or",
+      "inference_time_sec": 13.61,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the building at address 1075 first come into view?",
+      "ground_truth": "Between 1.6 and 1.86 seconds",
+      "prediction": "0.3",
+      "inference_time_sec": 3.754,
+      "error": ""
+    }
+  ]
+}
