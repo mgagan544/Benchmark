@@ -1,0 +1,70 @@
+{
+  "video_id": 910,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/910.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the sign for Broad St on the overhead gantry?",
+      "ground_truth": "Grove St [entity_006] directly beneath Broad St [entity_005]",
+      "prediction": "The text located directly beneath the sign for Broad St on the overhead gantry is \"NORTH 1 1/2 MILES\".",
+      "inference_time_sec": 5.776,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are encountered after the vehicle passes the medical office building at 5.100 seconds?",
+      "ground_truth": "4",
+      "prediction": "2",
+      "inference_time_sec": 3.589,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle encounters the text CENTER, Broad St, and Enrite?",
+      "ground_truth": "1st: CENTER [entity_003], 2nd: Broad St [entity_005], 3rd: Enrite [entity_015]",
+      "prediction": "The vehicle encounters the text **CENTER** first, then **Broad St**, and finally **Enrite**.",
+      "inference_time_sec": 5.305,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead gantry, what driving action is indicated for reaching Passaic?",
+      "ground_truth": "Exit in 1/2 mile as indicated by EXIT 1/2 MILE [entity_012]",
+      "prediction": "Based on the text on the overhead gantry, the driving action indicated for reaching Passaic is to **take the 19 NORTH**.\n\nThe sign clearly reads:\n- **Broad St. 1/4**\n- **Grave St. Van Houten**\n- **CUTLER**\n- **Passaic 19 NORTH**\n\nThis indicates that to reach Passaic, you should take the highway marked as \"19 NORTH\".",
+      "inference_time_sec": 10.637,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a large overhead gantry and multiple roadside businesses?",
+      "ground_truth": "highway corridor with commercial zones",
+      "prediction": "The presence of a large overhead gantry and multiple roadside businesses suggests a **highway or major arterial road environment** in a **suburban or urban area**.\n\nHere’s why:\n\n1. **Overhead Gantry**: This is typically used to display directional signage for highways or major roads, indicating exits, destinations, or route numbers (e.g., “Broad St 1/4 mile,” “Van Houten Rd 1/2 mile”). It implies the road is part of a larger transportation network, likely serving commuters or travelers.\n\n2. **Multiple Roadside Businesses**: The presence of gas stations, convenience stores, and",
+      "inference_time_sec": 13.523,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city names visible on the overhead highway gantry suggest the geographic region of the route?",
+      "ground_truth": "Clifton [entity_010] and Passaic [entity_011]",
+      "prediction": "The specific city names visible on the overhead highway gantry — **Broad St / Van Houten / Cutchogue** — suggest the geographic region of the route is **Long Island, New York**.\n\nHere’s why:\n\n- **Cutchogue** is a well-known village located on the **South Fork of Long Island**, in **Suffolk County**.\n- **Van Houten** is a street name in **Cutchogue**, and **Broad St** is also a common street name in many Long Island towns.\n- The combination of these names, especially **Cutchogue**, strongly points to Long Island,",
+      "inference_time_sec": 13.596,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the overhead highway sign displaying Broad St remain visible as the vehicle drives underneath it?",
+      "ground_truth": "6.667 to 7.433 seconds",
+      "prediction": "The overhead highway sign displaying \"Broad St\" remains visible from 0:02 to 0:03 as the vehicle drives underneath it.",
+      "inference_time_sec": 5.977,
+      "error": ""
+    }
+  ]
+}
