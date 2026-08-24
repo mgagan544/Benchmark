@@ -1,0 +1,70 @@
+{
+  "video_id": 967,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/967.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the left of MARTIAL?",
+      "ground_truth": "RESTAURANT BAR [entity_008]",
+      "prediction": "The text located directly to the left of MARTIAL is 'ARTS'.",
+      "inference_time_sec": 5.013,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are associated with the EL TEQ storefront?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances containing numbers associated with the EL TEQ storefront. The first is the phone number '718-538-0020' displayed on the storefront, and the second is the phone number '718-538-0020' displayed on the sign above the entrance.",
+      "inference_time_sec": 8.163,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for DENTIST, CHURCH, and BUSES ONLY are encountered between 1.3s and 2.8s?",
+      "ground_truth": "1st: DENTIST [entity_009], 2nd: CHURCH [entity_010], 3rd: BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The signs are encountered in the following order: first, the 'DENTIST' sign is visible, followed by the 'CHURCH' sign, and finally, the 'BUSES ONLY' sign appears.",
+      "inference_time_sec": 6.418,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the signs near the DENTIST sign constrains vehicle movement or lane usage?",
+      "ground_truth": "ONE WAY [entity_013], BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The text on the signs near the DENTIST sign that constrains vehicle movement or lane usage is 'NO TURN ON RED'. This sign is positioned to the left of the frame, indicating that vehicles are not allowed to make a turn on red light in that direction.",
+      "inference_time_sec": 7.095,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible text, such as MARTIAL ARTS, HALAL, and PARA TI, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts a busy urban driving environment with a high density of legible text on storefronts, indicating a commercial area with various businesses. The presence of multiple vehicles, including cars and a motorcycle, suggests a typical city street with moderate traffic. The clear weather and the presence of pedestrians crossing the street further emphasize the urban setting.",
+      "inference_time_sec": 7.921,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location is suggested by the area codes in the phone numbers on the storefronts?",
+      "ground_truth": "New York City",
+      "prediction": "The area codes in the phone numbers on the storefronts suggest a regional location in the United States. The area code '718' is commonly associated with New York City, indicating that the video is likely set in that city. This area code is used by telephone companies in New York City, which is further supported by the presence of a 'Halal' shop, a 'Martial Arts' studio, and a 'Restaurant Bar' that are typical of a diverse urban neighborhood in New York. The specific area code '718' is known to cover parts of Brooklyn, Queens, and other boroughs of New York City",
+      "inference_time_sec": 12.073,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AC-91331 first become legible in the clip?",
+      "ground_truth": "0.5s",
+      "prediction": "The license plate AC-91331 first becomes legible in the clip at the 1-second mark.",
+      "inference_time_sec": 5.095,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 925,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/925.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the word Eastern relative to the word EAST on the overhead gantry?",
+      "ground_truth": "To the right of EAST [entity_008]",
+      "prediction": "The user wants to know the spatial relationship between the word \"Eastern\" and the word \"EAST\" on the overhead sign.\n\n1.  **Identify the sign:** I need to find the overhead gantry sign. Looking at the frames, specifically frame 00:03 and 00:04, there is a large green overhead sign.\n2.  **Locate the words:**\n    *   In frame 00:04, I can clearly see the sign.\n    *   The sign has a section labeled \"Grand Central Pkwy\".\n    *   Below that",
+      "inference_time_sec": 13.206,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the overhead steel gantry?",
+      "ground_truth": "7",
+      "prediction": "The user wants me to count the distinct text instances on the overhead steel gantry.\n\n1.  **Identify the gantry:** Looking at the video, specifically around the 00:03 and 00:04 marks, a large steel gantry spans across the highway.\n2.  **Locate text on the gantry:**\n    *   There's a large green sign on the left side of the gantry. It has multiple lines of text.\n        *   Top line: \"Grand Central Pkwy\"\n        *   Middle left: \"WEST\"\n        *",
+      "inference_time_sec": 13.344,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign is encountered on the right side of the road immediately after the vehicle passes the roadside sign displaying Grand Central Pkwy on the left?",
+      "ground_truth": "Terminals [entity_004]",
+      "prediction": "The user wants to identify a specific sign based on the video.\n\n1.  **Identify the reference point:** The user mentions a \"roadside sign displaying Grand Central Pkwy on the left\".\n    *   Looking at the first frame (00:00), there is a green sign on the left side of the road. It says \"Grand Central Pkwy\" and \"WEST Triboro Br\". This is the reference point.\n\n2.  **Determine \"immediately after\":** I need to look for the next sign that appears on the *right* side of the road as the vehicle",
+      "inference_time_sec": 13.269,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which direction is indicated for Triboro Br on the roadside sign passed at 0.0s?",
+      "ground_truth": "WEST [entity_002]",
+      "prediction": "The user wants to know the direction indicated for \"Triboro Br\" on the sign visible at the 0.0s timestamp.\n\n1.  **Identify the sign:** At 0.0s, there is a green highway sign on the left side of the road.\n2.  **Read the text:** The sign says:\n    *   \"Grand Central Pkwy\"\n    *   \"WEST\"\n    *   \"Triboro Br\"\n3.  **Identify the arrow:** Below \"Triboro Br\", there is an arrow pointing to the left.\n4",
+      "inference_time_sec": 13.211,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of signs like Grand Central Pkwy and Terminals, what type of driving environment is depicted?",
+      "ground_truth": "Highway near an airport",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Signs:** I see a green highway sign that says \"Grand Central Pkwy WEST Triboro Br\". Another sign further up says \"Grand Central Pkwy WEST Triboro Br\" and \"EAST Eastern LI\". There's also a sign for \"94 St\".\n    *   **Context:** The signs mention \"Grand Central Parkway\" and \"Triborough Bridge\" (now Throgs Neck Bridge). These are major infrastructure projects in New",
+      "inference_time_sec": 13.268,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What airline brand is visible on the terminal building at 9.933s?",
+      "ground_truth": "AMERICAN AIRLINES [entity_013]",
+      "prediction": "The user is asking for an airline brand visible on a terminal building at a specific timestamp, 9.933s.\n\n1.  **Analyze the request:** The user wants to identify an airline logo or name on a building. The timestamp provided is 9.933s.\n2.  **Examine the provided frames:**\n    *   The provided frames are at timestamps 0.0s, 0.1s, 0.2s, 0.3s, and 0.4s.\n    *   Wait, the user's prompt says \"at",
+      "inference_time_sec": 13.246,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AJC-1541 first become clearly visible on the grey sedan?",
+      "ground_truth": "7.9s",
+      "prediction": "The user wants to find the timestamp when the license plate \"AJC-1541\" is clearly visible on a grey sedan.\n\n1.  **Identify the grey sedan:** I need to look for a grey car in the video.\n    *   In the first few frames (00:00 - 00:02), there's a white car on the right and a tan SUV in the center lane. No grey sedan yet.\n    *   Around 00:03, a grey sedan enters the frame from the right side, behind the white car.\n    *",
+      "inference_time_sec": 13.141,
+      "error": ""
+    }
+  ]
+}

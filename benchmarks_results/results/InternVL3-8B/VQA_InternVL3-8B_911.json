@@ -1,0 +1,70 @@
+{
+  "video_id": 911,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/911.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the storefront displaying Clifton Tile relative to the sports facility operated by SDA?",
+      "ground_truth": "To the right of SDA [entity_007]",
+      "prediction": "The Clifton Tile storefront is located to the right of the SDA Sports Facility.",
+      "inference_time_sec": 6.999,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the buildings and billboard between House 46 and the parked minivan?",
+      "ground_truth": "3",
+      "prediction": "ThereHouse 46[[7, 461, 1, 518]]",
+      "inference_time_sec": 7.098,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds?",
+      "ground_truth": "1st: HOUSE 46 [entity_001], 2nd: 1075 [entity_004], 3rd: CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "The order in which these locations are encountered is House 46, then the building at 1075, and finally Clifton Tile.",
+      "inference_time_sec": 7.598,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37?",
+      "ground_truth": "EXIT [entity_031] ONLY [entity_032], DO NOT [entity_033] ENTRY [entity_034]",
+      "prediction": "The text 'NO LEFT TURN' is displayed on a sign at the driveway, indicating a restriction on making left turns from that location.",
+      "inference_time_sec": 7.406,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, tile shops, and commercial billboards, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "Urban",
+      "inference_time_sec": 5.763,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any business names visible in the clip suggest a specific regional location or city name?",
+      "ground_truth": "CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "No, the business names are not specific to a particular region or city.",
+      "inference_time_sec": 6.599,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the building at address 1075 first come into view?",
+      "ground_truth": "Between 1.6 and 1.86 seconds",
+      "prediction": "The building at address 1075 first comes into view at the beginning of the video, around timestamp 0 to 5 seconds.",
+      "inference_time_sec": 7.412,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 991,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/991.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the instruction to use the other side relative to the sidewalk sign?",
+      "ground_truth": "To the right of SIDEWALK [entity_001]",
+      "prediction": "The user wants to know the spatial relationship between two specific signs.\n\n1.  **Identify the \"instruction to use the other side\"**: Looking at the first frame, there is an orange sign on the green construction fence. It says \"SIDEWALK CLOSED PLEASE USE OTHER SIDE\". This is the sign in question.\n2.  **Identify the \"sidewalk sign\"**: To the left of the orange sign, there is a blue sign. It has text on it, likely related to the construction or sidewalk status. Let's look closer. It says \"Walk in Progress...\". This is the \"sid",
+      "inference_time_sec": 13.163,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the blue police barricades?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the distinct text instances on the blue police barricades.\n\n1.  **Identify the barricades:** I see two blue barricades in the foreground, near the green construction fence.\n2.  **Locate the text:**\n    *   On the left barricade, there is text near the bottom. It looks like \"POLICE LINE DO NOT CROSS\".\n    *   On the right barricade, there is similar text near the bottom. It also looks like \"POLICE LINE DO NOT CROSS\".\n3.  **Count the instances:**\n    *   Instance 1",
+      "inference_time_sec": 13.293,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances on the blue barricades are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: POLICE LINE [entity_005], 2nd: DO NOT CROSS [entity_006], 3rd: NYPD [entity_007]",
+      "prediction": "The user wants to identify the order of text on the blue barricades as the car moves forward.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a blue barricade on the left side of the road, near the green construction fence.\n    *   There is text on it. Let's look closely. It says \"POLICE LINE DO NOT CROSS\".\n    *   Wait, let me look at the other barricade. There's another one slightly further back or to the right? No, looking at the first frame, there are two blue barricades.",
+      "inference_time_sec": 13.163,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the large orange sign on the left side of the road?",
+      "ground_truth": "CLOSED [entity_002]",
+      "prediction": "The user wants to identify the text on a specific sign.\n1.  **Locate the sign:** The user specifies a \"large orange sign on the left side of the road\". Looking at the first frame (00:00), there is a green construction fence on the left. Attached to it is a blue sign and an orange sign.\n2.  **Zoom in on the orange sign:** The orange sign is positioned to the right of the blue sign.\n3.  **Read the text:** I need to read the text on that orange sign.\n    *   Top line: \"ROAD\"",
+      "inference_time_sec": 13.283,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of construction barriers, police barricades, and a commercial building, what kind of driving environment is depicted?",
+      "ground_truth": "Urban construction zone",
+      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Construction barriers:** I see a long green fence running along the left side of the road. There are signs on it (\"Work in Progress\", \"Road Closed\"). This indicates ongoing construction or development.\n    *   **Police barricades:** There are blue sawhorses with \"POLICE LINE DO NOT CROSS\" tape on them near the construction site. This suggests a controlled area or a temporary closure.\n    *   **Commercial building:** On the right",
+      "inference_time_sec": 13.21,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which abbreviation on the blue barricades suggests the city where this clip was filmed?",
+      "ground_truth": "NYPD [entity_007]",
+      "prediction": "The user wants me to identify an abbreviation on the blue barricades that suggests the city.\n\n1.  **Analyze the video:** I'll look at the first few frames where the blue barricades are visible.\n2.  **Locate the barricades:** In the first frame (00:00), there are blue barricades blocking the road.\n3.  **Read the text on the barricades:**\n    *   There's a sign on the green fence: \"KORELLA CLOSED PLEASE DETOUR\".\n    *   There's a blue sign on the fence: \"Work in Progress",
+      "inference_time_sec": 13.189,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the instruction to use the other side first become visible on the left?",
+      "ground_truth": "0.133 seconds",
+      "prediction": "The user wants to find the timestamp when a specific instruction becomes visible on the left side of the frame.\n\n1.  **Analyze the request:** The user is asking for the timestamp when an instruction \"to use the other side first\" becomes visible on the left. This likely refers to a sign or text on the construction fence.\n\n2.  **Scan the video frames:**\n    *   **00:00:** I see a green construction fence on the left. There are signs on it.\n        *   There's a blue sign.\n        *   There's an orange sign that says \"ROAD",
+      "inference_time_sec": 13.278,
+      "error": ""
+    }
+  ]
+}

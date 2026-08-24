@@ -1,0 +1,70 @@
+{
+  "video_id": 962,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/962.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located to the right of the ONLY lane marking?",
+      "ground_truth": "LINK-SHUT [entity_010] to the right of ONLY [entity_009]",
+      "prediction": "The text located to the right of the ONLY lane marking is 'SCHOOL'.",
+      "inference_time_sec": 5.51,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are two vehicle-mounted text instances visible in this clip. The first is a sign on the left side of the street that reads 'PARK' with a phone number below it. The second is a sign on the right side of the street that reads 'PARK' with a phone number below it.",
+      "inference_time_sec": 7.706,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the text instances AHEAD, SCHOOL, and Hampton Inv between 3.767s and 4.433s?",
+      "ground_truth": "1st: AHEAD [entity_011], 2nd: SCHOOL [entity_012], 3rd: Hampton Inv [entity_013]",
+      "prediction": "The order of encounter for the text instances is as follows: 'AHEAD' appears first, followed by 'SCHOOL', and then 'Hampton Inv'.",
+      "inference_time_sec": 5.704,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text indicating a driving constraint is visible between the Starbucks Coffee storefront and the Diner outlet?",
+      "ground_truth": "ONE WAY [entity_020]",
+      "prediction": "The regulatory text visible between the Starbucks Coffee storefront and the Diner outlet is 'NO STANDING ANYTIME'. This sign is mounted on a pole and is clearly visible in the video, indicating that vehicles are not allowed to stop or park in that area at any time.",
+      "inference_time_sec": 7.118,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of environment does the high density of storefronts and business signs suggest?",
+      "ground_truth": "commercial district",
+      "prediction": "The high density of storefronts and business signs suggests a commercial environment, likely a downtown area with a variety of shops and services catering to the needs of the local population and visitors. The presence of multiple signs indicates a vibrant and active business district, where pedestrians and vehicles are likely to be present, contributing to the dynamic urban atmosphere.",
+      "inference_time_sec": 7.975,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the storefronts and street signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the storefronts and street signs is written in English. This can be deduced from the visual content of the video, where the words 'PARK' and 'Classic Car Dealer' are clearly visible on the storefronts, and the street signs have standard English lettering.",
+      "inference_time_sec": 7.444,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the ONLY lane marking visible in the clip?",
+      "ground_truth": "0.6s to 1.333s",
+      "prediction": "The ONLY lane marking is visible in the clip from the beginning to the end. It is a white line on the road that indicates a lane designated for a specific type of vehicle, such as buses or trucks, and it remains visible throughout the entire sequence of frames.",
+      "inference_time_sec": 7.087,
+      "error": ""
+    }
+  ]
+}

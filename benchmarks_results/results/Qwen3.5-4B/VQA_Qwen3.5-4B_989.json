@@ -1,0 +1,70 @@
+{
+  "video_id": 989,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/989.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks?",
+      "ground_truth": "A residential concrete pathway and sidewalk between the driveways and the crosswalks.",
+      "prediction": "The user wants to identify the object or space located between two specific features on the right side of the intersection.\n\n1.  **Identify the \"private concrete driveways on the right side of the intersection\":** Looking at the right side of the image, there are houses. In front of the houses, there are driveways. Specifically, there's a driveway leading to a garage or house entrance. Wait, looking closer at the right side, there's a white fence. Behind the fence, there are houses. In front of the houses, there are driveways. Let's look for \"private concrete driveways\". Ah,",
+      "inference_time_sec": 12.99,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct moving vehicles cross the intersection between 00:01 and 00:08?",
+      "ground_truth": "3",
+      "prediction": "The user wants to count the distinct moving vehicles that cross the intersection between the timestamps 00:01 and 00:08.\n\n1.  **Analyze the video frames:**\n    *   **00:00:** The scene is set. A white SUV is turning left from the opposite lane. A black car is waiting or moving slowly in the right lane.\n    *   **00:01:** A white SUV (looks like a crossover) is crossing from left to right, turning. A black car is also visible crossing from right to left. Wait, let's look closer",
+      "inference_time_sec": 12.704,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the white SUV, black SUV, and large black pickup truck clear the intersection?",
+      "ground_truth": "1st: white SUV, 2nd: black SUV, 3rd: large black pickup truck",
+      "prediction": "The user wants to know the order in which three specific vehicles clear the intersection.\n\n1.  **Identify the vehicles:**\n    *   **White SUV:** I see a white SUV entering from the left side of the intersection around 00:00 - 00:01. It's a white crossover, possibly a Honda CR-V or similar.\n    *   **Black SUV:** I see a black SUV (looks like a Jeep Grand Cherokee) entering from the right side of the intersection around 00:01 - 00:02.\n    *   **Large black pickup",
+      "inference_time_sec": 12.665,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What signal hanging in the center of the intersection indicates that the driver should proceed with caution?",
+      "ground_truth": "The overhead flashing yellow traffic light.",
+      "prediction": "The user is asking about a specific traffic signal visible in the video.\n1.  **Identify the traffic signal:** I need to look at the traffic lights hanging over the intersection.\n2.  **Locate the signal:** In the first few frames (00:00 - 00:04), there is a traffic light pole on the right side of the road, extending over the intersection.\n3.  **Analyze the signal state:**\n    *   Looking closely at the traffic lights, specifically the one hanging over the lane the camera car is in (or the general intersection), I see",
+      "inference_time_sec": 12.621,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the surrounding environment, including houses, lawns, and private driveways, what type of area is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The user wants me to identify the type of area shown in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Houses:** I see single-family homes. They look like typical suburban houses, possibly colonial or ranch style. There are white picket fences, which are a strong indicator of residential neighborhoods.\n    *   **Lawns:** There are green lawns visible in front of the houses.\n    *   **Driveways:** I can see private driveways leading from the street to the houses.\n    *   **Street layout:** It's a relatively quiet, two-l",
+      "inference_time_sec": 12.683,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What written language or script is visible on the signs in this intersection?",
+      "ground_truth": "No signs with visible text are present in the clip.",
+      "prediction": "The user is asking about the written language or script visible on signs in the intersection.\n\n1.  **Scan the image for signs:** I need to look at the traffic lights, street signs, and any other signage.\n2.  **Analyze the traffic lights:** There are traffic lights hanging overhead. They show red lights. No text is visible on the lights themselves, just the signal aspect.\n3.  **Analyze street signs:**\n    *   There's a green street sign on the pole to the right of the traffic lights. It's partially visible but looks like a standard US street sign. The text",
+      "inference_time_sec": 12.618,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the large black pickup truck visible crossing the intersection?",
+      "ground_truth": "00:06 to 00:08",
+      "prediction": "The user wants to identify the time range when a large black pickup truck is visible crossing the intersection.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The scene is static. No truck crossing.\n    *   **00:01:** A white SUV is turning left. A black car is turning right. No pickup truck yet.\n    *   **00:02:** A dark SUV/crossover is turning left. Still no pickup truck.\n    *   **00:03:** A large black pickup truck enters the frame from the right,",
+      "inference_time_sec": 12.699,
+      "error": ""
+    }
+  ]
+}

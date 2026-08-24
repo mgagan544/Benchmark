@@ -1,0 +1,70 @@
+{
+  "video_id": 974,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/974.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark is located to the left of the yellow directional sign pointing to Terminal C?",
+      "ground_truth": "Hilton [entity_003] to the left of Terminal [entity_004] C",
+      "prediction": "The user wants to identify a landmark to the left of a specific sign.\n\n1.  **Locate the sign:** I need to find the \"yellow directional sign pointing to Terminal C\".\n    *   Looking at the frames, specifically around 00:00 to 00:02, there is a yellow sign on the right side of the road.\n    *   At 00:00, the sign is partially visible. It says \"Terminal C\" and \"Daily Parking\".\n    *   At 00:01, the sign is clearer. It's a yellow rectangular",
+      "inference_time_sec": 13.578,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct destinations are listed to the right of the Food and Gas signs?",
+      "ground_truth": "4",
+      "prediction": "The user wants to know the number of distinct destinations listed to the right of the \"Food and Gas\" signs.\n\n1.  **Identify the relevant frame:** I need to find a frame where the signs are clearly visible. The last frame [0.5 second] shows overhead signs clearly.\n2.  **Locate the \"Food and Gas\" sign:** Looking at the overhead signs in the last frame, there is a green sign on the right side. It says \"Food and Gas\" at the top.\n3.  **Identify destinations to the right:** Below \"Food and Gas\", there are arrows",
+      "inference_time_sec": 12.646,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the Hilton hotel, the Terminal C sign, and the Clellan street exit sign are encountered by the vehicle?",
+      "ground_truth": "1st: Hilton [entity_003], 2nd: Terminal [entity_004] C, 3rd: Clellan [entity_007]",
+      "prediction": "The user wants to know the order in which three specific signs/buildings are seen by the vehicle.\n\n1.  **Hilton hotel:** I need to find the Hilton hotel. Looking at the first few frames (00:00 - 00:01), on the far left side, there is a large white building with \"HILTON\" written on top. This is visible right at the start.\n2.  **Terminal C sign:** I need to find a sign for \"Terminal C\". Looking at the later frames, specifically around 00:04, there is a large overhead green",
+      "inference_time_sec": 12.62,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instruction is given to drivers on the overhead green gantry signs directing to Newark Airport?",
+      "ground_truth": "USE BOTH LANES [entity_011]",
+      "prediction": "The user wants to know the instruction on the overhead green gantry signs for Newark Airport.\n\n1.  **Identify the relevant frames:** I need to look at the later frames where the overhead signs become visible.\n    *   Frame at 00:03 shows the gantry approaching.\n    *   Frame at 00:04 shows the gantry clearly.\n\n2.  **Analyze the signs:**\n    *   There are two main green signs on the gantry.\n    *   The left sign says:\n        *   \"Newark Airport\"\n        *   \"",
+      "inference_time_sec": 12.609,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by signs for airport terminals, parking, and rental car returns?",
+      "ground_truth": "Airport access highway",
+      "prediction": "The user wants to identify the type of driving environment based on specific signs visible in the video.\n\n1.  **Analyze the visual evidence:**\n    *   **Signage:** I see overhead green highway signs.\n    *   **Specific Text:**\n        *   One sign clearly says \"Newark Airport\".\n        *   Below that, it lists \"Terminals A B C\".\n        *   Another sign mentions \"Daily Parking\", \"Economy Parking\", \"Valet Parking\".\n        *   There's a sign for \"Rental Car Returns\".\n        *   There's a sign for \"",
+      "inference_time_sec": 15.683,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific airport is indicated by the overhead green directional signs?",
+      "ground_truth": "Newark Airport [entity_012]",
+      "prediction": "The user wants to identify the specific airport mentioned on the overhead green signs.\n\n1.  **Analyze the video:** I'll scan through the frames to find the overhead green signs.\n2.  **Locate the signs:**\n    *   Frame 00:00: No overhead signs yet.\n    *   Frame 00:01: Approaching signs.\n    *   Frame 00:02: Approaching signs.\n    *   Frame 00:03: Approaching signs.\n    *   Frame 00:04: The signs are",
+      "inference_time_sec": 12.706,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "Between what timestamps is the yellow directional sign for Terminal C visible to the driver?",
+      "ground_truth": "2.3 seconds to 3.433 seconds",
+      "prediction": "The user wants to find the timestamps for when the yellow directional sign for \"Terminal C\" is visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** I see a yellow sign on the right. It's partially visible but readable. It says \"Terminal C\".\n    *   **00:01:** The sign is still clearly visible on the right. It reads \"Terminal C\".\n    *   **00:02:** The car is moving forward. The sign is still visible on the right, though slightly further away. It still says \"Terminal C",
+      "inference_time_sec": 12.685,
+      "error": ""
+    }
+  ]
+}

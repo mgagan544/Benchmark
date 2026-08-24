@@ -1,0 +1,70 @@
+{
+  "video_id": 911,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/911.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the storefront displaying Clifton Tile relative to the sports facility operated by SDA?",
+      "ground_truth": "To the right of SDA [entity_007]",
+      "prediction": "The user wants to know the relative position of two specific locations based on the video frames.\n\n1.  **Identify \"Clifton Tile\":** I need to scan the frames for a sign that says \"Clifton Tile\".\n    *   Frame 00:00: No sign visible.\n    *   Frame 00:01: On the right side, there's a building. I see a sign that says \"CLIFTON TILE\". It's partially visible but readable.\n    *   Frame 00:02: The sign \"CLIFTON TILE\" is clearly visible on",
+      "inference_time_sec": 13.155,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the buildings and billboard between House 46 and the parked minivan?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count distinct text instances containing numbers on buildings and billboards.\nThe region is defined as \"between House 46 and the parked minivan\".\n\n1.  **Identify \"House 46\":** Looking at the first frame, on the right side, there's a building with a sign that says \"PUBLIC HOUSE 46\". This is likely the reference point.\n2.  **Identify \"parked minivan\":** Looking further down the road on the right, past the Public House, there are parked cars. Wait, let's look closer. In the first frame,",
+      "inference_time_sec": 13.2,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds?",
+      "ground_truth": "1st: HOUSE 46 [entity_001], 2nd: 1075 [entity_004], 3rd: CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "The user wants to determine the order of appearance for three specific locations: \"House 46\", \"the building at 1075\", and \"Clifton Tile\".\n\n1.  **Analyze the video frames:**\n    *   **00:00 - 00:01:** The camera is driving down a road. On the right, there's a building with a sign that says \"PUBLIC HOUSE\". Further down, there's a sign for \"MULLEN SPORTS CAMPS\".\n    *   **00:02:** The camera continues forward. On the right, a",
+      "inference_time_sec": 13.19,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37?",
+      "ground_truth": "EXIT [entity_031] ONLY [entity_032], DO NOT [entity_033] ENTRY [entity_034]",
+      "prediction": "The user wants me to identify specific text related to a driving restriction or direction constraint.\n1.  **Locate the buildings:** I need to find \"building 1033\" and the \"entrance way displaying 35-37\".\n2.  **Scan the video:**\n    *   At 00:00, I see a building on the right with \"PUBLIC HOUSE\" on it.\n    *   At 00:01, I see a sign \"1033\" on a building on the right. Wait, let me look closer. Ah, at",
+      "inference_time_sec": 13.247,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, tile shops, and commercial billboards, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The user wants me to identify the type of driving environment shown in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Road:** It's a multi-lane road, likely a major arterial road or a highway ramp/exit. There are concrete barriers on the left, suggesting separation from opposing traffic or another highway.\n    *   **Buildings/Storefronts:** I see various commercial buildings.\n        *   \"Public House\" sign.\n        *   \"Duffon Tile\" sign.\n        *   \"Multi-Sport Camps\" sign.\n        *",
+      "inference_time_sec": 13.2,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any business names visible in the clip suggest a specific regional location or city name?",
+      "ground_truth": "CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "The user wants to know if any business names in the video suggest a specific location or city.\n\n1.  **Analyze the video for text:** I need to scan the frames for readable signs.\n    *   **Frame 1:**\n        *   Left side: A white truck with \"United\" visible. This is a trucking company, not a location.\n        *   Right side: A building with a sign \"PUBLIC HOUSE\". This is a generic name.\n        *   Further right: A sign that looks like \"DIXON\". Wait, let me look closer at the later frames.",
+      "inference_time_sec": 13.22,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the building at address 1075 first come into view?",
+      "ground_truth": "Between 1.6 and 1.86 seconds",
+      "prediction": "The user wants to find the timestamp when a specific building, identified by the address \"1075\", first appears in the video.\n\n1.  **Analyze the video frames:** I need to look through the provided frames to spot a building with the number \"1075\" on it.\n2.  **Frame 00:00:** I see a gas station on the right, some buildings further back. No clear \"1075\".\n3.  **Frame 00:01:** The camera is moving forward. I see a building on the right with a sign that",
+      "inference_time_sec": 13.233,
+      "error": ""
+    }
+  ]
+}

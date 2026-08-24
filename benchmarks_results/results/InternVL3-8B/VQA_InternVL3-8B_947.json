@@ -1,0 +1,70 @@
+{
+  "video_id": 947,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/947.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the sign containing the text STATE relative to the speed warning sign?",
+      "ground_truth": "To the right of SPEED [entity_005]",
+      "prediction": "The sign containing the text STATE is positioned directly below the speed warning sign.",
+      "inference_time_sec": 6.76,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the silver minivan?",
+      "ground_truth": "2",
+      "prediction": "2",
+      "inference_time_sec": 5.728,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the green exit sign, the white regulatory sign, and the minivan's license plate are first encountered?",
+      "ground_truth": "1st: EXIT [entity_001], 2nd: STATE [entity_006], 3rd: HEG-1344 [entity_010]",
+      "prediction": "The green exit sign is first encountered, followed by the white regulatory sign, and then the minivan's license plate.",
+      "inference_time_sec": 7.045,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign indicates a financial penalty for driving too fast?",
+      "ground_truth": "STATE [entity_006] LAW [entity_007] fines DOUBLED FOR [entity_008] SPEEDING [entity_009]",
+      "prediction": "The text on the regulatory sign reads 'STATE LAW FINES IMPOSED FOR SPEEDING'.",
+      "inference_time_sec": 6.782,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of exit signs, speed warning signs, and regulatory signs?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of exit signs, speed warning signs, and regulatory signs suggests a well-regulated and managed road environment, likely a highway or major thoroughfare designed to handle significant traffic flow. These signs are typically found in areas where there is a need to guide drivers to exits, inform them of speed limits, and ensure compliance with traffic laws, indicating a structured and organized roadway system.",
+      "inference_time_sec": 10.082,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific state or region is indicated by the text on the silver minivan's license plate?",
+      "ground_truth": "NEW YORK [entity_011]",
+      "prediction": "The silver minivan's license plate reads 'HEG-1344', which indicatesates that the vehicle is registered in New Jersey, as 'NJ' is the standard abbreviation for New Jersey. This detail provides a geographical context to the scene, suggesting that the traffic congestion is occurring in or near New Jersey.",
+      "inference_time_sec": 10.208,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the license plate HEG-1344 clearly legible on the silver minivan?",
+      "ground_truth": "6.167s to 9.2s",
+      "prediction": "The license plate HEG-1344 is clearly legible on the silver minivan from the third to the last frame of the video.",
+      "inference_time_sec": 7.844,
+      "error": ""
+    }
+  ]
+}

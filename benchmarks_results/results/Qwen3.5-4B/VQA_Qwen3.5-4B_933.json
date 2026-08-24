@@ -1,0 +1,70 @@
+{
+  "video_id": 933,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/933.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly beneath the sign TRAFFIC on the wooden utility pole?",
+      "ground_truth": "DETOUR [entity_003] directly beneath TRAFFIC [entity_002]",
+      "prediction": "The user wants to identify a specific sign on a wooden utility pole.\n\n1.  **Locate the pole:** I see a wooden utility pole on the right side of the road in the first few frames (00:00 - 00:01).\n2.  **Locate the \"TRAFFIC\" sign:** There is an orange rectangular sign on the pole. Looking closely at the text, it says \"TRAFFIC\" at the top. Wait, let me re-examine.\n    *   Top sign: \"ALL TRAFFIC\" with an arrow pointing left.\n    *",
+      "inference_time_sec": 13.055,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street or regulatory signs are visible on the wooden utility pole and the adjacent signpost combined?",
+      "ground_truth": "5",
+      "prediction": "The user wants me to count the distinct street or regulatory signs on the wooden utility pole and the adjacent signpost.\n\n1.  **Identify the objects:** I need to look at the wooden utility pole and the signpost next to it.\n2.  **Scan the images:**\n    *   **Image 1 (00:00):** I see a wooden utility pole. On it, there are two signs.\n        *   Top sign: A white rectangular sign with black text and an arrow. It says \"ALL TRAFFIC\" and has a left arrow.\n        *   Bottom sign:",
+      "inference_time_sec": 12.683,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs on the adjacent signpost are encountered after the vehicle completes its turn?",
+      "ground_truth": "1st: 56\"Road [entity_004], 2nd: ANYTIME [entity_005]",
+      "prediction": "The user wants to know the order of signs on a specific signpost after the vehicle turns.\n\n1.  **Identify the turn:** The video starts with the car facing a signpost. Then, around 00:01, the car turns left onto a road.\n2.  **Locate the signpost:** The signpost is visible right at the beginning of the video (00:00 - 00:01).\n3.  **Identify the signs on the post:**\n    *   Top sign: \"ALL TRAFFIC\" with an arrow pointing left.",
+      "inference_time_sec": 12.731,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What detour instruction is displayed on the wooden utility pole at the T-junction?",
+      "ground_truth": "ALL [entity_001] TRAFFIC [entity_002] DETOUR [entity_003]",
+      "prediction": "The user wants to identify the detour instruction on a wooden utility pole.\n\n1.  **Locate the pole:** I need to find the wooden utility pole at the T-junction. Looking at the first few frames (00:00 - 00:01), there is a wooden pole on the right side of the road, near the intersection.\n2.  **Identify the signs:** Attached to this pole are two signs.\n    *   The top sign is a white rectangle with black text. It says \"ALL TRAFFIC\" and has an arrow pointing left.\n    *",
+      "inference_time_sec": 12.697,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a detour sign, concrete barriers, orange barrels, and a light tower, what type of zone is this?",
+      "ground_truth": "Active road construction zone",
+      "prediction": "The user wants me to identify the type of zone shown in the video based on specific visual cues.\n\n1.  **Analyze the visual cues:**\n    *   **Detour sign:** Visible in the first few frames (0.0s - 0.1s). It says \"ALL TRAFFIC\" and \"DETOUR\". This indicates a change in the normal route, usually due to an obstruction or construction.\n    *   **Concrete barriers:** Visible on the left side of the road starting around 0.2s. These are Jersey barriers, commonly used to separate traffic lanes or protect construction areas",
+      "inference_time_sec": 15.644,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the signs visible along the road?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the text on the signs visible in the video.\n\n1.  **Analyze the first few frames (0.0s - 0.1s):**\n    *   I see a sign on a pole.\n    *   The top sign says \"ALL TRAFFIC\" with an arrow pointing left.\n    *   Below that, there's a red sign. It says \"ROAD WORK AHEAD\" and \"CLOSED\".\n    *   Below that, another sign says \"RETOUR\" (which is French for \"Return\" or \"Retour\"). Wait",
+      "inference_time_sec": 12.669,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the sign 56\"Road first become visible to the camera?",
+      "ground_truth": "0.833s for 56\"Road [entity_004]",
+      "prediction": "The user wants to find the timestamp when the sign \"56\" Road\" first appears.\n\n1.  **Analyze the first frame (00:00):** I see a sign on a pole. It's an orange construction sign. The text is a bit blurry but looks like \"56\" ROAD\". Wait, let me look closer. The sign above it says \"ALL TRAFFIC\". The orange sign below says \"56\" ROAD\". Yes, it's visible right at the start.\n2.  **Analyze subsequent frames:**\n    *   00:01: The car",
+      "inference_time_sec": 12.594,
+      "error": ""
+    }
+  ]
+}

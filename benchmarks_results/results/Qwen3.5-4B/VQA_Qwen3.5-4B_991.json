@@ -1,0 +1,70 @@
+{
+  "video_id": 991,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/991.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the instruction to use the other side relative to the sidewalk sign?",
+      "ground_truth": "To the right of SIDEWALK [entity_001]",
+      "prediction": "The user wants to know the spatial relationship between two signs.\n1.  **Identify the \"sidewalk sign\":** Looking at the first frame (00:00), there is an orange sign that says \"SIDEWALK CLOSED PLEASE USE OTHER SIDE\". This is the primary sign the user is likely referring to.\n2.  **Identify the \"instruction to use the other side\":** This is the text on the orange sign itself (\"PLEASE USE OTHER SIDE\"). Wait, the prompt asks for the spatial position of the *instruction* relative to the *sidewalk sign*. This phrasing is a",
+      "inference_time_sec": 13.298,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the blue police barricades?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the distinct text instances on the blue police barricades.\n\n1.  **Identify the barricades:** I see two blue barricades placed in front of the green construction fence.\n2.  **Locate the text on the first barricade (left):**\n    *   There is text at the top: \"POLICE LINE - DO NOT CROSS\".\n    *   There is text at the bottom: \"POLICE LINE\".\n3.  **Locate the text on the second barricade (right):**\n    *   There is text at the top: \"POLICE LINE",
+      "inference_time_sec": 12.712,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances on the blue barricades are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: POLICE LINE [entity_005], 2nd: DO NOT CROSS [entity_006], 3rd: NYPD [entity_007]",
+      "prediction": "The user wants to know the order of text instances on the blue barricades as the vehicle moves forward.\n\n1.  **Identify the blue barricades:** I see blue barricades placed on the street, likely to block off the construction area.\n2.  **Locate the text on them:**\n    *   There's a barricade closer to the camera on the left side of the road (relative to the construction fence).\n    *   There's another barricade further down the road, also on the left side.\n3.  **Read the text on the first barricade (closest):**",
+      "inference_time_sec": 12.744,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the large orange sign on the left side of the road?",
+      "ground_truth": "CLOSED [entity_002]",
+      "prediction": "The user wants to identify the text on a specific sign.\n1.  **Locate the sign:** I need to find the \"large orange sign on the left side of the road\".\n2.  **Scan the frames:**\n    *   In the first frame (00:00), there is a large green construction fence on the left. Attached to it is an orange rectangular sign.\n    *   The sign is positioned above a blue barrier.\n3.  **Read the text:** I will zoom in on the orange sign in the first frame.\n    *   The text is stacked vertically.",
+      "inference_time_sec": 15.65,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of construction barriers, police barricades, and a commercial building, what kind of driving environment is depicted?",
+      "ground_truth": "Urban construction zone",
+      "prediction": "The user wants me to identify the type of driving environment shown in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Construction barriers:** There's a long green fence on the left side, indicating ongoing construction.\n    *   **Police barricades:** There are blue \"POLICE LINE - DO NOT CROSS\" barricades near the construction site.\n    *   **Commercial building:** On the right side, there's a large, grey, industrial-looking building with a loading dock area.\n    *   **Road conditions:** The road is a standard two-lane street, but it looks",
+      "inference_time_sec": 12.715,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which abbreviation on the blue barricades suggests the city where this clip was filmed?",
+      "ground_truth": "NYPD [entity_007]",
+      "prediction": "The user wants me to identify an abbreviation on the blue barricades that indicates the city.\n\n1.  **Analyze the video:** I'll look at the first few frames where the blue barricades are visible.\n2.  **Locate the barricades:** In the first frame (00:00), there are blue barricades on the sidewalk near the green construction fence.\n3.  **Read the text on the barricades:**\n    *   One barricade has text that says \"POLICE LINE - DO NOT CROSS\".\n    *   Below that, there is a smaller text. Let me",
+      "inference_time_sec": 12.648,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the instruction to use the other side first become visible on the left?",
+      "ground_truth": "0.133 seconds",
+      "prediction": "The user wants to find the timestamp when a specific instruction becomes visible on the left side of the video.\n\n1.  **Analyze the request:**\n    *   **Instruction:** \"use the other side\" (or similar meaning like \"keep right\" or \"do not cross\").\n    *   **Location:** \"on the left\".\n    *   **Condition:** \"first become visible\".\n\n2.  **Scan the video frames:**\n    *   **00:00:** I see a green construction fence on the left. There's a blue sign with white text. Let's zoom in mentally",
+      "inference_time_sec": 12.633,
+      "error": ""
+    }
+  ]
+}

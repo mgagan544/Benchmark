@@ -1,0 +1,70 @@
+{
+  "video_id": 904,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/904.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What street sign text is located beside the price signboard displaying 299, CASH, and 9/10?",
+      "ground_truth": "Citrus Ave [entity_008]",
+      "prediction": "The user wants me to identify the text on a street sign that is located next to a specific price signboard.\n\n1.  **Locate the price signboard:** I need to find the sign that says \"299\", \"CASH\", and \"9/10\". Looking at the video frames, specifically around 00:03 and 00:04, there is a blue sign on the right side of the road, near the building. It displays \"299\", \"CASH\", and \"9/10\". This is a gas price sign.\n\n2.  **",
+      "inference_time_sec": 13.236,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in the clip are mounted on the white moving truck?",
+      "ground_truth": "2",
+      "prediction": "The user wants me to count the distinct pieces of text visible on the white moving truck.\n\n1.  **Identify the truck:** The truck is the large white vehicle in the center lane, directly ahead of the blue car.\n2.  **Scan for text on the truck:**\n    *   **Back of the truck:** There is large text on the rear doors. It reads \"BEKINS\". This is one piece of text.\n    *   **Below the main text:** There is smaller text below \"BEKINS\". It looks like a phone number or website, possibly \"1-800",
+      "inference_time_sec": 13.2,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the moving truck text, the gas station brand, and the cross street sign are encountered?",
+      "ground_truth": "1st: BEKINS [entity_003] and USA [entity_004], 2nd: FLYERS [entity_005], 3rd: Citrus Ave [entity_008]",
+      "prediction": "The user wants me to identify the order of appearance for three specific visual elements in the video:\n1.  **Moving truck text:** This refers to the text on the back of the white truck.\n2.  **Gas station brand:** This refers to the sign for the gas station on the right.\n3.  **Cross street sign:** This refers to the street sign at the intersection.\n\n**Step 1: Locate the \"Moving truck text\".**\n-   Looking at the first frame (00:00), there is a large white truck directly ahead.\n-   The text \"BEKINS",
+      "inference_time_sec": 13.201,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text visible at the start of the clip indicates a speed restriction on the roadway?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
+      "prediction": "The user wants to identify a specific regulatory text visible at the beginning of the video.\n1.  **Analyze the request:** The user is asking for \"regulatory text\" that indicates a \"speed restriction\". This usually means a speed limit sign.\n2.  **Scan the video frames:** I need to look at the first few frames (00:00 - 00:01) as requested (\"at the start of the clip\").\n3.  **Locate the sign:** In the first frame (00:00), on the right side of the road, attached to a pole",
+      "inference_time_sec": 13.241,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the presence of a gas station, price signboard, and street sign suggest?",
+      "ground_truth": "commercial strip",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues: a gas station, a price signboard, and a street sign.\n\n1.  **Analyze the visual cues:**\n    *   **Gas Station:** In the background, particularly visible in the later frames (0.3s, 0.4s), there is a building with a canopy and a sign that looks like a gas station (specifically, it resembles a Chevron or similar brand, though the logo is partially obscured).\n    *   **Price Signboard:** Next to the gas station, there is a tall, vertical sign",
+      "inference_time_sec": 13.276,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the visible text on the speed limit sign and street sign written in?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the text on the visible signs.\n\n1.  **Analyze the speed limit sign:**\n    *   I see a white rectangular sign on the right side of the road.\n    *   The text reads \"SPEED LIMIT 35\".\n    *   \"SPEED LIMIT\" is English.\n\n2.  **Analyze the street sign:**\n    *   Looking further down the road, there's a blue street sign hanging from the traffic light pole.\n    *   The text is a bit blurry but looks like \"Clyde Ave\" or similar.",
+      "inference_time_sec": 13.358,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range does the price board displaying 299, CASH, and 9/10 become clearly visible as the vehicle approaches the intersection?",
+      "ground_truth": "7.1 seconds to 8.333 seconds",
+      "prediction": "The user wants to find the specific time range when a price board with \"299, CASH, and 9/10\" is clearly visible.\n\n1.  **Analyze the video frames:** I need to look at the frames provided and identify when this specific sign appears.\n2.  **Frame 00:00 - 00:02:** The car is approaching an intersection. There's a building on the right. I see a blue sign on a pole, but it's not fully clear yet.\n3.  **Frame 00:03:** The car is",
+      "inference_time_sec": 13.286,
+      "error": ""
+    }
+  ]
+}

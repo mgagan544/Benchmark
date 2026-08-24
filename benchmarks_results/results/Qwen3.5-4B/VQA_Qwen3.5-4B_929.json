@@ -1,0 +1,70 @@
+{
+  "video_id": 929,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/929.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the signboard displaying Gabinst relative to the signboard displaying Natural?",
+      "ground_truth": "To the left of Natural [entity_003]",
+      "prediction": "The user wants to know the spatial relationship between two specific signs.\n\n1.  **Identify the signs:**\n    *   **Signboard displaying \"Gabinst\":** Looking at the first few frames (00:00 - 00:01), on the far left edge, there is a yellow sign. It's partially cut off but the letters \"GABINST\" are visible at the top.\n    *   **Signboard displaying \"Natural\":** In the same frames (00:00 - 00:01), slightly further down the street on the left side, there",
+      "inference_time_sec": 12.983,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belonging to storefront or real estate signboards are visible in this clip?",
+      "ground_truth": "9",
+      "prediction": "The user wants me to count distinct pieces of text on storefront or real estate signboards.\n\n1.  **Scan the video for signboards:** I'll look at the buildings on the left and right sides of the street.\n2.  **Identify potential signboards:**\n    *   **Left side:**\n        *   At the very beginning (00:00), there's a yellow sign on the far left edge. It's partially visible.\n        *   As the car moves forward (00:01), a yellow sign becomes clearer on the left. It says \"Natural Stone & Cabinet",
+      "inference_time_sec": 12.627,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle?",
+      "ground_truth": "1st: TILE [entity_002], 2nd: Gabinst [entity_005], 3rd: KAPLON [entity_006]",
+      "prediction": "The user wants to know the order of three specific signs: \"TILE\", \"Gabinst\", and \"KAPLON\".\n\n1.  **Scan for \"TILE\":**\n    *   Looking at the first few frames (00:00 - 00:01), on the left side of the street, there is a yellow sign.\n    *   At 00:01, the sign is clearly visible. It says \"TILE\" at the top, followed by \"Natural Stone & Cabinet\". So, \"TILE\" is the first sign encountered.\n\n2.",
+      "inference_time_sec": 12.675,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "No regulatory or warning text is visible in the clip.",
+      "prediction": "The user wants to know if there is any visible text in the video that indicates a hazard, warning, or driving constraint.\n\n1.  **Analyze the video for text:** I need to scan the frames for any readable signs, street signs, or markings.\n    *   **Frame 1:**\n        *   Right side: A parking sign \"P\" is visible on a pole. This is a constraint (parking allowed), but not necessarily a hazard or warning in the driving sense, though it indicates a zone.\n        *   Left side: A yellow sign is partially visible. It says \"Natural Stone",
+      "inference_time_sec": 12.644,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of storefront signboards and real estate signs suggest about this driving environment?",
+      "ground_truth": "An urban commercial or industrial district",
+      "prediction": "The user wants me to interpret the visual cues in the video, specifically focusing on the signs visible on the buildings.\n\n1.  **Identify the signs:**\n    *   **00:00 - 00:01:** On the left, there's a yellow sign that says \"Natural Stone & Cabinet\". This is a trade/service business.\n    *   **00:00 - 00:01:** Further down on the left, there's a sign for \"KAPCON-BELO\" with a phone number. This looks like a real estate or property management sign (Kap",
+      "inference_time_sec": 12.69,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional convention is suggested by the phone number format containing the area code (718)?",
+      "ground_truth": "North American numbering plan, specifically New York City",
+      "prediction": "The user wants to identify the region based on the phone number format seen in the video.\n\n1.  **Analyze the video:** I need to look for a phone number.\n2.  **Scan the frames:**\n    *   Frame 1: No clear phone number.\n    *   Frame 2: No clear phone number.\n    *   Frame 3: No clear phone number.\n    *   Frame 4: On the right side, on a building wall, there is a sign. It says \"Kaplon-Belo\" and below it \"392-3456",
+      "inference_time_sec": 12.676,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the real estate sign displaying KAPLON first align with the camera, and when does the vehicle pass the area code (718)?",
+      "ground_truth": "KAPLON [entity_006] aligns at 6.6 seconds; (718) [entity_010] is passed at 8.2 seconds",
+      "prediction": "The user wants to find two specific timestamps based on visual cues in the video.\n\n1.  **Real estate sign displaying KAPLON:** I need to scan the video for a sign with \"KAPLON\" on it.\n    *   At 00:00, I see a sign on the right wall, but it's partially obscured and blurry.\n    *   At 00:01, the camera pans slightly left. A white sign on the right wall becomes visible. It says \"KAPLON-BELO\". This is the real estate sign.\n    *   So",
+      "inference_time_sec": 12.639,
+      "error": ""
+    }
+  ]
+}

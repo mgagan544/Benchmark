@@ -1,0 +1,70 @@
+{
+  "video_id": 983,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/983.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What commercial restaurant billboard is located to the right of the gantry displaying Gilespie St?",
+      "ground_truth": "ROBERT [entity_033] IRVINE'S [entity_032] LOCATED AT [entity_035] Tropicana [entity_034]",
+      "prediction": "The user wants to identify a specific billboard based on its location relative to a road sign.\n\n1.  **Identify the gantry:** I need to find the overhead sign structure that mentions \"Gilespie St\".\n2.  **Scan the video for the sign:**\n    *   00:00 - 00:02: The car is approaching a gantry. The signs say \"215 East Henderson\", \"215 West Las Vegas Warm Springs Rd\", and \"Hidden Well Rd\". No \"Gilespie St\" yet.\n    *   00",
+      "inference_time_sec": 13.187,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct billboards advertising commercial services, events, or businesses are mentioned in the scene description?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the distinct billboards advertising commercial services, events, or businesses in the video.\n\n1.  **Scan the video for billboards:** I'll look at the right side of the highway where billboards are typically placed.\n2.  **Identify Billboard 1:** At the very beginning (00:00), there's a large billboard on the right. It says \"PERSONAL INJURY\" and \"DALLAS HORTON & ASSOCIATES\". This is a commercial service (law firm).\n3.  **Identify Billboard 2:** Just past the first",
+      "inference_time_sec": 13.346,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the DALLAS HORTON billboard, the first 215 gantry, and the RICK ROSS billboard encountered?",
+      "ground_truth": "1st: DALLAS HORTON [entity_002], 2nd: 215 [entity_005] gantry, 3rd: RICK ROSS [entity_016]",
+      "prediction": "The user wants me to order three specific visual elements based on the provided video frames.\n\n1.  **Identify the elements:**\n    *   **DALLAS HORTON billboard:** I see a billboard on the right side in the first frame (00:00) and second frame (00:01). It says \"PERSONAL INJURY DALLAS HORTON & ASSOCIATES\".\n    *   **First 215 gantry:** This is the large overhead sign structure. In the first frame (00:00), I see a gantry with signs for",
+      "inference_time_sec": 13.233,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What advisory speed limit is indicated on the yellow sign located below the RICK ROSS billboard?",
+      "ground_truth": "45 M P H [entity_018] for the RAMP [entity_017]",
+      "prediction": "The user wants to find a specific advisory speed limit on a yellow sign.\n1.  **Locate the \"RICK ROSS billboard\":** I see a billboard on the right side of the highway in the later frames (around 00:02 and 00:03). It says \"LIGHT NIGHTCLUB\" and \"RICK ROSS SAT. AUG 26\".\n2.  **Look below it:** Directly below the Rick Ross billboard, there is another billboard for \"ROBERT IRVINE'S\". Wait, the prompt asks for a yellow sign *below* the Rick Ross",
+      "inference_time_sec": 13.3,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is indicated by the presence of multiple overhead gantries and exit signs?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants to identify the type of road environment based on the visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Overhead Gantry:** There are large metal structures spanning across the road. These are gantries.\n    *   **Signage:** Attached to these gantries are large green highway signs.\n    *   **Sign Content:** The signs indicate directions for \"I-215 East Henderson\", \"I-215 West Las Vegas\", \"Warm Springs Rd\", \"Hidden Well Rd\", \"Gilesple St\", and \"Rental Car Return",
+      "inference_time_sec": 13.212,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city and resort mentioned on the signs and billboards suggest the location is in Nevada?",
+      "ground_truth": "Las Vegas [entity_011] and MANDALAY BAY [entity_020]",
+      "prediction": "The user wants to identify a city and a resort mentioned in the video that points to Nevada.\n\n1.  **Scan the video for text on signs and billboards.**\n    *   **00:00 - 00:01:** I see a green highway sign. It says \"215 WEST Las Vegas\". This is a strong indicator.\n    *   **00:00 - 00:01:** There's a billboard on the right. It says \"PERSONAL INJURY DALLAS HORTON & ASSOCIATES\". Not a city or resort.",
+      "inference_time_sec": 13.232,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what duration is the billboard featuring DALLAS HORTON continuously visible at the beginning of the video?",
+      "ground_truth": "0.0 seconds to 0.4 seconds",
+      "prediction": "The user wants to know the duration for which the billboard featuring \"DALLAS HORTON\" is visible at the start of the video.\n\n1.  **Identify the billboard:** I need to look for a billboard with the text \"DALLAS HORTON\".\n2.  **Scan the video:**\n    *   **00:00:** The billboard is clearly visible on the right side. It says \"PERSONAL INJURY\" and \"DALLAS HORTON & ASSOCIATES\".\n    *   **00:01:** The billboard is still visible, though slightly",
+      "inference_time_sec": 13.193,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 935,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/935.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the painted road marking SCHOOL, passed at 0.967 seconds, located relative to the MPH marking?",
+      "ground_truth": "To the right of MPH [entity_002]",
+      "prediction": "The painted road marking SCHOOL is located to the left of the MPH marking.",
+      "inference_time_sec": 4.711,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances painted directly on the road pavement does the vehicle pass over in the first second of the clip?",
+      "ground_truth": "3",
+      "prediction": "The vehicle passes over two distinct text instances painted directly on the road pavement in the first second of the clip. The first instance reads 'SCHOOL' and the second instance reads '20'.",
+      "inference_time_sec": 6.085,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle encounters the road marking SCHOOL, the storefront JACKSON HO, and the sign RECTAURA?",
+      "ground_truth": "1st: SCHOOL [entity_003], 2nd: JACKSON HO [entity_004], 3rd: RECTAURA [entity_005]",
+      "prediction": "The vehicle first encounters the road marking SCHOOL, then the storefront JACKSON HO, and finally the sign RECTAURA.",
+      "inference_time_sec": 5.107,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit and warning text markings are passed by the vehicle on the road pavement before 1.0 second?",
+      "ground_truth": "2020 [entity_001], MPH [entity_002], and SCHOOL [entity_003]",
+      "prediction": "Before 1.0 second, the vehicle passes by road pavement markings that indicate a speed limit of 20 mph and a warning text that reads 'SCHOOL.' These markings are visible on the road as the vehicle moves forward, providing the driver with important information about the speed restrictions and the presence of a school zone ahead.",
+      "inference_time_sec": 7.933,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts JACKSON HO and RECTAURA appearing on the right side of the street at 2.533 seconds?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The storefronts JACKSON HO and RECTAURA appearing on the right side of the street at 2.533 seconds suggest a commercial or mixed-use urban environment. These types of establishments are typically found in areas that cater to both residential and business needs, offering a variety of services and products to the local community. The presence of such businesses indicates that the street is likely a part of a bustling city area where residents and visitors can find a range of amenities, from retail shops to possibly restaurants or offices. The storefronts are well-lit, which is common for businesses that aim to attract customers during the evening hours, further supporting",
+      "inference_time_sec": 12.121,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Based on the road markings and storefronts encountered between 0.867 and 2.533 seconds, what language is used in this area?",
+      "ground_truth": "English",
+      "prediction": "The road markings and storefronts encountered between 0.867 and 2.533 seconds display text in both English and Spanish. For instance, the 'SCHOOL' marking is in English, while the 'ESCOLA' marking is in Spanish, indicating that Spanish is also used in this area.",
+      "inference_time_sec": 7.981,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle drive past the painted SCHOOL zone marker on the road?",
+      "ground_truth": "0.967 seconds",
+      "prediction": "The vehicle drives past the painted SCHOOL zone marker on the road at the 1-second mark.",
+      "inference_time_sec": 4.774,
+      "error": ""
+    }
+  ]
+}

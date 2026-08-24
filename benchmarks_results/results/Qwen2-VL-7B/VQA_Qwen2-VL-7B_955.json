@@ -1,0 +1,70 @@
+{
+  "video_id": 955,
+  "model": "Qwen2-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/955.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the word OVER on the weight limit sign to the left of Waterside Plaza?",
+      "ground_truth": "VEHICLES [entity_002]",
+      "prediction": "The text directly below the word OVER on the weight limit sign to the left of Waterside Plaza is \"VEHICLES\".",
+      "inference_time_sec": 5.465,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 1.500 and 3.000 seconds?",
+      "ground_truth": "4",
+      "prediction": "The image shows the vehicle passing under a sign that reads \"VEHICLES OVER 8000 LBS\" and another sign that reads \"E 42 St 1/2 MILE\" and \"E 34 St Midtown Tun.\" Therefore, there are three distinct, legible text instances encountered by the vehicle between 1.500 and 3.000 seconds.",
+      "inference_time_sec": 8.71,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the signs encountered by the vehicle between 3.500 and 4.500 seconds?",
+      "ground_truth": "1st: E 25 ST [entity_005], 2nd: E 34 ST [entity_006] FERRY [entity_007] HELIPORT [entity_009] LANDING [entity_008], 3rd: ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The order of the signs encountered by the vehicle between 3.500 and 4.500 seconds is as follows:\n\n1. A white sign with black text indicating \"VEHICLES OVER 8000 LBS.\"\n2. A green sign with white text indicating \"E 42 St 1/2 MILE.\"\n3. A green sign with white text indicating \"E 34 St Midtown Tun.\"\n\nThese signs are visible in the image and provide information about the road ahead.",
+      "inference_time_sec": 9.749,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the orange construction sign passed at 4.367 seconds?",
+      "ground_truth": "ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The warning text on the orange construction sign passed at 4.367 seconds is \"VEHICLES OVER 8000 LBS.\"",
+      "inference_time_sec": 5.823,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multiple exit signs, route markers, and overpasses, what driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The image depicts a busy urban driving environment, likely in a major city. The presence of multiple exit signs, route markers, and overpasses suggests that this is a well-developed highway or expressway system designed to accommodate heavy traffic. The signs provide directions to various destinations, indicating that this area is accessible to multiple routes and destinations. The overpasses and exits are typical features of a highway system, which helps manage the flow of traffic and provide access to different parts of the city. The presence of multiple vehicles and the overall layout of the road further support the idea that this is a busy and well-connected urban area.",
+      "inference_time_sec": 10.875,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street names and route markers suggest this clip is filmed in New York City?",
+      "ground_truth": "E 25 ST [entity_005], E 34 ST [entity_006], E 42 ST [entity_017], 495 [entity_016]",
+      "prediction": "The street names and route markers in the video suggest that it is filmed in New York City. The signs indicate \"E 42 St\" and \"E 34 St,\" which are well-known streets in Manhattan. Additionally, the route marker \"495\" refers to the New York State Thruway, a major highway that runs through the state.",
+      "inference_time_sec": 8.182,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the weight-limit sign containing the text 8000 Lbs first appear in view?",
+      "ground_truth": "2.633 seconds, as 8000 Lbs [entity_004] becomes visible.",
+      "prediction": "The weight-limit sign containing the text \"8000 Lbs\" first appears in view at timestamp 0.000",
+      "inference_time_sec": 5.509,
+      "error": ""
+    }
+  ]
+}

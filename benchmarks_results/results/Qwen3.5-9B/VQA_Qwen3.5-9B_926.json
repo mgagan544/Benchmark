@@ -1,0 +1,70 @@
+{
+  "video_id": 926,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/926.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the safety sign marked with AMER relative to the vehicle with license plate T679966C?",
+      "ground_truth": "AMER [entity_008] is to the right of T679966C [entity_007]",
+      "prediction": "The user wants to know the spatial relationship between two objects in the video.\n1.  **Identify the \"safety sign marked with AMER\"**: Looking at the frames, specifically around 00:00 to 00:02, there is a sign on the right side of the road. It says \"AMERICAN AIRLINES\" but the user calls it a \"safety sign marked with AMER\". Wait, let me look closer. Ah, at 00:00, on the far right, there's a sign that says \"AMERICAN AIRLINES\". But looking further",
+      "inference_time_sec": 13.236,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to the highway direction sign pointing toward the wait area?",
+      "ground_truth": "4",
+      "prediction": "The user wants me to count the text instances on a specific highway sign.\n1.  **Identify the sign:** The user specifies a \"highway direction sign pointing toward the wait area\". Looking at the video, specifically around the 00:01 mark, there is a yellow sign on the right side of the road.\n2.  **Locate the sign:** It's a yellow rectangular sign mounted on a post. It's positioned near the construction equipment.\n3.  **Identify the text:** The sign has text on it. Let's look closely at the frames.\n    *   Frame",
+      "inference_time_sec": 13.162,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the airport facility sign, the highway direction sign, and the license plate are encountered between 0.9 and 5.0 seconds?",
+      "ground_truth": "1st: AMERICAN [entity_001] AIRLINES [entity_002], 2nd: Long [entity_003] Term [entity_004] Wait [entity_005] Area [entity_006], 3rd: T679966C [entity_007]",
+      "prediction": "The user wants to determine the order of appearance for three specific visual elements:\n1.  **Airport facility sign:** This is likely the green sign on the right side of the road, visible in the later frames.\n2.  **Highway direction sign:** This is likely the green overhead sign or the sign on the right indicating directions.\n3.  **License plate:** This is on the car directly in front (the tan SUV).\n\nLet's break down the timestamps:\n\n*   **0.9 seconds:**\n    *   I see the tan SUV in front. Its license plate is visible but blurry.",
+      "inference_time_sec": 13.184,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint? If so, what does it say and where is it located?",
+      "ground_truth": "AMER [entity_008] on a construction notice at the airport construction site",
+      "prediction": "The user wants to identify any text in the video that indicates a hazard, warning, or driving constraint.\n\n1.  **Scan the video for signs:** I need to look at the road signs, construction signs, and any digital displays.\n2.  **Left side:** There's a concrete barrier. Behind it, there's an orange sign. It's partially visible but blurry.\n3.  **Overhead/Distance:** There are green highway signs. One says \"Term A\" and \"P\". Another green sign further back has text but it's hard to read clearly.\n4.  **Right side:**",
+      "inference_time_sec": 13.135,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible text mentioning airlines and long term wait area, what type of driving environment is depicted?",
+      "ground_truth": "Airport access road",
+      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues.\n\n1.  **Analyze the request:**\n    *   **Cue 1:** \"visible text mentioning airlines\"\n    *   **Cue 2:** \"long term wait area\"\n    *   **Goal:** Determine the driving environment.\n\n2.  **Scan the video/images for the cues:**\n    *   **Image 1 (00:00):**\n        *   On the right side, there's a building.\n        *   Text on the building: \"AMERICAN AIRLINES",
+      "inference_time_sec": 13.18,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the airport hangar and highway direction sign written in?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language or script of the text visible on the airport hangar and highway direction sign.\n\n1.  **Analyze the airport hangar:**\n    *   Looking at the first few frames (00:00 - 00:01), on the right side, there is a large building that looks like an airport hangar or terminal.\n    *   The text \"AMERICAN AIRLINES\" is clearly visible on the side of the building.\n    *   \"AMERICAN AIRLINES\" is English.\n\n2.  **Analyze the highway direction sign:**",
+      "inference_time_sec": 13.223,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the gold lead SUV become clearly visible?",
+      "ground_truth": "4.0 seconds for T679966C [entity_007]",
+      "prediction": "The user wants to find the timestamp where the license plate of the gold SUV in front is clearly visible.\n\n1.  **Analyze the video frames:**\n    *   **00:00:** The gold SUV is visible, but it's a bit far away. The license plate is not clearly readable.\n    *   **00:01:** The car is closer. The license plate is visible but maybe a bit blurry.\n    *   **00:02:** The car is closer still. The license plate is becoming clearer.\n    *   **00:03:** The",
+      "inference_time_sec": 13.163,
+      "error": ""
+    }
+  ]
+}

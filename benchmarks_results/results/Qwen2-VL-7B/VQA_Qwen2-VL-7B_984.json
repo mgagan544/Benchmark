@@ -1,0 +1,70 @@
+{
+  "video_id": 984,
+  "model": "Qwen2-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/984.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly above the identifier 91204-MD on the white shredding truck?",
+      "ground_truth": "DRIVERS WANTED [entity_009]",
+      "prediction": "The text located directly above the identifier 91204-MD on the white shredding truck is \"AMERICAN SECURITY SHREDDING\".",
+      "inference_time_sec": 5.669,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the commercial delivery van branded with GoodMart?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances visible on the commercial delivery van branded with GoodMart.",
+      "inference_time_sec": 5.016,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the two delivery van brands are encountered on the right side of the road?",
+      "ground_truth": "1st: GoodMart [entity_012], 2nd: IBC [entity_017]",
+      "prediction": "The chronological order in which the two delivery van brands are encountered on the right side of the road is \"Good\" and \"Woodland\".",
+      "inference_time_sec": 5.674,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text near the intersection indicates a direction restriction for drivers?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_022]",
+      "prediction": "The regulatory text near the intersection indicates a direction restriction for drivers, which is \"No Left Turn.\"",
+      "inference_time_sec": 5.174,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggest about the driving environment?",
+      "ground_truth": "Busy urban commercial district",
+      "prediction": "The presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggests that the driving environment is busy and diverse. The vehicles indicate that the area is likely a commercial or industrial zone, where businesses and deliveries are common. The construction scaffolding suggests ongoing development or maintenance work, which can further contribute to the busy nature of the area. Drivers need to be cautious and attentive to navigate through such an environment, paying attention to the movements of other vehicles and construction activities.",
+      "inference_time_sec": 9.595,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the shredding truck and delivery vans written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the shredding truck and delivery vans is written in English.",
+      "inference_time_sec": 4.94,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the GoodMart delivery van text visible before being replaced by the IBC van?",
+      "ground_truth": "0.000 seconds to 5.967 seconds",
+      "prediction": "The GoodMart delivery van text is visible before being replaced by the IBC van between",
+      "inference_time_sec": 5.603,
+      "error": ""
+    }
+  ]
+}

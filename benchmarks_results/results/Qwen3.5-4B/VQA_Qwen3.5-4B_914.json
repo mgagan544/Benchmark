@@ -1,0 +1,70 @@
+{
+  "video_id": 914,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/914.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the digital YOUR SPEED MPH feedback sign?",
+      "ground_truth": "ONLY [entity_005] sign to the right of YOUR [entity_001] SPEED [entity_002] MPH [entity_003]",
+      "prediction": "The user wants to identify a specific sign in the video.\n\n1.  **Locate the \"YOUR SPEED MPH\" sign:** I need to find the digital sign that displays speed. Looking at the frames, specifically around 00:00 to 00:02, there is a white rectangular sign hanging from the overhead structure. It has the text \"YOUR SPEED\" and below it a digital display showing a number (looks like 20) and \"MPH\". This is the reference point.\n\n2.  **Identify the sign to its right:** I need to look at the area immediately to",
+      "inference_time_sec": 13.23,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory or feedback signs are located on the right side of the exit ramp?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the regulatory or feedback signs on the right side of the exit ramp.\n\n1.  **Analyze the scene:** The video shows a car driving on an exit ramp, likely a bike lane or a dedicated lane given the markings. It's under an elevated structure (train tracks or highway).\n2.  **Identify the right side:** Looking at the video, the right side of the lane has a concrete barrier and then the open space below.\n3.  **Locate signs:**\n    *   There is a yellow diamond-shaped sign with a curved arrow indicating a curve. This is",
+      "inference_time_sec": 12.722,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the camera vehicle pass the ONE WAY sign, the digital YOUR SPEED MPH feedback sign, and the ONLY sign?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: YOUR [entity_001] SPEED [entity_002] MPH [entity_003], 3rd: ONLY [entity_005]",
+      "prediction": "The user wants to know the order in which three specific signs are passed by the camera vehicle.\n\n1.  **Identify the signs:**\n    *   **ONE WAY sign:** I need to look for a sign that says \"ONE WAY\".\n    *   **digital YOUR SPEED MPH feedback sign:** I need to look for a sign that says \"YOUR SPEED\" and shows a number.\n    *   **ONLY sign:** I need to look for a sign that says \"ONLY\".\n\n2.  **Scan the video chronologically:**\n    *   **00:00 - 00:0",
+      "inference_time_sec": 12.668,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which sign indicates that traffic must flow in a single direction at the start of the ramp?",
+      "ground_truth": "ONE WAY [entity_004] sign",
+      "prediction": "The user wants to identify a specific traffic sign from the video.\n\n1.  **Analyze the user's request:** The user is asking for a sign that indicates \"traffic must flow in a single direction at the start of the ramp\".\n2.  **Scan the video for relevant signs:**\n    *   **00:00 - 00:01:** I see a yellow diamond sign with a black arrow curving to the left. This is a \"Curve Ahead\" or \"Turn Left\" warning sign, but it's not explicitly a \"single direction\" sign in the sense of a one-way",
+      "inference_time_sec": 12.73,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the exit ramp, elevated structure, and multi-story brick buildings, what kind of driving environment is depicted?",
+      "ground_truth": "urban exit ramp",
+      "prediction": "The user wants me to identify the type of driving environment shown in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Elevated Structure:** The camera is moving under a large, dark metal framework. This looks like an elevated train line or highway overpass. The beams are heavy steel.\n    *   **Exit Ramp:** The road is curving slightly to the right and going down. There are white painted arrows on the road surface indicating a curve and a speed limit (20 MPH).\n    *   **Multi-story brick buildings:** To the right, there are large, industrial",
+      "inference_time_sec": 12.695,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory and feedback signs along the ramp?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the text on the signs.\n\n1.  **Analyze the signs:**\n    *   There is a yellow diamond-shaped sign with a curved arrow and \"20 MPH\". This is standard English traffic signage.\n    *   Below that, there is a white rectangular sign that says \"YOUR SPEED\". This is English.\n    *   There is a sign on the left side of the ramp (visible around 0.0s - 0.2s) that says \"ONLY\" with an arrow. This is English.\n    *   The text on the white box",
+      "inference_time_sec": 12.738,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ONLY sign first become visible as the vehicle enters the underpass?",
+      "ground_truth": "4.4 seconds for ONLY [entity_005]",
+      "prediction": "The user wants to find the timestamp when the \"ONLY\" sign first becomes visible.\n\n1.  **Analyze the video frames:**\n    *   **00:00:** The vehicle is approaching an underpass. There are signs, but the \"ONLY\" sign is not clearly visible yet. I see a yellow sign with a curve arrow and a \"20 MPH\" sign.\n    *   **00:01:** The vehicle is closer. The \"20 MPH\" sign is visible. The \"YOUR SPEED\" sign is visible. The \"ONLY\" sign is still not clearly in frame.",
+      "inference_time_sec": 12.688,
+      "error": ""
+    }
+  ]
+}

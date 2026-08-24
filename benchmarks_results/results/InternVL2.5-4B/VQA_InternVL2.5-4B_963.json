@@ -1,0 +1,70 @@
+{
+  "video_id": 963,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/963.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is visible on the orange sign located to the left of the EXIT 3 marker across the lanes?",
+      "ground_truth": "WORK [entity_015] ZONE [entity_016]",
+      "prediction": "The orange sign to the left of the EXIT 3 marker displays the text '35'. This sign is positioned above the lanes and is likely indicating the speed limit for the lanes leading to EXIT 3.",
+      "inference_time_sec": 6.581,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the billboard that comes into view around 4.7 seconds?",
+      "ground_truth": "5",
+      "prediction": "The billboard displays three distinct text instances: 'TAXI', 'TAXI', and 'TAXI'.",
+      "inference_time_sec": 5.076,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs for E 138 St and E 161 St are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: E 138 St [entity_008], 2nd: E 161 St [entity_010]",
+      "prediction": "As the vehicle moves forward, the first overhead sign encountered is for E 138 St, followed by the sign for E 161 St.",
+      "inference_time_sec": 5.608,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit constraint is indicated by the regulatory sign passed on the left shoulder at 1.867 seconds?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002] 35",
+      "prediction": "The regulatory sign passed on the left shoulder at 1.867 seconds indicates a speed limit of 35 mph. This sign is a rectangular orange sign with white lettering, which is a common color scheme for speed limit signs in many regions. The sign is positioned on the left shoulder of the highway, which is a typical location for such signs to be placed to alert drivers of the speed limit in the upcoming area. The presence of this sign suggests that the area ahead has a lower speed limit, likely due to the proximity to an exit or a merging traffic area where maintaining a lower speed is necessary for safety.",
+      "inference_time_sec": 11.9,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead signs for E 138 St and E 161 St, what type of driving environment is depicted?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of overhead signs indicating specific street names like E 138 St and E 161 St suggests that the driving environment is a well-marked highway or expressway. These signs are typically used to guide drivers to their desired exit or to inform them of upcoming destinations. The fact that the signs are clearly visible and provide specific street names indicates that the highway is likely a major thoroughfare with multiple exits, designed to accommodate a high volume of traffic and provide clear navigation for drivers.",
+      "inference_time_sec": 10.267,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street and bridge names visible on the overhead signs suggest this clip is filmed in New York City?",
+      "ground_truth": "E 138 St [entity_008] and Madison Ave Br [entity_009]",
+      "prediction": "The overhead signs in the video display street names such as 'Madison Ave' and 'Macombs Dam Br', which are specific to New York City. Madison Avenue is a famous street in Manhattan, and Macombs Dam Bridge is a bridge that crosses the Harlem River, connecting the Bronx to Manhattan. These details, combined with the urban setting and the style of the road signs, strongly suggest that the video was filmed in New York City.",
+      "inference_time_sec": 9.415,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible?",
+      "ground_truth": "Near 7.4 seconds",
+      "prediction": "The signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible towards the end of the video, specifically around the 7-second mark.",
+      "inference_time_sec": 5.72,
+      "error": ""
+    }
+  ]
+}

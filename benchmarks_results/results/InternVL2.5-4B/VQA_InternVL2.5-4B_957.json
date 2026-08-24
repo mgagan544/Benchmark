@@ -1,0 +1,70 @@
+{
+  "video_id": 957,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/957.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What green information board is located directly to the left of the yellow speed advisory sign displaying 15 M P H?",
+      "ground_truth": "SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014] to the left of 15 M P H [entity_011]",
+      "prediction": "The green information board is located directly to the left of the yellow speed advisory sign displaying 15 M P H. It is positioned on the right side of the road, above the lane markings. The board is rectangular with a white background and black text. It provides directions to various locations, including 'The Museum of Modern Art' and 'The Cloisters.' The board is part of the road signage system, which is designed to inform drivers of upcoming destinations and potential road conditions.",
+      "inference_time_sec": 10.655,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances (such as license plates or vehicle tags) are visible between 1.2 and 1.767 seconds?",
+      "ground_truth": "5",
+      "prediction": "Between 1.2 and 1.767 seconds, there are two vehicle-mounted text instances visible: the license plate of the red convertible car and the license plate of the white van.",
+      "inference_time_sec": 6.185,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the orange construction warning sign, the yellow speed advisory sign, and the green overhead signs are encountered?",
+      "ground_truth": "1st ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010], 2nd 15 M P H [entity_011], 3rd SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014]",
+      "prediction": "The orange construction warning sign is encountered first, followed by the yellow speed advisory sign, and then the green overhead signs are seen as the video progresses.",
+      "inference_time_sec": 5.498,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the right side of the road indicates a hazard or construction ahead?",
+      "ground_truth": "ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010]",
+      "prediction": "The warning text on the right side of the road reads 'ROAD WORK AHEAD' in bold, capital letters. This sign is positioned on a green background with a white border, which is a common color scheme for road signs indicating caution or warnings. The placement of the sign on the right side of the road suggests that the work is either to the right of the lane from which the viewer is observing, or it is a general warning for drivers to be cautious of potential hazards ahead. The sign's design, with its clear and concise message, is intended to alert drivers to the possibility of reduced speed limits, lane closures, or other road",
+      "inference_time_sec": 12.062,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, multiple highway lanes, and construction warning signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway. This is indicated by the presence of multiple lanes, each with its own set of traffic signs and lane markings. The overhead exit signs are a common feature on highways to guide drivers to exits, and the construction warning signs are typically placed along highways to alert drivers of ongoing roadwork or changes in traffic flow. The combination of these elements suggests that the vehicle is on a major road designed for high traffic volumes, which is characteristic of highways.",
+      "inference_time_sec": 10.147,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or region is suggested by the green information board displaying SUNY State College Optometry?",
+      "ground_truth": "New York State",
+      "prediction": "The green information board displaying SUNY State College Optometry suggests that the city or region is likely to be New York, as SUNY State College of Optometry is located in New York City.",
+      "inference_time_sec": 6.098,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range are the overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE visible in the clip?",
+      "ground_truth": "8.2 to 9.3 seconds",
+      "prediction": "The overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE are visible throughout the entire duration of the video, from the beginning to the end.",
+      "inference_time_sec": 6.061,
+      "error": ""
+    }
+  ]
+}

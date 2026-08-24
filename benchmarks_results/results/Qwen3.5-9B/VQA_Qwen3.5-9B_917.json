@@ -1,0 +1,70 @@
+{
+  "video_id": 917,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/917.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
+      "ground_truth": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane",
+      "prediction": "The user wants to know the location of the \"AXI\" pavement marking relative to the taxi lane.\n\n1.  **Identify the taxi lane:** Looking at the video, especially in the first few frames (00:00 - 00:01), there is a lane on the left side of the road. It's marked with dashed white lines separating it from the main travel lane. There are also signs on the left wall indicating \"Taxi\" and \"Ground Transportation\". This confirms the leftmost lane is the taxi lane.\n\n2.  **Identify the \"AXI\" marking:** I",
+      "inference_time_sec": 13.218,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count distinct pavement or infrastructure markings visible on the roadway throughout the video.\n\n1.  **Analyze the video:** I'll scan through the frames, looking for markings on the road surface and infrastructure elements like signs or posts that are part of the road layout.\n\n2.  **Identify markings:**\n    *   **Lane markings:** There are white dashed lines separating lanes.\n    *   **Crosswalk markings:** There are white rectangular blocks forming a crosswalk.\n    *   **Stop line:** There's a thick white line indicating where to stop.\n    *   **Yellow signs",
+      "inference_time_sec": 13.205,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
+      "ground_truth": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'",
+      "prediction": "The user wants to determine the order of appearance for three specific pavement markings: '03', 'AXI', and '06'.\n\n1.  **Analyze the video for '03':**\n    *   Looking at the first frame (00:00), on the left side of the road, there is a blue sign. Below it, on the pavement, there are markings. Wait, let's look closer.\n    *   In the first frame, on the far left, there's a blue sign that says \"Terminal 3\". Below that, on the pavement, there are markings.",
+      "inference_time_sec": 13.148,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
+      "ground_truth": "TAXI [entity_001]",
+      "prediction": "The user wants to identify the text painted on the pavement that indicates a specific lane.\n\n1.  **Analyze the video:** I'll scan the video frames, specifically looking at the road surface on the left side.\n2.  **Locate the text:** In the first few frames (00:00 - 00:01), there is a distinct lane on the left.\n3.  **Identify the markings:**\n    *   There are white dashed lines separating lanes.\n    *   On the leftmost lane, there are large white letters painted on the ground.\n    *",
+      "inference_time_sec": 13.249,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
+      "ground_truth": "Airport terminal arrival area",
+      "prediction": "The user wants me to identify the type of environment shown in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Taxi lanes:** I see signs that say \"Taxi\" and \"Taxi Stand\". There are designated lanes for vehicles to pick up and drop off passengers.\n    *   **Terminal seating:** On the right side, there are rows of chairs or benches along the curb, typical of a waiting area for passengers.\n    *   **Airline signage:** I see blue signs hanging from the ceiling. One clearly says \"United\". Another sign says \"Terminal\".",
+      "inference_time_sec": 13.212,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the airline signage and pavement markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language used on the signage and pavement markings.\n\n1.  **Analyze the signage:**\n    *   I see blue signs hanging from the ceiling. One clearly says \"United\". This is an airline name, which is English.\n    *   There are yellow diamond-shaped signs. One shows a pedestrian crossing symbol.\n    *   There are blue signs with white text. One on the left says \"Terminal 3\" (partially visible but recognizable style). Another sign says \"Taxi\".\n    *   Looking closely at the blue signs, they seem to have English text. For",
+      "inference_time_sec": 13.274,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
+      "ground_truth": "4.1 seconds",
+      "prediction": "The user wants to find the timestamp where the \"AXI\" pavement marking is passed.\n\n1.  **Analyze the video:** I'll scan through the frames to locate the \"AXI\" marking on the road.\n2.  **Frame 00:00:** I see a blue sign on the left that says \"Toward Road\" and below it \"AXI\". Wait, that's a sign, not pavement. Let's look at the road.\n3.  **Frame 00:01:** Still approaching. No clear \"AXI\" on the pavement yet.\n4.",
+      "inference_time_sec": 13.317,
+      "error": ""
+    }
+  ]
+}

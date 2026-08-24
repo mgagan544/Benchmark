@@ -1,0 +1,70 @@
+{
+  "video_id": 980,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/980.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Upper Happy on the overhead sign?",
+      "ground_truth": "Valley Rd [entity_003] directly below Upper Happy [entity_002]",
+      "prediction": "The text 'Airport Exit' is located directly below 'Upper Happy' on the overhead sign.",
+      "inference_time_sec": 7.952,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the highway signs mentioned in the scene?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances displayed on the highway signs: 'Airport Exit Only' and 'Airport Blvd'.",
+      "inference_time_sec": 8.18,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds?",
+      "ground_truth": "1st: Acalanes Rd [entity_001], Upper Happy [entity_002], Valley Rd [entity_003]; 2nd: EXIT [entity_004]",
+      "prediction": "At the beginning of the clip, the vehicle passes a green overhead sign indicating 'Arcadia St' and 'Upper Heyburn St'. As the vehicle progresses, it approaches a green road sign with a white arrow pointing to the right, indicating a lane merge or exit. This sequence of signs is encountered in the order they appear from the vehicle's perspective as it moves forward on the highway.",
+      "inference_time_sec": 13.071,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is indicated near the green gore sign?",
+      "ground_truth": "An exit action is indicated by the EXIT [entity_004] sign.",
+      "prediction": "The green gore sign indicates an upcoming exit for 'Abercrombie Rd' and 'Upper Heygate'. This suggests that drivers should be prepared to exit the highway if they are heading towards these destinations. The presence of the sign is a visual cue for drivers to be aware of their route and to start preparing for the exit by possibly slowing down or changing lanes in advance. The sign's placement and the fact that it is clearly visible to drivers on the highway emphasize the importance of being attentive to such road signs for safe and efficient navigation.",
+      "inference_time_sec": 15.808,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of signs like Acalanes Rd and EXIT suggest?",
+      "ground_truth": "Highway",
+      "prediction": "The mix of signs like Acalanes Rd and EXIT suggests a suburban or semi-urban driving environment with exits for local roads and destinations.",
+      "inference_time_sec": 8.718,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the overhead and gore signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the signs is written in english.",
+      "inference_time_sec": 7.121,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the vehicle pass the green gore sign displaying EXIT?",
+      "ground_truth": "Between 2.633 and 2.733 seconds for EXIT [entity_004]",
+      "prediction": "The vehicle passes the green gore sign displaying EXIT between 0 to 5 seconds into the video.",
+      "inference_time_sec": 8.013,
+      "error": ""
+    }
+  ]
+}

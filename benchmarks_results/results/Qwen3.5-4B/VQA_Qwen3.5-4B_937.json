@@ -1,0 +1,70 @@
+{
+  "video_id": 937,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/937.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the ONE WAY sign relative to the word RIGHT near the intersection?",
+      "ground_truth": "To the right of RIGHT [entity_002]",
+      "prediction": "The user wants to know the spatial relationship between the \"ONE WAY\" sign and the word \"RIGHT\" near the intersection.\n\n1.  **Identify the relevant objects:** I need to find the \"ONE WAY\" sign and the word \"RIGHT\" in the provided images.\n2.  **Locate the signs:** Looking at the first few frames (00:00 - 00:01), I see a traffic light pole on the right side of the road, near the intersection.\n3.  **Analyze the pole:** Attached to this pole, there are several signs.\n    *",
+      "inference_time_sec": 13.031,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the large promotional billboard structure on the left side of the road?",
+      "ground_truth": "7",
+      "prediction": "The user wants me to count the distinct text instances on the large billboard on the left.\n\n1.  **Identify the billboard:** It's the large structure on the left side of the road, visible in the first few frames.\n2.  **Scan for text:**\n    *   In the first frame [0.0 second], I see \"Vernon Blvd\" on a green street sign below the billboard. Wait, the prompt asks for text on the *billboard structure*. Let's look closer.\n    *   Actually, looking at the billboard itself in frame [0.0 second], there's",
+      "inference_time_sec": 12.599,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the words on the street-side pole sign passed at the 6.533s mark?",
+      "ground_truth": "1st: Mount [entity_012], 2nd: Sinai [entity_013], 3rd: Queens [entity_014]",
+      "prediction": "The user wants to identify the order of words on a street-side pole sign passed at a specific timestamp.\n\n1.  **Analyze the request:**\n    *   Target: Street-side pole sign.\n    *   Timestamp: 6.533s.\n    *   Task: List the order of words.\n\n2.  **Examine the provided images:**\n    *   The images are a sequence of frames from a video.\n    *   The timestamps provided in the prompt are `[0.0 second]`, `[0.1 second]`, `[0.2 second]`, `[0",
+      "inference_time_sec": 12.666,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or regulatory text must the driver follow near the Vernon Blvd intersection at the start of the clip?",
+      "ground_truth": "KEEP [entity_001] RIGHT [entity_002] and ONE WAY [entity_003]",
+      "prediction": "The user wants to identify specific text on a sign near the Vernon Blvd intersection at the beginning of the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a large billboard on the left side of the road.\n    *   The billboard has text on it.\n    *   The text reads \"Vernon Blvd\" and \"Vernon Blvd\" again, indicating the intersection.\n    *   Below that, there's a smaller sign or text block. It says \"LEFT\" and \"RIGHT\".\n    *   Wait, let me look closer",
+      "inference_time_sec": 12.633,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a large movie billboard and multiple street signs suggest about the driving environment?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The user wants to know what the presence of a large movie billboard and multiple street signs suggests about the driving environment.\n\n1.  **Analyze the visual evidence:**\n    *   **Billboard:** There's a large billboard on the left side of the road. It advertises a movie (\"Life\"). This is a common sight in urban areas, especially near commercial districts or entertainment hubs.\n    *   **Street Signs:** There are multiple street signs visible.\n        *   One sign points to \"Vernon Blvd\" and \"Vernon Ave\".\n        *   Another sign points to \"125",
+      "inference_time_sec": 12.65,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific borough or region is suggested by the street-side pole sign passed at 6.533s?",
+      "ground_truth": "Queens [entity_014]",
+      "prediction": "The user is asking for information about a specific sign visible at a particular timestamp (6.533s).\n\n1.  **Analyze the video:** I need to look through the frames to find the timestamp 6.533s. Wait, the provided frames only go up to 0.5 seconds. This is a problem. The user is asking about a timestamp that is far outside the provided video clip.\n\n2.  **Re-evaluate the request:** The user is asking \"Which specific borough or region is suggested by the street-side pole sign passed at 6.533s?\".",
+      "inference_time_sec": 15.656,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range do the movie tagline and release date on the billboard come into full view?",
+      "ground_truth": "1.967s to 2.367s",
+      "prediction": "The user wants to find the specific time range where the movie tagline and release date on the billboard are fully visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The billboard is visible on the left, but the text is blurry and partially cut off. It says \"LIFE\" but the tagline and date are not clear.\n    *   **00:01:** The camera has moved closer. The billboard is clearer. I can see \"LIFE\" and \"MARCH 24\". The tagline \"WE WERE BETTER OFF ALONE",
+      "inference_time_sec": 12.703,
+      "error": ""
+    }
+  ]
+}

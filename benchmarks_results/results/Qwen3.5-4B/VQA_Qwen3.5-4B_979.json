@@ -1,0 +1,70 @@
+{
+  "video_id": 979,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/979.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the DUNKIN DONUTS signboard located relative to the Speedway gas station sign?",
+      "ground_truth": "to the right of Speedway [entity_002] sign",
+      "prediction": "The user wants to know the relative location of the DUNKIN DONUTS signboard compared to the Speedway gas station sign.\n\n1.  **Identify the Speedway sign:** In the first frame (00:00), there is a large red sign with the Speedway logo and gas prices. It's located on the right side of the road, near the gas station canopy.\n2.  **Identify the DUNKIN DONUTS sign:** In the same frame (00:00), looking further back and to the left of the Speedway sign, there is a smaller sign that says \"DUNK",
+      "inference_time_sec": 16.188,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct price numbers are displayed on the Speedway gas station sign?",
+      "ground_truth": "4",
+      "prediction": "The user wants me to count the distinct price numbers on the Speedway gas station sign.\n\n1.  **Identify the sign:** I see a large red sign with the Speedway logo.\n2.  **Locate the prices:** Below the logo, there is a column of numbers.\n3.  **Read the numbers:**\n    *   Top number: 269\n    *   Middle number: 289\n    *   Bottom number: 309\n4.  **Count the distinct numbers:** There are three numbers listed vertically.\n5.  **Formulate the answer:**",
+      "inference_time_sec": 12.672,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the speed limit sign, the PENSKE truck, and the CAR WASH sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: speed limit 25, 2nd: PENSKE [entity_010], 3rd: CAR [entity_011] WASH [entity_012]",
+      "prediction": "The user wants to know the order of three specific objects as the vehicle moves forward through the video.\n\n1.  **Identify the objects:**\n    *   **Speed limit sign:** I need to find a sign showing a speed limit. Looking at the first frame (00:00), there is a large red sign for \"Speedway\" gas station. Below it, there are numbers: 269, 289, 309. These look like gas prices, not a speed limit. Wait, let me look closer. Ah, looking at the sign at 00:0",
+      "inference_time_sec": 12.713,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed near the road ramp?",
+      "ground_truth": "speed limit 25",
+      "prediction": "The user wants to identify the regulatory text that constrains the vehicle's speed near the road ramp.\n\n1.  **Analyze the video:** I need to look for speed limit signs or other regulatory signs near the ramp where the car is driving.\n2.  **Scan the frames:**\n    *   Frame 1 (00:00): Shows a gas station (Speedway). No ramp yet.\n    *   Frame 2 (00:01): The car is turning or merging. There's a white truck.\n    *   Frame 3 (00:02): The",
+      "inference_time_sec": 12.645,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of gas station, donut shop, and car wash signs suggest?",
+      "ground_truth": "commercial strip",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Gas Station:** The first few frames show a Speedway gas station. This is a common roadside service station.\n    *   **Donut Shop:** The sign on the gas station says \"Donuts\". This indicates a convenience store or quick-service food outlet.\n    *   **Car Wash:** A sign for \"Car Wash\" is visible in the background (around 0:01).\n    *   **Roadway:** The car is driving on",
+      "inference_time_sec": 12.646,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the combination of 39 St, yellow taxicabs, and US commercial brands?",
+      "ground_truth": "New York City",
+      "prediction": "The user wants me to identify the city based on visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Street Sign:** In the first frame (00:00), there is a green street sign hanging from a traffic light pole. It reads \"39 St\". This is a very strong clue.\n    *   **Taxicabs:** In the first frame (00:00) and second frame (00:01), there are yellow cars at the gas station. These look like classic New York City yellow cabs.\n    *   **",
+      "inference_time_sec": 12.586,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the parked PENSKE truck first become visible in the clip?",
+      "ground_truth": "2.433 seconds",
+      "prediction": "The user wants to find the timestamp when a parked PENSKE truck first appears.\n\n1.  **Scan the video from the beginning.**\n2.  **00:00 - 00:01:** The view is of a gas station (Speedway). No trucks yet.\n3.  **00:01:** The camera pans right. A white box truck with \"PENSKE\" written on the side comes into view. It is parked near the gas station.\n4.  **Confirm the timestamp:** The truck is clearly visible starting right around the 00:01",
+      "inference_time_sec": 12.62,
+      "error": ""
+    }
+  ]
+}

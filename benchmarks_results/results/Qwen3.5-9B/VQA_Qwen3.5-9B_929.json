@@ -1,0 +1,70 @@
+{
+  "video_id": 929,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/929.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the signboard displaying Gabinst relative to the signboard displaying Natural?",
+      "ground_truth": "To the left of Natural [entity_003]",
+      "prediction": "The user wants to know the spatial relationship between two signboards.\n1.  **Identify the signboards:** I need to find the signboards displaying \"Gabinst\" and \"Natural\".\n2.  **Scan the images:**\n    *   Image 1: No clear signboards visible on the left.\n    *   Image 2: On the left side, there's a yellow sign. It says \"Natural\" at the top and \"Gabinst\" below it. Wait, let me look closer.\n    *   Image 3: The sign is clearer. It's a yellow vertical sign.",
+      "inference_time_sec": 13.23,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belonging to storefront or real estate signboards are visible in this clip?",
+      "ground_truth": "9",
+      "prediction": "The user wants me to count distinct pieces of text on storefront or real estate signboards.\n\n1.  **Scan the video for signboards:** I'll look at the buildings on the left and right sides of the street.\n2.  **Identify potential signboards:**\n    *   **Left side:**\n        *   At the very beginning (00:00), there's a yellow sign on a pole on the far left. It says \"ALEXANDER Natural Stone & Cabinets\". This is a storefront sign.\n        *   Further down the street on the left, there are some brick buildings",
+      "inference_time_sec": 13.271,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle?",
+      "ground_truth": "1st: TILE [entity_002], 2nd: Gabinst [entity_005], 3rd: KAPLON [entity_006]",
+      "prediction": "The user wants to determine the order of appearance for three specific signs: \"TILE\", \"Gabinst\", and \"KAPLON\".\n\n1.  **Locate \"TILE\" and \"Gabinst\":**\n    *   Looking at the first few frames (00:00 - 00:01), on the left side of the street, there is a yellow vertical sign.\n    *   In frame 00:01, the sign is clearly visible. It reads \"TILE\" at the top and \"Natural Stone & Cabinets\" below it. Wait, let me look",
+      "inference_time_sec": 13.156,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "No regulatory or warning text is visible in the clip.",
+      "prediction": "The user wants to know if there is any visible text in the video that indicates a hazard, warning, or driving constraint.\n\n1.  **Analyze the video for text:** I need to scan the frames for signs, street names, or any other text.\n    *   **Frame 1:** There's a \"P\" sign on a pole on the right. This indicates parking, which is a constraint (don't park here if it's a no-parking zone, but \"P\" usually means parking allowed). Wait, let's look closer. It's a white square with a black \"P\". That's",
+      "inference_time_sec": 13.223,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of storefront signboards and real estate signs suggest about this driving environment?",
+      "ground_truth": "An urban commercial or industrial district",
+      "prediction": "The user wants me to interpret the visual cues in the video, specifically focusing on the signs.\n\n1.  **Identify the signs:**\n    *   **Storefront signs:** I see a yellow sign on the left that says \"Natural Store & Cabinet\" (partially visible, looks like \"Natural Stone & Cabinet\"). There's also a sign on the right building with \"KAPLAN-BELO\" and a phone number.\n    *   **Real estate signs:** I see a \"P\" sign (likely for parking) on the right. Wait, looking closer at the first few frames, there's a sign",
+      "inference_time_sec": 13.27,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional convention is suggested by the phone number format containing the area code (718)?",
+      "ground_truth": "North American numbering plan, specifically New York City",
+      "prediction": "The user is asking for the regional convention associated with the area code 718, which is visible on a phone number in the video.\n\n1.  **Identify the area code:** I need to look closely at the video frames to find a phone number with the area code 718.\n    *   Looking at the first few frames, there's a mural on the right wall.\n    *   In the second frame (00:01), on the right wall, there's a sign that says \"KAPLAN-BELO\" and below it \"392-3456",
+      "inference_time_sec": 13.196,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the real estate sign displaying KAPLON first align with the camera, and when does the vehicle pass the area code (718)?",
+      "ground_truth": "KAPLON [entity_006] aligns at 6.6 seconds; (718) [entity_010] is passed at 8.2 seconds",
+      "prediction": "The user wants to find two specific timestamps based on the video frames provided.\n\n1.  **Identify the \"real estate sign displaying KAPLON\":**\n    *   I need to scan the frames for a sign with the text \"KAPLON\".\n    *   Looking at the frames:\n        *   Frame 00:00: No sign visible.\n        *   Frame 00:01: No sign visible.\n        *   Frame 00:02: No sign visible.\n        *   Frame 00:03: Ah, on",
+      "inference_time_sec": 13.294,
+      "error": ""
+    }
+  ]
+}

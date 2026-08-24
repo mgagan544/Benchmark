@@ -1,0 +1,70 @@
+{
+  "video_id": 995,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/995.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the 1042 number on the first parked school bus?",
+      "ground_truth": "738-7373 [entity_005] to the right of 1042 [entity_004]",
+      "prediction": "The user wants me to identify text next to a specific number on a bus.\n\n1.  **Locate the bus:** I need to find the \"first parked school bus\". Looking at the video, there's a line of yellow school buses parked on the right side of the road. The closest one to the camera is the \"first\" one.\n2.  **Locate the number:** I need to find the number \"1042\" on this bus.\n    *   In the first frame (00:00), I see a bus on the right. There's a number \"10",
+      "inference_time_sec": 13.14,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the first parked school bus?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the distinct text instances containing numbers on the first parked school bus.\n\n1.  **Identify the bus:** The first parked school bus is the one closest to the camera on the right side of the road. It's a yellow school bus.\n2.  **Scan for text with numbers:** I need to look at the back and sides of this bus.\n    *   **Rear window area:** There's text \"SCHOOL BUS\". No numbers there.\n    *   **Rear bumper area:** There's a phone number. Let's look closely. It looks like \"7",
+      "inference_time_sec": 13.367,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text labels Richie, Service, and 4290 are passed by the ego vehicle?",
+      "ground_truth": "1st: 4290 [entity_011], 2nd: Service [entity_012], 3rd: Richie [entity_013]",
+      "prediction": "The user wants to determine the order in which three specific text labels appear in the video as the ego vehicle moves forward.\n\n1.  **Identify the labels:**\n    *   \"Richie\": I need to look for a sign or text containing this word. Looking at the first few frames, specifically around 00:00 - 00:01, there is a sign on the right side of the road, partially obscured by a tree but visible enough to read \"RICHIE\". Wait, let me look closer. Ah, at 00:00, on the right side, there",
+      "inference_time_sec": 13.251,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the first parked school bus indicates a potential driving constraint or warning?",
+      "ground_truth": "STOP [entity_002]",
+      "prediction": "The user wants to identify text on the first parked school bus that indicates a driving constraint or warning.\n\n1.  **Identify the first parked school bus:** Looking at the video, there is a line of yellow school buses parked on the right side of the road. The closest one to the camera is the \"first\" one.\n2.  **Examine the bus for text:** I need to look closely at the rear and sides of this bus.\n3.  **Locate the text:**\n    *   On the rear window, there's \"SCHOOL BUS\".\n    *   On the side,",
+      "inference_time_sec": 13.404,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of area does the combination of residential buildings, a public park, and school buses suggest?",
+      "ground_truth": "residential school zone",
+      "prediction": "The user wants me to identify the type of area based on the visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Residential buildings:** I see houses and apartment buildings on the sides of the road. They look like typical suburban or semi-rural housing.\n    *   **Public park:** There's a grassy area with trees and a fence on the right side, which looks like a school playground or a small park.\n    *   **School buses:** There are multiple yellow school buses parked along the side of the road. This is a very strong indicator of a",
+      "inference_time_sec": 13.274,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific telephone area code visible on the first school bus suggests the vehicle is in New York City?",
+      "ground_truth": "718 [entity_007]",
+      "prediction": "The user wants me to identify a specific area code visible on the first school bus in the video.\n\n1.  **Analyze the video:** I need to look at the first few seconds of the video where the school buses are visible.\n2.  **Locate the first school bus:** In the first frame (00:00), there's a yellow school bus on the right side of the road, parked or stopped.\n3.  **Zoom in on the bus:** I need to look closely at the text on the back of that bus.\n4.  **Identify the text:** In the",
+      "inference_time_sec": 13.216,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the text Little Linda visible on the first parked school bus?",
+      "ground_truth": "00:02 - 00:04",
+      "prediction": "The user wants to find the specific time range where the text \"Little Linda\" is visible on the first parked school bus.\n\n1.  **Identify the bus:** Looking at the video, there is a line of yellow school buses parked on the right side of the road. The \"first\" bus in this line (closest to the camera initially) is the one that comes into view clearly around the 00:01 mark.\n2.  **Scan for text:** I need to look closely at the side of this bus.\n    *   At 00:00, the bus is far away",
+      "inference_time_sec": 13.378,
+      "error": ""
+    }
+  ]
+}

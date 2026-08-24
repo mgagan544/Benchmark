@@ -1,0 +1,70 @@
+{
+  "video_id": 981,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/981.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What temporary sign is located to the left of the concrete retaining wall on the shoulder beneath the overpass?",
+      "ground_truth": "TRS [entity_009] NOW [entity_010] OPEN [entity_011] to the left of the concrete retaining wall",
+      "prediction": "The user wants me to identify a specific sign in the video.\n\n1.  **Analyze the request:**\n    *   **Target:** A temporary sign.\n    *   **Location:** To the left of the concrete retaining wall on the shoulder.\n    *   **Context:** Beneath the overpass.\n\n2.  **Scan the video frames:**\n    *   **Frame 1 (00:00):** I see a highway. There's a concrete wall on the right. There's an overpass ahead. To the left of the wall, further down the road, there's a sign",
+      "inference_time_sec": 13.046,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct overhead highway signs or route markers are mentioned on the two overpasses?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the distinct overhead highway signs or route markers visible on the two overpasses.\n\n1.  **Identify the overpasses:** Looking at the video, there are two main overpasses visible.\n    *   One is closer, directly ahead.\n    *   One is further back, slightly to the left.\n\n2.  **Analyze the closer overpass:**\n    *   At [0.0 second], I see two green signs hanging from the closer overpass.\n    *   Left sign: \"I-215 EAST Henderson\".\n    *   Right sign:",
+      "inference_time_sec": 12.668,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the SPEED LIMIT sign, the RTC transit sign, and the TRS NOW OPEN sign are encountered by the vehicle?",
+      "ground_truth": "1st: SPEED [entity_001] LIMIT [entity_002], 2nd: RTC [entity_008], 3rd: TRS [entity_009] NOW [entity_010] OPEN [entity_011]",
+      "prediction": "The user wants to know the order of three specific signs based on the video.\n\n1.  **SPEED LIMIT sign:** I need to find a sign indicating speed limit.\n    *   Looking at the first frame (00:00), on the right side of the road, there is a white rectangular sign. It says \"SPEED LIMIT 55\". This is clearly visible.\n\n2.  **RTC transit sign:** I need to find a sign related to RTC (Ride with a Friend / TriMet? No, in Nevada, RTC usually stands for Regional Transportation Commission, often associated with \"R",
+      "inference_time_sec": 12.693,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed at the beginning of the clip?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
+      "prediction": "The user wants to identify the regulatory text that constrains the vehicle's speed at the beginning of the video.\n\n1.  **Analyze the first frame (00:00):** I need to look for speed limit signs.\n2.  **Locate the sign:** On the right side of the road, attached to the concrete retaining wall, there is a white rectangular sign.\n3.  **Read the text:** The sign has the text \"SPEED LIMIT\" at the top and the number \"55\" below it.\n4.  **Confirm the context:** This sign is clearly visible in the",
+      "inference_time_sec": 12.627,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multi-lane overhead gantries, route markers, and speed limit signs, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants me to identify the type of driving environment shown in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Road:** It's a wide, paved road with multiple lanes in each direction (at least 3 visible lanes going forward).\n    *   **Signage:** There are large green overhead signs.\n        *   One sign says \"I-215 EAST Henderson\".\n        *   Another sign says \"I-215 WEST Las Vegas\".\n        *   There are arrows indicating lane directions.\n        *   There's a smaller sign indicating \"1",
+      "inference_time_sec": 12.605,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional cities or destinations are indicated by the overhead highway signs?",
+      "ground_truth": "Henderson [entity_005] and Las Vegas [entity_007]",
+      "prediction": "The user wants to identify the cities or destinations shown on the highway signs.\n\n1.  **Analyze the first sign (left side):**\n    *   I see a green overhead sign.\n    *   It has the Interstate shield \"215\".\n    *   The text says \"EAST\".\n    *   Below that, it says \"Henderson\".\n    *   There is an arrow pointing straight ahead.\n    *   Below \"Henderson\", it says \"1/4 MILE\".\n\n2.  **Analyze the second sign (right side):**\n    *",
+      "inference_time_sec": 12.661,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the SPEED LIMIT sign first become legible to the vehicle?",
+      "ground_truth": "0.3 seconds",
+      "prediction": "The user wants to find the timestamp when the SPEED LIMIT sign first becomes legible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** I see a highway scene. On the right side, there's a white wall and some landscaping. Further right, near the wall, there is a sign. It looks like a rectangular white sign with black text. The text \"SPEED LIMIT\" and \"55\" is visible. It's quite clear.\n    *   **00:01:** The car is moving forward. The sign is still visible on the right, slightly",
+      "inference_time_sec": 12.72,
+      "error": ""
+    }
+  ]
+}

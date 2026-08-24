@@ -1,0 +1,70 @@
+{
+  "video_id": 938,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/938.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable sign is located directly to the left of the Parking sign on the overhead gantry, which becomes visible at 0.767s?",
+      "ground_truth": "KEEP LEFT [entity_005] signboard, to the left of Parking [entity_003] sign",
+      "prediction": "The user wants me to identify a specific sign based on its location relative to another sign.\n\n1.  **Identify the \"Parking sign\":** Looking at the video, specifically around the 0.0s to 0.5s mark, there is a blue overhead sign. It has a number '4' at the top. Below that, it says \"Parking Terminal\" and \"KEEP LEFT\". This is the \"Parking sign\" mentioned.\n\n2.  **Identify the \"overhead gantry\":** This is the structure holding the signs.\n\n3.  **Locate the sign \"directly",
+      "inference_time_sec": 12.993,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many street, regulatory, or airport signs are identified in the scene description, including those passed between 0.0s and 2.933s?",
+      "ground_truth": "8",
+      "prediction": "The user wants me to count the street, regulatory, or airport signs visible in the video.\n\n1.  **Analyze the video:** I'll scan through the frames from 0.0s to 2.933s.\n2.  **Identify signs:**\n    *   **0.0s - 0.1s:**\n        *   Left side: Yellow diamond sign with a pedestrian symbol (crosswalk warning).\n        *   Left side: Blue sign below the pedestrian sign (looks like a parking or direction sign, partially obscured but visible).\n        *   Center/Right",
+      "inference_time_sec": 12.65,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the Airport sign, the Blue Parking sign, and the ONE WAY sign are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Airport [entity_001], 2nd: Blue Parking [entity_007], 3rd: ONE WAY [entity_009]",
+      "prediction": "The user wants to determine the chronological order of three specific signs based on the video frames.\n\n1.  **Identify the signs:**\n    *   **Airport sign:** This is the blue sign on the right side that says \"Airport Exit\".\n    *   **Blue Parking sign:** This is the blue sign on the left side (relative to the lane) that says \"Parking Terminal\". Wait, looking closely at the first frame, there's a blue sign on the right that says \"Parking Terminal\" and \"Airport Exit\". Let's re-examine.\n    *   Actually, let's look at the signs more",
+      "inference_time_sec": 15.594,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory sign on a roadside post, passed at 2.933s, indicates a directional constraint for drivers?",
+      "ground_truth": "ONE WAY [entity_009] sign",
+      "prediction": "The user wants to identify a specific regulatory sign visible in the video.\n\n1.  **Analyze the request:**\n    *   **Time:** 2.933s (which corresponds to the frame around 0.3s - 0.4s in the provided sequence).\n    *   **Object:** A regulatory sign on a roadside post.\n    *   **Content:** Indicates a directional constraint for drivers.\n\n2.  **Scan the video frames:**\n    *   **Frame 0.0s - 0.1s:** I see a blue sign on the right side of",
+      "inference_time_sec": 15.599,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is depicted, given the presence of the Terminal and Parking signs on the gantry and the Blue Parking Garage?",
+      "ground_truth": "Airport terminal roadway",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Signage:** I see a blue sign that says \"Parking Terminal Exit KEEP LEFT\" and another sign that says \"Airport Exit KEEP RIGHT\". There's also a green highway sign overhead.\n    *   **Infrastructure:** There are large concrete structures overhead, resembling a highway overpass or a multi-level parking garage structure.\n    *   **Vehicles:** There are cars, vans, and what looks like a shuttle bus or airport vehicle on the right.",
+      "inference_time_sec": 15.621,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead gantry signs and the ONE WAY sign?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language used on the signs in the video.\n\n1.  **Analyze the overhead gantry signs:**\n    *   Looking at the green overhead signs (e.g., at 00:00, 00:01, 00:02), I can see text.\n    *   The text is in English. It typically lists destinations like \"Newark\", \"Jersey City\", \"New York\", etc., which are standard US highway destinations.\n    *   The font and layout are characteristic of US interstate highway signage.\n\n2.  **An",
+      "inference_time_sec": 15.629,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Blue Parking Garage structure first become fully visible on the left side of the roadway?",
+      "ground_truth": "2.133s with Blue Parking Garage [entity_008]",
+      "prediction": "The user wants to find the timestamp when the Blue Parking Garage structure first becomes fully visible on the left side.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The view is under an overpass. To the left, there's a black fence and a concrete structure, but it's partially obscured and not clearly a \"Blue Parking Garage\" yet. There's a yellow pedestrian sign.\n    *   **00:01:** The camera has moved forward. The structure on the left is now more visible. It's a multi-level parking garage. The color is a bit",
+      "inference_time_sec": 12.65,
+      "error": ""
+    }
+  ]
+}

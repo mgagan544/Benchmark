@@ -1,0 +1,70 @@
+{
+  "video_id": 987,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/987.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory sign displaying the word STANDING relative to the parked dark green SUV?",
+      "ground_truth": "Adjacent to the dark green SUV, as STANDING [entity_001]",
+      "prediction": "The regulatory sign displaying the word STANDING is located to the right of the parked dark green SUV. It is positioned on the sidewalk, parallel to the parked vehicles, and is visible as the car passes by the SUV.",
+      "inference_time_sec": 8.878,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory signs are visible in this clip?",
+      "ground_truth": "1",
+      "prediction": "Two",
+      "inference_time_sec": 5.77,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles passed by the ego vehicle on the right side of the road between 00:00 and 00:06?",
+      "ground_truth": "1st: white sedan, 2nd: dark sedan, 3rd: silver sedan, 4th: grey minivan",
+      "prediction": "The ego vehicle passes a white car, a silver car, a black car, a blue minivan, and a white SUV in that order.",
+      "inference_time_sec": 7.52,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the regulatory sign visible at the intersection near the end of the clip?",
+      "ground_truth": "STANDING [entity_001] indicates a standing restriction",
+      "prediction": "The regulatory sign visible at the intersection near the end of the clip indicates a 'No Turn on Red' rule, which is a driving constraint that prohibits vehicles from making a right turn when the traffic signal is red. This rule is in place to enhance safety at intersections by preventing potential conflicts between turning and oncoming traffic. The sign is typically a red circle with a white horizontal bar, which universally signals a prohibition. The presence of this sign suggestsifies the importance of adhering to traffic regulations to maintain orderly and safe vehicular movement in the area.",
+      "inference_time_sec": 12.065,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the environment and the parked vehicles, what type of area is the vehicle traveling through?",
+      "ground_truth": "Residential area",
+      "prediction": "The vehicle is traveling through a residential area.",
+      "inference_time_sec": 6.254,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the regulatory sign at the intersection written in?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 5.851,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text on the regulatory sign first become visible to the ego vehicle?",
+      "ground_truth": "00:08",
+      "prediction": "The text on the regulatory sign first becomes visible to the ego vehicle at the timestamp 1 10 to 15 seconds  .",
+      "inference_time_sec": 7.371,
+      "error": ""
+    }
+  ]
+}

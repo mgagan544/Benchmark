@@ -1,0 +1,70 @@
+{
+  "video_id": 958,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/958.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+      "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
+      "prediction": "The parking sign text located to the left of the license registration AT * 665J is 'PARKING'.",
+      "inference_time_sec": 10.489,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances located on the automotive service building on the left side of the street. The first is 'AUTO REPAIR' in red letters, the second is 'CAR WASH' in white letters on a red background, and the third is 'CAR WASH' in white letters on a blue background.",
+      "inference_time_sec": 7.874,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+      "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
+      "prediction": "The first text instance encountered is 'famous', followed by 'famous', and then 'famous'.",
+      "inference_time_sec": 4.955,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+      "ground_truth": "TURNS [entity_010]",
+      "prediction": "The text on the regulatory traffic sign that indicates a driving constraint or instruction across from the DAK sign reads 'NO TURN ON RED'. This sign is positioned on the right side of the road, near the curb, and is visible in the video as the vehicle approaches the intersection. It is a standard traffic sign used to inform drivers that they are not permitted to make a turn on red light at this intersection. The sign is rectangular with a red border and white background, which is the typical color scheme for such signs in many countries, including the United States. The presence of this sign suggests that the intersection is regulated to ensure traffic flow and",
+      "inference_time_sec": 12.054,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The driving environment suggested by the storefronts, digital billboards, and commercial signs is urban and commercial. The presence of a 'CAMERA' sign indicates a regulated traffic area, possibly a city center or a business district. The digital billboards and commercial signs are typical of a bustling city environment where businesses operate and advertisements are displayed to attract customers. The architecture, with its modern glass facades and the mix of commercial and possibly residential buildings, reinforces the urban setting. The overall impression is of a city that is both active and well-developed, with a focus on commerce and transportation.",
+      "inference_time_sec": 11.479,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+      "ground_truth": "New York City, New York State",
+      "prediction": "The phone number area code and the inspection sign text suggest that the scene is set in New York City. The area code is 212, which is commonly associated with New York City, and the inspection sign text 'INSPECTION' is a common feature in the city's traffic regulations.",
+      "inference_time_sec": 7.481,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+      "ground_truth": "0.0s to 0.233s",
+      "prediction": "The digital billboard texts THE, DISPLAYERS, and Snycom are tracked from 00:00:00 to 00:00:05 at the start of the clip.",
+      "inference_time_sec": 6.335,
+      "error": ""
+    }
+  ]
+}

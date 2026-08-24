@@ -1,0 +1,70 @@
+{
+  "video_id": 927,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/927.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text New Jersey relative to the G W Bridge text?",
+      "ground_truth": "Below G W Bridge [entity_003]",
+      "prediction": "The text 'New Jersey' is positioned to the right of the 'G W Bridge' text on the highway sign.",
+      "inference_time_sec": 5.063,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the overhead gantry signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are three distinct text instances displayed on the overhead gantry signs in this clip. The first sign reads 'G. W. Bridge New Jersey' with an arrow pointing to the left, the second sign reads 'C. Bronx Expy W 178 St' with an arrow pointing to the right, and the third sign reads 'I-95 North' with an arrow pointing straight ahead.",
+      "inference_time_sec": 8.973,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?",
+      "ground_truth": "1st: NORTH [entity_002]; 2nd: New Jersey [entity_008]",
+      "prediction": "As the vehicle drives, the text 'NORTH' becomes visible first, followed by 'New Jersey'. This sequence indicates that the vehicle is moving forward and approaching the highway signs that display these texts.",
+      "inference_time_sec": 6.131,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?",
+      "ground_truth": "NO TRUCKS [entity_006] and ALL TRUCKS TO NJ [entity_007]",
+      "prediction": "The specific text on the overhead gantry that indicates driving restrictions or instructions for trucks is 'NO TRUCKS'. This sign is visible in the third frame of the video, positioned above the lanes, and is part of the highway's signage system to guide and inform drivers about the permitted vehicles on the road.",
+      "inference_time_sec": 7.587,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the density and type of overhead text suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The density and type of overhead text suggest that the driving environment is a well-structured highway system designed to guide drivers to their destinations. The presence of multiple signs with clear directional information indicates that the highway is likely a major thoroughfare with multiple exits and routes. The text is organized in a way that provides essential information such as exit names, directions, and distances, which is typical for highways in urban or suburban areas where traffic is expected to be high and drivers need clear guidance to navigate efficiently.",
+      "inference_time_sec": 10.109,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which metropolitan area is suggested by the visible overhead signs, and what text supports this?",
+      "ground_truth": "New York metropolitan area, supported by Cr Bronx Expy [entity_004] and New Jersey [entity_008]",
+      "prediction": "The visible overhead signs suggest that the vehicle is in the New York metropolitan area. This is supported by the text 'New Jersey' and 'G. W. Bridge' on the signs, which are landmarks and bridges associated with New York.",
+      "inference_time_sec": 6.662,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?",
+      "ground_truth": "0.033s",
+      "prediction": "The texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible at the 1.5-second mark.",
+      "inference_time_sec": 5.77,
+      "error": ""
+    }
+  ]
+}

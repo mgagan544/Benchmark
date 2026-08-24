@@ -1,0 +1,70 @@
+{
+  "video_id": 901,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/901.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which readable text instances appear between the ONE WAY sign and the CARS CASH sign on the commercial facade?",
+      "ground_truth": "BREAKFAST [entity_004], FREE DELIV [entity_002], and 718-392-6 [entity_003]",
+      "prediction": "DRIVERS WANTED",
+      "inference_time_sec": 4.701,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances representing phone numbers or parts of phone numbers are visible on the commercial facade and the brick building?",
+      "ground_truth": "7",
+      "prediction": "2",
+      "inference_time_sec": 3.745,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the address markers 35-11 and 42-11 are encountered as the vehicle drives forward?",
+      "ground_truth": "1st: 35-11 [entity_017], 2nd: 42-11 [entity_018]",
+      "prediction": "As the vehicle drives forward, it first encounters the address marker **35-11**, and then later encounters the address marker **42-11**. \n\nThis is because the vehicle is moving along the street, and the address markers are posted sequentially along the road. The marker **35-11** appears closer to the camera initially, and as the vehicle progresses forward, the marker **42-11** comes into view further down the road. \n\nThus, the order is: **35-11** first, then **42-11**.",
+      "inference_time_sec": 13.498,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the road surface and adjacent sign near the end of the clip?",
+      "ground_truth": "SLOW [entity_020] and STOP [entity_019]",
+      "prediction": "The instructional or regulatory text visible on the road surface and adjacent sign near the end of the clip is:\n\n- **\"DRIVERS WANTED\"** — displayed on a blue sign above a building on the right side of the road.\n- **\"ONE WAY\"** — visible on a street sign near the intersection.\n- **\"43 AV\"** — indicating the street name, visible on a green street sign above the intersection.\n- **\"BICYCLE LANE\"** — indicated by a white bicycle symbol painted on the road surface, along with an arrow pointing forward, suggesting a designated bike lane ahead.\n\nThese signs and",
+      "inference_time_sec": 13.775,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.0s and 2.10s suggest about the type of area?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of text visible between 0.0s and 2.10s suggests that the area is an urban, commercial, or industrial zone with active transportation and employment opportunities. Here’s a breakdown of what the text implies:\n\n1. **“43 AV” (0.0s)**: This is a street name, indicating a numbered avenue, common in urban grid systems (like New York City). It points to a structured, developed area.\n\n2. **“DRIVERS WANTED” (0.0s–0.2s)**: This sign is prominently displayed on a building, suggesting there is a",
+      "inference_time_sec": 14.63,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which regional telephone area codes visible in the clip suggest the video was filmed in New York City?",
+      "ground_truth": "718 [entity_015] and (917) [entity_012]",
+      "prediction": "The regional telephone area code visible in the clip is **718**, which is one of the area codes for New York City. This code is prominently displayed on the “DRIVERS WANTED” sign in the background, indicating the location is within the 718 area code region of New York City.",
+      "inference_time_sec": 9.498,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the license plate of the lead vehicle visible in the clip?",
+      "ground_truth": "0.0s to 1.37s",
+      "prediction": "The license plate of the lead vehicle is visible from 0:00 to 0:01.",
+      "inference_time_sec": 5.85,
+      "error": ""
+    }
+  ]
+}

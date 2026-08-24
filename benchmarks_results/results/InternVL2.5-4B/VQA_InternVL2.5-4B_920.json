@@ -1,0 +1,70 @@
+{
+  "video_id": 920,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/920.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What yellow clearance warning text is located directly to the right of the overhead sign containing Terminals?",
+      "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
+      "prediction": "The yellow clearance warning text located directly to the right of the overhead sign containing Terminals reads 'CLEARANCE 14'0\"'. This text is part of the larger sign that provides directions to various airport terminals and facilities, including Central Terminal, Daily Wait Area, and Airport Exit. The clearance warning is a safety notice indicating the minimum height clearance for vehicles passing under the sign, ensuring that no vehicle obstructs the view of the sign for drivers approaching the airport.",
+      "inference_time_sec": 15.519,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct license plates visible in the video. The first is on the black car directly ahead, the second is on the black SUV to the left, and the third is on the white car to the right.",
+      "inference_time_sec": 6.427,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three distinct vehicle-mounted text instances encountered on the NYPD cruiser?",
+      "ground_truth": "1st POLICE [entity_002], 2nd 50341 [entity_003], 3rd PLOW [entity_005]",
+      "prediction": "The first distinct text instance on the NYPD cruiser reads 'NYPD' in white letters on a blue background. The second instance reads 'CRIME STOPPERS' in white letters on a blue background. The third instance reads '1-877-NYCRIMES' in white letters on a blue background.",
+      "inference_time_sec": 7.802,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the yellow sign indicates a height restriction for vehicles passing under the gantry?",
+      "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
+      "prediction": "The yellow sign in the video displays a warning text that reads 'DO NOT PASS UNDER THIS GANTRY.' This text is crucial for drivers to be aware of the height clearance, ensuring that their vehicles do not exceed the height limit, which could result in damage to the vehicle or the gantry itself. The sign is positioned above the road, making it visible to drivers approaching the gantry. It serves as a safety measure to prevent accidents and damage to vehicles and infrastructure.",
+      "inference_time_sec": 9.868,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of facility does the mix of overhead and roadside signs indicate the vehicle is approaching?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "The mix of overhead and roadside signs indicates that the vehicle is approaching an airport facility. The signs provide directions to various airport terminals, a daily wait area, and the airport exit, which are typical elements found in an airport's infrastructure.",
+      "inference_time_sec": 6.59,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city's police department is indicated by the markings on the parked patrol cruiser?",
+      "ground_truth": "New York City",
+      "prediction": "The markings on the parked patrol cruiser indicate that it belongs to the New York City Police Department. This can be deduced from the visible text and symbols on the vehicle, which are characteristic of NYPD vehicles. The presence of the NYPD logo and the distinctive color scheme of the patrol cruiser further confirm this identification.",
+      "inference_time_sec": 7.561,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate N202894C first become visible in the travel lane?",
+      "ground_truth": "2.933 seconds for N202894C [entity_001]",
+      "prediction": "The license plate N202894C first becomes visible in the travel lane at the 1-second mark.",
+      "inference_time_sec": 5.093,
+      "error": ""
+    }
+  ]
+}

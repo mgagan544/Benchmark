@@ -1,0 +1,70 @@
+{
+  "video_id": 993,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/993.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the ticket windows relative to the regulatory sign that says NO STANDING ANYTIME?",
+      "ground_truth": "TICKETS [entity_009] windows to the right of NO STANDING [entity_007] ANYTIME [entity_008]",
+      "prediction": "The user wants to know the spatial relationship between the ticket windows and the \"NO STANDING ANYTIME\" sign.\n\n1.  **Identify the \"NO STANDING ANYTIME\" sign:** I see a red sign on a pole on the right side of the street. It's visible in the first few frames (00:00, 00:01). It says \"NO STANDING ANYTIME\" with an arrow pointing right.\n2.  **Identify the ticket windows:** Looking at the building on the right, specifically the brick building labeled \"BULLPEN GATE\", there are large glass",
+      "inference_time_sec": 13.178,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory parking-related signs are mentioned along the stadium's exterior?",
+      "ground_truth": "2",
+      "prediction": "The user wants to count distinct regulatory parking-related signs visible along the stadium's exterior.\n\n1.  **Identify the stadium:** The video shows a large brick building on the right side. At the beginning (00:00), a sign \"BULLPEN GATE\" is visible. This is likely part of the stadium complex (specifically, the Bullpen Gate at Wrigley Field).\n2.  **Scan for signs:** I need to look for signs that regulate parking.\n    *   **Sign 1:** At 00:00, on the far right, attached to a pole",
+      "inference_time_sec": 12.714,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the stadium entrance gate, the ticket windows, and the large banner are encountered as the vehicle drives forward?",
+      "ground_truth": "1st: BULLPEN [entity_006] GATE [entity_005], 2nd: TICKETS [entity_009], 3rd: AMWAY [entity_010]",
+      "prediction": "The user wants to know the order of three specific objects as the vehicle drives forward.\n\n1.  **Identify the objects:**\n    *   **Stadium entrance gate:** I see a sign that says \"BULLPEN GATE\" on the right side.\n    *   **Ticket windows:** Just below the \"BULLPEN GATE\" sign, there are windows with \"TICKETS\" written on them.\n    *   **Large banner:** Further down the road on the left, there's a large white structure, possibly a tunnel or entrance, but looking closely at the right side, there's a",
+      "inference_time_sec": 12.672,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the stadium's exterior indicates a parking or stopping restriction near the entrance gate?",
+      "ground_truth": "NO STANDING [entity_007] ANYTIME [entity_008]",
+      "prediction": "The user wants to identify specific text on the stadium's exterior related to parking or stopping restrictions.\n\n1.  **Analyze the video:** I'll scan the video frames, particularly focusing on the right side where the stadium building is located.\n2.  **Locate the stadium:** The stadium is the large brick building on the right.\n3.  **Identify the entrance gate:** There's a sign that says \"BULLPEN GATE\". This is likely the entrance gate.\n4.  **Look for parking/stopping restrictions:** Near the \"BULLPEN GATE\" sign, I need to look",
+      "inference_time_sec": 12.647,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the stadium gate, ticket windows, and commercial banners?",
+      "ground_truth": "sports and commercial district",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Stadium Gate:** In the first few frames (0.0s - 0.1s), there is a large sign that says \"BULLPEN GATE\". This is a common name for an entrance to a sports stadium.\n    *   **Ticket Windows:** In the same frames (0.0s - 0.1s), below the \"BULLPEN GATE\" sign, there are windows with \"TICKETS\" written",
+      "inference_time_sec": 12.655,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the legible signs and banners in this scene?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the legible signs and banners in the video.\n\n1.  **Analyze the video frames:** I will scan the video for any text on signs, banners, or vehicles.\n    *   **Frame 0.0s - 0.1s:** On the right, there's a white van. The text on the back says \"BULLPEN GATE\" and below it \"TICKETS\". This looks like English.\n    *   **Frame 0.1s:** Further down the street on the right, there's a blue sign that says \"Away",
+      "inference_time_sec": 12.62,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range are the ticket windows and the large commercial banner on the right side of the road visible?",
+      "ground_truth": "2.2s to 4.133s",
+      "prediction": "The user wants to find the time range where two specific things are visible on the right side of the road: \"ticket windows\" and a \"large commercial banner\".\n\n1.  **Analyze the frames:**\n    *   **00:00:** I see a white van. Behind it, there's a sign that says \"BULLPEN GATE\". Further back, there's a blue sign that looks like \"Away\". I don't see clear \"ticket windows\" yet, but the \"BULLPEN GATE\" sign is prominent. Wait, looking closely at the first frame, there's a sign that",
+      "inference_time_sec": 12.618,
+      "error": ""
+    }
+  ]
+}

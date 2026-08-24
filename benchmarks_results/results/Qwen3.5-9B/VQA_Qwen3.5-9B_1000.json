@@ -1,0 +1,70 @@
+{
+  "video_id": 1000,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/1000.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle drives forward from the wrapping business at 0.0s, what is the spatial position of the HOME TILE CENTER SHOWROOM relative to the LETTERS & WRAPS SIGN?",
+      "ground_truth": "To the right of LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001]",
+      "prediction": "The user wants to know the spatial relationship between two specific signs visible in the video.\n\n1.  **Identify the \"LETTERS & WRAPS SIGN\":** Looking at the first frame (0.0s), there is a blue sign on the right side of the street that says \"VEHICLE LETTERS & WRAPS\". It's quite prominent.\n2.  **Identify the \"HOME TILE CENTER SHOWROOM\":** Just to the left of the \"LETTERS & WRAPS\" sign, there is another storefront. The sign above the window says \"HOME TILE CENTER\".\n3.  **Determine",
+      "inference_time_sec": 13.251,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers, such as phone numbers or license plates, are mentioned in the clip?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count distinct text instances that contain numbers, specifically phone numbers or license plates, visible in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify text with numbers.\n    *   **Frame 1 (00:00):**\n        *   Sign on the right: \"1-800-9545\" (partially visible, looks like a phone number). Wait, let's look closer. It says \"1-800-9545\".\n        *   Sign on the right: \"718",
+      "inference_time_sec": 13.229,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle passes the LETTERS & WRAPS SIGN and the HOME TILE CENTER?",
+      "ground_truth": "1st: LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001], 2nd: HOME [entity_011] TILE [entity_009] CENTER [entity_008]",
+      "prediction": "The user wants to know the order in which the vehicle passes two specific signs: \"LETTERS & WRAPS\" and \"HOME TILE CENTER\".\n\n1.  **Identify the signs:**\n    *   \"LETTERS & WRAPS\": I see a sign for \"LETTERS & WRAPS\" on the right side of the street in the first few frames. It's a blue sign with white text.\n    *   \"HOME TILE CENTER\": I see a sign for \"HOME TILE CENTER\" further down the street, also on the right side. It's a dark sign with white text.\n\n2.  **",
+      "inference_time_sec": 13.163,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving constraint or warning, and where is it located?",
+      "ground_truth": "DO NOT BLOCK [entity_019] on the ACTIVE [entity_018] DRIVE WAY [entity_017]",
+      "prediction": "The user wants to identify any text in the video that acts as a driving constraint or warning.\n\n1.  **Scan the video for text:** I'll look at signs, road markings, and vehicle details.\n    *   **00:00 - 00:01:** I see signs for \"LETTERS & WRAPS\", \"SIGN\", \"VEHICLE LETTERS & WRAPS\", \"HOME TILE CENTER\". These are business names, not constraints.\n    *   **00:01 - 00:02:** As the camera car moves forward, I see orange construction barriers",
+      "inference_time_sec": 13.36,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefronts and commercial vehicles, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial strip",
+      "prediction": "The user wants me to identify the driving environment based on the visual cues in the video.\n\n1.  **Analyze the storefronts:**\n    *   I see signs for \"Letters & Wraps\", \"Vehicle Letters & Wraps\", \"Home Tile Center\", \"Sign\", \"Complete Auto\".\n    *   These are small to medium-sized businesses, often found in industrial or commercial districts rather than high-end retail shopping malls.\n    *   The buildings look like older, multi-story commercial or light industrial buildings. They aren't sleek, modern glass skyscrapers.\n\n2.  **Analyze the vehicles:**",
+      "inference_time_sec": 13.182,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the storefronts and vehicles written in?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language or script of the text visible in the video.\n\n1.  **Analyze the text on the storefronts:**\n    *   I see signs like \"LETTERS & WRAPS\", \"SIGN\", \"VEHICLE LETTERS & WRAPS\", \"HOME TILE CENTER\", \"TOTO\".\n    *   These are all English words.\n    *   There's a phone number \"433-2677\" and \"734-9545\".\n    *   There's a license plate \"94075-JE\".\n\n2",
+      "inference_time_sec": 13.362,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the LETTERS & WRAPS SIGN visible before transitioning to the HOME TILE CENTER?",
+      "ground_truth": "0.0s to 1.133s",
+      "prediction": "The user wants to find the time range where the \"LETTERS & WRAPS\" sign is visible before the view transitions to the \"HOME TILE CENTER\".\n\n1.  **Analyze the first frame (00:00):** I see a sign on the right side of the street that says \"LETTERS & WRAPS\". It's a blue sign with white text.\n2.  **Analyze the second frame (00:01):** The camera has moved forward. The \"LETTERS & WRAPS\" sign is still visible on the right, but further down the street. Wait, looking closely at the",
+      "inference_time_sec": 13.201,
+      "error": ""
+    }
+  ]
+}

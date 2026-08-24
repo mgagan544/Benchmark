@@ -1,0 +1,70 @@
+{
+  "video_id": 974,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/974.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark is located to the left of the yellow directional sign pointing to Terminal C?",
+      "ground_truth": "Hilton [entity_003] to the left of Terminal [entity_004] C",
+      "prediction": "The landmark located to the left of the yellow directional sign pointing to Terminal C is a large building with a pinkish hue and a distinctive tower. This building is situated on the left side of the road and is visible in the background as the car approaches the intersection.",
+      "inference_time_sec": 7.841,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct destinations are listed to the right of the Food and Gas signs?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct destinations listed to the right of the Food and Gas signs. They are 'Terminal 1', 'Terminal 2', and 'Terminal 3'.",
+      "inference_time_sec": 5.75,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the Hilton hotel, the Terminal C sign, and the Clellan street exit sign are encountered by the vehicle?",
+      "ground_truth": "1st: Hilton [entity_003], 2nd: Terminal [entity_004] C, 3rd: Clellan [entity_007]",
+      "prediction": "The vehicle first encounters the Hilton hotel on the left side of the road, then passes the Terminal C sign on the right, and finally approaches the Clellan street exit sign on the right side of the road.",
+      "inference_time_sec": 6.412,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instruction is given to drivers on the overhead green gantry signs directing to Newark Airport?",
+      "ground_truth": "USE BOTH LANES [entity_011]",
+      "prediction": "The overhead green gantry signs direct drivers to Newark Airport, providing specific instructions such as 'Exit 14A' and 'Exit 14B'. These signs are positioned above the lanes, ensuring that drivers can see them as they approach the exits. The signs are clearly marked with white text on a green background, which is a common color scheme for informational road signs in the United States, designed to be highly visible and easily readable from a distance. The signs also include arrows indicating the direction of the exit, which is crucial for drivers to know which lane to take to reach Newark Airport.",
+      "inference_time_sec": 11.678,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by signs for airport terminals, parking, and rental car returns?",
+      "ground_truth": "Airport access highway",
+      "prediction": "The signs for airport terminals, parking, and rental car returns suggest that the driving environment is near an airport. These signs are typically found in areas where travelers need to access various services related to air travel, indicating that the road is likely part of a larger transportation network designed to facilitate the movement of people and vehicles to and from the airport.",
+      "inference_time_sec": 8.032,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific airport is indicated by the overhead green directional signs?",
+      "ground_truth": "Newark Airport [entity_012]",
+      "prediction": "The overhead green directional signs indicate 'LaGuardia Airport' and 'JFK Airport'. These signs are positioned above the lanes, providing clear directions for drivers to choose their preferred route to one of the two major airports. The presence of these signs suggests that the highway is a major thoroughfare, likely near an airport, and is designed to accommodate the high volume of traffic that would be associated with such proximity. The signs are a crucial element in the highway's infrastructure, ensuring that drivers can make informed decisions about their travel plans and can navigate the area efficiently.",
+      "inference_time_sec": 11.021,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "Between what timestamps is the yellow directional sign for Terminal C visible to the driver?",
+      "ground_truth": "2.3 seconds to 3.433 seconds",
+      "prediction": "The yellow directional sign for Terminal C is visible to the driver between timestamps 1 and 2.",
+      "inference_time_sec": 4.849,
+      "error": ""
+    }
+  ]
+}

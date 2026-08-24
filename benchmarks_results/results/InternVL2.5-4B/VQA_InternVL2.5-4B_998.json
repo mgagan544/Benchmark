@@ -1,0 +1,70 @@
+{
+  "video_id": 998,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/998.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which restaurant is located to the right of the BARBERSHOP on the left side of the street?",
+      "ground_truth": "DELI MEXICAN FOOD [entity_003]",
+      "prediction": "The restaurant located to the right of the BARBERSHOP on the left side of the street is the 'McDonald's' restaurant. It is identifiable by its iconic golden arches sign and the red and yellow color scheme, which are characteristic of the McDonald's brand.",
+      "inference_time_sec": 7.588,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned on the grey vehicles in the traffic lane?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates mentioned on the grey vehicles in the traffic lane. The first grey vehicle has a license plate that reads 'NYC' and the second grey vehicle has a license plate that reads 'NYC'.",
+      "inference_time_sec": 6.488,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the license plates HJG-2334 and FHN-9486 are encountered or approached by the camera vehicle?",
+      "ground_truth": "1st: HJG-2334 [entity_004], 2nd: FHN-9486 [entity_009]",
+      "prediction": "The license plate HJG-2334 is first encountered by the camera vehicle as it is seen in the middle of the intersection. Following this, the camera vehicle approaches the car with the license plate FHN-9486, which is also in the middle of the intersection.",
+      "inference_time_sec": 7.624,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving hazard, speed limit, or regulatory constraint?",
+      "ground_truth": "None is present",
+      "prediction": "No, there is no visible text in the clip that indicates a driving hazard, speed limit, or regulatory constraint.",
+      "inference_time_sec": 5.038,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of storefronts, a gas station, and a car wash?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The presence of storefronts, a gas station, and a car wash suggests a commercial urban driving environment. These elements are typically found in areas with high foot traffic and a variety of services catering to both residents and visitors. The gas station and car wash indicate the availability of essential services for vehicles, while the storefronts suggest a mix of retail and possibly service-based businesses, which are common in city centers or busy suburban areas. This environment is characterized by a high density of vehicles and pedestrians, and the presence of traffic lights and crosswalks further supports the notion of a busy urban setting.",
+      "inference_time_sec": 11.447,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional area code is shared by the phone numbers visible on the storefronts in this scene?",
+      "ground_truth": "718",
+      "prediction": "The phone numbers visible on the storefronts in this scene share the area code 718. This can be deduced from the numbers '718-555-1212' and '718-555-1213' displayed on the storefronts, which are typical for the New York City area.",
+      "inference_time_sec": 8.399,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the car wash facility displaying the CAR and WASH signs first become clearer on the right?",
+      "ground_truth": "4.967 seconds",
+      "prediction": "The car wash facility displaying the CAR and WASH signs first becomes clearer on the right at the 1.5-second mark.",
+      "inference_time_sec": 5.262,
+      "error": ""
+    }
+  ]
+}

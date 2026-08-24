@@ -1,0 +1,70 @@
+{
+  "video_id": 920,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/920.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What yellow clearance warning text is located directly to the right of the overhead sign containing Terminals?",
+      "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
+      "prediction": "The yellow clearance warning text directly to the right of the overhead sign containing Terminals reads 'Clearance 13 Feet 6 Inches'. This text is part of the signage that provides information about the height clearance for vehicles on the road, indicating that vehicles taller than 13 feet 6 inches should not proceed further on that lane. The sign is designed to ensure safety by preventing tall vehicles from potentially colliding with the low clearance of the bridge or overpass ahead. The presence of such signage is common in areas where road infrastructure has height restrictions, and it serves as a crucial navigational aid for drivers to make informed decisions about their",
+      "inference_time_sec": 17.233,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "3",
+      "prediction": "Three",
+      "inference_time_sec": 6.368,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three distinct vehicle-mounted text instances encountered on the NYPD cruiser?",
+      "ground_truth": "1st POLICE [entity_002], 2nd 50341 [entity_003], 3rd PLOW [entity_005]",
+      "prediction": "The first instance of text on the NYPD cruiser is 'POLICE', followed by 'NYPD', and the third distinct text is 'OFFICER'.",
+      "inference_time_sec": 8.84,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the yellow sign indicates a height restriction for vehicles passing under the gantry?",
+      "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
+      "prediction": "The yellow sign displays the warning '13 FT 6 IN', indicating a height restriction for vehicles passing under the gantry.",
+      "inference_time_sec": 8.488,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of facility does the mix of overhead and roadside signs indicate the vehicle is approaching?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "An airport",
+      "inference_time_sec": 6.419,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city's police department is indicated by the markings on the parked patrol cruiser?",
+      "ground_truth": "New York City",
+      "prediction": "New york",
+      "inference_time_sec": 6.429,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate N202894C first become visible in the travel lane?",
+      "ground_truth": "2.933 seconds for N202894C [entity_001]",
+      "prediction": "The license plate N202894C first becomes visible in the travel lane at the beginning of the video, as the car with this plate is seen ahead of the camera's vehicle.",
+      "inference_time_sec": 9.662,
+      "error": ""
+    }
+  ]
+}

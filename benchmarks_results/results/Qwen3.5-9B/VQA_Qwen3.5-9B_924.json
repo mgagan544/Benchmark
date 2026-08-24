@@ -1,0 +1,70 @@
+{
+  "video_id": 924,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/924.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry?",
+      "ground_truth": "Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "The user wants me to identify text on a sign.\n1.  **Locate the sign:** I need to find the \"B C D Terminals RIGHT LANE\" sign. Looking through the frames, specifically around 00:02 and 00:03, there is a green sign on the right side of the road.\n2.  **Identify the sign:** At 00:02, there is a green sign that says \"Terminals B C D RIGHT LANE\". Wait, let me look closer.\n3.  **Refine the search:** The prompt asks for",
+      "inference_time_sec": 13.189,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the green overhead exit sign located on the left side of the roadway?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the distinct text instances on a specific sign.\n1.  **Identify the sign:** The user specifies a \"green overhead exit sign located on the left side of the roadway\".\n2.  **Locate the sign in the video:**\n    *   At 00:00, I see construction and a control tower, but no clear green sign yet.\n    *   At 00:01, the car is moving forward. A green sign appears on the left side, just before the overpass.\n    *   At 00:02,",
+      "inference_time_sec": 13.278,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the overhead gantry, the roadside infrastructure, and the green exit sign are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: B C D [entity_001] Terminals [entity_003] RIGHT LANE [entity_002], 2nd: RIZZO [entity_004], 3rd: Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "The user wants to determine the order of appearance for three specific visual elements as the car drives forward.\n\n1.  **Overhead gantry:** This is the large concrete bridge structure spanning across the road. Looking at the video, it comes into view around 00:02 and the car drives under it around 00:04.\n2.  **Roadside infrastructure:** This is a bit vague, but looking at the sequence, there are concrete barriers on the left and right. However, there's a specific piece of infrastructure that stands out as a distinct object. Wait, let's re-evaluate \"",
+      "inference_time_sec": 13.194,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or instructional text is displayed on the large overhead gantry above the multi-lane roadway?",
+      "ground_truth": "RIGHT LANE [entity_002]",
+      "prediction": "The user wants to identify the text on the large overhead gantry.\n\n1.  **Scan the video for the gantry:** I see a large concrete overpass/bridge structure spanning the road.\n2.  **Locate the sign:** On the right side of the bridge, there is a green sign attached to the structure.\n3.  **Read the text:** I need to look closely at the frames where the sign is visible.\n    *   Frame 00:02 shows the sign clearly. It's a green sign with white text.\n    *   The top line says \"Terminal\".",
+      "inference_time_sec": 13.226,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs indicating terminals and parking, what type of facility is this roadway accessing?",
+      "ground_truth": "Airport access road",
+      "prediction": "The user wants to identify the type of facility the roadway is accessing based on visible signs.\n\n1.  **Analyze the video:** I'll scan the video frames for signs.\n2.  **Frame 00:00 - 00:02:** I see a control tower in the distance. This suggests an airport. There's construction happening.\n3.  **Frame 00:02:** A green sign appears on the right side of the road. Let's look closer at it.\n4.  **Frame 00:03:** The sign is clearer. It says",
+      "inference_time_sec": 13.293,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language and script is the text on the overhead gantry and exit signs written?",
+      "ground_truth": "English in Latin script",
+      "prediction": "The user wants to identify the language and script of the text on the overhead gantry and exit signs.\n\n1.  **Analyze the video:** I'll scan the video for any visible signs.\n    *   **00:00 - 00:02:** The car is driving towards an airport control tower. There are construction cranes. No clear text yet.\n    *   **00:02:** A green sign appears on the right. It says \"Terminal B C D RIGHT LANE\". This is English.\n    *   **00:03:** The car is",
+      "inference_time_sec": 13.242,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text B C D first become visible, and when does the full layout of that gantry sign become readable?",
+      "ground_truth": "Visible at 5.1 seconds, fully readable at 5.233 seconds",
+      "prediction": "The user wants to find the timestamps for two specific events related to a sign.\n1.  **Text \"B C D\" first becomes visible:** I need to scan the video frames to find when the letters \"B C D\" appear on a sign.\n    *   Looking at the frames, at 00:00 and 00:01, there's a gantry sign visible in the distance, but it's blurry.\n    *   At 00:02, the car is closer. The sign is clearer. I can see \"Terminals B C D\" and \"RIGHT",
+      "inference_time_sec": 13.161,
+      "error": ""
+    }
+  ]
+}

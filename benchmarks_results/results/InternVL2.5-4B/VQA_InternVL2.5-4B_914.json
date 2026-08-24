@@ -1,0 +1,70 @@
+{
+  "video_id": 914,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/914.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the digital YOUR SPEED MPH feedback sign?",
+      "ground_truth": "ONLY [entity_005] sign to the right of YOUR [entity_001] SPEED [entity_002] MPH [entity_003]",
+      "prediction": "The sign located directly to the right of the digital YOUR SPEED MPH feedback sign is a yellow diamond-shaped sign with a black arrow pointing downwards, indicating a steep descent.",
+      "inference_time_sec": 6.506,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory or feedback signs are located on the right side of the exit ramp?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct regulatory or feedback signs located on the right side of the exit ramp. The first sign is a yellow diamond-shaped sign with a black arrow pointing to the right, indicating a right turn ahead. The second sign is a rectangular sign with a black border and white background, displaying the text 'YOUR SPEED' in bold black letters, which is likely a speed limit sign or a feedback sign for the driver's current speed.",
+      "inference_time_sec": 9.394,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the camera vehicle pass the ONE WAY sign, the digital YOUR SPEED MPH feedback sign, and the ONLY sign?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: YOUR [entity_001] SPEED [entity_002] MPH [entity_003], 3rd: ONLY [entity_005]",
+      "prediction": "The camera vehicle passes the ONE WAY sign first, followed by the digital YOUR SPEED MPH feedback sign, and finally the ONLY sign.",
+      "inference_time_sec": 5.266,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which sign indicates that traffic must flow in a single direction at the start of the ramp?",
+      "ground_truth": "ONE WAY [entity_004] sign",
+      "prediction": "The sign indicating that traffic must flow in a single direction at the start of the ramp is a yellow diamond-shaped sign with a black arrow pointing to the right. This sign is positioned on the left side of the road, just before the ramp begins, and it is clearly visible in the video.",
+      "inference_time_sec": 7.455,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the exit ramp, elevated structure, and multi-story brick buildings, what kind of driving environment is depicted?",
+      "ground_truth": "urban exit ramp",
+      "prediction": "The driving environment depicted is urban, characterized by a multi-lane road with an exit ramp, an elevated structure, and multi-story brick buildings.",
+      "inference_time_sec": 5.542,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory and feedback signs along the ramp?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory and feedback signs along the ramp is in both English and Spanish. This is evident from the bilingual nature of the signs, which include phrases such as 'YOUR SPEED' and 'VELOCIDAD SUYA' (Your Speed in Spanish), indicating that the signs are meant to be understood by a diverse range of drivers, including those who may not speak English. The use of two languages is a common practice in urban areas to cater to a multilingual population and ensure that all road users can understand the information being conveyed.",
+      "inference_time_sec": 11.053,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ONLY sign first become visible as the vehicle enters the underpass?",
+      "ground_truth": "4.4 seconds for ONLY [entity_005]",
+      "prediction": "The ONLY sign first becomes visible as the vehicle enters the underpass at the 1.5-second mark.",
+      "inference_time_sec": 4.995,
+      "error": ""
+    }
+  ]
+}

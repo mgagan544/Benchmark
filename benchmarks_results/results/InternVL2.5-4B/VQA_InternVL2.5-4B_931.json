@@ -1,0 +1,70 @@
+{
+  "video_id": 931,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/931.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
+      "ground_truth": "S E [entity_005]",
+      "prediction": "The text located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck is 'MILES'.",
+      "inference_time_sec": 5.529,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct vehicle-mounted text elements visible on the semi-truck on the right side of the host vehicle. The first is 'M&G', the second is 'SE', and the third is 'M&G'. These texts are part of the truck's branding and are located on the side of the truck, which is visible in the video.",
+      "inference_time_sec": 8.299,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
+      "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
+      "prediction": "As the host vehicle moves forward, the text elements appear in the following order: first, the text 'FUEL CO' is visible on the side of a truck, followed by 'milea' on the side of another truck, and finally, 'HINO' is seen on the side of a truck in the opposite lane.",
+      "inference_time_sec": 7.895,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "None",
+      "prediction": "Yes, there is visible text on the side of a truck that reads 'CAUTION', which could indicate a hazard or driving constraint.",
+      "inference_time_sec": 5.256,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The host vehicle is traveling on a highway designated as route number 278, which is indicated by the road signs visible in the video. The presence of multiple commercial trucks, including a large white truck with a blue star logo and another truck with the text 'milea parts delivery', suggests that this is a major thoroughfare likely used for both commercial and personal vehicle traffic. The highway infrastructure, including the concrete barriers and the design of the road, further supports the classification of this road as a highway.",
+      "inference_time_sec": 10.394,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
+      "ground_truth": "Elizabeth N.J. [entity_003]",
+      "prediction": "The text 'New Jersey' on the side of the semi-truck suggests that the vehicle is associated with a city in New Jersey.",
+      "inference_time_sec": 5.308,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
+      "ground_truth": "1.2s to 1.3s",
+      "prediction": "The text elements FUEL CO and S J first become visible on the semi-truck in the middle of the video, after the initial view of the bridge and before the traffic becomes denser.",
+      "inference_time_sec": 6.033,
+      "error": ""
+    }
+  ]
+}

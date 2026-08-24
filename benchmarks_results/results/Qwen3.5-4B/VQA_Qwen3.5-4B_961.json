@@ -1,0 +1,70 @@
+{
+  "video_id": 961,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/961.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Sheridan Expwy on the right overhead signboard?",
+      "ground_truth": "RFK Br [entity_005] directly below Sheridan Expwy [entity_004]",
+      "prediction": "The user wants me to identify the text below \"Sheridan Expwy\" on the right overhead sign.\n\n1.  **Locate the sign:** I see two large green overhead signs. The one on the right is the target.\n2.  **Identify the relevant text:** On the right sign, the top line says \"E 177 St\". Below that is \"SOUTH\". Below that is \"Sheridan Expwy\".\n3.  **Find the text directly below:** Directly below \"Sheridan Expwy\" is the text \"RFK Br\".\n4.  **Confirm the context",
+      "inference_time_sec": 12.818,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the left overhead signboard between 1.833 seconds and 3.967 seconds?",
+      "ground_truth": "5",
+      "prediction": "The user wants me to count the distinct text instances on the left overhead signboard within a specific time range: 1.833 seconds to 3.967 seconds.\n\n1.  **Analyze the video frames:**\n    *   **0.0s - 0.2s:** The overhead signs are visible. The left sign says \"Cross Bronx Expwy\", \"Throgs Neck Br\", \"G Washington Br\", \"1/4 MILE\".\n    *   **0.3s:** The signs are moving out of frame or are very blurry/distant. Wait, looking closely",
+      "inference_time_sec": 12.633,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs, the yellow warning sign, and the speed limit sign are encountered?",
+      "ground_truth": "1st: overhead signs, 2nd: yellow warning sign, 3rd: SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The user wants to know the order of three specific signs based on the video.\n\n1.  **Overhead signs:** I see large green highway signs hanging over the road. They appear right at the beginning of the video, around 00:00 to 00:01. These signs indicate directions for \"Cross Bronx Expwy\", \"Throgs Neck Br\", \"E 177 St\", and \"Sheridan Expwy\".\n2.  **Yellow warning sign:** As the car drives forward, past the overhead signs, a yellow diamond-shaped sign appears on the right side of the road.",
+      "inference_time_sec": 12.598,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the left concrete barrier indicates a speed restriction near the end of the clip?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The user wants to identify text on a concrete barrier that indicates a speed restriction.\n\n1.  **Analyze the video:** I'll scan through the frames, specifically looking at the left side of the road where concrete barriers are common on highways.\n2.  **Locate the barrier:** In the first few frames (00:00 - 00:03), there's a concrete barrier on the left.\n3.  **Identify signs:**\n    *   Frame 00:00: No clear text on the barrier itself, just the barrier.\n    *   Frame 0",
+      "inference_time_sec": 12.628,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of multiple overhead guide signs, exit indicators, and highway numbers?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants me to identify the type of road environment based on visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead Guide Signs:** I see large green signs hanging over the road. One sign lists destinations like \"Cross Bronx Expwy\", \"Throgs Neck Br\", \"G Washington Br\". Another sign lists \"E 177 St\", \"Sheridan Expwy\", \"RFK Br\". This indicates a major transportation corridor.\n    *   **Exit Indicators:** The signs have arrows and text like \"EXIT ONLY\" and \"1/4 M",
+      "inference_time_sec": 12.638,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge names visible on the overhead signs suggest this clip is filmed in the New York City region?",
+      "ground_truth": "Throgs Neck Br [entity_008], G Washington Br [entity_009], RFK Br [entity_005]",
+      "prediction": "The user wants me to identify specific bridge names from the overhead signs in the video that indicate the location is New York City.\n\n1.  **Analyze the video frames:** I need to look closely at the green overhead highway signs.\n2.  **Locate the signs:** The signs appear clearly in the first few frames (0.0s to 0.2s).\n3.  **Read the text on the signs:**\n    *   **Left Sign:**\n        *   Top line: \"Cross Bronx Expwy\" (Cross Bronx Expressway)\n        *   Middle line: \"Thro",
+      "inference_time_sec": 12.574,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range do the overhead green guide signs remain continuously visible in the clip?",
+      "ground_truth": "1.833 seconds to 3.967 seconds",
+      "prediction": "The user wants to identify the time range during which the overhead green guide signs are visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The green signs are clearly visible overhead. They show directions for \"Cross Bronx Expwy\", \"Throgs Neck Br\", \"G Washington Br\" and \"E 177 St\", \"Sheridan Expwy\", \"RFK Br\".\n    *   **00:01:** The signs are still visible, though slightly further away as the car approaches.\n    *   **00:02:** The signs",
+      "inference_time_sec": 12.643,
+      "error": ""
+    }
+  ]
+}

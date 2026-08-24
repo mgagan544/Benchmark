@@ -1,0 +1,70 @@
+{
+  "video_id": 963,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/963.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is visible on the orange sign located to the left of the EXIT 3 marker across the lanes?",
+      "ground_truth": "WORK [entity_015] ZONE [entity_016]",
+      "prediction": "The user wants me to identify the text on a specific orange sign.\n\n1.  **Locate the sign:** The user specifies it's an \"orange sign located to the left of the EXIT 3 marker across the lanes\".\n2.  **Scan the images:**\n    *   In the first few frames (0.0s - 0.2s), there are orange signs on the left side of the road, near the median.\n    *   In frame 0.4s and 0.5s, the camera is closer to the overhead green signs. To the left of the \"EXIT",
+      "inference_time_sec": 12.913,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the billboard that comes into view around 4.7 seconds?",
+      "ground_truth": "5",
+      "prediction": "The user is asking for a count of distinct text instances on a billboard visible around the 4.7-second mark.\n\n1.  **Analyze the video timeline:**\n    *   The video is 5 seconds long.\n    *   At 0.0s, I see orange construction signs.\n    *   At 0.3s, green highway signs appear overhead.\n    *   At 0.4s, the camera is closer to the green signs.\n    *   At 0.5s, the green signs are very clear. Wait, the prompt says \"around 4",
+      "inference_time_sec": 15.666,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs for E 138 St and E 161 St are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: E 138 St [entity_008], 2nd: E 161 St [entity_010]",
+      "prediction": "The user wants to know the order of two specific overhead signs: \"E 138 St\" and \"E 161 St\".\n\n1.  **Analyze the video:** I need to watch the video and track the position of the overhead signs relative to the camera vehicle.\n2.  **Identify the signs:**\n    *   I see a green overhead sign structure.\n    *   On the left side of the structure, there's a sign for \"E 138 St / Madison Ave Br\".\n    *   On the right side of the structure, there's a sign for",
+      "inference_time_sec": 12.621,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit constraint is indicated by the regulatory sign passed on the left shoulder at 1.867 seconds?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002] 35",
+      "prediction": "The user wants to identify the speed limit from a specific sign.\n\n1.  **Locate the sign:** The user specifies \"regulatory sign passed on the left shoulder at 1.867 seconds\".\n2.  **Examine the image at that timestamp:** Looking at the frame corresponding to roughly 1.867 seconds (which is between 1.8s and 1.9s, but the provided frames are spaced by 0.1s, so I need to look at the frames around that time).\n    *   Frame at 1.8s: Shows a sign on",
+      "inference_time_sec": 12.577,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead signs for E 138 St and E 161 St, what type of driving environment is depicted?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The user wants me to identify the type of driving environment based on the overhead signs.\n\n1.  **Analyze the signs:** I see green overhead signs.\n    *   One sign says \"E 138 St Madison Ave Br 1 MILE\".\n    *   Another sign says \"E 161 St Macombs Dam Br\".\n    *   There are also smaller signs indicating \"EXIT 3\" and \"EXIT 5\".\n    *   There are orange construction signs with \"SPEED LIMIT 35\".\n\n2.  **Analyze the road:**\n    *   It",
+      "inference_time_sec": 15.632,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street and bridge names visible on the overhead signs suggest this clip is filmed in New York City?",
+      "ground_truth": "E 138 St [entity_008] and Madison Ave Br [entity_009]",
+      "prediction": "The user wants me to identify specific street and bridge names from the overhead signs in the video that indicate the location is New York City.\n\n1.  **Analyze the video frames:** I need to look at the overhead green highway signs.\n2.  **Locate the signs:**\n    *   Frame 0.0s: No clear overhead signs yet.\n    *   Frame 0.1s: No clear overhead signs yet.\n    *   Frame 0.2s: Green signs appear. One says \"E 138 St Madison Ave Br\". Another says \"E 16",
+      "inference_time_sec": 15.639,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible?",
+      "ground_truth": "Near 7.4 seconds",
+      "prediction": "The user wants to find the timestamp where specific signs become fully legible.\n1.  **Identify the signs:** The user is looking for signs displaying \"1 MILE\", \"EXIT\", and \"EXIT 3\".\n2.  **Scan the video frames:**\n    *   **00:00 - 00:02:** I see orange construction signs with \"35\" on them. There are green highway signs in the distance, but they are too far away and blurry to read clearly.\n    *   **00:03:** The camera is approaching the overhead gantry.",
+      "inference_time_sec": 12.705,
+      "error": ""
+    }
+  ]
+}

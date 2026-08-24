@@ -1,0 +1,70 @@
+{
+  "video_id": 902,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/902.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What bike route sign, which first appears at 0.3s, is located adjacent to the Northern Blvd sign?",
+      "ground_truth": "Honeywell St [entity_005] Bridge [entity_006] adjacent to Northern [entity_003] Blvd [entity_004]",
+      "prediction": "The bike route sign that first appears at 0.3s and is located adjacent to the Northern Blvd sign is the **Honeywell St Bridge** sign. It is a green sign with a white bicycle symbol and an arrow pointing upward, indicating the direction to the Honeywell Street Bridge.",
+      "inference_time_sec": 8.567,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many graffiti tags are visible on the concrete structures as the vehicle ascends the bridge between 6.5s and 6.967s?",
+      "ground_truth": "2",
+      "prediction": "2",
+      "inference_time_sec": 4.159,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for Honeywell St Bridge, DO NOT ENTER, and ONE WAY are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Honeywell St [entity_005] Bridge [entity_006], 2nd: DO NOT [entity_007] ENTER [entity_008], 3rd: ONE WAY [entity_009]",
+      "prediction": "The order in which the signs are encountered as the vehicle moves forward is:\n\n1. **Honeywell St Bridge** sign — This is the first sign visible at the beginning of the video, indicating the direction to the bridge.\n2. **DO NOT ENTER** sign — This appears after the vehicle has passed the Honeywell St Bridge sign and is approaching the intersection or bridge entrance.\n3. **ONE WAY** sign — This is seen after the vehicle has passed the DO NOT ENTER sign, likely further along the road or bridge.\n\nSo, the sequence is: **Honeywell St Bridge → DO NOT ENTER → ONE WAY**.",
+      "inference_time_sec": 14.149,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text on the corner, visible at 3.633s, indicates a restriction on entering as the vehicle transitions onto the bridge ramp?",
+      "ground_truth": "DO NOT [entity_007] ENTER [entity_008]",
+      "prediction": "DO NOT ENTER",
+      "inference_time_sec": 4.493,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route signs, regulatory signs, and a bridge ramp, what kind of driving environment does this clip depict?",
+      "ground_truth": "Urban roadway and bridge approach",
+      "prediction": "This clip depicts an urban driving environment, likely in a major city such as New York City, given the presence of:\n\n- **Route signs** (e.g., “BIVD” for Brooklyn-Queens Expressway or similar, “Honeywell St Bridge”) indicating major thoroughfares and specific destinations.\n- **Regulatory signs** (e.g., “DO NOT ENTER,” traffic lights, pedestrian crosswalks) typical of dense urban areas with complex traffic control.\n- **A bridge ramp** (visible as the vehicle enters a bridge or overpass), suggesting the driver is navigating a major roadway connecting different parts of the",
+      "inference_time_sec": 14.076,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street and bridge name visible on the bike route sign suggests the local geographic setting?",
+      "ground_truth": "Honeywell St [entity_005] Bridge [entity_006]",
+      "prediction": "The bike route sign indicates **Honeywell St Bridge**, which suggests the local geographic setting is likely in **New York City**, specifically in the **Brooklyn** area. The Honeywell Street Bridge is a known bridge in Brooklyn, connecting to areas near the Brooklyn Bridge or other local thoroughfares. The presence of a bike route sign, along with the urban infrastructure (like taxis, street signs, and traffic lights), further supports this setting.",
+      "inference_time_sec": 11.274,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the DO NOT ENTER sign first become visible as the vehicle transitions onto the bridge ramp?",
+      "ground_truth": "3.633s",
+      "prediction": "0.2 seconds",
+      "inference_time_sec": 4.186,
+      "error": ""
+    }
+  ]
+}

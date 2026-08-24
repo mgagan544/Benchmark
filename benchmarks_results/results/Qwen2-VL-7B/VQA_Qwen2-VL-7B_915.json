@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "Qwen2-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "The text located directly to the right of the ARROWHEAD brand on the red delivery truck is \"direct\".",
+      "inference_time_sec": 5.252,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct text instances visible in the clip mounted on delivery trucks.",
+      "inference_time_sec": 4.952,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "The text instances are encountered in the following order as the vehicle moves forward: TAXI, Odwalla, and ARROWHEAD.",
+      "inference_time_sec": 5.927,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs indicate height clearance limits for vehicles entering the covered underpass.",
+      "inference_time_sec": 4.957,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The mix of text and landmarks visible in this clip suggests that the driving environment is likely a busy urban area with a mix of commercial and residential buildings. The presence of a truck and a bus indicates that the area is likely a busy intersection or a main road. The mix of text and landmarks suggests that the area is likely a commercial area with a mix of businesses and landmarks.",
+      "inference_time_sec": 8.194,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The visible text in the image indicates that the measurement system is in the United States and the phone format is in the United States.",
+      "inference_time_sec": 5.435,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "The TAXI sign first becomes visible in the segregated transit lane at 0.00 seconds.",
+      "inference_time_sec": 5.124,
+      "error": ""
+    }
+  ]
+}

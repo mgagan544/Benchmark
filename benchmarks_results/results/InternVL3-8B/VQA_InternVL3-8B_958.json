@@ -1,0 +1,70 @@
+{
+  "video_id": 958,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/958.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+      "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
+      "prediction": "The parking sign text to the left of the license registration AT * 665J reads 'NO PARKING ANYTIME' and 'EXCEPT 10PM-6AM'.",
+      "inference_time_sec": 8.278,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+      "ground_truth": "6",
+      "prediction": "There",
+      "inference_time_sec": 5.852,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+      "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
+      "prediction": "The first text instance encountered on the right side of the street is 'fame', followed by 'SUPPORT', and then 'SUPPORT THE ART'.",
+      "inference_time_sec": 7.548,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+      "ground_truth": "TURNS [entity_010]",
+      "prediction": "The text on the regulatory traffic sign across from the DAK sign reads 'NO TURN ON RED'. This sign is placed to inform drivers that they are not allowed to make a turn when the traffic light is red. It is a standard traffic regulation aimed at maintaining orderly traffic flow and ensuring safety at intersections. The sign is typically placed at intersections where turning movements are restricted during certain phases of the traffic light cycle, often to prevent conflicts with oncoming traffic or to manage the flow of vehicles more efficiently.",
+      "inference_time_sec": 11.458,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+      "ground_truth": "Commercial business district",
+      "prediction": "Urban",
+      "inference_time_sec": 5.884,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+      "ground_truth": "New York City, New York State",
+      "prediction": "The area code '7' and the text 'NYC' on the inspection sign suggest that the location is New York City, New York.",
+      "inference_time_sec": 7.411,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+      "ground_truth": "0.0s to 0.233s",
+      "prediction": "The digital billboard texts THE, DISPLAYERS, and Snycom are tracked from the start of the clip until the first frame, which is a duration of approximately 1 0.00 to 1 1.00 seconds.",
+      "inference_time_sec": 8.567,
+      "error": ""
+    }
+  ]
+}

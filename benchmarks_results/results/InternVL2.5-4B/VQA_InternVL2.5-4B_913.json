@@ -1,0 +1,70 @@
+{
+  "video_id": 913,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/913.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the right of the orange construction signboard containing the word ROAD?",
+      "ground_truth": "SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] on the digital display sign",
+      "prediction": "The orange construction signboard contains the text 'ROAD WORK AHEAD' in white capital letters. This sign is positioned on the left side of the bridge, and it is clearly visible in the initial frames of the video. The sign is attached to a metal structure that is part of the bridge's framework, and it serves as a warning to drivers about the upcoming road work. The sign's color and the use of capital letters are designed to catch the attention of drivers and ensure that they are aware of the potential delays or changes in traffic conditions ahead.",
+      "inference_time_sec": 11.449,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?",
+      "ground_truth": "3",
+      "prediction": "The orange construction signboard displays three distinct pieces of text. The first is 'ROAD WORK AHEAD', which is the main message indicating that there is construction work ahead. The second piece of text is '20 MPH', which specifies the speed limit for the area. The third piece of text is '20 MPH', which is repeated, likely for emphasis.",
+      "inference_time_sec": 8.453,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?",
+      "ground_truth": "1st: ROAD [entity_001], 2nd: WORK [entity_002], 3rd: AHEAD [entity_003]",
+      "prediction": "The text on the orange construction signboard is first seen in the upper left corner of the frame at timestamp 0.0, then it moves to the upper right corner at timestamp 0.2, and finally, it is no longer visible in the frame by timestamp 0.5.",
+      "inference_time_sec": 7.488,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?",
+      "ground_truth": "ROAD [entity_001] WORK [entity_002] AHEAD [entity_003] on the left side of the ramp",
+      "prediction": "Yes, there is visible text in the clip that indicates a hazard or road condition ahead. It is located on the left side of the bridge, on a sign that reads 'ROAD WORK AHEAD'. This sign is positioned on the bridge's railing and is clearly visible to drivers approaching the work zone.",
+      "inference_time_sec": 7.535,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "An elevated highway construction zone",
+      "prediction": "The clip depicts a driving environment that is under construction, as indicated by the 'ROAD WORK AHEAD' sign. The presence of a speed limit sign displaying '20 MPH' suggests that the area is subject to speed restrictions, likely due to the construction work. The environment is urban, with multiple lanes of traffic and a bridge structure overhead, which is typical of city infrastructure. The road is wet, which could imply recent rain or snowmelt, adding to the complexity of driving conditions.",
+      "inference_time_sec": 10.295,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction signboard and the digital display sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction signboard and the digital display sign is in both English and Spanish. The construction signboard reads 'ROAD WORK AHEAD' in English, and the digital display sign shows 'ROAD WORK AHEAD' in English and 'TRABAJO DE CARRETERA AHEAD' in Spanish.",
+      "inference_time_sec": 8.076,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the word SPEED first become legible on the digital display sign?",
+      "ground_truth": "7.967",
+      "prediction": "The word SPEED first becomes legible on the digital display sign at the 5-second mark.",
+      "inference_time_sec": 4.794,
+      "error": ""
+    }
+  ]
+}

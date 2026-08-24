@@ -1,0 +1,70 @@
+{
+  "video_id": 972,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/972.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
+      "ground_truth": "To the right of VIDE [entity_002]",
+      "prediction": "The regulatory text MON WED FRI is positioned to the right of the commercial sign VIDE.",
+      "inference_time_sec": 7.969,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct pieces of vehicle-mounted text visible on the dark grey pickup truck. The first is the '4X4' emblem on the side, indicating the vehicle's four-wheel-drive capability. The second is the 'FORD' logo on the tailgate, which is the brand of the vehicle.",
+      "inference_time_sec": 11.582,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
+      "ground_truth": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]",
+      "prediction": "The markings on the pickup truck become visible in the following order: first, the 'F150' marking is seen on the rear of the truck, followed by the '4X4' marking, and finally, the 'P150' marking is visible on the license plate.",
+      "inference_time_sec": 11.565,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
+      "ground_truth": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]",
+      "prediction": "The text on the regulatory sign reads 'NO PARKING ANYTIME' which indicates that parking is not allowed at any time in the designated area. This sign is positioned on the right side of the frame, near the curb where the black pickup truck is parked. The sign's presence suggests that the truck's parking could be in violation of local parking regulations, as it is parked in a space marked with a green bicycle symbol, which typically designates a bike lane and is not intended for vehicular parking. The sign's message is clear and direct, serving as a legal notice to drivers and pedestrians about the parking restrictions in place to maintain traffic",
+      "inference_time_sec": 17.273,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of commercial signs and parking regulations suggests that the driving environment is urban and regulated, with clear rules for parking and traffic flow.",
+      "inference_time_sec": 8.552,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory parking sign and the commercial building is in spanish.",
+      "inference_time_sec": 7.543,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
+      "ground_truth": "3.033s",
+      "prediction": "The STREET CLEANING sign first becomes clearly readable in the clip at the beginning, as the camera captures the scene with the sign already in view.",
+      "inference_time_sec": 8.788,
+      "error": ""
+    }
+  ]
+}

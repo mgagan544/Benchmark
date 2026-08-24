@@ -1,0 +1,70 @@
+{
+  "video_id": 973,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/973.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the Harrison sign?",
+      "ground_truth": "ANY [entity_004] and TIME [entity_005] below Harrison [entity_003]",
+      "prediction": "The user wants to identify the text below the \"Harrison\" sign.\n\n1.  **Locate the \"Harrison\" sign:** I see a street sign on a pole on the right side of the road in the first few frames (00.0s, 00.1s). It's a white rectangular sign with black text.\n2.  **Read the text on the sign:** The top line says \"Harrison\".\n3.  **Look below the sign:** Directly underneath the \"Harrison\" sign, there is another sign. It's a green rectangular sign.\n4.",
+      "inference_time_sec": 13.392,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are passed by the vehicle on the right side of the road between 0.0s and 2.0s?",
+      "ground_truth": "5",
+      "prediction": "The user wants me to count distinct text instances passed by the vehicle on the right side of the road between 0.0s and 2.0s.\n\n1.  **Analyze the video:** I'll watch the video from 0.0s to 2.0s, focusing on the right side of the road.\n2.  **Identify text instances:**\n    *   **0.0s - 0.1s:** There's a green sign on a pole on the right sidewalk. It says \"Harrison\". This is a street sign.\n    *   **0.",
+      "inference_time_sec": 15.679,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the parking signs and advertisements visible between 3.5s and 6.4s?",
+      "ground_truth": "1st: PUBLIC [entity_006] PARKING [entity_007], 2nd: eaze [entity_008], 3rd: FLAT RATE [entity_009], 4th: WEEK [entity_010]",
+      "prediction": "The user wants to know the order of parking signs and advertisements visible between 3.5s and 6.4s.\n\n1.  **Analyze the video frames:**\n    *   **00:00 - 00:03:** The car is driving under an overpass. There are no clear parking signs or ads in the immediate foreground yet.\n    *   **00:03:** As the car emerges from under the overpass, a large blue billboard becomes visible on the right side. It has text on it, likely an advertisement.\n    *   **00:",
+      "inference_time_sec": 12.71,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed near the end of the clip to alert drivers about the bridge?",
+      "ground_truth": "CAUTION [entity_012] VERTOCAL [entity_013] BRIDGE [entity_014] VERTICAL [entity_015] CLEARANCE [entity_016]",
+      "prediction": "The user wants to identify a specific warning text visible near the end of the video clip.\n\n1.  **Analyze the video timeline:** I need to look at the frames towards the end of the video, specifically around the 00:03 and 00:04 marks.\n2.  **Scan for text:** In the frame at 00:03, as the car approaches an intersection and a bridge structure, there is a yellow sign on the right side of the road.\n3.  **Read the text:** The sign is yellow with black text. It reads \"CAUTION\"",
+      "inference_time_sec": 12.659,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of parking rates, advertisements, and a highway overpass?",
+      "ground_truth": "urban commercial zone under highway overpass",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Parking rates:** I see a sign that says \"PUBLIC PARKING\" with a price of \"$1.00\". This indicates a commercial area where people park their cars, likely for shopping or business.\n    *   **Advertisements:** There are billboards and signs for businesses (e.g., \"H&R Block\", \"Public Parking\"). This suggests a commercial district.\n    *   **Highway overpass:** There is a large concrete structure overhead,",
+      "inference_time_sec": 12.679,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the legible signs in this scene?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the legible signs in the video.\n\n1.  **Analyze the video frames:** I will scan through the provided frames to find any text on signs.\n    *   **Frame 1:**\n        *   Street sign: \"Harrison\". This is an English street name.\n        *   Sign on the right: \"KFC\". English.\n        *   Sign on the right: \"BREW & MERCH\". English.\n        *   Sign on the right: \"PUBLIC PARKING\". English.\n        *   Sign on the right: \"1",
+      "inference_time_sec": 12.742,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the advertisement for eaze visible in the clip?",
+      "ground_truth": "3.5s to 4.067s",
+      "prediction": "The user wants to find the specific time range where an advertisement for \"eaze\" is visible.\n\n1.  **Scan the video frames for the word \"eaze\".**\n    *   **00:00 - 00:01:** The camera is under an overpass. I see a billboard on the right side, but it's partially obscured and blurry. Wait, looking closely at the billboard on the right side of the road in the distance, there's a blue sign. Let's look further.\n    *   **00:02:** As the car moves forward, a large billboard",
+      "inference_time_sec": 12.739,
+      "error": ""
+    }
+  ]
+}

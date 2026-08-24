@@ -1,0 +1,70 @@
+{
+  "video_id": 914,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/914.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the digital YOUR SPEED MPH feedback sign?",
+      "ground_truth": "ONLY [entity_005] sign to the right of YOUR [entity_001] SPEED [entity_002] MPH [entity_003]",
+      "prediction": "The user wants to identify a specific sign in the video.\n\n1.  **Locate the \"YOUR SPEED MPH\" sign:** I see a white rectangular sign with black text \"YOUR SPEED\" and a digital display below it. This sign is visible in the early frames, particularly around 00:00 to 00:02. It's hanging from the structure on the right side of the road.\n\n2.  **Identify the sign to its right:** Looking directly to the right of the \"YOUR SPEED\" sign, there is a yellow diamond-shaped sign.\n\n3.  **Analyze the",
+      "inference_time_sec": 13.221,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory or feedback signs are located on the right side of the exit ramp?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the regulatory or feedback signs on the right side of the exit ramp.\n\n1.  **Identify the location:** The video shows a car driving on an exit ramp. The ramp is on the right side of the main structure.\n2.  **Identify the signs:** I need to look specifically on the right side of this ramp.\n3.  **Scan the video frames:**\n    *   **Frame 1 (00:00):** I see a yellow diamond sign with a curve arrow and \"20 M.P.H.\" below it. Below that, there's a",
+      "inference_time_sec": 13.228,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the camera vehicle pass the ONE WAY sign, the digital YOUR SPEED MPH feedback sign, and the ONLY sign?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: YOUR [entity_001] SPEED [entity_002] MPH [entity_003], 3rd: ONLY [entity_005]",
+      "prediction": "The user wants me to determine the order in which the camera vehicle passes three specific signs.\n\n1.  **Identify the signs:**\n    *   **ONE WAY sign:** I need to look for a sign indicating \"ONE WAY\". Looking at the first few frames, specifically around 00:00 to 00:01, on the left side, there's a white sign with black text. Wait, let me look closer. Ah, at 00:01, on the left, there is a sign that says \"ONE WAY\" with an arrow pointing up and right. Wait, let",
+      "inference_time_sec": 13.258,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which sign indicates that traffic must flow in a single direction at the start of the ramp?",
+      "ground_truth": "ONE WAY [entity_004] sign",
+      "prediction": "The user wants to identify a specific traffic sign from the video.\n1.  **Analyze the user's request:** The user is asking for the sign that indicates \"traffic must flow in a single direction at the start of the ramp\". This usually corresponds to a \"One Way\" sign or an arrow indicating the direction of travel.\n2.  **Scan the video frames:**\n    *   **Frame 1 (00:00):** I see a yellow diamond sign with a curved arrow (20 MPH). Below it, there's a white rectangular sign. It's partially obscured but looks like it has an",
+      "inference_time_sec": 13.3,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the exit ramp, elevated structure, and multi-story brick buildings, what kind of driving environment is depicted?",
+      "ground_truth": "urban exit ramp",
+      "prediction": "The user wants me to identify the type of driving environment shown in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Elevated Structure:** The car is driving on a bridge or an elevated roadway. There are steel girders and supports visible on the left and overhead.\n    *   **Exit Ramp:** The road curves slightly and seems to be an on-ramp or off-ramp leading towards a city. The \"20 MPH\" sign and \"YOUR SPEED\" radar sign suggest a controlled speed zone, typical of urban approaches.\n    *   **Multi-story Brick Buildings:**",
+      "inference_time_sec": 13.328,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory and feedback signs along the ramp?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the text on the signs.\n\n1.  **Analyze the video:** I'll scan the video for signs with text.\n2.  **Locate signs:**\n    *   There's a yellow diamond sign with a curve arrow.\n    *   There's a white rectangular sign below it.\n    *   There's a sign on the left side later in the video.\n3.  **Read the text:**\n    *   At 00:00 - 00:01, there's a sign that says \"YOUR SPEED\" with a",
+      "inference_time_sec": 13.323,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ONLY sign first become visible as the vehicle enters the underpass?",
+      "ground_truth": "4.4 seconds for ONLY [entity_005]",
+      "prediction": "The user wants to find the timestamp when the \"ONLY\" sign first becomes visible.\n\n1.  **Analyze the video frames:**\n    *   **00:00:** The vehicle is approaching a bridge/underpass. I see a yellow sign with a curve arrow and \"20 MPH\". I see a \"YOUR SPEED\" sign. I do not see an \"ONLY\" sign yet.\n    *   **00:01:** The vehicle is closer. The \"YOUR SPEED\" sign is clearer. To the left, there's a sign with an arrow pointing up and right, and the word",
+      "inference_time_sec": 13.223,
+      "error": ""
+    }
+  ]
+}

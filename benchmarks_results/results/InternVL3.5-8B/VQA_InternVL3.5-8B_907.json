@@ -1,0 +1,70 @@
+{
+  "video_id": 907,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/907.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the text 25 A on the overhead street sign?",
+      "ground_truth": "Northern [entity_012] Bird [entity_013]",
+      "prediction": "The text \"Drivers Wanted\" is located directly to the right of the text \"25 A\" on the overhead street sign.",
+      "inference_time_sec": 9.097,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the parked white box truck?",
+      "ground_truth": "6",
+      "prediction": "Two",
+      "inference_time_sec": 6.379,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the text groups on the brick industrial building's banner are encountered?",
+      "ground_truth": "1st: DRIVERS [entity_001] and WANTED [entity_002], 2nd: 718 [entity_003] and 729-7777 [entity_004]",
+      "prediction": "The text groups on the brick industrial building's banner are encountered in the following order: 'DRIVERS', 'DRIVERS WANTED', and 'DRIVERS WANTED NOW'.",
+      "inference_time_sec": 10.055,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the sign near the traffic light at the intersection?",
+      "ground_truth": "ENTER [entity_016]",
+      "prediction": "The sign near the traffic light at the intersection reads 'Look Right,' indicating a directive for drivers to check for traffic on the right side before proceeding.",
+      "inference_time_sec": 9.497,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?",
+      "ground_truth": "Industrial and commercial district",
+      "prediction": "The presence of contractor vehicle text and industrial building banners suggests that the driving environment is likely an urban or industrial area with ongoing construction or maintenance activities. These elements indicate a setting where commercial or industrial operations are taking place, and the road may be subject to changes or restrictions due to construction work. The banners and text on the vehicles provide contextual information about the nature of the area and potential road conditions that drivers should be aware of.",
+      "inference_time_sec": 15.405,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the area code 718 found on the visible signs?",
+      "ground_truth": "New York City",
+      "prediction": "New york",
+      "inference_time_sec": 6.483,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the phone number 718.786.2505 on the parked white box truck visible?",
+      "ground_truth": "4.8 seconds to 6.233 seconds",
+      "prediction": "From 0 to 10 seconds",
+      "inference_time_sec": 7.276,
+      "error": ""
+    }
+  ]
+}

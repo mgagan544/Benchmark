@@ -1,0 +1,70 @@
+{
+  "video_id": 907,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/907.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the text 25 A on the overhead street sign?",
+      "ground_truth": "Northern [entity_012] Bird [entity_013]",
+      "prediction": "The user wants me to identify text on a specific sign.\n\n1.  **Locate the sign:** I need to find an overhead street sign that contains the text \"25 A\".\n2.  **Scan the video frames:**\n    *   Frame 1 (00:00): No overhead street sign visible with \"25 A\". There's a blue sign \"DRIVERS WANTED\" on the right, but that's not an overhead street sign.\n    *   Frame 2 (00:01): Still driving. No overhead street sign with \"25 A\".\n    *",
+      "inference_time_sec": 12.895,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the parked white box truck?",
+      "ground_truth": "6",
+      "prediction": "The user wants me to count the distinct text instances on the parked white box truck.\n\n1.  **Identify the truck:** I see a white box truck parked on the left side of the road, facing somewhat towards the camera but angled slightly right. It's visible clearly around the 0.2-second mark and onwards.\n2.  **Locate text on the truck:**\n    *   There is large blue text on the side of the truck's cargo area.\n    *   The text reads \"CONTRACTORS\".\n    *   Below that, there is smaller text \"SHEET METAL LLC\".",
+      "inference_time_sec": 12.612,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the text groups on the brick industrial building's banner are encountered?",
+      "ground_truth": "1st: DRIVERS [entity_001] and WANTED [entity_002], 2nd: 718 [entity_003] and 729-7777 [entity_004]",
+      "prediction": "The user wants me to identify the text groups on a specific banner and list them in the order they appear as the video progresses.\n\n1.  **Identify the target object:** The user specifies a \"brick industrial building's banner\".\n2.  **Locate the banner:** Looking at the first few frames (00:00 - 00:01), there is a large blue banner on the right side, attached to a brick building.\n3.  **Identify the text groups:**\n    *   In the very first frame (00:00), I can see the rightmost",
+      "inference_time_sec": 12.628,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the sign near the traffic light at the intersection?",
+      "ground_truth": "ENTER [entity_016]",
+      "prediction": "The user wants me to identify text on a sign near a traffic light at an intersection.\n\n1.  **Scan the video for an intersection:** The video shows a car driving down a street. Around the 00:03 mark, the car approaches an intersection with traffic lights.\n2.  **Locate the traffic lights:** There are traffic lights hanging over the intersection.\n3.  **Look for signs near the traffic lights:**\n    *   To the right of the traffic lights, there is a green rectangular sign.\n    *   Let's zoom in on that sign. It's visible clearly at",
+      "inference_time_sec": 12.625,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?",
+      "ground_truth": "Industrial and commercial district",
+      "prediction": "The user wants to know what the text on the contractor vehicle and the banners on the building suggest about the driving environment.\n\n1.  **Identify the visual elements:**\n    *   **Contractor Vehicle:** In the early frames (00:00 - 00:03), there's a white truck on the left side. The text \"CONTRACTORS SHEET METAL LLC\" is visible on the side.\n    *   **Industrial Building Banners:** In the first frame (00:00), there's a blue banner on a building that says \"DRIVERS WANTED\".",
+      "inference_time_sec": 12.638,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the area code 718 found on the visible signs?",
+      "ground_truth": "New York City",
+      "prediction": "The user wants to identify the city or region based on the area code 718 seen in the video.\n\n1.  **Locate the area code:** I need to scan the video frames for the number \"718\".\n    *   Looking at the first few frames (0.0s - 0.3s), there is a white truck on the left side of the road.\n    *   On the side of the truck, there is text. Let's zoom in on that.\n    *   Frame 0.2s and 0.3s show the truck clearly. The",
+      "inference_time_sec": 12.63,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the phone number 718.786.2505 on the parked white box truck visible?",
+      "ground_truth": "4.8 seconds to 6.233 seconds",
+      "prediction": "The user wants to find the time range where a specific phone number is visible on a parked white box truck.\n\n1.  **Identify the truck:** I need to look for a white box truck parked on the left side of the road.\n2.  **Locate the phone number:** Once the truck is found, I need to scan its side for the number \"718.786.2505\".\n3.  **Determine the timestamps:** I will check each frame to see when the truck and the number are visible.\n\n*   **Frame 1 (00:0",
+      "inference_time_sec": 12.644,
+      "error": ""
+    }
+  ]
+}

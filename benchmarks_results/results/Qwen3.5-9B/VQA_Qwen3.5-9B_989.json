@@ -1,0 +1,70 @@
+{
+  "video_id": 989,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/989.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks?",
+      "ground_truth": "A residential concrete pathway and sidewalk between the driveways and the crosswalks.",
+      "prediction": "The user wants to identify what is located between the driveways on the right and the crosswalks.\n\n1.  **Analyze the scene:** I see a street intersection.\n2.  **Locate the driveways:** On the right side, there are houses with white fences. There are driveways leading up to these houses.\n3.  **Locate the crosswalks:** In the foreground, there are white zebra stripes painted on the road, indicating a pedestrian crosswalk.\n4.  **Identify the space between them:** Looking at the area between the driveways (where cars are parked",
+      "inference_time_sec": 13.165,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct moving vehicles cross the intersection between 00:01 and 00:08?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the distinct moving vehicles that cross the intersection between the timestamps 00:01 and 00:08.\n\n1.  **Analyze the video:**\n    *   **00:00 - 00:01:** The camera car is stopped at a crosswalk. A white SUV is turning left across the intersection from the left side. A black SUV is turning right from the right side.\n    *   **00:01 - 00:02:** The white SUV continues its turn. The black SUV continues its turn.",
+      "inference_time_sec": 13.232,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the white SUV, black SUV, and large black pickup truck clear the intersection?",
+      "ground_truth": "1st: white SUV, 2nd: black SUV, 3rd: large black pickup truck",
+      "prediction": "The user wants to know the order in which three specific vehicles clear the intersection.\n\n1.  **Identify the vehicles:**\n    *   **White SUV:** There's a white SUV on the left side, turning right or crossing. Wait, looking closely at the first few frames.\n    *   **Black SUV:** There's a black SUV turning left across the intersection.\n    *   **Large black pickup truck:** There's a large black pickup truck turning right from the right side.\n\n2.  **Analyze the movement frame by frame:**\n    *   **00:00:** The view",
+      "inference_time_sec": 13.276,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What signal hanging in the center of the intersection indicates that the driver should proceed with caution?",
+      "ground_truth": "The overhead flashing yellow traffic light.",
+      "prediction": "The user is asking about a traffic signal visible in the video.\n1.  **Identify the traffic signal:** Looking at the center of the intersection, there is a traffic light hanging from a pole.\n2.  **Determine the state of the signal:** In the first frame (00:00), the top light is illuminated red. Wait, let me look closer.\n    *   Frame 00:00: The traffic light shows a red light at the top.\n    *   Frame 00:01: The traffic light shows a red light at the top.",
+      "inference_time_sec": 13.342,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the surrounding environment, including houses, lawns, and private driveways, what type of area is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The user wants me to identify the type of area shown in the video based on visual cues.\n\n1.  **Analyze the visual elements:**\n    *   **Houses:** I see single-family homes. They look like typical suburban houses, likely 2-3 stories, with siding (white, brick). They are set back from the road.\n    *   **Lawns:** There are green lawns visible in front of the houses.\n    *   **Driveways:** There are private driveways leading to the houses.\n    *   **Street:** It's a paved road with a crosswalk",
+      "inference_time_sec": 13.142,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What written language or script is visible on the signs in this intersection?",
+      "ground_truth": "No signs with visible text are present in the clip.",
+      "prediction": "The user is asking for the written language or script visible on the signs in the intersection.\n\n1.  **Analyze the scene:** I see a street intersection from a driver's perspective. There are traffic lights, cars, houses, and trees.\n2.  **Locate signs:** I need to look for street signs or traffic signs.\n    *   There's a green street sign on the pole to the right, near the traffic light. It's partially visible but blurry.\n    *   There might be other signs further down the road, but they are too small and blurry to read.\n    *",
+      "inference_time_sec": 13.245,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the large black pickup truck visible crossing the intersection?",
+      "ground_truth": "00:06 to 00:08",
+      "prediction": "The user wants to find the time range when a large black pickup truck is visible crossing the intersection.\n\n1.  **Analyze the video frames:**\n    *   **00:00 - 00:01:** I see a white SUV turning left across the intersection. There's a black car further back. No large black pickup truck crossing yet.\n    *   **00:02:** A black SUV/crossover is turning left. Still no pickup truck.\n    *   **00:03:** Ah, here it is. A large black pickup truck is entering the frame from",
+      "inference_time_sec": 13.248,
+      "error": ""
+    }
+  ]
+}

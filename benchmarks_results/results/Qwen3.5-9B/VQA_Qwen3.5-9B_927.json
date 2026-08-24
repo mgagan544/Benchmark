@@ -1,0 +1,70 @@
+{
+  "video_id": 927,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/927.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text New Jersey relative to the G W Bridge text?",
+      "ground_truth": "Below G W Bridge [entity_003]",
+      "prediction": "The user wants to know the spatial relationship between the text \"New Jersey\" and \"G W Bridge\" based on the provided video frames.\n\n1.  **Identify the relevant frames:** I need to look for frames where the highway signs are clearly visible.\n    *   Frame 00:00: Shows three large green signs.\n    *   Frame 00:01: Shows the same signs, slightly further away.\n    *   Frame 00:02: Shows the same signs.\n    *   Frame 00:03: Shows the same signs.",
+      "inference_time_sec": 13.305,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the overhead gantry signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "The user wants me to count the distinct text instances on the overhead gantry signs.\n\n1.  **Identify the signs:** Looking at the first few frames (00:00 - 00:03), there are three main green overhead signs visible on the gantry.\n2.  **Analyze the left sign:**\n    *   Top text: \"ALL TRUCKS TO NJ\" (small, above the main sign).\n    *   Main sign text: \"95 SOUTH\", \"G W Bridge\", \"New Jersey\".\n    *   Bottom text: \"LOWER LEVEL\" (",
+      "inference_time_sec": 13.207,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?",
+      "ground_truth": "1st: NORTH [entity_002]; 2nd: New Jersey [entity_008]",
+      "prediction": "The user wants to know the order in which the texts \"NORTH\" and \"New Jersey\" appear or become visible as the vehicle moves forward.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see three large green highway signs.\n    *   The left sign says \"95 SOUTH G W Bridge New Jersey\".\n    *   The middle sign says \"95 NORTH Cr Bronx Expy W 178 St\".\n    *   The right sign says \"95 SOUTH G W Bridge New Jersey LOWER LEVEL\".\n    *   So, in the",
+      "inference_time_sec": 13.166,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?",
+      "ground_truth": "NO TRUCKS [entity_006] and ALL TRUCKS TO NJ [entity_007]",
+      "prediction": "The user wants to identify specific text on the overhead signs related to trucks.\n\n1.  **Analyze the first frame (00:00):**\n    *   There are three main green overhead signs.\n    *   **Left Sign:** At the very top, there is a small white rectangular sign. It reads \"ALL TRUCKS TO NJ\".\n    *   **Middle Sign:** No truck-specific text at the top. It says \"95 NORTH\", \"Cr Bronx Expy\", \"W 178 St\".\n    *   **Right Sign:** At the very top, there is a",
+      "inference_time_sec": 13.175,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the density and type of overhead text suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The user wants me to analyze the overhead signs in the video and infer something about the driving environment.\n\n1.  **Identify the signs:** I see three large green highway signs hanging over the lanes.\n    *   Left sign: \"95 SOUTH G W Bridge New Jersey\" with an arrow pointing down-left.\n    *   Middle sign: \"95 NORTH Cr Bronx Expy W 178 St\" with an arrow pointing down.\n    *   Right sign: \"95 SOUTH G W Bridge New Jersey\" with an arrow pointing down-right.\n    *   There's also a smaller sign",
+      "inference_time_sec": 13.093,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which metropolitan area is suggested by the visible overhead signs, and what text supports this?",
+      "ground_truth": "New York metropolitan area, supported by Cr Bronx Expy [entity_004] and New Jersey [entity_008]",
+      "prediction": "The user wants to identify the metropolitan area based on the overhead signs in the video.\n\n1.  **Analyze the signs:** I need to look closely at the green highway signs visible in the first few frames.\n    *   **Left Sign:** \"95 SOUTH\", \"G W Bridge\", \"New Jersey\".\n    *   **Middle Sign:** \"95 NORTH\", \"Cr Bronx Expy\", \"W 178 St\".\n    *   **Right Sign:** \"95 SOUTH\", \"G W Bridge\", \"New Jersey\", \"LOWER LEVEL\".\n\n2.  **Identify key locations",
+      "inference_time_sec": 13.236,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?",
+      "ground_truth": "0.033s",
+      "prediction": "The user wants to find the timestamp where specific text on highway signs becomes legible.\n\n1.  **Identify the text:**\n    *   \"New Jersey\"\n    *   \"LOWER LEVEL\"\n    *   \"NO TRUCKS\"\n    *   \"ALL TRUCKS TO NJ\"\n\n2.  **Scan the video frames:**\n    *   **00:00:** The video starts with a clear view of the highway signs.\n        *   Left sign: \"95 SOUTH\", \"G W Bridge\", \"New Jersey\". Above it: \"ALL TRUCKS TO",
+      "inference_time_sec": 13.189,
+      "error": ""
+    }
+  ]
+}

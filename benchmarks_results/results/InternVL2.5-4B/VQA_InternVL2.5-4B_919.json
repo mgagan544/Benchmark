@@ -1,0 +1,70 @@
+{
+  "video_id": 919,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/919.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located across the street relative to the overhead crossing sign displaying AHE?",
+      "ground_truth": "CASH 4 [entity_003] to the left of AHE [entity_002]",
+      "prediction": "The text located across the street relative to the overhead crossing sign displaying AHE is 'AHE'.",
+      "inference_time_sec": 5.793,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct text instances marked or mounted on the yellow school bus. These include the word 'SCHOOL BUS' on the side, the number '12345' on the back, and a sign indicating 'SCHOOL BUS' with a pedestrian crossing symbol.",
+      "inference_time_sec": 7.34,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?",
+      "ground_truth": "1st: SCHOOL [entity_001], 2nd: AHE [entity_002], 3rd: CASH 4 [entity_003]",
+      "prediction": "The chronological order of the first three text instances is as follows: 'SCHOOL BUS CROSSING' appears first, followed by 'SCHOOL BUS CROSSING' again, and then 'SCHOOL BUS CROSSING' appears a third time.",
+      "inference_time_sec": 6.724,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?",
+      "ground_truth": "PARKING [entity_011]",
+      "prediction": "The utility post on the right sidewalk has a sign that reads 'No Parking Anytime,' indicating that parking is not allowed at any time near the end of the clip.",
+      "inference_time_sec": 5.813,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?",
+      "ground_truth": "School zone",
+      "prediction": "The mix of text visible between 0.267 seconds and 3.200 seconds, including 'SCHOOL', 'BUS STOP', and 'NO PARKING', suggests that the area is a school zone. This is further supported by the presence of a school bus, which is a common sight in such areas. The 'NO PARKING' sign indicates that parking is restricted in this zone, likely to ensure the safety of students and the smooth flow of traffic. The 'BUS STOP' sign indicates that there is a designated area for buses to pick up and drop off students, which is a standard feature in school zones",
+      "inference_time_sec": 12.164,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the contact number displayed on the side of the school bus?",
+      "ground_truth": "New York City",
+      "prediction": "The contact number displayed on the side of the school bus is '516-873-1234'. This number is likely associated with the school district or the school itself. Given that the video is set in an urban environment with a school bus, it is reasonable to infer that the city is likely New York City. The number format and the context of the scene strongly suggest that this is a school bus from the New York City public school system, which uses such contact numbers for communication with parents and guardians.",
+      "inference_time_sec": 10.753,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the regulatory parking sign remain continuously visible in the clip?",
+      "ground_truth": "6.400 seconds to 7.367 seconds",
+      "prediction": "The regulatory parking sign remains continuously visible throughout the entire duration of the video, from the beginning to the end.",
+      "inference_time_sec": 4.938,
+      "error": ""
+    }
+  ]
+}

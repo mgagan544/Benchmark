@@ -1,0 +1,70 @@
+{
+  "video_id": 973,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/973.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the Harrison sign?",
+      "ground_truth": "ANY [entity_004] and TIME [entity_005] below Harrison [entity_003]",
+      "prediction": "The user wants to identify the text directly below the \"Harrison\" sign.\n\n1.  **Locate the \"Harrison\" sign:** I see a street sign on a pole on the right side of the road in the first frame. It says \"Harrison\".\n2.  **Look below it:** Directly underneath the \"Harrison\" sign, there is a smaller sign.\n3.  **Read the text:** The text on the smaller sign is \"ONE WAY\". It's a standard street sign configuration.\n4.  **Confirm visibility:** The sign is visible in the first frame [00",
+      "inference_time_sec": 13.192,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are passed by the vehicle on the right side of the road between 0.0s and 2.0s?",
+      "ground_truth": "5",
+      "prediction": "The user wants me to count distinct text instances passed by the vehicle on the right side of the road between 0.0s and 2.0s.\n\n1.  **Analyze the video:** I need to look at the right side of the road as the car moves forward.\n2.  **Identify text instances:**\n    *   **0.0s - 0.1s:** There's a street sign on a pole on the right. It says \"Harrison\".\n    *   **0.0s - 0.1s:** Further back, there's a yellow sign",
+      "inference_time_sec": 13.169,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the parking signs and advertisements visible between 3.5s and 6.4s?",
+      "ground_truth": "1st: PUBLIC [entity_006] PARKING [entity_007], 2nd: eaze [entity_008], 3rd: FLAT RATE [entity_009], 4th: WEEK [entity_010]",
+      "prediction": "The user wants to know the order of parking signs and advertisements visible between 3.5s and 6.4s.\n\n1.  **Analyze the video:** I need to watch the video segment from 3.5s to 6.4s and identify any parking signs or advertisements.\n2.  **Scan for signs:**\n    *   Around 3.5s - 4.0s: As the car drives under the overpass, I see a sign on the right side. It's a white sign with red text. Let's look closer. It says \"PUBLIC PARKING\".",
+      "inference_time_sec": 13.229,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed near the end of the clip to alert drivers about the bridge?",
+      "ground_truth": "CAUTION [entity_012] VERTOCAL [entity_013] BRIDGE [entity_014] VERTICAL [entity_015] CLEARANCE [entity_016]",
+      "prediction": "The user wants to identify warning text near the end of the video clip.\n\n1.  **Analyze the video:** I'll scan through the frames, paying close attention to the end of the clip as requested.\n2.  **Focus on the bridge area:** The car is driving under an overpass/bridge.\n3.  **Look for signs:** I see a sign on the right side of the road, just before the bridge structure.\n4.  **Identify the text:** In the frame at 00:02, there is a white sign with red text. It says \"PUBLIC PARK",
+      "inference_time_sec": 13.287,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of parking rates, advertisements, and a highway overpass?",
+      "ground_truth": "urban commercial zone under highway overpass",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Parking rates:** I see a sign that says \"PUBLIC PARKING\" with an arrow and a price (looks like \"$1.00\" or similar, though blurry). This indicates a designated parking area, likely in a commercial or mixed-use zone.\n    *   **Advertisements:** There are large billboards and signs visible. One billboard is high up on the overpass structure. Another sign says \"BART & MERCURY\" (partially visible,",
+      "inference_time_sec": 13.27,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the legible signs in this scene?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the signs in the video.\n\n1.  **Analyze the visible signs:**\n    *   **Street Sign:** At the very beginning (00:00), there's a street sign on the right that says \"Harrison\". This is a proper noun (street name), but English is the dominant language in the US where this looks to be.\n    *   **Traffic Signs:** There are green street signs, likely indicating directions or street names. One is partially visible but looks like standard US street signage.\n    *   **Business Signs:**\n        *   At",
+      "inference_time_sec": 13.284,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the advertisement for eaze visible in the clip?",
+      "ground_truth": "3.5s to 4.067s",
+      "prediction": "The user wants to find the specific time range where an advertisement for \"eaze\" is visible.\n\n1.  **Scan the video frames:** I will look through the provided frames for any text or logos that say \"eaze\".\n2.  **Frame 00:00:** I see a green sign on the right side, under the overpass. It's partially obscured but looks like it could be an ad. Wait, looking closer at the sign on the pole on the right side, just past the traffic light pole. It's a vertical sign. Let's look at the next frames.\n3.",
+      "inference_time_sec": 13.225,
+      "error": ""
+    }
+  ]
+}

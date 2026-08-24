@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "To the right of the green directional sign",
+      "inference_time_sec": 7.065,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are at least four distinct text entities visible on the signs: 'ONE WAY', 'DO NOT ENTER', 'LANE CONTROLLED BY TRAFFIC SIGNAL', and 'EXIT 32'.",
+      "inference_time_sec": 9.835,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "As the vehicle moves forward, the first sign encountered is the green highway sign indicating 'Van Wyck Expwy' and 'Cross Bronx Expwy'. Following that, the vehicle passes under the overpass where the 'No Turn On Red' sign is visible. The third sign, which is the 'No Turn On Red' sign, is seen after the vehicle has passed the first two signs.",
+      "inference_time_sec": 13.283,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The sign reads 'MAXIMUM WEIGHT 8 TONS.'",
+      "inference_time_sec": 7.337,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names and weight limit signs suggests that the road segment is likely a major thoroughfare designed to handle a significant volume of traffic, including commercial vehicles.",
+      "inference_time_sec": 9.098,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The abbreviations on the green directional sign suggest that the location is in the state of new york.",
+      "inference_time_sec": 8.044,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text DELIVERIES ENTRANCE 9 first becomes visible in the clip at the timestamp 10 to 15 seconds.",
+      "inference_time_sec": 8.795,
+      "error": ""
+    }
+  ]
+}

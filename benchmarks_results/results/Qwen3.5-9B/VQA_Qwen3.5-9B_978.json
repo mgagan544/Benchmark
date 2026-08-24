@@ -1,0 +1,70 @@
+{
+  "video_id": 978,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/978.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory road marking near the commercial building relative to the pavement marking on the multi-lane avenue?",
+      "ground_truth": "To the right of ONLY [entity_001] across the access road",
+      "prediction": "The user wants to know the spatial relationship between two specific road markings.\n\n1.  **Identify the \"regulatory road marking near the commercial building\":**\n    *   Looking at the video, specifically around 00:00 to 00:02, there is a large, orange, diamond-shaped sign on the right side of the road.\n    *   Wait, the prompt says \"regulatory road marking\". A diamond sign is usually a warning sign, not strictly regulatory (like a stop sign or speed limit), but in common parlance, it's a road marking/sign. Let's look",
+      "inference_time_sec": 13.223,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct road markings containing painted text are mentioned in the scene description?",
+      "ground_truth": "2",
+      "prediction": "The user wants to know the number of distinct road markings with painted text visible in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify road markings with text.\n2.  **Frame 1 (00:00):** I see \"ONLY\" painted on the road in the left lane. There's also an arrow.\n3.  **Frame 2 (00:01):** The camera moves forward. I see \"ONLY\" again in the left lane. Wait, looking closely at the lane markings.\n    *   Left lane: There's a left",
+      "inference_time_sec": 13.35,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the distinct road markings are encountered by the camera vehicle?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: STOP [entity_002]",
+      "prediction": "The user wants me to identify the order of distinct road markings encountered by the camera vehicle.\n\n1.  **Analyze the video:** I'll watch the video from start to finish and note the road markings as they appear in the foreground and move towards the center of the frame as the car drives forward.\n\n2.  **Initial observation (00:00 - 00:01):**\n    *   The video starts with the car driving down a multi-lane road.\n    *   In the immediate foreground, there's a large white arrow pointing left. This is a left-turn arrow.",
+      "inference_time_sec": 13.216,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving action is implied by the regulatory road marking located near the modern commercial building?",
+      "ground_truth": "Stop, as indicated by STOP [entity_002]",
+      "prediction": "The user wants to identify a specific driving action based on a road marking.\n\n1.  **Locate the \"modern commercial building\":** Looking at the video, especially in the later frames (0.3s, 0.4s), there is a large, modern-looking building on the right side of the road. It has a grid-like facade.\n2.  **Locate the \"regulatory road marking\" near it:** As the car approaches this building, look at the road surface.\n3.  **Identify the marking:** In frame 0.3s and 0.4s,",
+      "inference_time_sec": 13.278,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential high-rises, commercial buildings, and multi-lane avenues suggest about the driving environment?",
+      "ground_truth": "Urban commercial and residential district",
+      "prediction": "The user wants me to interpret the driving environment based on the visual cues in the video.\n\n1.  **Identify the key elements:**\n    *   **Residential high-rises:** I see tall apartment buildings on the left side (brick facades, balconies).\n    *   **Commercial buildings:** I see large, modern office buildings on the right side (glass facades, large windows).\n    *   **Multi-lane avenues:** The road itself is wide, with multiple lanes (at least 3-4 visible in the forward direction), marked with arrows and \"ONLY\" text.\n    *",
+      "inference_time_sec": 13.198,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is used for the road markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language or script of the road markings.\n\n1.  **Analyze the images:** I see road markings painted on the asphalt.\n2.  **Identify the text:** The text clearly reads \"ONLY\" and \"LEFT\".\n3.  **Identify the script:** The characters are Latin alphabet letters (A-Z).\n4.  **Determine the language:** \"ONLY\" and \"LEFT\" are English words commonly used in traffic directions. The context (cityscape, style of road markings) is consistent with English-speaking countries like the US or UK.\n5.  **",
+      "inference_time_sec": 13.283,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the first pavement marking driven over, and at what timestamp is the regulatory road marking passed?",
+      "ground_truth": "ONLY [entity_001] at 0.1 seconds, STOP [entity_002] around 5.7 seconds",
+      "prediction": "The user wants to identify two specific events in the video based on timestamps.\n\n1.  **First pavement marking driven over:**\n    *   Looking at the first frame (00:00), there is a large white arrow on the pavement pointing left.\n    *   In the second frame (00:01), the car has moved forward. The arrow is now directly under the car's hood/windshield area, indicating it is being driven over.\n    *   So, the first pavement marking (the left turn arrow) is driven over around 00:01.\n\n2.",
+      "inference_time_sec": 13.215,
+      "error": ""
+    }
+  ]
+}

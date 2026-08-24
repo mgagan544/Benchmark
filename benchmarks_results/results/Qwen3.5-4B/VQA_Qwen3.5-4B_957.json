@@ -1,0 +1,70 @@
+{
+  "video_id": 957,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/957.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What green information board is located directly to the left of the yellow speed advisory sign displaying 15 M P H?",
+      "ground_truth": "SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014] to the left of 15 M P H [entity_011]",
+      "prediction": "The user wants to identify a specific green information board.\n1.  **Locate the yellow speed advisory sign:** I need to find the sign that says \"15 MPH\". Looking through the frames, specifically around 00:01 and 00:02, there is a yellow diamond-shaped sign on the right side of the road. It has a curved arrow and the number \"15\" below it. This is the speed advisory sign.\n2.  **Identify the location \"directly to the left\":** The user is asking for a green board *to the left* of this yellow",
+      "inference_time_sec": 13.129,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances (such as license plates or vehicle tags) are visible between 1.2 and 1.767 seconds?",
+      "ground_truth": "5",
+      "prediction": "The user wants me to count vehicle-mounted text instances (like license plates) visible in the video between the timestamps 1.2 and 1.767 seconds.\n\n1.  **Analyze the timestamps:**\n    *   The provided images are sampled at 0.0, 0.1, 0.2, 0.3, 0.4 seconds.\n    *   Wait, the prompt asks for \"between 1.2 and 1.767 seconds\".\n    *   Looking at the provided images, they are labeled [0.0 second], [0.",
+      "inference_time_sec": 12.691,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the orange construction warning sign, the yellow speed advisory sign, and the green overhead signs are encountered?",
+      "ground_truth": "1st ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010], 2nd 15 M P H [entity_011], 3rd SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014]",
+      "prediction": "The user wants to know the order of appearance for three specific signs:\n1.  **Orange construction warning sign:** This is a diamond-shaped orange sign.\n2.  **Yellow speed advisory sign:** This is a yellow diamond-shaped sign with a number.\n3.  **Green overhead signs:** These are rectangular green signs hanging over the road.\n\nLet's look at the video frames chronologically.\n\n*   **00:00 - 00:01:**\n    *   I see a green overhead sign at the top right: \"Midtown Tun 34 St\". This is a green",
+      "inference_time_sec": 12.685,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the right side of the road indicates a hazard or construction ahead?",
+      "ground_truth": "ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010]",
+      "prediction": "The user wants to identify a specific warning text on the right side of the road.\n\n1.  **Scan the video frames:** I need to look at the right side of the road, specifically for signs.\n2.  **Frame 1 (00:00):** There's a green overhead sign for \"Midtown Tun 34 St\". Further down, there's an orange diamond-shaped sign. It's a bit blurry but looks like a construction sign.\n3.  **Frame 2 (00:01):** The camera has moved slightly. The orange diamond sign is clearer. It says \"",
+      "inference_time_sec": 12.686,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, multiple highway lanes, and construction warning signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants me to identify the type of road based on visual cues in the video.\n\n1.  **Analyze the visual evidence:**\n    *   **Overhead signs:** I see green signs hanging from a gantry. One says \"Midtown Tun 34 St\". Another says \"EXIT 9 42 St Broadway Lane 42 St K-ART\". These are classic highway exit signs.\n    *   **Lanes:** There are multiple lanes of traffic moving in the same direction. The car is in a middle lane, with a red convertible to the left and a black SUV ahead.",
+      "inference_time_sec": 12.623,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or region is suggested by the green information board displaying SUNY State College Optometry?",
+      "ground_truth": "New York State",
+      "prediction": "The user wants to identify the city or region based on a specific sign in the video.\n\n1.  **Locate the sign:** I need to find the green information board that says \"SUNY State College of Optometry\".\n2.  **Scan the video frames:**\n    *   Frame 0.0s: Shows \"Midtown Tun 34 St\".\n    *   Frame 0.1s: Shows \"Road Work AHEAD\" and a curve sign.\n    *   Frame 0.2s: Ah, there it is. A green sign on the right side of the",
+      "inference_time_sec": 12.626,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range are the overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE visible in the clip?",
+      "ground_truth": "8.2 to 9.3 seconds",
+      "prediction": "The user wants to find the specific time range where a set of overhead highway exit signs is visible.\nThe signs are described as:\n- EXIT 9\n- E 42 St\n- RIGHT LANE\n\nI need to scan the video frames to locate these signs.\n\n1.  **Frame 00:00:** I see a green sign \"Midtown Tun 34 St\". This is not the target sign.\n2.  **Frame 00:01:** I see an orange construction sign and a yellow curve sign. No green exit signs yet.\n3.  **Frame",
+      "inference_time_sec": 12.676,
+      "error": ""
+    }
+  ]
+}

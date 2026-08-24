@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "The text 'direct' is located directly to the right of the ARROWHEAD brand on the red delivery truck.",
+      "inference_time_sec": 8.29,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "Three",
+      "inference_time_sec": 6.323,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "As the vehicle moves forward, the text instances are encountered in the following order: first, 'TAXI' is seen on the left side of the road, followed by 'Odwalla' on the side of a truck to the right, and finally, 'ARROWHEAD' is displayed on a bus to the right.",
+      "inference_time_sec": 12.251,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs indicate a height clearance limit of 12 feet 3 inches for vehicles entering the covered underpass.",
+      "inference_time_sec": 8.444,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The mix of text and landmarks visible in this clip suggests that the driving environment is urban and possibly near a commercial or industrial area. The presence of various signs, including those for pedestrian crossings, parking, and specific businesses like 'Arrowhead Direct' and 'Odwalla,' indicates a well-developed infrastructure with designated areas for different types of traffic and pedestrian movement. The modern building with a glass facade and the covered walkway further emphasize the urban setting. The fact that the vehicle is navigating through a narrow lane with multiple trucks suggests that this is a busy area with significant commercial activity, requiring careful driving to maneuver through the tight spaces and avoid",
+      "inference_time_sec": 17.281,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The united states",
+      "inference_time_sec": 6.504,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "The TAXI sign first becomes visible in the segregated transit lane at the beginning of the video, as the vehicle starts to move forward.",
+      "inference_time_sec": 8.553,
+      "error": ""
+    }
+  ]
+}

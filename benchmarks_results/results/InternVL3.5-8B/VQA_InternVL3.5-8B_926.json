@@ -1,0 +1,70 @@
+{
+  "video_id": 926,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/926.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the safety sign marked with AMER relative to the vehicle with license plate T679966C?",
+      "ground_truth": "AMER [entity_008] is to the right of T679966C [entity_007]",
+      "prediction": "The safety sign marked with AMER is positioned to the right of the vehicle with the license plate T679966C. It is visible in the right lane, adjacent to the construction area where the excavator is located.",
+      "inference_time_sec": 10.565,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to the highway direction sign pointing toward the wait area?",
+      "ground_truth": "4",
+      "prediction": "Two.",
+      "inference_time_sec": 6.456,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the airport facility sign, the highway direction sign, and the license plate are encountered between 0.9 and 5.0 seconds?",
+      "ground_truth": "1st: AMERICAN [entity_001] AIRLINES [entity_002], 2nd: Long [entity_003] Term [entity_004] Wait [entity_005] Area [entity_006], 3rd: T679966C [entity_007]",
+      "prediction": "Between 0.9 and 5.0 seconds, the sequence of encounters is as follows: first, the airport facility sign is visible on the right side of the highway, then the highway direction sign appears on the left side, and finally, the license plate of the beige SUV becomes visible as the vehicle moves forward.",
+      "inference_time_sec": 13.423,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint? If so, what does it say and where is it located?",
+      "ground_truth": "AMER [entity_008] on a construction notice at the airport construction site",
+      "prediction": "Yes, there is visible text in the clip that indicates a driving constraint. The text reads \"NO TRUCKS\" and is located on a sign to the right side of the highway, near the construction area. This sign is likely indicating that trucks are not allowed to use that particular lane or exit due to the ongoing construction work.",
+      "inference_time_sec": 13.559,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible text mentioning airlines and long term wait area, what type of driving environment is depicted?",
+      "ground_truth": "Airport access road",
+      "prediction": "The driving environment depicted is likely near an airport, as indicated by the signage for airlines and a long-term wait area, suggesting proximity to airport facilities or terminals.",
+      "inference_time_sec": 9.72,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the airport hangar and highway direction sign written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the airport hangar and highway direction sign is written in the english language.",
+      "inference_time_sec": 8.158,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the gold lead SUV become clearly visible?",
+      "ground_truth": "4.0 seconds for T679966C [entity_007]",
+      "prediction": "The license plate on the gold lead SUV becomes clearly visible at the beginning of the video, as the camera captures the scene from the perspective of a vehicle following the SUV.",
+      "inference_time_sec": 9.916,
+      "error": ""
+    }
+  ]
+}

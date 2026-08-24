@@ -1,0 +1,70 @@
+{
+  "video_id": 937,
+  "model": "Qwen2-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/937.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the ONE WAY sign relative to the word RIGHT near the intersection?",
+      "ground_truth": "To the right of RIGHT [entity_002]",
+      "prediction": "The ONE WAY sign is located to the left of the word RIGHT near the intersection.",
+      "inference_time_sec": 4.822,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the large promotional billboard structure on the left side of the road?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct text instances displayed on the large promotional billboard structure on the left side of the road.",
+      "inference_time_sec": 5.218,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the words on the street-side pole sign passed at the 6.533s mark?",
+      "ground_truth": "1st: Mount [entity_012], 2nd: Sinai [entity_013], 3rd: Queens [entity_014]",
+      "prediction": "The order of the words on the street-side pole sign passed at the 6.533s mark is \"W 14 St\".",
+      "inference_time_sec": 5.708,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or regulatory text must the driver follow near the Vernon Blvd intersection at the start of the clip?",
+      "ground_truth": "KEEP [entity_001] RIGHT [entity_002] and ONE WAY [entity_003]",
+      "prediction": "The driver must follow the directional or regulatory text near the Vernon Blvd intersection at the start of the clip, which is not visible in the image.",
+      "inference_time_sec": 5.608,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a large movie billboard and multiple street signs suggest about the driving environment?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The presence of a large movie billboard and multiple street signs suggests that the driving environment is urban and busy. The billboard indicates that there is a movie being advertised, which is common in cities where billboards are used to promote various products and services. The multiple street signs provide directions and information to drivers, which is essential in a city with heavy traffic and complex road networks.",
+      "inference_time_sec": 7.981,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific borough or region is suggested by the street-side pole sign passed at 6.533s?",
+      "ground_truth": "Queens [entity_014]",
+      "prediction": "The street-side pole sign passed at 6.533s suggests the region of Queens, New York City.",
+      "inference_time_sec": 5.322,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range do the movie tagline and release date on the billboard come into full view?",
+      "ground_truth": "1.967s to 2.367s",
+      "prediction": "The movie tagline and release date on the billboard come into full view at 10:00 AM.",
+      "inference_time_sec": 5.267,
+      "error": ""
+    }
+  ]
+}

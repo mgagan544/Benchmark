@@ -1,0 +1,70 @@
+{
+  "video_id": 907,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/907.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the text 25 A on the overhead street sign?",
+      "ground_truth": "Northern [entity_012] Bird [entity_013]",
+      "prediction": "The text located directly to the right of the text 25 A on the overhead street sign is 'Northern Blvd'.",
+      "inference_time_sec": 5.282,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the parked white box truck?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances mounted on the parked white box truck. The first text instance reads 'CONTRACTORS', the second one reads 'METAL LLC', and the third one reads '6305'.",
+      "inference_time_sec": 6.43,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the text groups on the brick industrial building's banner are encountered?",
+      "ground_truth": "1st: DRIVERS [entity_001] and WANTED [entity_002], 2nd: 718 [entity_003] and 729-7777 [entity_004]",
+      "prediction": "The text groups on the brick industrial building's banner are encountered in the following chronological order: 'DRIVERS WANTED', 'DRIVERS WANTED & PAY', and 'DRIVERS WANTED & PAY $1000'.",
+      "inference_time_sec": 6.612,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the sign near the traffic light at the intersection?",
+      "ground_truth": "ENTER [entity_016]",
+      "prediction": "The sign near the traffic light at the intersection has the text 'NO TURN ON RED' visible on it. This sign is a regulatory sign that instructs drivers not to make a turn on red light at the intersection, which is a common traffic regulation to enhance road safety and prevent accidents.",
+      "inference_time_sec": 7.367,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?",
+      "ground_truth": "Industrial and commercial district",
+      "prediction": "The presence of contractor vehicle text and industrial building banners suggests that the driving environment is likely a commercial or industrial area. The contractor vehicle indicates ongoing construction or maintenance work, which is common in such areas. The banners on the industrial buildings further reinforce this, as they often display company names or slogans related to the business operations. This type of environment typically has a higher volume of vehicular traffic, including trucks and other heavy machinery, which is consistent with the presence of the large white truck in the video. The banners also imply that the area is a hub for business activity, possibly with a mix of residential and commercial properties.",
+      "inference_time_sec": 11.781,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the area code 718 found on the visible signs?",
+      "ground_truth": "New York City",
+      "prediction": "The area code 718 is commonly associated with the New York City area, particularly the borough of Queens. This can be inferred from the context of the video, which shows a typical urban street scene with commercial buildings, traffic signs, and vehicles, all of which are characteristic of a city environment. The presence of the area code on the signs provides a geographical clue that the video is likely set in New York City, specifically in the Queens area.",
+      "inference_time_sec": 9.57,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the phone number 718.786.2505 on the parked white box truck visible?",
+      "ground_truth": "4.8 seconds to 6.233 seconds",
+      "prediction": "The phone number 718.786.2505 on the parked white box truck is visible throughout the entire video.",
+      "inference_time_sec": 5.45,
+      "error": ""
+    }
+  ]
+}

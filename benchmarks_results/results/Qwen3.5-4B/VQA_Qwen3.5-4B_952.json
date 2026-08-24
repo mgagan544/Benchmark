@@ -1,0 +1,70 @@
+{
+  "video_id": 952,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/952.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the motto \"Common Sense Solutions To Your Environmental Concerns\" on the service vehicle?",
+      "ground_truth": "Water Trearment & Environmental Specialists [entity_012]",
+      "prediction": "The user wants me to identify specific text on a vehicle in the video.\n\n1.  **Identify the vehicle:** The user refers to a \"service vehicle\". Looking at the first few frames (0.0s, 0.1s, 0.2s), there is a white van directly in front of the camera car.\n2.  **Locate the motto:** On the back of this white van, there is text. The top part says \"CASCADE WATER SERVICES\". Below that, there is a yellow box with \"NOW AM & EVENING 379 CR 1-800",
+      "inference_time_sec": 13.116,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are printed on or designate the yellow school vehicle?",
+      "ground_truth": "6",
+      "prediction": "The user wants me to count the distinct text instances on the yellow school vehicle.\n\n1.  **Identify the vehicle:** It's a yellow school bus.\n2.  **Scan for text:** I need to look at the visible parts of the bus in the video frames.\n    *   **Frame 0.0s:** The bus is partially visible on the left. I can see \"SCHOOL\" on the side.\n    *   **Frame 0.1s:** The bus is further ahead. I see \"SCHOOL\" on the side again.\n    *   **Frame 0.",
+      "inference_time_sec": 12.641,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the decals MOBILINK, 2626, and 379 CR become visible on the service vehicle?",
+      "ground_truth": "1st: MOBILINK [entity_005], 2nd: 2626 [entity_006], 3rd: 379 CR [entity_007]",
+      "prediction": "The user wants to know the chronological order of when three specific decals appear on the service vehicle.\n\n1.  **Identify the service vehicle:** It's the white van in the center lane, labeled \"CASCADE WATER SERVICES\".\n2.  **Identify the decals:**\n    *   **MOBILINK:** This is likely a small logo or text near the top left of the rear window.\n    *   **2626:** This is likely a license plate number or a small decal near the license plate.\n    *   **379 CR:** This is likely a decal near the",
+      "inference_time_sec": 12.66,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the yellow school vehicle indicates an emergency designation?",
+      "ground_truth": "EMERGENCY 0008 [entity_022]",
+      "prediction": "The user wants to identify specific text on a yellow school vehicle that indicates an emergency designation.\n\n1.  **Locate the yellow school vehicle:** In the first few frames (00:00 - 00:01), there is a large yellow school bus on the left side of the road.\n2.  **Examine the text on the vehicle:** I need to look closely at the back/side of the bus.\n3.  **Identify emergency-related text:**\n    *   In the top left corner of the rear window area, there is a yellow box.\n    *   Inside",
+      "inference_time_sec": 15.621,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign?",
+      "ground_truth": "Residential neighborhood",
+      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **School Bus:** A yellow school bus is visible in the left lane, moving in the same direction. This suggests a residential or suburban area where children are present, likely near a school.\n    *   **Pedestrians:** People are walking on the sidewalk to the right. Some are near a fence, possibly near a school or community center. This indicates a populated area with foot traffic.\n    *   **Temporary Garage Sale Sign:** In the first",
+      "inference_time_sec": 12.709,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area codes visible on the vehicles suggest this clip was filmed in the New York metropolitan area?",
+      "ground_truth": "516.932.3030 [entity_003] and 718-335-6363 [entity_021]",
+      "prediction": "The user wants me to identify telephone area codes from the vehicles in the video that suggest the location is the New York metropolitan area.\n\n1.  **Analyze the first frame (00:00):**\n    *   There is a white van in the center lane.\n    *   The text on the back says \"CASCADE WATER SERVICES\".\n    *   Below that, there is a phone number: \"516-932-3030\".\n    *   The area code is **516**. This is a well-known area code for Nassau and Suffolk counties in Long Island",
+      "inference_time_sec": 12.638,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle identification number 2626 first become clearly visible on the service vehicle?",
+      "ground_truth": "0.933s",
+      "prediction": "The user wants to find the timestamp where the vehicle identification number \"2626\" is first clearly visible on the service vehicle.\n\n1.  **Identify the service vehicle:** It's the white van in the center lane with \"CASCADE WATER SERVICES\" written on the back.\n2.  **Locate the VIN:** I need to look at the license plate area or just below it.\n3.  **Scan the frames:**\n    *   **00:00:** The van is visible. The license plate is yellow. Below the plate, there's a number. It looks like \"26",
+      "inference_time_sec": 12.659,
+      "error": ""
+    }
+  ]
+}

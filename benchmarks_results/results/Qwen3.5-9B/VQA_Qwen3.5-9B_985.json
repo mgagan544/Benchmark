@@ -1,0 +1,70 @@
+{
+  "video_id": 985,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/985.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle moves forward and the overhead signs come into view at 6.233 seconds, which sign is positioned to the right of the Riverhead sign?",
+      "ground_truth": "WEST [entity_001] sign",
+      "prediction": "The user wants to identify a specific sign based on the video.\n\n1.  **Analyze the user's request:**\n    *   **Context:** The vehicle is moving forward.\n    *   **Time:** Around 6.233 seconds (though the provided frames are labeled 00:00 to 00:04, I need to look for the moment overhead signs become clearly visible). Wait, the prompt mentions \"6.233 seconds\". Let me re-examine the frames. The frames provided are just timestamps like 00:00, 00:01",
+      "inference_time_sec": 13.181,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway signs are positioned above the divided roadway that come into clear view at 6.233 seconds?",
+      "ground_truth": "5",
+      "prediction": "The user wants to count distinct highway signs positioned above the divided roadway that become clearly visible at a specific timestamp (6.233 seconds).\n\n1.  **Analyze the video:** I need to look at the frames provided, specifically around the 6.233-second mark. Wait, the provided frames are timestamps 00:00, 00:01, 00:02, 00:03, 00:04. The prompt mentions \"6.233 seconds\". This is likely a typo in the prompt or refers to a timestamp not fully",
+      "inference_time_sec": 13.176,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the following events: (1) the traffic light turns green, (2) the school bus passes on the left, (3) the highway signs come into view?",
+      "ground_truth": "1st: school bus passes, 2nd: traffic light turns green, 3rd: highway signs come into view",
+      "prediction": "The user wants me to order three events based on the provided video frames.\n\n1.  **Analyze the frames:**\n    *   **Frame 1 (00:00):**\n        *   I see a traffic light ahead. It looks green. Wait, let me look closer. The light is actually green.\n        *   There is a school bus on the far left, partially visible. It's moving away or just passing.\n        *   The car in front is a white sedan.\n    *   **Frame 2 (00:01):**\n        *   The traffic light",
+      "inference_time_sec": 13.301,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the signs that come into view at 6.233 seconds, what directional routes are indicated for the driver?",
+      "ground_truth": "EAST [entity_003] and WEST [entity_001]",
+      "prediction": "The user wants to know the directional routes indicated by the signs visible at 6.233 seconds.\n\n1.  **Identify the relevant frame:** I need to look at the frame corresponding to 6.233 seconds. Looking at the provided images, the timestamp 00:06 corresponds to the image where the overhead sign is clearly visible. Wait, let me re-examine the timestamps. The prompt says \"6.233 seconds\". The images provided have timestamps like 00:00, 00:01, etc. Let's look for the image that matches that",
+      "inference_time_sec": 13.206,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the combination of a commercial building and overhead highway signs coming into view at 6.233 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial highway corridor",
+      "prediction": "The user is asking for an interpretation of the driving environment based on specific visual cues mentioned in the prompt (\"commercial building and overhead highway signs coming into view at 6.233 seconds\").\n\n1.  **Analyze the video:** I need to look at the video around the 6-second mark (though the provided frames only go up to 0.4 seconds, I must infer based on the progression or general context if the specific timestamp isn't fully visible in the provided frames). Wait, looking closely at the provided frames, they are labeled 00:00, 00:00, 0",
+      "inference_time_sec": 13.275,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or state name is visible on the highway signs that come into view at 6.233 seconds?",
+      "ground_truth": "New York [entity_005]",
+      "prediction": "The user wants to identify a specific city or state name visible on a highway sign.\n1.  **Analyze the request:** The user specifies a timestamp \"6.233 seconds\". However, looking at the provided frames, the timestamps are in seconds but the values are very small (0.0, 0.1, 0.2, 0.3, 0.4). Wait, let me re-examine the timestamps.\n    *   Frame 1: 00:00.0\n    *   Frame 2: 00:00.1",
+      "inference_time_sec": 13.176,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For how long after the traffic light turns green at 2.633 seconds does it take for the 495 sign to come into clear view?",
+      "ground_truth": "3.6 seconds",
+      "prediction": "The user wants to know the time difference between two specific events in the video.\n\n1.  **Identify the first event:** \"traffic light turns green at 2.633 seconds\".\n    *   Looking at the provided timestamps and images, I need to find the moment the light turns green.\n    *   At `00:00`, the light is green. Wait, the prompt says \"traffic light turns green at 2.633 seconds\". This implies the video starts *before* it turns green or the prompt is referring to a specific timestamp within the video file itself, not the",
+      "inference_time_sec": 13.187,
+      "error": ""
+    }
+  ]
+}

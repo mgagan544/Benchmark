@@ -1,0 +1,70 @@
+{
+  "video_id": 953,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/953.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly below the REWARDS sign on the main promotion board?",
+      "ground_truth": "STATUS [entity_002] sign directly below REWARDS [entity_003] sign",
+      "prediction": "The user wants to identify a specific sign based on its position relative to another sign.\n\n1.  **Locate the \"REWARDS\" sign:** I need to scan the video frames for a sign that says \"REWARDS\".\n    *   Looking at the first few frames (00:00 - 00:02), I see a Shell gas station on the left.\n    *   In frame 00:03 and 00:04, the camera pans left, revealing more of the Shell station.\n    *   There is a large sign structure. At the top,",
+      "inference_time_sec": 12.958,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct fuel price text instances are displayed on the gas station signs during the clip?",
+      "ground_truth": "4",
+      "prediction": "The user wants me to count the distinct fuel price text instances on gas station signs.\n\n1.  **Analyze the video:** I need to watch the video and look for gas station signs, specifically those displaying fuel prices.\n2.  **Scan for signs:**\n    *   Around 00:03, a gas station comes into view on the left.\n    *   There's a large sign with the Shell logo.\n    *   Below the logo, there are price signs.\n    *   Let's look closely at the frames around 00:03 - 00:0",
+      "inference_time_sec": 12.667,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the price signs showing 3591 and 359 are encountered?",
+      "ground_truth": "1st: 3591 [entity_006], 2nd: 359 [entity_007]",
+      "prediction": "The user wants to know the chronological order of two specific signs: one showing \"3591\" and another showing \"359\".\n\n1.  **Identify the signs:** I need to scan the video for signs with these numbers.\n    *   Looking at the first few frames (00:00 - 00:02), I see a Shell gas station on the left. There's a sign that says \"GOLD STATUS\" and below it \"3591\". Wait, let me look closer.\n    *   At 00:03, a white van drives",
+      "inference_time_sec": 12.696,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Is there any directional or instructional text that a driver must act on near the Shell Gas Station?",
+      "ground_truth": "None is present",
+      "prediction": "The user is asking about specific text near the Shell Gas Station that would instruct a driver.\n\n1.  **Identify the Shell Gas Station:** In the video, particularly around the 00:03 to 00:05 mark, a Shell gas station is visible on the left side of the street. I can see the yellow and red Shell logo on a sign.\n2.  **Scan for text near the station:**\n    *   There's a large sign with the Shell logo.\n    *   Below the logo, there's a sign that says \"GOLD STATUS\".\n    *",
+      "inference_time_sec": 12.697,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a gas station, tire shop, and sheet metal business?",
+      "ground_truth": "Commercial district",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Gas Station:** I see a Shell gas station sign and pumps on the left side of the road (visible around 00:03-00:04).\n    *   **Tire Shop:** There's a sign that says \"ACTION SHEETMETAL\" but also \"TIRE FIX\" visible on a yellow sign near the gas station (00:03-00:04).\n    *   **Sheet Metal",
+      "inference_time_sec": 15.683,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language is the text on the Action Sheetmetal building written?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the text on a specific building.\n\n1.  **Locate the building:** I need to find the \"Action Sheetmetal\" building. Looking at the frames, specifically around 0.0s to 0.5s, there is a building on the left side of the street.\n2.  **Read the text:** In frame 0.4s and 0.5s, the sign is clearly visible. It says \"ACTION SHEETMETAL\".\n3.  **Analyze the language:** The words \"ACTION\" and \"SHEETMETAL\"",
+      "inference_time_sec": 12.605,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range do the flat fix related signs first become visible in the clip?",
+      "ground_truth": "From 9.5 seconds onwards",
+      "prediction": "The user wants to find the timestamp range when \"flat fix related signs\" first appear.\n\n1.  **Analyze the video:** I'll scan through the frames to locate signs mentioning \"flat fix\".\n2.  **Frame 00:00 - 00:02:** The camera is facing forward at an intersection. I see a school bus, some cars, and street signs. No \"flat fix\" signs yet.\n3.  **Frame 00:03:** The camera pans left. A white van is turning. On the left side, there's a building with a sign",
+      "inference_time_sec": 12.567,
+      "error": ""
+    }
+  ]
+}

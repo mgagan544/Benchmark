@@ -1,0 +1,70 @@
+{
+  "video_id": 988,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/988.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the red bus stop sign relative to the concrete sidewalk where the pedestrian walks?",
+      "ground_truth": "to the right of the concrete sidewalk",
+      "prediction": "The user wants to know the spatial relationship between the red bus stop sign and the concrete sidewalk.\n\n1.  **Identify the objects:**\n    *   **Red bus stop sign:** I see a red sign on the right side of the road, near the corner. It looks like a bus stop sign. Wait, looking closely at the first frame, there's a person standing near a red sign. Let's re-examine.\n    *   Actually, looking at the first frame (00:00), there is a person standing on the sidewalk on the right. Next to them is a red sign. It",
+      "inference_time_sec": 13.196,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct traffic signs or signals are described in the scene?",
+      "ground_truth": "2",
+      "prediction": "The user wants me to count the distinct traffic signs or signals visible in the video.\n\n1.  **Scan the scene for traffic signals:**\n    *   Looking straight ahead, there's a traffic light hanging over the intersection. It's visible in the first few frames (00:00 - 00:02). It appears to be yellow/amber.\n    *   Looking to the right, there's another traffic signal head mounted on a pole near the corner. It's visible in the first frame (00:00).\n    *   Looking further down the road, there might be more",
+      "inference_time_sec": 13.253,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles that cross or clear the intersection after the ego vehicle begins decelerating at 0.6 seconds?",
+      "ground_truth": "1st: gray SUV, 2nd: black sedan",
+      "prediction": "The user wants to identify the sequence of vehicles that cross or clear the intersection after the ego vehicle starts slowing down.\n\n1.  **Identify the start time:** The prompt states the ego vehicle begins decelerating at 0.6 seconds. Looking at the frames, the ego vehicle is approaching a crosswalk and intersection.\n2.  **Scan for vehicles:** I need to look for vehicles moving through the intersection from left to right or right to left, or clearing the path.\n3.  **Frame 0.0s - 0.1s:** The ego vehicle is approaching. A dark SUV is",
+      "inference_time_sec": 13.165,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving constraints or actions are implied for the ego vehicle by the red bus stop sign near the crosswalk?",
+      "ground_truth": "None",
+      "prediction": "The user is asking about a specific traffic sign visible in the video and its implications for the driver.\n\n1.  **Identify the sign:** I need to look closely at the video frames, particularly around the crosswalk area.\n    *   In the first frame (00:00), on the right side of the road, near the crosswalk, there is a sign. It looks like a bus stop sign. Wait, let me re-examine.\n    *   Looking at the first frame again, on the right sidewalk, there is a person standing. Next to them is a sign. It's a",
+      "inference_time_sec": 13.217,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the landmarks and surroundings described, what type of driving environment does this clip depict?",
+      "ground_truth": "residential area",
+      "prediction": "The user wants me to identify the type of driving environment shown in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Road:** It's a paved road with multiple lanes (looks like a two-way street with one lane in each direction, or maybe a wider residential street). There are crosswalk markings (zebra crossing).\n    *   **Traffic Lights:** There are traffic lights visible at the intersection.\n    *   **Surroundings:**\n        *   **Houses:** I see single-family homes on both sides of the street. They look like typical suburban or residential houses (",
+      "inference_time_sec": 13.26,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Based on the position of the parked silver sedan and the pedestrian's sidewalk, what is the local driving side convention?",
+      "ground_truth": "right side",
+      "prediction": "The user wants to determine the local driving side convention based on the visual evidence in the video.\n\n1.  **Analyze the parked silver sedan:** In the first few frames (00:00 - 00:02), there is a silver sedan parked on the right side of the road, facing the same direction as the camera car. It is parked next to the curb.\n2.  **Analyze the pedestrian's sidewalk:** In the first frame (00:00), a pedestrian is standing on the sidewalk to the right of the road.\n3.  **Analyze the traffic flow",
+      "inference_time_sec": 13.176,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ego vehicle come to a complete halt before the crosswalk stop line?",
+      "ground_truth": "0.867 seconds",
+      "prediction": "The user wants to find the timestamp where the ego vehicle stops before the crosswalk.\n\n1.  **Analyze the video:**\n    *   **00:00:** The car is moving towards the intersection. The traffic light is yellow.\n    *   **00:01:** The car is still moving, approaching the crosswalk. The traffic light is red.\n    *   **00:02:** The car is very close to the crosswalk. It seems to be slowing down significantly.\n    *   **00:03:** The car is just past the crosswalk",
+      "inference_time_sec": 13.185,
+      "error": ""
+    }
+  ]
+}

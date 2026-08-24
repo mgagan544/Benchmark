@@ -1,0 +1,70 @@
+{
+  "video_id": 932,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/932.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
+      "ground_truth": "CLEANERS [entity_019]",
+      "prediction": "The user wants to identify a business name next to \"COAST FOR GOLD\".\n\n1.  **Locate \"COAST FOR GOLD\":** I need to scan the storefronts on the right side of the street.\n    *   Looking at the frames, specifically around 00:03 and 00:04, I see a yellow sign on the right side.\n    *   At 00:03, there's a yellow sign that says \"COAST FOR GOLD\". It's located on a building with a yellow facade.\n    *   Wait, let me look closer. At",
+      "inference_time_sec": 13.281,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
+      "ground_truth": "4",
+      "prediction": "The user wants me to count the distinct text instances on a specific sign.\n1.  **Identify the sign:** The user specifies \"regulatory sign post to the right of the lane marking\". Looking at the video, there's a red bike lane on the right. To the right of that lane, there's a pole with a sign.\n2.  **Locate the sign:** In the first few frames (00:00 - 00:02), I see a pole on the right side of the red lane. It has a rectangular sign.\n3.  **Identify the text",
+      "inference_time_sec": 12.678,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
+      "prediction": "The user wants to know the order of appearance for three specific text instances: \"ONLY\", \"BUSES ONLY\", and \"SCHOOL BUS\".\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a red lane on the right.\n    *   Looking closely at the road markings in the center/left lane, I see the word \"ONLY\" painted on the asphalt. It's partially visible but clearly \"ONLY\".\n    *   So, \"ONLY\" appears first.\n\n2.  **Analyze the second frame (00:01):**\n    *",
+      "inference_time_sec": 12.664,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
+      "ground_truth": "ONE WAY [entity_004]",
+      "prediction": "The user wants to identify a specific text on a regulatory sign post that indicates a direction restriction.\n\n1.  **Scan the video for regulatory signs:** I need to look for signs that tell drivers where they can or cannot go.\n2.  **Look for \"ONLY\" signs:** These are common regulatory signs indicating a lane is for specific traffic (e.g., \"BUS ONLY\", \"SCHOOL BUS ONLY\").\n3.  **Check the first few frames:**\n    *   Frame 1: I see a sign on the left side, near the traffic light pole. It's a white rectangular sign. The text",
+      "inference_time_sec": 12.712,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
+      "ground_truth": "Commercial urban street",
+      "prediction": "The user wants me to identify the type of driving environment based on specific storefronts visible in the video.\n\n1.  **Identify the storefronts:** I need to look for \"COAST FOR GOLD\" and \"CLEANERS\".\n    *   Looking at the frames, specifically around 00:03 and 00:04, I can see a yellow sign on the right side that says \"COAST FOR GOLD\".\n    *   Just below or near it, there's another sign that says \"CLEANERS\".\n    *   These are typical commercial businesses found in a town center or",
+      "inference_time_sec": 12.662,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific phone number on the first school bus suggests a New York City location?",
+      "ground_truth": "(718)852-0286 [entity_011]",
+      "prediction": "The user wants me to identify a phone number on the first school bus that indicates it's in New York City.\n\n1.  **Locate the first school bus:** I need to look at the early frames where the bus is clearly visible.\n    *   Frame at 00:02 shows a yellow school bus on the left side of the road.\n    *   Frame at 00:03 shows the bus more clearly as the car approaches it.\n\n2.  **Examine the bus for text:** I need to look for a phone number, likely near the front or on the side.",
+      "inference_time_sec": 12.654,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
+      "ground_truth": "4.267 seconds",
+      "prediction": "The user wants to find the timestamp when the text \"BUSES ONLY\" first appears.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The car is driving down a street. There's a red lane on the right. No \"BUSES ONLY\" text is visible yet.\n    *   **00:01:** The car is approaching an intersection. The text \"ONLY\" is visible on the road surface in the center lane. The red lane is to the right.\n    *   **00:02:** The car is approaching a crosswalk.",
+      "inference_time_sec": 12.712,
+      "error": ""
+    }
+  ]
+}

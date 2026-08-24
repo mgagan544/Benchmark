@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "The user wants to know the spatial relationship between two signs: \"CHECKSCASH\" and \"SHED\".\n\n1.  **Identify \"SHED\":** Looking at the first few frames (00:00 - 00:02), on the left side of the street, there is a building with a sign that says \"SHED\". It's partially visible, looks like \"CHECKSCASH\" is next to it. Wait, let me look closer.\n    *   Frame 00:00: On the far left, there's a building. I see \"SHED\" clearly",
+      "inference_time_sec": 13.326,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "The user wants to count distinct, legible text instances encountered by the vehicle between 4.0 and 7.0 seconds.\n\n1.  **Analyze the video timeline:**\n    *   The video is only 4 seconds long (timestamps 00:00 to 00:04).\n    *   The user is asking for text between 4.0 and 7.0 seconds.\n    *   This time range is completely outside the provided video footage.\n\n2.  **Re-evaluate the request:** Perhaps the user meant 0.0 to 4.0 seconds",
+      "inference_time_sec": 13.217,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "The user wants to determine the order of appearance for three specific storefronts: \"SHED\", \"boost\", and \"CHECKSCASH\".\n\n1.  **Locate \"SHED\":** Looking at the first few frames, specifically around 00:00 to 00:01, on the left side of the street, there is a storefront with a sign that reads \"SHED\". It's partially visible but clearly says \"SHED\". Wait, looking closer at frame 00:00, there's a sign that says \"SHED\" on the far left. Let's re-examine",
+      "inference_time_sec": 13.192,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The user wants to identify a specific driving action based on a traffic sign.\n\n1.  **Locate the signboard displaying \"4CAR\":** I need to scan the video frames to find a sign with \"4CAR\" on it.\n    *   Looking at the first few frames (00:00 - 00:02), there's a billboard in the distance under the elevated tracks. It says \"Switch Now FREE PHONE\". That's not it.\n    *   Wait, let's look closer at the traffic lights and signs.\n    *   In the first frame (00:",
+      "inference_time_sec": 13.157,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues.\n\n1.  **Analyze the visual cues:**\n    *   **Storefronts:** I see \"SHED\", \"boost\" (a mobile phone store), and \"MARKET\" (likely a grocery or convenience store). These are small, individual businesses, often found in commercial strips.\n    *   **Density:** The businesses are close together. There are also parked cars along the side of the road.\n    *   **Infrastructure:** There's an elevated train track (likely a subway or light rail) running parallel to the",
+      "inference_time_sec": 13.159,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The user wants me to identify a street name and a phone area code from the video that point to New York City.\n\n1.  **Scan the video for street signs:**\n    *   At the very beginning (00:00 - 00:01), there is a green street sign hanging over the intersection.\n    *   Let's zoom in on that sign. It reads \"ROCKAWAY PKWY\". This is Rockaway Parkway.\n    *   Wait, let me look closer. It actually says \"ROCKAWAY PKWY\" and below it \"ROCKAW",
+      "inference_time_sec": 13.214,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The user wants to find the timestamp when the vehicle passes a specific storefront.\n1.  **Identify the storefront:** The user specifies \"SHED, which is located to the right of CHECKSCASH\".\n2.  **Scan the video for these signs:**\n    *   At 00:00, the car is at an intersection. I see a brick building on the right.\n    *   At 00:01, the car is moving forward. I see a storefront on the left side of the road (from the driver's perspective, but actually on the left side of the street",
+      "inference_time_sec": 13.154,
+      "error": ""
+    }
+  ]
+}

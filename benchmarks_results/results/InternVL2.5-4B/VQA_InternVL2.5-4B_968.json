@@ -1,0 +1,70 @@
+{
+  "video_id": 968,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/968.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located directly below the street signs for Hancock and Evergreen?",
+      "ground_truth": "ONE WAY [entity_004] below Hancock [entity_006] and Evergreen [entity_007]",
+      "prediction": "The regulatory sign located directly below the street signs for Hancock and Evergreen is a 'STOP' sign. It is positioned on the right side of the road, indicating that vehicles must come to a complete stop before proceeding. This sign is a standard traffic control device used to ensure safety at intersections and to manage the flow of traffic. The 'STOP' sign is typically octagonal in shape and is universally recognized as a command to halt the movement of a vehicle. In this context, it serves as a reminder to drivers to be cautious and to yield to other road users, such as pedestrians and vehicles from other directions, before continuing their journey.",
+      "inference_time_sec": 12.982,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this scene represent storefront names, commercial advertisements, or business contact details?",
+      "ground_truth": "8",
+      "prediction": "There are three distinct text instances in this scene that represent storefront names, commercial advertisements, or business contact details. These include the 'La Nota Verde FOOD CORP.' sign, the 'HOT DOG' sign, and the 'HOT DOG' sign with a phone number.",
+      "inference_time_sec": 7.441,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance for the regulatory ONE WAY sign, the signboard FOODCORP., and the contact number 718-443-7192?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: FOODCORP. [entity_011], 3rd: 718-443-7192 [entity_013]",
+      "prediction": "The regulatory ONE WAY sign appears first, followed by the FOODCORP. signboard, and finally the contact number 718-443-7192 is visible on the FOODCORP. signboard.",
+      "inference_time_sec": 6.753,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is implied at the starting intersection?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The visible text 'STOP' on the road implies that the driver is required to come to a complete stop at the intersection before proceeding.",
+      "inference_time_sec": 5.309,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, food advertisements, and street signs, what kind of driving environment is depicted?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The driving environment depicted is a busy urban street with a high density of storefront signs, food advertisements, and street signs. This suggests a commercial area with a variety of businesses, possibly catering to a diverse range of needs and preferences. The presence of multiple signs indicates a well-established neighborhood with a vibrant local economy.",
+      "inference_time_sec": 7.689,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text instance suggests the region or city where this clip was recorded?",
+      "ground_truth": "718-443-7192 [entity_013]",
+      "prediction": "The text instance 'Brooklyn' on the stop sign suggests that the clip was recorded in Brooklyn.",
+      "inference_time_sec": 4.798,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the street signs for Hancock and Evergreen come into clearer view?",
+      "ground_truth": "1.333s - 2.033s",
+      "prediction": "The street signs for Hancock and Evergreen come into clearer view as the video progresses, specifically after the initial frames where the signs are not as visible.",
+      "inference_time_sec": 5.527,
+      "error": ""
+    }
+  ]
+}

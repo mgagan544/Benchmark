@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "The text located directly to the right of the ARROWHEAD brand on the red delivery truck is 'direct'. This text is part of the branding on the side of the truck, indicating that the truck is associated with the ARROWHEAD brand and is likely used for direct delivery services. The placement of the text is strategic, ensuring it is visible to anyone passing by, which is typical for commercial vehicles to advertise their brand and services.",
+      "inference_time_sec": 9.885,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct text instances visible on delivery trucks in the clip. The first is 'Arrowhead' on a red truck, the second is 'odwalla' on a brown truck, and the third is '1-800-222-6626' on a white truck.",
+      "inference_time_sec": 7.819,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "As the vehicle moves forward, the text instances are encountered in the following order: first, the word 'TAXI' is visible on the left side of the road, followed by the 'Odwalla' text on the side of a red truck, and finally, the 'ARROWHEAD' text is seen on the side of a white truck.",
+      "inference_time_sec": 8.497,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs indicate height clearance limits for vehicles entering the covered underpass. Specifically, one sign reads '12 FT 3 IN' which is a height clearance limit, and another sign reads '12 FT 6 IN' indicating a different height clearance limit for vehicles entering the underpass. These signs are crucial for drivers to ensure their vehicles comply with the height restrictions to avoid any potential damage to the vehicle or the underpass structure.",
+      "inference_time_sec": 9.655,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The mix of text and landmarks visible in the clip suggests that the driving environment is a busy urban area with a high concentration of commercial activity. The presence of multiple trucks, including one with a 'Wine' advertisement, indicates that the area is likely a hub for logistics and transportation, possibly near a commercial or industrial zone. The signs with directions and numbers, such as '3' and '4', are typical of a well-organized urban setting where traffic is directed and managed efficiently. The mix of commercial and possibly residential or office buildings in the background further supports the idea of a bustling city environment.",
+      "inference_time_sec": 11.725,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The visible text '12 FT 3 IN' indicates the use of the imperial measurement system, which is commonly used in the United States. Additionally, the phone number '1-800' is a format typically used in the United States, further suggesting that the location is in the U.S.",
+      "inference_time_sec": 7.633,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "The TAXI sign first becomes visible in the segregated transit lane at the 1-second mark.",
+      "inference_time_sec": 4.719,
+      "error": ""
+    }
+  ]
+}

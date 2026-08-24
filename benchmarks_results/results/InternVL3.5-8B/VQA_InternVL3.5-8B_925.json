@@ -1,0 +1,70 @@
+{
+  "video_id": 925,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/925.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the word Eastern relative to the word EAST on the overhead gantry?",
+      "ground_truth": "To the right of EAST [entity_008]",
+      "prediction": "The word 'Eastern' is positioned to the right of the word 'EAST' on the overhead gantry.",
+      "inference_time_sec": 8.212,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the overhead steel gantry?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct text instances on the overhead steel gantry: 'Grand Central Pkwy', 'West Triboro Br', and 'East Triboro Br'.",
+      "inference_time_sec": 9.115,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign is encountered on the right side of the road immediately after the vehicle passes the roadside sign displaying Grand Central Pkwy on the left?",
+      "ground_truth": "Terminals [entity_004]",
+      "prediction": "Immediately after passing the Grand Central Pkwy sign on the left, the vehicle encounters a sign on the right side of the road indicating 'Triboro Br East 1/2 Mile'.",
+      "inference_time_sec": 9.814,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which direction is indicated for Triboro Br on the roadside sign passed at 0.0s?",
+      "ground_truth": "WEST [entity_002]",
+      "prediction": "West",
+      "inference_time_sec": 6.317,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of signs like Grand Central Pkwy and Terminals, what type of driving environment is depicted?",
+      "ground_truth": "Highway near an airport",
+      "prediction": "The driving environment depicted is a highway or freeway leading to an airport, as indicated by the signs for Grand Central Parkway and directions to airport terminals.",
+      "inference_time_sec": 8.715,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What airline brand is visible on the terminal building at 9.933s?",
+      "ground_truth": "AMERICAN AIRLINES [entity_013]",
+      "prediction": "Delta",
+      "inference_time_sec": 6.38,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AJC-1541 first become clearly visible on the grey sedan?",
+      "ground_truth": "7.9s",
+      "prediction": "The license plate AJC-1541 first becomes clearly visible on the grey sedan in the third frame of the video.",
+      "inference_time_sec": 8.468,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 986,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/986.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the address number located relative to the residential house on the right side of the street?",
+      "ground_truth": "On the residential house displaying the address number 149 [entity_001]",
+      "prediction": "The user wants to know the location of an address number relative to a house on the right side of the street.\n\n1.  **Identify the relevant house:** I need to look at the houses on the right side of the street.\n    *   There's a house closest to the camera on the right. It's a two-story house with a white picket fence.\n    *   Looking closely at the front of this house, specifically near the driveway or entrance.\n    *   Wait, let's look further down the street. There's another house further back.\n    *   Let's re-examine",
+      "inference_time_sec": 16.663,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many address signs or house numbers are visible on the residential houses in this clip?",
+      "ground_truth": "1",
+      "prediction": "The user wants me to count address signs or house numbers visible on the houses in the video.\n\n1.  **Scan the video for houses:** I see houses on both sides of the street, but primarily on the right side as the car drives forward.\n2.  **Look for address signs/numbers:** I need to look closely at the front of the houses, especially near the street or on the side of the house facing the street.\n3.  **Frame 00:00 - 00:01:**\n    *   On the right, there's a white picket fence. Behind",
+      "inference_time_sec": 12.7,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle cross the intersection and the address sign come into focus?",
+      "ground_truth": "1st: cross intersection, 2nd: residential house displaying the address number 149 [entity_001] comes into focus",
+      "prediction": "The user wants to know the sequence of two events: the vehicle crossing the intersection and the address sign coming into focus.\n\n1.  **Analyze the video for the first event: Crossing the intersection.**\n    *   At `00:00`, the car is stopped at a crosswalk. The traffic light is red.\n    *   At `00:01`, the traffic light turns green. The car begins to move forward.\n    *   By `00:02`, the car is clearly moving through the crosswalk and past the intersection. The crosswalk markings are passing underneath the",
+      "inference_time_sec": 12.706,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints or regulatory instructions are written on the signs visible in this clip?",
+      "ground_truth": "None",
+      "prediction": "The user wants to identify driving constraints or regulatory instructions from signs in the video.\n\n1.  **Analyze the video:** I'll scan the video for any visible traffic signs.\n2.  **Initial frames (00:00 - 00:02):**\n    *   I see a traffic light hanging over the intersection. It's yellow/amber.\n    *   There's a pedestrian crossing signal on the right pole. It shows a red hand (don't walk).\n    *   There's a sign on the right pole, but it's too blurry to read clearly. Wait, let",
+      "inference_time_sec": 12.74,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a residential house displaying address number 149, what type of environment is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The user wants to identify the type of environment based on a specific visual cue: a house with address number 149.\n\n1.  **Locate the house:** I need to scan the images for a house with the number 149.\n    *   Looking at the first few frames (00.0s - 00.3s), on the right side of the street, there are houses.\n    *   In the frame at 00.0s, there's a house further down the street on the right. Let's look closer.\n    *   Wait, let",
+      "inference_time_sec": 12.687,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the address number displayed on the residential house?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The user is asking about the address number on a residential house. I need to scan the image for a house with a visible address number.\n\n1.  **Scan the right side:** There are several houses on the right.\n    *   Closest house: Greenish siding, white trim. No clear number visible on the front.\n    *   Next house: Reddish/brown siding. No clear number.\n    *   Further down: Another house.\n2.  **Scan the left side:** There are houses on the left too.\n    *   Closest house: White siding. No clear number",
+      "inference_time_sec": 12.664,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what specific time range does the address sign 149 come into focus in the clip?",
+      "ground_truth": "Between 6.4 and 6.8 seconds",
+      "prediction": "The user wants to find the specific time range where the address sign \"149\" is visible and in focus.\n\n1.  **Analyze the video:** I'll scan through the frames to locate the address sign.\n2.  **Locate the sign:** The sign is on the right side of the street, attached to a pole near the houses.\n3.  **Identify the number:** I need to look for the number \"149\".\n4.  **Determine visibility:**\n    *   00:00 - The sign is visible but blurry/distant.",
+      "inference_time_sec": 12.601,
+      "error": ""
+    }
+  ]
+}

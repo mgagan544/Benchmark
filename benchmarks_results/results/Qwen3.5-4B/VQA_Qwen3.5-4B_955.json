@@ -1,0 +1,70 @@
+{
+  "video_id": 955,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/955.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the word OVER on the weight limit sign to the left of Waterside Plaza?",
+      "ground_truth": "VEHICLES [entity_002]",
+      "prediction": "The user wants me to identify text on a specific sign.\n\n1.  **Locate the sign:** The user describes it as a \"weight limit sign to the left of Waterside Plaza\".\n2.  **Scan the images:**\n    *   In the first few frames (00:00 - 00:01), I see a sign hanging over the road on the left side.\n    *   Frame 00:01 clearly shows a white rectangular sign with black text.\n    *   The sign is located just before the \"WATERSIDE PLAZA\" entrance on",
+      "inference_time_sec": 13.137,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 1.500 and 3.000 seconds?",
+      "ground_truth": "4",
+      "prediction": "The user wants to count distinct, legible text instances visible in the video between the timestamps 1.500 and 3.000 seconds.\n\n1.  **Analyze the frames in the specified time range:**\n    *   **Frame at 1.5s:** The car is driving on a highway. There are no clear signs with legible text directly in front or overhead. There's a white van ahead.\n    *   **Frame at 2.0s:** The car is approaching overhead green signs.\n        *   Sign 1 (left): \"VEHICLES OVER",
+      "inference_time_sec": 12.662,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the signs encountered by the vehicle between 3.500 and 4.500 seconds?",
+      "ground_truth": "1st: E 25 ST [entity_005], 2nd: E 34 ST [entity_006] FERRY [entity_007] HELIPORT [entity_009] LANDING [entity_008], 3rd: ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The user wants to identify the order of signs seen between 3.500 and 4.500 seconds.\n\n1.  **Analyze the video frames:**\n    *   **Frame at 3.500s:** The vehicle is approaching a set of overhead green highway signs.\n        *   Left sign: \"EXIT 9 E 42 St 1/2 MILE\".\n        *   Right sign: \"EXIT 8 E 34 St 495 Midtown Tun\".\n    *   **Frame at 4.000s:** The vehicle",
+      "inference_time_sec": 12.702,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the orange construction sign passed at 4.367 seconds?",
+      "ground_truth": "ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The user is asking for text from a specific orange construction sign.\n1.  **Identify the timestamp:** The user mentions \"4.367 seconds\". Looking at the provided frames, the timestamps are 0.0, 0.1, 0.2, 0.3, 0.4, 0.5. Wait, the prompt says \"4.367 seconds\" but the images are labeled 0.0 to 0.5. This is a discrepancy. Let me re-examine the images.\n2.  **Re-evaluating the images:**",
+      "inference_time_sec": 12.694,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multiple exit signs, route markers, and overpasses, what driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants me to identify the driving environment based on visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Road:** It's a multi-lane road with concrete barriers separating opposing traffic or lanes. It looks like an elevated highway or a major arterial road.\n    *   **Signage:** There are green overhead signs.\n        *   One sign says \"E 42 St 1/2 MILE\" and \"EXIT 9\".\n        *   Another sign says \"E 34 St\" and \"495 Midtown Tun\" with an",
+      "inference_time_sec": 12.67,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street names and route markers suggest this clip is filmed in New York City?",
+      "ground_truth": "E 25 ST [entity_005], E 34 ST [entity_006], E 42 ST [entity_017], 495 [entity_016]",
+      "prediction": "The user wants me to identify specific street names and route markers from the video that indicate the location is New York City.\n\n1.  **Analyze the video for text on signs:** I need to look at the overhead signs and road markings.\n2.  **Frame 0.0 - 0.1:** I see a sign on the left that says \"VEHICLES OVER 4000 LBS\". This is a common weight restriction sign in NYC for bridges/tunnels, but not specific enough on its own.\n3.  **Frame 0.2:** I see a green overhead sign",
+      "inference_time_sec": 12.645,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the weight-limit sign containing the text 8000 Lbs first appear in view?",
+      "ground_truth": "2.633 seconds, as 8000 Lbs [entity_004] becomes visible.",
+      "prediction": "The user wants to find the timestamp when a specific sign appears.\n1.  **Identify the sign:** The user is asking for a \"weight-limit sign containing the text 8000 Lbs\".\n2.  **Scan the video frames:** I need to look through the provided frames to locate this sign.\n    *   **Frame 1 (00:00):** No sign visible. Just buildings and a white van.\n    *   **Frame 2 (00:01):** As the car moves forward, a sign on the left side of the road comes into view. It",
+      "inference_time_sec": 15.664,
+      "error": ""
+    }
+  ]
+}

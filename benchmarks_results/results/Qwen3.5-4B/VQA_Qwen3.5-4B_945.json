@@ -1,0 +1,70 @@
+{
+  "video_id": 945,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/945.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located to the left of the regulatory notice warning about doubled speeding fines?",
+      "ground_truth": "ROAD [entity_011] WORK [entity_012] AHEAD [entity_004] sign",
+      "prediction": "The user wants to identify a specific sign based on its location relative to another sign.\n\n1.  **Identify the \"regulatory notice warning about doubled speeding fines\":** I need to scan the video frames for a sign that mentions speeding fines.\n    *   Looking at the first few frames (00:00 - 00:01), there are orange construction signs.\n    *   In frame 00:00, on the right side, there's an orange sign. It's partially visible but looks like a standard construction sign.\n    *   Wait, let's look closer at",
+      "inference_time_sec": 13.306,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 0.2 seconds and 2.0 seconds?",
+      "ground_truth": "4",
+      "prediction": "The user wants me to count distinct, legible text instances visible in the video between the timestamps 0.2 seconds and 2.0 seconds.\n\n1.  **Analyze the frames:**\n    *   **0.2s:** I see a \"SPEED LIMIT 30\" sign on the right.\n    *   **0.3s:** The car is approaching an overpass. There's a green highway sign on the overpass. It's a bit blurry but looks like \"EXIT 10\" or similar. Wait, looking closer at the green sign, it's actually quite far away",
+      "inference_time_sec": 12.694,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence in which the speed limit sign, the sidewalk closed placard, and the road work warning sign are encountered?",
+      "ground_truth": "1st: ROAD [entity_011] WORK [entity_012] AHEAD [entity_004], 2nd: SPEED [entity_013] LIMIT [entity_014], 3rd: SIDEWALK [entity_015] closed FOR CONST [entity_016]",
+      "prediction": "The user wants to know the order in which three specific signs appear in the video.\n\n1.  **Identify the signs:**\n    *   **Speed limit sign:** I see a \"SPEED LIMIT 30\" sign.\n    *   **Sidewalk closed placard:** I see an orange sign with a white arrow pointing down and the text \"SIDEWALK CLOSED\".\n    *   **Road work warning sign:** I see an orange sign with a black arrow pointing left and the text \"ROAD WORK AHEAD\".\n\n2.  **Scan the video chronologically to find each sign:**",
+      "inference_time_sec": 12.775,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the speed limit sign located to the left of the sidewalk closed placard?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014] of 30",
+      "prediction": "The user wants to identify a specific driving constraint from the video.\n\n1.  **Locate the \"sidewalk closed placard\":** I need to scan the video frames to find a sign indicating a sidewalk closure.\n    *   In the first few frames (00:00 - 00:01), there are orange rectangular signs on poles. One is clearly visible on the right side of the road, near the trees. It looks like a standard orange construction sign.\n    *   Looking closely at frame 00:00 and 00:01, there is an orange",
+      "inference_time_sec": 12.681,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the signs for exits, street names, and work zones, what kind of driving environment is depicted?",
+      "ground_truth": "Urban highway construction zone",
+      "prediction": "The user wants me to identify the driving environment based on visual cues like signs, street names, and work zones.\n\n1.  **Analyze the visual elements:**\n    *   **Weather/Season:** It's winter. There's snow on the ground, bare trees, and slush on the road. The sky is overcast.\n    *   **Road Type:** It's a paved road, seemingly a surface street or a ramp leading to a highway. It's not a major interstate highway yet, but it's close.\n    *   **Signs:**\n        *   There are orange construction signs (",
+      "inference_time_sec": 12.684,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street names visible on the overhead gantry suggest a specific city? What text supports this?",
+      "ground_truth": "New York City, supported by E 125 St [entity_019] and 2Ave [entity_021]",
+      "prediction": "The user wants to identify a specific city based on street names visible on an overhead gantry.\n\n1.  **Scan the video for overhead gantries:** I see a gantry structure appearing around the 00:03 mark. It spans across the road.\n2.  **Examine the text on the gantry:**\n    *   At 00:03, there is a green sign on the gantry. It's a bit blurry but looks like a standard highway sign.\n    *   Wait, let's look closer at the sign at 00:03. It's a",
+      "inference_time_sec": 12.679,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the regulatory sign warning about doubled speeding fines first become legible, and when does it become illegible?",
+      "ground_truth": "Legible at 0.467 seconds, illegible at 0.6 seconds",
+      "prediction": "The user wants to find the specific timestamps for when a regulatory sign about doubled speeding fines appears and disappears.\n\n1.  **Identify the sign:** I need to look for a sign that mentions \"doubled speeding fines\".\n2.  **Scan the video:**\n    *   **00:00 - 00:01:** The car is approaching a curve. There are orange construction signs, but no specific \"doubled speeding fines\" sign yet.\n    *   **00:01:** As the car goes under the bridge/overpass, a sign on the left becomes",
+      "inference_time_sec": 12.731,
+      "error": ""
+    }
+  ]
+}

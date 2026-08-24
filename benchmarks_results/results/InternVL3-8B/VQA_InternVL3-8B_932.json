@@ -1,0 +1,70 @@
+{
+  "video_id": 932,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/932.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
+      "ground_truth": "CLEANERS [entity_019]",
+      "prediction": "The business name located adjacent to the storefront of COAST FOR GOLD on the right side of the street is 'GOLD COAST'.",
+      "inference_time_sec": 8.014,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
+      "ground_truth": "4",
+      "prediction": "There",
+      "inference_time_sec": 5.839,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
+      "prediction": "The text instances appear in the following order: ONLY, BUSES ONLY, and SCHOOL BUS.",
+      "inference_time_sec": 6.84,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
+      "ground_truth": "ONE WAY [entity_004]",
+      "prediction": "The text on the regulatory sign post indicates a direction restriction for vehicle movement is 'ONE WAY'. This sign is visible in the video and is placed on the right side of the road, indicating that vehicles are only allowed to travel in the direction the arrow is pointing. The sign is a standard traffic control device used to manage the flow of traffic and ensure safety on the road.",
+      "inference_time_sec": 10.064,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
+      "ground_truth": "Commercial urban street",
+      "prediction": "Urban",
+      "inference_time_sec": 5.911,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific phone number on the first school bus suggests a New York City location?",
+      "ground_truth": "(718)852-0286 [entity_011]",
+      "prediction": "The phone number on the first school bus is 728-2460, which is a New York City area code.",
+      "inference_time_sec": 7.363,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
+      "ground_truth": "4.267 seconds",
+      "prediction": "The text BUSES ONLY first becomes visible in the clip at the timestamp 0 to 5 seconds.",
+      "inference_time_sec": 7.031,
+      "error": ""
+    }
+  ]
+}

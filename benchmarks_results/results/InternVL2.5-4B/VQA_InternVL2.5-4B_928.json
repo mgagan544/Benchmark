@@ -1,0 +1,70 @@
+{
+  "video_id": 928,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/928.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the guide sign indicating Bron EXPWY?",
+      "ground_truth": "178 [entity_007] and NORTH [entity_008] to the right of Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The sign located directly to the right of the guide sign indicating Bron EXPWY is a green sign with white text that reads '117 St' and 'Bronx Expy'. This sign is positioned above the lane markings on the highway, providing drivers with directional information. The sign is part of the highway's signage system, which is designed to guide drivers to their desired destinations. The green color of the sign is a standard color used for informational signs in the United States, and the white text ensures that the information is easily readable from a distance. The sign's placement above the lane markings helps to reinforce the direction that drivers should",
+      "inference_time_sec": 12.037,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible in this clip?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances containing numbers visible in this clip. The first is the number '179' on the green highway sign, and the second is the number '179' on the license plate of the black car in front.",
+      "inference_time_sec": 6.831,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?",
+      "ground_truth": "1st: 3030 [entity_001], 2nd: SPEED [entity_002] LIMIT [entity_003], 3rd: Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The roadside marker is first encountered, followed by the speed limit sign, and then the Bron EXPWY guide sign.",
+      "inference_time_sec": 5.037,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the overhead structure to indicate a height restriction?",
+      "ground_truth": "CLEARANCE 13-6 [entity_006]",
+      "prediction": "The warning text displayed on the overhead structure is 'DO NOT OVERTAKE - HEIGHT RESTRICTION 13 FEET 6 INCHES'. This text is crucial for drivers to be aware of the clearance height of the bridge or overpass they are approaching, ensuring that their vehicles do not exceed the height limit, which could result in damage to the vehicle or the structure. The presence of this sign is a standard safety measure in areas where bridges or overpasses have lower clearance than the standard height of vehicles, and it is designed to prevent accidents and damage.",
+      "inference_time_sec": 11.166,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a highway or expressway, as indicated by the presence of guide signs directing traffic to exits and the speed limit sign indicating a speed limit of 55 mph. The clearance warning sign also suggests that the road is designed for higher vehicles, which is typical of highways.",
+      "inference_time_sec": 7.39,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region or city is suggested by the guide sign indicating Bron EXPWY?",
+      "ground_truth": "Bronx, New York",
+      "prediction": "The guide sign indicating 'Bronx EXPWY' suggests that the location is in the Bronx region of New York City. The Bronx is one of the five boroughs of New York City, and the expressway sign is a common feature in urban areas, providing directions to major highways and expressways. The presence of such a sign in the video indicates that the driver is either approaching or is on a highway that serves as a major thoroughfare in the Bronx, connecting it to other parts of the city and the state.",
+      "inference_time_sec": 10.565,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the vehicle directly ahead become clearly readable?",
+      "ground_truth": "8.7",
+      "prediction": "The license plate on the vehicle directly ahead becomes clearly readable at the 10-second mark.",
+      "inference_time_sec": 4.695,
+      "error": ""
+    }
+  ]
+}

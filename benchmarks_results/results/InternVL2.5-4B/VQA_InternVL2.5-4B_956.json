@@ -1,0 +1,70 @@
+{
+  "video_id": 956,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/956.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What instruction is located directly to the left of the SERVICE signboard?",
+      "ground_truth": "PERMIT [entity_014] to the left of SERVICE [entity_013]",
+      "prediction": "The instruction located directly to the left of the SERVICE signboard is 'NO STANDING ANYTIME'. This sign is mounted on a pole and is positioned on the right side of the road, indicating a no-standing regulation for vehicles in that area.",
+      "inference_time_sec": 7.102,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text instances are visible on the white transport van between 1.133s and 1.767s?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct vehicle-mounted text instances visible on the white transport van between 1.133s and 1.767s. The first instance is 'POLICE' written in blue on the side of the van, and the second instance is 'POLICE' written in blue on the back of the van.",
+      "inference_time_sec": 8.18,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead sign texts are encountered at the very beginning of the clip?",
+      "ground_truth": "1st: 7314 [entity_001], 2nd: EXIT [entity_002]",
+      "prediction": "The order of the overhead sign texts at the beginning of the clip is 'ONE WAY' followed by 'ONE WAY' again, and then 'ONE WAY' once more.",
+      "inference_time_sec": 5.783,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What weight limit restriction is displayed on the gantry to restrict vehicle weight?",
+      "ground_truth": "8000 Lbs [entity_022]",
+      "prediction": "The gantry displays a weight limit restriction of '18,000 lbs' to restrict vehicle weight.",
+      "inference_time_sec": 4.972,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, lane-use restrictions, and weight limits, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the video is a controlled urban highway. This is indicated by the presence of overhead exit signs, which are typically used to guide drivers to exits and provide information about upcoming road conditions. The lane-use restrictions, such as the 'Passenger Car Only' sign, suggest that the highway is designed for specific types of vehicles, likely to manage traffic flow and ensure safety. The weight limit sign further indicates that the highway is designed to accommodate a certain range of vehicle weights, which is common in urban areas to prevent damage to the road infrastructure. These elements combined suggest a well-regulated and structured driving environment, typical of a",
+      "inference_time_sec": 12.088,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific city is indicated by the markings on the white transport van?",
+      "ground_truth": "NYC [entity_003]",
+      "prediction": "The white transport van has markings that indicate it is from the city of New York. This can be inferred from the text 'NEW YORK CITY' visible on the side of the van, which is a common practice for vehicles used in the city to display their affiliation with the city's services.",
+      "inference_time_sec": 7.341,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the vehicle-mounted markings NYC, CHILDREN'S, SERVICES, DIV, and OF SOUTH AND FAMILY JUSTICE continuously visible on the white transport van?",
+      "ground_truth": "1.133s to 1.767s",
+      "prediction": "The vehicle-mounted markings NYC, CHILDREN'S, SERVICES, DIV, and OF SOUTH AND FAMILY JUSTICE are continuously visible on the white transport van from the beginning of the video until the end.",
+      "inference_time_sec": 6.129,
+      "error": ""
+    }
+  ]
+}

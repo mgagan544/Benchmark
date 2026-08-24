@@ -1,0 +1,70 @@
+{
+  "video_id": 913,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/913.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the right of the orange construction signboard containing the word ROAD?",
+      "ground_truth": "SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] on the digital display sign",
+      "prediction": "The user wants me to identify text on a specific sign.\n1.  **Locate the sign:** I see an orange diamond-shaped sign on the left side of the bridge, attached to the metal structure.\n2.  **Read the text:** The sign says \"ROAD WORK AHEAD\".\n3.  **Identify the target text:** The user is asking for the text *to the right* of this signboard.\n4.  **Examine the area to the right:** Just to the right of the \"ROAD WORK AHEAD\" sign, there is a smaller, rectangular orange sign.\n5.",
+      "inference_time_sec": 16.108,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the distinct pieces of text on a specific sign.\n\n1.  **Identify the sign:** The user specifies \"orange construction signboard mounted on the left side of the ramp\".\n2.  **Locate the sign:** Looking at the first few frames (00:00 - 00:01), there is a large orange diamond-shaped sign on the left railing.\n3.  **Read the text:** I need to read the text on this sign.\n    *   Top line: \"2 M.P.H.\"\n    *   Middle line: \"ROAD\"",
+      "inference_time_sec": 15.57,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?",
+      "ground_truth": "1st: ROAD [entity_001], 2nd: WORK [entity_002], 3rd: AHEAD [entity_003]",
+      "prediction": "The user wants me to identify the order of text on an orange construction signboard visible in the video.\n\n1.  **Analyze the video:** I'll look at the frames provided, specifically focusing on the orange sign on the left side of the bridge.\n2.  **Identify the sign:** At 0.0s, there's a large orange diamond-shaped sign on the left. It has text on it.\n3.  **Read the text:**\n    *   Top line: \"2 M\" (partially visible, looks like \"2 M\" or \"2 MPH\" but cut off).",
+      "inference_time_sec": 12.686,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?",
+      "ground_truth": "ROAD [entity_001] WORK [entity_002] AHEAD [entity_003] on the left side of the ramp",
+      "prediction": "The user wants to identify any text in the video that warns about a hazard or road condition.\n\n1.  **Scan the video for signs:** I'll look at the beginning of the video, especially on the left side where road signs are typically placed.\n2.  **Identify the sign:** At the very start (00:00), there is a diamond-shaped orange sign on the left side of the bridge structure.\n3.  **Read the text:** The text on the sign says \"ROAD WORK AHEAD\".\n4.  **Determine location:** It is located on the left side of the",
+      "inference_time_sec": 12.698,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "An elevated highway construction zone",
+      "prediction": "The user wants me to identify the driving environment based on the visible signs.\n\n1.  **Analyze the visual elements:**\n    *   **Bridge Structure:** The vehicle is driving on a large steel truss bridge. The yellowish-brown steel beams are prominent on the left. There's a green steel structure overhead, likely a train track or another bridge.\n    *   **Road Surface:** The road is wet, suggesting recent rain or melting snow. There are patches of snow/ice on the sides of the road, particularly near the railings.\n    *   **Signs:**\n        *   **",
+      "inference_time_sec": 12.657,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction signboard and the digital display sign?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the text on two specific signs in the video.\n\n1.  **Analyze the first sign:**\n    *   **Location:** Top left corner of the video frame.\n    *   **Visuals:** It's an orange diamond-shaped sign with black text.\n    *   **Text:** \"ROAD WORK AHEAD\".\n    *   **Language:** \"ROAD WORK AHEAD\" is English.\n\n2.  **Analyze the second sign:**\n    *   **Location:** Further down the road, on the right side, attached to a structure. It looks like",
+      "inference_time_sec": 12.599,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the word SPEED first become legible on the digital display sign?",
+      "ground_truth": "7.967",
+      "prediction": "The user wants to find the timestamp when the word \"SPEED\" becomes legible on a digital display sign.\n\n1.  **Analyze the video frames:** I need to look for a digital sign, likely a traffic light or a construction sign, that displays text.\n2.  **Scan through the timestamps:**\n    *   **00:00:** There's a yellow diamond sign on the left that says \"ROAD WORK AHEAD\". Further back, there's a digital sign, but it's blurry and hard to read. It looks like it might say \"SPEED LIMIT\" or something similar, but",
+      "inference_time_sec": 12.655,
+      "error": ""
+    }
+  ]
+}

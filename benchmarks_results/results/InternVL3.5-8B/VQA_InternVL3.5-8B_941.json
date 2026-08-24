@@ -1,0 +1,70 @@
+{
+  "video_id": 941,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/941.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located directly below the overhead sign that says \"To Belt Pkwy\"?",
+      "ground_truth": "KEEP RIGHT [entity_005] below To Belt Pkwy [entity_004]",
+      "prediction": "The regulatory sign directly below the overhead sign that says \"To Belt Pkwy\" is a yellow diamond-shaped sign with a black border, indicating a merging traffic situation ahead.",
+      "inference_time_sec": 9.24,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are painted on the road surface or function as regulatory signs in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are at least five distinct text instances: 'ONLY' painted on the road surface, 'Airport Exit 1/2 Mile' on the overhead sign, 'Airport Exit 1/2 Mile' on the side sign, 'Airport Exit 1/2 Mile' on the far side sign, and 'Airport Exit 1/2 Mile' on the overhead sign to the right.",
+      "inference_time_sec": 13.191,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the first overhead sign structure, the road marking, and the second overhead gantry?",
+      "ground_truth": "1st: Airport Exit [entity_001], 2nd: ONLY [entity_006], 3rd: Long Term Parking [entity_007]",
+      "prediction": "The first overhead sign structure is encountered first, followed by the road marking, and then the second overhead gantry.",
+      "inference_time_sec": 8.299,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory instruction is displayed on the lane surface below the sign that says \"KEEP RIGHT\"?",
+      "ground_truth": "ONLY [entity_006]",
+      "prediction": "The lane surface below the \"KEEP RIGHT\" sign displays the word \"ONLY,\" indicating that the lane is designated for vehicles traveling in the right direction only. This instruction is part of the traffic regulations designed to ensure orderly and safe movement of vehicles, especially in areas with multiple lanes and directional choices, such as near exits or interchanges. The presence of such markings helps in guiding drivers to the appropriate lanes according to their intended route, reducing the likelihood of lane-changing errors and potential accidents.",
+      "inference_time_sec": 14.759,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of transportation hub is the vehicle navigating, based on the visible signs?",
+      "ground_truth": "Airport",
+      "prediction": "The vehicle is navigating an airport transportation hub, as indicated by the signs for airport exits and directions to the jfk expressway and beltway.",
+      "inference_time_sec": 8.854,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific New York airport expressway is indicated by the signs on the first overhead structure?",
+      "ground_truth": "JFK Expwy [entity_003]",
+      "prediction": "The signs on the first overhead structure indicate the 'JFK Expwy To Belt Pkwy' and 'Airport Exit 10 Van Wyck Expwy'.",
+      "inference_time_sec": 9.182,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass over the road marking that says \"ONLY\"?",
+      "ground_truth": "5.367 seconds",
+      "prediction": "The vehicle passes over the road marking that says \"ONLY\" at the timestamp 20 to 25 seconds into the video.",
+      "inference_time_sec": 8.588,
+      "error": ""
+    }
+  ]
+}

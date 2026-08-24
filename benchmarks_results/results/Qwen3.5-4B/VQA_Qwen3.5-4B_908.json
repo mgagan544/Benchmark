@@ -1,0 +1,70 @@
+{
+  "video_id": 908,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/908.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the covered pedestrian structure marked WALKWAY relative to the Care emblem?",
+      "ground_truth": "To the left of Care [entity_004]",
+      "prediction": "The user wants to know the spatial relationship between two objects: a \"covered pedestrian structure marked WALKWAY\" and a \"Care emblem\".\n\n1.  **Identify the \"covered pedestrian structure marked WALKWAY\":**\n    *   Looking at the first few frames (00:00 - 00:02), I see a structure with a reddish-brown roof on the left side of the road.\n    *   The sign on it says \"WALKWAY\".\n    *   This structure is located to the left of the bus lane.\n\n2.  **Identify the \"",
+      "inference_time_sec": 12.921,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in this clip are mounted on the transit bus?",
+      "ground_truth": 4,
+      "prediction": "The user wants me to count the distinct pieces of text visible on the transit bus in the video.\n\n1.  **Identify the bus:** The bus is the large white and blue vehicle in the right lane, visible from around 00:01 onwards.\n2.  **Scan for text on the bus:**\n    *   **Number:** There is a large number \"710\" near the top center of the rear.\n    *   **Logo/Text below number:** Below the number, there's a logo (looks like a bird) and text.\n    *   **Main text:**",
+      "inference_time_sec": 12.645,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the first three text instances detected on the transit bus?",
+      "ground_truth": "1st: 35627-88 [entity_001], 2nd: 710 [entity_002], 3rd: THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The user wants me to identify the order of appearance of the first three text instances on the transit bus.\n\n1.  **Analyze the video:** I need to watch the video and focus on the bus that appears.\n2.  **Identify the bus:** The bus appears around 00:01 on the right side of the frame. It's a white and blue bus.\n3.  **Identify text on the bus:**\n    *   **Text 1:** \"710\" is visible on the back of the bus, near the top center. It's clearly visible from the moment",
+      "inference_time_sec": 12.634,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the pavement markings near the green commuter waiting shelters, what driving action is required?",
+      "ground_truth": "Stop at the painted 'STOP' stencil",
+      "prediction": "The user wants to identify a driving action based on pavement markings near the green shelters.\n\n1.  **Locate the green shelters:** In the first few frames (0.0s - 0.2s), there are green structures on the left side of the road, which look like waiting shelters for commuters.\n2.  **Examine the pavement markings near them:** Looking closely at the road surface in front of and around these shelters, I see white diagonal stripes painted on the asphalt. These are often called \"chevron markings\" or \"gore areas,\" but in this specific context, they are part of a",
+      "inference_time_sec": 12.603,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of transit bus markings and a walkway sign suggest about the driving environment?",
+      "ground_truth": "Transit hub or commuter terminal area",
+      "prediction": "The user wants to know what the transit bus markings and walkway sign suggest about the driving environment.\n\n1.  **Identify the key elements:**\n    *   **Transit bus markings:** I see a large bus with \"THE PORT AUTHORITY OF NY & NJ\" and \"Care\" written on the back. It has the number \"710\". This indicates a public transportation system.\n    *   **Walkway sign:** There is a sign that says \"WALKWAY\" on a red canopy structure. This suggests pedestrian infrastructure.\n    *   **Context:** The scene is at night, likely near",
+      "inference_time_sec": 12.629,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible text suggests the geographical region where this clip was recorded?",
+      "ground_truth": "THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The user wants to identify geographical information from the text visible in the video.\n\n1.  **Analyze the video frames:** I need to look for text on vehicles, signs, or buildings.\n2.  **Frame 1:** Shows a gas station area. There's a \"WALKWAY\" sign. No clear geographical text yet.\n3.  **Frame 2:** A bus appears on the right. The number \"710\" is visible.\n4.  **Frame 3:** The bus is closer. I can see \"THE PORT AUTHORITY OF NY & NJ\" written on the back",
+      "inference_time_sec": 12.656,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the fleet designation number 710 first become clearly detected on the bus?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The user wants to find the timestamp when the number \"710\" on the back of the bus becomes clearly visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The view is looking forward at a gas station/parking area. No bus is directly in front yet.\n    *   **00:01:** A large vehicle (bus) enters the frame from the right. The rear is partially visible. The number \"710\" is visible on the back, but it's a bit blurry and partially cut off by the edge of the frame. Wait",
+      "inference_time_sec": 12.637,
+      "error": ""
+    }
+  ]
+}

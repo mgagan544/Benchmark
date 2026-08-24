@@ -1,0 +1,70 @@
+{
+  "video_id": 983,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/983.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What commercial restaurant billboard is located to the right of the gantry displaying Gilespie St?",
+      "ground_truth": "ROBERT [entity_033] IRVINE'S [entity_032] LOCATED AT [entity_035] Tropicana [entity_034]",
+      "prediction": "The commercial restaurant billboard to the right of the gantry displaying Gilespie St is for 'The Habit Burger Grill'.",
+      "inference_time_sec": 8.493,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct billboards advertising commercial services, events, or businesses are mentioned in the scene description?",
+      "ground_truth": "3",
+      "prediction": "Four distinct billboards are mentioned in the scene description. They advertise 'PERSONAL INJURY,' 'LIGHT RICK ROSS,' 'THE MERRION,' and 'BRETT YOUNG LIVE.'",
+      "inference_time_sec": 9.996,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the DALLAS HORTON billboard, the first 215 gantry, and the RICK ROSS billboard encountered?",
+      "ground_truth": "1st: DALLAS HORTON [entity_002], 2nd: 215 [entity_005] gantry, 3rd: RICK ROSS [entity_016]",
+      "prediction": "The first 215 gantry is encountered first, followed by the DALLAS HORTON billboard, and then the RICK ROSS billboard.",
+      "inference_time_sec": 9.166,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What advisory speed limit is indicated on the yellow sign located below the RICK ROSS billboard?",
+      "ground_truth": "45 M P H [entity_018] for the RAMP [entity_017]",
+      "prediction": "The yellow sign below the RICK ROSS billboard indicates a speed limit of 45 mph. This sign is positioned on the right side of the highway, just before the exit ramp for Warm Springs Road. It serves as a speed advisory for drivers approaching the exit, reminding them to reduce their speed to a safe level for the upcoming maneuver. The sign is placed strategically to ensure visibility to drivers well in advance of the exit, allowing them ample time to adjust their speed accordingly. The advisory speed limit is an important safety feature on highways, helping to prevent accidents by ensuring that vehicles are traveling at a speed appropriate for the road conditions and the",
+      "inference_time_sec": 17.34,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is indicated by the presence of multiple overhead gantries and exit signs?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of multiple overhead gantries and exit signs indicates a complex interchange system, likely designed to manage traffic flow efficiently by providing clear directions for various exits and destinations.",
+      "inference_time_sec": 9.136,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city and resort mentioned on the signs and billboards suggest the location is in Nevada?",
+      "ground_truth": "Las Vegas [entity_011] and MANDALAY BAY [entity_020]",
+      "prediction": "The signs and billboards mention Las Vegas and the Hard Rock Hotel & Casino, indicating that the location is in Nevada.",
+      "inference_time_sec": 8.39,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what duration is the billboard featuring DALLAS HORTON continuously visible at the beginning of the video?",
+      "ground_truth": "0.0 seconds to 0.4 seconds",
+      "prediction": "The billboard featuring DALLAS HORTON is continuously visible from the beginning until the car passes under the exit sign for 'Warm Springs Road' and 'Las Vegas Rental Car Return'.",
+      "inference_time_sec": 9.516,
+      "error": ""
+    }
+  ]
+}

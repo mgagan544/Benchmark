@@ -1,0 +1,70 @@
+{
+  "video_id": 953,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/953.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly below the REWARDS sign on the main promotion board?",
+      "ground_truth": "STATUS [entity_002] sign directly below REWARDS [entity_003] sign",
+      "prediction": "The sign located directly below the REWARDS sign on the main promotion board is the 'GOLD CARD' sign. It is positioned in the center of the board, just below the REWARDS sign, and is clearly visible in the video. The 'GOLD CARD' sign is part of a promotional display that seems to be offering incentives or benefits to customers, as indicated by the presence of the REWARDS sign above it.",
+      "inference_time_sec": 9.471,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct fuel price text instances are displayed on the gas station signs during the clip?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct fuel price text instances displayed on the gas station signs during the clip. The first instance is 'Regular $2.799', the second is 'Midgrade $2.999', and the third is 'Premium $3.299'.",
+      "inference_time_sec": 7.288,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the price signs showing 3591 and 359 are encountered?",
+      "ground_truth": "1st: 3591 [entity_006], 2nd: 359 [entity_007]",
+      "prediction": "The price signs showing 3591 and 359 are encountered in the following chronological order: first, the sign showing 3591 is visible, followed by the sign showing 359.",
+      "inference_time_sec": 6.481,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Is there any directional or instructional text that a driver must act on near the Shell Gas Station?",
+      "ground_truth": "None is present",
+      "prediction": "Yes, there is a sign that reads 'DO NOT ENTER' near the Shell Gas Station, indicating a direction for drivers to follow.",
+      "inference_time_sec": 5.239,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a gas station, tire shop, and sheet metal business?",
+      "ground_truth": "Commercial district",
+      "prediction": "The presence of a gas station, tire shop, and sheet metal business in the video suggests a commercial area with a variety of services catering to the needs of drivers and pedestrians. The gas station indicates a need for fuel, the tire shop implies the availability of vehicle maintenance services, and the sheet metal business could cater to construction or repair work. These establishments are typically found in areas with a high volume of vehicular traffic, which is supported by the busy intersection and the presence of multiple vehicles and pedestrians. The commercial nature of the area is further emphasized by the signage and the layout of the buildings, which are designed to attract customers and facilitate easy",
+      "inference_time_sec": 12.08,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language is the text on the Action Sheetmetal building written?",
+      "ground_truth": "English",
+      "prediction": "The text on the Action Sheetmetal building is written in English.",
+      "inference_time_sec": 4.307,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range do the flat fix related signs first become visible in the clip?",
+      "ground_truth": "From 9.5 seconds onwards",
+      "prediction": "The flat fix related signs first become visible in the clip between 5.5 and 6.5 seconds.",
+      "inference_time_sec": 5.019,
+      "error": ""
+    }
+  ]
+}

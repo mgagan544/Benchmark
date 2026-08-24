@@ -1,0 +1,70 @@
+{
+  "video_id": 923,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/923.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What destination text is located directly below the route name Van Wyck Expwy on the overhead gantry?",
+      "ground_truth": "Kennedy Airport [entity_004] directly below Van Wyck Expwy [entity_002]",
+      "prediction": "The user wants to identify the text directly below \"Van Wyck Expwy\" on the green highway sign.\n\n1.  **Locate the sign:** I see a large green overhead sign in the first few frames (00:00 - 00:02).\n2.  **Identify the route name:** The top line says \"SOUTH 678 Van Wyck Expwy\".\n3.  **Identify the text below it:** Directly underneath \"Van Wyck Expwy\", there is another line of text.\n4.  **Read the text:** The text reads \"",
+      "inference_time_sec": 13.194,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the overhead highway gantry signs at the start of the clip?",
+      "ground_truth": "9",
+      "prediction": "The user wants me to count the distinct text instances on the overhead highway gantry signs at the beginning of the video.\n\n1.  **Identify the signs:** Looking at the first few frames (00:00 - 00:02), there is a large green overhead sign and a smaller yellow sign to its right.\n2.  **Analyze the large green sign:**\n    *   Top left corner: \"SOUTH\"\n    *   Below that: \"I-678\" (shield)\n    *   Next to that: \"Van Wyck Expwy\"",
+      "inference_time_sec": 13.248,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the overhead sign Kennedy Airport and the taxi license plate T642185C encountered as legible text in the clip?",
+      "ground_truth": "1st: Kennedy Airport [entity_004], 2nd: T642185C [entity_010]",
+      "prediction": "The user wants to know the order in which two specific pieces of text appear in the video.\n\n1.  **Identify the first text:** \"Kennedy Airport\" on the overhead sign.\n    *   Looking at the first frame (00:00), the green overhead sign is clearly visible. It says \"SOUTH 678 Van Wyck Expwy\" and below that \"Kennedy Airport\".\n    *   This text is legible right from the start of the clip.\n\n2.  **Identify the second text:** \"T642185C\" on the taxi",
+      "inference_time_sec": 13.218,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the indicators below the Exit 6 sign, what explicit driving constraint is implied for that lane?",
+      "ground_truth": "EXIT [entity_007] and ONLY [entity_008]",
+      "prediction": "The user wants to identify a specific driving constraint based on the \"Exit 6\" sign in the video.\n\n1.  **Locate the sign:** I need to find the green highway sign that mentions \"Exit 6\". Looking at the first few frames (00:00 - 00:02), there is a large green overhead sign.\n2.  **Identify the relevant part:** On the right side of the main green sign, there is a smaller yellow sign attached to the bridge structure.\n3.  **Read the text:** The yellow sign says \"Exit 6\" at the",
+      "inference_time_sec": 13.255,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is depicted in this clip based on the overhead signs and road layout?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants me to identify the type of driving environment shown in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead Signs:** I see large green highway signs.\n        *   One sign says \"SOUTH 678 Van Wyck Expwy\" and \"Kennedy Airport\".\n        *   Another sign points to \"Hillside Ave\" and \"Jamaica Ave\" with an \"EXIT ONLY\" arrow.\n    *   **Road Layout:**\n        *   There are multiple lanes of traffic moving in the same direction.\n        *   There is",
+      "inference_time_sec": 13.252,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific destination and route names visible on the overhead gantry suggest this clip is filmed in the New York City area?",
+      "ground_truth": "Van Wyck Expwy [entity_002] and Kennedy Airport [entity_004]",
+      "prediction": "The user wants to identify specific destination and route names from the overhead sign in the video that indicate the location is New York City.\n\n1.  **Analyze the video:** I need to look at the first few frames where the overhead sign is clearly visible.\n2.  **Locate the sign:** In the first frame (00:00) and subsequent frames (00:01, 00:02), there is a large green highway sign hanging from an overpass.\n3.  **Read the text on the sign:**\n    *   Top left: \"SOUTH\"",
+      "inference_time_sec": 13.16,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate T642185C on the lime-green taxi first become readable?",
+      "ground_truth": "3.433s for license plate T642185C [entity_010]",
+      "prediction": "The user wants to find the timestamp when the license plate \"T642185C\" on the lime-green taxi is first readable.\n\n1.  **Analyze the video frames:** I need to look at the sequence of images provided.\n2.  **Identify the taxi:** There is a lime-green taxi in the center lane.\n3.  **Locate the license plate:** The license plate is on the rear bumper of the taxi.\n4.  **Check readability in each frame:**\n    *   **00:00:** The taxi is visible, but the license plate is",
+      "inference_time_sec": 13.224,
+      "error": ""
+    }
+  ]
+}

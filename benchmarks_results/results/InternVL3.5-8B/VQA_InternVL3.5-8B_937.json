@@ -1,0 +1,70 @@
+{
+  "video_id": 937,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/937.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the ONE WAY sign relative to the word RIGHT near the intersection?",
+      "ground_truth": "To the right of RIGHT [entity_002]",
+      "prediction": "The ONE WAY sign is positioned above the word RIGHT, indicating the direction of traffic flow.",
+      "inference_time_sec": 7.776,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the large promotional billboard structure on the left side of the road?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct text instances displayed on the large promotional billboard structure on the left side of the road.",
+      "inference_time_sec": 8.126,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the words on the street-side pole sign passed at the 6.533s mark?",
+      "ground_truth": "1st: Mount [entity_012], 2nd: Sinai [entity_013], 3rd: Queens [entity_014]",
+      "prediction": "One way",
+      "inference_time_sec": 6.472,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or regulatory text must the driver follow near the Vernon Blvd intersection at the start of the clip?",
+      "ground_truth": "KEEP [entity_001] RIGHT [entity_002] and ONE WAY [entity_003]",
+      "prediction": "At the Vernon Blvd intersection, the driver must follow the regulatory text 'ONE WAY' as indicated by the sign on the left side of the road. This sign is positioned above the traffic lights and is clearly visible to drivers approaching the intersection. The 'ONE WAY' sign is a regulatory measure to control traffic flow and ensure safety by directing vehicles to proceed in a single direction on the road.",
+      "inference_time_sec": 13.076,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a large movie billboard and multiple street signs suggest about the driving environment?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The presence of a large movie billboard and multiple street signs suggests that the driving environment is urban and well-regulated. The billboard indicates commercial activity and possibly entertainment options in the area, while the street signs provide necessary navigation and traffic information for drivers. This combination of elements points to a city setting where infrastructure supports both vehicular traffic and pedestrian movement.",
+      "inference_time_sec": 12.232,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific borough or region is suggested by the street-side pole sign passed at 6.533s?",
+      "ground_truth": "Queens [entity_014]",
+      "prediction": "The street-side pole sign indicates 'BRONX', suggesting that the vehicle is traveling through the Bronx borough of New York City.",
+      "inference_time_sec": 8.473,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range do the movie tagline and release date on the billboard come into full view?",
+      "ground_truth": "1.967s to 2.367s",
+      "prediction": "The movie tagline and release date on the billboard come into full view as the car progresses down the street, likely in the middle of the video.",
+      "inference_time_sec": 8.927,
+      "error": ""
+    }
+  ]
+}

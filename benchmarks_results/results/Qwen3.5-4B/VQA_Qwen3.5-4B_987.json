@@ -1,0 +1,70 @@
+{
+  "video_id": 987,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/987.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory sign displaying the word STANDING relative to the parked dark green SUV?",
+      "ground_truth": "Adjacent to the dark green SUV, as STANDING [entity_001]",
+      "prediction": "The user wants to know the spatial relationship between a specific sign and a specific vehicle.\n\n1.  **Identify the vehicle:** The user specifies a \"parked dark green SUV\". Looking through the frames, specifically around 00:04, there is a dark green SUV parked on the right side of the road. It's partially visible, mostly the rear and side. Wait, let me look closer.\n    *   Frame 00:00: Parked cars on the right. White car, black car.\n    *   Frame 00:01: Parked cars on the right",
+      "inference_time_sec": 14.096,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory signs are visible in this clip?",
+      "ground_truth": "1",
+      "prediction": "The user wants me to count distinct regulatory signs in the video.\n\n1.  **Scan the video for signs:** I'll watch the video from start to finish, looking for any signs that convey rules or regulations (like stop, yield, speed limit, no parking, etc.).\n2.  **Identify potential signs:**\n    *   **00:00 - 00:03:** Driving down a residential street. No obvious regulatory signs. Just parked cars and trees.\n    *   **00:03 - 00:04:** Approaching an intersection. There are traffic",
+      "inference_time_sec": 12.677,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles passed by the ego vehicle on the right side of the road between 00:00 and 00:06?",
+      "ground_truth": "1st: white sedan, 2nd: dark sedan, 3rd: silver sedan, 4th: grey minivan",
+      "prediction": "The user wants me to identify the order of vehicles passed on the right side of the road.\n\n1.  **Analyze the video:** I'll watch the video from the beginning (00:00) to the end (00:06) and focus on the right side of the road.\n2.  **Identify vehicles:**\n    *   **00:00 - 00:01:** There's a black SUV parked on the right. It looks like a Jeep Grand Cherokee.\n    *   **00:01 - 00:02:** As",
+      "inference_time_sec": 12.77,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the regulatory sign visible at the intersection near the end of the clip?",
+      "ground_truth": "STANDING [entity_001] indicates a standing restriction",
+      "prediction": "The user wants to identify a driving constraint from a regulatory sign at the end of the video.\n\n1.  **Analyze the video:** I need to watch the video until the end to find the intersection and the sign.\n2.  **Locate the sign:**\n    *   00:00 - 00:03: Driving down a residential street. Cars parked on both sides. No intersection yet.\n    *   00:04: Approaching an intersection. There are traffic lights.\n    *   00:05: The car is approaching the intersection",
+      "inference_time_sec": 12.749,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the environment and the parked vehicles, what type of area is the vehicle traveling through?",
+      "ground_truth": "Residential area",
+      "prediction": "The user wants me to identify the type of area the vehicle is traveling through based on the visual evidence.\n\n1.  **Analyze the surroundings:**\n    *   **Road:** It's a paved road with two lanes (one in each direction), marked by a yellow line. There are white dashed lines separating lanes.\n    *   **Vehicles:** There are cars parked on both sides of the street. On the left, there's a line of parked cars (white SUV, silver sedan, etc.). On the right, there are also parked cars (black SUV, white sedan, etc.).\n    *   **",
+      "inference_time_sec": 12.701,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the regulatory sign at the intersection written in?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language on a regulatory sign at an intersection.\n\n1.  **Locate the intersection:** I need to scan the video to find where the car approaches an intersection.\n    *   00:00 - 00:03: The car is driving down a residential street with parked cars on both sides. No intersection yet.\n    *   00:04: The car is approaching an intersection. There are traffic lights visible.\n    *   00:05: The car is right at the intersection.\n\n2.  **Identify regulatory",
+      "inference_time_sec": 12.679,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text on the regulatory sign first become visible to the ego vehicle?",
+      "ground_truth": "00:08",
+      "prediction": "The user wants to find the timestamp when the text on a regulatory sign first becomes visible.\n\n1.  **Analyze the video:** I'll scan through the frames to identify any regulatory signs (like speed limits, stop signs, etc.) and when they appear.\n2.  **Frame 00:00 - 00:03:** The car is driving down a residential street. There are parked cars on both sides. No obvious regulatory signs with text are clearly visible yet, or at least not readable.\n3.  **Frame 00:04:** The car approaches an intersection. On",
+      "inference_time_sec": 12.645,
+      "error": ""
+    }
+  ]
+}

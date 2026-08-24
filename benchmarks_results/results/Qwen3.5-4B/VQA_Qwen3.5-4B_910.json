@@ -1,0 +1,70 @@
+{
+  "video_id": 910,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/910.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the sign for Broad St on the overhead gantry?",
+      "ground_truth": "Grove St [entity_006] directly beneath Broad St [entity_005]",
+      "prediction": "The user wants to identify the text directly beneath the \"Broad St\" sign on the overhead gantry.\n\n1.  **Locate the gantry:** I need to find the frame where the overhead gantry with signs is visible. Looking through the frames, it appears clearly in the 3rd image (timestamp 00:3).\n2.  **Identify the \"Broad St\" sign:** On the left side of the gantry, there is a sign that says \"BROAD ST\".\n3.  **Read the text beneath it:** Directly underneath \"BROAD ST\", there is smaller text.",
+      "inference_time_sec": 13.012,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are encountered after the vehicle passes the medical office building at 5.100 seconds?",
+      "ground_truth": "4",
+      "prediction": "The user wants to count distinct text instances containing numbers after a specific event.\n1.  **Identify the event:** \"vehicle passes the medical office building at 5.100 seconds\".\n    *   Looking at the timestamps, the video ends at 0.5 seconds. Wait, the prompt says \"at 5.100 seconds\". This is likely a typo in the prompt or a reference to a longer video not fully shown, but I must work with the provided frames.\n    *   Let's re-examine the frames. The frames show a drive down a road.\n    *",
+      "inference_time_sec": 12.669,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle encounters the text CENTER, Broad St, and Enrite?",
+      "ground_truth": "1st: CENTER [entity_003], 2nd: Broad St [entity_005], 3rd: Enrite [entity_015]",
+      "prediction": "The user wants to know the order in which three specific text elements appear in the video: \"CENTER\", \"Broad St\", and \"Enrite\".\n\n1.  **Analyze the video for \"CENTER\":**\n    *   Looking at the frames, specifically around 00:03, there is a large overhead sign.\n    *   The sign lists destinations.\n    *   On the left side of the sign, under \"19\", it says \"NORTH I-95\".\n    *   Wait, let me look closer at the sign at 00:03.",
+      "inference_time_sec": 12.632,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead gantry, what driving action is indicated for reaching Passaic?",
+      "ground_truth": "Exit in 1/2 mile as indicated by EXIT 1/2 MILE [entity_012]",
+      "prediction": "The user wants to know the driving action for reaching Passaic based on the overhead sign.\n\n1.  **Locate the sign:** I need to find the overhead gantry with text. It appears clearly in the frame at `00:3`.\n2.  **Read the text:** The sign has two main panels.\n    *   The left panel lists: \"Broad St\", \"Weston\", \"Garden St\", \"North 19\".\n    *   The right panel lists: \"Grove St\", \"Vail Hallen\", \"Garden\", \"Passaic\".\n3.",
+      "inference_time_sec": 12.661,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a large overhead gantry and multiple roadside businesses?",
+      "ground_truth": "highway corridor with commercial zones",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues: a large overhead gantry and multiple roadside businesses.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead gantry:** In the video, specifically around the 0:02 to 0:04 mark, a large metal structure spans across the road. It holds green highway signs. This is a classic feature of major roads, specifically highways or freeways, used to provide directional information to drivers.\n    *   **Roadside businesses:** Throughout the video, especially on the right side, there are gas stations",
+      "inference_time_sec": 12.673,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city names visible on the overhead highway gantry suggest the geographic region of the route?",
+      "ground_truth": "Clifton [entity_010] and Passaic [entity_011]",
+      "prediction": "The user wants to identify city names from the overhead highway signs in the video.\n\n1.  **Analyze the video:** I need to look for frames where the overhead gantry is visible and readable.\n2.  **Locate the gantry:** The gantry appears clearly around the 00:03 mark.\n3.  **Read the signs:**\n    *   There are two main signs on the gantry.\n    *   The left sign lists:\n        *   \"BROAD ST\"\n        *   \"WILMINGTON\"\n        *   \"19\" (",
+      "inference_time_sec": 12.643,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the overhead highway sign displaying Broad St remain visible as the vehicle drives underneath it?",
+      "ground_truth": "6.667 to 7.433 seconds",
+      "prediction": "The user wants to find the time range when the overhead highway sign with \"Broad St\" is visible.\n\n1.  **Analyze the frames:**\n    *   **00:00 - 00:02:** The vehicle is approaching the sign. It's visible in the distance but not fully under it yet.\n    *   **00:03:** The vehicle is directly under the sign. The sign clearly reads \"BROAD ST\" on the left panel and \"GROVE ST\" on the right panel. This is the key frame.\n    *   **00:0",
+      "inference_time_sec": 12.594,
+      "error": ""
+    }
+  ]
+}

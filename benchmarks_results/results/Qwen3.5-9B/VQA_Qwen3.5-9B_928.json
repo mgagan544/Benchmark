@@ -1,0 +1,70 @@
+{
+  "video_id": 928,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/928.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the guide sign indicating Bron EXPWY?",
+      "ground_truth": "178 [entity_007] and NORTH [entity_008] to the right of Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The user wants to identify a specific sign based on its location relative to another sign.\n\n1.  **Identify the reference sign:** The user mentions a \"guide sign indicating Bron EXPWY\". Looking at the first frame (00:00), there is a large green overhead sign. The text on it reads \"CR BRONX EXPWY\" with an arrow pointing straight/slightly right. This is the reference sign.\n\n2.  **Locate the sign to the right:** Directly to the right of the \"CR BRONX EXPWY\" sign, there is another smaller green sign.",
+      "inference_time_sec": 13.282,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible in this clip?",
+      "ground_truth": "4",
+      "prediction": "The user wants me to count distinct text instances containing numbers in the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   There's a large green overhead sign.\n    *   Top left part: \"CLEARANCE 13-6\". This contains numbers \"13\" and \"6\".\n    *   Below that: \"A 95\". This contains the number \"95\".\n    *   Below that: \"Cr. Bronx Expwy\". No numbers.\n    *   To the right of the main sign: Another green sign.",
+      "inference_time_sec": 13.305,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?",
+      "ground_truth": "1st: 3030 [entity_001], 2nd: SPEED [entity_002] LIMIT [entity_003], 3rd: Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The user wants to determine the order of appearance for three specific signs in the video.\n\n1.  **Identify the signs:**\n    *   **Bron EXPWY guide sign:** This is the large green overhead sign that says \"Cr. Bronx Expwy\". It's visible right at the beginning.\n    *   **Speed limit sign:** This is the white rectangular sign on the right side of the road. It says \"SPEED LIMIT 30\".\n    *   **Roadside marker:** This is likely referring to the smaller green sign on the far left or perhaps the yellow diamond sign further down, but",
+      "inference_time_sec": 13.209,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the overhead structure to indicate a height restriction?",
+      "ground_truth": "CLEARANCE 13-6 [entity_006]",
+      "prediction": "The user wants to identify the warning text on the overhead structure regarding height restriction.\n\n1.  **Analyze the video:** I'll look at the first few frames where the overhead signs are visible.\n2.  **Locate the sign:** In the first frame (00:00), there is a large green overhead sign.\n3.  **Read the text:** At the very top of the sign, there is a yellow strip.\n4.  **Identify the text:** The text on the yellow strip says \"CLEARANCE 13-6\". This indicates a height restriction of 13",
+      "inference_time_sec": 13.241,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Guide Signs:** I see large green overhead signs. One says \"Cr. Bronx Expwy\" (Cross Bronx Expressway) and \"W 170 St\". Another sign mentions \"Clearance 13-6\". These are standard highway guide signs.\n    *   **Speed Limits:** There is a white rectangular sign on the right side that says \"SPEED LIMIT 30\". This is typical for urban expressways or highways near intersections",
+      "inference_time_sec": 13.084,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region or city is suggested by the guide sign indicating Bron EXPWY?",
+      "ground_truth": "Bronx, New York",
+      "prediction": "The user wants to identify the location based on a specific sign in the video.\n\n1.  **Analyze the video:** I'll look at the first few frames where the overhead signs are visible.\n2.  **Locate the sign:** In the first frame (00:00), there is a large green overhead sign.\n3.  **Read the sign:** The sign says \"CR BRONX EXPWY\" with an arrow pointing straight/slightly right. Above it, there's a smaller sign that says \"W 170 ST\".\n4.  **Interpret the text:**",
+      "inference_time_sec": 13.299,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the vehicle directly ahead become clearly readable?",
+      "ground_truth": "8.7",
+      "prediction": "The user wants to find the timestamp where the license plate of the car directly in front is readable.\n\n1.  **Analyze the video:**\n    *   **00:00 - 00:02:** The car is driving on a highway at night. There are cars ahead, but they are too far away or too blurry to read a license plate.\n    *   **00:03:** The car gets closer to a black SUV. The taillights are visible. The license plate area is illuminated but still blurry.\n    *   **00:04:** The car",
+      "inference_time_sec": 13.149,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 969,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/969.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the text Prospect?",
+      "ground_truth": "Expwy [entity_001] to the right of Prospect [entity_002]",
+      "prediction": "Verrazano Br Staten Is",
+      "inference_time_sec": 6.487,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds?",
+      "ground_truth": "3",
+      "prediction": "3",
+      "inference_time_sec": 5.777,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of detection for the signs Prospect and EXIT 24?",
+      "ground_truth": "1st: Prospect [entity_002], 2nd: EXIT 24 [entity_003]",
+      "prediction": "The Prospect sign is detected first, followed by the EXIT 24 sign.",
+      "inference_time_sec": 6.661,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific vehicle types are restricted from the left lane according to the white regulatory sign?",
+      "ground_truth": "TRUCKS [entity_009], BUSES [entity_010], and TRAILERS [entity_011]",
+      "prediction": "The white regulatory sign indicates that motorcycles and bicycles are restricted from using the left lane.",
+      "inference_time_sec": 6.769,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of directional signs, exit indicators, and lane restrictions suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of directional signs, exit indicators, and lane restrictions suggests a well-organized and regulated driving environment. These elements are designed to guide drivers efficiently and safely, ensuring that they are aware of upcoming exits, lane changes, and directions to their destinations. The presence of such signs indicates a structured traffic system that helps in maintaining order on the road and reducing the likelihood of confusion or accidents.",
+      "inference_time_sec": 10.226,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge and island names visible on the directional signs suggest the vehicle is in the New York City area?",
+      "ground_truth": "Verrazano Br [entity_008] and Staten Is [entity_005]",
+      "prediction": "The directional signs visible in the video indicate the vehicle is in the New York City area by displaying names such as 'Verrazano Br' and 'Staten Is', which refer to the Verrazzano Bridge and Staten Island, respectively. These landmarks are significant as they are part of the New York City transportation network, connecting different boroughs and facilitating travel across the city. The presence of these specific names on the signs provides a clear indication of the vehicle's location within the New York City area.",
+      "inference_time_sec": 11.528,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the distant skyline advertisement text PEPSI first become visible?",
+      "ground_truth": "4.533 seconds",
+      "prediction": "The distant skyline advertisement text PEPSI first becomes visible at the timestamp 11 to 12 seconds.",
+      "inference_time_sec": 7.072,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 936,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/936.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the green overhead exit sign for Industrial Boulevard and Hesperian Boulevard?",
+      "ground_truth": "An orange diamond-shaped construction sign to the right of the green overhead exit sign",
+      "prediction": "The user wants to identify a specific sign based on its location relative to another sign.\n\n1.  **Locate the green overhead exit sign:** I need to find the frame where the green overhead sign is visible. Looking at the timestamps, it appears clearly around 00:02 and 00:03.\n2.  **Read the text on the green sign:** The sign lists \"Industrial Boulevard\" and \"Hesperian Boulevard\".\n3.  **Identify the sign to the right:** Directly to the right of this green sign, there is a smaller, yellow rectangular sign.\n4",
+      "inference_time_sec": 13.195,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signs containing text or numbers appear on the right shoulder between 0:02 and 0:05?",
+      "ground_truth": "2",
+      "prediction": "The user wants me to count distinct signs on the right shoulder between 0:02 and 0:05.\n\n1.  **Analyze the frames:**\n    *   **0:02:** I see a yellow square sign on the right shoulder. It has the number \"35\" on it. This is likely a speed limit sign.\n    *   **0:03:** The camera moves forward. The yellow sign is still visible but getting smaller. Further ahead, there's a large green overhead sign, but that's not on the right shoulder specifically, it's suspended over the road.",
+      "inference_time_sec": 12.649,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the orange road work sign, the green overhead exit sign, and the dark overpass bridge are encountered?",
+      "ground_truth": "1st: orange road work sign, 2nd: green overhead exit sign, 3rd: dark overpass bridge",
+      "prediction": "The user wants to know the chronological order of three specific objects in the video:\n1.  **Orange road work sign**\n2.  **Green overhead exit sign**\n3.  **Dark overpass bridge**\n\nI need to scan the video from start to finish and note when each object appears.\n\n-   **00:00 - 00:01**: The video starts at night. There are cars ahead.\n-   **00:01**: On the right side of the road, an orange diamond-shaped sign appears. This is the \"orange road work sign\". So,",
+      "inference_time_sec": 12.625,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning and speed advisory information is displayed on the right shoulder between 0:02 and 0:05?",
+      "ground_truth": "Road work ahead warning and a 35 speed advisory",
+      "prediction": "The user wants to identify specific information from the video frames between 0:02 and 0:05.\n\n1.  **Analyze the frames:**\n    *   **Frame at 0:02:** I see a yellow diamond-shaped sign on the right shoulder. It has the number \"35\" on it. This is a speed advisory sign.\n    *   **Frame at 0:03:** The camera is moving past the sign. I can see a green overhead sign with \"Industrial Boulevard\" and \"Hesperia Boulevard\". Below that, there's a smaller sign, possibly a",
+      "inference_time_sec": 12.581,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the green overhead exit sign and multi-lane setup?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Green overhead exit sign:** At around 00:02 and 00:03, a large green sign is visible overhead. It lists destinations like \"Industrial Boulevard\" and \"Hesperia Boulevard\". This is a standard feature of major roadways.\n    *   **Multi-lane setup:** The road clearly has multiple lanes for traffic moving in the same direction (at least two visible lanes, plus a shoulder or exit lane).",
+      "inference_time_sec": 12.58,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the street names on the green overhead exit sign?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the street names on the green overhead sign.\n\n1.  **Locate the sign:** I need to find the green overhead exit sign in the video. It appears clearly around the 0.0 to 0.4 second mark.\n2.  **Read the text:** I will zoom in on the text on the sign.\n    *   The left side of the sign lists: \"Industrial Boulevard\" and \"S. Main\".\n    *   The right side of the sign lists: \"Hesperia Boulevard\" and \"Foothill\".\n3.  **",
+      "inference_time_sec": 12.621,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the green overhead guide sign for Industrial Boulevard and Hesperian Boulevard visible before the vehicle passes underneath it?",
+      "ground_truth": "0:05 to 0:07",
+      "prediction": "The user wants to find the specific time range where a green overhead sign is visible.\n\n1.  **Analyze the frames:**\n    *   **00:00 - 00:01:** The view is dark, showing the road ahead and taillights of vehicles. No overhead signs are clearly visible yet.\n    *   **00:02:** A green overhead sign appears. It lists \"Industrial Boulevard\" and \"Hesperian Boulevard\". This is the sign in question.\n    *   **00:03:** The vehicle is approaching the sign, and it's still",
+      "inference_time_sec": 12.628,
+      "error": ""
+    }
+  ]
+}

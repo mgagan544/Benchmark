@@ -1,0 +1,70 @@
+{
+  "video_id": 996,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/996.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of Messubim relative to NEXT EXITS on the overhead gantry?",
+      "ground_truth": "To the left of NEXT EXITS [entity_006]",
+      "prediction": "Messubim is listed as the next exit after 'Exit 31' on the overhead gantry, indicating it is the immediate exit following the one marked as 'Exit 31'.",
+      "inference_time_sec": 9.687,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "Throughout the entire clip, there are at least five distinct license plates visible on vehicles. These include the license plates of the white car directly in front of the camera's vehicle, the silver car to its right, the black car to its left, the white van that passes by, and the dark-colored car that overtakes from the left lane.",
+      "inference_time_sec": 12.362,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the code 67. 487. 75, the roadside sign showing Mesubim, and the overhead gantry displaying NEXT EXITS are encountered?",
+      "ground_truth": "1st: 67. 487. 75 [entity_002], 2nd: Mesubim [entity_003], 3rd: NEXT EXITS [entity_006]",
+      "prediction": "The code 67. 487. 75 is encountered first, followed by the roadside sign showing Mesubim, and finally, the overhead gantry displaying NEXT EXITS.",
+      "inference_time_sec": 9.892,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the roadside sign visible on the right, what driving action is indicated at a distance of 1000 meters?",
+      "ground_truth": "Exit at the Mesubim [entity_003] interchange [entity_005]",
+      "prediction": "The roadside sign indicates an exit for 'Ma'aleh Yosef' at a distance of 1000 meters. This suggests that drivers should prepare to exit the highway at this point if they intend to reach Ma'aleh Yosef.",
+      "inference_time_sec": 10.889,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of overhead gantries, exit signs, and multiple license plates?",
+      "ground_truth": "Multi-lane highway",
+      "prediction": "The presence of overhead gantries, exit signs, and multiple license plates suggests a well-organized and regulated driving environment, likely in a region with a significant number of vehicles on the road.",
+      "inference_time_sec": 9.54,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific location names visible on the overhead gantry suggest the region or country this highway is located in?",
+      "ground_truth": "Messubim [entity_007], Gannot [entity_008], and HaShiv's [entity_009]",
+      "prediction": "The overhead gantry displays location names such as '特拉维夫' (Tel Aviv) and '海法' (Haifa), which are cities in Israel, indicating that the highway is likely located in Israel.",
+      "inference_time_sec": 10.114,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate 55:007 34 first become visible in the clip?",
+      "ground_truth": "6.933 seconds",
+      "prediction": "The license plate 55:007 34 first becomes visible in the clip at the timestamp 5 to 10 seconds.",
+      "inference_time_sec": 8.872,
+      "error": ""
+    }
+  ]
+}

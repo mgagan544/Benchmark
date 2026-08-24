@@ -1,0 +1,70 @@
+{
+  "video_id": 965,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/965.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the word BUSES on the regulatory sign?",
+      "ground_truth": "TRAILERS [entity_003]",
+      "prediction": "The user wants to identify the text to the right of \"BUSES\" on a specific sign.\n\n1.  **Locate the sign:** I need to find the regulatory sign mentioned. Looking at the first few frames (0.0s, 0.1s), there is a white rectangular sign on the left side of the road, mounted on a pole.\n2.  **Read the text on the sign:** The sign lists restrictions.\n    *   Top line: \"NO\"\n    *   Second line: \"TRUCKS\"\n    *   Third line: \"BUSES\"",
+      "inference_time_sec": 13.063,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this video clip?",
+      "ground_truth": "2",
+      "prediction": "The user wants me to count the distinct license plates visible on vehicles in the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   There's a white pickup truck in the center lane. It has a license plate on the rear bumper. It looks like a New York plate (yellow/white). Let's call this Plate 1.\n    *   To the right, there's a black sedan (looks like a Dodge Charger). It has a license plate. Let's call this Plate 2.\n    *   Further right, partially visible, is another car (silver",
+      "inference_time_sec": 12.611,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the driver encounter the text TRUCKS, Macombs Dam Br, and EXIT as the vehicle travels forward?",
+      "ground_truth": "1st: TRUCKS [entity_001], 2nd: Macombs Dam Br [entity_006], 3rd: EXIT [entity_011]",
+      "prediction": "The user wants to know the order in which three specific text strings appear on signs as the vehicle moves forward.\n\n1.  **Identify the text strings:**\n    *   \"TRUCKS\"\n    *   \"Macombs Dam Br\"\n    *   \"EXIT\"\n\n2.  **Scan the video frames chronologically to find each string.**\n\n    *   **Frame 0.0s:**\n        *   On the left, there is a white rectangular sign. The text reads:\n            *   \"NO\"\n            *   \"TRUCKS\"\n            *   \"B",
+      "inference_time_sec": 12.653,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the regulatory sign on the left side of the road restricts certain vehicles from the left lane?",
+      "ground_truth": "TRUCKS [entity_001], BUSES [entity_002], TRAILERS [entity_003], LEFT [entity_004], LANE [entity_005]",
+      "prediction": "The user wants to identify the text on a specific regulatory sign.\n1.  **Locate the sign:** The user specifies \"regulatory sign on the left side of the road\". Looking at the first few frames (0.0s - 0.1s), there is a white rectangular sign on a pole on the left side, just past the concrete barrier.\n2.  **Read the text:** I need to zoom in or look closely at the text on that sign.\n    *   The sign is white with black text.\n    *   The text is stacked vertically.\n    *   Top line",
+      "inference_time_sec": 12.688,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants me to identify the type of road based on visual cues in the video.\n\n1.  **Analyze the visual evidence:**\n    *   **Signage:** I see a \"NO TRUCKS BUSES TRAILERS\" sign on the left. This is a regulatory sign typical of controlled-access highways.\n    *   **Overhead signs:** There are large green overhead signs indicating exits (e.g., \"E 161 St\", \"Macombs Dam Br\"). These are standard for major highways.\n    *   **Traffic:** There are multiple lanes of traffic moving in the same direction.",
+      "inference_time_sec": 12.634,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location in New York is suggested by the overhead exit signage text?",
+      "ground_truth": "Macombs Dam Br [entity_006]",
+      "prediction": "The user wants to identify a regional location in New York based on the overhead exit signage.\n\n1.  **Analyze the images:** I need to look at the green overhead signs in the video frames.\n2.  **Locate the sign:** In the first few frames (0.0s to 0.3s), there is a green overhead sign on the right side.\n3.  **Read the text:**\n    *   Frame 0.0s: The sign is partially visible. It says \"E 161 St\" and \"Macombs Dam Br\".\n    *   Frame",
+      "inference_time_sec": 12.67,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the yellow advisory exit sign displaying EXIT first come clearly into view, and what text is located directly below it?",
+      "ground_truth": "4.633s, M P H [entity_012]",
+      "prediction": "The user wants to find a specific yellow sign.\n1.  **Identify the sign:** \"yellow advisory exit sign displaying EXIT\".\n2.  **Scan the frames:**\n    *   [0.0s]: I see a white sign on the left (\"NO TRUCKS...\"). I see a green overhead sign. I see a yellow sign on the right, but it's partially obscured and not clearly \"EXIT\" yet. Wait, looking closely at [0.0s], there is a yellow sign on the right side, near the trees. It looks like a speed limit sign (20) or",
+      "inference_time_sec": 12.699,
+      "error": ""
+    }
+  ]
+}

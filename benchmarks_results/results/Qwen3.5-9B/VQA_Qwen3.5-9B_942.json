@@ -1,0 +1,70 @@
+{
+  "video_id": 942,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/942.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text Without relative to the Studio Prices text on the first billboard?",
+      "ground_truth": "To the right of Studio Prices [entity_003]",
+      "prediction": "The user wants to know the spatial relationship between two pieces of text on a billboard.\n\n1.  **Identify the billboard:** I need to find the billboard mentioned. Looking at the first few frames, specifically around 00:00 to 00:02, there is a large billboard on the right side of the road.\n2.  **Locate \"Studio Prices\":** In the first frame (00:00), I can see a billboard on the right. It has text. Let's look closer. Ah, in the second frame (00:01), the billboard is",
+      "inference_time_sec": 13.174,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to street, highway, or regulatory signs in this clip?",
+      "ground_truth": "6",
+      "prediction": "The user wants me to count distinct pieces of text on street, highway, or regulatory signs.\n\n1.  **Scan the video for signs:**\n    *   **00:00 - 00:01:** I see a billboard on the right (\"Studio Classes...\"), but that's an advertisement, not a street/highway sign. There's a yellow diamond sign on the right, but the text is illegible.\n    *   **00:02:** As the car approaches the intersection/overpass, I see traffic lights. Above the road, there's a green overhead sign structure.",
+      "inference_time_sec": 13.254,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the billboard displaying Studio Closses and the billboard displaying eatenlightened.com are encountered?",
+      "ground_truth": "1st: Studio Closses [entity_001], 2nd: eatenlightened.com [entity_009]",
+      "prediction": "The user wants to know the order in which two specific billboards appear in the video.\n\n1.  **Identify the first billboard:** I need to look for a billboard that says \"Studio Classes\".\n    *   Looking at the first frame (00:00), on the right side, there is a large billboard. It's partially visible but clearly shows a person and text.\n    *   Looking at the second frame (00:01), the billboard is clearer. It says \"Studio Classes\" and \"24 Hour Fitness\". This is the first billboard.\n\n2.  **Identify",
+      "inference_time_sec": 13.16,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a height restriction constraint? If so, what does it say and where is it located?",
+      "ground_truth": "12-6 [entity_013] adjacent to Lexington Avenue [entity_011]",
+      "prediction": "The user wants to know if there is a height restriction sign in the video.\n\n1.  **Scan the video for signs:** I need to look at the overhead signs and any other signage visible.\n2.  **Analyze the overhead signs:**\n    *   At 00:03, there are green overhead signs. One says \"2 Avenue\". The other says \"FOR Drive SOUTH Lexington Avenue\". No height restriction here.\n    *   Wait, let's look closer at the sign on the right side of the road, near the bridge structure.\n    *   At 00:03",
+      "inference_time_sec": 13.191,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible highway signs and large billboards, what kind of driving environment is depicted?",
+      "ground_truth": "Highway overpass or elevated highway ramp",
+      "prediction": "The user wants me to identify the driving environment based on visual cues like signs and billboards.\n\n1.  **Analyze the visual elements:**\n    *   **Road:** It's a multi-lane road, likely an elevated highway or a major bridge approach. There are concrete barriers on the sides.\n    *   **Signs:**\n        *   Green overhead signs are visible. One says \"2 Avenue\" with an arrow pointing left. Another says \"FOR Drive SOUTH Lexington Avenue\" with an arrow pointing straight/slightly right. This indicates an urban setting with specific street names.\n        *   There are traffic",
+      "inference_time_sec": 13.321,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street or highway names visible on the overhead signs suggest a specific city? If so, what text supports this?",
+      "ground_truth": "New York City, supported by FDR Drive SOUTH [entity_010] and Lexington Avenue [entity_011]",
+      "prediction": "The user wants to identify a specific city based on street or highway names visible on overhead signs in the video.\n\n1.  **Analyze the video:** I need to look at the overhead signs, particularly towards the end of the video where the car approaches the bridge/overpass.\n2.  **Locate the signs:**\n    *   Around 00:03, there are green overhead signs.\n    *   Around 00:04, the car is directly under the signs.\n3.  **Read the text on the signs:**\n    *   The sign on the left says",
+      "inference_time_sec": 13.166,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the overhead highway sign for 2 Avenue remain visible to the camera vehicle?",
+      "ground_truth": "8.733 seconds to 9.367 seconds",
+      "prediction": "The user wants to know the time range when the overhead highway sign for \"2 Avenue\" is visible.\n\n1.  **Scan the video for the sign:** I need to look for a green highway sign that says \"2 Avenue\".\n2.  **00:00 - 00:02:** The car is approaching an intersection/overpass. I see traffic lights and a billboard on the right, but no overhead highway sign yet.\n3.  **00:03:** The car is getting closer to the overpass structure. I can see green signs hanging from the metal truss.",
+      "inference_time_sec": 13.17,
+      "error": ""
+    }
+  ]
+}

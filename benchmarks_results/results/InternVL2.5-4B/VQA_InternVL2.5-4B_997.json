@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "As the vehicle approaches the junction, the marked zebra crossing is located to the right of the vehicle's path. It is a white painted crosswalk on the road, indicating a pedestrian crossing area. The crossing is bordered by a curb painted in red and white stripes, which is a common traffic marking to alert drivers of the pedestrian crossing. The crossing is situated next to a sidewalk, which is also visible in the video. The presence of the zebra crossing suggests that there is a pedestrian area nearby, and it is likely that the crossing is used by pedestrians to cross the road safely.",
+      "inference_time_sec": 11.846,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "At the start of the clip, there are two distinct signboards visible on the right side of the road. The first signboard displays the number '99' and the second signboard shows the number '999'. These signboards are part of a series of traffic signs that are commonly used to indicate distances to various locations or to provide directions to drivers. The presence of these signboards suggests that the road is well-marked and that the area is likely to be a busy urban or suburban setting where clear signage is essential for navigation.",
+      "inference_time_sec": 10.877,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "After passing the signboard 9999, the vehicle encounters a landmark that is a large, green, and white signboard with Hebrew text. This signboard is located on the far left of the road and is positioned above a road divider. The signboard stands out due to its size and the contrast of the green and white colors against the urban backdrop. It is situated in a location that suggests it may be a point of interest or a significant marker within the city, possibly indicating a specific area or direction within the cityscape.",
+      "inference_time_sec": 10.831,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "The signboard with the text '9999' does not provide explicit information about driving actions or constraints. It appears to be a sign with a number, which could be a reference to a toll, a route number, or a service number, but without additional context or visible details, it is not possible to determine the exact nature of the sign or any driving actions or constraints it might imply.",
+      "inference_time_sec": 8.953,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road, a gas station, and a signboard suggests that the driving environment is urban and well-developed. The curved road indicates that the area is designed to accommodate traffic flow, with clear lane markings to guide drivers. The gas station implies that the area is accessible and frequented by vehicles, indicating a level of infrastructure development. The signboard, although not legible, suggests that there is information available for drivers, which is a common feature in urban areas to help navigate and understand the road network. These elements together paint a picture of a well-maintained urban driving environment with necessary amenities for",
+      "inference_time_sec": 12.0,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The text on the signboard on the right uses Hebrew script, which is a Semitic language. The numbering system appears to be a mix of Hebrew numerals and Arabic numerals, indicating a bilingual system commonly used in Israel.",
+      "inference_time_sec": 6.573,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard 9999 first becomes visible in the second frame of the video. It is passed by the ego vehicle in the third frame.",
+      "inference_time_sec": 5.587,
+      "error": ""
+    }
+  ]
+}

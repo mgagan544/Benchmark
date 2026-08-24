@@ -1,0 +1,70 @@
+{
+  "video_id": 970,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/970.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark destination is located directly below the highway number 278?",
+      "ground_truth": "Verrazano Br [entity_003]",
+      "prediction": "The user wants to identify a landmark destination associated with highway number 278.\n\n1.  **Scan the video for highway signs:** I need to look for overhead green signs, which are standard for US highways.\n2.  **Locate the sign with \"278\":**\n    *   At `00:00`, there are signs in the distance but they are too small to read clearly.\n    *   At `00:01`, the signs become slightly clearer. I see a green sign on the right side of the overhead gantry.\n    *   At `0",
+      "inference_time_sec": 13.13,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway sign text instances are described on the large overhead gantry?",
+      "ground_truth": "9",
+      "prediction": "The user wants me to count the distinct highway sign text instances on the large overhead gantry.\n\n1.  **Identify the gantry:** I need to find the large metal structure holding the signs. It appears clearly in the later frames, especially around 00:3 and 00:4.\n2.  **Locate the signs:** There are two main green rectangular signs hanging from the gantry.\n3.  **Analyze the left sign:**\n    *   It's a green highway sign.\n    *   Top left corner has a number \"27\".\n    *   Below",
+      "inference_time_sec": 12.718,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the highway number 278 and the airport destination JFK become clearly legible as the vehicle moves forward?",
+      "ground_truth": "1st: 278 [entity_002], 2nd: JFK [entity_009]",
+      "prediction": "The user wants to know the order in which two specific highway signs become legible.\n\n1.  **Identify the signs:**\n    *   **Highway 278:** I need to look for a sign indicating \"278\" or \"Verrazzano Br\" (which is often associated with 278/94).\n    *   **Airport destination JFK:** I need to look for a sign indicating \"JFK\".\n\n2.  **Scan the video frames:**\n    *   **00:00 - 00:02:** The car is approaching overhead",
+      "inference_time_sec": 12.707,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead gantry signs, what explicit exit number is indicated for drivers wishing to transition to the Prospect Expwy?",
+      "ground_truth": "EXIT 24 [entity_006]",
+      "prediction": "The user wants to identify the exit number for the Prospect Expwy based on the overhead signs.\n\n1.  **Locate the signs:** I need to look at the overhead gantry signs visible in the video.\n2.  **Identify the relevant sign:** In the frames around 00:03 and 00:04, there is a large green overhead sign.\n3.  **Read the sign:** The sign has two main sections.\n    *   The left section says \"27 Prospect Expwy\".\n    *   The right section says \"270 Verrazano",
+      "inference_time_sec": 12.723,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a multi-lane divided highway and a massive overhead gantry with highway numbers and exit signs?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The user wants me to identify the type of driving environment based on visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Road:** It's a wide, paved road with multiple lanes in the same direction (at least 3-4 visible).\n    *   **Divisions:** There are concrete barriers separating opposing traffic (visible on the left and right sides). This is a \"divided highway.\"\n    *   **Overhead Structure:** There is a large metal framework (gantry) spanning across the road.\n    *   **Signage:** The gantry holds",
+      "inference_time_sec": 12.675,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any landmark destinations or highway labels suggest a specific metropolitan area or region for this highway?",
+      "ground_truth": "Verrazano Br [entity_003] and Staten is [entity_004] suggest New York",
+      "prediction": "The user wants to identify the location based on highway signs in the video.\n\n1.  **Analyze the video frames:** I need to look for overhead signs or road markings.\n2.  **Frame 0.0s - 0.2s:** The view is of a highway with cars. There are some structures in the distance, but no clear signs yet.\n3.  **Frame 0.3s:** A large green overhead sign becomes visible.\n    *   Left side: \"27 Prospect Expwy\" with an arrow pointing left.\n    *   Right side: \"27",
+      "inference_time_sec": 12.624,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the airport destination indicator JFK first become clearly legible on the sign?",
+      "ground_truth": "6.767 seconds",
+      "prediction": "The user wants to find the timestamp when \"JFK\" becomes clearly legible on a sign.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The view is down a highway. There are overhead signs in the distance, but they are too far away to read.\n    *   **00:01:** The car is approaching the overhead gantry. The signs are getting larger but still blurry. I can see \"27 Prospect Expwy\" and \"270 Verrazano Br Staten Is\".\n    *   **00:02:**",
+      "inference_time_sec": 12.706,
+      "error": ""
+    }
+  ]
+}

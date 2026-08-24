@@ -1,0 +1,70 @@
+{
+  "video_id": 999,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/999.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What store is located to the left of the pharmacy named PIEKIELKO ONE PHARMACY?",
+      "ground_truth": "Walgreen [entity_022] to the left of PIEKIELKO [entity_021] ONE [entity_019] PHARMACY [entity_020]",
+      "prediction": "The store located to the left of the pharmacy named PIEKIELKO ONE PHARMACY is a store with a red and white sign that reads 'BUTTALO'S'. This information is visible in the video as the camera moves forward, providing a clear view of the storefront and its signage.",
+      "inference_time_sec": 8.475,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are displayed on the corner building featuring BUFFALO JO'S?",
+      "ground_truth": "11",
+      "prediction": "There are three distinct text entities displayed on the corner building. The first is 'BUFFALO JO'S' in large red letters, the second is 'BUFFALO JO'S PIZZA' in smaller white letters, and the third is 'BUFFALO JO'S PIZZA' in even smaller white letters.",
+      "inference_time_sec": 7.956,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which FOREST, BUFFALO JO'S, and SPEED are encountered by the vehicle?",
+      "ground_truth": "1st: FOREST [entity_001], 2nd: BUFFALO JO'S [entity_003], 3rd: SPEED [entity_016]",
+      "prediction": "The vehicle first encounters FOREST, then BUFFALO JO'S, and finally SPEED.",
+      "inference_time_sec": 4.687,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the road sign indicates a speed restriction after the vehicle turns left past the corner building?",
+      "ground_truth": "SPEED [entity_016] LIMIT [entity_014] 25",
+      "prediction": "The text on the road sign that indicates a speed restriction after the vehicle turns left past the corner building is '25'. This sign is visible on the right side of the road, just before the vehicle turns left, and it is positioned above the traffic light. The sign is rectangular with a white background and red border, which is a common design for speed limit signs in many regions. The number '25' is prominently displayed in red, making it easily readable for drivers. This sign serves as a reminder to drivers to adhere to the speed limit of 25 miles per hour in the area, ensuring safety for both the vehicle",
+      "inference_time_sec": 12.16,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, pharmacies, and medical offices, what type of driving environment is depicted?",
+      "ground_truth": "commercial district",
+      "prediction": "The driving environment depicted is a commercial area with a high density of storefronts, pharmacies, and medical offices. This is indicated by the numerous signs and the variety of businesses lining the street, which are typical of a busy urban or suburban commercial district.",
+      "inference_time_sec": 6.848,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area code visible on the corner building's signage suggests the driving location is in New York City?",
+      "ground_truth": "718-366 [entity_012]",
+      "prediction": "The telephone area code '212' visible on the corner building's signage suggests that the driving location is in New York City.",
+      "inference_time_sec": 5.304,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the speed limit sign displaying SPEED visible as the vehicle continues forward?",
+      "ground_truth": "3.1s to 5.0s",
+      "prediction": "The speed limit sign displaying SPEED is visible as the vehicle continues forward during the time range of 10 to 11 seconds.",
+      "inference_time_sec": 5.36,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 948,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/948.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which sign, located directly below the FDR DR SOUTH sign on the overhead gantry, comes into view between 2.4 and 2.567 seconds?",
+      "ground_truth": "LEFT 2 LANES [entity_006]",
+      "prediction": "Between 2.4 and 2.567 seconds, the sign that comes into view directly below the FDR DR SOUTH sign is the one indicating 'TUNNEL TRAFFIC SIGNALS ARE ACTIVE' with a warning that 'DO NOT ENTER TUNNEL UNTIL GREEN LIGHT IS ON'. This sign is part of the traffic information system on the bridge, providing drivers with important instructions regarding the operation of the tunnel's traffic signals. The sign is designed to ensure that drivers are aware of the need to wait for a green light before entering the tunnel, which is a safety measure to prevent accidents and ensure orderly traffic flow",
+      "inference_time_sec": 17.49,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signs containing lane designations or lane restrictions are visible on the overhead gantry before the vehicle enters the steel truss structure?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct signs visible on the overhead gantry before the vehicle enters the steel truss structure. One sign indicates 'EXIT ONLY' with an arrow pointing to the left, and the other sign shows 'LANE 2' with an arrow pointing straight ahead.",
+      "inference_time_sec": 11.188,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs 2 Ave-12S st, FDR DR SOUTH, and FINE + POINTS are encountered by the vehicle?",
+      "ground_truth": "1st: 2 Ave-12S st [entity_001], 2nd: FDR DR SOUTH [entity_005], 3rd: FINE + POINTS [entity_010]",
+      "prediction": "The vehicle first encounters the sign for 2 Ave-12S st, followed by the FDR DR SOUTH sign, and finally passes under the FINE + POINTS sign.",
+      "inference_time_sec": 9.618,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text, located to the left of the STRICTLY ENFORCED sign, becomes visible at 2.733 seconds to indicate traffic penalties?",
+      "ground_truth": "FINE + POINTS [entity_010]",
+      "prediction": "The warning text 'TOW AWAY ZONE' becomes visible to the left of the 'STRICTLY ENFORCED' sign at 2.733 seconds, indicating that vehicles in this area could be towed if they violate traffic rules.",
+      "inference_time_sec": 10.901,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggest about the driving environment?",
+      "ground_truth": "Expressway bridge approach",
+      "prediction": "The mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggests that the driving environment is regulated and structured, with clear instructions for drivers to follow. The signs likely provide information about exits, directions, speed limits, and any temporary lane closures or restrictions. This indicates that the bridge is part of a well-maintained and organized highway system, where drivers are expected to adhere to specific rules to ensure safety and efficient traffic flow. The presence of these signs and restrictions helps manage the flow of vehicles, especially in a busy urban setting like the one depicted in the video.",
+      "inference_time_sec": 17.42,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city is suggested by the highway names FDR DR SOUTH and Harlem RIv Dr visible on the overhead gantry?",
+      "ground_truth": "New York City",
+      "prediction": "The city suggested by the highway names is New York City, as FDR Drive and Harlem River Drive are known routes within the city.",
+      "inference_time_sec": 8.621,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the lead blue vehicle with license plate FOD-3149 tracked at the beginning of the clip?",
+      "ground_truth": "00:00 to 00:02",
+      "prediction": "The lead blue vehicle with license plate FOD-3149 is tracked from the beginning of the clip until the end, as it remains in the same lane throughout the video.",
+      "inference_time_sec": 9.482,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 947,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/947.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the sign containing the text STATE relative to the speed warning sign?",
+      "ground_truth": "To the right of SPEED [entity_005]",
+      "prediction": "The user wants to know the spatial relationship between two signs: one containing the text \"STATE\" and another that is a \"speed warning sign\".\n\n1.  **Identify the \"STATE\" sign:** Looking through the frames, specifically around 00:02 and 00:03, there is a white rectangular sign on the right side of the road. It reads \"STATE LAW FINES DOUBLED FOR SPEEDING\". This is the sign containing the text \"STATE\".\n2.  **Identify the \"speed warning sign\":** Just above and slightly to the right of the \"STATE LAW\"",
+      "inference_time_sec": 12.827,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the silver minivan?",
+      "ground_truth": "2",
+      "prediction": "The user wants me to count the distinct text instances on the silver minivan.\n\n1.  **Identify the vehicle:** The silver minivan is the primary vehicle in the right lane, directly ahead of the camera car. It's a Chevrolet Uplander.\n2.  **Scan for text:** I need to look at the rear of the vehicle.\n    *   **License Plate:** There's a yellow license plate in the center. The text is \"HEG-1344\". This is one instance.\n    *   **Left Side (Driver's side in US):** Just above the bumper,",
+      "inference_time_sec": 12.621,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the green exit sign, the white regulatory sign, and the minivan's license plate are first encountered?",
+      "ground_truth": "1st: EXIT [entity_001], 2nd: STATE [entity_006], 3rd: HEG-1344 [entity_010]",
+      "prediction": "The user wants me to identify the order of appearance for three specific objects in the video.\n\n1.  **Green exit sign:** I need to find the first frame where a green sign indicating an exit is visible.\n    *   Looking at the first frame [0.0 second], there is a green sign on the right side of the road. It says \"EXIT 27\" and \"Atlantic Ave\". This is the first object.\n\n2.  **White regulatory sign:** I need to find the first frame where a white sign with regulatory text (like speed limits or fines) is visible.\n    *",
+      "inference_time_sec": 12.637,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign indicates a financial penalty for driving too fast?",
+      "ground_truth": "STATE [entity_006] LAW [entity_007] fines DOUBLED FOR [entity_008] SPEEDING [entity_009]",
+      "prediction": "The user wants to identify text on a regulatory sign that mentions a financial penalty for speeding.\n\n1.  **Scan the video for signs:** I see a green highway sign on the right side of the road.\n2.  **Examine the green sign:** It says \"EXIT 27\", \"Atlantic Ave\", \"3/4 MILE\", and \"SPEED LIMIT 45\". This is an informational sign, not a regulatory sign about penalties.\n3.  **Look for other signs:** Just below and slightly to the right of the green sign, there is a smaller white rectangular sign.\n4.",
+      "inference_time_sec": 12.668,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of exit signs, speed warning signs, and regulatory signs?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants to identify the type of road environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Exit signs:** I see a green overhead sign that says \"EXIT 27\" and \"Atlantic Ave\". This is a classic highway exit sign.\n    *   **Speed warning signs:** There's a white rectangular sign next to the exit sign that says \"SPEED LIMIT 45\". This indicates a controlled speed zone typical of highways.\n    *   **Regulatory signs:** There's another sign below the speed limit sign that says \"STATE LAW",
+      "inference_time_sec": 12.648,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific state or region is indicated by the text on the silver minivan's license plate?",
+      "ground_truth": "NEW YORK [entity_011]",
+      "prediction": "The user wants to identify the state or region from the license plate of the silver minivan.\n\n1.  **Locate the silver minivan:** It's the vehicle directly in front of the camera car, in the right lane.\n2.  **Zoom in on the license plate:** I need to look at the frames where the plate is most visible.\n    *   Frame 0.0s: The plate is visible but a bit far.\n    *   Frame 0.1s: Still visible.\n    *   Frame 0.2s: Getting closer.\n    *   Frame",
+      "inference_time_sec": 12.608,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the license plate HEG-1344 clearly legible on the silver minivan?",
+      "ground_truth": "6.167s to 9.2s",
+      "prediction": "The user wants to find the time range where the license plate \"HEG-1344\" is clearly visible on the silver minivan.\n\n1.  **Analyze the frames:**\n    *   **00:00 - 00:02:** The camera car is approaching the silver minivan. The minivan is in the right lane. The license plate is visible but somewhat distant and not perfectly clear.\n    *   **00:03:** The camera car is closer. The minivan is directly ahead. The license plate is becoming clearer. I can see \"HEG-",
+      "inference_time_sec": 12.626,
+      "error": ""
+    }
+  ]
+}

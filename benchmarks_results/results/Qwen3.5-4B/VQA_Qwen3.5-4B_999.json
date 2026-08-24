@@ -1,0 +1,70 @@
+{
+  "video_id": 999,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/999.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What store is located to the left of the pharmacy named PIEKIELKO ONE PHARMACY?",
+      "ground_truth": "Walgreen [entity_022] to the left of PIEKIELKO [entity_021] ONE [entity_019] PHARMACY [entity_020]",
+      "prediction": "The user wants to identify a store located to the left of \"PIEKIELKO ONE PHARMACY\".\n\n1.  **Locate \"PIEKIELKO ONE PHARMACY\":** I need to scan the video frames to find this specific sign.\n    *   Looking at the first few frames (00:00 - 00:01), I see a street scene.\n    *   In frame 00:00, on the left side of the street, there's a building with a sign that says \"PIEKIELKO ONE PHARMACY\". It's partially visible but",
+      "inference_time_sec": 13.538,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are displayed on the corner building featuring BUFFALO JO'S?",
+      "ground_truth": "11",
+      "prediction": "The user wants me to count the distinct text entities on a specific building.\n1.  **Identify the building:** The prompt specifies the \"corner building featuring BUFFALO JO'S\".\n2.  **Locate the building in the video:**\n    *   At 00:00, I see an intersection. On the left corner, there's a building with a sign.\n    *   At 00:01, the camera pans left, giving a clear view of this building. It's a brick building on the corner.\n3.  **Identify the text entities:** I need",
+      "inference_time_sec": 12.672,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which FOREST, BUFFALO JO'S, and SPEED are encountered by the vehicle?",
+      "ground_truth": "1st: FOREST [entity_001], 2nd: BUFFALO JO'S [entity_003], 3rd: SPEED [entity_016]",
+      "prediction": "The user wants to know the order in which three specific signs are seen by the vehicle.\n\n1.  **Identify the signs:**\n    *   **FOREST:** This is a street sign. Looking at the first frame (00:00), on the left side, there is a green street sign that says \"FOREST\".\n    *   **BUFFALO JO'S:** This is a business sign. In the first frame (00:00), just past the intersection, on the left side, there is a red sign that says \"BUFFALO JO'S\".\n    *   **SPEED",
+      "inference_time_sec": 12.726,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the road sign indicates a speed restriction after the vehicle turns left past the corner building?",
+      "ground_truth": "SPEED [entity_016] LIMIT [entity_014] 25",
+      "prediction": "The user wants to identify a specific text on a road sign.\n1.  **Identify the turn:** The prompt says \"after the vehicle turns left past the corner building\".\n    *   At 00:00, the car is at an intersection. There's a \"BUTTERFLOWS\" sign on the left.\n    *   At 00:01, the car is turning left. The view shifts.\n    *   At 00:02, the car has completed the turn and is driving down a new street.\n2.  **Locate the",
+      "inference_time_sec": 12.654,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, pharmacies, and medical offices, what type of driving environment is depicted?",
+      "ground_truth": "commercial district",
+      "prediction": "The user wants me to identify the type of driving environment based on the visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Storefronts:** I see a variety of businesses.\n        *   \"Buffalo Joe's\" (a restaurant).\n        *   \"Walgreens\" (a pharmacy).\n        *   \"Moviants Medical Office\" (a medical office).\n        *   \"Candle Ice Cream\" (a small shop).\n        *   \"Powerless Wings\" (a restaurant).\n        *   \"Accommodations\" sign",
+      "inference_time_sec": 15.637,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area code visible on the corner building's signage suggests the driving location is in New York City?",
+      "ground_truth": "718-366 [entity_012]",
+      "prediction": "The user wants me to identify a telephone area code from the signage on a corner building.\n\n1.  **Analyze the video:** I need to look at the beginning of the video where the car is at an intersection.\n2.  **Locate the corner building:** In the first few frames (00:00 - 00:01), there's a building on the left corner.\n3.  **Identify the signage:** There's a sign that says \"BUFFALO JOIS\".\n4.  **Look for an area code:** Just below \"BUFFALO JOIS\", there is",
+      "inference_time_sec": 15.616,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the speed limit sign displaying SPEED visible as the vehicle continues forward?",
+      "ground_truth": "3.1s to 5.0s",
+      "prediction": "The user wants to find the time range where a speed limit sign displaying \"SPEED\" is visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The car is at an intersection. No speed limit sign is clearly visible in the immediate foreground, though there might be one further down.\n    *   **00:01:** The car is turning or moving through the intersection. A sign on the right pole says \"SPEED LIMIT 25\". This is a very clear match.\n    *   **00:02:** The car is driving down",
+      "inference_time_sec": 15.635,
+      "error": ""
+    }
+  ]
+}

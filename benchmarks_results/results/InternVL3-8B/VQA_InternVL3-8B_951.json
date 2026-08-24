@@ -1,0 +1,70 @@
+{
+  "video_id": 951,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/951.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the storefront extension directly to the right of the 4CARS decals?",
+      "ground_truth": "VILLAGE [entity_009] to the right of 4CARS [entity_006] decals",
+      "prediction": "The storefront extension directly to the right of the 4CARS decals displays the text 'Green Village Supermart hel'. This text is part of the larger sign that advertises the supermarket, indicating its name and possibly the services of the store. The supermarket appears to be a local business, as suggested by the name of the neighborhood, 'Green Village', which is often used to denote a community or a specific area within a city. The presence of such a supermarket in the area suggests to a neighborhood that caters to the daily needs of its residents, offering essential goods and services. The supermarket's sign is designed to be easily visible to",
+      "inference_time_sec": 13.401,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 2.2s and 2.9s?",
+      "ground_truth": "6",
+      "prediction": "2",
+      "inference_time_sec": 5.832,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three text signs encountered on the right side of the street at the start of the clip?",
+      "ground_truth": "1st: boost [entity_001], 2nd: Switch Now [entity_002], 3rd: FREE PHONE [entity_003]",
+      "prediction": "The first text sign encountered is for 'Green Village Market', followed by a sign for 'Bait & Tackle', and then a sign for 'Supermar hel'.",
+      "inference_time_sec": 7.687,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional instruction is displayed on a sign near the entrance of the gas station driveway?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_020]",
+      "prediction": "The sign near the entrance of the gas station driveway displays the directional instruction 'ONE WAY'. This sign is positioned to the right of the entrance, indicating the direction in which vehicles are permitted to enter the gas station. The presence of such signs is crucial for traffic management, ensuring that vehicles follow the correct path of travel and maintain orderly movement within the area. In the context of the video, the 'ONE WAY' sign is visible as the car approaches the gas station, providing guidance to the driver on the appropriate lane to use for entering the premises.",
+      "inference_time_sec": 12.002,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, markets, and a gas station, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The environment depicted is a commercial urban area.",
+      "inference_time_sec": 6.211,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible phone number area code suggests the driving location is in New York City?",
+      "ground_truth": "(917) [entity_008]",
+      "prediction": "The visible phone number area code '7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7",
+      "inference_time_sec": 13.037,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "On how many distinct storefronts does the text VILLAGE appear in the clip?",
+      "ground_truth": "2",
+      "prediction": "2",
+      "inference_time_sec": 5.857,
+      "error": ""
+    }
+  ]
+}

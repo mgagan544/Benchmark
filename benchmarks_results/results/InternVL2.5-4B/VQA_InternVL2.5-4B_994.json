@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located to the left of the green directional sign.",
+      "inference_time_sec": 4.909,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are three distinct text entities visible on the signs in this clip. The first sign reads 'Garden City Terminal' with an arrow pointing to the right. The second sign reads 'Garden City' with an arrow pointing to the right. The third sign reads 'Garden City' with an arrow pointing to the right.",
+      "inference_time_sec": 7.98,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "As the vehicle moves forward between 2.5 and 4.0 seconds, the first sign encountered is the 'Grand Central Pkwy Exit 30' sign, followed by the 'Grand Central Pkwy Exit 30' sign again, and finally, the 'Grand Central Pkwy Exit 30' sign is seen once more.",
+      "inference_time_sec": 8.59,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The sign that indicates a weight restriction for vehicles near the overpass structure reads 'OVER 20,000 LBS. PROHIBITED'. This sign is visible in the video, positioned on the right side of the road, just before the intersection with the overpass. It is a standard traffic sign used to inform drivers of weight limits to prevent damage to the infrastructure and ensure safety. The sign's presence is crucial for maintaining the structural integrity of the overpass and for the safety of all road users.",
+      "inference_time_sec": 10.637,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names and weight limit signs suggests that the road segment is a multi-lane highway designed to accommodate various types of vehicles, including trucks, which are subject to weight restrictions. The presence of these signs indicates that the road is likely a major thoroughfare, possibly connecting different parts of the city or leading to a major highway. The signs are placed at intervals along the road, which is typical for highways to inform drivers of upcoming changes in traffic rules or road conditions.",
+      "inference_time_sec": 9.969,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The abbreviations on the green directional sign suggest that the location is in New York City. The sign reads 'Garden City' and 'Central Park', which are both well-known landmarks in New York City. The presence of these landmarks, along with the urban setting and the style of the road signs, strongly indicates that the video was taken in the city.",
+      "inference_time_sec": 8.285,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text DELIVERIES ENTRANCE 9 first becomes visible at the 1-second mark in the video.",
+      "inference_time_sec": 4.98,
+      "error": ""
+    }
+  ]
+}

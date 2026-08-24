@@ -1,0 +1,70 @@
+{
+  "video_id": 976,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/976.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located to the left of the MDX vehicle with license plate GTR-8482?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50 sign to the left of MDX [entity_008]",
+      "prediction": "The regulatory sign located to the left of the MDX vehicle with license plate GTR-8482 is a green sign indicating 'Eastern Long Island EAs 20E-29E-25A'. This sign is positioned on the right side of the road, above the lane markings, and is visible in the video as the traffic moves forward.",
+      "inference_time_sec": 9.534,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct license plates visible in the video. One is on the black SUV in the left lane, another on the silver sedan directly ahead, and the third on the black sedan in the left lane.",
+      "inference_time_sec": 6.358,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered?",
+      "ground_truth": "1st: T1711804C [entity_001], 2nd: GTR-8482 [entity_009], 3rd: SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The license plate T1711804C is first encountered in the initial frame, followed by the license plate GTR-8482 in the second frame, and the speed limit sign is first seen in the third frame.",
+      "inference_time_sec": 6.947,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text visible near the end of the clip indicates a speed restriction on this road?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The text visible near the end of the clip is 'Speed Limit 50', indicating a speed restriction of 50 miles per hour on this road.",
+      "inference_time_sec": 5.614,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of highway exit signs and speed limit signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway. This is indicated by the presence of multiple lanes, the green highway exit signs, and the speed limit sign that reads '50'. These elements are typical of a highway designed for high-speed traffic and multiple lanes for different directions of travel.",
+      "inference_time_sec": 7.535,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region in New York is suggested by the text on the green highway sign?",
+      "ground_truth": "Long Island [entity_003]",
+      "prediction": "The text on the green highway sign reads 'Eastern Long Island E-29E - 29A', which suggests that the location is in the Eastern Long Island region of New York.",
+      "inference_time_sec": 6.17,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the license plate GTR-8482 on the overtaking MDX vehicle visible?",
+      "ground_truth": "4.5 to 4.767 seconds",
+      "prediction": "The license plate GTR-8482 on the overtaking MDX vehicle is visible from the beginning of the video until the end, as the vehicle is consistently in the left lane and overtaking other cars throughout the sequence.",
+      "inference_time_sec": 6.674,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 944,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/944.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the PASSENGER CARS ONLY sign located relative to the Drive SOUTH sign?",
+      "ground_truth": "Adjacent to Drive [entity_006] SOUTH [entity_007]",
+      "prediction": "The user wants to know the relative location of the \"PASSENGER CARS ONLY\" sign compared to the \"Drive SOUTH\" sign.\n\n1.  **Identify the signs:** I need to find both signs in the video.\n    *   **Drive SOUTH sign:** Looking at the frames, specifically around 00:01 and 00:02, there is a green overhead sign. It says \"59th Drive\" and below it \"South\". Wait, let me look closer. Ah, at 00:01 and 00:02, there is a green",
+      "inference_time_sec": 13.207,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities make up the construction warning sign visible at the start of the clip?",
+      "ground_truth": "4",
+      "prediction": "The user wants me to count the distinct text entities on the construction warning sign visible at the start of the video.\n\n1.  **Identify the sign:** At the very beginning of the clip (00:00), there is an orange rectangular sign on the right side of the road.\n2.  **Read the text:** I need to read the text on that sign.\n    *   Top line: \"RIGHT\"\n    *   Middle line: \"LANE\"\n    *   Middle line (below LANE): \"CLOSED\"\n    *   Bottom line: \"300 FT",
+      "inference_time_sec": 12.694,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the low clearance warning sign, the construction warning signs, and the PASSENGER CARS ONLY sign?",
+      "ground_truth": "1st: 12-6 [entity_005] and construction signs, 2nd: PASSENGER CARS ONLY [entity_009]",
+      "prediction": "The user wants to know the order in which three specific signs appear in the video.\n\n1.  **Identify the signs:**\n    *   **Low clearance warning sign:** This is typically a yellow diamond-shaped sign with a number and a \"2-6\" or similar notation indicating height. Looking at the video, at 00:00, there is a yellow diamond sign on the right side of the road that says \"2-6\". This is a low clearance warning sign.\n    *   **Construction warning signs:** These are usually orange or yellow signs related to road work. At 00:",
+      "inference_time_sec": 12.747,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What low clearance limit is indicated by the warning sign to the right of the concrete barrier?",
+      "ground_truth": "12-6 [entity_005]",
+      "prediction": "The user wants to identify a specific clearance limit from a sign in the video.\n\n1.  **Analyze the request:** The user is asking for a \"low clearance limit\" indicated by a \"warning sign to the right of the concrete barrier\".\n2.  **Scan the video frames:** I need to look for a sign that fits this description.\n    *   **Frame 0.0s:** There's a yellow diamond sign on a pole to the right of the road, near the concrete barrier. It has numbers on it. Let's look closer. It says \"12'-6\"\". Wait, let",
+      "inference_time_sec": 12.714,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the transition from a curved ramp with construction signs to a highway depict?",
+      "ground_truth": "Highway transition zone",
+      "prediction": "The user wants to identify the type of driving environment shown in the video.\n\n1.  **Analyze the initial part of the video (00:00 - 00:02):**\n    *   The car is on a ramp or an elevated road.\n    *   There are construction signs: \"RIGHT LANE CLOSED 300 FT\", \"2-6\" (likely a curve warning or lane count), and orange barriers.\n    *   There are brick apartment buildings in the background.\n    *   The road surface is wet and has some snow/ice patches.\n    *",
+      "inference_time_sec": 12.668,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction warning signs and overhead directional signs?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language used on the signs in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to find clear shots of signs.\n    *   **Frame 0.0s - 0.1s:** There's an orange sign on the right. It reads \"RIGHT LANE CLOSED 300 FT\". This is English.\n    *   **Frame 0.2s:** There's a green overhead sign. It reads \"52 6th Drive\" and \"South\". This is English.\n    *   **Frame 0.",
+      "inference_time_sec": 12.666,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Drive SOUTH sign first come into view, and when does the vehicle pass it?",
+      "ground_truth": "First visible at 3.767 seconds, passed at 5.133 seconds",
+      "prediction": "The user wants to find the timestamps for when the \"Drive SOUTH\" sign appears and when the vehicle passes it.\n\n1.  **Identify the sign:** I need to look for a green highway sign with \"Drive SOUTH\" written on it.\n2.  **Scan the video:**\n    *   00:00 - 00:01: The car is approaching an intersection. There are orange signs, but no green \"Drive SOUTH\" sign yet.\n    *   00:01: As the car turns slightly right, a green sign becomes visible in the distance. It",
+      "inference_time_sec": 12.682,
+      "error": ""
+    }
+  ]
+}

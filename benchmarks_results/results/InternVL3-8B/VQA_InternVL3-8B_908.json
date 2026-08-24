@@ -1,0 +1,70 @@
+{
+  "video_id": 908,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/908.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the covered pedestrian structure marked WALKWAY relative to the Care emblem?",
+      "ground_truth": "To the left of Care [entity_004]",
+      "prediction": "To the left",
+      "inference_time_sec": 6.265,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in this clip are mounted on the transit bus?",
+      "ground_truth": 4,
+      "prediction": "Three",
+      "inference_time_sec": 5.892,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the first three text instances detected on the transit bus?",
+      "ground_truth": "1st: 35627-88 [entity_001], 2nd: 710 [entity_002], 3rd: THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The first text instance detected is '7710', followed by 'THE PORT AUTHORITY OF NY & NJ', and the third is 'STOP'.",
+      "inference_time_sec": 7.559,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the pavement markings near the green commuter waiting shelters, what driving action is required?",
+      "ground_truth": "Stop at the painted 'STOP' stencil",
+      "prediction": "The driver must stop.",
+      "inference_time_sec": 6.034,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of transit bus markings and a walkway sign suggest about the driving environment?",
+      "ground_truth": "Transit hub or commuter terminal area",
+      "prediction": "The presence of transit bus markings and a walkway sign suggests that the driving environment is a public transportation hub or a designated area for buses and pedestrians. This indicates that the area is likely a transit station or a bus stop where buses and other vehicles are expected to stop and allow passengers to board or disembark. The markings and signs are designed to guide both vehicles and pedestrians, ensuring a safe and orderly flow of traffic and movement in the area.",
+      "inference_time_sec": 10.791,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible text suggests the geographical region where this clip was recorded?",
+      "ground_truth": "THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "New York",
+      "inference_time_sec": 5.936,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the fleet designation number 710 first become clearly detected on the bus?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The fleet designation number 710 first becomes clearly detected on the bus at the timestamp 5 to 10 seconds.",
+      "inference_time_sec": 7.246,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 998,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/998.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which restaurant is located to the right of the BARBERSHOP on the left side of the street?",
+      "ground_truth": "DELI MEXICAN FOOD [entity_003]",
+      "prediction": "The user wants to identify a restaurant based on the provided video frames.\n\n1.  **Analyze the request:**\n    *   Target: A restaurant.\n    *   Location: To the right of the \"BARBERSHOP\".\n    *   Reference point: \"BARBERSHOP\" is on the left side of the street.\n\n2.  **Scan the video frames for the \"BARBERSHOP\":**\n    *   Looking at the first frame (00:00), on the far left, there is a building with a green sign.\n    *   The sign says \"",
+      "inference_time_sec": 13.317,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned on the grey vehicles in the traffic lane?",
+      "ground_truth": "2",
+      "prediction": "The user wants me to count the license plates on grey vehicles in the traffic lane.\n\n1.  **Identify grey vehicles:**\n    *   There's a grey sedan in the center lane, directly in front of the camera car. It looks like a Toyota Camry.\n    *   There's a grey SUV/minivan to the right of the camera car. It looks like a Chevy Tahoe or similar.\n    *   There's a grey sedan further ahead in the right lane, turning or waiting. Wait, let's look closer.\n    *   Let's re-evaluate the vehicles based on the frames.",
+      "inference_time_sec": 12.71,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the license plates HJG-2334 and FHN-9486 are encountered or approached by the camera vehicle?",
+      "ground_truth": "1st: HJG-2334 [entity_004], 2nd: FHN-9486 [entity_009]",
+      "prediction": "The user wants to know the chronological order of two license plates: HJG-2334 and FHN-9486.\n\n1.  **Identify the first license plate (HJG-2334):**\n    *   I need to scan the video for a plate ending in HJG-2334.\n    *   Looking at the first few frames (00:00 - 00:01), there is a black car in the center lane.\n    *   At 00:00, the plate is visible but blurry.",
+      "inference_time_sec": 12.701,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving hazard, speed limit, or regulatory constraint?",
+      "ground_truth": "None is present",
+      "prediction": "The user wants to know if there is any visible text in the video that indicates a driving hazard, speed limit, or regulatory constraint.\n\n1.  **Analyze the video for text:** I need to scan the frames for any signs, street signs, or vehicle markings that convey traffic information.\n    *   **Frame 1:**\n        *   Left side: \"DELI MEAT & CHEESE\" sign. Not a traffic sign.\n        *   Center: \"CAPRISH\" sign on a building. Not a traffic sign.\n        *   Right side: \"BAGEL\" sign. Not",
+      "inference_time_sec": 12.68,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of storefronts, a gas station, and a car wash?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Storefronts:** I see signs for \"DELI\", \"CAPRISH\" (car wash), \"Walgreens\", and other commercial buildings. This indicates a commercial area.\n    *   **Gas Station:** There is a Shell gas station visible on the left side.\n    *   **Car Wash:** There is a \"CAPRISH\" sign which is a car wash.\n    *   **Traffic:** There are multiple lanes of traffic,",
+      "inference_time_sec": 12.63,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional area code is shared by the phone numbers visible on the storefronts in this scene?",
+      "ground_truth": "718",
+      "prediction": "The user wants me to identify a phone area code from the storefronts in the video.\n\n1.  **Analyze the video frames:** I need to look closely at the signs on the buildings, particularly the storefronts.\n2.  **Frame 1 (00:00):**\n    *   Left side: There's a green sign that says \"DELICATESSEN\". Below it, there's a phone number. It looks like `(718) 541-0000`. Wait, let me look closer. It's partially obscured but the area code looks like 71",
+      "inference_time_sec": 12.619,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the car wash facility displaying the CAR and WASH signs first become clearer on the right?",
+      "ground_truth": "4.967 seconds",
+      "prediction": "The user wants to find the timestamp where a car wash facility with \"CAR\" and \"WASH\" signs becomes clearer on the right side of the frame.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The view is from inside a car. There's a gas station on the left (Shell). In the center distance, there's a building with a blue sign that says \"CAR WASH\". It's visible but a bit far away. To the right, there's a storefront with a sign that looks like \"BAGEL\".\n    *   **00:",
+      "inference_time_sec": 12.633,
+      "error": ""
+    }
+  ]
+}

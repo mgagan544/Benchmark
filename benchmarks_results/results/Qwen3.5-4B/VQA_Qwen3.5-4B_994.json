@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The user wants to know the location of the \"deliveries sign\" relative to the \"green directional sign\".\n\n1.  **Identify the green directional sign:** Looking at the video, specifically around 00:01 and 00:02, there is a prominent green sign on the right side of the road, under the overpass. It lists destinations like \"GRAND CENTRAL PKWY\", \"BROOKLYN BR\", \"EXPWY\". This is clearly the \"green directional sign\".\n\n2.  **Identify the deliveries sign:** I need to look for a sign that",
+      "inference_time_sec": 13.433,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "The user wants me to count the distinct text entities visible on the signs in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify signs and read the text on them.\n    *   **Frame 0.0s - 0.1s:** There's a green sign on the right side of the road, under the overpass. It's partially visible but readable.\n    *   **Frame 0.1s:** The sign becomes clearer. It says:\n        *   \"TO GRAND-CENTRAL PKWY\"\n        *   \"27",
+      "inference_time_sec": 12.651,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "The user wants to identify the order of three signs encountered between 2.5 and 4.0 seconds.\n\n1.  **Analyze the video segment:** I need to look at the frames from roughly 2.5 seconds to 4.0 seconds.\n    *   **Frame at 2.5s:** The car is approaching an intersection under an overpass. There are traffic lights.\n    *   **Frame at 3.0s:** The car is still approaching. A grey SUV is turning left across the intersection.\n    *   **Frame at 3.5s:** The car",
+      "inference_time_sec": 12.708,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The user wants to identify a specific text on a sign related to weight restrictions near the overpass.\n\n1.  **Scan the video for signs:** I'll look at the frames, particularly around the overpass structure.\n2.  **Locate the overpass:** The overpass is the large structure spanning the road in the background.\n3.  **Look for signs attached to or near the overpass:**\n    *   In the first few frames (00:00 - 00:01), there's a green sign on the right side of the road, but it's a destination sign",
+      "inference_time_sec": 12.702,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The user wants me to interpret the road signs visible in the video.\n\n1.  **Identify the signs:**\n    *   At 00:01, there's a green highway sign on the right. It lists \"GRAND CENTRAL PKWY\", \"BKE BR\", \"BRLYN-ONS\", and \"EXPWY\". This indicates a major highway or expressway.\n    *   At 00:02, as the car approaches the intersection, there are signs hanging from the overpass. One sign clearly says \"WEIGHT LIMIT 20 TONS\". Another sign",
+      "inference_time_sec": 12.68,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The user wants me to identify the city or region based on the abbreviations on a green sign.\n\n1.  **Locate the sign:** I need to find the green directional sign in the video.\n    *   At `00:00`, there's a green sign on the right side of the road, under the overpass. It's partially visible.\n    *   At `00:01`, the car is closer to the intersection. The sign is clearer. It's a green highway sign.\n    *   Let's zoom in on the text.\n    *   The sign says",
+      "inference_time_sec": 12.67,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The user wants to find the timestamp when the text \"DELIVERIES ENTRANCE 9\" first appears.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The car is approaching an intersection. There are signs, but no clear \"DELIVERIES ENTRANCE 9\" sign is visible yet.\n    *   **00:01:** The car is closer to the intersection. A green sign on the right is visible, but it's blurry and doesn't clearly show the target text. Wait, looking closely at the right side, there's a green sign. Let",
+      "inference_time_sec": 12.641,
+      "error": ""
+    }
+  ]
+}

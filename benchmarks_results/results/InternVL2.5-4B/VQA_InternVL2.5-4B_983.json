@@ -1,0 +1,70 @@
+{
+  "video_id": 983,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/983.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What commercial restaurant billboard is located to the right of the gantry displaying Gilespie St?",
+      "ground_truth": "ROBERT [entity_033] IRVINE'S [entity_032] LOCATED AT [entity_035] Tropicana [entity_034]",
+      "prediction": "The commercial restaurant billboard located to the right of the gantry displaying Gilespie St is for 'Robert's Steakhouse'. It is a large, rectangular billboard with a dark background and white text. The billboard features an image of a man, presumably the owner or a representative of the restaurant, and the name 'Robert's Steakhouse' is prominently displayed at the top. Below the image, the text 'Robert's Steakhouse' is written in a large, bold font, followed by 'Since 1975' in a smaller font, indicating the establishment's long history. The billboard is situated on the right side of",
+      "inference_time_sec": 12.286,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct billboards advertising commercial services, events, or businesses are mentioned in the scene description?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct billboards mentioned in the scene description. The first is for 'PERSONAL INJURY' with a phone number, the second is for 'LIGHT' with 'RICK ROSS' and 'SAT AUG 38', and the third is for 'THE HONORABLE' with 'ROBERT INNIS' and 'ROBERT INNIS LAW'.",
+      "inference_time_sec": 8.77,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the DALLAS HORTON billboard, the first 215 gantry, and the RICK ROSS billboard encountered?",
+      "ground_truth": "1st: DALLAS HORTON [entity_002], 2nd: 215 [entity_005] gantry, 3rd: RICK ROSS [entity_016]",
+      "prediction": "The DALLAS HORTON billboard is encountered first, followed by the 215 gantry, and then the RICK ROSS billboard.",
+      "inference_time_sec": 5.577,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What advisory speed limit is indicated on the yellow sign located below the RICK ROSS billboard?",
+      "ground_truth": "45 M P H [entity_018] for the RAMP [entity_017]",
+      "prediction": "The yellow sign located below the RICK ROSS billboard indicates an advisory speed limit of 45 mph. This sign is positioned to the right of the billboard and is visible as the camera moves along the highway. It serves as a reminder to drivers to maintain a safe speed, likely due to the presence of an upcoming exit or a change in road conditions. The sign's placement and color contrast with the surrounding environment make it easily noticeable to drivers, ensuring that they are aware of the speed limit and can adjust their driving accordingly.",
+      "inference_time_sec": 10.601,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is indicated by the presence of multiple overhead gantries and exit signs?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of multiple overhead gantries and exit signs indicates that the road is a multi-lane highway designed for high traffic volumes. These gantries are typically used to provide clear and visible directions to drivers, ensuring they can make informed decisions about their route. The exit signs are a crucial element in highway design, as they alert drivers to upcoming exits and allow them to prepare for changing lanes or taking a different route. The arrangement of these signs and gantries suggests a well-organized and structured road system, which is essential for maintaining order and safety on busy highways.",
+      "inference_time_sec": 11.154,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city and resort mentioned on the signs and billboards suggest the location is in Nevada?",
+      "ground_truth": "Las Vegas [entity_011] and MANDALAY BAY [entity_020]",
+      "prediction": "The signs and billboards in the video mention 'Las Vegas' and 'Reno,' which are cities in Nevada. Additionally, the presence of a billboard advertising 'Rick Ross' concert in Las Vegas further suggests that the location is in Nevada, specifically in or near Las Vegas.",
+      "inference_time_sec": 7.205,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what duration is the billboard featuring DALLAS HORTON continuously visible at the beginning of the video?",
+      "ground_truth": "0.0 seconds to 0.4 seconds",
+      "prediction": "The billboard featuring DALLAS HORTON is continuously visible throughout the entire video. It is first seen in the background as the camera moves forward, and it remains in view as the camera continues to move along the highway. The billboard is a large, rectangular sign with a black background and white text, and it is positioned on the right side of the road, visible from the beginning to the end of the video.",
+      "inference_time_sec": 9.178,
+      "error": ""
+    }
+  ]
+}

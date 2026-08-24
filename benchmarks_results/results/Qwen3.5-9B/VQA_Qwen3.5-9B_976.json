@@ -1,0 +1,70 @@
+{
+  "video_id": 976,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/976.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located to the left of the MDX vehicle with license plate GTR-8482?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50 sign to the left of MDX [entity_008]",
+      "prediction": "The user wants me to identify a regulatory sign.\n1.  **Locate the MDX vehicle:** I see a dark grey SUV in the left lane. At 00:02, the rear is clearly visible, showing \"MDX\" on the left side. The license plate is visible.\n2.  **Locate the license plate:** The plate reads \"GTR-8482\". This confirms I have the right car.\n3.  **Look to the left of this vehicle:** To the left of the MDX, there is a concrete barrier separating the highway lanes.\n4.",
+      "inference_time_sec": 13.193,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "2",
+      "prediction": "The user wants me to count the distinct license plates visible on vehicles in the video.\n\n1.  **Analyze the video:** I'll scan through the frames, looking for license plates on the cars.\n2.  **Identify vehicles:**\n    *   **Car 1 (Right lane, closest):** A grey Nissan Versa Note.\n    *   **Car 2 (Left lane, passing):** A dark grey Acura MDX.\n    *   **Car 3 (Left lane, further back):** A white Toyota Prius.\n    *   **Car 4 (Left lane, further",
+      "inference_time_sec": 13.313,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered?",
+      "ground_truth": "1st: T1711804C [entity_001], 2nd: GTR-8482 [entity_009], 3rd: SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The user wants me to identify the order of appearance for three specific objects:\n1.  **License plate T1711804C**\n2.  **License plate GTR-8482**\n3.  **Speed limit sign**\n\nLet's scan the video frames chronologically to find these.\n\n**Frame 00:00:**\n- I see a grey SUV in the right lane. Its license plate is visible. Let's look closer. It looks like `T1711804C`. Wait, let me re-examine.\n- The plate",
+      "inference_time_sec": 13.18,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text visible near the end of the clip indicates a speed restriction on this road?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The user wants to find a speed restriction visible near the end of the video clip.\n\n1.  **Analyze the video:** I'll scan through the frames, paying close attention to the end of the clip as requested.\n2.  **Look for signs:** I see a green highway sign on the right side.\n3.  **Read the sign:**\n    *   Frame 00:00: The sign is partially visible. It says \"Eastern Long Island\". Below that, \"EXIT 29E - 25A\".\n    *   Frame 00:01: Still",
+      "inference_time_sec": 13.35,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of highway exit signs and speed limit signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants to identify the type of road based on visual cues.\n\n1.  **Analyze the visual evidence:**\n    *   **Multiple lanes:** I see multiple lanes of traffic moving in the same direction. There are at least three lanes visible in the forward direction.\n    *   **Barriers:** There is a concrete barrier (Jersey barrier) separating the opposing traffic or perhaps a different section of the highway.\n    *   **Signage:**\n        *   There is a large green highway sign on the right side. It lists destinations like \"Eastern Long Island\", \"Exit 29E\",",
+      "inference_time_sec": 13.222,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region in New York is suggested by the text on the green highway sign?",
+      "ground_truth": "Long Island [entity_003]",
+      "prediction": "The user wants to identify a region in New York based on a green highway sign visible in the video.\n\n1.  **Scan the video for a green highway sign.**\n    *   In the first few frames (00:00 - 00:02), there is a green sign on the right side of the road.\n    *   Let's zoom in on that sign.\n    *   The sign is partially visible but readable.\n    *   It says \"Eastern Long Island\".\n    *   Below that, it lists exits: \"EXIT 29E - 25A",
+      "inference_time_sec": 13.263,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the license plate GTR-8482 on the overtaking MDX vehicle visible?",
+      "ground_truth": "4.5 to 4.767 seconds",
+      "prediction": "The user wants to find the specific time range when the license plate \"GTR-8482\" is visible on the overtaking MDX vehicle.\n\n1.  **Identify the vehicle:** I need to look for a dark grey SUV that overtakes the camera car.\n2.  **Scan the video:**\n    *   **00:00 - 00:01:** The camera car is behind a grey Nissan Murano. To the left, there's a black pickup truck. No MDX yet.\n    *   **00:01:** A dark grey SUV enters",
+      "inference_time_sec": 13.145,
+      "error": ""
+    }
+  ]
+}

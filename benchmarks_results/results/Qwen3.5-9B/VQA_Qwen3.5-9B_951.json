@@ -1,0 +1,70 @@
+{
+  "video_id": 951,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/951.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the storefront extension directly to the right of the 4CARS decals?",
+      "ground_truth": "VILLAGE [entity_009] to the right of 4CARS [entity_006] decals",
+      "prediction": "The user wants me to identify text on a storefront.\n1.  **Locate the \"4CARS\" decals:** I need to find the \"4CARS\" sign. Looking at the first frame (00:00), on the right side, there's a green storefront. Above the main green sign, there are smaller signs. One says \"4CARS\". Wait, let me look closer.\n2.  **Analyze the storefront:**\n    *   There's a green sign that says \"GREEN VILLAGE\".\n    *   Above that, there are smaller signs. One looks like",
+      "inference_time_sec": 13.335,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 2.2s and 2.9s?",
+      "ground_truth": "6",
+      "prediction": "The user wants me to count distinct, legible text instances visible in the video between the timestamps 2.2s and 2.9s.\n\n1.  **Analyze the video segment:** I need to look at the frames provided for the timestamps 02:02, 02:03, 02:04, 02:05, 02:06, 02:07, 02:08, 02:09. Wait, the timestamps in the prompt are just seconds like \"00:00\", \"",
+      "inference_time_sec": 13.16,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three text signs encountered on the right side of the street at the start of the clip?",
+      "ground_truth": "1st: boost [entity_001], 2nd: Switch Now [entity_002], 3rd: FREE PHONE [entity_003]",
+      "prediction": "The user wants me to identify the first three text signs on the right side of the street at the beginning of the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   Looking at the right side, under the elevated train tracks.\n    *   There's a large orange billboard hanging from the tracks. It says \"Switch to boost FREE PHONE\".\n    *   Below that, on the ground level, there are storefronts.\n    *   The first visible sign on the right is a green sign that says \"GREEN VILLAGE\". Wait, let me look closer",
+      "inference_time_sec": 13.198,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional instruction is displayed on a sign near the entrance of the gas station driveway?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_020]",
+      "prediction": "The user wants to identify a specific directional instruction on a sign near a gas station.\n\n1.  **Locate the gas station:** In the early frames (00:00 - 00:02), there is a gas station visible on the right side of the road. It has a \"Gulf\" sign.\n2.  **Locate the entrance driveway:** The gas station has a driveway leading into it.\n3.  **Find the sign near the entrance:** Looking closely at the pole near the gas station entrance, specifically in the frame at 00:01 and 00",
+      "inference_time_sec": 13.26,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, markets, and a gas station, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues: storefront signs, markets, and a gas station.\n\n1.  **Analyze the visual evidence:**\n    *   **Storefront signs:** I see \"Green Village Supermarket\", \"Green Village\", \"Bargain Land\", \"Gulf\" gas station sign, \"Dollar Tree\" (implied by typical strip mall look, though not explicitly clear, maybe \"Green Village\" is the main one), \"Green Village\" again. There are many small businesses.\n    *   **Markets:** \"Green Village Supermarket\" is",
+      "inference_time_sec": 13.158,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible phone number area code suggests the driving location is in New York City?",
+      "ground_truth": "(917) [entity_008]",
+      "prediction": "The user wants me to identify a phone number area code from the video that suggests the location is New York City.\n\n1.  **Scan the video for phone numbers:** I need to look at signs, billboards, or any text visible in the video.\n2.  **Look at the first few frames:**\n    *   Frame 1: There's a billboard for \"boost\" with \"Switch to a FREE PHONE\". No phone number visible.\n    *   Frame 2: Same billboard.\n    *   Frame 3: A \"Green Village Supermarket\" sign. No phone number.",
+      "inference_time_sec": 13.306,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "On how many distinct storefronts does the text VILLAGE appear in the clip?",
+      "ground_truth": "2",
+      "prediction": "The user wants me to count the distinct storefronts that have the text \"VILLAGE\" on them.\n\n1.  **Scan the video for storefronts with \"VILLAGE\".**\n    *   **00:00 - 00:01:** Looking at the right side of the street, under the elevated tracks. There's a green sign. Let's zoom in mentally. It says \"GREEN VILLAGE\". Wait, let me look closer.\n    *   At **00:00**, on the right side, there is a green sign that says \"GREEN VILLAGE\".",
+      "inference_time_sec": 13.251,
+      "error": ""
+    }
+  ]
+}

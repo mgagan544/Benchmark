@@ -1,0 +1,70 @@
+{
+  "video_id": 961,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/961.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Sheridan Expwy on the right overhead signboard?",
+      "ground_truth": "RFK Br [entity_005] directly below Sheridan Expwy [entity_004]",
+      "prediction": "The text located directly below Sheridan Expwy on the right overhead signboard is 'RFK Br'.",
+      "inference_time_sec": 6.997,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the left overhead signboard between 1.833 seconds and 3.967 seconds?",
+      "ground_truth": "5",
+      "prediction": "ThereCross Bronx Expwy[[190, 270, 312, 302]]",
+      "inference_time_sec": 7.415,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs, the yellow warning sign, and the speed limit sign are encountered?",
+      "ground_truth": "1st: overhead signs, 2nd: yellow warning sign, 3rd: SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The overhead signs are encountered first, followed by the yellow warning sign, and finally the speed limit sign.",
+      "inference_time_sec": 7.267,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the left concrete barrier indicates a speed restriction near the end of the clip?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The text on the left concrete barrier reads '45' which indicates a speed restriction of 45 miles per hour.",
+      "inference_time_sec": 7.477,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of multiple overhead guide signs, exit indicators, and highway numbers?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of multiple overhead guide signs, exit indicators, and highway numbers suggests a well-maintained and organized highway environment. These elements suggest a structured road system designed to facilitate navigation and provide clear directions to drivers, indicating a high level of infrastructure development and maintenance.",
+      "inference_time_sec": 8.739,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge names visible on the overhead signs suggest this clip is filmed in the New York City region?",
+      "ground_truth": "Throgs Neck Br [entity_008], G Washington Br [entity_009], RFK Br [entity_005]",
+      "prediction": "The overhead signs display bridge names such as 'Cross Bronx Expwy', 'Throgs Neck Br', and 'G Washington Br', which are indicative of the New York City region. These names are associated with the Cross Bronx Expressway, Throgs Neck Bridge, and George Washington Bridge, all of which are part of the New York City transportation network.",
+      "inference_time_sec": 9.843,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range do the overhead green guide signs remain continuously visible in the clip?",
+      "ground_truth": "1.833 seconds to 3.967 seconds",
+      "prediction": "The overhead green guide signs remain continuously visible from the beginning of the video until the last frame, indicating that they are present throughout the entire duration of the clip.",
+      "inference_time_sec": 7.55,
+      "error": ""
+    }
+  ]
+}

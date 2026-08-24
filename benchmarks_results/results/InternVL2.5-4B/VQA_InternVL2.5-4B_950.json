@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "As the vehicle moves forward, CHECKSCASH is initially to the left of SHED, but as the vehicle progresses, CHECKSCASH moves to the right of SHED. This indicates that CHECKSCASH is moving in the opposite direction to the vehicle's movement, while SHED remains stationary in the frame.",
+      "inference_time_sec": 8.492,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "Between 4.0 and 7.0 seconds, the vehicle encounters two distinct, legible text instances. The first is the street sign 'Huntley Pkwy' and the second is the billboard advertisement for 'iPhone 6s'.",
+      "inference_time_sec": 6.93,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "As the vehicle moves forward, the first storefront encountered is SHED, followed by boost, and then CHECKSCASH.",
+      "inference_time_sec": 5.132,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The traffic regulator sign located to the right of the signboard displaying 4CAR is a yield sign. This sign implies that drivers must yield the right of way to vehicles already in the intersection or on the cross street. It is a standard traffic sign used to ensure safe and orderly traffic flow at intersections. The presence of this sign in the video suggests that the driver must be prepared to stop or slow down if necessary to allow other vehicles to proceed, which is a fundamental aspect of driving etiquette and safety.",
+      "inference_time_sec": 10.336,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The driving environment depicted is urban, characterized by a high density of storefronts. The presence of multiple businesses such as SHED, boost, and MARKET indicates a commercial area with a variety of shops and services, which is typical of city streets. The variety and number of businesses suggest a bustling area with a lot of foot and vehicle traffic, which is consistent with the busy urban setting shown in the video.",
+      "inference_time_sec": 9.112,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The street name 'Brooklyn' and the phone area code '212' suggest that this clip is filmed in New York City.",
+      "inference_time_sec": 5.355,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The vehicle passes the storefront of SHED, which is located to the right of CHECKSCASH, at the 10-second mark.",
+      "inference_time_sec": 5.37,
+      "error": ""
+    }
+  ]
+}

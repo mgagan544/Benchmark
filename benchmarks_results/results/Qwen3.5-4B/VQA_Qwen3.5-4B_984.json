@@ -1,0 +1,70 @@
+{
+  "video_id": 984,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/984.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly above the identifier 91204-MD on the white shredding truck?",
+      "ground_truth": "DRIVERS WANTED [entity_009]",
+      "prediction": "The user wants to identify text located directly above a specific identifier on a truck.\n\n1.  **Identify the truck:** The main subject is a white box truck with \"AMERICAN SECURITY SHREDDING\" written on the back.\n2.  **Locate the identifier:** I need to find \"91204-MD\". Looking at the license plate area, I see a yellow plate. Above the main license plate, there's a smaller yellow sticker or plate. Let's look closely at the frames.\n    *   Frame 1: I see a yellow plate on the left side of the bumper",
+      "inference_time_sec": 13.305,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the commercial delivery van branded with GoodMart?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count the distinct text instances on the \"GoodMart\" van.\n\n1.  **Identify the van:** I see a white van on the right side of the frame, partially visible. It has \"GoodMart\" written on the side.\n2.  **Locate text instances:**\n    *   There's a large \"GoodMart\" logo on the side.\n    *   Below that, there's smaller text. It looks like \"www.goodmart.com\".\n    *   Further down, near the bottom edge, there's more text, possibly a phone number or address, but",
+      "inference_time_sec": 12.637,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the two delivery van brands are encountered on the right side of the road?",
+      "ground_truth": "1st: GoodMart [entity_012], 2nd: IBC [entity_017]",
+      "prediction": "The user wants to know the chronological order of two delivery van brands seen on the right side of the road.\n\n1.  **Identify the first van:** At the very beginning of the video (00:00), there is a white van partially visible on the right. It has a large blue \"G\" logo and the word \"ood\" visible. This is likely a \"Goody\" or similar brand, but looking closely at the logo and context, it's actually a \"Goody\" van, often associated with \"Goody\" or similar delivery services. Wait, let me look closer. It says \"",
+      "inference_time_sec": 12.671,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text near the intersection indicates a direction restriction for drivers?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_022]",
+      "prediction": "The user wants to identify a regulatory text near the intersection that indicates a direction restriction.\n\n1.  **Analyze the video:** I'll scan the video frames, particularly focusing on the area near the intersection where the \"American Security Shredding\" truck is stopped or moving slowly.\n2.  **Locate the intersection:** The intersection appears around the 00:03 mark.\n3.  **Identify regulatory signs:** I see a yellow diamond-shaped sign on the left side of the road, near the crosswalk.\n4.  **Read the text on the sign:** The sign is a yellow",
+      "inference_time_sec": 12.762,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggest about the driving environment?",
+      "ground_truth": "Busy urban commercial district",
+      "prediction": "The user wants me to interpret the visual cues in the video to describe the driving environment.\n\n1.  **Identify the key elements:**\n    *   **Commercial delivery vans:** I see a white van with \"Goode\" on it and another white truck/van to the right.\n    *   **Shredding truck:** A large white box truck with \"AMERICAN SECURITY SHREDDING\" is directly in front.\n    *   **Taxi:** A yellow taxi cab is visible in the right lane, slightly ahead of the camera car.\n    *   **Construction scaffolding:** There is green",
+      "inference_time_sec": 12.658,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the shredding truck and delivery vans written in?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the text on the vehicles in the video.\n\n1.  **Analyze the text on the shredding truck:**\n    *   The large text says \"AMERICAN SECURITY SHREDDING\".\n    *   There is a phone number: \"1-800-882-1979\".\n    *   There is a website: \"www.americanshredding.com\".\n    *   There is a smaller phone number: \"516-766-2997\".\n    *   The words \"American Security",
+      "inference_time_sec": 12.696,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the GoodMart delivery van text visible before being replaced by the IBC van?",
+      "ground_truth": "0.000 seconds to 5.967 seconds",
+      "prediction": "The user wants to find the time range where the \"GoodMart\" text is visible on the white van to the right.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The white van on the right is partially visible. The text \"GoodMart\" is clearly visible on the side.\n    *   **00:01:** The van is still visible, \"GoodMart\" text is clear.\n    *   **00:02:** The van is still visible, \"GoodMart\" text is clear.\n    *   **00:0",
+      "inference_time_sec": 12.66,
+      "error": ""
+    }
+  ]
+}

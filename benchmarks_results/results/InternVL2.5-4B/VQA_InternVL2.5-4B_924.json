@@ -1,0 +1,70 @@
+{
+  "video_id": 924,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/924.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry?",
+      "ground_truth": "Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "The text 'B C D Terminals RIGHT LANE' is located to the left of the sign on the overhead gantry. It is positioned above the lane markings and is clearly visible as the vehicle approaches the gantry. The text is in white capital letters on a green background, which stands out against the blue sky and the grey concrete of the gantry. This sign is crucial for guiding drivers to the correct lane for the B, C, and D terminals, ensuring they follow the correct route to their destination.",
+      "inference_time_sec": 11.023,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the green overhead exit sign located on the left side of the roadway?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct text instances visible on the green overhead exit sign. The first text instance reads 'Exit 10', the second text instance reads 'I-278 East', and the third text instance reads 'Jersey City'.",
+      "inference_time_sec": 6.804,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the overhead gantry, the roadside infrastructure, and the green exit sign are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: B C D [entity_001] Terminals [entity_003] RIGHT LANE [entity_002], 2nd: RIZZO [entity_004], 3rd: Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "As the vehicle moves forward, the first text encountered is on the overhead gantry, which reads 'PARKING' and 'AIRPORT PARKING'. Following this, the roadside infrastructure is first seen on the right side of the road, and then the green exit sign with the text 'LGA Airport' is encountered.",
+      "inference_time_sec": 7.982,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or instructional text is displayed on the large overhead gantry above the multi-lane roadway?",
+      "ground_truth": "RIGHT LANE [entity_002]",
+      "prediction": "The large overhead gantry displays directional and instructional text that reads 'I-95 SOUTH' and 'I-95 NORTH'. This text is part of the signage that guides drivers on the correct lanes for their intended direction of travel. The gantry is a common feature in highway systems to provide clear and visible directions to drivers, especially in areas with multiple lanes and potential for confusion. The text is displayed in a bold, capitalized font, making it easily readable from a distance, which is essential for ensuring that drivers can make informed decisions about which lane to use. The presence of such signage is crucial for maintaining order and safety on busy",
+      "inference_time_sec": 12.117,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs indicating terminals and parking, what type of facility is this roadway accessing?",
+      "ground_truth": "Airport access road",
+      "prediction": "The visible signs indicating terminals and parking suggest that this roadway is accessing an airport. The presence of a control tower, construction cranes, and the layout of the road with lanes leading to a terminal area are typical features of an airport environment. The signs are designed to guide vehicles to the correct parking or terminal area, which is a common requirement for airport roadways.",
+      "inference_time_sec": 8.337,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language and script is the text on the overhead gantry and exit signs written?",
+      "ground_truth": "English in Latin script",
+      "prediction": "The text on the overhead gantry and exit signs is written in both English and Spanish. The English text is in a standard, clear font, while the Spanish text is in a different, possibly italicized font, indicating bilingual signage for the convenience of a diverse population.",
+      "inference_time_sec": 7.168,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text B C D first become visible, and when does the full layout of that gantry sign become readable?",
+      "ground_truth": "Visible at 5.1 seconds, fully readable at 5.233 seconds",
+      "prediction": "The text B C D first becomes visible in the middle of the video, and the full layout of the gantry sign becomes readable towards the end of the video.",
+      "inference_time_sec": 5.714,
+      "error": ""
+    }
+  ]
+}

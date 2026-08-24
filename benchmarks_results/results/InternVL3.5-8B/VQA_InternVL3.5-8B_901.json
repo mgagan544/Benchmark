@@ -1,0 +1,70 @@
+{
+  "video_id": 901,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/901.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which readable text instances appear between the ONE WAY sign and the CARS CASH sign on the commercial facade?",
+      "ground_truth": "BREAKFAST [entity_004], FREE DELIV [entity_002], and 718-392-6 [entity_003]",
+      "prediction": "Between the ONE WAY sign and the CARS CASH sign on the commercial facade, there is a 'DRIVERS WANTED' sign.",
+      "inference_time_sec": 9.41,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances representing phone numbers or parts of phone numbers are visible on the commercial facade and the brick building?",
+      "ground_truth": "7",
+      "prediction": "There are two distinct text instances representing phone numbers or parts of phone numbers visible on the commercial facade and the brick building.",
+      "inference_time_sec": 8.369,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the address markers 35-11 and 42-11 are encountered as the vehicle drives forward?",
+      "ground_truth": "1st: 35-11 [entity_017], 2nd: 42-11 [entity_018]",
+      "prediction": "As the vehicle drives forward, it first encounters the address marker 35-11, followed by the address marker 42-11.",
+      "inference_time_sec": 9.722,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the road surface and adjacent sign near the end of the clip?",
+      "ground_truth": "SLOW [entity_020] and STOP [entity_019]",
+      "prediction": "The road surface features a bicycle lane symbol, and there is a sign indicating 'NO STANDING ANYTIME' with an additional note 'FDNY'.",
+      "inference_time_sec": 9.562,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.0s and 2.10s suggest about the type of area?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of text visible between 0.0s and 2.10s, such as \"DRIVERS WANTED\" and \"ALL CASH FOR GOLD\", suggests that the area is likely an urban or industrial zone with businesses seeking employment and possibly offering services related to cash-for-gold transactions. This indicates a commercial or working-class neighborhood with various opportunities and services available.",
+      "inference_time_sec": 14.545,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which regional telephone area codes visible in the clip suggest the video was filmed in New York City?",
+      "ground_truth": "718 [entity_015] and (917) [entity_012]",
+      "prediction": "The regional telephone area codes visible in the clip are 212 and 718, which are associated with New York City.",
+      "inference_time_sec": 9.254,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the license plate of the lead vehicle visible in the clip?",
+      "ground_truth": "0.0s to 1.37s",
+      "prediction": "The license plate of the lead vehicle is visible from the beginning of the clip until the vehicle turns right at the intersection.",
+      "inference_time_sec": 8.916,
+      "error": ""
+    }
+  ]
+}

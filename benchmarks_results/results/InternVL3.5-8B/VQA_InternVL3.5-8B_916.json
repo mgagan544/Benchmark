@@ -1,0 +1,70 @@
+{
+  "video_id": 916,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/916.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the overhead Terminal sign located relative to the delivery truck?",
+      "ground_truth": "To the left of GOLDEN RULE [entity_001] and PRODUCE INC [entity_002]",
+      "prediction": "To the right of the delivery truck",
+      "inference_time_sec": 6.883,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this clip are mounted on vehicles?",
+      "ground_truth": "5",
+      "prediction": "Two",
+      "inference_time_sec": 6.432,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds?",
+      "ground_truth": "1st: Terminal [entity_004], 2nd: BUS [entity_005], 3rd: STOP [entity_006]",
+      "prediction": "The chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds is as follows:\n\n1. **2.0 seconds**: The text 'Terminal 2' is visible on a sign indicating the terminal number.\n2. **3.0 seconds**: The text 'ONLY' is visible on the road, indicating a lane restriction.\n3. **4.0 seconds**: The text 'ONLY' is again visible, reinforcing the lane restriction.\n4. **5.0 seconds**: The text 'ONLY' is visible once more, continuing the lane restriction indication.\n\nThis sequence shows the",
+      "inference_time_sec": 17.393,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What road markings indicating driving constraints or lane designations are painted on the road surface just before passing the shuttle van?",
+      "ground_truth": "BUS [entity_005] and STOP [entity_006]",
+      "prediction": "The road markings include a 'BUS LANE' sign painted on the road surface, indicating that the lane is designated for buses. Additionally, there are white dashed lines marking the lanes and a solid white line on the right edge of the road, which likely indicates the boundary of the lane or a no-passing zone.",
+      "inference_time_sec": 11.745,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment is suggested by the presence of terminal, bus, and cell phone lot signs?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "The presence of these signs suggests that the driving environment is likely an airport or a similar transportation hub.",
+      "inference_time_sec": 7.971,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language are all the legible signs and road markings written?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 6.314,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the phone number 1-800-497-4972 first become legible on the delivery truck?",
+      "ground_truth": "1.367 seconds",
+      "prediction": "The phone number 1-800-497-4972 first becomes legible on the delivery truck at the beginning of the video, as the truck is on the left side of the frame and the camera captures the side of the truck clearly.",
+      "inference_time_sec": 11.078,
+      "error": ""
+    }
+  ]
+}

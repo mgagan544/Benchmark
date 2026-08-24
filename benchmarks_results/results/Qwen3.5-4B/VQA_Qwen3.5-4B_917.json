@@ -1,0 +1,70 @@
+{
+  "video_id": 917,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/917.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
+      "ground_truth": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane",
+      "prediction": "The user wants to know the location of the \"AXI\" pavement marking relative to the taxi lane.\n\n1.  **Identify the \"AXI\" marking:** I need to scan the video for pavement markings that say \"AXI\".\n    *   Looking at the first few frames (00:00 - 00:02), on the left side of the road, there is a blue sign that says \"Designated Taxi Lane\".\n    *   Looking at the pavement itself, specifically in the left lane, there are white markings.\n    *   In frame 00:00",
+      "inference_time_sec": 13.039,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "The user wants me to count distinct pavement or infrastructure markings visible on the roadway throughout the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify markings on the road surface and infrastructure (like signs, lights, barriers).\n2.  **Identify markings:**\n    *   **Road Surface:**\n        *   White dashed lines separating lanes.\n        *   White solid lines (edge lines, stop lines).\n        *   Dotted markings (speed bumps or crosswalk indicators).\n        *   Yellow diamond sign (pedestrian crossing).\n        *   Blue signs (",
+      "inference_time_sec": 12.652,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
+      "ground_truth": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'",
+      "prediction": "The user wants to know the order in which specific pavement markings are seen.\n\n1.  **Identify the markings:** I need to look for '03', 'AXI', and '06' on the road surface.\n2.  **Scan the video chronologically:**\n    *   **00:00 - 00:01:** The car is driving under a covered area. I see blue signs on the left. One says \"Taxi / Bus\". Below it, there's a smaller sign. Wait, looking closely at the pavement markings on the left side near the curb.",
+      "inference_time_sec": 12.599,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
+      "ground_truth": "TAXI [entity_001]",
+      "prediction": "The user wants to identify text on the pavement that designates a lane for specific transport vehicles.\n\n1.  **Analyze the video:** I'll scan the video frames, specifically looking at the road surface markings.\n2.  **Locate the relevant area:** The user specifies \"on the left\".\n3.  **Identify the markings:**\n    *   In the first few frames (00:00 - 00:02), I see white dashed lines and some text painted on the road.\n    *   Looking closely at the left side of the road, near the curb, there",
+      "inference_time_sec": 12.72,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
+      "ground_truth": "Airport terminal arrival area",
+      "prediction": "The user wants me to identify the type of environment shown in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Roadway:** It's a covered driveway with multiple lanes.\n    *   **Signage:**\n        *   Blue signs with white text. One clearly says \"Taxi\" and \"Ride Share\". Another says \"United\".\n        *   Yellow diamond-shaped signs with a pedestrian symbol (crosswalk).\n        *   Blue signs hanging from the ceiling indicating \"United\" and \"Delta\".\n    *   **Infrastructure:**\n        *   Large, modern building",
+      "inference_time_sec": 12.708,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the airline signage and pavement markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language used for signage and pavement markings in the video.\n\n1.  **Analyze the video:** I'll scan the video frames for text on signs and road markings.\n2.  **Frame 1:**\n    *   Left side: Blue sign. Text is blurry but looks like \"Terminal 2\" or similar. Wait, let's look closer. It says \"Terminal 2\" and \"Taxiway\". No, that's not right. Let's look at the yellow sign.\n    *   Yellow sign: \"Pedestrian Crossing\" symbol.\n    *",
+      "inference_time_sec": 12.656,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
+      "ground_truth": "4.1 seconds",
+      "prediction": "The user wants to find the timestamp when the \"AXI\" pavement marking is passed.\n\n1.  **Analyze the video frames:** I need to look at the road surface in each frame to find the text \"AXI\".\n2.  **Frame 00:00:** The car is driving under a covered area. I see white dashed lines and some markings on the left, but no clear \"AXI\".\n3.  **Frame 00:01:** Still driving. No \"AXI\" visible.\n4.  **Frame 00:02:** The car is",
+      "inference_time_sec": 12.606,
+      "error": ""
+    }
+  ]
+}

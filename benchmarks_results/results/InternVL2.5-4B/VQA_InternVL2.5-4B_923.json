@@ -1,0 +1,70 @@
+{
+  "video_id": 923,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/923.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What destination text is located directly below the route name Van Wyck Expwy on the overhead gantry?",
+      "ground_truth": "Kennedy Airport [entity_004] directly below Van Wyck Expwy [entity_002]",
+      "prediction": "The destination text located directly below the route name Van Wyck Expwy on the overhead gantry is 'Kennedy Airport'. This information is provided on the green sign that is clearly visible in the video, indicating the direction towards the airport for drivers using the Van Wyck Expressway.",
+      "inference_time_sec": 8.166,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the overhead highway gantry signs at the start of the clip?",
+      "ground_truth": "9",
+      "prediction": "At the start of the clip, there are three distinct text instances visible on the overhead highway gantry signs. These include the names of the highways and exits: 'Van Wyck Expwy', 'Kennedy Airport', and 'Hillside Ave Jamaica Ave'.",
+      "inference_time_sec": 7.142,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the overhead sign Kennedy Airport and the taxi license plate T642185C encountered as legible text in the clip?",
+      "ground_truth": "1st: Kennedy Airport [entity_004], 2nd: T642185C [entity_010]",
+      "prediction": "The overhead sign Kennedy Airport is encountered first, followed by the taxi license plate T642185C.",
+      "inference_time_sec": 5.133,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the indicators below the Exit 6 sign, what explicit driving constraint is implied for that lane?",
+      "ground_truth": "EXIT [entity_007] and ONLY [entity_008]",
+      "prediction": "The indicators below the Exit 6 sign state 'EXIT ONLY', which implies that the lane is designated solely for vehicles exiting the highway and not for those intending to merge onto the highway. This is a common traffic sign used to prevent lane confusion and ensure that vehicles are aware of their intended path.",
+      "inference_time_sec": 7.484,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is depicted in this clip based on the overhead signs and road layout?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the clip is a highway with multiple lanes, as indicated by the overhead green signs directing traffic to Van Wyck Expwy, Kennedy Airport, and other destinations. The presence of concrete barriers and the layout of the road suggest a structured and regulated traffic system, typical of urban or suburban highways designed to manage high volumes of traffic efficiently.",
+      "inference_time_sec": 8.223,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific destination and route names visible on the overhead gantry suggest this clip is filmed in the New York City area?",
+      "ground_truth": "Van Wyck Expwy [entity_002] and Kennedy Airport [entity_004]",
+      "prediction": "The specific destination and route names visible on the overhead gantry include 'Van Wyck Expwy' and 'Kennedy Airport', which are well-known routes in the New York City area. Additionally, the presence of the 'EXIT ONLY' sign and the layout of the highway suggest a typical New York City highway system.",
+      "inference_time_sec": 7.774,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate T642185C on the lime-green taxi first become readable?",
+      "ground_truth": "3.433s for license plate T642185C [entity_010]",
+      "prediction": "The license plate T642185C on the lime-green taxi becomes readable from the beginning of the video, as it is clearly visible in the first frame.",
+      "inference_time_sec": 5.837,
+      "error": ""
+    }
+  ]
+}

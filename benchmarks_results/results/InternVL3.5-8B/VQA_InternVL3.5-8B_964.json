@@ -1,0 +1,70 @@
+{
+  "video_id": 964,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/964.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What overhead sign is located to the right of the exit sign for E 138 St?",
+      "ground_truth": "Macombs [entity_003] Dam [entity_002] and E 161 St [entity_001] to the right of E 138 St [entity_005]",
+      "prediction": "Madison Ave Br",
+      "inference_time_sec": 6.64,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the white commercial pickup truck?",
+      "ground_truth": "10",
+      "prediction": "Three",
+      "inference_time_sec": 6.355,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What text is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass?",
+      "ground_truth": "WORK [entity_008] ZONE [entity_009] SPEED [entity_010] LIMIT [entity_011] 35",
+      "prediction": "The text 'Madison Ave Br' is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass.",
+      "inference_time_sec": 8.752,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the concrete median barrier restricts certain vehicles from using the left lane?",
+      "ground_truth": "TRUCKS [entity_025], BUSES [entity_026], and TRAILERS [entity_027] from the LEFT LANE [entity_028]",
+      "prediction": "The text 'NO TRUCKS BUSES PASSENGER CARS' is displayed on the concrete median barrier, indicating that these types of vehicles are not permitted to use the left lane.",
+      "inference_time_sec": 9.715,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, route shields, and speed limit signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The clip depicts a highway or freeway environment, characterized by multiple lanes of traffic, overhead signs indicating exits and routes, and speed limit regulations.",
+      "inference_time_sec": 8.667,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and bridge names visible in the clip suggest the setting is in New York City?",
+      "ground_truth": "E 138 St [entity_005], Madison [entity_006] Ave Br [entity_007], and W 161 St [entity_013]",
+      "prediction": "The street names 'Madison Ave Br' and 'E 161 St' along with the bridge name 'E 161 St' suggest the setting is in New York City.",
+      "inference_time_sec": 9.717,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the white pickup truck's contact number visible in the clip?",
+      "ground_truth": "0.833 to 4.267 seconds",
+      "prediction": "The white pickup truck's contact number is visible from the beginning until the end of the clip.",
+      "inference_time_sec": 7.968,
+      "error": ""
+    }
+  ]
+}

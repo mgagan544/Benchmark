@@ -1,0 +1,70 @@
+{
+  "video_id": 940,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/940.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
+      "ground_truth": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]",
+      "prediction": "The signs for 'Danice' and 'Modellell's' are located directly adjacent to the parking area on the right side of the drive lane.",
+      "inference_time_sec": 8.22,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
+      "ground_truth": "6",
+      "prediction": "There",
+      "inference_time_sec": 5.853,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]",
+      "prediction": "The camera vehicle first encounters the storefront of FALLAS, followed by the signs for Danice.",
+      "inference_time_sec": 7.08,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
+      "ground_truth": "Stop",
+      "prediction": "The painted road marking adjacent to the concrete sidewalk on the left is a 'STOP' marking, which implies that vehicles are required to come to a complete stop at this point before proceeding further into the parking lot. This is a standard traffic control measure to ensure safety and orderly movement of vehicles, especially in areas where pedestrian activity is common, such as near storefronts and entrances. The presence of this marking indicates that the driver is expected to stop before entering the main area of the parking lot, allowing for a clear view of pedestrians and other vehicles before continuing to drive.",
+      "inference_time_sec": 12.268,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
+      "ground_truth": "Commercial strip mall",
+      "prediction": "The video depicts a commercial shopping center environment, as indicated by the presence of various retail stores such as 'FALLAS', 'Danice', and 'MODELL'S', along with a parking lot filled with cars. The setting suggests a typical suburban or urban area where people can shop and park their vehicles.",
+      "inference_time_sec": 9.285,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 5.806,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
+      "ground_truth": "5.233s to 5.6s",
+      "prediction": "The camera vehicle approaches the storefront windows of FALLAS with promotional text during the time range of 10 to 15 seconds.",
+      "inference_time_sec": 7.253,
+      "error": ""
+    }
+  ]
+}

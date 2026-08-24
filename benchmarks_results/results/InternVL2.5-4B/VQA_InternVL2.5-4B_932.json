@@ -1,0 +1,70 @@
+{
+  "video_id": 932,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/932.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
+      "ground_truth": "CLEANERS [entity_019]",
+      "prediction": "Adjacent to the storefront of COAST FOR GOLD on the right side of the street is a business named 'BROOKLYN BURGERS'. This information is visible in the video as the camera moves forward, revealing the storefronts lining the street. The name 'BROOKLYN BURGERS' is clearly displayed on a sign above the entrance of the restaurant, which is situated next to the COAST FOR GOLD store.",
+      "inference_time_sec": 10.762,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances visible on the regulatory sign post to the right of the lane marking. The text reads 'ONE WAY' at the top, followed by 'SCHOOL BUS' in the middle, and 'BUS STOP' at the bottom.",
+      "inference_time_sec": 6.939,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
+      "prediction": "The text instances appear in the following order: 'ONLY' is first, followed by 'BUSES ONLY', and then 'SCHOOL BUS' appears last.",
+      "inference_time_sec": 5.687,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
+      "ground_truth": "ONE WAY [entity_004]",
+      "prediction": "The text on the regulatory sign post indicates a 'No Left Turn' restriction for vehicle movement. This is evident from the sign that is visible in the first frame of the video, which is positioned on the left side of the road, near the curb. The sign is rectangular with a white background and black lettering, and it clearly states 'NO LEFT TURN' in capital letters, making it easily readable for drivers. This sign is a common traffic control device used to regulate the flow of traffic and ensure safety by prohibiting left turns at certain times or under specific conditions.",
+      "inference_time_sec": 11.175,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
+      "ground_truth": "Commercial urban street",
+      "prediction": "The driving environment depicted is urban, as indicated by the presence of various storefronts such as COAST FOR GOLD and CLEANERS, which are typical of city commercial areas.",
+      "inference_time_sec": 5.783,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific phone number on the first school bus suggests a New York City location?",
+      "ground_truth": "(718)852-0286 [entity_011]",
+      "prediction": "The phone number '212-305-1234' on the first school bus suggests a New York City location. This number is likely associated with a school or transportation service in the city, as it is a common practice for school buses to have contact information displayed on them for emergency or administrative purposes. The presence of this number, along with the 'SCHOOL BUS' label, indicates that the bus is part of a school transportation system, which is a common feature in urban areas like New York City.",
+      "inference_time_sec": 10.77,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
+      "ground_truth": "4.267 seconds",
+      "prediction": "The text BUSES ONLY first becomes visible in the clip at the 1-second mark.",
+      "inference_time_sec": 4.768,
+      "error": ""
+    }
+  ]
+}

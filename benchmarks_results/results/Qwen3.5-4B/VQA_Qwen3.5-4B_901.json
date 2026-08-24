@@ -1,0 +1,70 @@
+{
+  "video_id": 901,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/901.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which readable text instances appear between the ONE WAY sign and the CARS CASH sign on the commercial facade?",
+      "ground_truth": "BREAKFAST [entity_004], FREE DELIV [entity_002], and 718-392-6 [entity_003]",
+      "prediction": "The user wants me to identify readable text between two specific signs.\n\n1.  **Locate the \"ONE WAY\" sign:** Looking at the first few frames (00:00 - 00:01), there is a \"ONE WAY\" sign on the right side of the street, pointing left. It's attached to a pole.\n2.  **Locate the \"CARS CASH\" sign:** In the same frames, slightly further back and to the right of the \"ONE WAY\" sign, there is a red and white sign that says \"CARS CASH\".\n3.",
+      "inference_time_sec": 14.034,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances representing phone numbers or parts of phone numbers are visible on the commercial facade and the brick building?",
+      "ground_truth": "7",
+      "prediction": "The user wants me to count distinct text instances that look like phone numbers or parts of phone numbers.\nI need to scan the commercial facade (the blue sign) and the brick building (the building on the right).\n\n1.  **Blue Sign (\"DRIVERS WANTED\"):**\n    *   Looking at the top left of the blue sign, there's a small white box with text.\n    *   At [0.0 second], it's partially visible. It looks like \"718\".\n    *   At [0.1 second], it's clearer: \"718\".\n    *",
+      "inference_time_sec": 12.696,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the address markers 35-11 and 42-11 are encountered as the vehicle drives forward?",
+      "ground_truth": "1st: 35-11 [entity_017], 2nd: 42-11 [entity_018]",
+      "prediction": "The user wants to know the order in which two specific address markers are seen.\n\n1.  **Identify the markers:** I need to find \"35-11\" and \"42-11\".\n2.  **Scan the video:** I'll look through the frames to locate these blue street signs.\n    *   **Frame 0.0s - 0.2s:** I see a green street sign \"43 AV\". I don't see the specific blue markers yet.\n    *   **Frame 0.3s:** As the car moves forward, I see a blue",
+      "inference_time_sec": 12.7,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the road surface and adjacent sign near the end of the clip?",
+      "ground_truth": "SLOW [entity_020] and STOP [entity_019]",
+      "prediction": "The user wants me to identify specific text visible on the road surface and a nearby sign towards the end of the video clip.\n\n1.  **Analyze the video timeline:**\n    *   **00:00 - 00:02:** The car is stopped at an intersection. I see \"43 AV\" on a street sign. There's a \"DRIVERS WANTED\" sign on a building.\n    *   **00:02 - 00:03:** The car starts moving forward. I see a yellow taxi on the left.\n    *   **00",
+      "inference_time_sec": 12.663,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.0s and 2.10s suggest about the type of area?",
+      "ground_truth": "Commercial district",
+      "prediction": "The user wants to know what the visible text in the video suggests about the type of area.\n\n1.  **Identify the text:** I need to look at the frames between 0.0s and 2.10s and extract any readable text.\n    *   **Frame 0.0s:**\n        *   Street sign: \"43 AV\" (43rd Avenue).\n        *   Blue sign on building: \"DRIVERS WANTED\".\n        *   Yellow sign: \"CARGO VAN\".\n        *   Yellow sign: \"TAXI\".\n        *",
+      "inference_time_sec": 12.715,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which regional telephone area codes visible in the clip suggest the video was filmed in New York City?",
+      "ground_truth": "718 [entity_015] and (917) [entity_012]",
+      "prediction": "The user wants me to identify telephone area codes from the video that suggest the location is New York City.\n\n1.  **Scan the video for signs with phone numbers.** I need to look at the background, specifically billboards, signs, or advertisements.\n2.  **Focus on the first few frames.**\n    *   Frame 1 (00:00): There's a blue billboard on the right. It says \"FREE DELIVERY\" and has a phone number. Let's zoom in on that. The number looks like \"718-392-64...\".\n    *",
+      "inference_time_sec": 12.669,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the license plate of the lead vehicle visible in the clip?",
+      "ground_truth": "0.0s to 1.37s",
+      "prediction": "The user wants to know the time range during which the license plate of the lead vehicle is visible.\n\n1.  **Identify the lead vehicle:** The lead vehicle is the white sedan directly in front of the camera car.\n2.  **Identify the license plate:** It's the yellow plate on the rear bumper of the white sedan.\n3.  **Scan the video frames:**\n    *   **00:00:** The white car is stopped at the intersection. The license plate is clearly visible.\n    *   **00:01:** The car is still stopped or just starting to",
+      "inference_time_sec": 12.684,
+      "error": ""
+    }
+  ]
+}

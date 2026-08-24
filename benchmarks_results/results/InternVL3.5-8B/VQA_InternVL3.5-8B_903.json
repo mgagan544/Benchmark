@@ -1,0 +1,70 @@
+{
+  "video_id": 903,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/903.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What manufacturer name is located to the left of the license plate 63:816.70. on the rear of the grey bus?",
+      "ground_truth": "MERKAVIM [entity_011] to the left of 63:816.70. [entity_007]",
+      "prediction": "Suzuki",
+      "inference_time_sec": 6.688,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on the transit buses in this clip?",
+      "ground_truth": "2",
+      "prediction": "Two distinct license plates are visible on the transit buses in the clip.",
+      "inference_time_sec": 7.677,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plates of the two Metropoline transit buses are encountered by the camera vehicle?",
+      "ground_truth": "1st: 63:816.70. [entity_007], 2nd: 63:709:70 [entity_018]",
+      "prediction": "The camera vehicle first encounters the license plate '6381670' on the rear of the bus in front, followed by the license plate '5444' on the side of the bus to the left.",
+      "inference_time_sec": 11.369,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text in the scene, are there any explicit driving constraints or speed limits indicated?",
+      "ground_truth": "None",
+      "prediction": "No, there are no explicit driving constraints or speed limits visible in the scene. The video focuses on the movement of the buses and the surrounding urban environment without showing any traffic signs that indicate speed limits or other driving restrictions.",
+      "inference_time_sec": 11.005,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text on the transit buses suggest about the type of driving environment?",
+      "ground_truth": "Urban transit corridor",
+      "prediction": "The mix of text on the transit buses, which includes Hebrew and English, suggests that the driving environment is likely in a bilingual region, possibly Israel, where both languages are commonly used. This indicates a diverse and possibly international community, where signage and advertisements cater to both local Hebrew speakers and English-speaking tourists or residents. The presence of such advertisements on public transportation also points to a commercial area where businesses are keen to reach a wide audience through public transit.",
+      "inference_time_sec": 15.982,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which website link on the grey bus advertisement suggests a specific country of origin or region?",
+      "ground_truth": "Suzuki.co.ill [entity_006]",
+      "prediction": "The website link 'www.ignis.co.il' on the grey bus advertisement suggests a connection to Israel, as '.il' is the country code top-level domain for Israel.",
+      "inference_time_sec": 10.11,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range does the white bus identifier 2443 first become revealed to the camera vehicle?",
+      "ground_truth": "4.467 seconds to 5.0 seconds",
+      "prediction": "The white bus identifier 2443 first becomes revealed to the camera vehicle in the middle of the video, specifically after the camera vehicle has passed the rear of the silver bus and is now facing the front of the white bus.",
+      "inference_time_sec": 11.356,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 902,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/902.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What bike route sign, which first appears at 0.3s, is located adjacent to the Northern Blvd sign?",
+      "ground_truth": "Honeywell St [entity_005] Bridge [entity_006] adjacent to Northern [entity_003] Blvd [entity_004]",
+      "prediction": "The bike route sign that first appears at 0.3s and is located adjacent to the Northern Blvd sign is the 'Honeysuckle St Bridge' sign.",
+      "inference_time_sec": 6.316,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many graffiti tags are visible on the concrete structures as the vehicle ascends the bridge between 6.5s and 6.967s?",
+      "ground_truth": "2",
+      "prediction": "As the vehicle ascends the bridge between 6.5s and 6.967s, there are three graffiti tags visible on the concrete structures.",
+      "inference_time_sec": 5.754,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for Honeywell St Bridge, DO NOT ENTER, and ONE WAY are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Honeywell St [entity_005] Bridge [entity_006], 2nd: DO NOT [entity_007] ENTER [entity_008], 3rd: ONE WAY [entity_009]",
+      "prediction": "As the vehicle moves forward, the signs are encountered in the following order: first, the 'Honeywell St Bridge' sign is visible, followed by the 'DO NOT ENTER' sign, and finally, the 'ONE WAY' sign is seen.",
+      "inference_time_sec": 6.978,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text on the corner, visible at 3.633s, indicates a restriction on entering as the vehicle transitions onto the bridge ramp?",
+      "ground_truth": "DO NOT [entity_007] ENTER [entity_008]",
+      "prediction": "The regulatory text on the corner, visible at 3.633s, indicates 'NO TURN ON RED' and 'NO U-TURNS'. This text is a regulatory sign that restricts vehicles from making a turn on red light and prohibits U-turns, ensuring traffic flow and safety on the bridge.",
+      "inference_time_sec": 7.735,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route signs, regulatory signs, and a bridge ramp, what kind of driving environment does this clip depict?",
+      "ground_truth": "Urban roadway and bridge approach",
+      "prediction": "The clip depicts a typical urban driving environment with a focus on a multi-lane road. The presence of route signs indicates the road's purpose, such as directing traffic to the Northern Blvd and Honeoye St Bridge. Regulatory signs, like the 'No Stopping' sign, enforce traffic rules. The bridge ramp suggests a transition to a different level of the road network, possibly leading to a bridge or overpass. This environment is characterized by structured traffic management, clear signage, and the presence of infrastructure designed to facilitate the flow of vehicles.",
+      "inference_time_sec": 10.883,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street and bridge name visible on the bike route sign suggests the local geographic setting?",
+      "ground_truth": "Honeywell St [entity_005] Bridge [entity_006]",
+      "prediction": "The bike route sign visible in the video indicates 'Honeoye St' and 'Honeoye Bridge', suggesting that the local geographic setting is likely in a place where these streets and bridges are named accordingly. This could be a specific area within a city or town, possibly in the United States, where such street and bridge naming conventions are common.",
+      "inference_time_sec": 8.336,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the DO NOT ENTER sign first become visible as the vehicle transitions onto the bridge ramp?",
+      "ground_truth": "3.633s",
+      "prediction": "The DO NOT ENTER sign first becomes visible as the vehicle transitions onto the bridge ramp at the 1.5-second mark.",
+      "inference_time_sec": 5.196,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 1000,
+  "model": "Qwen2-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/1000.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle drives forward from the wrapping business at 0.0s, what is the spatial position of the HOME TILE CENTER SHOWROOM relative to the LETTERS & WRAPS SIGN?",
+      "ground_truth": "To the right of LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001]",
+      "prediction": "The HOME TILE CENTER SHOWROOM is located to the right of the LETTERS & WRAPS SIGN.",
+      "inference_time_sec": 5.193,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers, such as phone numbers or license plates, are mentioned in the clip?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances containing numbers mentioned in the clip.",
+      "inference_time_sec": 4.808,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle passes the LETTERS & WRAPS SIGN and the HOME TILE CENTER?",
+      "ground_truth": "1st: LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001], 2nd: HOME [entity_011] TILE [entity_009] CENTER [entity_008]",
+      "prediction": "The vehicle passes the LETTERS & WRAPS SIGN first, then the HOME TILE CENTER.",
+      "inference_time_sec": 5.078,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving constraint or warning, and where is it located?",
+      "ground_truth": "DO NOT BLOCK [entity_019] on the ACTIVE [entity_018] DRIVE WAY [entity_017]",
+      "prediction": "Yes, there is a visible text in the clip that says \"NO STOPPING,\" which is located on the left side of the road.",
+      "inference_time_sec": 5.621,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefronts and commercial vehicles, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial strip",
+      "prediction": "The clip depicts a busy urban driving environment. The presence of multiple storefronts, including a tile center and a sign shop, suggests a commercial area. The variety of vehicles, including cars, vans, and a truck, indicates moderate traffic. The construction cones and barriers imply ongoing roadwork or maintenance, which can contribute to a potentially slower driving experience. The clear blue sky suggests good weather conditions, which might affect visibility and overall driving conditions.",
+      "inference_time_sec": 8.833,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the storefronts and vehicles written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the storefronts and vehicles is written in English.",
+      "inference_time_sec": 4.844,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the LETTERS & WRAPS SIGN visible before transitioning to the HOME TILE CENTER?",
+      "ground_truth": "0.0s to 1.133s",
+      "prediction": "The LETTERS & WRAPS SIGN is visible before transitioning to the HOME TILE CENTER for a short period of time, as the camera pans to the right and the sign is no longer in view.",
+      "inference_time_sec": 6.253,
+      "error": ""
+    }
+  ]
+}

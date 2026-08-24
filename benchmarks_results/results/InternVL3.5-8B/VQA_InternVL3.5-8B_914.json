@@ -1,0 +1,70 @@
+{
+  "video_id": 914,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/914.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the digital YOUR SPEED MPH feedback sign?",
+      "ground_truth": "ONLY [entity_005] sign to the right of YOUR [entity_001] SPEED [entity_002] MPH [entity_003]",
+      "prediction": "A yellow diamond-shaped sign with a black arrow indicating a right turn.",
+      "inference_time_sec": 7.833,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory or feedback signs are located on the right side of the exit ramp?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct regulatory or feedback signs located on the right side of the exit ramp. One is a yellow diamond-shaped sign indicating a merging traffic situation, and the other is a rectangular sign displaying the vehicle's speed.",
+      "inference_time_sec": 11.091,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the camera vehicle pass the ONE WAY sign, the digital YOUR SPEED MPH feedback sign, and the ONLY sign?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: YOUR [entity_001] SPEED [entity_002] MPH [entity_003], 3rd: ONLY [entity_005]",
+      "prediction": "The camera vehicle first passes the digital YOUR SPEED MPH feedback sign, followed by the ONLY sign, and finally the ONE WAY sign.",
+      "inference_time_sec": 9.103,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which sign indicates that traffic must flow in a single direction at the start of the ramp?",
+      "ground_truth": "ONE WAY [entity_004] sign",
+      "prediction": "The 'ONE WAY' sign on the left side of the ramp indicates that traffic must flow in a single direction.",
+      "inference_time_sec": 8.759,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the exit ramp, elevated structure, and multi-story brick buildings, what kind of driving environment is depicted?",
+      "ground_truth": "urban exit ramp",
+      "prediction": "The video depicts an urban driving environment with an exit ramp, an elevated structure, and multi-story brick buildings lining the street. The presence of these elements suggests that the scene is set in a city or urban area, where roads are often elevated or have ramps for traffic flow management. The multi-story brick buildings indicate a densely built-up area, possibly with commercial or residential properties. The combination of these features creates a typical urban driving environment where vehicles navigate through a mix of infrastructure and buildings.",
+      "inference_time_sec": 16.702,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory and feedback signs along the ramp?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory and feedback signs is in english.",
+      "inference_time_sec": 7.631,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ONLY sign first become visible as the vehicle enters the underpass?",
+      "ground_truth": "4.4 seconds for ONLY [entity_005]",
+      "prediction": "The ONLY sign first becomes visible as the vehicle enters the underpass at the beginning of the video.",
+      "inference_time_sec": 8.449,
+      "error": ""
+    }
+  ]
+}

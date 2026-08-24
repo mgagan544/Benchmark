@@ -1,0 +1,70 @@
+{
+  "video_id": 924,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/924.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry?",
+      "ground_truth": "Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "The text 'Vehicles' is located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry.",
+      "inference_time_sec": 7.683,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the green overhead exit sign located on the left side of the roadway?",
+      "ground_truth": "3",
+      "prediction": "There",
+      "inference_time_sec": 5.813,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the overhead gantry, the roadside infrastructure, and the green exit sign are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: B C D [entity_001] Terminals [entity_003] RIGHT LANE [entity_002], 2nd: RIZZO [entity_004], 3rd: Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "The vehicle first encounters the text 'Vehicles 8+ Tons' on the overhead gantry, followed by the roadside infrastructure with the text 'NEW YORK' and 'JFK' on the blue sign, and finally the green exit sign indicating 'EAST 40th Parking' as it moves forward.",
+      "inference_time_sec": 9.505,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or instructional text is displayed on the large overhead gantry above the multi-lane roadway?",
+      "ground_truth": "RIGHT LANE [entity_002]",
+      "prediction": "The large overhead gantry displays directional and instructional text that reads 'Vehicles 8+ Tons' and 'Airport Access' with an arrow pointing to the right. This indicates that the lane is designated for vehicles weighing 8 tons or more and directs them towards the airport access. The sign is designed to inform drivers of specific traffic regulations and to guide them to the appropriate lanes based on their vehicle's weight and intended destination.",
+      "inference_time_sec": 10.638,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs indicating terminals and parking, what type of facility is this roadway accessing?",
+      "ground_truth": "Airport access road",
+      "prediction": "Airport",
+      "inference_time_sec": 5.782,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language and script is the text on the overhead gantry and exit signs written?",
+      "ground_truth": "English in Latin script",
+      "prediction": "English, using the latin alphabet.",
+      "inference_time_sec": 6.116,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text B C D first become visible, and when does the full layout of that gantry sign become readable?",
+      "ground_truth": "Visible at 5.1 seconds, fully readable at 5.233 seconds",
+      "prediction": "The text B C D first becomes visible at the 11-12 second mark, and the full layout of that gantry sign becomes readable at the 15-16 second mark.",
+      "inference_time_sec": 8.082,
+      "error": ""
+    }
+  ]
+}

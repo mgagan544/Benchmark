@@ -1,0 +1,70 @@
+{
+  "video_id": 965,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/965.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the word BUSES on the regulatory sign?",
+      "ground_truth": "TRAILERS [entity_003]",
+      "prediction": "The text located directly to the right of the word BUSES on the regulatory sign is 'NO STANDING ANYTIME'. This sign is part of the traffic regulations displayed on the overhead sign structure, indicating that standing in the designated lanes is prohibited at all times.",
+      "inference_time_sec": 7.574,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this video clip?",
+      "ground_truth": "2",
+      "prediction": "There are at least three distinct license plates visible in the video clip. One is on a white pickup truck, another on a black sedan, and a third on a black SUV.",
+      "inference_time_sec": 5.894,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the driver encounter the text TRUCKS, Macombs Dam Br, and EXIT as the vehicle travels forward?",
+      "ground_truth": "1st: TRUCKS [entity_001], 2nd: Macombs Dam Br [entity_006], 3rd: EXIT [entity_011]",
+      "prediction": "As the vehicle moves forward, the driver first encounters the text 'TRUCKS' on the green highway sign, followed by 'Macombs Dam Br' and then 'EXIT' as they approach the exit lane.",
+      "inference_time_sec": 6.333,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the regulatory sign on the left side of the road restricts certain vehicles from the left lane?",
+      "ground_truth": "TRUCKS [entity_001], BUSES [entity_002], TRAILERS [entity_003], LEFT [entity_004], LANE [entity_005]",
+      "prediction": "The regulatory sign on the left side of the road has the text 'NO COMMERCIAL VEHICLES TURN LEFT' in bold, capital letters. This sign is designed to inform drivers that commercial vehicles are not allowed to make a left turn in that lane, likely to maintain traffic flow and safety on the highway. The sign's placement and clear, contrasting text ensure that it is easily visible to all drivers, thereby enforcing the traffic regulation.",
+      "inference_time_sec": 9.382,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway. This is indicated by the presence of multiple lanes of traffic, regulatory lane signs, and overhead exit gantry signs, which are common features of highways designed to manage traffic flow and provide directions to drivers.",
+      "inference_time_sec": 6.955,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location in New York is suggested by the overhead exit signage text?",
+      "ground_truth": "Macombs Dam Br [entity_006]",
+      "prediction": "The overhead exit signage text indicates 'E 161 St' and 'Macombs Dam Br', which are specific locations in New York. 'E 161 St' refers to East 161st Street, a street in the Bronx, and 'Macombs Dam Br' refers to Macombs Dam Bridge, which is a bridge over the Harlem River connecting the Bronx to Manhattan. These details suggest that the video is set in the Bronx, a borough of New York City, and the vehicles are likely traveling towards or away from the Macombs Dam Bridge.",
+      "inference_time_sec": 11.252,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the yellow advisory exit sign displaying EXIT first come clearly into view, and what text is located directly below it?",
+      "ground_truth": "4.633s, M P H [entity_012]",
+      "prediction": "The yellow advisory exit sign displaying EXIT first comes into clear view at the 5-second mark. Directly below the EXIT sign, the text 'E 161 St' is located, indicating the exit for East 161st Street.",
+      "inference_time_sec": 6.922,
+      "error": ""
+    }
+  ]
+}

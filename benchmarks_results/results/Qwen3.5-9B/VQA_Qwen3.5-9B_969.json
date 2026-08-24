@@ -1,0 +1,70 @@
+{
+  "video_id": 969,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/969.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the text Prospect?",
+      "ground_truth": "Expwy [entity_001] to the right of Prospect [entity_002]",
+      "prediction": "The user wants me to identify the text located directly to the right of the word \"Prospect\".\n\n1.  **Locate \"Prospect\":** I need to find the word \"Prospect\" in the video frames. Looking at the first few frames, specifically around 00:00 to 00:01, there is a green highway sign overhead.\n2.  **Analyze the sign:** The sign has two main sections.\n    *   The left section says \"27 Prospect Expwy\".\n    *   The right section says \"278 Verrazano Br Staten",
+      "inference_time_sec": 13.323,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds?",
+      "ground_truth": "3",
+      "prediction": "The user wants to count distinct, legible text instances that appear or are detected between 2.1 and 2.8 seconds.\n\n1.  **Analyze the video timeline:**\n    *   **00:00 - 00:01:** The car is approaching an overhead gantry with green highway signs. The text is visible but slightly blurry due to distance.\n    *   **00:01:** The car is directly under the gantry. The signs are clearly visible.\n        *   Left sign: \"27 Prospect Expwy\" with arrows.\n        *",
+      "inference_time_sec": 13.212,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of detection for the signs Prospect and EXIT 24?",
+      "ground_truth": "1st: Prospect [entity_002], 2nd: EXIT 24 [entity_003]",
+      "prediction": "The user wants to know the order in which the signs \"Prospect\" and \"EXIT 24\" are detected in the video.\n\n1.  **Analyze the video:** I need to look at the frames and identify when the signs appear.\n2.  **Frame 00:00:** The car is approaching an overhead gantry. There are green signs.\n3.  **Frame 00:01:** The car is closer to the gantry. I can see the signs more clearly.\n    *   On the left side of the gantry, there's a sign that says",
+      "inference_time_sec": 13.142,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific vehicle types are restricted from the left lane according to the white regulatory sign?",
+      "ground_truth": "TRUCKS [entity_009], BUSES [entity_010], and TRAILERS [entity_011]",
+      "prediction": "The user wants to identify the vehicle types restricted from the left lane based on a specific sign.\n\n1.  **Locate the sign:** I need to look for a white regulatory sign, typically found on the right side of the highway or on the gantry.\n2.  **Scan the frames:**\n    *   Frame 1: Shows the gantry ahead. There's a sign on the far right, but it's blurry.\n    *   Frame 2: The car is closer to the gantry. On the right side of the gantry structure, there is a white rectangular sign. Let's zoom",
+      "inference_time_sec": 13.28,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of directional signs, exit indicators, and lane restrictions suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The user wants me to interpret the driving environment based on the visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead Signs:** I see large green overhead gantries.\n        *   One sign points to \"Prospect Expwy\" (Exit 27).\n        *   Another sign points to \"Verrazano Br\" and \"Staten Is\" (Route 278).\n        *   There are arrows indicating lane assignments.\n    *   **Lane Markings:** There are white dashed lines separating lanes. There are also solid white lines",
+      "inference_time_sec": 13.248,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge and island names visible on the directional signs suggest the vehicle is in the New York City area?",
+      "ground_truth": "Verrazano Br [entity_008] and Staten Is [entity_005]",
+      "prediction": "The user wants me to identify specific bridge and island names from the video that indicate the location is New York City.\n\n1.  **Analyze the video:** I need to look at the overhead highway signs.\n2.  **Locate the signs:** In the first few frames (00:00 - 00:01), there is a large green overhead gantry sign.\n3.  **Read the text on the signs:**\n    *   One sign says \"27 Prospect Expwy\".\n    *   Another sign says \"278 Verrazano Br Staten Is\".",
+      "inference_time_sec": 13.298,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the distant skyline advertisement text PEPSI first become visible?",
+      "ground_truth": "4.533 seconds",
+      "prediction": "The user wants to find the timestamp when the \"PEPSI\" advertisement text becomes visible in the distance.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The view is of a highway. There are overhead signs, but no distant skyline or ads are clearly visible yet.\n    *   **00:01:** The car is moving forward. The overhead signs are passing. The view is still focused on the road ahead.\n    *   **00:02:** The car has moved further. On the left side, in the distance, there is a",
+      "inference_time_sec": 13.235,
+      "error": ""
+    }
+  ]
+}

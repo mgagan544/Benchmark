@@ -1,0 +1,70 @@
+{
+  "video_id": 917,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/917.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
+      "ground_truth": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane",
+      "prediction": "The pavement marking showing AXI is located to the left of the designated taxi lane. It is a white line that runs parallel to the taxi lane, indicating the area where taxis are allowed to stop. This marking is clearly visible in the video, providing a visual cue for drivers to identify the designated taxi area.",
+      "inference_time_sec": 8.121,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct pavement or infrastructure markings visible on the roadway throughout the entire clip. These markings include a pedestrian crossing, a yellow line indicating a no-passing zone, and a white line marking the edge of the roadway.",
+      "inference_time_sec": 6.477,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
+      "ground_truth": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'",
+      "prediction": "The vehicle first encounters the pavement marking '03', then 'AXI', and finally '06'.",
+      "inference_time_sec": 4.992,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
+      "ground_truth": "TAXI [entity_001]",
+      "prediction": "The text on the pavement that designates the lane reserved for specific transport vehicles on the left is 'BUS ONLY'. This is visible in the video as the vehicle moves forward, and the lane is clearly marked with white lines and the text 'BUS ONLY' painted on the pavement.",
+      "inference_time_sec": 7.274,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
+      "ground_truth": "Airport terminal arrival area",
+      "prediction": "The environment depicted is that of an airport terminal. This is indicated by the presence of taxi lanes, which are typically found at airports to allow vehicles to enter and exit the terminal area. The terminal seating suggests a waiting area for passengers, and the airline signage, such as 'United' and 'Delta', are common in airport settings where passengers can check in or wait for their flights.",
+      "inference_time_sec": 8.682,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the airline signage and pavement markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The airline signage and pavement markings in this scene are in English. This can be deduced from the visible text on the signs and markings, which are written in the Latin alphabet and use English words such as 'United' and 'Exit'. The use of English suggests that the location is likely in a country where English is commonly used, such as the United States or a country with a significant English-speaking population.",
+      "inference_time_sec": 9.006,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
+      "ground_truth": "4.1 seconds",
+      "prediction": "The pavement marking showing AXI passed by the host vehicle is visible at the 1-second mark.",
+      "inference_time_sec": 4.808,
+      "error": ""
+    }
+  ]
+}

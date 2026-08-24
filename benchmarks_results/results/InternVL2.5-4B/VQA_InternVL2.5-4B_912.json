@@ -1,0 +1,70 @@
+{
+  "video_id": 912,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/912.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What numbers are located directly to the right of the address number 1033 on the low stone retaining wall?",
+      "ground_truth": "The numbers '35' and '37' beside 1033 [entity_001]",
+      "prediction": "The numbers located directly to the right of the address number 1033 on the low stone retaining wall are 35 and 37.",
+      "inference_time_sec": 5.827,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct numeric text instances are displayed on the low stone retaining wall?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct numeric text instances displayed on the low stone retaining wall. The first instance is '1033-35-37', and the second instance is '1033-35-37' again, which is repeated twice on the wall.",
+      "inference_time_sec": 7.355,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the distinct numbers on the stone wall encountered as the vehicle drives forward?",
+      "ground_truth": "1st: 1033 [entity_001], 2nd: '35', 3rd: '37'",
+      "prediction": "As the vehicle drives forward, the distinct numbers on the stone wall are encountered in the order of '1033', followed by '35', and finally '37'.",
+      "inference_time_sec": 5.889,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text on the stone wall or near the dealership indicate a driving constraint or hazard?",
+      "ground_truth": "No driving constraints or hazards are indicated by the visible text.",
+      "prediction": "Yes, the stone wall near the dealership has a sign with the number '1033-35-37', which could be a reference to a specific location or address, potentially indicating a driving constraint or hazard.",
+      "inference_time_sec": 6.459,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of a car dealership and address numbers suggest about the driving environment?",
+      "ground_truth": "Suburban commercial roadway",
+      "prediction": "The presence of a car dealership and address numbers on the roadside suggests that the driving environment is likely a suburban or semi-urban area where commercial establishments are common. The dealership indicates a commercial zone, while the address numbers imply that the area is organized and possibly residential. This mix of commercial and residential elements is typical of suburban areas where businesses are located near residential neighborhoods.",
+      "inference_time_sec": 8.348,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script is used for the address and numbers displayed on the stone wall?",
+      "ground_truth": "Latin script and Arabic numerals",
+      "prediction": "The address and numbers displayed on the stone wall are written in a script that appears to be Arabic.",
+      "inference_time_sec": 4.761,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the address number 1033 first become visible on the stone wall?",
+      "ground_truth": "At timestamp 6.0",
+      "prediction": "The address number 1033 first becomes visible on the stone wall in the third timestamp of the video.",
+      "inference_time_sec": 4.991,
+      "error": ""
+    }
+  ]
+}

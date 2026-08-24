@@ -1,0 +1,70 @@
+{
+  "video_id": 962,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/962.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located to the right of the ONLY lane marking?",
+      "ground_truth": "LINK-SHUT [entity_010] to the right of ONLY [entity_009]",
+      "prediction": "The user wants to identify text located to the right of a specific lane marking.\n\n1.  **Identify the \"ONLY lane marking\":** Looking through the frames, specifically around 00:00 to 00:01, there is a large white text painted on the road surface in the lane the camera car is in (or slightly to the left of the center). The text reads \"ONLY\". This is a standard road marking indicating a lane is for a specific purpose (likely right turn or left turn, though here it seems to be a general lane designation). Wait, looking closer at frame 00",
+      "inference_time_sec": 13.326,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "The user wants me to count vehicle-mounted text instances in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify vehicles and any text visible on them.\n2.  **Frame 1 (00:00):**\n    *   There's a black van on the right. It has white text on the side. It looks like \"Academy Sports + Outdoors\" or something similar, but it's partially obscured and blurry. Wait, looking closer at the side, it says \"Academy\". Let's count that as one instance.\n    *   There",
+      "inference_time_sec": 12.65,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the text instances AHEAD, SCHOOL, and Hampton Inv between 3.767s and 4.433s?",
+      "ground_truth": "1st: AHEAD [entity_011], 2nd: SCHOOL [entity_012], 3rd: Hampton Inv [entity_013]",
+      "prediction": "The user wants to know the order in which specific text instances appear in the video between 3.767s and 4.433s.\n\n1.  **Identify the text instances:**\n    *   **AHEAD:** I need to look for a sign or text that says \"AHEAD\". Looking at the frames, specifically around 0.3s to 0.4s, there is a yellow diamond-shaped sign on the right side of the road. It says \"AHEAD\". Wait, let me re-examine.\n    *   Looking at frame 0.3s:",
+      "inference_time_sec": 15.67,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text indicating a driving constraint is visible between the Starbucks Coffee storefront and the Diner outlet?",
+      "ground_truth": "ONE WAY [entity_020]",
+      "prediction": "The user wants to identify a specific regulatory text visible in the video.\n\n1.  **Analyze the request:**\n    *   **Target:** Regulatory text indicating a driving constraint.\n    *   **Location:** Between the \"Starbucks Coffee\" storefront and the \"Diner\" outlet.\n    *   **Context:** The video shows a street scene in a city (likely NYC).\n\n2.  **Scan the video frames:**\n    *   **Frame 1 (00:00):** I see a \"PARK\" sign on the left. Further down, there's a \"Starbucks Coffee",
+      "inference_time_sec": 12.689,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of environment does the high density of storefronts and business signs suggest?",
+      "ground_truth": "commercial district",
+      "prediction": "The user wants to identify the type of environment based on the visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Buildings:** Tall, multi-story buildings line both sides of the street. They are close together, creating a \"canyon\" effect typical of dense urban areas.\n    *   **Storefronts:** There are numerous ground-floor businesses. I see signs for \"PARK & RIDE,\" \"Cosmic Diner,\" \"Hair Studio,\" and various other commercial establishments.\n    *   **Signage:** There are many vertical and horizontal signs advertising businesses (",
+      "inference_time_sec": 12.654,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the storefronts and street signs written in?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language of the text visible in the video.\n\n1.  **Analyze the visual content:** I see a city street scene, likely New York City given the yellow taxis, the architecture, and the general layout.\n2.  **Look for text:**\n    *   **Storefronts:**\n        *   Left side: \"CULTURE\", \"PARK\", \"COFFEE\", \"HAIR SALON\".\n        *   Right side: \"Cosmic Diner\", \"24\".\n    *   **Street Signs:**\n        *   Left side: \"",
+      "inference_time_sec": 12.706,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the ONLY lane marking visible in the clip?",
+      "ground_truth": "0.6s to 1.333s",
+      "prediction": "The user wants to identify the time range where a specific lane marking is visible.\n1.  **Identify the lane marking:** Looking at the video, specifically at the bottom of the road, there are large white letters painted on the asphalt. The letters spell \"SCHOOL\". This is a \"SCHOOL BUS STOP\" or similar warning marking.\n2.  **Scan the video for this marking:**\n    *   **00:00 - 00:01:** The marking \"SCHOOL\" is clearly visible on the road surface in the foreground. It's partially obscured by the car's hood/w",
+      "inference_time_sec": 12.756,
+      "error": ""
+    }
+  ]
+}

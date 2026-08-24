@@ -1,0 +1,70 @@
+{
+  "video_id": 930,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/930.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?",
+      "ground_truth": "HONG [entity_005] KONG [entity_006]",
+      "prediction": "The storefront text located between the party hall and the deli grocery is 'The Long Haul' as the vehicle passes by it before 3.9 seconds into the video.",
+      "inference_time_sec": 6.447,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?",
+      "ground_truth": "3",
+      "prediction": "Between 3.9 and 5.6 seconds, the vehicle passes by at least three distinct storefront or sign text instances. These include 'The Oyster Bar', 'LONG LONG', and 'Deli Grocery'.",
+      "inference_time_sec": 6.439,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign text is encountered immediately after the vehicle passes the sign for The Best?",
+      "ground_truth": "Best [entity_009]",
+      "prediction": "The sign text encountered immediately after the vehicle passes the sign for The Best is 'Deli Grocery'.",
+      "inference_time_sec": 4.823,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?",
+      "ground_truth": "None",
+      "prediction": "The visible text in the clip indicates a speed limit of 25 mph, which is a driving constraint that the driver must adhere to. Additionally, there is a sign that reads 'No Parking Anytime,' which is a hazard for drivers as it restricts parking in certain areas, potentially leading to traffic congestion or parking-related issues. These elements are crucial for drivers to be aware of to ensure safe and legal driving practices.",
+      "inference_time_sec": 9.148,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The driving environment depicted in the video is a busy urban street with a high density of storefronts. The signs indicate a commercial area with various businesses, including a restaurant, a bar, and a grocery store. The presence of multiple signs, some with bright colors and others with more subdued tones, suggests a vibrant and diverse commercial district. The variety of storefronts, along with the pedestrians and parked cars, indicates a lively and active urban setting.",
+      "inference_time_sec": 9.49,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the storefront signs encountered by the vehicle?",
+      "ground_truth": "English",
+      "prediction": "The storefront signs encountered by the vehicle are in both English and Chinese. For instance, 'The Orient' is written in English, while '香香' is the Chinese equivalent. This bilingual signage is common in areas with significant Chinese populations, indicating a multicultural environment.",
+      "inference_time_sec": 7.01,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the sign for The Best continuously visible to the camera vehicle?",
+      "ground_truth": "3.9 to 4.8 seconds",
+      "prediction": "The sign for The Best is continuously visible to the camera vehicle throughout the entire video, from the beginning to the end.",
+      "inference_time_sec": 5.05,
+      "error": ""
+    }
+  ]
+}

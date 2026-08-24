@@ -1,0 +1,70 @@
+{
+  "video_id": 978,
+  "model": "Qwen3.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/978.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory road marking near the commercial building relative to the pavement marking on the multi-lane avenue?",
+      "ground_truth": "To the right of ONLY [entity_001] across the access road",
+      "prediction": "The user wants to know the spatial relationship between two specific road markings.\n\n1.  **Identify the \"regulatory road marking near the commercial building\":**\n    *   Looking at the video, there's a large commercial building on the right side.\n    *   Near this building, there is an orange diamond-shaped sign. This is a regulatory or warning sign, but the prompt asks for a \"regulatory road marking\". Wait, let's look closer.\n    *   Ah, looking at the pavement itself, there are markings.\n    *   Let's re-evaluate \"regulatory road marking\". This",
+      "inference_time_sec": 13.15,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct road markings containing painted text are mentioned in the scene description?",
+      "ground_truth": "2",
+      "prediction": "The user wants to count distinct road markings with painted text.\n\n1.  **Analyze the video frames:**\n    *   **Frame 1 (00:00):** I see a large white arrow painted on the road in the left lane. Further ahead, there's text \"ONLY\" painted on the road surface.\n    *   **Frame 2 (00:01):** The car is moving forward. The text \"ONLY\" is clearly visible in the lane to the left. There's also an arrow in the lane to the right (partially visible). Wait, let's look closer.",
+      "inference_time_sec": 12.674,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the distinct road markings are encountered by the camera vehicle?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: STOP [entity_002]",
+      "prediction": "The user wants me to identify the order of distinct road markings seen in the video.\n\n1.  **Analyze the video:** I'll watch the video from start to finish and note down the road markings as they appear.\n2.  **Identify markings:**\n    *   **00:00 - 00:01:** The camera car is in a lane. To the left, there's a large white arrow pointing straight and slightly left. Wait, looking closer at the first frame, there's a large white arrow on the road surface in the lane to the left of the camera car. It",
+      "inference_time_sec": 15.612,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving action is implied by the regulatory road marking located near the modern commercial building?",
+      "ground_truth": "Stop, as indicated by STOP [entity_002]",
+      "prediction": "The user wants to identify a driving action based on a specific road marking.\n\n1.  **Locate the marking:** I need to find the \"regulatory road marking located near the modern commercial building\".\n    *   Looking at the first few frames (00.0s - 00.2s), there is a large white arrow painted on the road surface in the lane to the right of the center.\n    *   This arrow is positioned near a large, modern-looking building on the right side of the street (visible clearly in frames 00.0s, 00.1s,",
+      "inference_time_sec": 12.654,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential high-rises, commercial buildings, and multi-lane avenues suggest about the driving environment?",
+      "ground_truth": "Urban commercial and residential district",
+      "prediction": "The user wants me to interpret the visual cues in the video to describe the driving environment.\n\n1.  **Identify the key elements:**\n    *   **Residential high-rises:** I see tall brick buildings on the left side (e.g., at 00:00, 00:01). These look like apartment buildings or condos.\n    *   **Commercial buildings:** There are large, modern glass buildings on the right and further down the street (e.g., the tall white building at 00:00, the building with the lit windows at 00:01",
+      "inference_time_sec": 15.65,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is used for the road markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The user wants to identify the language or script used for the road markings in the video.\n\n1.  **Analyze the video:** I'll look at the road markings visible in the frames.\n2.  **Identify specific markings:**\n    *   In the first few frames (0.0s - 0.1s), there's a large white arrow on the road pointing left.\n    *   In frames 0.1s - 0.2s, the word \"ONLY\" is painted on the road surface in the lane to the left of the center lane.\n    *   In",
+      "inference_time_sec": 12.689,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the first pavement marking driven over, and at what timestamp is the regulatory road marking passed?",
+      "ground_truth": "ONLY [entity_001] at 0.1 seconds, STOP [entity_002] around 5.7 seconds",
+      "prediction": "The user wants to identify two specific events based on the video:\n1.  **First pavement marking driven over:** I need to look for the first time the car crosses a painted line or arrow on the road.\n    *   At 00:00, the car is approaching a large white arrow painted on the road. The arrow points straight and slightly right. The car is just about to enter the lane marked by this arrow.\n    *   By 00:01, the car is clearly driving over the arrow. The arrow is directly beneath the car's hood/windshield area. This seems",
+      "inference_time_sec": 15.648,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 952,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/952.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the motto \"Common Sense Solutions To Your Environmental Concerns\" on the service vehicle?",
+      "ground_truth": "Water Trearment & Environmental Specialists [entity_012]",
+      "prediction": "The user wants to identify specific text on a vehicle in the video.\n\n1.  **Identify the vehicle:** The user is asking about the \"service vehicle\". Looking at the video, there is a white van directly in front of the camera car for the first few seconds. It has \"CASCADE WATER SERVICES\" written on the back. This fits the description of a service vehicle.\n2.  **Locate the motto:** The user mentions the motto \"Common Sense Solutions To Your Environmental Concerns\". I need to find this text on the back of the white van.\n3.  **Find the text beneath the motto",
+      "inference_time_sec": 13.191,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are printed on or designate the yellow school vehicle?",
+      "ground_truth": "6",
+      "prediction": "The user wants me to count the distinct text instances on the yellow school vehicle.\n\n1.  **Identify the vehicle:** It's a yellow school bus.\n2.  **Scan for text:**\n    *   **Rear:**\n        *   Top left: \"SCHOOL BUS\" (visible in frame 00:00, 00:01).\n        *   Top right: \"SCHOOL BUS\" (visible in frame 00:00, 00:01).\n        *   Bottom left: \"SCHOOL BUS\" (visible in frame 0",
+      "inference_time_sec": 13.297,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the decals MOBILINK, 2626, and 379 CR become visible on the service vehicle?",
+      "ground_truth": "1st: MOBILINK [entity_005], 2nd: 2626 [entity_006], 3rd: 379 CR [entity_007]",
+      "prediction": "The user wants me to identify the chronological order of appearance for three specific decals on a service vehicle.\n\n1.  **Identify the vehicle:** The vehicle is a white van in the center of the frame, labeled \"CASCADE WATER SERVICES\".\n2.  **Locate the decals:**\n    *   **MOBILINK:** Looking at the first frame (00:00), on the right side of the screen, there is a storefront with a green sign that says \"andrinis\". Above it, partially visible, is a sign that says \"MOBILINK\". Wait, the prompt asks for decals",
+      "inference_time_sec": 13.162,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the yellow school vehicle indicates an emergency designation?",
+      "ground_truth": "EMERGENCY 0008 [entity_022]",
+      "prediction": "The user wants to identify text on the yellow school vehicle that indicates an emergency designation.\n\n1.  **Locate the yellow school vehicle:** It's visible in the first few frames (00:00 - 00:03) on the left side of the road.\n2.  **Examine the text on the vehicle:**\n    *   In the first frame (00:00), I see \"GARDEN SCHOOL\" on the side.\n    *   In the second frame (00:01), the rear of the bus is visible. There is text on the back",
+      "inference_time_sec": 13.177,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign?",
+      "ground_truth": "Residential neighborhood",
+      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **School Bus:** I see a yellow school bus in the left lane. This indicates a school zone or an area near a school.\n    *   **Pedestrians on a sidewalk:** In the early frames (00:00 - 00:02), I see people walking on the sidewalk to the right. This suggests a residential or mixed-use area where people walk.\n    *   **Temporary garage sale sign:** In the later",
+      "inference_time_sec": 13.228,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area codes visible on the vehicles suggest this clip was filmed in the New York metropolitan area?",
+      "ground_truth": "516.932.3030 [entity_003] and 718-335-6363 [entity_021]",
+      "prediction": "The user wants to identify telephone area codes visible on the vehicles in the video that point to the New York metropolitan area.\n\n1.  **Analyze the first frame (00:00):**\n    *   There is a white van directly in front of the camera.\n    *   The text on the back of the van reads \"CASCADE WATER SERVICES\".\n    *   Below that, there is a phone number: \"516-932-3030\".\n    *   The area code is **516**.\n\n2.  **Verify the area code:**\n    *",
+      "inference_time_sec": 13.247,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle identification number 2626 first become clearly visible on the service vehicle?",
+      "ground_truth": "0.933s",
+      "prediction": "The user wants to find the timestamp when the vehicle identification number \"2626\" is clearly visible on the service vehicle.\n\n1.  **Identify the service vehicle:** In the first few frames, there is a white van directly in front of the camera car. The back of the van says \"CASCADE WATER SERVICES\". This is the service vehicle.\n2.  **Locate the number:** I need to look for the number \"2626\" on this van.\n3.  **Scan the frames:**\n    *   **00:00:** The van is visible. The text on",
+      "inference_time_sec": 13.205,
+      "error": ""
+    }
+  ]
+}

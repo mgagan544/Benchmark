@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "The user wants to identify what is to the right of the marked zebra crossing as the vehicle approaches the junction.\n\n1.  **Identify the zebra crossing:** I need to find the white stripes painted on the road indicating a pedestrian crossing.\n    *   Looking at the frames, specifically around 00:02 and 00:03, I see white stripes on the road surface.\n    *   In frame 00:02, the car is approaching a junction. There are white stripes on the road to the left, but the main crossing seems to be further ahead or slightly to",
+      "inference_time_sec": 13.215,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "The user wants me to count distinct signboards with numbers on the right side of the road at the beginning of the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   Looking at the right side of the road, there's a large billboard.\n    *   It has a large number \"99\" on it.\n    *   There's another sign further back, but it's blurry and hard to distinguish as a distinct signboard with a number. Wait, let's look closer.\n    *   Actually, looking at the very first frame, there is a",
+      "inference_time_sec": 13.281,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "The user wants to identify a landmark on the far left of the video.\n1.  **Identify the \"signboard 9999\"**: Looking at the first few frames, specifically around 00:00 to 00:01, there is a large billboard on the right side of the road. It has a large number \"99\" visible. Wait, the prompt says \"signboard 9999\". Let me look closer. Ah, at 00:00, there's a billboard on the right. It says \"99\" clearly. Maybe the user",
+      "inference_time_sec": 13.22,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "The user is asking about a specific signboard visible in the video, specifically one with the number \"99\" on it. I need to locate this sign and analyze its content to see if it implies any driving actions or constraints.\n\n1.  **Locate the sign:** In the first few frames (00:00 - 00:01), there is a large billboard on the right side of the road. It has a large number \"99\" on it.\n2.  **Analyze the text:** The text on the billboard appears to be in Hebrew. It says \"בוסת",
+      "inference_time_sec": 13.205,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The user wants me to interpret the driving environment based on specific visual cues: a multi-lane curved road, a gas station, and a signboard.\n\n1.  **Analyze the \"multi-lane curved road\":**\n    *   This indicates a developed area, likely a city or a major suburb. It's not a rural two-lane road.\n    *   The curve suggests an intersection or a roundabout approach, requiring careful navigation.\n    *   The presence of multiple lanes implies a high volume of traffic or a major thoroughfare.\n\n2.  **Analyze the \"gas station\":**",
+      "inference_time_sec": 13.22,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The user wants to identify the script or numbering system on the signboard to the right.\n\n1.  **Locate the signboard:** In the first few frames (00:00 - 00:02), there is a large white billboard on the right side of the road.\n2.  **Examine the text:** I can see large numbers and Hebrew letters.\n    *   There is a large number \"99\".\n    *   Above and around it, there are Hebrew characters. For example, \"בוסתן\" (Bustan) and \"תפוחים",
+      "inference_time_sec": 13.201,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The user wants to find the timestamps for two events related to a signboard with \"99\" on it.\n\n1.  **Identify the signboard:** I need to look for a billboard or sign that has the number \"99\" on it.\n2.  **Scan the video:**\n    *   **00:00:** The video starts. On the right side, there's a large billboard. It's partially visible but clearly shows a large \"99\" and some Hebrew text. This is the signboard.\n    *   **00:01:** The car is moving",
+      "inference_time_sec": 13.221,
+      "error": ""
+    }
+  ]
+}

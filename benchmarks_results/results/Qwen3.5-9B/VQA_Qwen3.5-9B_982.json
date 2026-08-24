@@ -1,0 +1,70 @@
+{
+  "video_id": 982,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/982.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of Las Vegas relative to WEST on the overhead gantry?",
+      "ground_truth": "to the right of WEST [entity_005]",
+      "prediction": "The user wants to know the spatial relationship between \"Las Vegas\" and \"WEST\" on the overhead sign.\n\n1.  **Identify the sign:** I need to look at the first frame (00:00) where the overhead gantry is clearly visible.\n2.  **Locate \"WEST\":** On the right side of the green sign, there is a shield with \"215\" and the word \"WEST\" next to it.\n3.  **Locate \"Las Vegas\":** Below the \"215 WEST\" shield, the text \"Las Vegas\" is written.",
+      "inference_time_sec": 13.213,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the green roadside sign on the right side of the road?",
+      "ground_truth": "4",
+      "prediction": "The user wants me to count the distinct text instances on the green roadside sign on the right side of the road.\n\n1.  **Identify the sign:** Looking at the video, specifically around the 00:02 mark, a green sign appears on the right side of the highway, just before an overpass.\n2.  **Locate the text:** The sign has text on it.\n3.  **Identify distinct text instances:**\n    *   Top line: \"Las Vegas\"\n    *   Middle line: \"Rental Car Return\"\n    *   Bottom line: \"NEXT",
+      "inference_time_sec": 13.306,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances NSKI, STOPS AT, and Rental are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Rental [entity_009], 2nd: NSKI [entity_014], 3rd: STOPS AT [entity_015]",
+      "prediction": "The user wants to determine the order of appearance for three specific text instances: \"NSKI\", \"STOPS AT\", and \"Rental\".\n\n1.  **Analyze the video frames to locate the text.**\n    *   **Frame 00:00:** I see a large green overhead sign. It says \"215 EAST Henderson 1/4 MILE\" and \"215 WEST Las Vegas 1/4 MILE\". No target text here.\n    *   **Frame 00:01:** The camera is moving forward. A yellow school bus is visible. A white",
+      "inference_time_sec": 13.218,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional text on the green roadside sign indicates where a driver should turn to return a rental car?",
+      "ground_truth": "NEXT RIGHT [entity_010]",
+      "prediction": "The user wants to find specific text on a green roadside sign.\n1.  **Identify the sign:** I need to look for a green sign on the right side of the road.\n2.  **Scan the video frames:**\n    *   Frame 1: Shows a large overhead sign for I-215 East/West. No specific rental car sign yet.\n    *   Frame 2: Still approaching the overhead sign.\n    *   Frame 3: As the car passes under the first overpass, a green sign becomes visible on the right embankment. It reads \"Las Vegas",
+      "inference_time_sec": 13.32,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the overhead route signs and roadside signs, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants me to identify the driving environment based on the signs in the video.\n\n1.  **Analyze the overhead signs:**\n    *   The first sign (00:00) shows \"I-215 EAST\" pointing left towards \"Henderson\" and \"I-215 WEST\" pointing right towards \"Las Vegas\". This indicates a major highway interchange or split.\n    *   The sign also says \"1/4 MILE\" for both directions, suggesting an upcoming exit or split.\n    *   The second sign (00:02) says \"Las Vegas",
+      "inference_time_sec": 13.208,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city name visible on the overhead gantry suggests the geographical region of the clip?",
+      "ground_truth": "Las Vegas [entity_006]",
+      "prediction": "The user wants to identify a city name from an overhead sign in the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a large green overhead gantry sign.\n    *   The sign has two main directions.\n    *   Left side: \"215 EAST\" with an arrow pointing left. Below it says \"Henderson\" and \"1/4 MILE\".\n    *   Right side: \"215 WEST\" with an arrow pointing right. Below it says \"Las Vegas\" and \"1/4 MILE\".",
+      "inference_time_sec": 13.26,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text NSKI first become visible on the back of the bus?",
+      "ground_truth": "4.467 seconds",
+      "prediction": "The user wants to find the timestamp when the text \"NSKI\" first appears on the back of the bus.\n\n1.  **Analyze the frames:** I need to look at the frames where the yellow school bus is visible and check its rear.\n2.  **Frame 00:00:** The bus is visible. The back is facing the camera. I can see some text, but it's blurry. It looks like \"NSKI\" might be there, but let's check the next frame to be sure. Wait, looking closely at the first frame, the text is visible but maybe not perfectly clear",
+      "inference_time_sec": 13.214,
+      "error": ""
+    }
+  ]
+}

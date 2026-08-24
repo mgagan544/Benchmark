@@ -1,0 +1,70 @@
+{
+  "video_id": 980,
+  "model": "Qwen2-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/980.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Upper Happy on the overhead sign?",
+      "ground_truth": "Valley Rd [entity_003] directly below Upper Happy [entity_002]",
+      "prediction": "The text located directly below Upper Happy on the overhead sign is \"Valley Rd\".",
+      "inference_time_sec": 5.038,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the highway signs mentioned in the scene?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances displayed on the highway signs.",
+      "inference_time_sec": 4.724,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds?",
+      "ground_truth": "1st: Acalanes Rd [entity_001], Upper Happy [entity_002], Valley Rd [entity_003]; 2nd: EXIT [entity_004]",
+      "prediction": "The sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds is as follows: A green sign with white text indicating \"Acalanes Rd Upper Happy Valley Rd\" is visible, followed by a green sign with white text indicating \"Exit 47\", and then a green sign with white text indicating \"Exit 47\".",
+      "inference_time_sec": 9.104,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is indicated near the green gore sign?",
+      "ground_truth": "An exit action is indicated by the EXIT [entity_004] sign.",
+      "prediction": "The green gore sign indicates that the driver should take the next exit to the right.",
+      "inference_time_sec": 5.005,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of signs like Acalanes Rd and EXIT suggest?",
+      "ground_truth": "Highway",
+      "prediction": "The mix of signs like Acalanes Rd and EXIT suggests that the driver is on a highway or a major road with multiple exits and directions. This type of environment is typical in urban or suburban areas where there are multiple destinations and routes available. The presence of these signs indicates that the driver is likely navigating through a complex network of roads and highways, which can be common in larger cities or regions with extensive road networks.",
+      "inference_time_sec": 8.515,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the overhead and gore signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead and gore signs is written in English.",
+      "inference_time_sec": 4.811,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the vehicle pass the green gore sign displaying EXIT?",
+      "ground_truth": "Between 2.633 and 2.733 seconds for EXIT [entity_004]",
+      "prediction": "The vehicle passes the green gore sign displaying EXIT at 10:00 AM.",
+      "inference_time_sec": 4.937,
+      "error": ""
+    }
+  ]
+}

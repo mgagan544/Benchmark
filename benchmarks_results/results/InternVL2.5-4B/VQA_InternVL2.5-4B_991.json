@@ -1,0 +1,70 @@
+{
+  "video_id": 991,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/991.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the instruction to use the other side relative to the sidewalk sign?",
+      "ground_truth": "To the right of SIDEWALK [entity_001]",
+      "prediction": "The instruction to use the other side is positioned to the left of the sidewalk sign.",
+      "inference_time_sec": 5.035,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the blue police barricades?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct text instances visible on the blue police barricades. The first one reads 'POLICE LINE DO NOT CROSS,' the second one is partially obscured but appears to say 'POLICE LINE DO NOT CROSS,' and the third one is not fully visible but seems to be a continuation of the same message.",
+      "inference_time_sec": 7.77,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances on the blue barricades are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: POLICE LINE [entity_005], 2nd: DO NOT CROSS [entity_006], 3rd: NYPD [entity_007]",
+      "prediction": "As the vehicle moves forward, the first blue barricade displays the text 'POLICE LINE DO NOT CROSS' in white letters. The second blue barricade has the text 'POLICE LINE DO NOT CROSS' in white letters on a blue background. The third blue barricade has the text 'POLICE LINE DO NOT CROSS' in white letters on a blue background, and the fourth blue barricade has the text 'POLICE LINE DO NOT CROSS' in white letters on a blue background.",
+      "inference_time_sec": 10.288,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the large orange sign on the left side of the road?",
+      "ground_truth": "CLOSED [entity_002]",
+      "prediction": "The large orange sign on the left side of the road displays the text 'POLICE LINE DO NOT CROSS' in bold, capital letters. This sign is positioned on a blue stand and is clearly visible in the initial frame of the video. It serves as a warning to drivers and pedestrians not to cross the marked police line, which is typically used to cordon off a crime scene or an area under investigation. The sign's bright color and prominent placement are designed to ensure high visibility and to deter unauthorized access to the restricted area.",
+      "inference_time_sec": 10.583,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of construction barriers, police barricades, and a commercial building, what kind of driving environment is depicted?",
+      "ground_truth": "Urban construction zone",
+      "prediction": "The driving environment depicted in the video is urban and somewhat congested. The presence of construction barriers suggests ongoing construction work, which could lead to traffic delays or changes in the road layout. The police barricades indicate that there might be a restricted area or a need for traffic control, possibly due to an incident or event. The commercial building in the background suggests that the area is developed and possibly a commercial zone. The combination of these elements indicates that the driver is navigating through a city area that is undergoing some form of development or has specific traffic management requirements.",
+      "inference_time_sec": 11.03,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which abbreviation on the blue barricades suggests the city where this clip was filmed?",
+      "ground_truth": "NYPD [entity_007]",
+      "prediction": "The abbreviation 'NYC' on the blue barricades suggests that the clip was filmed in New York City.",
+      "inference_time_sec": 4.951,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the instruction to use the other side first become visible on the left?",
+      "ground_truth": "0.133 seconds",
+      "prediction": "The instruction to use the other side first becomes visible on the left at the 1-second mark.",
+      "inference_time_sec": 4.839,
+      "error": ""
+    }
+  ]
+}

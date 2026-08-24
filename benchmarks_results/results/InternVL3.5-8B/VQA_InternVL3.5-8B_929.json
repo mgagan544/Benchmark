@@ -1,0 +1,70 @@
+{
+  "video_id": 929,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/929.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the signboard displaying Gabinst relative to the signboard displaying Natural?",
+      "ground_truth": "To the left of Natural [entity_003]",
+      "prediction": "The signboard displaying Gabinst is positioned to the left of the signboard displaying Natural.",
+      "inference_time_sec": 7.792,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belonging to storefront or real estate signboards are visible in this clip?",
+      "ground_truth": "9",
+      "prediction": "Two",
+      "inference_time_sec": 6.339,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle?",
+      "ground_truth": "1st: TILE [entity_002], 2nd: Gabinst [entity_005], 3rd: KAPLON [entity_006]",
+      "prediction": "The vehicle first encounters the signboard displaying 'TILE', followed by the 'Gabinst' signboard, and finally the 'KAPLON' signboard as it progresses down the street.",
+      "inference_time_sec": 9.738,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "No regulatory or warning text is visible in the clip.",
+      "prediction": "Yes, there is a yellow sign on the left side of the street that reads \"CAUTION PEDESTRIANS\" indicating a potential hazard or warning for drivers to be cautious of pedestrians.",
+      "inference_time_sec": 9.553,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of storefront signboards and real estate signs suggest about this driving environment?",
+      "ground_truth": "An urban commercial or industrial district",
+      "prediction": "The mix of storefront signboards and real estate signs suggests that this driving environment is likely in a commercial or mixed-use area where businesses and possibly residential properties are located. The presence of storefronts indicates that there are shops or services catering to the local community, while real estate signs may point to areas where property transactions or rentals are common. This combination of elements creates a dynamic urban setting where commercial activities and real estate interests coexist, contributing to the overall character of the neighborhood.",
+      "inference_time_sec": 14.462,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional convention is suggested by the phone number format containing the area code (718)?",
+      "ground_truth": "North American numbering plan, specifically New York City",
+      "prediction": "The phone number format containing the area code (718) suggests that the video is set in the New York City area, as 718 is a well-known area code for Brooklyn, New York.",
+      "inference_time_sec": 9.932,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the real estate sign displaying KAPLON first align with the camera, and when does the vehicle pass the area code (718)?",
+      "ground_truth": "KAPLON [entity_006] aligns at 6.6 seconds; (718) [entity_010] is passed at 8.2 seconds",
+      "prediction": "The real estate sign displaying KAPLON first aligns with the camera at the 10-second mark. The vehicle passes the area code (718) shortly after, around the 12-second mark.",
+      "inference_time_sec": 10.285,
+      "error": ""
+    }
+  ]
+}

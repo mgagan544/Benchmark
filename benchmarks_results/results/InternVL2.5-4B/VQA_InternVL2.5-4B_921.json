@@ -1,0 +1,70 @@
+{
+  "video_id": 921,
+  "model": "InternVL2.5-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/921.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the MUST EXIT sign relative to the WORK ZONE sign that appears around 0.467 seconds?",
+      "ground_truth": "To the right of WORK [entity_006] ZONE [entity_007] sign",
+      "prediction": "The spatial position of the MUST EXIT sign is to the left of the WORK ZONE sign. The WORK ZONE sign is positioned further to the right, and the MUST EXIT sign is placed slightly above the WORK ZONE sign, indicating a hierarchy in the traffic signs' placement.",
+      "inference_time_sec": 7.941,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible in this video clip?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct license plates visible in the video clip.",
+      "inference_time_sec": 4.208,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of signs encountered on the right side of the road between 0.0 and 1.0 seconds?",
+      "ground_truth": "1st: SPEED [entity_004] LIMIT [entity_005], 2nd: WORK [entity_006] ZONE [entity_007], 3rd: MUST [entity_008] EXIT [entity_009]",
+      "prediction": "The order of signs encountered on the right side of the road between 0.0 and 1.0 seconds is: a 'SPEED LIMIT 20' sign, followed by a 'NO STANDING ANYTIME' sign, and then a 'NO STOPPING ANYTIME' sign.",
+      "inference_time_sec": 7.519,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning sign is located beside the construction flagger holding the STOP paddle near the end of the clip?",
+      "ground_truth": "ROAD [entity_031] WORK [entity_006] AHEAD [entity_012] sign",
+      "prediction": "Beside the construction flagger holding the STOP paddle, there is a STOP sign visible in the scene. This sign is positioned to the right of the flagger and is placed on a pole that is part of the roadside infrastructure. The STOP sign is a standard traffic sign used to indicate that drivers must come to a complete stop before proceeding, which is a common requirement at construction zones or areas where traffic needs to be controlled for safety reasons.",
+      "inference_time_sec": 9.454,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of area does the mix of airport terminal, parking, and exit signs suggest?",
+      "ground_truth": "Airport access road",
+      "prediction": "The mix of airport terminal, parking, and exit signs suggests that the area is a transportation hub, likely near an airport. The signs indicate directions to various parts of the airport, such as terminals, parking areas, and the airport exit, which are common features in areas where travelers need to navigate between different parts of the airport infrastructure.",
+      "inference_time_sec": 7.968,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used on the signs such as ROAD WORK AHEAD and MUST EXIT?",
+      "ground_truth": "English",
+      "prediction": "The signs such as ROAD WORK AHEAD and MUST EXIT are written in both English and Spanish.",
+      "inference_time_sec": 4.906,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the RAMP speed limit sign visible in the clip?",
+      "ground_truth": "6.333 seconds to 9.733 seconds",
+      "prediction": "The RAMP speed limit sign is visible in the clip from the beginning to the end.",
+      "inference_time_sec": 4.628,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 945,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/945.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located to the left of the regulatory notice warning about doubled speeding fines?",
+      "ground_truth": "ROAD [entity_011] WORK [entity_012] AHEAD [entity_004] sign",
+      "prediction": "The user wants to identify a specific sign based on its location relative to another sign.\n\n1.  **Identify the \"regulatory notice warning about doubled speeding fines\":** I need to scan the video for a sign that mentions \"doubled speeding fines\" or similar text.\n    *   Looking at the frames, specifically around 00:03 and 00:04, there is a white rectangular sign on the left side of the road, just before the overpass.\n    *   Let's zoom in on that sign. It says \"DOUBLING SPEEDING FINES\" at the",
+      "inference_time_sec": 13.321,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 0.2 seconds and 2.0 seconds?",
+      "ground_truth": "4",
+      "prediction": "The user wants me to count distinct, legible text instances visible in the video between 0.2 seconds and 2.0 seconds.\n\n1.  **Analyze the video frames:**\n    *   **0.0s - 0.1s:** The car is approaching a curve. There are orange signs, but the text isn't clearly legible yet.\n    *   **0.2s:** The car is turning. I see a \"SPEED LIMIT 30\" sign on the left. Wait, looking closely at the crop, it's partially visible but let's see if it's",
+      "inference_time_sec": 13.124,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence in which the speed limit sign, the sidewalk closed placard, and the road work warning sign are encountered?",
+      "ground_truth": "1st: ROAD [entity_011] WORK [entity_012] AHEAD [entity_004], 2nd: SPEED [entity_013] LIMIT [entity_014], 3rd: SIDEWALK [entity_015] closed FOR CONST [entity_016]",
+      "prediction": "The user wants me to identify the order in which three specific signs appear in the video.\n\n1.  **Identify the signs:**\n    *   **Speed limit sign:** I see a sign that says \"SPEED LIMIT 30\".\n    *   **Sidewalk closed placard:** I see a sign that says \"SIDEWALK CLOSED\".\n    *   **Road work warning sign:** I see a sign with an orange diamond shape, likely indicating road work or construction.\n\n2.  **Scan the video chronologically:**\n    *   **00:00 - 00:",
+      "inference_time_sec": 13.224,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the speed limit sign located to the left of the sidewalk closed placard?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014] of 30",
+      "prediction": "The user wants to identify a specific speed limit sign based on its location relative to another sign.\n\n1.  **Identify the \"sidewalk closed placard\":** I need to scan the video for a sign that says \"Sidewalk Closed\" or something similar.\n    *   Looking at the first few frames (00:00 - 00:01), on the right side, there's an orange sign. It looks like a standard construction sign. Let's look closer. It's an orange diamond sign with a symbol, likely \"Sidewalk Closed\" or similar. Wait, looking",
+      "inference_time_sec": 13.194,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the signs for exits, street names, and work zones, what kind of driving environment is depicted?",
+      "ground_truth": "Urban highway construction zone",
+      "prediction": "The user wants me to identify the driving environment based on visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Road type:** It's a paved road, curving slightly. It looks like an on-ramp or a service road merging onto a larger highway.\n    *   **Barriers:** There are concrete jersey barriers lining the road, separating it from other areas (park, construction, other lanes).\n    *   **Signs:**\n        *   \"SPEED LIMIT 30\" signs are visible.\n        *   Orange construction signs are present.",
+      "inference_time_sec": 13.267,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street names visible on the overhead gantry suggest a specific city? What text supports this?",
+      "ground_truth": "New York City, supported by E 125 St [entity_019] and 2Ave [entity_021]",
+      "prediction": "The user wants to identify a specific city based on street names visible on an overhead gantry in the video.\n\n1.  **Scan the video for overhead gantries:** I need to look for green highway signs or overhead structures.\n2.  **Locate the gantry:**\n    *   00:00 - 00:02: The car is driving on a curved road. There are orange construction signs. No overhead gantry yet.\n    *   00:03: The car approaches an overpass. There is a green sign on the gantry.\n    *",
+      "inference_time_sec": 13.276,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the regulatory sign warning about doubled speeding fines first become legible, and when does it become illegible?",
+      "ground_truth": "Legible at 0.467 seconds, illegible at 0.6 seconds",
+      "prediction": "The user wants to find the timestamps for when a specific sign is legible and illegible.\n1.  **Identify the sign:** The user is asking about a \"regulatory sign warning about doubled speeding fines\". This is typically a sign that says \"DOUBLED SPEEDING FINES\" or similar.\n2.  **Scan the video frames:** I need to look through the provided frames to find this sign.\n    *   **00:00:** I see orange construction signs. One on the right looks like a \"SPEED LIMIT 30\" sign, but it's blurry. Wait,",
+      "inference_time_sec": 13.182,
+      "error": ""
+    }
+  ]
+}

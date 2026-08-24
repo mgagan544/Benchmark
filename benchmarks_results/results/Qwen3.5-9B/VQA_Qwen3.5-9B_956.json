@@ -1,0 +1,70 @@
+{
+  "video_id": 956,
+  "model": "Qwen3.5-9B",
+  "video": "/home2/gagandeep/benchmark/videos/900/956.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What instruction is located directly to the left of the SERVICE signboard?",
+      "ground_truth": "PERMIT [entity_014] to the left of SERVICE [entity_013]",
+      "prediction": "The user wants to identify the text on a signboard located to the left of a \"SERVICE\" sign.\n\n1.  **Scan the video for a \"SERVICE\" sign.**\n    *   Looking through the frames, I see a green sign on the right side of the road in the early frames (00:00 - 00:01). It says \"EXIT 7A\". That's not it.\n    *   Wait, let's look closer at the signs.\n    *   In frame 00:02, there's a green sign on the left side of the road",
+      "inference_time_sec": 13.309,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text instances are visible on the white transport van between 1.133s and 1.767s?",
+      "ground_truth": "5",
+      "prediction": "The user wants me to count the distinct vehicle-mounted text instances on the white transport van visible between 1.133s and 1.767s.\n\n1.  **Identify the vehicle:** The white transport van is visible on the left side of the frame in the early part of the video, specifically around 0.0s to 0.1s. Wait, the prompt asks for the time range 1.133s to 1.767s. Let me re-examine the timestamps and frames.\n    *   0.0s: White van is",
+      "inference_time_sec": 13.161,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead sign texts are encountered at the very beginning of the clip?",
+      "ground_truth": "1st: 7314 [entity_001], 2nd: EXIT [entity_002]",
+      "prediction": "The user wants to know the order of overhead sign texts at the very beginning of the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a green sign on the right side of the road. It says \"EXIT 7A\".\n    *   Looking further down the road, there are other signs, but they are distant.\n    *   Wait, let's look closer at the very first frame.\n    *   There is a green sign on a pole on the right: \"EXIT 7A\".\n    *   Looking further ahead, there",
+      "inference_time_sec": 13.233,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What weight limit restriction is displayed on the gantry to restrict vehicle weight?",
+      "ground_truth": "8000 Lbs [entity_022]",
+      "prediction": "The user wants to identify a specific weight limit from the video.\n\n1.  **Scan the video for signs:** I need to look for overhead signs or gantries that display weight limits.\n2.  **Locate the sign:** In the early frames (around 00:00 to 00:02), there is a green sign on the right side of the road, but it's an exit sign (\"EXIT 7A\").\n3.  **Look further ahead:** As the car moves forward, around 00:02, a white rectangular sign appears on the right side, mounted",
+      "inference_time_sec": 13.221,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, lane-use restrictions, and weight limits, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead exit signs:** I see green signs hanging over the road. One says \"EXIT 7A\". Another says \"FDR NY NORTH BRIDGE\". Another says \"E 34 St Midtown Tun\". These are classic highway/expressway signs.\n    *   **Lane-use restrictions:** There are signs like \"WEIGHT LIMIT 8000 LBS\" and \"PASSENGER CARS ONLY\". This indicates a controlled",
+      "inference_time_sec": 13.08,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific city is indicated by the markings on the white transport van?",
+      "ground_truth": "NYC [entity_003]",
+      "prediction": "The user wants to identify the city based on the markings on the white transport van.\n\n1.  **Locate the van:** The white van is visible in the first few frames (00:00 - 00:01) on the left side of the road.\n2.  **Examine the markings:** I need to look closely at the text on the side of the van.\n3.  **Read the text:** In the first frame, on the rear side panel of the van, there is blue text. It reads \"NYC CHILDREN'S SERVICES\".\n4.  **Ident",
+      "inference_time_sec": 13.32,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the vehicle-mounted markings NYC, CHILDREN'S, SERVICES, DIV, and OF SOUTH AND FAMILY JUSTICE continuously visible on the white transport van?",
+      "ground_truth": "1.133s to 1.767s",
+      "prediction": "The user wants to find the specific time range where the text \"NYC CHILDREN'S SERVICES DIV OF SOUTH AND FAMILY JUSTICE\" is visible on the white van.\n\n1.  **Analyze the video frames:**\n    *   **00:00:** The white van is on the left. The text is partially visible but mostly obscured or just coming into view. Wait, looking closely at the first frame, the text is actually visible on the side door. Let's re-examine.\n    *   **00:00:** The van is right there. The text \"NYC CHILDREN'S",
+      "inference_time_sec": 13.194,
+      "error": ""
+    }
+  ]
+}

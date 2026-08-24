@@ -1,0 +1,70 @@
+{
+  "video_id": 959,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/959.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is visible on the green utility post located to the left of the OUTFRONT media branding?",
+      "ground_truth": "West Side [entity_006] way [entity_007] to the left of OUTFRONT [entity_003]",
+      "prediction": "The text 'GATE C' is visible on the green utility post to the left of the OUTFRONT media branding.",
+      "inference_time_sec": 8.528,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the vehicles in the active roadway lanes?",
+      "ground_truth": "6",
+      "prediction": "There are two distinct text instances visible on the vehicles in the active roadway lanes. The first is 'FDNY' on the red emergency vehicle, and the second is 'DON'T LITTER' on the white garbage truck.",
+      "inference_time_sec": 10.202,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the text on the construction fence, the FDNY SUV, and the garbage truck?",
+      "ground_truth": "1st: GATE [entity_008], 2nd: FDNY [entity_012], 3rd: DON'T [entity_013] LITTER [entity_014]",
+      "prediction": "The vehicle first encounters the text on the construction fence, then the FDNY SUV, and finally the garbage truck.",
+      "inference_time_sec": 8.246,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the rear right side of the silver garbage truck?",
+      "ground_truth": "DON'T [entity_013] LITTER [entity_014]",
+      "prediction": "Dont litter",
+      "inference_time_sec": 6.581,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a construction fence, municipal vehicles, and a large billboard?",
+      "ground_truth": "Urban city street",
+      "prediction": "The presence of a construction fence, municipal vehicles, and a large billboard suggests an urban driving environment with ongoing construction and commercial activity.",
+      "inference_time_sec": 8.486,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which text on the emergency SUV suggests the clip is filmed in New York City?",
+      "ground_truth": "FDNY [entity_012]",
+      "prediction": "The text 'FDNY' on the emergency SUV suggests the clip is filmed in New York City, as FDNY stands for the Fire Department of New York.",
+      "inference_time_sec": 9.059,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the billboard text simple ingredients not a lot of sugar visible?",
+      "ground_truth": "0.0s to 1.3s",
+      "prediction": "The billboard text 'simple ingredients, not a lot of sugar' is visible from the beginning of the video until the car passes under the billboard, which is approximately from the start of the video to around the 10-second mark.",
+      "inference_time_sec": 10.383,
+      "error": ""
+    }
+  ]
+}

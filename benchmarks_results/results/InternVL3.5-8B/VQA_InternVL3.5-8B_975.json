@@ -1,0 +1,70 @@
+{
+  "video_id": 975,
+  "model": "InternVL3.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/975.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead road sign located adjacent to the sign showing 20 AV?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007] adjacent to 20 AV [entity_001]",
+      "prediction": "The overhead road sign adjacent to the 20 AV sign displays the text 'BRONX'. This sign is positioned above the intersection, indicating the name of the street or area that the road leads to or is located in. It is a common practice in urban areas to have such signs to help drivers and pedestrians identify their location and navigate through the city. The presence of this sign suggests that the intersection is in a part of the Bronx, which is a borough of New York City. The sign is green with white lettering, consistent with standard traffic signage, and it is mounted on a pole that also holds the traffic lights. The",
+      "inference_time_sec": 17.409,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in the clip are mounted on vehicles?",
+      "ground_truth": "3",
+      "prediction": "One",
+      "inference_time_sec": 6.327,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the ego vehicle encounters the intersection street names and the highway directional signs?",
+      "ground_truth": "1st: 20 AV [entity_001] and Parsons Blvd [entity_002], 2nd: WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The ego vehicle first encounters the intersection street names '20 Av' and 'City Block' as it approaches the intersection. Following this, the vehicle passes by the highway directional signs indicating 'East 278' and 'East 95 North'.",
+      "inference_time_sec": 10.791,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional text is displayed on the overhead sign near the traffic lights to guide drivers toward the expressway?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The overhead sign displays the text 'expressway' with an arrow pointing to the right, indicating the direction to take for drivers wishing to access the expressway.",
+      "inference_time_sec": 9.081,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential homes, hedges, and apartment buildings suggest about the driving environment?",
+      "ground_truth": "Residential area",
+      "prediction": "The mix of residential homes, hedges, and apartment buildings suggests a suburban or urban environment with a blend of residential and commercial areas.",
+      "inference_time_sec": 8.626,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and expressway abbreviations suggest this clip is set in New York City?",
+      "ground_truth": "20 AV [entity_001], Parsons Blvd [entity_002], and WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The street names '20 Av' and '8 Av' along with the expressway abbreviation 'E 8 Av' suggest that the clip is set in New York City.",
+      "inference_time_sec": 9.48,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle carrying the license plate GKD-4491 begin to accelerate through the intersection?",
+      "ground_truth": "2.367 seconds",
+      "prediction": "The vehicle carrying the license plate GKD-4491 begins to accelerate through the intersection at the timestamp 10 seconds into the video.",
+      "inference_time_sec": 8.925,
+      "error": ""
+    }
+  ]
+}

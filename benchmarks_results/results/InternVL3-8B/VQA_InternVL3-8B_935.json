@@ -1,0 +1,70 @@
+{
+  "video_id": 935,
+  "model": "InternVL3-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/935.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the painted road marking SCHOOL, passed at 0.967 seconds, located relative to the MPH marking?",
+      "ground_truth": "To the right of MPH [entity_002]",
+      "prediction": "The SCHOOL marking is located directly above the MPH marking on the road.",
+      "inference_time_sec": 6.894,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances painted directly on the road pavement does the vehicle pass over in the first second of the clip?",
+      "ground_truth": "3",
+      "prediction": "Two",
+      "inference_time_sec": 5.851,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle encounters the road marking SCHOOL, the storefront JACKSON HO, and the sign RECTAURA?",
+      "ground_truth": "1st: SCHOOL [entity_003], 2nd: JACKSON HO [entity_004], 3rd: RECTAURA [entity_005]",
+      "prediction": "The vehicle first encounters the road marking SCHOOL, then passes by the storefront JACKSON HO, and finally approaches the sign RECTAURA.",
+      "inference_time_sec": 7.297,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit and warning text markings are passed by the vehicle on the road pavement before 1.0 second?",
+      "ground_truth": "2020 [entity_001], MPH [entity_002], and SCHOOL [entity_003]",
+      "prediction": "The vehicle passes the 'SCHOOL' and '20 MPH' markings on the road pavement before 1.0 second.",
+      "inference_time_sec": 7.204,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts JACKSON HO and RECTAURA appearing on the right side of the street at 2.533 seconds?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The presence of the storefronts JACKSON HO and RECTAURA suggests a commercial urban environment, likely a shopping or dining district within the city.",
+      "inference_time_sec": 7.553,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Based on the road markings and storefronts encountered between 0.867 and 2.533 seconds, what language is used in this area?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 5.916,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle drive past the painted SCHOOL zone marker on the road?",
+      "ground_truth": "0.967 seconds",
+      "prediction": "The vehicle drives past the painted SCHOOL zone marker on the road at the beginning of the video, which is around the timestamp 0 to 5 seconds.",
+      "inference_time_sec": 7.626,
+      "error": ""
+    }
+  ]
+}
