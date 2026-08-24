@@ -1,0 +1,70 @@
+{
+  "video_id": 905,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/905.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly below the BEDROOM sign on the commercial storefront?",
+      "ground_truth": "MATTRESS [entity_009] directly below BEDROOM [entity_010]",
+      "prediction": "MATTRESS",
+      "inference_time_sec": 3.794,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the semi-truck trailer and cab?",
+      "ground_truth": "10",
+      "prediction": "There are 5 distinct text instances mounted on the semi-truck trailer and cab.",
+      "inference_time_sec": 4.872,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Sign-On Bonus [entity_006], 2nd: LOGISTICS-010 [entity_007], 3rd: myBekins.com [entity_008]",
+      "prediction": "The text instances are first encountered in the following order as the vehicle moves forward:\n\n1. **Sign-On Bonus** — This text is visible on the side of the white truck on the left side of the road at the beginning of the video (0:00). It is part of the advertisement for hiring drivers.\n\n2. **LOGISTICS-010** — This text appears on the side of the same truck, just below the “Sign-On Bonus” text, and is also visible at 0:00.\n\n3. **myBekins.com** — This text is visible on the side of the truck,",
+      "inference_time_sec": 13.843,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the regulatory sign near the roadside sidewalk, what explicit driving action is required for vehicles in the right lane?",
+      "ground_truth": "TURN RIGHT [entity_019]",
+      "prediction": "Based on the regulatory sign visible near the roadside sidewalk in the video, the explicit driving action required for vehicles in the right lane is **\"NO TURN ON RED\"**.\n\nThis is indicated by the sign featuring a red circle with a red horizontal bar across it, which is the universal symbol for \"No\" or \"Prohibited,\" combined with the text \"NO TURN ON RED.\" This sign prohibits drivers from making a turn (typically a right turn, as indicated by the arrow) on a red traffic signal.",
+      "inference_time_sec": 11.747,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.6s and 2.0s suggest about the type of area?",
+      "ground_truth": "commercial retail zone",
+      "prediction": "The mix of text visible between 0.6s and 2.0s — including “BEDROOM & MATRESS,” “DUGGAN’S SERRA MORTUARY,” “AUTHORIZED TNC VEHICLE,” and “SCAWAY” — suggests that the area is a **mixed-use urban or suburban commercial zone**.\n\nHere’s why:\n\n- **“BEDROOM & MATRESS”** (likely a typo for “MATTRESS”) indicates a retail or home goods store, typical of commercial streets.\n- **“DUGGAN’S SERRA MORTUARY”** points to a professional service (",
+      "inference_time_sec": 13.458,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text in this clip written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text in the clip is written in English.",
+      "inference_time_sec": 4.26,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the website myBekins.com first become legible as the host vehicle passes the semi-truck?",
+      "ground_truth": "0.2s",
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.846,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 908,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/908.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the covered pedestrian structure marked WALKWAY relative to the Care emblem?",
+      "ground_truth": "To the left of Care [entity_004]",
+      "prediction": "The covered pedestrian structure marked WALKWAY is to the left of the Care emblem.",
+      "inference_time_sec": 4.888,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in this clip are mounted on the transit bus?",
+      "ground_truth": 4,
+      "prediction": "2",
+      "inference_time_sec": 3.672,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the first three text instances detected on the transit bus?",
+      "ground_truth": "1st: 35627-88 [entity_001], 2nd: 710 [entity_002], 3rd: THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The order of appearance of the first three text instances detected on the transit bus is:\n\n1. \"710\" (appears first, on the upper part of the bus)\n2. \"THE PORT AUTHORITY OF NY & NJ\" (appears second, below the number)\n3. \"Care\" (appears third, on the lower right side of the bus)\n\nThis sequence is based on the visual progression as the camera moves closer to the bus, revealing the text in that order.",
+      "inference_time_sec": 13.364,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the pavement markings near the green commuter waiting shelters, what driving action is required?",
+      "ground_truth": "Stop at the painted 'STOP' stencil",
+      "prediction": "Based on the pavement markings visible near the green commuter waiting shelters, the required driving action is to **stop**.\n\nHere's the reasoning:\n\n1.  **The Markings:** The most prominent marking is the large, white, painted word **\"STOP\"** on the pavement directly in front of the bus and the shelters.\n2.  **The Context:** The vehicle is positioned behind a bus that is stopped at this location. The bus is clearly waiting at a designated stop, which is typical for a bus stop or a designated area for commuters to board or alight.\n3.  **The Signage:** There are also red",
+      "inference_time_sec": 15.949,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of transit bus markings and a walkway sign suggest about the driving environment?",
+      "ground_truth": "Transit hub or commuter terminal area",
+      "prediction": "The presence of transit bus markings and a walkway sign suggests that the driving environment is near a public transportation hub or a designated transit area, likely designed for safe interaction between vehicles, pedestrians, and public transit. Here’s what each element implies:\n\n1. **Transit Bus Markings**:\n   - The markings (e.g., “STOP” painted on the road, bus lane indicators, or designated bus stops) indicate that this area is specifically designated for buses or that buses frequently operate here.\n   - The presence of a bus (number 710, operated by The Port Authority of NY & NJ) confirms that this is",
+      "inference_time_sec": 13.669,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible text suggests the geographical region where this clip was recorded?",
+      "ground_truth": "THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The visible text \"THE PORT AUTHORITY OF NY & NJ\" on the bus suggests that the clip was recorded in the geographical region of New York and New Jersey.",
+      "inference_time_sec": 6.206,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the fleet designation number 710 first become clearly detected on the bus?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "0.2 seconds",
+      "inference_time_sec": 3.928,
+      "error": ""
+    }
+  ]
+}
