@@ -1,0 +1,70 @@
+{
+  "video_id": 923,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/923.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What destination text is located directly below the route name Van Wyck Expwy on the overhead gantry?",
+      "ground_truth": "Kennedy Airport [entity_004] directly below Van Wyck Expwy [entity_002]",
+      "prediction": "The destination text located directly below the route name \"Van Wyck Expwy\" on the overhead gantry is \"Kennedy Airport.\"",
+      "inference_time_sec": 6.014,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the overhead highway gantry signs at the start of the clip?",
+      "ground_truth": "9",
+      "prediction": "At the start of the clip, there are four distinct text instances visible on the overhead highway gantry signs:\n\n1. \"SOUTH\"\n2. \"Van Wyck Expwy\"\n3. \"Kennedy Airport\"\n4. \"Hillside Ave Jamaica Ave\"\n\nSo, there are 4 distinct text instances.",
+      "inference_time_sec": 7.633,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the overhead sign Kennedy Airport and the taxi license plate T642185C encountered as legible text in the clip?",
+      "ground_truth": "1st: Kennedy Airport [entity_004], 2nd: T642185C [entity_010]",
+      "prediction": "The overhead sign \"Kennedy Airport\" is encountered first, followed by the taxi license plate \"T642185C.\"",
+      "inference_time_sec": 5.953,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the indicators below the Exit 6 sign, what explicit driving constraint is implied for that lane?",
+      "ground_truth": "EXIT [entity_007] and ONLY [entity_008]",
+      "prediction": "The sign below the \"Exit 6\" sign indicates \"EXIT ONLY,\" which implies that vehicles in that lane are only allowed to exit the highway and cannot continue straight or make any other turns. This means drivers must prepare to leave the highway at this point and should not attempt to merge into another lane or continue driving further on the highway.",
+      "inference_time_sec": 8.77,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is depicted in this clip based on the overhead signs and road layout?",
+      "ground_truth": "Highway",
+      "prediction": "The video clip depicts a highway driving environment, specifically on an overpass or elevated roadway. The overhead signs indicate directions to various destinations such as Kennedy Airport, Jamaica Ave, and Hillside Ave. The presence of multiple lanes and the flow of traffic suggest that this is a busy urban or suburban area with a well-developed road network. The signs also provide information about exits, with one sign specifically marking \"EXIT ONLY\" for a particular lane, indicating a structured system for directing drivers to their intended destinations efficiently. The overall scene suggests a typical day on a major highway with moderate to heavy traffic.",
+      "inference_time_sec": 10.583,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific destination and route names visible on the overhead gantry suggest this clip is filmed in the New York City area?",
+      "ground_truth": "Van Wyck Expwy [entity_002] and Kennedy Airport [entity_004]",
+      "prediction": "The overhead gantry sign in the image indicates several destinations and routes, which are typical of highways in the New York City area. The signs mention \"Van Wyck Expwy\" (Van Wyck Expressway), \"Kennedy Airport,\" and \"Hillside Ave.\" These are all well-known locations and routes in the New York City region. The Van Wyck Expressway is a major highway that runs through Queens and connects to the Brooklyn-Queens Expressway (BQE) and the Belt Parkway, both of which lead to Kennedy Airport. Therefore, it is reasonable to conclude that this clip was filmed in the New York City",
+      "inference_time_sec": 11.102,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate T642185C on the lime-green taxi first become readable?",
+      "ground_truth": "3.433s for license plate T642185C [entity_010]",
+      "prediction": "The license plate T642185C on the lime-green taxi becomes readable at approximately 0 seconds into the video.",
+      "inference_time_sec": 5.577,
+      "error": ""
+    }
+  ]
+}

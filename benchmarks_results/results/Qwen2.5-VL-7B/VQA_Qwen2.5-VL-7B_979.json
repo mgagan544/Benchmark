@@ -1,0 +1,70 @@
+{
+  "video_id": 979,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/979.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the DUNKIN DONUTS signboard located relative to the Speedway gas station sign?",
+      "ground_truth": "to the right of Speedway [entity_002] sign",
+      "prediction": "The DUNKIN' DONUTS signboard is located on the left side of the image, while the Speedway gas station sign is on the right side. The DUNKIN' DONUTS signboard appears to be further back in the scene, closer to the center of the image, and it is positioned behind the gas station.",
+      "inference_time_sec": 7.802,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct price numbers are displayed on the Speedway gas station sign?",
+      "ground_truth": "4",
+      "prediction": "The Speedway gas station sign displays three distinct price numbers: $2.68, $2.99, and $3.09.",
+      "inference_time_sec": 5.786,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the speed limit sign, the PENSKE truck, and the CAR WASH sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: speed limit 25, 2nd: PENSKE [entity_010], 3rd: CAR [entity_011] WASH [entity_012]",
+      "prediction": "As the vehicle moves forward, the order in which the signs are encountered is:\n\n1. Speed limit sign (appears on the left side of the road).\n2. PENSKE truck (appears further down the road).\n3. CAR WASH sign (appears on the right side of the road).",
+      "inference_time_sec": 7.445,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed near the road ramp?",
+      "ground_truth": "speed limit 25",
+      "prediction": "The regulatory text that constrains the vehicle's speed near the road ramp is typically indicated by a speed limit sign. In the image, there is a speed limit sign visible on the left side of the road, which reads \"60 MPH.\" This means that vehicles are required to maintain a speed of 60 miles per hour or less as they approach and travel along the road ramp.",
+      "inference_time_sec": 9.517,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of gas station, donut shop, and car wash signs suggest?",
+      "ground_truth": "commercial strip",
+      "prediction": "The mix of gas station, donut shop, and car wash signs suggests that this is a commercial area with various services available to drivers and their vehicles. The presence of these establishments indicates that it might be a busy or frequently traveled route where people need to stop for fuel, refreshments, and vehicle maintenance. This kind of environment is typical in suburban or urban areas where there is a high volume of traffic and a need for convenience services.",
+      "inference_time_sec": 10.164,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the combination of 39 St, yellow taxicabs, and US commercial brands?",
+      "ground_truth": "New York City",
+      "prediction": "The combination of 39th Street, yellow taxicabs, and the presence of US commercial brands like Shell gas stations suggests that the location is likely New York City. These elements are iconic features of New York's urban landscape.",
+      "inference_time_sec": 7.264,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the parked PENSKE truck first become visible in the clip?",
+      "ground_truth": "2.433 seconds",
+      "prediction": "The parked PENSKE truck becomes visible at approximately 0:15 seconds into the video.",
+      "inference_time_sec": 5.48,
+      "error": ""
+    }
+  ]
+}

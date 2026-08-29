@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
       "ground_truth": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.859,
+      "prediction": "The pavement marking showing AXI is located to the left of the designated taxi lane.",
+      "inference_time_sec": 4.083,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
       "ground_truth": "3",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.828,
+      "prediction": "There are at least three distinct pavement or infrastructure markings visible on the roadway throughout the entire clip: a pedestrian crossing, a yellow line, and a white line.",
+      "inference_time_sec": 4.08,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
       "ground_truth": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.869,
+      "prediction": "The vehicle encounters the pavement markings '03', 'AXI', and '06' in that order.",
+      "inference_time_sec": 3.641,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
       "ground_truth": "TAXI [entity_001]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.838,
+      "prediction": "The text on the pavement designates the lane reserved for specific transport vehicles on the left as 'bus lane'.",
+      "inference_time_sec": 3.53,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
       "ground_truth": "Airport terminal arrival area",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.895,
+      "prediction": "Airport",
+      "inference_time_sec": 2.442,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the airline signage and pavement markings in this scene?",
       "ground_truth": "English",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.832,
+      "prediction": "English",
+      "inference_time_sec": 2.375,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
       "ground_truth": "4.1 seconds",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.887,
+      "prediction": "0 to 5 seconds",
+      "inference_time_sec": 2.593,
       "error": ""
     }
   ]

@@ -1,0 +1,70 @@
+{
+  "video_id": 921,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/921.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the MUST EXIT sign relative to the WORK ZONE sign that appears around 0.467 seconds?",
+      "ground_truth": "To the right of WORK [entity_006] ZONE [entity_007] sign",
+      "prediction": "The MUST EXIT sign is positioned on the right side of the road, just before the bridge over the highway. The WORK ZONE sign appears to be located on the left side of the road, closer to the bridge. The MUST EXIT sign is directly in front of the WORK ZONE sign, indicating that the MUST EXIT sign is closer to the bridge than the WORK ZONE sign.",
+      "inference_time_sec": 6.929,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible in this video clip?",
+      "ground_truth": "2",
+      "prediction": "In the video clip, there are two distinct license plates visible. One is on the black SUV in the foreground, and the other is on the black SUV in the background.",
+      "inference_time_sec": 4.32,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of signs encountered on the right side of the road between 0.0 and 1.0 seconds?",
+      "ground_truth": "1st: SPEED [entity_004] LIMIT [entity_005], 2nd: WORK [entity_006] ZONE [entity_007], 3rd: MUST [entity_008] EXIT [entity_009]",
+      "prediction": "The order of signs encountered on the right side of the road between 0.0 and 1.0 seconds is as follows: The first sign is the \"Airport Exit\" sign, followed by the \"Central Terminal\" sign, and then the \"Exit Only\" sign.",
+      "inference_time_sec": 5.245,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning sign is located beside the construction flagger holding the STOP paddle near the end of the clip?",
+      "ground_truth": "ROAD [entity_031] WORK [entity_006] AHEAD [entity_012] sign",
+      "prediction": "The warning sign located beside the construction flagger holding the STOP paddle near the end of the clip is a yellow sign with black text that reads \"Vehicles Over 5 ft. Must Stop.\" This sign is a common safety requirement for vehicles exceeding a certain height to ensure they are stopped before entering the construction zone.",
+      "inference_time_sec": 5.512,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of area does the mix of airport terminal, parking, and exit signs suggest?",
+      "ground_truth": "Airport access road",
+      "prediction": "The mix of airport terminal, parking, and exit signs suggests a multifunctional area that serves multiple purposes. The presence of the airport terminal indicates that this is a major transportation hub, likely a departure point for flights. The parking sign suggests that there is a designated area for vehicles to park, which is common in busy transportation hubs to facilitate the flow of traffic. The exit sign indicates that there are multiple exits, which is typical for a complex transportation network to manage the flow of vehicles and passengers. This combination of signs points to a well-organized and possibly busy area designed to handle a high volume of traffic and passengers.",
+      "inference_time_sec": 8.504,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used on the signs such as ROAD WORK AHEAD and MUST EXIT?",
+      "ground_truth": "English",
+      "prediction": "The language used on the signs such as \"ROAD WORK AHEAD\" and \"MUST EXIT\" appears to be English. This is evident from the text on the signs, which are written in a standard English font and are clearly visible to drivers.",
+      "inference_time_sec": 5.014,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the RAMP speed limit sign visible in the clip?",
+      "ground_truth": "6.333 seconds to 9.733 seconds",
+      "prediction": "The RAMP speed limit sign is visible in the clip from the beginning to the end of the video. It is positioned on the right side of the road, above the road, and is clearly marked with the speed limit of 20 MPH.",
+      "inference_time_sec": 4.892,
+      "error": ""
+    }
+  ]
+}

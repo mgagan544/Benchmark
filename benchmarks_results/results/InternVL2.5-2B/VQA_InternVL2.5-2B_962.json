@@ -1,0 +1,70 @@
+{
+  "video_id": 962,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/962.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located to the right of the ONLY lane marking?",
+      "ground_truth": "LINK-SHUT [entity_010] to the right of ONLY [entity_009]",
+      "prediction": "The text located to the right of the ONLY lane marking is 'BUS ONLY'.",
+      "inference_time_sec": 3.509,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are three vehicle-mounted text instances visible in this clip. The first instance is the 'PARK' sign on the building, the second is the 'PARK' sign on the building again, and the third is the 'PARK' sign on the building once more.",
+      "inference_time_sec": 5.994,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the text instances AHEAD, SCHOOL, and Hampton Inv between 3.767s and 4.433s?",
+      "ground_truth": "1st: AHEAD [entity_011], 2nd: SCHOOL [entity_012], 3rd: Hampton Inv [entity_013]",
+      "prediction": "The text instances AHEAD, SCHOOL, and Hampton Inv appear in that order as the video progresses.",
+      "inference_time_sec": 3.889,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text indicating a driving constraint is visible between the Starbucks Coffee storefront and the Diner outlet?",
+      "ground_truth": "ONE WAY [entity_020]",
+      "prediction": "Between the Starbucks Coffee storefront and the Diner outlet, there is a regulatory text indicating a 25 mph speed limit.",
+      "inference_time_sec": 3.91,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of environment does the high density of storefronts and business signs suggest?",
+      "ground_truth": "commercial district",
+      "prediction": "The high density of storefronts and business signs suggests a commercial urban environment. The presence of various signs indicates a variety of businesses, possibly including retail shops, restaurants, and services catering to the needs of the city's residents and visitors. The variety of signage and the density of the signs on the buildings imply a vibrant and bustling commercial area, which is typical of major city centers or downtown areas.",
+      "inference_time_sec": 6.33,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the storefronts and street signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the storefronts and street signs is written in English, suggesting that the video is set in an English-speaking country, likely the United States.",
+      "inference_time_sec": 4.208,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the ONLY lane marking visible in the clip?",
+      "ground_truth": "0.6s to 1.333s",
+      "prediction": "The ONLY lane marking is visible from the 4th to the 6th second mark in the video.",
+      "inference_time_sec": 3.764,
+      "error": ""
+    }
+  ]
+}

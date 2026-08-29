@@ -1,0 +1,70 @@
+{
+  "video_id": 955,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/955.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the word OVER on the weight limit sign to the left of Waterside Plaza?",
+      "ground_truth": "VEHICLES [entity_002]",
+      "prediction": "The text located directly below the word \"OVER\" on the weight limit sign to the left of Waterside Plaza reads \"VEHICLES OVER 5,000 LBS.\"",
+      "inference_time_sec": 5.001,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 1.500 and 3.000 seconds?",
+      "ground_truth": "4",
+      "prediction": "Between 1.500 and 3.000 seconds, there are three distinct, legible text instances encountered by the vehicle. These include the green sign with white text indicating the direction to \"Metro-North Railroad,\" the green sign with white text indicating the direction to \"Metro-North Railroad,\" and the green sign with white text indicating the direction to \"Metro-North Railroad.\"",
+      "inference_time_sec": 6.347,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the signs encountered by the vehicle between 3.500 and 4.500 seconds?",
+      "ground_truth": "1st: E 25 ST [entity_005], 2nd: E 34 ST [entity_006] FERRY [entity_007] HELIPORT [entity_009] LANDING [entity_008], 3rd: ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "Between 3.500 and 4.500 seconds, the vehicle encounters the following signs in the order they appear: a green sign indicating \"Metro-North Railroad\" with a distance of \"1.5 MILES,\" a green sign with \"Metro-North Railroad\" with a distance of \"1.5 MILES,\" a green sign with \"Metro-North Railroad\" with a distance of \"1.5 MILES,\" a green sign with \"Metro-North Railroad\" with a distance of \"1.5 MILES,\" a green sign with \"Metro-North Railroad\"",
+      "inference_time_sec": 8.273,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the orange construction sign passed at 4.367 seconds?",
+      "ground_truth": "ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The warning text displayed on the orange construction sign at 4.367 seconds is \"VEHICLES OVER 32 FEET AHEAD MUST TURN RIGHT.\"",
+      "inference_time_sec": 4.174,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multiple exit signs, route markers, and overpasses, what driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the video is a busy urban area with multiple exits and route markers. The presence of overpasses and the dense traffic flow suggest that this is a well-connected city with a significant number of vehicles and pedestrians. The overpasses indicate that the area is designed to handle a high volume of traffic, and the route markers provide clear guidance for drivers navigating the city. The mix of commercial and residential buildings along the road further supports the idea of a bustling urban environment.",
+      "inference_time_sec": 7.064,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street names and route markers suggest this clip is filmed in New York City?",
+      "ground_truth": "E 25 ST [entity_005], E 34 ST [entity_006], E 42 ST [entity_017], 495 [entity_016]",
+      "prediction": "The specific street names and route markers that suggest this clip is filmed in New York City include the green street signs with white lettering that read \"E 42 St\" and \"E 34 St,\" which are typical of New York City's street naming conventions. Additionally, the presence of a pedestrian bridge over the highway, which is a common feature in New York City, further supports this conclusion. The dense urban environment, with tall buildings and a mix of commercial and residential structures, is characteristic of New York City's skyline.",
+      "inference_time_sec": 7.497,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the weight-limit sign containing the text 8000 Lbs first appear in view?",
+      "ground_truth": "2.633 seconds, as 8000 Lbs [entity_004] becomes visible.",
+      "prediction": "The weight-limit sign containing the text \"8000 LBS\" first appears in view at the beginning of the video.",
+      "inference_time_sec": 3.918,
+      "error": ""
+    }
+  ]
+}

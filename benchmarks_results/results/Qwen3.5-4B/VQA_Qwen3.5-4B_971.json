@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is displayed on the overhead sign adjacent to the Prospect Expwy sign?",
       "ground_truth": "WEST [entity_006] Verrazano Br [entity_007] Staten is [entity_008]",
-      "prediction": "The user wants to identify the text on a specific overhead sign.\n\n1.  **Locate the \"Prospect Expwy\" sign:** I need to scan the video frames to find a green highway sign that says \"Prospect Expwy\".\n2.  **Scan frames:**\n    *   Frame 0.0s: No clear overhead signs visible yet.\n    *   Frame 0.1s: Still approaching.\n    *   Frame 0.2s: Getting closer.\n    *   Frame 0.3s: The sign is becoming visible. It's a green overhead sign.",
-      "inference_time_sec": 16.204,
+      "prediction": "Vernon St, Van Wyck Expwy, St Nicholas Ave",
+      "inference_time_sec": 3.324,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are displayed on the roadside billboard on the right side of the highway?",
       "ground_truth": "4",
-      "prediction": "The user wants me to count the distinct text instances on the billboard on the right side of the highway.\n\n1.  **Identify the billboard:** Looking at the right side of the highway, there is a large white billboard.\n2.  **Locate the text:** The text is visible in the later frames (0.2s, 0.3s, 0.4s) as the car moves forward.\n3.  **Identify the text instances:**\n    *   Top line: \"NEW ROSES\"\n    *   Middle line: \"NICE & CHEAP\"",
-      "inference_time_sec": 12.683,
+      "prediction": "3",
+      "inference_time_sec": 2.278,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the license plate, the billboard text, and the overhead highway signs are first encountered in the clip?",
       "ground_truth": "1st: license plate, 2nd: billboard text, 3rd: overhead highway signs",
-      "prediction": "The user wants to know the order of appearance for three specific elements: the license plate, the billboard text, and the overhead highway signs.\n\n1.  **License Plate:** I need to look for a visible license plate.\n    *   At 00:00, there's a silver minivan on the left. Its license plate is partially visible but blurry.\n    *   There's a dark sedan in the center lane. Its license plate is clearly visible. It's yellow, typical for New York.\n    *   Wait, let's look closer at the very first frame. The silver minivan on",
-      "inference_time_sec": 12.603,
+      "prediction": "license plate, billboard text, overhead highway signs",
+      "inference_time_sec": 2.861,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the overhead signs, what direction should a driver follow for the Prospect Expwy?",
       "ground_truth": "EAST [entity_011]",
-      "prediction": "The user wants to know the direction for the \"Prospect Expwy\" based on the overhead signs.\n\n1.  **Identify the relevant sign:** I need to look at the green overhead highway signs visible in the video.\n2.  **Locate the sign:** In the later frames (0.3s, 0.4s, 0.5s), a green overhead sign becomes clearly visible above the lanes.\n3.  **Read the text on the sign:**\n    *   The sign has multiple arrows and destinations.\n    *   On the left side, there's an arrow pointing",
-      "inference_time_sec": 12.646,
+      "prediction": "Left",
+      "inference_time_sec": 2.211,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of overhead exit signs, a steel guardrail, and a license plate, what type of driving environment is depicted?",
       "ground_truth": "highway",
-      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead exit signs:** I see green highway signs hanging above the road. One clearly says \"Exit 10\" and lists destinations like \"Brooklyn,\" \"Jersey City,\" \"Staten Island,\" and \"Newark.\" This is a classic characteristic of a major highway or freeway system.\n    *   **Steel guardrail:** There is a metal barrier on the right side of the road, separating the lanes from the drop-off or adjacent road. This is",
-      "inference_time_sec": 12.691,
+      "prediction": "Highway",
+      "inference_time_sec": 2.243,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Do any names on the overhead highway signs suggest a specific region, and what text supports this?",
       "ground_truth": "New York, supported by Verrazano Br [entity_007] and Staten is [entity_008]",
-      "prediction": "The user wants to identify if there are names on the overhead highway signs that suggest a specific region.\n\n1.  **Analyze the images:** I need to look closely at the green overhead signs visible in the video frames.\n2.  **Locate the signs:** In the first few frames (0.0s - 0.3s), the signs are further away and blurry. By frame 0.4s and 0.5s, the signs become clearer as the car approaches.\n3.  **Read the text:**\n    *   In frame 0.4s and 0.",
-      "inference_time_sec": 12.688,
+      "prediction": "Yes, the names \"Jersey City\" and \"Staten Island\" suggest the New York City region.",
+      "inference_time_sec": 3.983,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the billboard slogan More Saving, More doing. first become clearly visible?",
       "ground_truth": "6.6 seconds",
-      "prediction": "The user wants to find the timestamp when the billboard slogan \"More Saving, More doing\" becomes clearly visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The billboard is visible on the right. The text \"NEW ROYAL\" is visible. The rest is blurry or cut off.\n    *   **00:01:** The camera angle shifts slightly or the car moves. The billboard is still there. The text \"MORE SAVINGS\" is becoming clearer. \"START HERE\" is visible below it. The slogan \"More Saving, More doing\" is not",
-      "inference_time_sec": 12.644,
+      "prediction": "0.1 seconds",
+      "inference_time_sec": 2.569,
       "error": ""
     }
   ]

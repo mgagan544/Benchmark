@@ -1,0 +1,70 @@
+{
+  "video_id": 954,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/954.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text EXIT relative to the word Ave on the overhead sign?",
+      "ground_truth": "directly below Ave [entity_002]",
+      "prediction": "The text EXIT is located to the right of the word Ave on the overhead sign. It is positioned slightly to the right of the word Ave, extending towards the right side of the image.",
+      "inference_time_sec": 5.108,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are visible on the overhead green exit sign?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct pieces of text visible on the overhead green exit sign. The first line reads \"EXIT ONLY,\" the second line is partially obscured but appears to say \"Bradley Ave,\" and the third line is not fully visible but seems to end with \"ONLY.\"",
+      "inference_time_sec": 5.139,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan?",
+      "ground_truth": "1st: passing Bradley [entity_001], 2nd: slow crawl behind red sedan",
+      "prediction": "The order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan is as follows: The red sedan passes the overhead exit sign, indicating the end of the highway. Following this, the red sedan comes to a slow crawl behind the red sedan, which is the only vehicle in the lane ahead of it. This slow crawl is a common practice on highways to allow the red sedan to pass through the exit area without causing a bottleneck.",
+      "inference_time_sec": 6.822,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead sign, what driving action is indicated for the lane below it?",
+      "ground_truth": "EXIT [entity_003] only [entity_004]",
+      "prediction": "The overhead sign indicates that the lane below it is for a left turn only. This is deduced from the text \"LEFT TURN ONLY\" on the sign, which is a common feature on highway signs to inform drivers of the lane's specific traffic control instructions.",
+      "inference_time_sec": 5.043,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the overhead exit sign and the multi-lane road layout?",
+      "ground_truth": "highway",
+      "prediction": "The overhead exit sign indicates that the highway is part of a larger network with multiple exits, suggesting a well-connected road system. The multi-lane road layout, with multiple lanes for vehicles, indicates that the highway is designed to handle a significant volume of traffic, which is typical for urban or suburban areas where traffic congestion is common. The presence of such infrastructure implies that the driving environment is likely to be busy and possibly congested, with drivers needing to navigate through multiple exits to reach their destinations.",
+      "inference_time_sec": 7.083,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead exit sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead exit sign is in English.",
+      "inference_time_sec": 3.291,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text Bradley first become clearly displayed on the overhead sign?",
+      "ground_truth": "Bradley [entity_001] at 2.7 seconds",
+      "prediction": "The text \"Bradley Ave\" is first clearly displayed on the overhead sign at the timestamp of approximately 6.50 seconds into the video.",
+      "inference_time_sec": 4.028,
+      "error": ""
+    }
+  ]
+}

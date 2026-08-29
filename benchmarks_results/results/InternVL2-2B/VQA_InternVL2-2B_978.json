@@ -1,0 +1,70 @@
+{
+  "video_id": 978,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/978.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory road marking near the commercial building relative to the pavement marking on the multi-lane avenue?",
+      "ground_truth": "To the right of ONLY [entity_001] across the access road",
+      "prediction": "The regulatory road marking is located on the right side of the multi-lane avenue, close to the edge of the pavement. It is positioned parallel to the pavement marking that indicates \"ONLY\" and \"ONLY,\" which are painted on the road. The marking is closer to the edge of the pavement than the pavement marking itself, suggesting that it is a separate lane or a designated area for a specific purpose, possibly for turning or parking.",
+      "inference_time_sec": 7.664,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct road markings containing painted text are mentioned in the scene description?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct road markings containing painted text mentioned in the scene description. These markings are located on the road, specifically on the right side of the road, and they read \"ONLY\" in white letters.",
+      "inference_time_sec": 4.796,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the distinct road markings are encountered by the camera vehicle?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: STOP [entity_002]",
+      "prediction": "The distinct road markings encountered by the camera vehicle are in the following order: a solid white line, a dashed white line, a solid white line, a dashed white line, and a solid white line. This sequence is evident as the camera vehicle moves forward, passing by the solid white lines first, then the dashed white lines, and finally the solid white lines.",
+      "inference_time_sec": 6.09,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving action is implied by the regulatory road marking located near the modern commercial building?",
+      "ground_truth": "Stop, as indicated by STOP [entity_002]",
+      "prediction": "The regulatory road marking near the modern commercial building, which is a diamond-shaped sign with a red border, typically indicates a no-passing zone. This is a common practice in urban areas to ensure that vehicles do not encroach on the sidewalks or crosswalks, which can be hazardous for pedestrians. The presence of this sign suggests that the area is designed to accommodate both vehicular and pedestrian traffic, and the driver is being reminded to adhere to the no-passing zone to maintain safety for all road users.",
+      "inference_time_sec": 7.346,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential high-rises, commercial buildings, and multi-lane avenues suggest about the driving environment?",
+      "ground_truth": "Urban commercial and residential district",
+      "prediction": "The mix of residential high-rises, commercial buildings, and multi-lane avenues suggests a bustling urban environment with a variety of activities and traffic flow. The presence of residential high-rises indicates a densely populated area, likely with a high concentration of people and businesses. The commercial buildings suggest a commercial district, possibly a business district or a central business area. The multi-lane avenues indicate a well-connected road network, allowing for efficient traffic flow and movement of vehicles. This combination of elements points to a dynamic and active urban setting where different types of vehicles and activities coexist.",
+      "inference_time_sec": 8.018,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is used for the road markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The road markings in the scene are in English, as indicated by the words \"ONLY\" written in white capital letters on the road surface. There are no other languages or scripts visible in the image.",
+      "inference_time_sec": 4.576,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the first pavement marking driven over, and at what timestamp is the regulatory road marking passed?",
+      "ground_truth": "ONLY [entity_001] at 0.1 seconds, STOP [entity_002] around 5.7 seconds",
+      "prediction": "The first pavement marking driven over is at timestamp 0.5 seconds, and the regulatory road marking passed is at timestamp 1.5 seconds.",
+      "inference_time_sec": 4.19,
+      "error": ""
+    }
+  ]
+}

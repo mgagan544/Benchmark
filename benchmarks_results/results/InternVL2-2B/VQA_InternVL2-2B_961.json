@@ -1,0 +1,70 @@
+{
+  "video_id": 961,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/961.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Sheridan Expwy on the right overhead signboard?",
+      "ground_truth": "RFK Br [entity_005] directly below Sheridan Expwy [entity_004]",
+      "prediction": "Directly below Sheridan Expwy on the right overhead signboard, the text reads \"SHERIDAN EXPWY.\"",
+      "inference_time_sec": 4.293,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the left overhead signboard between 1.833 seconds and 3.967 seconds?",
+      "ground_truth": "5",
+      "prediction": "Between 1.833 seconds and 3.967 seconds, there are three distinct text instances visible on the left overhead signboard. These instances are the words \"Cross Bronx Expwy,\" \"South E 177 St,\" and \"Sheridan Expwy.\"",
+      "inference_time_sec": 5.119,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs, the yellow warning sign, and the speed limit sign are encountered?",
+      "ground_truth": "1st: overhead signs, 2nd: yellow warning sign, 3rd: SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The overhead signs are encountered first, indicating the route to Washington Br, followed by the direction to Sheridan Expwy, and then the exit to RFK Br. The yellow warning sign is seen after the exit sign, and the speed limit sign is encountered last, indicating the speed limit of 45 miles per hour.",
+      "inference_time_sec": 5.53,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the left concrete barrier indicates a speed restriction near the end of the clip?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The text on the left concrete barrier indicates a speed restriction near the end of the clip by displaying a yellow sign with the text \"45 MILES PER HOUR\" in white letters.",
+      "inference_time_sec": 4.367,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of multiple overhead guide signs, exit indicators, and highway numbers?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of multiple overhead guide signs, exit indicators, and highway numbers suggests a well-organized and possibly busy road environment. These signs are typically used to guide drivers through the highway system, indicating exits, exits only, and highway numbers. The presence of these signs indicates that the road is likely part of a major highway system, designed to manage traffic flow and provide clear navigation for drivers. The highway numbers and exit indicators are essential for drivers to understand the direction and exits they need to take, which is crucial for maintaining order and safety on a busy roadway.",
+      "inference_time_sec": 7.681,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge names visible on the overhead signs suggest this clip is filmed in the New York City region?",
+      "ground_truth": "Throgs Neck Br [entity_008], G Washington Br [entity_009], RFK Br [entity_005]",
+      "prediction": "The specific bridge names visible on the overhead signs that suggest this clip is filmed in the New York City region include \"Cross Bronx Expwy,\" \"Throgs Neck Br,\" \"Washington Br,\" and \"RFK Br.\" These names are indicative of the Bronx Expressway, which is a major highway in New York City, and the names of the bridges are typical of the New York City area.",
+      "inference_time_sec": 6.392,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range do the overhead green guide signs remain continuously visible in the clip?",
+      "ground_truth": "1.833 seconds to 3.967 seconds",
+      "prediction": "The overhead green guide signs remain continuously visible throughout the entire duration of the video. They are illuminated and clearly visible against the night sky, providing the necessary information for drivers to navigate the highway safely.",
+      "inference_time_sec": 4.518,
+      "error": ""
+    }
+  ]
+}

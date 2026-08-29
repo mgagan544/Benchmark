@@ -1,0 +1,70 @@
+{
+  "video_id": 940,
+  "model": "InternVL3-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/940.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
+      "ground_truth": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]",
+      "prediction": "There are two signs located directly adjacent to the parking area on the right side of the driving lane. One sign is a blue sign with the word 'TJX' written in white letters, and the other sign is a red sign with the word 'FALLAS' written in white letters.",
+      "inference_time_sec": 5.983,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct pieces of text belonging to storefront signs or banners on the left side of the driving lane.",
+      "inference_time_sec": 3.531,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]",
+      "prediction": "FALLAS is first encountered by the camera vehicle, followed by the signs for Danice.",
+      "inference_time_sec": 3.316,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
+      "ground_truth": "Stop",
+      "prediction": "The painted road marking adjacent to the concrete sidewalk on the left indicates a 'STOP' zone, which implies that vehicles must come to a complete stop before proceeding. This is a standard traffic control measure to ensure safety and orderly movement of vehicles in the parking lot.",
+      "inference_time_sec": 5.8,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
+      "ground_truth": "Commercial strip mall",
+      "prediction": "The video depicts a typical suburban shopping center environment. The presence of multiple retail stores, parking spaces, and a clear sky suggests a daytime setting in a commercial area.",
+      "inference_time_sec": 4.555,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 2.475,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
+      "ground_truth": "5.233s to 5.6s",
+      "prediction": "10-15",
+      "inference_time_sec": 2.626,
+      "error": ""
+    }
+  ]
+}

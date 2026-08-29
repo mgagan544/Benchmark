@@ -1,0 +1,70 @@
+{
+  "video_id": 919,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/919.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located across the street relative to the overhead crossing sign displaying AHE?",
+      "ground_truth": "CASH 4 [entity_003] to the left of AHE [entity_002]",
+      "prediction": "Across the street, there is a sign that reads \"Parking\" with an arrow pointing to the right, indicating a parking area.",
+      "inference_time_sec": 6.329,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?",
+      "ground_truth": "7",
+      "prediction": "There are two distinct text instances marked or mounted on the yellow school bus parked along the right curb.",
+      "inference_time_sec": 5.851,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?",
+      "ground_truth": "1st: SCHOOL [entity_001], 2nd: AHE [entity_002], 3rd: CASH 4 [entity_003]",
+      "prediction": "The first three text instances encountered in the video are \"Pedestrian Crossing,\" \"Pedestrian Crossing,\" and \"Pedestrian Crossing.\"",
+      "inference_time_sec": 6.753,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?",
+      "ground_truth": "PARKING [entity_011]",
+      "prediction": "The utility post on the right sidewalk displays a 'No Parking' sign, indicating a restriction on parking in that area.",
+      "inference_time_sec": 6.13,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?",
+      "ground_truth": "School zone",
+      "prediction": "The mix of text visible between 0.267 seconds and 3.200 seconds suggests that the area is a residential or mixed-use neighborhood. The presence of street signs, a school bus, and a pedestrian crossing indicates a community with residential buildings, schools, and pedestrian traffic. The text on the signs, although not entirely legible, appears to be related to traffic regulations and pedestrian safety, which are common in residential areas. The overall setting, with parked cars and a school bus, further supports the idea of a neighborhood with families and children.",
+      "inference_time_sec": 13.242,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the contact number displayed on the side of the school bus?",
+      "ground_truth": "New York City",
+      "prediction": "The contact number displayed on the side of the school bus is \"914-555-5555.\" This number is a placeholder commonly used in the United States for fictional phone numbers in media and advertising. It does not correspond to a real city or location. Therefore, the video does not provide any information about a specific city based on the contact number displayed on the bus.",
+      "inference_time_sec": 10.003,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the regulatory parking sign remain continuously visible in the clip?",
+      "ground_truth": "6.400 seconds to 7.367 seconds",
+      "prediction": "The regulatory parking sign remains continuously visible throughout the entire clip.",
+      "inference_time_sec": 5.326,
+      "error": ""
+    }
+  ]
+}

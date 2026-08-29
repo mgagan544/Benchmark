@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
       "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
-      "prediction": "The user wants to identify what is to the right of the zebra crossing.\n\n1.  **Locate the zebra crossing:** I see a zebra crossing (white stripes on the road) appearing around the 00:02 mark. It's clearly visible as the car approaches the junction.\n2.  **Identify the area to the right:** Looking to the right side of the road, past the zebra crossing, there is a curb painted with red and white stripes.\n3.  **Identify objects further right:** Beyond the curb, there is a grassy area. Further back, there",
-      "inference_time_sec": 13.411,
+      "prediction": "a bus",
+      "inference_time_sec": 2.306,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
       "ground_truth": "1",
-      "prediction": "The user wants me to count distinct signboards with numbers on the right side of the road at the beginning of the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   Looking at the right side of the road.\n    *   There is a large billboard/signboard. It has a number \"99\" clearly visible on it. It also has Hebrew text.\n    *   Are there other signboards with numbers?\n    *   Further back, there might be other signs, but they are not clearly distinct or readable as signboards with numbers in the same way",
-      "inference_time_sec": 12.716,
+      "prediction": "2",
+      "inference_time_sec": 2.32,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
       "ground_truth": "A distant gas station",
-      "prediction": "The user wants to identify a landmark on the far left of the video after a specific event.\n\n1.  **Identify the event:** \"passes the signboard 9999\".\n    *   Looking at the frames, at 00:00 and 00:01, there is a large billboard on the right side with the number \"99\" visible. Wait, the prompt says \"9999\". Let me re-examine.\n    *   Ah, looking closely at the billboard at 00:00 and 00:01, it has a",
-      "inference_time_sec": 12.692,
+      "prediction": "Gas station",
+      "inference_time_sec": 2.332,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
       "ground_truth": "None is present",
-      "prediction": "The user is asking about the text on a signboard visible in the video, specifically looking for \"9999\".\n\n1.  **Scan the video for a signboard with \"9999\".**\n    *   Looking at the first few frames (00:00 - 00:01), there is a large billboard on the right side of the road.\n    *   The billboard has a large number \"99\" visible. Wait, let me look closer.\n    *   In frame 00:00, the billboard shows a large \"99\". It's",
-      "inference_time_sec": 12.663,
+      "prediction": "No explicit driving actions or constraints are implied by the visible text on the signboard 9999.",
+      "inference_time_sec": 3.949,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
       "ground_truth": "Suburban commercial thoroughfare",
-      "prediction": "The user wants me to interpret the driving environment based on specific visual cues: a multi-lane curved road, a gas station, and a signboard.\n\n1.  **Analyze the \"multi-lane curved road\":**\n    *   The road has multiple lanes (at least two visible, possibly more).\n    *   It curves to the right.\n    *   There are traffic lights visible in the distance, indicating an intersection or a controlled area ahead.\n    *   This suggests a main thoroughfare or a highway approaching an intersection, rather than a small residential street. It implies higher traffic volume and potentially",
-      "inference_time_sec": 12.697,
+      "prediction": "Urban area",
+      "inference_time_sec": 2.375,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What script or numbering system is used for the text on the signboard on the right?",
       "ground_truth": "Arabic numerals",
-      "prediction": "The user wants to identify the script or numbering system on the signboard to the right.\n\n1.  **Locate the signboard:** In the first few frames (0.0s - 0.2s), there is a large billboard on the right side of the road.\n2.  **Examine the text:**\n    *   There is a large number \"99\" visible.\n    *   Above the number, there is text in a script that looks like Hebrew. It's written right-to-left.\n    *   Below the number, there is more text, also in the same script",
-      "inference_time_sec": 12.663,
+      "prediction": "Hebrew",
+      "inference_time_sec": 2.295,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
       "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
-      "prediction": "The user wants to find the timestamps for two events related to a signboard with the number \"9999\".\n\n1.  **Identify the signboard:** I need to look for a billboard or sign with the number \"9999\".\n2.  **Scan the video:**\n    *   **00:00:** The video starts. There's a sign on the right side of the road. It's partially visible but clearly shows \"9999\". It's a large white billboard.\n    *   **00:01:** The car is moving forward. The sign",
-      "inference_time_sec": 12.689,
+      "prediction": "The signboard 9999 first becomes visible at 0.0 seconds and is passed by the ego vehicle at 0.1 seconds.",
+      "inference_time_sec": 4.721,
       "error": ""
     }
   ]

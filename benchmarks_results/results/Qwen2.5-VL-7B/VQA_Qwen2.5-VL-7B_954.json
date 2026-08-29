@@ -1,0 +1,70 @@
+{
+  "video_id": 954,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/954.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text EXIT relative to the word Ave on the overhead sign?",
+      "ground_truth": "directly below Ave [entity_002]",
+      "prediction": "The text \"EXIT\" appears to be positioned above and to the left of the word \"Ave\" on the overhead sign. The \"EXIT\" is likely part of a larger sign indicating an exit number or direction, while \"Ave\" is probably part of the street name or route designation below it.",
+      "inference_time_sec": 8.173,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are visible on the overhead green exit sign?",
+      "ground_truth": "4",
+      "prediction": "There is one distinct piece of text visible on the overhead green exit sign, which reads \"EXIT 20.\"",
+      "inference_time_sec": 5.188,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan?",
+      "ground_truth": "1st: passing Bradley [entity_001], 2nd: slow crawl behind red sedan",
+      "prediction": "The sequence of events based on the provided image can be described as follows:\n\n1. **Passing the Overhead Exit Sign**: The vehicle passes under an overhead exit sign, which typically indicates the distance to the next exit or exit ramp.\n\n2. **Approaching Traffic Congestion**: As the vehicle continues driving, it approaches a section of the highway where traffic appears to be slowing down.\n\n3. **Coming to a Slow Crawl Behind the Red Sedan**: The vehicle comes to a slow crawl behind a red sedan, indicating that the traffic has slowed significantly, likely due to congestion ahead.\n\nThis sequence suggests that the driver is navigating through",
+      "inference_time_sec": 12.769,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead sign, what driving action is indicated for the lane below it?",
+      "ground_truth": "EXIT [entity_003] only [entity_004]",
+      "prediction": "The overhead sign in the image indicates that the lane below it is for \"EXIT ONLY.\" This means that vehicles in this lane are intended to exit the highway and should not be merging onto other lanes or continuing straight ahead.",
+      "inference_time_sec": 6.491,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the overhead exit sign and the multi-lane road layout?",
+      "ground_truth": "highway",
+      "prediction": "The overhead exit sign and the multi-lane road layout suggest an urban or suburban highway environment. The presence of multiple lanes indicates that this is likely a major thoroughfare designed to handle high volumes of traffic efficiently. The exit sign provides guidance for drivers, helping them navigate to their desired destinations, which is typical in areas with significant traffic flow. The overall scene suggests a well-maintained and organized roadway system, possibly part of a larger interstate or highway network.",
+      "inference_time_sec": 9.128,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead exit sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead exit sign appears to be in English. The sign reads \"ONLY,\" which is a common term used in English to indicate that only certain vehicles or conditions apply, such as in this case, likely referring to the lane usage or exit criteria.",
+      "inference_time_sec": 6.994,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text Bradley first become clearly displayed on the overhead sign?",
+      "ground_truth": "Bradley [entity_001] at 2.7 seconds",
+      "prediction": "The image provided does not contain any visible text or signs that include the word \"Bradley.\" Therefore, it is not possible to determine at what timestamp the text \"Bradley\" becomes clearly displayed on an overhead sign based on this image alone. If you have additional images or timestamps related to this scenario, please provide them so I can assist further.",
+      "inference_time_sec": 8.985,
+      "error": ""
+    }
+  ]
+}

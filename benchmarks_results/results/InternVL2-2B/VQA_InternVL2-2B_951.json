@@ -1,0 +1,70 @@
+{
+  "video_id": 951,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/951.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the storefront extension directly to the right of the 4CARS decals?",
+      "ground_truth": "VILLAGE [entity_009] to the right of 4CARS [entity_006] decals",
+      "prediction": "The storefront extension directly to the right of the 4CARS decals displays the text \"Green Valley Supermarket\" in large, bold letters.",
+      "inference_time_sec": 5.161,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 2.2s and 2.9s?",
+      "ground_truth": "6",
+      "prediction": "Between 2.2s and 2.9s, there are three distinct, legible text instances encountered by the vehicle. These include the \"EAT\" sign on the right side of the road, the \"Green Valley Market\" sign on the left side of the road, and the \"Pepsi\" sign on the right side of the road.",
+      "inference_time_sec": 5.996,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three text signs encountered on the right side of the street at the start of the clip?",
+      "ground_truth": "1st: boost [entity_001], 2nd: Switch Now [entity_002], 3rd: FREE PHONE [entity_003]",
+      "prediction": "The first text sign on the right side of the street at the start of the clip is \"EAT,\" followed by \"GREEN VILLAGE MARKET,\" and then \"GREEN VILLAGE MARKET.\"",
+      "inference_time_sec": 4.621,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional instruction is displayed on a sign near the entrance of the gas station driveway?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_020]",
+      "prediction": "The sign near the entrance of the gas station driveway displays a directional instruction that reads \"EXIT ONLY,\" indicating that the exit is for vehicles and not pedestrians.",
+      "inference_time_sec": 4.186,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, markets, and a gas station, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The driving environment depicted in the video is a bustling urban area with a variety of commercial establishments. The presence of multiple storefronts, including a supermarket, a gas station, and various other shops, suggests a commercial district. The density of these establishments indicates a high foot traffic area, likely frequented by both locals and tourists. The variety of businesses, from retail to service-oriented, points to a dynamic and economically active neighborhood. The street is not overly crowded, which could imply a less congested time of day or a less busy area within the city.",
+      "inference_time_sec": 7.811,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible phone number area code suggests the driving location is in New York City?",
+      "ground_truth": "(917) [entity_008]",
+      "prediction": "The visible phone number area code on the billboard is \"212,\" which suggests that the driving location is in New York City.",
+      "inference_time_sec": 3.965,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "On how many distinct storefronts does the text VILLAGE appear in the clip?",
+      "ground_truth": "2",
+      "prediction": "The text \"VILLAGE\" appears on two distinct storefronts in the clip. One is on the left side of the frame, and the other is on the right side, both of which are visible in the video.",
+      "inference_time_sec": 4.877,
+      "error": ""
+    }
+  ]
+}

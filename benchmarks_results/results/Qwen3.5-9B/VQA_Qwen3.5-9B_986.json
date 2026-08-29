@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "Where is the address number located relative to the residential house on the right side of the street?",
       "ground_truth": "On the residential house displaying the address number 149 [entity_001]",
-      "prediction": "The user wants to find the address number on the house to the right.\n\n1.  **Identify the house:** Looking at the right side of the street, there are several houses. The closest prominent house is a light-colored, possibly beige or cream, two-story house with a white picket fence.\n2.  **Locate the address number:** I need to look closely at the front of this house.\n    *   In the first few frames (00:00 - 00:02), the house is visible.\n    *   Looking at the front porch area or near the entrance",
-      "inference_time_sec": 13.267,
+      "prediction": "On the front of the house.",
+      "inference_time_sec": 3.381,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many address signs or house numbers are visible on the residential houses in this clip?",
       "ground_truth": "1",
-      "prediction": "The user wants me to count address signs or house numbers visible on the houses in the video.\n\n1.  **Analyze the scene:** The video is a dashcam view driving down a residential street. There are houses on both sides.\n2.  **Scan for house numbers:** I need to look closely at the houses, particularly near the front doors or on the mailboxes/sidewalks, as these are common places for address signs.\n3.  **Frame 00:00 - 00:01:**\n    *   Looking at the houses on the right side.",
-      "inference_time_sec": 13.318,
+      "prediction": "0",
+      "inference_time_sec": 2.836,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "In what order does the vehicle cross the intersection and the address sign come into focus?",
       "ground_truth": "1st: cross intersection, 2nd: residential house displaying the address number 149 [entity_001] comes into focus",
-      "prediction": "The user wants to know the sequence of two events: crossing the intersection and the address sign coming into focus.\n\n1.  **Analyze the video:**\n    *   **00:00 - 00:01:** The car is stopped at a crosswalk/intersection. The traffic light is red.\n    *   **00:01 - 00:02:** The traffic light turns green. The car starts moving forward.\n    *   **00:02 - 00:03:** The car crosses the crosswalk and enters the intersection.",
-      "inference_time_sec": 13.345,
+      "prediction": "intersection, address sign",
+      "inference_time_sec": 3.109,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What driving constraints or regulatory instructions are written on the signs visible in this clip?",
       "ground_truth": "None",
-      "prediction": "The user wants to identify driving constraints or regulatory instructions from the signs visible in the video.\n\n1.  **Scan the video for signs:** I need to look at the frames and identify any traffic signs.\n    *   **Frame 1 (00:00):**\n        *   There's a traffic light hanging overhead.\n        *   There's a pedestrian crossing signal on the right.\n        *   Looking further down the road, there's a green street sign on a pole on the right side. It's blurry but looks like a street name.\n        *   Wait, let's look closer at",
-      "inference_time_sec": 13.277,
+      "prediction": "SLOW",
+      "inference_time_sec": 2.914,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of a residential house displaying address number 149, what type of environment is this?",
       "ground_truth": "Residential area",
-      "prediction": "The user is asking for the type of environment based on a specific detail: a house with the address number 149.\n\n1.  **Identify the house:** I need to look at the provided images to find the house with the number 149.\n    *   Looking at the first few frames (00:00 - 00:02), I see houses on the right side of the street.\n    *   In the second image (00:01), on the right side, there's a house. Let's look closer. Wait, the prompt says \"res",
-      "inference_time_sec": 13.285,
+      "prediction": "residential",
+      "inference_time_sec": 2.924,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What script or numbering system is used for the address number displayed on the residential house?",
       "ground_truth": "Arabic numerals",
-      "prediction": "The user wants to identify the script or numbering system used for the address number on a house.\n\n1.  **Scan the video for houses with visible address numbers.**\n    *   I see houses on the right side of the street.\n    *   At 00:00, there's a house on the right corner. It's a bit blurry.\n    *   At 00:01, the car moves forward.\n    *   At 00:02, the car is passing houses on the right.\n    *   At 00:03, the car",
-      "inference_time_sec": 13.269,
+      "prediction": "Arabic",
+      "inference_time_sec": 2.908,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what specific time range does the address sign 149 come into focus in the clip?",
       "ground_truth": "Between 6.4 and 6.8 seconds",
-      "prediction": "The user wants to find the specific time range when the address sign \"149\" is visible.\n\n1.  **Analyze the video:** I'll scan through the frames to locate the sign.\n2.  **Frame 00:00 - 00:02:** The car is approaching an intersection. There are traffic lights and crosswalks. No specific house numbers are clearly visible yet.\n3.  **Frame 00:03:** The car is passing the intersection. On the right side, there's a green street sign. It's a bit blurry but looks like \"",
-      "inference_time_sec": 13.258,
+      "prediction": "0.0 - 0.5",
+      "inference_time_sec": 3.452,
       "error": ""
     }
   ]

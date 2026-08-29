@@ -1,0 +1,70 @@
+{
+  "video_id": 969,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/969.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the text Prospect?",
+      "ground_truth": "Expwy [entity_001] to the right of Prospect [entity_002]",
+      "prediction": "The text \"West\" is located directly to the right of the text \"Prospect.\"",
+      "inference_time_sec": 3.976,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds?",
+      "ground_truth": "3",
+      "prediction": "Between 2.1 and 2.8 seconds, there are three distinct, legible text instances that first come into view or are detected. These are the green signs with white text that read \"West 280 St\" and \"West 280 St Expwy,\" and the white text on the green sign that reads \"West 280 St Expwy.\"",
+      "inference_time_sec": 5.978,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of detection for the signs Prospect and EXIT 24?",
+      "ground_truth": "1st: Prospect [entity_002], 2nd: EXIT 24 [entity_003]",
+      "prediction": "The order of detection for the signs Prospect and EXIT 24 is as follows: The green sign for Prospect is first detected, followed by the green sign for EXIT 24.",
+      "inference_time_sec": 4.431,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific vehicle types are restricted from the left lane according to the white regulatory sign?",
+      "ground_truth": "TRUCKS [entity_009], BUSES [entity_010], and TRAILERS [entity_011]",
+      "prediction": "The white regulatory sign on the left lane indicates that vehicles with a license plate that starts with the letter \"P\" are restricted from the left lane. This sign is typically used to prevent parking or stopping in the leftmost lane of a highway, which is often reserved for emergency vehicles or for vehicles that are not intended for public use.",
+      "inference_time_sec": 5.775,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of directional signs, exit indicators, and lane restrictions suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of directional signs, exit indicators, and lane restrictions suggests a well-organized driving environment. The presence of multiple signs indicates that the highway is likely a major route with multiple destinations, necessitating clear guidance for drivers. The exit indicators, such as the green arrow pointing to the right, are designed to guide drivers to the nearest exit, ensuring they can safely exit the highway. The lane restrictions, such as the solid white line on the left side, indicate that the highway is designed to accommodate a high volume of traffic, with clear demarcations to manage the flow of vehicles. This combination of signs and indicators is typical",
+      "inference_time_sec": 8.361,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge and island names visible on the directional signs suggest the vehicle is in the New York City area?",
+      "ground_truth": "Verrazano Br [entity_008] and Staten Is [entity_005]",
+      "prediction": "The specific bridge and island names visible on the directional signs include \"West 34 St,\" \"West 35 St,\" \"West 36 St,\" \"West 37 St,\" \"West 38 St,\" \"West 39 St,\" \"West 40 St,\" \"West 41 St,\" \"West 42 St,\" \"West 43 St,\" \"West 44 St,\" \"West 45 St,\" \"West 46 St,\" \"West 47 St,\" \"West 48 St,\" \"West 49 St,\" \"West 50 St,\" \"West 51 St,\" \"West 52 St,\" \"",
+      "inference_time_sec": 8.327,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the distant skyline advertisement text PEPSI first become visible?",
+      "ground_truth": "4.533 seconds",
+      "prediction": "The distant skyline advertisement text \"PEPSI\" first becomes visible at the beginning of the video.",
+      "inference_time_sec": 3.725,
+      "error": ""
+    }
+  ]
+}

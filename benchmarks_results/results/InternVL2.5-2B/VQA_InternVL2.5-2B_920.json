@@ -1,0 +1,70 @@
+{
+  "video_id": 920,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/920.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What yellow clearance warning text is located directly to the right of the overhead sign containing Terminals?",
+      "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
+      "prediction": "The yellow clearance warning text located directly to the right of the overhead sign containing Terminals is 'Dangerous Trucks Approaching'.",
+      "inference_time_sec": 3.95,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "3",
+      "prediction": "There are at least three distinct license plates visible on vehicles in this clip.",
+      "inference_time_sec": 3.428,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three distinct vehicle-mounted text instances encountered on the NYPD cruiser?",
+      "ground_truth": "1st POLICE [entity_002], 2nd 50341 [entity_003], 3rd PLOW [entity_005]",
+      "prediction": "The first three distinct vehicle-mounted text instances on the NYPD cruiser are 'STOP', 'STOP', and 'STOP'.",
+      "inference_time_sec": 3.956,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the yellow sign indicates a height restriction for vehicles passing under the gantry?",
+      "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
+      "prediction": "The yellow sign with the warning text 'DO NOT PASS' indicates a height restriction for vehicles passing under the gantry.",
+      "inference_time_sec": 3.837,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of facility does the mix of overhead and roadside signs indicate the vehicle is approaching?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "The mix of overhead and roadside signs indicates that the vehicle is approaching a transportation facility, likely an airport. The signs provide directions to various parts of the facility, such as the Central Terminal, Departing Flights, and Airport Exit, which are typical features of an airport's infrastructure.",
+      "inference_time_sec": 5.281,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city's police department is indicated by the markings on the parked patrol cruiser?",
+      "ground_truth": "New York City",
+      "prediction": "The markings on the parked patrol cruiser indicate that it belongs to the New York City Police Department.",
+      "inference_time_sec": 3.639,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate N202894C first become visible in the travel lane?",
+      "ground_truth": "2.933 seconds for N202894C [entity_001]",
+      "prediction": "The license plate N202894C first becomes visible in the travel lane at the beginning of the video, during the first frame.",
+      "inference_time_sec": 4.003,
+      "error": ""
+    }
+  ]
+}

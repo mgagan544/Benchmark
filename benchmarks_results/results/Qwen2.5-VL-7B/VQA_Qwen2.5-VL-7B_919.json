@@ -1,0 +1,70 @@
+{
+  "video_id": 919,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/919.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located across the street relative to the overhead crossing sign displaying AHE?",
+      "ground_truth": "CASH 4 [entity_003] to the left of AHE [entity_002]",
+      "prediction": "The text located across the street, relative to the overhead crossing sign displaying \"AHE,\" appears to be \"NO STANDING ANYTIME.\" This is typically a parking restriction sign indicating that no vehicles can park in the area at any time.",
+      "inference_time_sec": 6.754,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?",
+      "ground_truth": "7",
+      "prediction": "There is one distinct text instance marked on the yellow school bus parked along the right curb, which reads \"SCHOOL BUS.\"",
+      "inference_time_sec": 5.932,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?",
+      "ground_truth": "1st: SCHOOL [entity_001], 2nd: AHE [entity_002], 3rd: CASH 4 [entity_003]",
+      "prediction": "The chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds is:\n\n1. \"School Zone\"\n2. \"No Parking\"\n3. \"No Parking\" (repeated)",
+      "inference_time_sec": 6.651,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?",
+      "ground_truth": "PARKING [entity_011]",
+      "prediction": "The regulatory text on the utility post on the right sidewalk appears to be a \"No Parking\" sign, which is typically indicated by a red circle with a line through it and the word \"NO PARKING\" written below it. This sign constrains parking in that area, meaning vehicles are not allowed to park there.",
+      "inference_time_sec": 7.568,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?",
+      "ground_truth": "School zone",
+      "prediction": "The mix of text visible in the image, which includes \"School Zone\" and \"No Parking,\" suggests that this is an area with specific traffic regulations, likely near a school. The presence of these signs indicates that drivers must be cautious and adhere to the rules to ensure safety for children and other pedestrians. This type of signage is typically found in areas where there is a high likelihood of school buses and students, emphasizing the importance of traffic control in such zones.",
+      "inference_time_sec": 9.187,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the contact number displayed on the side of the school bus?",
+      "ground_truth": "New York City",
+      "prediction": "The contact number displayed on the side of the school bus is \"212-780-3600.\" This phone number is associated with the New York City Department of Education, which operates the school bus system in New York City. Therefore, it suggests that the school bus is likely operating in New York City.",
+      "inference_time_sec": 7.801,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the regulatory parking sign remain continuously visible in the clip?",
+      "ground_truth": "6.400 seconds to 7.367 seconds",
+      "prediction": "The regulatory parking sign is continuously visible throughout the entire video clip. It is located on the right side of the street, near the sidewalk, and remains in view as the camera moves forward through the intersection. The sign indicates that parking is prohibited at certain times, but the specific time range is not provided within the image itself.",
+      "inference_time_sec": 7.669,
+      "error": ""
+    }
+  ]
+}

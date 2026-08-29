@@ -1,0 +1,70 @@
+{
+  "video_id": 926,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/926.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the safety sign marked with AMER relative to the vehicle with license plate T679966C?",
+      "ground_truth": "AMER [entity_008] is to the right of T679966C [entity_007]",
+      "prediction": "The safety sign marked with AMER is positioned to the left of the vehicle with the license plate T679966C. It is located on the right side of the road, near the center of the highway, and is visible to the driver of the vehicle in the foreground.",
+      "inference_time_sec": 8.469,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to the highway direction sign pointing toward the wait area?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances belonging to the highway direction sign pointing toward the wait area. The first instance is the word \"Wait\" in white letters on a green background, and the second instance is the word \"Toll\" in white letters on a green background.",
+      "inference_time_sec": 7.946,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the airport facility sign, the highway direction sign, and the license plate are encountered between 0.9 and 5.0 seconds?",
+      "ground_truth": "1st: AMERICAN [entity_001] AIRLINES [entity_002], 2nd: Long [entity_003] Term [entity_004] Wait [entity_005] Area [entity_006], 3rd: T679966C [entity_007]",
+      "prediction": "Between 0.9 and 5.0 seconds, the order in which the airport facility sign, the highway direction sign, and the license plate are encountered is as follows: the airport facility sign is first seen, followed by the highway direction sign, and finally the license plate.",
+      "inference_time_sec": 8.493,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint? If so, what does it say and where is it located?",
+      "ground_truth": "AMER [entity_008] on a construction notice at the airport construction site",
+      "prediction": "Yes, there is a visible text indicating a hazard, warning, or driving constraint. The text reads \"SLOW\" and is located on a green sign on the left side of the road.",
+      "inference_time_sec": 7.078,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible text mentioning airlines and long term wait area, what type of driving environment is depicted?",
+      "ground_truth": "Airport access road",
+      "prediction": "The visible text mentioning airlines and a long term wait area suggests that the driving environment is likely near an airport. This is supported by the presence of a construction crane, which is often found in areas undergoing development or expansion, possibly for airport facilities. The traffic congestion and the directional signs also indicate that this is a major thoroughfare, likely leading to or from the airport.",
+      "inference_time_sec": 10.007,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the airport hangar and highway direction sign written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the airport hangar and highway direction sign is written in English. The hangar has the word \"Airport\" in white letters on a black background, and the highway sign has white text on a blue background, both of which are common in English-speaking regions.",
+      "inference_time_sec": 8.435,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the gold lead SUV become clearly visible?",
+      "ground_truth": "4.0 seconds for T679966C [entity_007]",
+      "prediction": "The license plate on the gold lead SUV becomes clearly visible at the timestamp 00:00:00.",
+      "inference_time_sec": 5.868,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 986,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/986.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the address number located relative to the residential house on the right side of the street?",
+      "ground_truth": "On the residential house displaying the address number 149 [entity_001]",
+      "prediction": "The address number is located on the front of the residential house on the right side of the street, near the entrance or the front door. It is typically displayed on the wall or a sign in front of the house, close to where people would approach the house.",
+      "inference_time_sec": 6.86,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many address signs or house numbers are visible on the residential houses in this clip?",
+      "ground_truth": "1",
+      "prediction": "In the provided image, there are no visible address signs or house numbers on the residential houses. The houses appear to have white picket fences and some trees, but the specific details of the addresses are not discernible from this view.",
+      "inference_time_sec": 6.756,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle cross the intersection and the address sign come into focus?",
+      "ground_truth": "1st: cross intersection, 2nd: residential house displaying the address number 149 [entity_001] comes into focus",
+      "prediction": "The image sequence shows the following:\n\n1. The vehicle is stopped at the intersection, waiting for the traffic light to turn green.\n2. The traffic light turns green, and the vehicle begins to move forward.\n3. As the vehicle moves forward, the camera angle shifts slightly, bringing the address sign into focus.\n\nSo, the vehicle crosses the intersection first, and then the address sign comes into focus as the vehicle continues to move forward.",
+      "inference_time_sec": 8.966,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints or regulatory instructions are written on the signs visible in this clip?",
+      "ground_truth": "None",
+      "prediction": "The image shows a view from inside a car at an intersection. The signs and regulatory instructions visible include:\n\n1. **Traffic Lights**: There is a traffic light visible above the intersection, which appears to be green, indicating that vehicles can proceed.\n2. **Crosswalk**: There is a pedestrian crosswalk painted on the road, which is typically used for pedestrians to cross the street safely.\n\nNo specific text or additional regulatory instructions are clearly visible on the signs in this particular image. The focus seems to be on the general traffic flow and pedestrian crossing area. If there were any specific signs with text, they would need to be more clearly visible",
+      "inference_time_sec": 11.063,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a residential house displaying address number 149, what type of environment is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The presence of a residential house with an address number 149 suggests that this is a suburban or residential neighborhood. The environment appears to be a typical suburban area with single-family homes, parked cars along the street, and a pedestrian crossing. The houses are close together, which is common in suburban settings where families often live in detached or semi-detached homes. The overall scene indicates a peaceful, residential area with a mix of greenery and urban infrastructure.",
+      "inference_time_sec": 9.037,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the address number displayed on the residential house?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The image does not provide enough detail to determine the specific script or numbering system used for the address number displayed on the residential house. The address number appears to be a standard numerical format, but without a clear view of the number itself, it's not possible to identify the script or numbering system with certainty. If you can see the address number more clearly, please share that information, and I can assist further.",
+      "inference_time_sec": 8.632,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what specific time range does the address sign 149 come into focus in the clip?",
+      "ground_truth": "Between 6.4 and 6.8 seconds",
+      "prediction": "The address sign \"149\" comes into focus towards the end of the video, as the camera pans to the right and zooms in on the area where the sign is located. This happens after the car has passed through the intersection and is moving along the street. The exact time range cannot be determined without additional context or a timestamp reference within the video.",
+      "inference_time_sec": 8.135,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 914,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/914.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the digital YOUR SPEED MPH feedback sign?",
+      "ground_truth": "ONLY [entity_005] sign to the right of YOUR [entity_001] SPEED [entity_002] MPH [entity_003]",
+      "prediction": "A yellow road sign indicating a 20 mph speed limit is located directly to the right of the digital YOUR SPEED MPH feedback sign.",
+      "inference_time_sec": 4.368,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory or feedback signs are located on the right side of the exit ramp?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct regulatory or feedback signs located on the right side of the exit ramp.",
+      "inference_time_sec": 3.836,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the camera vehicle pass the ONE WAY sign, the digital YOUR SPEED MPH feedback sign, and the ONLY sign?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: YOUR [entity_001] SPEED [entity_002] MPH [entity_003], 3rd: ONLY [entity_005]",
+      "prediction": "The camera vehicle first passes the ONE WAY sign, then the digital YOUR SPEED MPH feedback sign, and finally the ONLY sign.",
+      "inference_time_sec": 4.351,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which sign indicates that traffic must flow in a single direction at the start of the ramp?",
+      "ground_truth": "ONE WAY [entity_004] sign",
+      "prediction": "The 'YOUR SPEED' sign, which is a yellow diamond-shaped sign, indicates that traffic must flow in a single direction at the start of the ramp. This sign is typically placed at the beginning of a ramp or overpass to ensure that vehicles are traveling at a safe speed and to prevent accidents. The presence of this sign in the video suggests that the location is a regulated urban area where traffic management is in place to maintain safety and order.",
+      "inference_time_sec": 7.909,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the exit ramp, elevated structure, and multi-story brick buildings, what kind of driving environment is depicted?",
+      "ground_truth": "urban exit ramp",
+      "prediction": "The driving environment depicted is urban, characterized by a multi-lane road with a steep exit ramp, an elevated structure, and multi-story brick buildings, suggesting a city setting.",
+      "inference_time_sec": 4.78,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory and feedback signs along the ramp?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory and feedback signs along the ramp is in both English and Spanish. This bilingual approach is common in many regions to cater to a diverse population and ensure that drivers from different linguistic backgrounds can understand the traffic regulations and instructions.",
+      "inference_time_sec": 5.542,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ONLY sign first become visible as the vehicle enters the underpass?",
+      "ground_truth": "4.4 seconds for ONLY [entity_005]",
+      "prediction": "The ONLY sign first becomes visible as the vehicle enters the underpass at the 6th second mark.",
+      "inference_time_sec": 3.764,
+      "error": ""
+    }
+  ]
+}

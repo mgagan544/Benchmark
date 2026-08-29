@@ -1,0 +1,70 @@
+{
+  "video_id": 928,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/928.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the guide sign indicating Bron EXPWY?",
+      "ground_truth": "178 [entity_007] and NORTH [entity_008] to the right of Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The sign located directly to the right of the guide sign indicating Bron EXPWY is the NY 9A sign.",
+      "inference_time_sec": 7.825,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible in this clip?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances containing numbers visible in the clip. The first is the '95' on the green highway sign, and the second is the '95' on the license plate of the car in front.",
+      "inference_time_sec": 8.972,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?",
+      "ground_truth": "1st: 3030 [entity_001], 2nd: SPEED [entity_002] LIMIT [entity_003], 3rd: Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The roadside marker is first encountered, followed by the speed limit sign, and then the Bron EXPWY guide sign.",
+      "inference_time_sec": 7.968,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the overhead structure to indicate a height restriction?",
+      "ground_truth": "CLEARANCE 13-6 [entity_006]",
+      "prediction": "The overhead structure displays a warning text that reads 'HEIGHT CLEARANCE 12'6\"'. This indicates that the clearance for vehicles passing under the structure is 12 feet 6 inches, which is a standard height restriction for many highways and bridges to prevent tall vehicles from colliding with the structure.",
+      "inference_time_sec": 9.909,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the video is a highway or expressway, as indicated by the presence of guide signs, speed limits, and clearance warnings. These signs are typically used to provide drivers with information about upcoming exits, speed restrictions, and the minimum height clearance for vehicles. The presence of these signs suggests that the road is designed for high-speed travel and is likely part of a larger transportation network.",
+      "inference_time_sec": 11.154,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region or city is suggested by the guide sign indicating Bron EXPWY?",
+      "ground_truth": "Bronx, New York",
+      "prediction": "The guide sign indicating Bron EXPWY suggests that the location is in the Bronx, a borough of New York City.",
+      "inference_time_sec": 7.913,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the vehicle directly ahead become clearly readable?",
+      "ground_truth": "8.7",
+      "prediction": "The license plate on the vehicle directly ahead becomes clearly readable at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.634,
+      "error": ""
+    }
+  ]
+}

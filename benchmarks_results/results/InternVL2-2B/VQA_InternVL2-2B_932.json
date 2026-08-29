@@ -1,0 +1,70 @@
+{
+  "video_id": 932,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/932.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
+      "ground_truth": "CLEANERS [entity_019]",
+      "prediction": "The business name located adjacent to the storefront of COAST FOR GOLD on the right side of the street is not clearly visible in the provided video.",
+      "inference_time_sec": 5.683,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances visible on the regulatory sign post to the right of the lane marking. One is a white sign with black text that reads \"SCHOOL BUS ONLY,\" and the other is a yellow sign with black text that says \"BUS ONLY.\"",
+      "inference_time_sec": 5.183,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
+      "prediction": "The text instances appear in the following order in the video clip:\n\n1. ONLY\n2. BUSES ONLY\n3. SCHOOL BUS",
+      "inference_time_sec": 4.076,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
+      "ground_truth": "ONE WAY [entity_004]",
+      "prediction": "The regulatory sign post indicates a direction restriction for vehicle movement by displaying the text \"ONLY\" in white letters on a red background. This sign is typically used to indicate that a specific lane or area is reserved for a particular type of vehicle, in this case, buses, and that they are not allowed to enter that lane.",
+      "inference_time_sec": 5.746,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
+      "ground_truth": "Commercial urban street",
+      "prediction": "The presence of storefronts like COAST FOR GOLD and CLEANERS suggests a mixed-use urban environment where commercial activity is present alongside residential or mixed-use areas. This indicates a neighborhood that is likely to be a mix of local businesses and possibly a residential area with commercial services. The variety of storefronts implies a community that supports local businesses and services, which is typical of urban areas where commercial and residential spaces coexist.",
+      "inference_time_sec": 6.654,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific phone number on the first school bus suggests a New York City location?",
+      "ground_truth": "(718)852-0286 [entity_011]",
+      "prediction": "The specific phone number on the first school bus, which reads \"2846,\" suggests a New York City location. This number is a common format for phone numbers in New York City, where the area code is 212.",
+      "inference_time_sec": 4.836,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
+      "ground_truth": "4.267 seconds",
+      "prediction": "The text \"BUSES ONLY\" first becomes visible in the clip at the beginning of the video.",
+      "inference_time_sec": 3.742,
+      "error": ""
+    }
+  ]
+}

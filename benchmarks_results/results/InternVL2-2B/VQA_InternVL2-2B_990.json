@@ -1,0 +1,70 @@
+{
+  "video_id": 990,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/990.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the Linden Blvd and JUNIUS street signs relative to the white commuter van?",
+      "ground_truth": "Directly above HAPPY [entity_019] ISLAND [entity_020] SENOR [entity_021] CENTER [entity_022]",
+      "prediction": "The Linden Blvd sign is located on the right side of the road, just before the intersection with JUNIUS street. The JUNIUS street sign is positioned on the left side of the road, directly in front of the white commuter van.",
+      "inference_time_sec": 5.955,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to street or regulatory signs in this scene?",
+      "ground_truth": "9",
+      "prediction": "In the video, there are three distinct text instances that belong to street or regulatory signs. One is on the traffic light pole, another is on the red and white signage of the Burger King restaurant, and the third is on the green signage of the intersection.",
+      "inference_time_sec": 5.154,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the DRIVE sign, the Linden Plaza sign, and the DO NOT ENTER sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: DRIVE [entity_002], 2nd: Linden Plaza [entity_006], 3rd: DO NOT [entity_017] ENTER [entity_016]",
+      "prediction": "As the vehicle moves forward, the order of the signs encountered is as follows: The DO NOT ENTER sign is first seen on the right side of the road, followed by the Linden Plaza sign, and then the DRIVE sign. This sequence is inferred from the perspective of the camera, which is moving forward from the perspective of the driver.",
+      "inference_time_sec": 5.907,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text constrains movement near the drive-thru lane entrance?",
+      "ground_truth": "DO NOT [entity_017] ENTER [entity_016]",
+      "prediction": "The warning text that constrains movement near the drive-thru lane entrance is \"DRIVE THRU ONLY.\" This text is prominently displayed on a red and white sign attached to a metal pole on the right side of the road, just before the drive-thru lane entrance.",
+      "inference_time_sec": 5.207,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs like Burger King and Family Dollar, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The density and type of storefront signs, such as Burger King and Family Dollar, suggest that this clip depicts a typical urban environment where convenience stores are common. These types of stores are often found in areas with high foot traffic and are designed to cater to the daily needs of the local population. The presence of these stores indicates that the area is likely a commercial district with a mix of residential and commercial properties.",
+      "inference_time_sec": 6.374,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the area code in the phone number displayed on the commuter van?",
+      "ground_truth": "New York City",
+      "prediction": "The area code \"718\" displayed on the phone number on the commuter van suggests that the city is New York City. This is a common area code for the New York metropolitan area, which includes cities like New York, New Jersey, and parts of Pennsylvania.",
+      "inference_time_sec": 5.056,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the Linden Plaza sign remain continuously visible in the clip?",
+      "ground_truth": "0.6s to 1.33s for Linden Plaza [entity_006]",
+      "prediction": "The Linden Plaza sign remains continuously visible in the clip throughout the entire duration of the video. It is visible at the beginning, during the entire duration of the video, and remains visible until the end.",
+      "inference_time_sec": 4.59,
+      "error": ""
+    }
+  ]
+}

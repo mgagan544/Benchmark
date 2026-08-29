@@ -1,0 +1,70 @@
+{
+  "video_id": 913,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/913.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the right of the orange construction signboard containing the word ROAD?",
+      "ground_truth": "SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] on the digital display sign",
+      "prediction": "WORK AHEAD",
+      "inference_time_sec": 3.786,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct pieces of text displayed on the orange construction signboard mounted on the left side of the ramp:\n\n1. \"ROAD WORK AHEAD\"\n2. \"25 MPH\"\n\nThese are the only two distinct textual elements visible on the signboard.",
+      "inference_time_sec": 7.649,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?",
+      "ground_truth": "1st: ROAD [entity_001], 2nd: WORK [entity_002], 3rd: AHEAD [entity_003]",
+      "prediction": "The text on the orange construction signboard is encountered in the following order from timestamp 0.0 to 0.5:\n\n1. **\"ROAD WORK AHEAD\"** — This text is visible at timestamp 0.0.\n2. **\"25 MPH\"** — This text appears at timestamp 0.1.\n3. **\"YOUR TURN\"** — This text is visible at timestamp 0.4.\n\nThus, the order is: **\"ROAD WORK AHEAD\"**, then **\"25 MPH\"**, then **\"YOUR TURN\"**.",
+      "inference_time_sec": 12.817,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?",
+      "ground_truth": "ROAD [entity_001] WORK [entity_002] AHEAD [entity_003] on the left side of the ramp",
+      "prediction": "Yes, there is visible text indicating a hazard or road condition ahead. The text “ROAD WORK AHEAD” is displayed on an orange diamond-shaped sign located on the left side of the frame, near the top-left corner. This sign is positioned to alert drivers to upcoming construction or maintenance activities, which may affect traffic flow or require caution.",
+      "inference_time_sec": 8.918,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "An elevated highway construction zone",
+      "prediction": "This clip depicts a **highway or elevated roadway in an urban environment with active construction and traffic management**.\n\nHere’s why:\n\n- **Construction Signs**: The prominent “ROAD WORK AHEAD” sign (visible at 0:00) indicates ongoing roadwork, which is common in cities where infrastructure is being maintained or upgraded.\n  \n- **Speed Limit Sign**: The “25 MPH” sign (visible at 0:00) suggests a reduced speed limit, often implemented in areas with construction, pedestrian activity, or tight road conditions — typical in urban settings.\n\n- **Urban Infrastructure**: The presence of tall buildings, elevated",
+      "inference_time_sec": 16.089,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction signboard and the digital display sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction signboard and the digital display sign is in **English**.\n\n- The construction signboard reads: **“ROAD WORK AHEAD”** — this is standard English used for roadwork warnings.\n- The digital display sign reads: **“YOUR TRIP IS 10 MINUTES”** — this is also in English, commonly used in public transit or traffic systems.\n\nBoth signs use clear, straightforward English to convey information to drivers and pedestrians.",
+      "inference_time_sec": 10.938,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the word SPEED first become legible on the digital display sign?",
+      "ground_truth": "7.967",
+      "prediction": "The word \"SPEED\" first becomes legible on the digital display sign at 0:00.",
+      "inference_time_sec": 5.378,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 942,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/942.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text Without relative to the Studio Prices text on the first billboard?",
+      "ground_truth": "To the right of Studio Prices [entity_003]",
+      "prediction": "The text \"Studio Prices\" is positioned on the second billboard, which is located on the right side of the frame. It is placed towards the upper right corner of the billboard, making it less prominent than the \"Studio Prices\" text on the first billboard.",
+      "inference_time_sec": 5.904,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to street, highway, or regulatory signs in this clip?",
+      "ground_truth": "6",
+      "prediction": "In the video, there are three distinct pieces of text that belong to street, highway, or regulatory signs. The first is the green sign with white text that reads \"Leonard Avenue,\" indicating the name of the road. The second is a yellow sign with a black arrow pointing to the right, which is a regulatory sign indicating the direction to the right. The third is a red sign with white text that reads \"24-hour,\" which is a regulatory sign indicating the presence of a 24-hour service.",
+      "inference_time_sec": 7.262,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the billboard displaying Studio Closses and the billboard displaying eatenlightened.com are encountered?",
+      "ground_truth": "1st: Studio Closses [entity_001], 2nd: eatenlightened.com [entity_009]",
+      "prediction": "The order in which the billboards are encountered is as follows: The first billboard displaying Studio Closses is seen at the beginning of the video, followed by the second billboard displaying eatenlightened.com.",
+      "inference_time_sec": 4.643,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a height restriction constraint? If so, what does it say and where is it located?",
+      "ground_truth": "12-6 [entity_013] adjacent to Lexington Avenue [entity_011]",
+      "prediction": "Yes, there is visible text in the clip that indicates a height restriction constraint. The text reads \"Height Restriction\" and is located on a sign located on the right side of the road. The sign is mounted on a metal pole and is positioned near the edge of the road, clearly visible to drivers.",
+      "inference_time_sec": 5.5,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible highway signs and large billboards, what kind of driving environment is depicted?",
+      "ground_truth": "Highway overpass or elevated highway ramp",
+      "prediction": "The driving environment depicted in the video is urban and commercial, characterized by the presence of multiple highway signs and large billboards. The signs indicate directions to various destinations, such as \"Leonard Avenue\" and \"St. George,\" which are typical of a city's transportation infrastructure. The billboards, one of which is advertising a beauty product, suggest a commercial area with businesses catering to the public. The overcast sky and wet road conditions imply that the area experiences inclement weather, which is common in urban settings. The overall setting is one of a busy, possibly congested urban area with a mix of commercial and residential elements.",
+      "inference_time_sec": 8.338,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street or highway names visible on the overhead signs suggest a specific city? If so, what text supports this?",
+      "ground_truth": "New York City, supported by FDR Drive SOUTH [entity_010] and Lexington Avenue [entity_011]",
+      "prediction": "Yes, the overhead signs on the bridge provide information about the city. The sign reads \"Leonard Avenue,\" which is a street name in New York City. This suggests that the video was taken in New York City.",
+      "inference_time_sec": 4.709,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the overhead highway sign for 2 Avenue remain visible to the camera vehicle?",
+      "ground_truth": "8.733 seconds to 9.367 seconds",
+      "prediction": "The overhead highway sign for 2 Avenue remains visible to the camera vehicle throughout the entire duration of the video. It is visible at the beginning, as the camera vehicle approaches the intersection, and it remains visible until the end, as the camera vehicle exits the highway and continues on the road.",
+      "inference_time_sec": 5.309,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 947,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/947.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the sign containing the text STATE relative to the speed warning sign?",
+      "ground_truth": "To the right of SPEED [entity_005]",
+      "prediction": "The sign containing the text \"STATE\" is positioned to the right of the speed warning sign. It is mounted on a pole that is closer to the camera's perspective than the speed warning sign, which is further away and to the left. The \"STATE\" sign is also higher up on the pole compared to the speed warning sign, indicating that it is meant to be seen by drivers at a distance.",
+      "inference_time_sec": 11.425,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the silver minivan?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct text instances mounted on the silver minivan. The first is a license plate with the text \"HEC-1344,\" and the second is a sticker on the rear window with the text \"UPSTATE.\"",
+      "inference_time_sec": 9.24,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the green exit sign, the white regulatory sign, and the minivan's license plate are first encountered?",
+      "ground_truth": "1st: EXIT [entity_001], 2nd: STATE [entity_006], 3rd: HEG-1344 [entity_010]",
+      "prediction": "The green exit sign is first encountered, followed by the white regulatory sign, and then the minivan's license plate.",
+      "inference_time_sec": 7.811,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign indicates a financial penalty for driving too fast?",
+      "ground_truth": "STATE [entity_006] LAW [entity_007] fines DOUBLED FOR [entity_008] SPEEDING [entity_009]",
+      "prediction": "The regulatory sign in the video indicates a financial penalty for driving too fast with the text \"STATE LAW 12-110 7-10-10.\" This suggests that there is a specific law in place that could result in a fine for exceeding the speed limit by a certain amount, although the exact details of the penalty are not visible in the video.",
+      "inference_time_sec": 10.835,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of exit signs, speed warning signs, and regulatory signs?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of exit signs, speed warning signs, and regulatory signs suggests a controlled road environment, likely a highway or a major road with multiple lanes. These signs are typically used to inform drivers of upcoming exits, to regulate speed, and to enforce traffic rules, indicating that the road is designed to handle a significant volume of traffic and requires drivers to adhere to specific rules for safety and order.",
+      "inference_time_sec": 11.222,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific state or region is indicated by the text on the silver minivan's license plate?",
+      "ground_truth": "NEW YORK [entity_011]",
+      "prediction": "The text on the silver minivan's license plate reads \"HEC-1344,\" which does not provide any direct information about the state or region it is from. License plates often include state names or abbreviations, but this particular plate does not display any such information. Therefore, based solely on the image, it is not possible to determine the specific state or region associated with the minivan's license plate.",
+      "inference_time_sec": 11.449,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the license plate HEG-1344 clearly legible on the silver minivan?",
+      "ground_truth": "6.167s to 9.2s",
+      "prediction": "The license plate HEG-1344 is clearly legible on the silver minivan throughout the entire video. It is visible from the beginning of the video until the end, indicating that the camera angle and lighting conditions remain consistent, allowing for the plate to be read clearly.",
+      "inference_time_sec": 9.77,
+      "error": ""
+    }
+  ]
+}

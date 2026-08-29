@@ -1,0 +1,70 @@
+{
+  "video_id": 928,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/928.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the guide sign indicating Bron EXPWY?",
+      "ground_truth": "178 [entity_007] and NORTH [entity_008] to the right of Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The sign located directly to the right of the guide sign indicating \"Bron Expwy\" is a green sign with white text that reads \"W 178 St\" and has an arrow pointing downward, indicating the direction to West 178th Street.",
+      "inference_time_sec": 6.9,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible in this clip?",
+      "ground_truth": "4",
+      "prediction": "In the image provided, there is one distinct text instance containing numbers that is visible. The speed limit sign on the right side of the road shows \"Speed LIMIT 30,\" which contains the number \"30.\"",
+      "inference_time_sec": 6.485,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?",
+      "ground_truth": "1st: 3030 [entity_001], 2nd: SPEED [entity_002] LIMIT [entity_003], 3rd: Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered is as follows:\n\n1. **Roadside Marker**: The roadside marker is typically the first thing seen on the left side of the road, often placed at the beginning of an exit ramp or a change in direction.\n2. **Speed Limit Sign**: The speed limit sign is usually located further down the road, after the roadside marker, to inform drivers of the maximum speed allowed in that area.\n3. **Bron EXPWY Guide Sign**: The Bron EXPWY guide sign is likely to be seen next, providing",
+      "inference_time_sec": 10.924,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the overhead structure to indicate a height restriction?",
+      "ground_truth": "CLEARANCE 13-6 [entity_006]",
+      "prediction": "The overhead structure displays a sign that reads \"CLEARANCE 13' 6\" NORTH Cr Bronx Expwy.\" This indicates the height clearance for vehicles traveling northbound on the Cr Bronx Expressway.",
+      "inference_time_sec": 6.182,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The image depicts a highway or expressway driving environment at night. The presence of guide signs indicating directions to \"Cr Bronx Expwy\" and \"W 178 St,\" along with the speed limit sign showing \"Speed LIMIT 30,\" suggests that this is a controlled-access road where drivers need to follow specific traffic rules and directions. The clearance warning sign indicates that there may be an overpass or bridge ahead, which requires drivers to ensure their vehicle's height does not exceed the specified clearance. The multiple lanes and the presence of other vehicles with their brake lights on suggest that it might be a busy section of the highway, possibly",
+      "inference_time_sec": 10.986,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region or city is suggested by the guide sign indicating Bron EXPWY?",
+      "ground_truth": "Bronx, New York",
+      "prediction": "The guide sign in the image indicates \"Bron Expwy,\" which likely refers to the Bronx Expressway, a major highway in New York City. The presence of this sign suggests that the location is in the Bronx, one of the five boroughs of New York City. The speed limit sign of 30 mph also aligns with typical urban speed limits in New York City.",
+      "inference_time_sec": 8.242,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the vehicle directly ahead become clearly readable?",
+      "ground_truth": "8.7",
+      "prediction": "The license plate on the vehicle directly ahead becomes clearly readable at approximately 10 seconds into the video.",
+      "inference_time_sec": 5.156,
+      "error": ""
+    }
+  ]
+}

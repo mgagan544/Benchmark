@@ -1,0 +1,70 @@
+{
+  "video_id": 998,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/998.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which restaurant is located to the right of the BARBERSHOP on the left side of the street?",
+      "ground_truth": "DELI MEXICAN FOOD [entity_003]",
+      "prediction": "The restaurant located to the right of the BARBERSHOP on the left side of the street is the PIZZA restaurant.",
+      "inference_time_sec": 6.193,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned on the grey vehicles in the traffic lane?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates mentioned on the grey vehicles in the traffic lane. The first is on the silver car, which is not fully visible, and the second is on the black car, which is clearly visible and reads \"NY\".",
+      "inference_time_sec": 7.806,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the license plates HJG-2334 and FHN-9486 are encountered or approached by the camera vehicle?",
+      "ground_truth": "1st: HJG-2334 [entity_004], 2nd: FHN-9486 [entity_009]",
+      "prediction": "The license plate HJG-2334 is first encountered or approached by the camera vehicle as it is seen on the car in front of the camera vehicle. The license plate FHN-9486 is seen on the car that is directly in front of the camera vehicle, indicating that it is the second car encountered or approached by the camera vehicle.",
+      "inference_time_sec": 9.519,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving hazard, speed limit, or regulatory constraint?",
+      "ground_truth": "None is present",
+      "prediction": "Yes, there is a visible text in the clip that indicates a driving hazard. The text \"SCHOOL\" is visible on a sign, which serves as a warning to drivers to be cautious and aware of the presence of children in the area.",
+      "inference_time_sec": 8.071,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of storefronts, a gas station, and a car wash?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The presence of storefronts, a gas station, and a car wash suggests a commercial driving environment, likely in an urban or suburban area where such services are readily available to drivers. This setting indicates that the road is part of a busy thoroughfare where drivers can access various amenities and services while on the move.",
+      "inference_time_sec": 8.778,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional area code is shared by the phone numbers visible on the storefronts in this scene?",
+      "ground_truth": "718",
+      "prediction": "The phone numbers visible on the storefronts in the scene share the area code 212, which is the area code for New York City.",
+      "inference_time_sec": 6.371,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the car wash facility displaying the CAR and WASH signs first become clearer on the right?",
+      "ground_truth": "4.967 seconds",
+      "prediction": "The car wash facility displaying the CAR and WASH signs first becomes clearer on the right at the timestamp 00:00:00.",
+      "inference_time_sec": 6.469,
+      "error": ""
+    }
+  ]
+}

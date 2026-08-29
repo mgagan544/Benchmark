@@ -1,0 +1,70 @@
+{
+  "video_id": 926,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/926.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the safety sign marked with AMER relative to the vehicle with license plate T679966C?",
+      "ground_truth": "AMER [entity_008] is to the right of T679966C [entity_007]",
+      "prediction": "The safety sign marked with \"AMER\" (likely referring to American Airlines) is positioned to the right of the vehicle with the license plate T679966C. It appears to be on a signboard that is part of the airport infrastructure, indicating directions or information for passengers heading towards Terminal A. The vehicle with the license plate T679966C is driving on the highway and is not directly in front of the sign but rather to its left side as viewed from the perspective of the camera.",
+      "inference_time_sec": 9.939,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to the highway direction sign pointing toward the wait area?",
+      "ground_truth": "4",
+      "prediction": "There is one distinct text instance on the highway direction sign pointing toward the wait area, which reads \"Wait Area.\"",
+      "inference_time_sec": 5.387,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the airport facility sign, the highway direction sign, and the license plate are encountered between 0.9 and 5.0 seconds?",
+      "ground_truth": "1st: AMERICAN [entity_001] AIRLINES [entity_002], 2nd: Long [entity_003] Term [entity_004] Wait [entity_005] Area [entity_006], 3rd: T679966C [entity_007]",
+      "prediction": "Between 0.9 and 5.0 seconds, the following sequence of signs is encountered:\n\n1. **Airport Facility Sign**: This appears on the right side of the road, indicating directions to the airport facilities.\n2. **Highway Direction Sign**: This sign is also visible on the right side of the road, providing directions for highways.\n3. **License Plate**: The license plate of the car in front is visible as the vehicle moves forward.\n\nThe order in which these elements are encountered is: first the airport facility sign, then the highway direction sign, and finally the license plate.",
+      "inference_time_sec": 12.454,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint? If so, what does it say and where is it located?",
+      "ground_truth": "AMER [entity_008] on a construction notice at the airport construction site",
+      "prediction": "Yes, there is visible text in the image that indicates a hazard or warning. The sign on the left side of the road reads \"SLOW LANE 20 MPH,\" which suggests that the lane ahead is designated for slower traffic and has a speed limit of 20 miles per hour. This sign is located above the road, indicating the lane restriction for drivers approaching from behind.",
+      "inference_time_sec": 8.44,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible text mentioning airlines and long term wait area, what type of driving environment is depicted?",
+      "ground_truth": "Airport access road",
+      "prediction": "The image depicts a driving environment near an airport. The presence of signs for \"AMERICAN AIRLINES\" and \"Long Term Wait Area\" indicates that this is likely an approach to or departure from an airport terminal. The traffic appears to be heavy, suggesting it might be during a busy time at the airport, such as after a flight has landed or before a flight has taken off. The construction equipment and road signs also suggest ongoing work or maintenance in the area, which could contribute to the congestion.",
+      "inference_time_sec": 9.709,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the airport hangar and highway direction sign written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the airport hangar and highway direction sign appears to be written in English. The signs include terms like \"AMERICAN AIRLINES,\" \"Term A,\" and \"Long Island Expressway,\" which are all in English.",
+      "inference_time_sec": 6.697,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the gold lead SUV become clearly visible?",
+      "ground_truth": "4.0 seconds for T679966C [entity_007]",
+      "prediction": "The license plate on the gold lead SUV becomes clearly visible around the 2-second mark in the video.",
+      "inference_time_sec": 5.267,
+      "error": ""
+    }
+  ]
+}

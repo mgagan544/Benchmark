@@ -1,0 +1,70 @@
+{
+  "video_id": 991,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/991.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the instruction to use the other side relative to the sidewalk sign?",
+      "ground_truth": "To the right of SIDEWALK [entity_001]",
+      "prediction": "The instruction to use the other side is located on the green fence to the left of the sidewalk sign. It is positioned at a height that is easily visible to drivers, suggesting it is meant to be seen from a distance. The instruction is placed at a height that is consistent with the height of the sidewalk sign, which is approximately 1.5 meters above the ground. This positioning ensures that the instruction is visible to drivers as they approach the intersection, providing clear guidance on the correct path to take.",
+      "inference_time_sec": 7.712,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the blue police barricades?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances visible on the blue police barricades. One is a white text on a blue background that reads \"POLICE LINE: NET CHARGED,\" and the other is a white text on a blue background that reads \"POLICE LINE: NET CHARGED.\"",
+      "inference_time_sec": 5.431,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances on the blue barricades are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: POLICE LINE [entity_005], 2nd: DO NOT CROSS [entity_006], 3rd: NYPD [entity_007]",
+      "prediction": "The text instances on the blue barricades are encountered in the following order as the vehicle moves forward: \"POLICE LINE: NET CASH CHECK\" is first seen on the leftmost barricade, followed by \"POLICE LINE: NET CASH CHECK\" on the second barricade, and then \"POLICE LINE: NET CASH CHECK\" on the third barricade.",
+      "inference_time_sec": 6.294,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the large orange sign on the left side of the road?",
+      "ground_truth": "CLOSED [entity_002]",
+      "prediction": "The large orange sign on the left side of the road displays the text \"POLICE LINE: NET CHARGED.\"",
+      "inference_time_sec": 3.874,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of construction barriers, police barricades, and a commercial building, what kind of driving environment is depicted?",
+      "ground_truth": "Urban construction zone",
+      "prediction": "The driving environment depicted in the video suggests a mixed-use area with commercial and possibly residential properties. The presence of construction barriers indicates ongoing development or renovation, which is common in urban areas. The police barricades suggest that there may be a need for security or traffic control measures, which could be due to the construction or the presence of pedestrians. The commercial building in the background implies that the area is likely to be a business district or a neighborhood with commercial establishments. The combination of these elements suggests a dynamic and potentially busy urban environment with both residential and commercial components.",
+      "inference_time_sec": 7.834,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which abbreviation on the blue barricades suggests the city where this clip was filmed?",
+      "ground_truth": "NYPD [entity_007]",
+      "prediction": "The abbreviation \"NY\" on the blue barricades suggests that the clip was filmed in New York City.",
+      "inference_time_sec": 3.831,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the instruction to use the other side first become visible on the left?",
+      "ground_truth": "0.133 seconds",
+      "prediction": "The instruction to use the other side first becomes visible on the left at around 1:30 seconds into the video.",
+      "inference_time_sec": 3.898,
+      "error": ""
+    }
+  ]
+}

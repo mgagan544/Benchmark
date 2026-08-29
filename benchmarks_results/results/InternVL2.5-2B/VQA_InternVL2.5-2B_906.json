@@ -1,0 +1,70 @@
+{
+  "video_id": 906,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/906.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
+      "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
+      "prediction": "The warning text located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922 is 'KEEP BACK'. This is a common warning used on the road to indicate that a vehicle is stopping in the middle of the lane and should not proceed until it has crossed the intersection.",
+      "inference_time_sec": 6.07,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the parked white box truck?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances displayed on the parked white box truck. These include the company name 'Soundtone FLOORS, INC.', a phone number '718-392-4000', and a website URL 'www.soundtone.com'.",
+      "inference_time_sec": 5.5,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
+      "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The ATM sign is passed first, followed by the address 43-02 37th ST., and finally the yellow warning sign.",
+      "inference_time_sec": 4.266,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
+      "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The warning text posted on a utility pole reads 'WARNING: STOPPING & REMAINING FOR AHEAD TRAFFIC. DO NOT STOP. SPEEDING: 5-15 MPH. SPEEDING: 15-25 MPH. SPEEDING: 25-35 MPH. SPEEDING: 35-45 MPH. SPEEDING: 45-55 MPH. SPEEDING: 55-65 MPH. SPEEDING: 65-75 MPH. SPEEDING: 75-85 MPH. SPEEDING: 85-95 MPH",
+      "inference_time_sec": 9.812,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial and industrial district",
+      "prediction": "The mix of text visible between 3.0 seconds and 7.0 seconds suggests that the driving environment is a busy urban area with various businesses and services. The presence of different signs and advertisements indicates a commercial district with multiple points of interest for drivers and pedestrians. The variety of text, including phone numbers and company names, implies that the area is frequented by a diverse range of businesses, possibly including medical services, construction, and delivery companies. This diversity of signage contributes to the dynamic and bustling atmosphere of the urban setting captured in the video.",
+      "inference_time_sec": 9.031,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
+      "ground_truth": "L.I.C., N.Y. [entity_016]",
+      "prediction": "The brick commercial building's facade includes a sign that reads 'Drivers Wanted,' which is a common sign for businesses that do not require a driver's license to operate. This suggests that the clip was filmed in a city where such businesses are common, and the absence of a driver's license is not a barrier to business operations. The presence of this sign indicates that the location is likely in a region where driving is not a requirement for operating certain types of businesses, which could be indicative of a city in the United States where such businesses are prevalent.",
+      "inference_time_sec": 8.938,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
+      "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
+      "prediction": "The ambulance displaying the identifier 592 starts moving forward at the 4-second mark.",
+      "inference_time_sec": 3.459,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 988,
+  "model": "InternVL3-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/988.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the red bus stop sign relative to the concrete sidewalk where the pedestrian walks?",
+      "ground_truth": "to the right of the concrete sidewalk",
+      "prediction": "The red bus stop sign is to the right of the sidewalk where the pedestrian walks.",
+      "inference_time_sec": 3.91,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct traffic signs or signals are described in the scene?",
+      "ground_truth": "2",
+      "prediction": "There are two traffic lights and one pedestrian crossing sign.",
+      "inference_time_sec": 2.963,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles that cross or clear the intersection after the ego vehicle begins decelerating at 0.6 seconds?",
+      "ground_truth": "1st: gray SUV, 2nd: black sedan",
+      "prediction": "The black SUV, the white car, and the black car",
+      "inference_time_sec": 2.946,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving constraints or actions are implied for the ego vehicle by the red bus stop sign near the crosswalk?",
+      "ground_truth": "None",
+      "prediction": "The red bus stop sign near the crosswalk implies that the ego vehicle must yield to buses, as it is a common traffic rule to stop at bus stops.",
+      "inference_time_sec": 4.012,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the landmarks and surroundings described, what type of driving environment does this clip depict?",
+      "ground_truth": "residential area",
+      "prediction": "The clip depicts a suburban neighborhood with residential houses, parked cars, and a pedestrian crossing.",
+      "inference_time_sec": 3.296,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Based on the position of the parked silver sedan and the pedestrian's sidewalk, what is the local driving side convention?",
+      "ground_truth": "right side",
+      "prediction": "The local driving side convention is the right side, as indicated by the pedestrian on the right side of the road.",
+      "inference_time_sec": 3.494,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ego vehicle come to a complete halt before the crosswalk stop line?",
+      "ground_truth": "0.867 seconds",
+      "prediction": "The ego vehicle comes to a complete halt at the 0:00 mark.",
+      "inference_time_sec": 3.252,
+      "error": ""
+    }
+  ]
+}

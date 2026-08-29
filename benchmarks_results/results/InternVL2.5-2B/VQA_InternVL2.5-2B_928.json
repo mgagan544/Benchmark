@@ -1,0 +1,70 @@
+{
+  "video_id": 928,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/928.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the guide sign indicating Bron EXPWY?",
+      "ground_truth": "178 [entity_007] and NORTH [entity_008] to the right of Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "Directly to the right of the guide sign indicating Bron EXPWY is a sign pointing towards the Bronx Expy.",
+      "inference_time_sec": 3.818,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible in this clip?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances containing numbers visible in this clip.",
+      "inference_time_sec": 3.256,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?",
+      "ground_truth": "1st: 3030 [entity_001], 2nd: SPEED [entity_002] LIMIT [entity_003], 3rd: Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The roadside marker is first encountered on the right side of the road. Following it, the speed limit sign indicating '70' is seen on the left side. Lastly, the Bron EXPWY guide sign is visible on the left side of the road, above the speed limit sign.",
+      "inference_time_sec": 5.328,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the overhead structure to indicate a height restriction?",
+      "ground_truth": "CLEARANCE 13-6 [entity_006]",
+      "prediction": "The overhead structure displays the warning text 'DO NOT PASS' in red letters, indicating that vehicles are not allowed to overtake from the right lane.",
+      "inference_time_sec": 4.039,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the video is a regulated and possibly regulated area, such as a highway or a major roadway, characterized by clear signage for navigation and speed limits. The presence of clearance warnings suggests that the area is designed to manage traffic flow and ensure safety, which is typical of urban or suburban settings where traffic control measures are in place to manage the flow of vehicles.",
+      "inference_time_sec": 6.065,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region or city is suggested by the guide sign indicating Bron EXPWY?",
+      "ground_truth": "Bronx, New York",
+      "prediction": "The guide sign indicating 'Bron EXPWY' suggests that the video is set in or near Bronx, New York, as 'Expwy' is commonly used to denote Expressway in New York.",
+      "inference_time_sec": 4.61,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the vehicle directly ahead become clearly readable?",
+      "ground_truth": "8.7",
+      "prediction": "The license plate on the vehicle directly ahead becomes clearly readable at the 5-second mark.",
+      "inference_time_sec": 3.77,
+      "error": ""
+    }
+  ]
+}

@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
       "ground_truth": "S E [entity_005]",
-      "prediction": "The user wants me to identify specific text on a semi-truck in the video.\n\n1.  **Locate the semi-truck:** I see a large white semi-truck on the right side of the frame in the first few seconds (00:00 - 00:02).\n2.  **Locate the text \"RAY'S TRUCKS\":** Looking at the mudflap (the flap hanging under the rear wheels) of the truck, I can see text.\n3.  **Locate the text \"Elizabeth N.J.\":** Just below \"RAY'S TRUCKS",
-      "inference_time_sec": 13.298,
+      "prediction": "SALE",
+      "inference_time_sec": 2.937,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
       "ground_truth": "7",
-      "prediction": "The user wants me to count the distinct text elements visible on the semi-truck on the right side of the host vehicle.\n\n1.  **Identify the truck:** It's the large white semi-truck with a container on the right side of the frame.\n2.  **Scan for text:** I need to look at the container and the truck cab.\n3.  **Container Text:**\n    *   There's a large logo with a star and the letters \"M\" and \"S\" visible. Wait, looking closely at the first frame, it says \"M\" and \"S\" vertically. Let",
-      "inference_time_sec": 13.186,
+      "prediction": "2",
+      "inference_time_sec": 2.833,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
       "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
-      "prediction": "The user wants to determine the order in which three specific text elements appear in the video as the camera vehicle moves forward.\n\n1.  **Identify the text elements:**\n    *   \"FUEL CO\": This is likely on the side of the large white truck on the right.\n    *   \"milea\": This is on the side of a white box truck further ahead in the right lane.\n    *   \"HINO\": This is on the front door of the white truck cab that is initially closest to the camera on the right.\n\n2.  **Scan the video chronologically:**\n    *",
-      "inference_time_sec": 13.198,
+      "prediction": "FUEL CO, milea, HINO",
+      "inference_time_sec": 3.495,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
       "ground_truth": "None",
-      "prediction": "The user wants to know if there is any visible text in the video that indicates a hazard, warning, or driving constraint.\n\n1.  **Analyze the video:** I'll scan the video frames for any text on signs, vehicles, or road markings.\n    *   **Frame 1:** I see a large truck on the right with \"MMA SEA\" visible. There's a smaller sign on the truck's mud flap with a phone number. No hazard signs.\n    *   **Frame 2:** The truck on the right is still there. I see \"milea PARTS DELIVERY\" on a",
-      "inference_time_sec": 13.114,
+      "prediction": "No",
+      "inference_time_sec": 2.853,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
       "ground_truth": "Highway",
-      "prediction": "The user wants to identify the type of road based on specific visual cues: route number 278 and commercial trucks.\n\n1.  **Analyze the visual evidence:**\n    *   **Route Number:** I need to look for a sign with \"278\". In the later frames (around 00:03 and 00:04), there is a green highway sign visible on the right side. It clearly shows \"278\" with an arrow pointing straight. This indicates it's a numbered route, likely a highway or expressway.\n    *   **Commercial Trucks:** There are",
-      "inference_time_sec": 13.175,
+      "prediction": "Freeway",
+      "inference_time_sec": 2.908,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
       "ground_truth": "Elizabeth N.J. [entity_003]",
-      "prediction": "The user wants to identify specific text on a semi-truck that indicates a connection to a city in New Jersey.\n\n1.  **Analyze the video:** I need to look at the semi-trucks visible in the video, particularly the one on the right side which is closest and most prominent.\n2.  **Focus on the first few frames:** In the first frame (00:00), there is a large white semi-truck on the right. The side of the trailer has a logo with a star and the letters \"MM\" and \"SE\".\n3.  **Look for smaller text:** Below",
-      "inference_time_sec": 13.202,
+      "prediction": "Elizabeth N.J.",
+      "inference_time_sec": 3.307,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
       "ground_truth": "1.2s to 1.3s",
-      "prediction": "The user wants to find the specific time range where the text \"FUEL CO\" and \"S J\" appears on the semi-truck.\n\n1.  **Analyze the video frames:** I will look through the provided frames to spot the semi-truck and read the text on its side.\n2.  **Frame 00:00:** The truck is on the right. The side of the container is visible. I see \"MMA\" and \"SEA\" (partially cut off). No \"FUEL CO\" or \"S J\" yet.\n3.  **Frame 00:",
-      "inference_time_sec": 13.263,
+      "prediction": "0.0 - 0.1 seconds",
+      "inference_time_sec": 3.524,
       "error": ""
     }
   ]

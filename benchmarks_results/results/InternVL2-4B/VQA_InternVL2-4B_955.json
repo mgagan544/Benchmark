@@ -1,0 +1,70 @@
+{
+  "video_id": 955,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/955.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the word OVER on the weight limit sign to the left of Waterside Plaza?",
+      "ground_truth": "VEHICLES [entity_002]",
+      "prediction": "The text located directly below the word OVER on the weight limit sign is \"Vehicles Over 10,000 Lbs.\"",
+      "inference_time_sec": 6.305,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 1.500 and 3.000 seconds?",
+      "ground_truth": "4",
+      "prediction": "Between 1.500 and 3.000 seconds, the vehicle encounters two distinct, legible text instances. The first is the \"Vehicles Over 15 Feet\" sign, and the second is the \"E 42 St\" sign.",
+      "inference_time_sec": 8.563,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the signs encountered by the vehicle between 3.500 and 4.500 seconds?",
+      "ground_truth": "1st: E 25 ST [entity_005], 2nd: E 34 ST [entity_006] FERRY [entity_007] HELIPORT [entity_009] LANDING [entity_008], 3rd: ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "Between 3.500 and 4.500 seconds, the vehicle encounters a green sign with white lettering indicating \"E 45 St\" and a green sign with white lettering indicating \"E 34 St.\"",
+      "inference_time_sec": 8.007,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the orange construction sign passed at 4.367 seconds?",
+      "ground_truth": "ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The orange construction sign passed at 4.367 seconds displays the warning text \"ROAD WORK AHEAD.\"",
+      "inference_time_sec": 6.106,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multiple exit signs, route markers, and overpasses, what driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a complex urban highway system, likely in a large city. The presence of multiple exit signs, route markers, and overpasses indicates a network designed to manage a high volume of traffic and provide various routes for drivers to reach different destinations. The infrastructure suggests a well-developed transportation system, possibly in a metropolitan area where such complexity is necessary to accommodate the flow of vehicles.",
+      "inference_time_sec": 10.342,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street names and route markers suggest this clip is filmed in New York City?",
+      "ground_truth": "E 25 ST [entity_005], E 34 ST [entity_006], E 42 ST [entity_017], 495 [entity_016]",
+      "prediction": "The specific street names and route markers that suggest this clip is filmed in New York City include the \"E 42 St\" and \"E 34 St\" signs, which are common route markers in the city. Additionally, the presence of the \"Waterfront Restaurant\" sign indicates a location near the waterfront, which is a characteristic feature of New York City's urban landscape. The \"Vehicles Over 10,000 Lbs\" sign is also indicative of the city's infrastructure, as it is a common restriction in urban areas to manage traffic flow and safety.",
+      "inference_time_sec": 13.275,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the weight-limit sign containing the text 8000 Lbs first appear in view?",
+      "ground_truth": "2.633 seconds, as 8000 Lbs [entity_004] becomes visible.",
+      "prediction": "The weight-limit sign containing the text 8000 Lbs first appears in view at the timestamp 00:00:00.",
+      "inference_time_sec": 6.542,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located to the right of the green directional sign.",
+      "inference_time_sec": 7.262,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are three distinct text entities visible on the signs in the clip. The first sign reads 'CHASE CENTRAL PARK', the second sign reads 'EXIT', and the third sign is partially obscured but appears to be a directional sign.",
+      "inference_time_sec": 9.391,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "As the vehicle moves forward between 2.5 and 4.0 seconds, the order in which the three signs are encountered is as follows: first, the 'ONE WAY' sign, followed by the 'NO TURN ON RED' sign, and finally the 'NO TURN ON RED' sign with an additional 'LEFT TURN YIELD ON GREEN' sign.",
+      "inference_time_sec": 11.063,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The sign indicates a weight restriction of '3 tons' for vehicles near the overpass structure.",
+      "inference_time_sec": 7.445,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names and weight limit signs suggests that the road segment is a transitional area, possibly at the entrance or exit of a highway. The presence of a weight limit sign indicates that the road may be part of a larger highway system where heavy vehicles are common, and the highway names provide directional information for drivers. This combination of signs is typical for areas where roads merge with or from highways, where traffic control and directional guidance are crucial.",
+      "inference_time_sec": 11.893,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The abbreviations 'NY' and 'NJ' on the green directional sign suggest that the location is in the New York-New Jersey region.",
+      "inference_time_sec": 8.186,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text 'DELIVERIES ENTRANCE 9' first becomes visible at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.927,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 995,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/995.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the 1042 number on the first parked school bus?",
+      "ground_truth": "738-7373 [entity_005] to the right of 1042 [entity_004]",
+      "prediction": "The readable text located directly to the right of the 1042 number on the first parked school bus is \"SCHOOL BUS.\"",
+      "inference_time_sec": 4.739,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the first parked school bus?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances containing numbers visible on the first parked school bus. The first is the number \"1442\" on the side of the bus, and the second is the number \"7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7",
+      "inference_time_sec": 8.297,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text labels Richie, Service, and 4290 are passed by the ego vehicle?",
+      "ground_truth": "1st: 4290 [entity_011], 2nd: Service [entity_012], 3rd: Richie [entity_013]",
+      "prediction": "The text labels Richie, Service, and 4290 are passed by the ego vehicle in the following order: 4290, Service, Richie.",
+      "inference_time_sec": 4.236,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the first parked school bus indicates a potential driving constraint or warning?",
+      "ground_truth": "STOP [entity_002]",
+      "prediction": "The text on the first parked school bus reads \"STOP\" in bold letters, which is a common traffic sign indicating that vehicles must come to a complete stop before proceeding. This suggests that the bus is a school bus and that drivers are expected to stop at the bus stop to ensure the safety of the children.",
+      "inference_time_sec": 5.491,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of area does the combination of residential buildings, a public park, and school buses suggest?",
+      "ground_truth": "residential school zone",
+      "prediction": "The combination of residential buildings, a public park, and school buses suggests a mixed-use area that serves both residential and educational purposes. The presence of the school buses indicates that the area is likely a school zone, which is common in urban or suburban neighborhoods where schools are located. The presence of a public park suggests that the area is also designed for community use, providing green space for residents. This mix of residential and educational facilities is typical in many urban areas where space is at a premium, and there is a need to accommodate both private and public services.",
+      "inference_time_sec": 7.618,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific telephone area code visible on the first school bus suggests the vehicle is in New York City?",
+      "ground_truth": "718 [entity_007]",
+      "prediction": "The specific telephone area code visible on the first school bus is \"1-800-273-8255.\" This area code is commonly associated with New York City, indicating that the vehicle is likely in the New York metropolitan area.",
+      "inference_time_sec": 4.738,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the text Little Linda visible on the first parked school bus?",
+      "ground_truth": "00:02 - 00:04",
+      "prediction": "The text \"Little Linda\" is visible on the first parked school bus in the video. It is positioned on the side of the bus, near the front, and is clearly legible against the yellow background of the bus.",
+      "inference_time_sec": 4.749,
+      "error": ""
+    }
+  ]
+}

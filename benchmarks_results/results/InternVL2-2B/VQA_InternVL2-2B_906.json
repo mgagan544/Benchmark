@@ -1,0 +1,70 @@
+{
+  "video_id": 906,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/906.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
+      "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
+      "prediction": "The warning text located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922 is \"KEEP BACK.\"",
+      "inference_time_sec": 3.98,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the parked white box truck?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances displayed on the parked white box truck. The first instance is the company name \"Soundtone FLOORS, INC.\" which is written in large, bold letters. The second instance is a phone number \"718-392-4401\" displayed in a smaller font. The third instance is a logo with an American flag, which is also in a smaller font compared to the company name.",
+      "inference_time_sec": 6.432,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
+      "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle is as follows: The ego vehicle passes the ATM sign first, then the address 43-02 37th ST., and finally the yellow warning sign.",
+      "inference_time_sec": 5.5,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
+      "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The warning text posted on a utility pole to indicate a change in traffic conditions ahead is \"Drivers Wanted.\"",
+      "inference_time_sec": 3.775,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial and industrial district",
+      "prediction": "The mix of text visible between 3.0 seconds and 7.0 seconds suggests a busy and possibly congested driving environment. The presence of multiple signs and advertisements indicates a commercial area with a high volume of traffic. The text on the truck, \"Soundtone FLOORS, INC.,\" along with the phone number, suggests that the area is likely a commercial district with businesses operating in the vicinity. The mix of text and the variety of vehicles, including emergency services, imply that the area is a hub of activity, with various services and businesses catering to the needs of the local population.",
+      "inference_time_sec": 8.02,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
+      "ground_truth": "L.I.C., N.Y. [entity_016]",
+      "prediction": "The brick commercial building's facade features a sign with the text \"Soundtone FLOORS, INC.\" along with a phone number. This suggests that the city or region where the clip was filmed is likely New York City, as Soundtone is a well-known company that provides flooring solutions, and the phone number is a common way for businesses to contact customers or potential clients.",
+      "inference_time_sec": 6.155,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
+      "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
+      "prediction": "The ambulance displaying the identifier 592 starts moving forward at the beginning of the video.",
+      "inference_time_sec": 3.464,
+      "error": ""
+    }
+  ]
+}

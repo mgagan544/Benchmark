@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
       "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.069,
+      "prediction": "The vehicle to the left of the black Chevrolet SUV has a 'keep back' sign on it.",
+      "inference_time_sec": 4.154,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are displayed on the parked white box truck?",
       "ground_truth": "4",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.179,
+      "prediction": "There are two distinct text instances displayed on the parked white box truck.",
+      "inference_time_sec": 3.169,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
       "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.188,
+      "prediction": "The ego vehicle passes the ATM sign first, then the address 43-02 37th ST., and finally the yellow warning sign.",
+      "inference_time_sec": 4.019,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
       "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.142,
+      "prediction": "The warning text on the utility pole reads 'KEEP BACK'.",
+      "inference_time_sec": 3.066,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
       "ground_truth": "Commercial and industrial district",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.969,
+      "prediction": "The mix of text suggests that the driver is navigating through an area with commercial establishments and possibly a construction zone, as indicated by the 'drivertwisted' sign and the presence of a yellow construction vehicle.",
+      "inference_time_sec": 4.64,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
       "ground_truth": "L.I.C., N.Y. [entity_016]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.044,
+      "prediction": "The text 'DRIVERS WANTED' on the brick commercial building's facade suggests that the clip was filmed in a city or region where such signs are common, likely indicating a location where job postings are displayed for potential drivers.",
+      "inference_time_sec": 4.766,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
       "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.913,
+      "prediction": "The ambulance starts moving forward at the 10-second mark.",
+      "inference_time_sec": 3.116,
       "error": ""
     }
   ]

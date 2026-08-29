@@ -1,0 +1,70 @@
+{
+  "video_id": 934,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/934.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is located to the left of the pavement marking 'ONLY' as the vehicle moves forward?",
+      "ground_truth": "A prominent chain-link fence to the left of 'ONLY' [entity_001]",
+      "prediction": "To the left of the pavement marking 'ONLY' as the vehicle moves forward, there is a pile of snow.",
+      "inference_time_sec": 7.895,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many pavement markings with legible text are visible in the lane after the vehicle completes its left turn?",
+      "ground_truth": "1",
+      "prediction": "After the vehicle completes its left turn, there are two pavement markings with legible text visible in the lane. The first marking is a white arrow pointing to the left, indicating the direction of the lane. The second marking is the word \"ONLY\" in white letters, which is part of the lane's designation, suggesting that the lane is for a specific type of traffic or use.",
+      "inference_time_sec": 11.228,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the legible text instances encountered on the road surface during the clip?",
+      "ground_truth": "1st: 'ONLY' [entity_001]",
+      "prediction": "The chronological order of the legible text instances on the road surface is as follows: \"ONLY\" is first seen on the road surface, followed by \"ONLY\" again, and then \"ONLY\" appears a third time.",
+      "inference_time_sec": 9.249,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional text is painted on the lane surface to guide the driver's lane choice after turning?",
+      "ground_truth": "'ONLY' [entity_001]",
+      "prediction": "The instructional text painted on the lane surface after turning is \"ONLY,\" indicating that the lane is designated for a specific type of traffic or direction.",
+      "inference_time_sec": 8.26,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggest about the driving environment?",
+      "ground_truth": "Residential or urban fringe area",
+      "prediction": "The presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggests that the driving environment is urban and possibly in a colder climate where snow is a common occurrence. The snow on the sidewalks indicates that the area has recently experienced snowfall, which could affect road conditions and visibility. The parked vehicles and the fence suggest that the area is residential or commercial, with limited space for parking and pedestrian pathways. The open space bordered by the fence could be a park or a public area, adding to the urban setting. The combination of these elements indicates a typical urban environment that is accustomed to",
+      "inference_time_sec": 14.362,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the pavement marking 'ONLY' written in?",
+      "ground_truth": "English",
+      "prediction": "The pavement marking 'ONLY' is written in English.",
+      "inference_time_sec": 7.128,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the pavement marking 'ONLY' first become visible in the clip?",
+      "ground_truth": "00:05",
+      "prediction": "The pavement marking 'ONLY' first becomes visible at the timestamp of 00:00:00:00, as the camera captures the scene from the perspective of a vehicle driving through the intersection.",
+      "inference_time_sec": 8.83,
+      "error": ""
+    }
+  ]
+}

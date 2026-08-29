@@ -1,0 +1,70 @@
+{
+  "video_id": 972,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/972.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
+      "ground_truth": "To the right of VIDE [entity_002]",
+      "prediction": "The regulatory text \"MON WED FRI\" is positioned above the commercial sign \"VIDE\".",
+      "inference_time_sec": 4.998,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct pieces of vehicle-mounted text visible on the dark grey pickup truck:\n\n1. The word \"F-150\" on the tailgate.\n2. The license plate number \"08209W1\".\n\nThese are the only two distinct pieces of text visible on the truck in the video.",
+      "inference_time_sec": 8.683,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
+      "ground_truth": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]",
+      "prediction": "The markings become visible in the following order:\n\n1. **F150** — This is the first marking to become visible as the black pickup truck enters the frame from the right side at 0:00. The \"F150\" badge is clearly visible on the tailgate.\n\n2. **4X4** — This marking appears next, becoming visible at 0:01 as the truck moves slightly forward and the camera angle shifts slightly, revealing the \"4X4\" badge located below the \"F150\" badge.\n\n3. **P150** — This marking is the last",
+      "inference_time_sec": 13.542,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
+      "ground_truth": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]",
+      "prediction": "The text on the regulatory sign near the commercial building is: \"MON WED FRI LIMITED PARKING\".",
+      "inference_time_sec": 5.328,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of commercial signs and parking regulations in the scene suggests a **dense, urban, and commercially active driving environment**. Here’s what it implies:\n\n1. **High Commercial Activity**: The presence of visible storefronts (e.g., “WIDE” on a building), signage for businesses, and pedestrians walking near the curb indicate that this is a downtown or business district area where commerce is central. This environment is likely to have high foot traffic and a concentration of retail, offices, or services.\n\n2. **Urban Infrastructure**: The traffic lights, multiple lanes, bike lanes (marked with green bicycle symbols), and overhead infrastructure (like",
+      "inference_time_sec": 13.53,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory parking sign and the commercial building is in **English**.\n\n- The parking sign reads: “MON WED FRI LIMITED PARKING,” which is in English.\n- The commercial building has the word “WIDE” visible, which is also in English.\n\nBoth are standard English text commonly used in urban environments for regulatory and commercial signage.",
+      "inference_time_sec": 9.29,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
+      "ground_truth": "3.033s",
+      "prediction": "The STREET CLEANING sign first becomes clearly readable at 0:00.",
+      "inference_time_sec": 4.853,
+      "error": ""
+    }
+  ]
+}

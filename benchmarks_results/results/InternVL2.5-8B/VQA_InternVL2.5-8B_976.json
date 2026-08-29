@@ -1,0 +1,70 @@
+{
+  "video_id": 976,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/976.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located to the left of the MDX vehicle with license plate GTR-8482?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50 sign to the left of MDX [entity_008]",
+      "prediction": "To the left of the MDX vehicle with license plate GTR-8482, there is a regulatory sign indicating a speed limit of 55 mph. This sign is positioned on the right side of the road, adjacent to the lane where the MDX is traveling. It is a standard rectangular sign with a white background and black text, which is a common design for speed limit signs in many regions.",
+      "inference_time_sec": 11.318,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct license plates visible on vehicles in the clip. One is on the black SUV, another on the silver sedan, and the third on the black sedan.",
+      "inference_time_sec": 8.438,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered?",
+      "ground_truth": "1st: T1711804C [entity_001], 2nd: GTR-8482 [entity_009], 3rd: SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The license plate T1711804C is first encountered on the silver SUV, followed by the license plate GTR-8482 on the black SUV, and lastly, the speed limit sign indicating 55 mph is seen on the right side of the road.",
+      "inference_time_sec": 9.754,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text visible near the end of the clip indicates a speed restriction on this road?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The text 'SPEED LIMIT 55' is visible on a sign near the end of the clip, indicating the speed restriction on this road.",
+      "inference_time_sec": 8.067,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of highway exit signs and speed limit signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a highway, as indicated by the presence of highway exit signs and a speed limit sign. The exit signs provide directions to various locations, and the speed limit sign indicates the maximum speed allowed on the highway. These signs are typically found on highways to guide drivers and ensure safety.",
+      "inference_time_sec": 10.022,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region in New York is suggested by the text on the green highway sign?",
+      "ground_truth": "Long Island [entity_003]",
+      "prediction": "The green highway sign in the video indicates the direction to the 'Eastern Long Island Exits' with the route number 'I-95E 29E-29A'. This suggests that the location is in the eastern part of Long Island, New York, which is a region in the state known for its coastal areas and suburban communities. The sign is a standard highway marker used to guide drivers to specific exits or routes, and in this case, it provides information about the proximity to the eastern part of Long Island, which is a well-known area in New York.",
+      "inference_time_sec": 13.343,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the license plate GTR-8482 on the overtaking MDX vehicle visible?",
+      "ground_truth": "4.5 to 4.767 seconds",
+      "prediction": "The license plate GTR-8482 on the overtaking MDX vehicle is visible from the 2nd to the 5th frame of the video.",
+      "inference_time_sec": 8.382,
+      "error": ""
+    }
+  ]
+}

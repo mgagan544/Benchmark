@@ -1,0 +1,70 @@
+{
+  "video_id": 911,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/911.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the storefront displaying Clifton Tile relative to the sports facility operated by SDA?",
+      "ground_truth": "To the right of SDA [entity_007]",
+      "prediction": "The storefront displaying Clifton Tile is located on the right side of the road, adjacent to the sports facility operated by SDA. It is positioned directly across from the sports field, which is the central focus of the image. The storefront is situated on the right side of the road, with the sports facility on the left, creating a clear visual separation between the two establishments.",
+      "inference_time_sec": 6.989,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the buildings and billboard between House 46 and the parked minivan?",
+      "ground_truth": "3",
+      "prediction": "Between House 46 and the parked minivan, there are two distinct text instances containing numbers. One is on the billboard to the right of the minivan, and the other is on the building to the left of the minivan.",
+      "inference_time_sec": 4.878,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds?",
+      "ground_truth": "1st: HOUSE 46 [entity_001], 2nd: 1075 [entity_004], 3rd: CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "Between 0.40 and 2.40 seconds, the order of the locations House 46, the building at 1075, and Clifton Tile is as follows: House 46, the building at 1075, and Clifton Tile.",
+      "inference_time_sec": 5.166,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37?",
+      "ground_truth": "EXIT [entity_031] ONLY [entity_032], DO NOT [entity_033] ENTRY [entity_034]",
+      "prediction": "The text \"NO STANDING\" is visible on the driveway between building 1033 and the entrance way displaying 35-37. This indicates a driving restriction or direction constraint at that particular location.",
+      "inference_time_sec": 4.646,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, tile shops, and commercial billboards, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts a driving environment that is likely to be bustling with commercial activity. The presence of numerous storefronts, including what appears to be a tile shop, suggests a commercial district with a variety of businesses catering to the local population. The billboards and signs are indicative of a place where advertising is a significant part of the local economy, likely attracting both residents and visitors. The density of these elements suggests a vibrant, possibly upscale, neighborhood with a mix of retail and service-oriented businesses.",
+      "inference_time_sec": 7.195,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any business names visible in the clip suggest a specific regional location or city name?",
+      "ground_truth": "CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "Based on the visible signs and billboards, there are several business names that could potentially suggest a specific regional location or city name. For instance, there is a sign that reads \"BURGER KING,\" which is a well-known fast-food chain. Another sign says \"BURGER KING,\" which is likely a repetition of the same business. Additionally, there is a sign that reads \"BURGER KING,\" which is a common name for a chain of restaurants. These signs, along with the general appearance of the commercial area, suggest that the video was taken in a region where these types of businesses are prevalent.",
+      "inference_time_sec": 8.282,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the building at address 1075 first come into view?",
+      "ground_truth": "Between 1.6 and 1.86 seconds",
+      "prediction": "The building at address 1075 first comes into view at the timestamp of approximately 10:00.",
+      "inference_time_sec": 3.7,
+      "error": ""
+    }
+  ]
+}

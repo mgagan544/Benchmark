@@ -1,0 +1,70 @@
+{
+  "video_id": 939,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/939.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What promotional signs are located directly overhead of the Big K mart storefront?",
+      "ground_truth": "NOBODY HAS [entity_012] and MORE PARTY FOR LESS [entity_013] above BIG K [entity_003] mart [entity_010]",
+      "prediction": "The promotional signs located directly overhead of the Big K mart storefront include \"NOW OPEN!\" and \"MORE PARTY FOR LESS.\"",
+      "inference_time_sec": 5.371,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct promotional text instances are associated with the Danice storefront?",
+      "ground_truth": "3",
+      "prediction": "There is one distinct promotional text instance associated with the Danice storefront, which reads \"Danice.\"",
+      "inference_time_sec": 5.199,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the first three storefronts passed by the vehicle starting from 4.8 seconds?",
+      "ground_truth": "1st: NAILS [entity_009] Essence [entity_011] SPA [entity_016], 2nd: JIMMY JAZZ [entity_006], 3rd: FALLAS [entity_023]",
+      "prediction": "Starting from 4.8 seconds, the first three storefronts passed by the vehicle are:\n\n1. Party City\n2. Payless Kids\n3. Big Kmart",
+      "inference_time_sec": 5.982,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, are there any explicit driving actions or constraints implied near the storefronts? If none is present, state that.",
+      "ground_truth": "None is present",
+      "prediction": "There are no explicit driving actions or constraints implied near the storefronts in the image. The scene shows a parking lot with various stores and some pedestrians, but no signs or markings that suggest specific driving rules or limitations.",
+      "inference_time_sec": 6.437,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible storefront text, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial shopping center parking lot",
+      "prediction": "The video clip depicts a commercial shopping center environment. The presence of well-known retail stores such as Party City, Payless Kids, Big Kmart, and Nails Essence indicates that this is likely a strip mall or a small shopping plaza. The variety of stores suggests it's a place where people come for various types of shopping needs, including party supplies, children's clothing, shoes, and nail services. The parking lot is moderately filled with cars, indicating that it is a busy area during the time the video was taken. The clear sky and daylight suggest it might be midday or early afternoon. Overall, the scene is typical of a",
+      "inference_time_sec": 11.128,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text in the image is primarily written in English. The signs include \"Party City,\" \"Payless Kids,\" \"ShoeSource,\" \"BIG K mart,\" \"NAILS Essence,\" and other store names, all of which are written in English.",
+      "inference_time_sec": 6.799,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the vehicle passing and parallel to the storefront of NAILS Essence SPA?",
+      "ground_truth": "4.8 seconds to 6.1 seconds",
+      "prediction": "The video does not provide specific timestamps, so it's not possible to determine the exact time range during which the vehicle is passing and parallel to the storefront of NAILS Essence SPA. However, based on the visual information provided in the image, the vehicle appears to be moving past the store during daylight hours, likely in the morning or afternoon given the lighting conditions.",
+      "inference_time_sec": 7.899,
+      "error": ""
+    }
+  ]
+}

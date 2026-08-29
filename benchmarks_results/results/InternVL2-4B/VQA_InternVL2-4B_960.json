@@ -1,0 +1,70 @@
+{
+  "video_id": 960,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/960.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the SCHOOL road marking relative to the SLOW road marking as the vehicle moves forward?",
+      "ground_truth": "Beside SLOW [entity_001]",
+      "prediction": "As the vehicle moves forward, the SCHOOL road marking is positioned directly ahead of the SLOW road marking. The SCHOOL marking is painted on the road surface in a straight line, leading directly to the SLOW marking, which is painted on the same lane but further ahead. This indicates that the SCHOOL zone is immediately ahead of the area where the driver is instructed to slow down.",
+      "inference_time_sec": 10.64,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many yellow road markings are painted on the asphalt of this residential street?",
+      "ground_truth": "3",
+      "prediction": "There are three yellow road markings painted on the asphalt of this residential street.",
+      "inference_time_sec": 5.574,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the yellow road markings are passed by the vehicle between 3.00 and 7.50 seconds?",
+      "ground_truth": "1st: SLOW [entity_001], 2nd: SCHOOL [entity_002], 3rd: XING [entity_003]",
+      "prediction": "The chronological order in which the yellow road markings are passed by the vehicle is as follows: \"SCHOOL\" is first seen at around 3.00 seconds, followed by \"SLOW\" at around 4.00 seconds, and finally \"XING\" at around 7.50 seconds.",
+      "inference_time_sec": 9.012,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning or instructional text is painted on the road surface to advise the driver to reduce speed?",
+      "ground_truth": "SLOW [entity_001]",
+      "prediction": "The warning or instructional text painted on the road surface is \"SCHOOL,\" which is written in large, bold yellow letters. This indicates that the driver should reduce speed and be cautious of children in the area, as it is likely near a school zone.",
+      "inference_time_sec": 8.163,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the road markings indicating a school crossing and the surrounding buildings, what type of driving environment is depicted?",
+      "ground_truth": "Residential school zone",
+      "prediction": "The road markings indicating a school crossing, along with the presence of residential buildings and parked cars, suggest that the driving environment is a suburban neighborhood. The presence of a school crossing implies that there is a school nearby, which is a common feature in suburban areas where children are often transported to and from school. The environment is likely to be one where drivers are expected to be cautious and aware of children, especially during school hours.",
+      "inference_time_sec": 10.655,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the road markings painted on the asphalt?",
+      "ground_truth": "English",
+      "prediction": "The road markings painted on the asphalt are in English.",
+      "inference_time_sec": 5.183,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle roll over the yellow road marking SCHOOL?",
+      "ground_truth": "5.867 seconds",
+      "prediction": "The vehicle rolls over the yellow road marking SCHOOL at the timestamp 00:00:00.",
+      "inference_time_sec": 6.096,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 906,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/906.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
+      "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
+      "prediction": "The vehicle to the left of the black Chevrolet SUV with license plate HPW-2922 is an ambulance with the text 'KEEP BACK' on its side, indicating a warning to maintain a safe distance from the vehicle.",
+      "inference_time_sec": 8.904,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the parked white box truck?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances displayed on the parked white box truck. The first is the company name 'Soundtone Floors, Inc.' in large black letters. The second is the phone number '718-392-4001' in smaller black text. The third is the address '43-03 37th St, LIC, NY' in even smaller black text.",
+      "inference_time_sec": 12.131,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
+      "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The ego vehicle first passes the ATM sign, then the address 43-02 37th ST., and finally the yellow warning sign.",
+      "inference_time_sec": 8.096,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
+      "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The warning text posted on a utility pole reads 'NO TURN ON RED', indicating that vehicles are not allowed to make a right turn on red lights ahead.",
+      "inference_time_sec": 8.323,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial and industrial district",
+      "prediction": "The mix of text visible between 3.0 seconds and 7.0 seconds, including 'Soundtone Floors, Inc.' and 'DRIVERS WANTED', suggests a commercial area with businesses and employment opportunities. The presence of these signs indicates a bustling urban environment where various services and job opportunities are available.",
+      "inference_time_sec": 11.101,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
+      "ground_truth": "L.I.C., N.Y. [entity_016]",
+      "prediction": "The text 'BROOKLYN' on the brick commercial building's facade suggests that the clip was filmed in Brooklyn.",
+      "inference_time_sec": 8.168,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
+      "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
+      "prediction": "The ambulance displaying the identifier 592 starts moving forward at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.952,
+      "error": ""
+    }
+  ]
+}

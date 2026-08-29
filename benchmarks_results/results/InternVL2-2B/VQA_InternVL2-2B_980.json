@@ -1,0 +1,70 @@
+{
+  "video_id": 980,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/980.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Upper Happy on the overhead sign?",
+      "ground_truth": "Valley Rd [entity_003] directly below Upper Happy [entity_002]",
+      "prediction": "The text located directly below \"Upper Happy\" on the overhead sign reads \"Austin Rd.\"",
+      "inference_time_sec": 4.31,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the highway signs mentioned in the scene?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances displayed on the highway signs in the scene. The first sign reads \"Austin Rd,\" the second sign reads \"Austin Rd,\" and the third sign reads \"Austin Rd.\"",
+      "inference_time_sec": 4.672,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds?",
+      "ground_truth": "1st: Acalanes Rd [entity_001], Upper Happy [entity_002], Valley Rd [entity_003]; 2nd: EXIT [entity_004]",
+      "prediction": "The sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds includes a green sign indicating \"Austin Rd\" with a distance of 1.5 miles, a yellow sign with a speed limit of 55, a green sign with a distance of 2.5 miles, a yellow sign with a speed limit of 55, a green sign with a distance of 3.0 miles, a yellow sign with a speed limit of 55, a green sign with a distance of 4.0 miles, a yellow sign with a speed limit of 55, a green sign with a",
+      "inference_time_sec": 8.322,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is indicated near the green gore sign?",
+      "ground_truth": "An exit action is indicated by the EXIT [entity_004] sign.",
+      "prediction": "The green gore sign near the highway indicates a speed limit of 55 miles per hour. This is a common warning sign used to alert drivers to the speed limit, especially in areas where the speed limit is lower than the posted limit.",
+      "inference_time_sec": 4.906,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of signs like Acalanes Rd and EXIT suggest?",
+      "ground_truth": "Highway",
+      "prediction": "The mix of signs like Acalanes Rd and EXIT suggests a driving environment that is likely to be a mix of local and possibly regional traffic. The presence of a major road sign indicates that the highway is part of a larger network, while the EXIT sign suggests that the highway is also a route for vehicles to exit the highway. This combination of signs indicates that the highway is part of a larger road system that serves both local and regional traffic, with the highway serving as a connector between different areas.",
+      "inference_time_sec": 7.142,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the overhead and gore signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead and gore signs is written in English.",
+      "inference_time_sec": 3.434,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the vehicle pass the green gore sign displaying EXIT?",
+      "ground_truth": "Between 2.633 and 2.733 seconds for EXIT [entity_004]",
+      "prediction": "The vehicle passes the green gore sign displaying EXIT at the beginning of the video. The sign is visible on the right side of the road, just before the vehicle reaches the exit.",
+      "inference_time_sec": 4.426,
+      "error": ""
+    }
+  ]
+}

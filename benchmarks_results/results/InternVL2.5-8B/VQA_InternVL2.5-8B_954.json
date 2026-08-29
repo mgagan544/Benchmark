@@ -1,0 +1,70 @@
+{
+  "video_id": 954,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/954.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text EXIT relative to the word Ave on the overhead sign?",
+      "ground_truth": "directly below Ave [entity_002]",
+      "prediction": "The text EXIT is positioned to the right of the word Ave on the overhead sign.",
+      "inference_time_sec": 7.346,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are visible on the overhead green exit sign?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct pieces of text visible on the overhead green exit sign. The first piece of text reads 'Bradley Av' indicating the name of the exit, and the second piece of text reads 'EXIT ONLY' which specifies the type of lane.",
+      "inference_time_sec": 9.44,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan?",
+      "ground_truth": "1st: passing Bradley [entity_001], 2nd: slow crawl behind red sedan",
+      "prediction": "After passing the overhead exit sign, the video shows the traffic gradually slowing down. This is indicated by the increasing distance between the vehicles and the appearance of brake lights on some cars. The final scene shows the traffic has come to a complete stop, with the red sedan directly in front of the viewer's vehicle, indicating that the slow crawl has ended and the vehicles are now at a standstill.",
+      "inference_time_sec": 11.043,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead sign, what driving action is indicated for the lane below it?",
+      "ground_truth": "EXIT [entity_003] only [entity_004]",
+      "prediction": "The overhead sign indicates that the lane below it is an exit lane, as it reads 'Bradley Ave EXIT ONLY'. This suggests that vehicles in the lane are expected to prepare to exit the highway at the upcoming exit.",
+      "inference_time_sec": 9.015,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the overhead exit sign and the multi-lane road layout?",
+      "ground_truth": "highway",
+      "prediction": "The overhead exit sign for 'Bradley Ave' and the multi-lane road layout suggest a suburban or semi-urban driving environment. The presence of an exit sign indicates that the highway is part of a larger road network, likely connecting to residential or commercial areas. The multi-lane road layout accommodates a significant volume of traffic, which is typical for areas that are not heavily congested but still experience regular vehicular movement. The clear skies and the absence of any urban infrastructure like skyscrapers or dense commercial buildings further support the idea of a suburban setting.",
+      "inference_time_sec": 13.247,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead exit sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead exit sign is in English. It reads 'Bradley Ave' and 'Exit Only', indicating the direction to the exit for Bradley Avenue.",
+      "inference_time_sec": 8.355,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text Bradley first become clearly displayed on the overhead sign?",
+      "ground_truth": "Bradley [entity_001] at 2.7 seconds",
+      "prediction": "The text Bradley first becomes clearly displayed on the overhead sign at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.723,
+      "error": ""
+    }
+  ]
+}

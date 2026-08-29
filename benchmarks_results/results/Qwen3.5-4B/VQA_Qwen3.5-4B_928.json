@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What sign is located directly to the right of the guide sign indicating Bron EXPWY?",
       "ground_truth": "178 [entity_007] and NORTH [entity_008] to the right of Bron [entity_004] EXPWY [entity_005]",
-      "prediction": "The user wants to identify a specific sign based on its position relative to another sign.\n\n1.  **Identify the \"guide sign indicating Bron EXPWY\":** Looking at the first frame (00:00), there is a large green overhead sign. The text on it reads \"95 NORTH Cr. Bron. Expwy\". This is the sign the user is referring to.\n2.  **Locate the sign \"directly to the right\":** To the right of the \"Cr. Bron. Expwy\" sign, there is another green sign.\n3.  **Read the text on",
-      "inference_time_sec": 12.809,
+      "prediction": "W 178 St",
+      "inference_time_sec": 2.83,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances containing numbers are visible in this clip?",
       "ground_truth": "4",
-      "prediction": "The user wants me to count distinct text instances containing numbers in the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   There's a large green highway sign overhead.\n    *   Top line: \"CLEARANCE 13' 6\"\". This contains numbers.\n    *   Middle line: \"95 NORTH\". This contains a number.\n    *   Bottom line: \"Cr. Bronx Expy\". No numbers.\n    *   To the right of the main sign, there's another green sign.\n    *   Top line: \"W",
-      "inference_time_sec": 12.656,
+      "prediction": "3",
+      "inference_time_sec": 2.346,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?",
       "ground_truth": "1st: 3030 [entity_001], 2nd: SPEED [entity_002] LIMIT [entity_003], 3rd: Bron [entity_004] EXPWY [entity_005]",
-      "prediction": "The user wants to know the order in which three specific signs are encountered in the video.\n\n1.  **Identify the signs:**\n    *   **Roadside marker:** This is likely the small green sign on the left side of the road, often indicating lane information or distance. Looking at the first frame, there's a small green sign on the left pole.\n    *   **Speed limit sign:** This is the white rectangular sign on the right side of the road showing \"30\".\n    *   **Bron EXPWY guide sign:** This is the large green overhead sign that says \"95 NORTH",
-      "inference_time_sec": 12.599,
+      "prediction": "roadside marker, speed limit sign, Bron EXPWY guide sign",
+      "inference_time_sec": 3.662,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What warning text is displayed on the overhead structure to indicate a height restriction?",
       "ground_truth": "CLEARANCE 13-6 [entity_006]",
-      "prediction": "The user wants to identify the warning text on an overhead structure related to height restriction.\n\n1.  **Scan the video for overhead signs:** I see a large green highway sign at the beginning of the video (around 00:00 - 00:01).\n2.  **Examine the sign for height information:** Looking closely at the top left corner of that green sign, there is smaller text.\n3.  **Read the text:** The text reads \"CLEARANCE 13' 6\"\". This is a standard way to indicate a height restriction.\n4.  **Formulate",
-      "inference_time_sec": 12.654,
+      "prediction": "CLEARANCE 13'6\"",
+      "inference_time_sec": 2.799,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?",
       "ground_truth": "Highway",
-      "prediction": "The user wants me to identify the type of driving environment based on visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Guide Signs:** I see large green overhead signs. One clearly says \"95 NORTH Cr. Bronx Expy\" and \"W 178 St\". Another sign mentions \"CLEARANCE 13' 6\"\". This indicates a major roadway, likely an expressway or highway.\n    *   **Speed Limits:** There is a white rectangular sign on the right that says \"SPEED LIMIT 30\". This is a common speed limit for",
-      "inference_time_sec": 15.634,
+      "prediction": "Highway",
+      "inference_time_sec": 2.323,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What region or city is suggested by the guide sign indicating Bron EXPWY?",
       "ground_truth": "Bronx, New York",
-      "prediction": "The user wants to identify the region or city based on a specific road sign.\n\n1.  **Analyze the image:** I need to look at the first few frames where the green highway sign is visible.\n2.  **Locate the sign:** In the first frame (00:00) and second frame (00:01), there is a large green overhead sign.\n3.  **Read the text on the sign:**\n    *   Top line: \"CLEARANCE 13' 6\"\"\n    *   Middle line: \"95 NORTH\"\n    *   Bottom",
-      "inference_time_sec": 12.683,
+      "prediction": "Bronx",
+      "inference_time_sec": 2.518,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the license plate on the vehicle directly ahead become clearly readable?",
       "ground_truth": "8.7",
-      "prediction": "The user wants to find the timestamp where the license plate of the car directly in front is readable.\n\n1.  **Analyze the video frames:**\n    *   **00:00 - 00:02:** The car is driving on a highway at night. There are cars ahead, but they are too far away or too blurry to see details.\n    *   **00:03:** The camera car is approaching an underpass. A silver SUV is in the left lane, and a black car is directly ahead in the same lane. The black car's taillights are on.",
-      "inference_time_sec": 12.601,
+      "prediction": "0.4 seconds",
+      "inference_time_sec": 2.675,
       "error": ""
     }
   ]

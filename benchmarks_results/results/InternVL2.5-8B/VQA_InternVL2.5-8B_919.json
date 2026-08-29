@@ -1,0 +1,70 @@
+{
+  "video_id": 919,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/919.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located across the street relative to the overhead crossing sign displaying AHE?",
+      "ground_truth": "CASH 4 [entity_003] to the left of AHE [entity_002]",
+      "prediction": "Across the street, there is a sign that reads 'SCHOOL' in white letters on a blue background. This sign is positioned directly opposite the overhead crossing sign displaying AHE.",
+      "inference_time_sec": 8.554,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?",
+      "ground_truth": "7",
+      "prediction": "There are two distinct text instances marked or mounted on the yellow school bus. One is the text 'SCHOOL BUS' on the back of the bus, and the other is the text 'SCHOOL BUS' on the side of the bus.",
+      "inference_time_sec": 9.329,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?",
+      "ground_truth": "1st: SCHOOL [entity_001], 2nd: AHE [entity_002], 3rd: CASH 4 [entity_003]",
+      "prediction": "The first text instance is 'SCHOOL' on the road, followed by 'SCHOOL' on the bus, and then 'SCHOOL' on the road again.",
+      "inference_time_sec": 8.552,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?",
+      "ground_truth": "PARKING [entity_011]",
+      "prediction": "The regulatory text on the utility post on the right sidewalk reads 'NO PARKING ANYTIME', indicating that parking is not allowed at any time in that area.",
+      "inference_time_sec": 8.337,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?",
+      "ground_truth": "School zone",
+      "prediction": "The mix of text visible between 0.267 seconds and 3.200 seconds, which includes 'SCHOOL' and 'BUS STOP', suggests that the area is a school zone. This is further supported by the presence of a school bus and the pedestrian crossing sign, indicating that the road is likely used by school children and requires vehicles to be cautious and adhere to specific traffic rules.",
+      "inference_time_sec": 11.229,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the contact number displayed on the side of the school bus?",
+      "ground_truth": "New York City",
+      "prediction": "The contact number displayed on the side of the school bus is '718-555-1212', which suggests that the bus is operating in New York City, as the area code '718' is associated with Brooklyn.",
+      "inference_time_sec": 8.951,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the regulatory parking sign remain continuously visible in the clip?",
+      "ground_truth": "6.400 seconds to 7.367 seconds",
+      "prediction": "The regulatory parking sign remains continuously visible throughout the entire clip, from the beginning to the end.",
+      "inference_time_sec": 7.562,
+      "error": ""
+    }
+  ]
+}

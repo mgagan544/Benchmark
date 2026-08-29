@@ -1,0 +1,70 @@
+{
+  "video_id": 977,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/977.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the regulatory sign displaying NO PARKING ANY TIME located relative to the speed limit sign?",
+      "ground_truth": "Adjacent to the speed limit sign displaying SPEED [entity_002] and LIMIT [entity_003]",
+      "prediction": "The regulatory sign displaying \"NO PARKING ANY TIME\" is located on the right side of the road, near the edge where it meets the grassy area. It is positioned above and to the right of the speed limit sign, which indicates a speed limit of 20 mph. The signs are mounted on a pole that runs parallel to the road.",
+      "inference_time_sec": 7.859,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign that restricts parking?",
+      "ground_truth": "3",
+      "prediction": "There is one distinct text instance visible on the regulatory sign that restricts parking, which reads \"NO PARKING.\"",
+      "inference_time_sec": 5.341,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the signs passed on the right side of the road between 00:02 and 00:06?",
+      "ground_truth": "1st: SPEED [entity_002] LIMIT [entity_003], 2nd: NO PARKING [entity_004] ANY [entity_005] TIME [entity_006]",
+      "prediction": "Between 00:02 and 00:06, the signs passed on the right side of the road are:\n\n1. A speed limit sign indicating \"SCHOOL\" with a speed limit of 20 mph.\n2. A stop sign.\n\nThese signs are typically placed in sequence to alert drivers that they are approaching a school zone where speed limits are reduced and to indicate that they must come to a complete stop at an intersection or designated area.",
+      "inference_time_sec": 9.346,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What painted warning on the road surface indicates a driving constraint as the vehicle drives between 00:02 and 00:03?",
+      "ground_truth": "SCHOOL [entity_001] on the road surface",
+      "prediction": "The painted warning on the road surface that indicates a driving constraint is \"SCHOOL.\" This marking typically signifies that the area is near a school zone, and drivers must reduce their speed to ensure safety for children and other pedestrians in the vicinity.",
+      "inference_time_sec": 6.752,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of single-family homes and the painted road warning, what type of area is this?",
+      "ground_truth": "residential school zone",
+      "prediction": "The presence of single-family homes and the painted road warning \"SCHOOL\" indicate that this is likely an area near a school. The \"SCHOOL\" marking on the road suggests that drivers should be cautious and reduce their speed to ensure safety around the school zone. This is a common practice in areas where children may be present, especially during school hours. The surrounding greenery and residential appearance further support the idea that this is a suburban or residential neighborhood with a school nearby.",
+      "inference_time_sec": 9.374,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the road surface and regulatory signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the road surface and regulatory signs in the image appears to be written in English. The word \"SCHOOL\" is clearly visible on the road surface, which is a common term used in English-speaking countries to indicate a school zone where speed limits are typically reduced. Additionally, the regulatory signs also appear to be in English, as they use standard English words and symbols that are commonly used in traffic signage.",
+      "inference_time_sec": 8.552,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the regulatory sign indicating NO PARKING ANY TIME visible in the clip?",
+      "ground_truth": "00:04 to 00:06",
+      "prediction": "The regulatory sign indicating \"NO PARKING ANY TIME\" is visible on the right side of the road as the car approaches the intersection. This sign is typically used to indicate that parking is prohibited at all times, regardless of the day or time. The exact time range for this prohibition is not specified in the image, but it is implied that it applies 24 hours a day, every day.",
+      "inference_time_sec": 8.355,
+      "error": ""
+    }
+  ]
+}

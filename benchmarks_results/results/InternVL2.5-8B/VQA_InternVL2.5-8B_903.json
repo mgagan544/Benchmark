@@ -1,0 +1,70 @@
+{
+  "video_id": 903,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/903.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What manufacturer name is located to the left of the license plate 63:816.70. on the rear of the grey bus?",
+      "ground_truth": "MERKAVIM [entity_011] to the left of 63:816.70. [entity_007]",
+      "prediction": "The manufacturer name located to the left of the license plate 63:816.70 on the rear of the grey bus is Suzuki. This can be identified by the logo and the name 'Suzuki' clearly visible on the bus's rear panel.",
+      "inference_time_sec": 9.473,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on the transit buses in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates visible on the transit buses in the clip. The first bus has a license plate that reads '63-816-70', and the second bus has a license plate that reads '63-816-70'.",
+      "inference_time_sec": 9.158,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plates of the two Metropoline transit buses are encountered by the camera vehicle?",
+      "ground_truth": "1st: 63:816.70. [entity_007], 2nd: 63:709:70 [entity_018]",
+      "prediction": "The camera vehicle first encounters the license plate '63-816-70' on the rear of the first bus, and then the license plate '63-816-70' on the front of the second bus.",
+      "inference_time_sec": 8.903,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text in the scene, are there any explicit driving constraints or speed limits indicated?",
+      "ground_truth": "None",
+      "prediction": "No, there are no explicit driving constraints or speed limits indicated in the visible text within the scene. The text primarily consists of advertisements and route information, which do not include any regulatory or safety instructions.",
+      "inference_time_sec": 8.746,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text on the transit buses suggest about the type of driving environment?",
+      "ground_truth": "Urban transit corridor",
+      "prediction": "The mix of text on the transit buses, which includes Hebrew and English, suggests that the driving environment is likely in a bilingual region, possibly in Israel, where both languages are commonly used. This indicates a multicultural and possibly international setting, where public transportation is designed to cater to a diverse population.",
+      "inference_time_sec": 9.948,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which website link on the grey bus advertisement suggests a specific country of origin or region?",
+      "ground_truth": "Suzuki.co.ill [entity_006]",
+      "prediction": "The website link on the grey bus advertisement is 'www.merkavim.com.il', which includes the country code 'il' for Israel, suggesting that the bus service operates in Israel.",
+      "inference_time_sec": 8.615,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range does the white bus identifier 2443 first become revealed to the camera vehicle?",
+      "ground_truth": "4.467 seconds to 5.0 seconds",
+      "prediction": "The white bus identifier 2443 is first revealed to the camera vehicle at the timestamp range of 00:00:00 to 00:00:05.",
+      "inference_time_sec": 8.278,
+      "error": ""
+    }
+  ]
+}

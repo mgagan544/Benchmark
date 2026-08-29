@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located to the left of the green directional sign.",
+      "inference_time_sec": 3.402,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are three distinct text entities visible on the signs in this clip. The first sign is the green highway sign that reads 'Grand Central Pkwy 5/6', the second sign is the green highway sign that reads 'Grand Central Pkwy 5/6 E', and the third sign is the green highway sign that reads 'Grand Central Pkwy 5/6 W'.",
+      "inference_time_sec": 6.266,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "As the vehicle moves forward, the three signs are encountered in the following order: first, a green sign indicating the direction to Grand Central Terminal; second, a green sign with white text for the E 138 St; and third, a green sign with white text for the E 138 St.",
+      "inference_time_sec": 5.412,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The text on the sign that indicates a weight restriction for vehicles near the overpass structure reads 'NO TRUCKS OVER 33 TONS OR LESS.' This sign is positioned on the right side of the road, just above the traffic lights, and is a common regulatory measure to ensure the safety of pedestrians and prevent vehicles from overloading the roadway.",
+      "inference_time_sec": 5.955,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names such as 'I-278' and 'I-278 South' with weight limit signs suggests that the road segment is a part of a larger highway network that has been divided into different lanes or sections. The presence of these signs indicates that the road is designed to handle a variety of vehicles, including trucks and cars, and that there are specific speed limits or restrictions in place to ensure safety and compliance with traffic regulations. This type of road signage is common in areas where highways intersect or branch off from each other, providing drivers with necessary information to navigate the area safely.",
+      "inference_time_sec": 8.036,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The abbreviations 'NYC' and 'PENNSYLVANIA' on the green directional sign suggest that the video was taken in New York City or a region in Pennsylvania.",
+      "inference_time_sec": 4.436,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text DELIVERIES ENTRANCE 9 first becomes visible at the 0:00 timestamp in the video.",
+      "inference_time_sec": 3.833,
+      "error": ""
+    }
+  ]
+}

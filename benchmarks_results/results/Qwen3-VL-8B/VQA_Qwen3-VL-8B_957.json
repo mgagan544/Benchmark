@@ -1,0 +1,70 @@
+{
+  "video_id": 957,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/957.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What green information board is located directly to the left of the yellow speed advisory sign displaying 15 M P H?",
+      "ground_truth": "SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014] to the left of 15 M P H [entity_011]",
+      "prediction": "The green information board located directly to the left of the yellow speed advisory sign displaying 15 MPH is the one that reads \"STATE COLLEGE OF OPTOMETRY\" and \"THE MUSEUM OF MODERN ART\".",
+      "inference_time_sec": 7.094,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances (such as license plates or vehicle tags) are visible between 1.2 and 1.767 seconds?",
+      "ground_truth": "5",
+      "prediction": "2",
+      "inference_time_sec": 3.668,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the orange construction warning sign, the yellow speed advisory sign, and the green overhead signs are encountered?",
+      "ground_truth": "1st ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010], 2nd 15 M P H [entity_011], 3rd SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014]",
+      "prediction": "The orange construction warning sign is encountered first, followed by the yellow speed advisory sign, and then the green overhead signs.",
+      "inference_time_sec": 5.373,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the right side of the road indicates a hazard or construction ahead?",
+      "ground_truth": "ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010]",
+      "prediction": "The warning text on the right side of the road is \"ROAD WORK AHEAD\". This sign indicates that there is construction or road work ahead, which may require drivers to slow down or be cautious.",
+      "inference_time_sec": 6.727,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, multiple highway lanes, and construction warning signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a **freeway or highway**.\n\nHere’s why:\n\n- **Overhead Exit Signs**: The green signs indicating “Midtown Tun,” “Exit 9,” and “E 42 St” are typical of controlled-access highways, where drivers are directed to specific exits.\n- **Multiple Lanes**: The road has multiple lanes of traffic, including a lane for the vehicle, a lane for a red convertible, and a lane for a white van — a common feature of freeways designed for high-volume traffic.\n- **Construction Warning Signs**: The orange diamond-shaped “Road Work Ahead” signs are standard on",
+      "inference_time_sec": 13.534,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or region is suggested by the green information board displaying SUNY State College Optometry?",
+      "ground_truth": "New York State",
+      "prediction": "The green information board displaying “SUNY State College of Optometry” suggests that the location is in **New York City**, specifically in the **Manhattan** area.\n\nHere’s why:\n\n1. **SUNY (State University of New York)**: This is a public university system that operates across New York State. The “State College of Optometry” is a specific institution within this system.\n\n2. **Location of the College**: The State University of New York College of Optometry (SUNY Optometry) is located at **53 East 14th Street, New York, NY 100",
+      "inference_time_sec": 13.485,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range are the overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE visible in the clip?",
+      "ground_truth": "8.2 to 9.3 seconds",
+      "prediction": "The overhead highway exit signs displaying \"EXIT 9, E 42 St, RIGHT LANE\" are visible from 0:00 to 0:04 in the clip.",
+      "inference_time_sec": 6.682,
+      "error": ""
+    }
+  ]
+}

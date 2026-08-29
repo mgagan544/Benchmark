@@ -1,0 +1,70 @@
+{
+  "video_id": 905,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/905.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly below the BEDROOM sign on the commercial storefront?",
+      "ground_truth": "MATTRESS [entity_009] directly below BEDROOM [entity_010]",
+      "prediction": "Directly below the BEDROOM sign on the commercial storefront, the text reads \"OUTLET.\"",
+      "inference_time_sec": 7.755,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the semi-truck trailer and cab?",
+      "ground_truth": "10",
+      "prediction": "There are two distinct text instances mounted on the semi-truck trailer and cab. One is a red and white sign on the trailer, and the other is a green and white sign on the cab.",
+      "inference_time_sec": 8.918,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Sign-On Bonus [entity_006], 2nd: LOGISTICS-010 [entity_007], 3rd: myBekins.com [entity_008]",
+      "prediction": "The text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered in the following order as the vehicle moves forward: Sign-On Bonus is seen on the windshield of the truck, LOGISTICS-010 is on the side of the truck, and myBekins.com is on the back of the truck.",
+      "inference_time_sec": 11.063,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the regulatory sign near the roadside sidewalk, what explicit driving action is required for vehicles in the right lane?",
+      "ground_truth": "TURN RIGHT [entity_019]",
+      "prediction": "The regulatory sign near the roadside sidewalk indicates a \"NO TURN ON RED\" rule, which means that vehicles in the right lane are not permitted to make a right turn when the traffic light is red. This is a common traffic regulation to prevent accidents and ensure the safety of pedestrians and other vehicles.",
+      "inference_time_sec": 10.228,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.6s and 2.0s suggest about the type of area?",
+      "ground_truth": "commercial retail zone",
+      "prediction": "The mix of text visible between 0.6s and 2.0s, including \"BEDROOM,\" \"MATTRESS,\" and \"OUTLET,\" suggests that the area is a commercial district with retail stores. These words are typically associated with furniture and home goods stores, indicating that the street is likely lined with businesses catering to consumer needs for home furnishings and appliances.",
+      "inference_time_sec": 11.297,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text in this clip written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text in the clip is written in the Latin script.",
+      "inference_time_sec": 7.264,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the website myBekins.com first become legible as the host vehicle passes the semi-truck?",
+      "ground_truth": "0.2s",
+      "prediction": "The website myBekins.com first becomes legible as the host vehicle passes the semi-truck at the beginning of the video.",
+      "inference_time_sec": 8.158,
+      "error": ""
+    }
+  ]
+}

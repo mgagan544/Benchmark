@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "To the right of the marked zebra crossing, there is a bus stop with a bus waiting.",
+      "inference_time_sec": 5.693,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "At the start of the clip, there are two distinct signboards containing numbers visible on the right side of the road.",
+      "inference_time_sec": 5.904,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "After passing the signboard 9999, the vehicle encounters a landmark on the far left, which is a large white building with a blue roof.",
+      "inference_time_sec": 6.62,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "The signboard with the number 9999 is not clearly legible in the video, and there are no explicit driving actions or constraints implied from the visible text. The signboard appears to be a standard road sign, possibly indicating a speed limit or a warning, but the specific details are not discernible from the video.",
+      "inference_time_sec": 8.995,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road, a gas station, and a signboard suggests that the driving environment is a busy urban area with a mix of commercial and transportation facilities. The curved road indicates that drivers need to be cautious of the road's layout, which may affect lane discipline and speed. The gas station indicates that there are refueling options available for vehicles, which is a common feature in urban settings. The signboard, although not legible in the video, typically provides information or advertisements to drivers, which is a common sight in urban areas to inform or attract the attention",
+      "inference_time_sec": 15.407,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The text on the signboard on the right is in Hebrew script.",
+      "inference_time_sec": 5.248,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard 9999 first becomes visible at the beginning of the video, and it is passed by the ego vehicle as it moves along the road.",
+      "inference_time_sec": 6.595,
+      "error": ""
+    }
+  ]
+}

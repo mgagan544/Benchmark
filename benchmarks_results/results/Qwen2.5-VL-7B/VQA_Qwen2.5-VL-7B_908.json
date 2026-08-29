@@ -1,0 +1,70 @@
+{
+  "video_id": 908,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/908.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the covered pedestrian structure marked WALKWAY relative to the Care emblem?",
+      "ground_truth": "To the left of Care [entity_004]",
+      "prediction": "The covered pedestrian structure marked \"WALKWAY\" is positioned to the left of the Care emblem on the bus. The emblem is located on the rear of the bus, and the \"WALKWAY\" structure is further to the left in the image.",
+      "inference_time_sec": 6.901,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in this clip are mounted on the transit bus?",
+      "ground_truth": 4,
+      "prediction": "There are three distinct pieces of text visible on the transit bus:\n\n1. \"710\"\n2. \"THE PORT AUTHORITY OF NY & NJ\"\n3. \"Care\" (partially visible, likely part of a larger logo or text)",
+      "inference_time_sec": 6.918,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the first three text instances detected on the transit bus?",
+      "ground_truth": "1st: 35627-88 [entity_001], 2nd: 710 [entity_002], 3rd: THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The order of appearance of the first three text instances detected on the transit bus is as follows:\n\n1. \"710\"\n2. \"THE PORT AUTHORITY OF NY & NJ\"\n3. \"Care\" (partially visible, located towards the bottom right corner)",
+      "inference_time_sec": 7.089,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the pavement markings near the green commuter waiting shelters, what driving action is required?",
+      "ground_truth": "Stop at the painted 'STOP' stencil",
+      "prediction": "The pavement markings near the green commuter waiting shelters indicate that vehicles should stop at the marked area before proceeding. The markings are likely to be a \"STOP\" sign or a similar indicator, which requires drivers to come to a complete stop before continuing. This is typically done to ensure safety and to allow pedestrians or other vehicles to cross safely.",
+      "inference_time_sec": 7.752,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of transit bus markings and a walkway sign suggest about the driving environment?",
+      "ground_truth": "Transit hub or commuter terminal area",
+      "prediction": "The presence of transit bus markings and a \"WALKWAY\" sign suggests that the driving environment is likely a public transportation hub or a designated area for buses and pedestrians. This indicates that the location is designed to accommodate both vehicles and people, possibly near a train station, airport, or another major transportation facility. The markings and signs help guide traffic and ensure safety by designating specific areas for buses to stop and pick up passengers, as well as providing clear pathways for pedestrians. The \"STOP\" marking on the road further emphasizes the importance of traffic control in this area, ensuring that vehicles yield to pedestrians and other vehicles when necessary.",
+      "inference_time_sec": 10.91,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible text suggests the geographical region where this clip was recorded?",
+      "ground_truth": "THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The visible text \"THE PORT AUTHORITY OF NY & NJ\" on the bus suggests that this clip was recorded in the New York and New Jersey region, which is part of the northeastern United States.",
+      "inference_time_sec": 6.315,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the fleet designation number 710 first become clearly detected on the bus?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The fleet designation number 710 first becomes clearly detectable on the bus at approximately 2 seconds into the video.",
+      "inference_time_sec": 5.438,
+      "error": ""
+    }
+  ]
+}

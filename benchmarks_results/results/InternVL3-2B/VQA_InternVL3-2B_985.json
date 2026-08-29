@@ -1,0 +1,70 @@
+{
+  "video_id": 985,
+  "model": "InternVL3-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/985.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle moves forward and the overhead signs come into view at 6.233 seconds, which sign is positioned to the right of the Riverhead sign?",
+      "ground_truth": "WEST [entity_001] sign",
+      "prediction": "The Evergreen sign is positioned to the right of the Riverhead sign.",
+      "inference_time_sec": 4.243,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway signs are positioned above the divided roadway that come into clear view at 6.233 seconds?",
+      "ground_truth": "5",
+      "prediction": "two",
+      "inference_time_sec": 2.455,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the following events: (1) the traffic light turns green, (2) the school bus passes on the left, (3) the highway signs come into view?",
+      "ground_truth": "1st: school bus passes, 2nd: traffic light turns green, 3rd: highway signs come into view",
+      "prediction": "(1) the traffic light turns green, (2) the school bus passes on the left, (3) the highway signs come into view)",
+      "inference_time_sec": 3.943,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the signs that come into view at 6.233 seconds, what directional routes are indicated for the driver?",
+      "ground_truth": "EAST [entity_003] and WEST [entity_001]",
+      "prediction": "The signs indicate the routes to 'Evergreen' and 'New York'.",
+      "inference_time_sec": 3.19,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the combination of a commercial building and overhead highway signs coming into view at 6.233 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial highway corridor",
+      "prediction": "The combination of a commercial building and overhead highway signs suggests that the vehicle is approaching an urban area with significant traffic infrastructure. The presence of these signs indicates that the road is likely part of a larger highway system, possibly leading to or from a city or major town. The commercial building hints at nearby businesses, which are common in urban settings, and the signs provide directions, which are essential for navigating through such areas.",
+      "inference_time_sec": 6.839,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or state name is visible on the highway signs that come into view at 6.233 seconds?",
+      "ground_truth": "New York [entity_005]",
+      "prediction": "The highway signs show 'New York' and 'Evergreen'.",
+      "inference_time_sec": 3.104,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For how long after the traffic light turns green at 2.633 seconds does it take for the 495 sign to come into clear view?",
+      "ground_truth": "3.6 seconds",
+      "prediction": "1.2 seconds",
+      "inference_time_sec": 2.62,
+      "error": ""
+    }
+  ]
+}

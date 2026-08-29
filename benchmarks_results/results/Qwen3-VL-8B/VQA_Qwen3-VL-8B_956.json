@@ -1,0 +1,70 @@
+{
+  "video_id": 956,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/956.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What instruction is located directly to the left of the SERVICE signboard?",
+      "ground_truth": "PERMIT [entity_014] to the left of SERVICE [entity_013]",
+      "prediction": "The instruction located directly to the left of the SERVICE signboard is \"EXIT\".",
+      "inference_time_sec": 4.633,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text instances are visible on the white transport van between 1.133s and 1.767s?",
+      "ground_truth": "5",
+      "prediction": "2",
+      "inference_time_sec": 3.686,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead sign texts are encountered at the very beginning of the clip?",
+      "ground_truth": "1st: 7314 [entity_001], 2nd: EXIT [entity_002]",
+      "prediction": "The order in which the overhead sign texts are encountered at the very beginning of the clip is:\n\n1. **EXIT**\n2. **E 4 St Midtown Tun**\n\nThis sequence is observed as the vehicle moves forward, passing under the signs in that order.",
+      "inference_time_sec": 8.738,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What weight limit restriction is displayed on the gantry to restrict vehicle weight?",
+      "ground_truth": "8000 Lbs [entity_022]",
+      "prediction": "The weight limit restriction displayed on the gantry is 8,000 lbs.",
+      "inference_time_sec": 4.997,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, lane-use restrictions, and weight limits, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a **highway or major arterial road in an urban setting**, likely within a large city such as New York City, given the visual cues.\n\nHere’s why:\n\n- **Overhead Exit Signs**: These are standard on highways and major roads to guide drivers to upcoming exits. Their presence indicates the road is designed for long-distance or through-traffic movement, not just local streets.\n\n- **Lane-Use Restrictions**: Signs indicating “Passenger Cars Only” or similar restrictions are common on highways or multi-lane roads to manage traffic flow and ensure safety by separating vehicle types (e.g., preventing trucks from using certain",
+      "inference_time_sec": 16.072,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific city is indicated by the markings on the white transport van?",
+      "ground_truth": "NYC [entity_003]",
+      "prediction": "The white transport van has markings that indicate it is from **New York City (NYC)**. The text on the van reads “NYC CHILDREN SERVICES” and “NYC CHILDREN’S SERVICES,” which are official designations for services provided by the New York City government. Additionally, the license plate is a New York state plate, further confirming the location.",
+      "inference_time_sec": 10.643,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the vehicle-mounted markings NYC, CHILDREN'S, SERVICES, DIV, and OF SOUTH AND FAMILY JUSTICE continuously visible on the white transport van?",
+      "ground_truth": "1.133s to 1.767s",
+      "prediction": "The vehicle-mounted markings \"NYC, CHILDREN'S, SERVICES, DIV, and OF SOUTH AND FAMILY JUSTICE\" are continuously visible on the white transport van from 0:00 to 0:04.",
+      "inference_time_sec": 6.97,
+      "error": ""
+    }
+  ]
+}

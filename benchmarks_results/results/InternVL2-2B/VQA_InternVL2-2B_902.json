@@ -1,0 +1,70 @@
+{
+  "video_id": 902,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/902.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What bike route sign, which first appears at 0.3s, is located adjacent to the Northern Blvd sign?",
+      "ground_truth": "Honeywell St [entity_005] Bridge [entity_006] adjacent to Northern [entity_003] Blvd [entity_004]",
+      "prediction": "The bike route sign adjacent to the Northern Blvd sign is the \"Bike Route\" sign, which is located on the right side of the frame.",
+      "inference_time_sec": 4.113,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many graffiti tags are visible on the concrete structures as the vehicle ascends the bridge between 6.5s and 6.967s?",
+      "ground_truth": "2",
+      "prediction": "Based on the video, there are at least three visible graffiti tags on the concrete structures as the vehicle ascends the bridge between 6.5s and 6.967s.",
+      "inference_time_sec": 4.402,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for Honeywell St Bridge, DO NOT ENTER, and ONE WAY are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Honeywell St [entity_005] Bridge [entity_006], 2nd: DO NOT [entity_007] ENTER [entity_008], 3rd: ONE WAY [entity_009]",
+      "prediction": "The signs for Honeywell St Bridge, DO NOT ENTER, and ONE WAY are encountered in the following order as the vehicle moves forward: The first sign for Honeywell St Bridge is seen at the beginning of the video, followed by the DO NOT ENTER sign, and finally, the ONE WAY sign is seen at the end of the video.",
+      "inference_time_sec": 5.717,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text on the corner, visible at 3.633s, indicates a restriction on entering as the vehicle transitions onto the bridge ramp?",
+      "ground_truth": "DO NOT [entity_007] ENTER [entity_008]",
+      "prediction": "The regulatory text on the corner, visible at 3.633s, indicates a restriction on entering as the vehicle transitions onto the bridge ramp. This text is typically found on traffic signs and is used to inform drivers that they are approaching a ramp that is not meant for vehicles, and they should not attempt to enter the ramp.",
+      "inference_time_sec": 5.65,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route signs, regulatory signs, and a bridge ramp, what kind of driving environment does this clip depict?",
+      "ground_truth": "Urban roadway and bridge approach",
+      "prediction": "The driving environment depicted in the video is likely a busy urban area with regulated traffic flow. The presence of route signs, such as \"Honeywell St. Bridge,\" indicates that the area is served by a major roadway, and the regulatory signs, like the \"No Stopping\" sign, suggest that the road is used by vehicles that require a stop signal. The bridge ramp, which is a common feature in urban areas for vehicles to access the bridge, further supports the idea that this is a city setting. The overall scene suggests a well-organized traffic system with clear signage and infrastructure designed to manage the flow of vehicles",
+      "inference_time_sec": 8.232,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street and bridge name visible on the bike route sign suggests the local geographic setting?",
+      "ground_truth": "Honeywell St [entity_005] Bridge [entity_006]",
+      "prediction": "The bike route sign indicates \"Honeywell St. Bridge,\" which suggests that the local geographic setting is in New York City, as Honeywell St. is a street in Manhattan. The presence of the bridge, which is a well-known landmark in the city, further supports this inference.",
+      "inference_time_sec": 5.239,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the DO NOT ENTER sign first become visible as the vehicle transitions onto the bridge ramp?",
+      "ground_truth": "3.633s",
+      "prediction": "The DO NOT ENTER sign first becomes visible as the vehicle transitions onto the bridge ramp at around 1:30 into the video.",
+      "inference_time_sec": 3.871,
+      "error": ""
+    }
+  ]
+}

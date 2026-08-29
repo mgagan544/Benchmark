@@ -1,0 +1,70 @@
+{
+  "video_id": 980,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/980.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Upper Happy on the overhead sign?",
+      "ground_truth": "Valley Rd [entity_003] directly below Upper Happy [entity_002]",
+      "prediction": "The text located directly below \"Upper Happy\" on the overhead sign is \"Valley Rd.\"",
+      "inference_time_sec": 5.417,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the highway signs mentioned in the scene?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances displayed on the highway signs in the scene:\n\n1. \"Acalanes Rd\"\n2. \"Upper Happy Valley Rd\"\n3. \"EXIT\"",
+      "inference_time_sec": 6.12,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds?",
+      "ground_truth": "1st: Acalanes Rd [entity_001], Upper Happy [entity_002], Valley Rd [entity_003]; 2nd: EXIT [entity_004]",
+      "prediction": "From the start of the clip to 3.0 seconds, the vehicle encounters the following signs:\n\n1. A green sign indicating \"Acalanes Rd\" and \"Upper Happy Valley Rd\" with an arrow pointing to the right.\n2. A yellow sign indicating \"Exit 46\" with an arrow pointing to the right.\n3. A green sign indicating \"Exit 46\" with an arrow pointing to the right.\n\nThese signs are visible in the upper part of the frame as the vehicle drives along the highway.",
+      "inference_time_sec": 9.85,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is indicated near the green gore sign?",
+      "ground_truth": "An exit action is indicated by the EXIT [entity_004] sign.",
+      "prediction": "The green gore sign indicates that the next exit is for \"Acalanes Rd\" and \"Upper Happy Valley Rd.\" This suggests that the driver should prepare to exit the highway at the upcoming exit to reach these destinations.",
+      "inference_time_sec": 6.52,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of signs like Acalanes Rd and EXIT suggest?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of signs such as \"Acalanes Rd\" and \"EXIT\" suggests that the driving environment is a highway or a major road with multiple exits and directions. The signs indicate that this is likely a suburban or semi-urban area where there are significant local roads branching off from the main highway, such as Acalanes Road, which could lead to residential areas or specific destinations within the region. The \"EXIT\" sign indicates that this section of the highway is approaching an exit, which is common in areas with a mix of local and through traffic. This setup is typical for highways that serve as primary routes connecting different parts of a",
+      "inference_time_sec": 10.991,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the overhead and gore signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead and gore signs is written in English.",
+      "inference_time_sec": 4.83,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the vehicle pass the green gore sign displaying EXIT?",
+      "ground_truth": "Between 2.633 and 2.733 seconds for EXIT [entity_004]",
+      "prediction": "The image provided is a still frame from a video, and it captures a moment in time on a highway. The green gore sign displaying \"EXIT\" is visible to the right of the road. However, since this is a single frame, it's not possible to determine the exact time range at which the vehicle passes this sign based solely on this image.\n\nTo accurately determine the time range, you would need a series of frames showing the progression of the vehicle as it moves past the sign. Each frame would represent a different point in time, allowing you to calculate the duration between the frames where the sign is visible and when the vehicle has passed",
+      "inference_time_sec": 10.95,
+      "error": ""
+    }
+  ]
+}

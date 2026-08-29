@@ -1,0 +1,70 @@
+{
+  "video_id": 930,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/930.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?",
+      "ground_truth": "HONG [entity_005] KONG [entity_006]",
+      "prediction": "Before 3.9 seconds, the vehicle passes by a storefront with the text 'The Home Bar' located between the party hall and the deli grocery.",
+      "inference_time_sec": 8.464,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?",
+      "ground_truth": "3",
+      "prediction": "Between 3.9 and 5.6 seconds, the vehicle passes by three distinct storefront or sign text instances: 'D'LI GROCERY', 'The Pharmacy', and 'The Pharmacy'.",
+      "inference_time_sec": 9.078,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign text is encountered immediately after the vehicle passes the sign for The Best?",
+      "ground_truth": "Best [entity_009]",
+      "prediction": "Immediately after passing the sign for The Best, the vehicle encounters a sign for 'D'LI GROCERY'.",
+      "inference_time_sec": 7.885,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?",
+      "ground_truth": "None",
+      "prediction": "The visible text in the clip indicates a 25 mph speed limit, which is a common driving constraint in urban areas to ensure safety and manage traffic flow.",
+      "inference_time_sec": 8.215,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The driving environment depicted in the video is that of a moderately busy urban street. The presence of various storefronts, including a restaurant, a grocery store, and other businesses, indicates a commercial area with a mix of dining and shopping options. The density of the storefronts suggests a neighborhood with a moderate level of activity, where businesses are closely situated to each other. The street is not overly congested, as there is ample space for vehicles to pass by, and the traffic flow appears to be steady without any significant delays or obstructions. The overall scene reflects a typical urban street where daily life and commerce are ongoing.",
+      "inference_time_sec": 13.906,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the storefront signs encountered by the vehicle?",
+      "ground_truth": "English",
+      "prediction": "The storefront signs encountered by the vehicle are in English. This can be determined by the visible text on the signs, which includes names of businesses and services such as 'Restaurant', 'The House Bar & Grill', 'Deli Grocery', and 'The House Bar & Grill' again. The use of English indicates that the area is likely in an English-speaking country, and the businesses are catering to an English-speaking clientele.",
+      "inference_time_sec": 11.544,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the sign for The Best continuously visible to the camera vehicle?",
+      "ground_truth": "3.9 to 4.8 seconds",
+      "prediction": "The sign for The Best is continuously visible to the camera vehicle from the beginning of the video until the vehicle passes by it, which occurs after the initial scene of people standing outside the restaurant.",
+      "inference_time_sec": 8.569,
+      "error": ""
+    }
+  ]
+}

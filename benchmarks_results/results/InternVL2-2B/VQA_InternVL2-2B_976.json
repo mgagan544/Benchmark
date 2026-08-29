@@ -1,0 +1,70 @@
+{
+  "video_id": 976,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/976.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located to the left of the MDX vehicle with license plate GTR-8482?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50 sign to the left of MDX [entity_008]",
+      "prediction": "The regulatory sign located to the left of the MDX vehicle with license plate GTR-8482 is a \"Speed Limit 55\" sign.",
+      "inference_time_sec": 5.288,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "2",
+      "prediction": "In the video, there are at least three distinct license plates visible on vehicles. One is on a black sedan in the foreground, another is on a silver sedan in the middle of the road, and the third is on a black SUV in the background.",
+      "inference_time_sec": 5.101,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered?",
+      "ground_truth": "1st: T1711804C [entity_001], 2nd: GTR-8482 [entity_009], 3rd: SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The license plate T1711804C is first encountered as it is the first license plate that is visible in the video. The license plate GTR-8482 is the second license plate that is shown, followed by the speed limit sign.",
+      "inference_time_sec": 5.005,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text visible near the end of the clip indicates a speed restriction on this road?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "Near the end of the clip, a green sign with white text is visible, indicating a speed restriction on the road. The text is not fully legible, but it appears to say \"Speed Limit 25,\" which suggests that the speed limit on this section of the road is 25 miles per hour.",
+      "inference_time_sec": 5.537,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of highway exit signs and speed limit signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of highway exit signs and speed limit signs indicates that the vehicle is traveling on a multi-lane highway. The exit signs suggest that the highway has multiple exits, which is common in urban or suburban areas where traffic needs to be managed efficiently. The speed limit sign, which is visible in the video, also supports this conclusion, as it is a standard feature on highways to regulate the speed of vehicles to ensure safety and efficiency.",
+      "inference_time_sec": 6.627,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region in New York is suggested by the text on the green highway sign?",
+      "ground_truth": "Long Island [entity_003]",
+      "prediction": "The green highway sign in the video displays the text \"Eastern Long Island,\" which suggests that the video was taken in the eastern part of Long Island, New York.",
+      "inference_time_sec": 4.341,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the license plate GTR-8482 on the overtaking MDX vehicle visible?",
+      "ground_truth": "4.5 to 4.767 seconds",
+      "prediction": "The license plate GTR-8482 on the overtaking MDX vehicle is visible from the beginning of the video until the end. This is evident from the image as the license plate is clearly visible on the rear of the MDX vehicle, which is positioned in the lane directly ahead of the overtaking vehicle.",
+      "inference_time_sec": 5.61,
+      "error": ""
+    }
+  ]
+}

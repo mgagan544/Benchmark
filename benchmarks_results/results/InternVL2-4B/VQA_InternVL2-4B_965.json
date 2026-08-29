@@ -1,0 +1,70 @@
+{
+  "video_id": 965,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/965.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the word BUSES on the regulatory sign?",
+      "ground_truth": "TRAILERS [entity_003]",
+      "prediction": "The text located directly to the right of the word BUSES on the regulatory sign is \"20\".",
+      "inference_time_sec": 5.831,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this video clip?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates visible on vehicles in this video clip.",
+      "inference_time_sec": 5.234,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the driver encounter the text TRUCKS, Macombs Dam Br, and EXIT as the vehicle travels forward?",
+      "ground_truth": "1st: TRUCKS [entity_001], 2nd: Macombs Dam Br [entity_006], 3rd: EXIT [entity_011]",
+      "prediction": "The driver encounters the text TRUCKS, Macombs Dam Br, and EXIT in that order as the vehicle travels forward.",
+      "inference_time_sec": 6.369,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the regulatory sign on the left side of the road restricts certain vehicles from the left lane?",
+      "ground_truth": "TRUCKS [entity_001], BUSES [entity_002], TRAILERS [entity_003], LEFT [entity_004], LANE [entity_005]",
+      "prediction": "The regulatory sign on the left side of the road displays the text \"No Trucks Left Lane,\" indicating that trucks are not allowed to use the left lane.",
+      "inference_time_sec": 6.641,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway or expressway. This is indicated by the presence of overhead exit gantry signs, which are typically used to guide drivers to exits on highways, and the multiple lanes of traffic, which are characteristic of high-capacity roads designed for long-distance travel.",
+      "inference_time_sec": 8.811,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location in New York is suggested by the overhead exit signage text?",
+      "ground_truth": "Macombs Dam Br [entity_006]",
+      "prediction": "The overhead exit signage text \"E 161 St Macombs Dam Br\" suggests that the location is in the borough of Manhattan, New York. The \"E\" indicates an eastbound direction, and \"161 St\" is a street address, while \"Macombs Dam Br\" refers to the intersection of Macombs Dam Br, which is a well-known street in Manhattan. This information, combined with the urban setting and the style of the vehicles, indicates that the video was likely filmed in Manhattan, New York.",
+      "inference_time_sec": 12.346,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the yellow advisory exit sign displaying EXIT first come clearly into view, and what text is located directly below it?",
+      "ground_truth": "4.633s, M P H [entity_012]",
+      "prediction": "The yellow advisory exit sign displaying EXIT first comes clearly into view at the timestamp of 00:00:00:00, and directly below it, the text 'E 161 St' is visible.",
+      "inference_time_sec": 7.67,
+      "error": ""
+    }
+  ]
+}

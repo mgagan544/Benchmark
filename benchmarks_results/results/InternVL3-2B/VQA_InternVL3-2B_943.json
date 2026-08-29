@@ -1,0 +1,70 @@
+{
+  "video_id": 943,
+  "model": "InternVL3-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/943.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the Lexington Avenue sign relative to the 2 Avenue sign when they become visible between timestamps 4.433 and 4.500?",
+      "ground_truth": "To the right of 2 Avenue [entity_004]",
+      "prediction": "The Lexington Avenue sign is to the right of the 2 Avenue sign when they become visible between timestamps 4.433 and 4.500.",
+      "inference_time_sec": 4.946,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many height clearance signs are visible on the right side of the road after the bridge ends between timestamps 8.600 and 8.800?",
+      "ground_truth": "2",
+      "prediction": "two",
+      "inference_time_sec": 2.468,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the 12-0 clearance sign and the 15 M P H speed sign are encountered after the bridge ends?",
+      "ground_truth": "1st: 12-0 [entity_007], 2nd: 15 M P H [entity_009]",
+      "prediction": "15 M P H speed sign, 12-0 clearance sign",
+      "inference_time_sec": 3.237,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text indicates a lane closure ahead near the end of the clip at timestamp 9.733, and where is it located?",
+      "ground_truth": "RIGHT [entity_010] LANE [entity_011] CLOSED [entity_012] 500 FT [entity_013] on the right shoulder",
+      "prediction": "The warning text 'LANE CLOSED' is located on the right side of the road, near the end of the clip at timestamp 9.733.",
+      "inference_time_sec": 4.147,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of overhead lane guidance, exit signs, and clearance signs visible throughout the clip suggest about the type of road?",
+      "ground_truth": "Highway or major urban expressway",
+      "prediction": "The mix of overhead lane guidance, exit signs, and clearance signs suggests that the road is a multi-lane highway with complex traffic management. The presence of these signs indicates that the road is designed for a high volume of traffic and requires careful navigation to avoid accidents and ensure smooth flow.",
+      "inference_time_sec": 5.444,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street and highway names visible in the clip suggest this is located in New York City?",
+      "ground_truth": "2 Avenue [entity_004], Lexington Avenue [entity_003], and FDR Drive SOUTH [entity_001]",
+      "prediction": "The street and highway names visible in the clip are 'left & lanes only' and 'exit 2 bdt', which are common street and highway names in New York City.",
+      "inference_time_sec": 4.328,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the overhead exit signs for FDR Drive SOUTH and EXIT ONLY first become legible?",
+      "ground_truth": "3.967",
+      "prediction": "The overhead exit signs for FDR Drive SOUTH and EXIT ONLY first become legible at the 10-second mark.",
+      "inference_time_sec": 3.758,
+      "error": ""
+    }
+  ]
+}

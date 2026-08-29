@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the text New Jersey relative to the G W Bridge text?",
       "ground_truth": "Below G W Bridge [entity_003]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.887,
+      "prediction": "The text New Jersey is to the right of the G W Bridge text.",
+      "inference_time_sec": 3.629,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are displayed on the overhead gantry signs in this clip?",
       "ground_truth": "9",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.863,
+      "prediction": "There are three distinct text instances displayed on the overhead gantry signs in this clip.",
+      "inference_time_sec": 3.541,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?",
       "ground_truth": "1st: NORTH [entity_002]; 2nd: New Jersey [entity_008]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.895,
+      "prediction": "NORTH is visible first, then New Jersey.",
+      "inference_time_sec": 2.897,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?",
       "ground_truth": "NO TRUCKS [entity_006] and ALL TRUCKS TO NJ [entity_007]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.829,
+      "prediction": "The text 'TRUCKS ONLY' is visible on the overhead gantry, indicating that trucks are allowed to use this lane.",
+      "inference_time_sec": 3.751,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the density and type of overhead text suggest about the driving environment?",
       "ground_truth": "Highway through-route",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.888,
+      "prediction": "The density and type of overhead text suggest that the driver is in a well-organized and well-lit driving environment, likely in a major city or a well-traveled highway. The presence of multiple signs with clear directions and distances indicates that the driver is following a well-planned route, which is typical of urban or suburban areas with significant traffic. The well-lit signs and the orderly arrangement of the traffic lanes also suggest that the driver is in a safe and controlled driving environment.",
+      "inference_time_sec": 7.596,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which metropolitan area is suggested by the visible overhead signs, and what text supports this?",
       "ground_truth": "New York metropolitan area, supported by Cr Bronx Expy [entity_004] and New Jersey [entity_008]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.783,
+      "prediction": "The visible overhead signs suggest the metropolitan area of New York City. The text 'G W Bridge' and 'Cr Bronx Expwy W 176 St' support this, indicating the proximity to the George Washington Bridge and the Cross Bronx Expressway.",
+      "inference_time_sec": 5.026,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?",
       "ground_truth": "0.033s",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.86,
+      "prediction": "The texts become legible at the 15-second mark.",
+      "inference_time_sec": 3.102,
       "error": ""
     }
   ]

@@ -1,0 +1,70 @@
+{
+  "video_id": 968,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/968.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located directly below the street signs for Hancock and Evergreen?",
+      "ground_truth": "ONE WAY [entity_004] below Hancock [entity_006] and Evergreen [entity_007]",
+      "prediction": "Directly below the street signs for Hancock and Evergreen, there is a regulatory sign indicating a 'No Parking' zone. This sign is positioned on the right side of the road, just above the sidewalk, and is clearly visible throughout the video. It serves to inform drivers that parking is not allowed in that particular area, likely to maintain traffic flow or for other regulatory reasons.",
+      "inference_time_sec": 11.012,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this scene represent storefront names, commercial advertisements, or business contact details?",
+      "ground_truth": "8",
+      "prediction": "There are three distinct text instances in the scene that represent storefront names, commercial advertisements, or business contact details. These are 'FOOD CORP.', 'La Napolitana', and 'HOT PIZZA'.",
+      "inference_time_sec": 9.085,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance for the regulatory ONE WAY sign, the signboard FOODCORP., and the contact number 718-443-7192?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: FOODCORP. [entity_011], 3rd: 718-443-7192 [entity_013]",
+      "prediction": "The regulatory ONE WAY sign appears first, followed by the signboard FOODCORP., and then the contact number 718-443-7192.",
+      "inference_time_sec": 8.29,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is implied at the starting intersection?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The visible text on the road, which includes the word 'STOP' painted in large letters, implies that the driver is required to come to a complete stop at the intersection. This is a standard traffic control measure to ensure safety and orderly movement of vehicles at intersections. The presence of the 'STOP' sign also indicates that the driver must yield to any pedestrian crossing the street or to other vehicles that may have the right of way.",
+      "inference_time_sec": 11.683,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, food advertisements, and street signs, what kind of driving environment is depicted?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The video depicts a busy urban driving environment. The presence of multiple storefront signs, food advertisements, and street signs indicates a commercial area with a variety of businesses. The density of these signs suggests a bustling neighborhood with active pedestrian and vehicular traffic. The clear weather and the presence of pedestrians crossing the street further emphasize the lively and active nature of the area.",
+      "inference_time_sec": 10.778,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text instance suggests the region or city where this clip was recorded?",
+      "ground_truth": "718-443-7192 [entity_013]",
+      "prediction": "The text 'BROOKLYN' on the blue awning of the 'La Napolitana' store suggests that the clip was recorded in Brooklyn.",
+      "inference_time_sec": 8.382,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the street signs for Hancock and Evergreen come into clearer view?",
+      "ground_truth": "1.333s - 2.033s",
+      "prediction": "The street signs for Hancock and Evergreen come into clearer view between the 2nd and 3rd frames.",
+      "inference_time_sec": 8.297,
+      "error": ""
+    }
+  ]
+}

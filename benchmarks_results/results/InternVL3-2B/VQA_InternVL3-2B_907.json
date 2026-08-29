@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located directly to the right of the text 25 A on the overhead street sign?",
       "ground_truth": "Northern [entity_012] Bird [entity_013]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.956,
+      "prediction": "The text 25 A is located directly to the right of the text 25 on the overhead street sign.",
+      "inference_time_sec": 4.41,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are mounted on the parked white box truck?",
       "ground_truth": "6",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.049,
+      "prediction": "There are two distinct text instances mounted on the parked white box truck.",
+      "inference_time_sec": 3.143,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order in which the text groups on the brick industrial building's banner are encountered?",
       "ground_truth": "1st: DRIVERS [entity_001] and WANTED [entity_002], 2nd: 718 [entity_003] and 729-7777 [entity_004]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.956,
+      "prediction": "The text groups on the banner are encountered in the following order: 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS WANT', 'THE', 'DRIVERS",
+      "inference_time_sec": 9.043,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What instructional or regulatory text is visible on the sign near the traffic light at the intersection?",
       "ground_truth": "ENTER [entity_016]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.847,
+      "prediction": "The sign near the traffic light reads 'Northern Blvd' and 'Northeast Blvd', indicating the directions to these streets.",
+      "inference_time_sec": 3.63,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?",
       "ground_truth": "Industrial and commercial district",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.954,
+      "prediction": "The presence of the 'Contractors Metal LLC' text on the white truck and the banners on the industrial building suggests that the driving environment is an urban area with ongoing construction or industrial activity. The banners likely advertise the company's services or products, indicating a commercial zone where businesses are active. The presence of these elements implies that the road is part of a bustling cityscape with ongoing development and business operations.",
+      "inference_time_sec": 6.685,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What city or region is suggested by the area code 718 found on the visible signs?",
       "ground_truth": "New York City",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.886,
+      "prediction": "The area code 718 is commonly associated with the city of new york, specifically the borough of queens.",
+      "inference_time_sec": 3.579,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range is the phone number 718.786.2505 on the parked white box truck visible?",
       "ground_truth": "4.8 seconds to 6.233 seconds",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.964,
+      "prediction": "The phone number is visible on the parked white box truck in the first few seconds of the video.",
+      "inference_time_sec": 3.492,
       "error": ""
     }
   ]

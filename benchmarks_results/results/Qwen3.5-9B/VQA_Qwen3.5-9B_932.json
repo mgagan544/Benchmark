@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
       "ground_truth": "CLEANERS [entity_019]",
-      "prediction": "The user wants to identify a business name next to \"COAST FOR GOLD\".\n\n1.  **Locate \"COAST FOR GOLD\":** I need to scan the video frames, specifically looking at the right side of the street where storefronts are visible.\n    *   In the first few frames (00:00 - 00:02), the camera is moving forward.\n    *   Around 00:03, I see a yellow sign on the right side. Let's look closer.\n    *   Wait, let's look at the frames again.\n    *   Frame",
-      "inference_time_sec": 13.304,
+      "prediction": "ZARA",
+      "inference_time_sec": 2.936,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
       "ground_truth": "4",
-      "prediction": "The user wants me to count the distinct text instances on a specific regulatory sign post.\n\n1.  **Identify the sign post:** The prompt specifies \"regulatory sign post to the right of the lane marking\". Looking at the video, there's a red bike lane on the right. To the right of the bike lane, there are parked cars and buildings. Wait, let's look closer at the road markings.\n    *   There is a red lane on the right.\n    *   To the right of the red lane, there are parked cars.\n    *   Wait, let's look for a sign post",
-      "inference_time_sec": 13.245,
+      "prediction": "2",
+      "inference_time_sec": 2.875,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
       "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
-      "prediction": "The user wants me to identify the order in which specific text instances appear in the video.\n\n1.  **Analyze the request:**\n    *   Target text instances: \"ONLY\", \"BUSES ONLY\", \"SCHOOL BUS\".\n    *   Output format: A list of timestamps for each instance in chronological order.\n\n2.  **Scan the video for \"ONLY\":**\n    *   At 00:00, I see \"ONLY\" painted on the road surface in the center lane. It's partially visible but clearly there.\n    *   At 00:01, the",
-      "inference_time_sec": 13.281,
+      "prediction": "ONLY, BUSES ONLY, SCHOOL BUS",
+      "inference_time_sec": 3.466,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
       "ground_truth": "ONE WAY [entity_004]",
-      "prediction": "The user wants me to identify text on a regulatory sign post that indicates a direction restriction.\n\n1.  **Scan the video for regulatory signs.** I see traffic lights, street signs, and some smaller signs.\n2.  **Look for signs with arrows or \"ONLY\" text.**\n    *   In the first few frames (00:00 - 00:01), there's a sign on the left side of the road, near the intersection. It's a white rectangular sign with a black arrow pointing left and the word \"ONLY\". Wait, let me look closer.\n    *   Actually",
-      "inference_time_sec": 13.319,
+      "prediction": "ONLY",
+      "inference_time_sec": 2.847,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
       "ground_truth": "Commercial urban street",
-      "prediction": "The user wants to identify the type of driving environment based on specific visual cues.\n\n1.  **Analyze the visual cues:**\n    *   **Storefronts:** I see signs for \"COAST FOR GOLD\" and \"CLEANERS\". These are typical small businesses found in commercial districts.\n    *   **Street Layout:** The street is lined with parked cars on both sides. There are traffic lights and crosswalks.\n    *   **Traffic:** There are school buses, a van, and other cars.\n    *   **Buildings:** The buildings are multi-story, typical of urban residential or",
-      "inference_time_sec": 13.185,
+      "prediction": "Urban",
+      "inference_time_sec": 2.901,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What specific phone number on the first school bus suggests a New York City location?",
       "ground_truth": "(718)852-0286 [entity_011]",
-      "prediction": "The user wants me to identify a phone number on the first school bus that indicates a New York City location.\n\n1.  **Locate the first school bus:** I need to look at the frames where the first school bus is clearly visible.\n    *   Frame 00:00: A yellow school bus is visible further down the road on the left.\n    *   Frame 00:01: The bus is closer.\n    *   Frame 00:02: The bus is very close, parked on the left side. I can see the back of it.\n    *",
-      "inference_time_sec": 13.295,
+      "prediction": "718-210-5000",
+      "inference_time_sec": 3.813,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
       "ground_truth": "4.267 seconds",
-      "prediction": "The user wants to find the timestamp when the text \"BUSES ONLY\" first becomes visible.\n\n1.  **Analyze the frames:** I will look through the provided frames in chronological order to spot the text.\n2.  **Frame 00:00:** The road ahead is visible. There is a red lane on the right. I can see \"ONLY\" painted on the road in the center lane, but not \"BUSES\". Wait, looking closely at the red lane, there might be text, but it's not clear yet.\n3.  **Frame 00:01:** The",
-      "inference_time_sec": 13.329,
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.139,
       "error": ""
     }
   ]

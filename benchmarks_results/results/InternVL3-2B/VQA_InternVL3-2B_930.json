@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?",
       "ground_truth": "HONG [entity_005] KONG [entity_006]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.873,
+      "prediction": "The deli grocery",
+      "inference_time_sec": 3.195,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?",
       "ground_truth": "3",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.925,
+      "prediction": "Three.",
+      "inference_time_sec": 2.483,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What sign text is encountered immediately after the vehicle passes the sign for The Best?",
       "ground_truth": "Best [entity_009]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.892,
+      "prediction": "The sign reads 'The Village Tavern'.",
+      "inference_time_sec": 2.91,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?",
       "ground_truth": "None",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.914,
+      "prediction": "The video does not provide any information about driving constraints, hazards, or speed limits.",
+      "inference_time_sec": 3.46,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?",
       "ground_truth": "Commercial district",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.897,
+      "prediction": "The video depicts a typical urban driving environment with a mix of commercial and residential buildings. The presence of storefront signs suggests that the area is likely a commercial district with shops and restaurants. The street is lined with parked cars, indicating that it is a busy area with moderate traffic. The overall atmosphere is one of everyday urban life, with people going about their daily routines.",
+      "inference_time_sec": 7.226,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for all the storefront signs encountered by the vehicle?",
       "ground_truth": "English",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.909,
+      "prediction": "English",
+      "inference_time_sec": 2.465,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During what time range is the sign for The Best continuously visible to the camera vehicle?",
       "ground_truth": "3.9 to 4.8 seconds",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.881,
+      "prediction": "The sign for The Best is visible throughout the entire video, from the beginning to the end.",
+      "inference_time_sec": 3.363,
       "error": ""
     }
   ]

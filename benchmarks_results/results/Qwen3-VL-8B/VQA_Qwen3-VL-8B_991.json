@@ -1,0 +1,70 @@
+{
+  "video_id": 991,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/991.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the instruction to use the other side relative to the sidewalk sign?",
+      "ground_truth": "To the right of SIDEWALK [entity_001]",
+      "prediction": "The instruction to use the other side is located to the right of the sidewalk sign.",
+      "inference_time_sec": 4.9,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the blue police barricades?",
+      "ground_truth": "3",
+      "prediction": "2",
+      "inference_time_sec": 3.443,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances on the blue barricades are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: POLICE LINE [entity_005], 2nd: DO NOT CROSS [entity_006], 3rd: NYPD [entity_007]",
+      "prediction": "The text instances on the blue barricades are encountered in the following order as the vehicle moves forward:\n\n1. **\"PEDESTRIAN CROSSING\"** — This is the first text instance encountered on the blue barricade, visible at the beginning of the video as the vehicle approaches the barricade.\n2. **\"PEDESTRIAN CROSSING\"** — This is the second text instance encountered on the blue barricade, visible as the vehicle continues forward and passes the first instance.\n3. **\"PEDESTRIAN CROSSING\"** — This is the third text instance encountered on the blue barricade, visible as the",
+      "inference_time_sec": 13.445,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the large orange sign on the left side of the road?",
+      "ground_truth": "CLOSED [entity_002]",
+      "prediction": "The warning text displayed on the large orange sign on the left side of the road is: \"SIDEWALK CLOSED PLEASE DO NOT CROSS\".",
+      "inference_time_sec": 5.644,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of construction barriers, police barricades, and a commercial building, what kind of driving environment is depicted?",
+      "ground_truth": "Urban construction zone",
+      "prediction": "The driving environment depicted is an urban or suburban area undergoing construction or renovation, with active traffic management and commercial infrastructure. The presence of construction barriers, police barricades, and a commercial building suggests a developed area where development or maintenance work is in progress, requiring temporary traffic control measures. This environment is likely to be found in a city or town with ongoing urban development projects.",
+      "inference_time_sec": 9.35,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which abbreviation on the blue barricades suggests the city where this clip was filmed?",
+      "ground_truth": "NYPD [entity_007]",
+      "prediction": "The abbreviation \"NYC\" on the blue barricades suggests the city where this clip was filmed — New York City.",
+      "inference_time_sec": 5.43,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the instruction to use the other side first become visible on the left?",
+      "ground_truth": "0.133 seconds",
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.772,
+      "error": ""
+    }
+  ]
+}

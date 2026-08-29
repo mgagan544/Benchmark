@@ -1,0 +1,70 @@
+{
+  "video_id": 912,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/912.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What numbers are located directly to the right of the address number 1033 on the low stone retaining wall?",
+      "ground_truth": "The numbers '35' and '37' beside 1033 [entity_001]",
+      "prediction": "The numbers located directly to the right of the address number **1033** on the low stone retaining wall are **35-37**.\n\nThis is visible in the frame at **0:03**, where the stone wall displays the full address: **1033-35-37**. The numbers **35-37** follow immediately after **1033**.",
+      "inference_time_sec": 12.048,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct numeric text instances are displayed on the low stone retaining wall?",
+      "ground_truth": "3",
+      "prediction": "1",
+      "inference_time_sec": 3.691,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the distinct numbers on the stone wall encountered as the vehicle drives forward?",
+      "ground_truth": "1st: 1033 [entity_001], 2nd: '35', 3rd: '37'",
+      "prediction": "The distinct numbers on the stone wall are encountered in the following order as the vehicle drives forward:\n\n1. **1033-35-37** — This is the first set of numbers visible on the stone wall as the vehicle approaches it.\n2. **1033-35-38** — This is the second set of numbers, appearing immediately after the first set as the vehicle continues forward.\n3. **1033-35-39** — This is the third set of numbers, appearing next in sequence as the vehicle moves further along.\n\nThus, the order in which the",
+      "inference_time_sec": 15.955,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text on the stone wall or near the dealership indicate a driving constraint or hazard?",
+      "ground_truth": "No driving constraints or hazards are indicated by the visible text.",
+      "prediction": "No, there is no visible text on the stone wall or near the dealership that indicates a driving constraint or hazard. The stone wall displays a phone number (1033-35-37), which is likely for business inquiries, not a warning or constraint. There are no signs or markings suggesting speed limits, road closures, or other driving hazards in the visible area.",
+      "inference_time_sec": 9.677,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of a car dealership and address numbers suggest about the driving environment?",
+      "ground_truth": "Suburban commercial roadway",
+      "prediction": "The mix of a car dealership and address numbers in the scene suggests a **commercial, suburban, or urban driving environment** — likely on the edge of a town or in a commercial district where businesses are concentrated.\n\nHere’s what each element implies:\n\n- **Car Dealership**: Indicates a commercial zone where vehicles are sold. This is common along major roads or highways, especially near residential or business areas, as dealerships often want high visibility and easy access for customers.\n\n- **Address Numbers (e.g., “1033-35-37”)**: These are typically found on the exterior of buildings or signs to identify",
+      "inference_time_sec": 16.075,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script is used for the address and numbers displayed on the stone wall?",
+      "ground_truth": "Latin script and Arabic numerals",
+      "prediction": "The script used for the address and numbers displayed on the stone wall is **Arabic numerals** (0-9).\n\nThe numbers shown are:  \n**1033-35-37**\n\nThese are standard Arabic numerals, commonly used worldwide for numbering and addressing. They are not written in any other script (like Roman numerals, Chinese characters, or Devanagari, etc.). The format is also typical for U.S. or international phone numbers or addresses.\n\n✅ **Answer: Arabic numerals**",
+      "inference_time_sec": 12.184,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the address number 1033 first become visible on the stone wall?",
+      "ground_truth": "At timestamp 6.0",
+      "prediction": "0:03",
+      "inference_time_sec": 3.926,
+      "error": ""
+    }
+  ]
+}

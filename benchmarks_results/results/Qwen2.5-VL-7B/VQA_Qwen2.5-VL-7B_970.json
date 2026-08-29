@@ -1,0 +1,70 @@
+{
+  "video_id": 970,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/970.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark destination is located directly below the highway number 278?",
+      "ground_truth": "Verrazano Br [entity_003]",
+      "prediction": "The landmark destination located directly below the highway number 278 in the image is \"Verrazano Br Staten Is.\" This indicates that the highway leads to the Verrazano Bridge and Staten Island, which is an island in New York City.",
+      "inference_time_sec": 6.818,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway sign text instances are described on the large overhead gantry?",
+      "ground_truth": "9",
+      "prediction": "There are three distinct highway sign text instances described on the large overhead gantry in the image:\n\n1. \"Prospect Expwy\"\n2. \"Verrazano Br Staten Is\"\n3. \"Exit 27\" (which is part of the \"Prospect Expwy\" sign)",
+      "inference_time_sec": 8.313,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the highway number 278 and the airport destination JFK become clearly legible as the vehicle moves forward?",
+      "ground_truth": "1st: 278 [entity_002], 2nd: JFK [entity_009]",
+      "prediction": "The highway number 278 and the airport destination JFK become clearly legible as the vehicle moves forward, becoming more prominent in the frame as it approaches the sign. Initially, the signs are partially obscured by other vehicles and the angle of the shot, but as the car continues to drive forward, these details become clearer and more readable.",
+      "inference_time_sec": 7.78,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead gantry signs, what explicit exit number is indicated for drivers wishing to transition to the Prospect Expwy?",
+      "ground_truth": "EXIT 24 [entity_006]",
+      "prediction": "The overhead gantry sign indicates that the exit number for drivers wishing to transition to the Prospect Expwy is 27.",
+      "inference_time_sec": 5.422,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a multi-lane divided highway and a massive overhead gantry with highway numbers and exit signs?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of a multi-lane divided highway and a massive overhead gantry with highway numbers and exit signs suggests an urban or suburban driving environment in a developed area. The multi-lane divided highway indicates that this is likely a major thoroughfare designed to handle high volumes of traffic efficiently, which is common in cities or areas with significant population density. The overhead gantry with highway numbers and exit signs provides clear guidance for drivers, helping them navigate to their destinations, which is typical in well-maintained highways in metropolitan regions. The infrastructure and signage suggest a focus on safety and ease of navigation, which are important considerations in busy traffic environments.",
+      "inference_time_sec": 11.151,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any landmark destinations or highway labels suggest a specific metropolitan area or region for this highway?",
+      "ground_truth": "Verrazano Br [entity_003] and Staten is [entity_004] suggest New York",
+      "prediction": "The image shows a highway with signs indicating \"Prospect Expwy\" and \"Verrazano Br Staten Is.\" The Verrazano Bridge is a well-known bridge that connects the boroughs of Staten Island and Brooklyn in New York City, which suggests that this highway is located in the New York metropolitan area. The presence of these landmarks strongly indicates that this highway is part of the New York City transportation network.",
+      "inference_time_sec": 8.726,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the airport destination indicator JFK first become clearly legible on the sign?",
+      "ground_truth": "6.767 seconds",
+      "prediction": "The airport destination indicator JFK becomes clearly legible on the sign at approximately 0:15 seconds into the video.",
+      "inference_time_sec": 5.383,
+      "error": ""
+    }
+  ]
+}

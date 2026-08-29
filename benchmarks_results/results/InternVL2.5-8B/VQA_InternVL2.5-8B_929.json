@@ -1,0 +1,70 @@
+{
+  "video_id": 929,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/929.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the signboard displaying Gabinst relative to the signboard displaying Natural?",
+      "ground_truth": "To the left of Natural [entity_003]",
+      "prediction": "The signboard displaying Gabinst is positioned to the left of the signboard displaying Natural.",
+      "inference_time_sec": 7.534,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belonging to storefront or real estate signboards are visible in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are two distinct pieces of text visible in the video. One is a yellow sign with black text that reads 'FOR LEASE' and the other is a blue sign with white text that says 'KAPLON'.",
+      "inference_time_sec": 9.029,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle?",
+      "ground_truth": "1st: TILE [entity_002], 2nd: Gabinst [entity_005], 3rd: KAPLON [entity_006]",
+      "prediction": "The vehicle first encounters the signboard for TILE, followed by the signboard for Gabinst, and finally the signboard for KAPLON.",
+      "inference_time_sec": 8.286,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "No regulatory or warning text is visible in the clip.",
+      "prediction": "No, there is no visible text in the clip that indicates a hazard, warning, or driving constraint.",
+      "inference_time_sec": 7.609,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of storefront signboards and real estate signs suggest about this driving environment?",
+      "ground_truth": "An urban commercial or industrial district",
+      "prediction": "The mix of storefront signboards and real estate signs suggests that this driving environment is a commercial area with a blend of local businesses and possibly a real estate market. The presence of these signs indicates that the street is likely a busy thoroughfare with a variety of commercial activities, and the real estate signs may imply that there is a demand for property in the area, possibly due to the urban development or the appeal of the neighborhood.",
+      "inference_time_sec": 11.461,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional convention is suggested by the phone number format containing the area code (718)?",
+      "ground_truth": "North American numbering plan, specifically New York City",
+      "prediction": "The phone number format containing the area code (718) suggests that the video is set in the New York City metropolitan area, as 718 is the area code for Brooklyn, Queens, and parts of Manhattan.",
+      "inference_time_sec": 8.885,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the real estate sign displaying KAPLON first align with the camera, and when does the vehicle pass the area code (718)?",
+      "ground_truth": "KAPLON [entity_006] aligns at 6.6 seconds; (718) [entity_010] is passed at 8.2 seconds",
+      "prediction": "The real estate sign displaying KAPLON first aligns with the camera at timestamp 00:00:00:00. The vehicle passes the area code (718) at timestamp 00:00:00:08.",
+      "inference_time_sec": 9.284,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 930,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/930.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?",
+      "ground_truth": "HONG [entity_005] KONG [entity_006]",
+      "prediction": "The text located between the party hall and the deli grocery, as seen by the vehicle before 3.9 seconds, is 'The Village Pub & R.L.C.' This storefront is situated to the left of the party hall and right of the deli grocery.",
+      "inference_time_sec": 5.856,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?",
+      "ground_truth": "3",
+      "prediction": "Between 3.9 and 5.6 seconds, the vehicle passes three distinct storefront or sign text instances. These are 'The Vanguard', 'Park Royale', and 'HONG KONG'.",
+      "inference_time_sec": 5.287,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign text is encountered immediately after the vehicle passes the sign for The Best?",
+      "ground_truth": "Best [entity_009]",
+      "prediction": "Immediately after passing The Best, the sign encountered by the vehicle reads 'The Venue Party Hall'.",
+      "inference_time_sec": 3.961,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?",
+      "ground_truth": "None",
+      "prediction": "The visible text in the video clip indicates that the vehicle is driving on a street with no visible speed limit signs. The text 'No Stopping Anytime' is visible on a sign on the right side of the street, which suggests that stopping is not allowed at any time. The absence of speed limit signs and the presence of a 'No Stopping Anytime' sign imply that the driver must adhere to the speed limit and must stop at all times, which is a common traffic regulation in urban areas to ensure safety.",
+      "inference_time_sec": 7.46,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The driving environment depicted in the video is a moderately dense urban area with a mix of residential and commercial buildings. The presence of storefront signs, such as 'The Vanguard' and 'HONG KONG', suggests a diverse commercial area, while the residential buildings with fire escapes indicate a neighborhood setting. The street is not overly congested, allowing for a steady flow of traffic, and the presence of pedestrians and parked cars suggests a typical day in a city environment.",
+      "inference_time_sec": 7.015,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the storefront signs encountered by the vehicle?",
+      "ground_truth": "English",
+      "prediction": "All the storefront signs encountered by the vehicle are written in English.",
+      "inference_time_sec": 3.407,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the sign for The Best continuously visible to the camera vehicle?",
+      "ground_truth": "3.9 to 4.8 seconds",
+      "prediction": "The sign for The Best, which is a yellow sign with black lettering, is continuously visible to the camera vehicle from the beginning to the end of the video.",
+      "inference_time_sec": 4.258,
+      "error": ""
+    }
+  ]
+}

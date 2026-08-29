@@ -1,0 +1,70 @@
+{
+  "video_id": 998,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/998.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which restaurant is located to the right of the BARBERSHOP on the left side of the street?",
+      "ground_truth": "DELI MEXICAN FOOD [entity_003]",
+      "prediction": "The restaurant located to the right of the BARBERSHOP on the left side of the street appears to be a \"Subway\" sandwich shop, as indicated by the visible signage in the image.",
+      "inference_time_sec": 6.206,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned on the grey vehicles in the traffic lane?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates mentioned on the grey vehicles in the traffic lane:\n\n1. The first grey vehicle has a license plate that reads \"EYH-406\".\n2. The second grey vehicle has a license plate that reads \"EYH-406\" as well, which is the same as the first one.\n\nSo, there is only one distinct license plate mentioned for the grey vehicles in the traffic lane.",
+      "inference_time_sec": 9.05,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the license plates HJG-2334 and FHN-9486 are encountered or approached by the camera vehicle?",
+      "ground_truth": "1st: HJG-2334 [entity_004], 2nd: FHN-9486 [entity_009]",
+      "prediction": "The license plate HJG-2334 is encountered first, followed by the license plate FHN-9486. The camera vehicle approaches these vehicles in that order as it moves through the intersection.",
+      "inference_time_sec": 6.386,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving hazard, speed limit, or regulatory constraint?",
+      "ground_truth": "None is present",
+      "prediction": "The image shows a busy intersection with multiple vehicles and traffic lights. There is no visible text in the image that indicates a driving hazard, speed limit, or regulatory constraint. The traffic lights appear to be functioning normally, and there are no signs or markings that suggest any specific restrictions or hazards at this particular moment.",
+      "inference_time_sec": 8.269,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of storefronts, a gas station, and a car wash?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The presence of storefronts, a gas station, and a car wash suggests an urban or suburban commercial area. This type of environment typically indicates a place where people can easily access various services and amenities while driving. The gas station and car wash are common facilities found in areas with high traffic, as they cater to the needs of drivers who may need fuel, repairs, or cleaning for their vehicles. The storefronts suggest that this area also has businesses catering to local residents and visitors, which could include restaurants, shops, and other services. Overall, the scene depicts a busy and functional driving environment where drivers can perform multiple tasks efficiently.",
+      "inference_time_sec": 10.97,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional area code is shared by the phone numbers visible on the storefronts in this scene?",
+      "ground_truth": "718",
+      "prediction": "The image shows a street scene with various storefronts, including one that has a phone number visible. The phone number appears to be \"718-346-1700,\" which is associated with a car wash service. The area code 718 is commonly used for the New York City metropolitan area, specifically for the boroughs of Brooklyn and Queens. Therefore, the regional area code shared by the phone number visible in the image is 718.",
+      "inference_time_sec": 10.753,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the car wash facility displaying the CAR and WASH signs first become clearer on the right?",
+      "ground_truth": "4.967 seconds",
+      "prediction": "The car wash facility displaying the \"CAR WASH\" signs becomes clearer on the right side of the image around the 1-second mark.",
+      "inference_time_sec": 5.558,
+      "error": ""
+    }
+  ]
+}

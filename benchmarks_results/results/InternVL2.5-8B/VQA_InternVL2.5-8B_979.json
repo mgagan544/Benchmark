@@ -1,0 +1,70 @@
+{
+  "video_id": 979,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/979.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the DUNKIN DONUTS signboard located relative to the Speedway gas station sign?",
+      "ground_truth": "to the right of Speedway [entity_002] sign",
+      "prediction": "The DUNKIN DONUTS signboard is located to the right of the Speedway gas station sign.",
+      "inference_time_sec": 7.62,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct price numbers are displayed on the Speedway gas station sign?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct price numbers displayed on the Speedway gas station sign: 268, 289, and 299. These numbers likely represent the prices of different fuel types or grades available at the station.",
+      "inference_time_sec": 8.824,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the speed limit sign, the PENSKE truck, and the CAR WASH sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: speed limit 25, 2nd: PENSKE [entity_010], 3rd: CAR [entity_011] WASH [entity_012]",
+      "prediction": "As the vehicle moves forward, the speed limit sign is encountered first, followed by the PENSKE truck, and then the CAR WASH sign.",
+      "inference_time_sec": 8.27,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed near the road ramp?",
+      "ground_truth": "speed limit 25",
+      "prediction": "The regulatory text 'SPEED LIMIT 25' is visible on the road, indicating a speed limit of 25 miles per hour near the road ramp.",
+      "inference_time_sec": 8.225,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of gas station, donut shop, and car wash signs suggest?",
+      "ground_truth": "commercial strip",
+      "prediction": "The mix of signs for a gas station, a donut shop, and a car wash suggests a commercial area with a variety of services catering to both local residents and travelers. This environment is likely to be a busy urban or suburban area where such services are in demand. The presence of these establishments indicates a location that is accessible and frequented by a diverse group of people, possibly near a highway or a main road that connects different parts of the city. The gas station, in particular, is a common sight in areas with high vehicular traffic, while the donut shop and car wash suggest amenities for both daily commuters and those",
+      "inference_time_sec": 13.943,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the combination of 39 St, yellow taxicabs, and US commercial brands?",
+      "ground_truth": "New York City",
+      "prediction": "The combination of 39 St, yellow taxicabs, and US commercial brands such as 'Penske' and 'Enterprise' suggests that the video is set in New York City. The presence of yellow taxicabs is a distinctive feature of NYC, and the commercial brands are commonly associated with the city's bustling urban environment.",
+      "inference_time_sec": 10.463,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the parked PENSKE truck first become visible in the clip?",
+      "ground_truth": "2.433 seconds",
+      "prediction": "The parked PENSKE truck first becomes visible at the timestamp of 00:00:00:00.",
+      "inference_time_sec": 7.986,
+      "error": ""
+    }
+  ]
+}

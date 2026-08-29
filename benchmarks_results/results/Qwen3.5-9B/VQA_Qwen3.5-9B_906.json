@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
       "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
-      "prediction": "The user wants to identify warning text on a specific vehicle.\n1.  **Identify the target vehicle:** The user specifies \"the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922\".\n2.  **Locate the black Chevrolet SUV:** In the first few frames (00:00 - 00:02), there is a black SUV in the center lane. The license plate is visible and reads \"HPW-2922\". This confirms the reference vehicle.\n3.  **Locate the vehicle to its left:** To the left of",
-      "inference_time_sec": 13.106,
+      "prediction": "KEEP BACK",
+      "inference_time_sec": 3.125,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are displayed on the parked white box truck?",
       "ground_truth": "4",
-      "prediction": "The user wants me to count the distinct text instances on the parked white box truck.\n\n1.  **Identify the truck:** It's the white box truck parked on the right side of the street, partially blocking the lane. It's visible in the first few frames.\n2.  **Locate text on the truck:**\n    *   There's a logo at the top right.\n    *   Below that, the company name \"Soundstone\".\n    *   Below that, \"FLOORS, INC.\"\n    *   Below that, an address \"43-02 37th",
-      "inference_time_sec": 13.168,
+      "prediction": "4",
+      "inference_time_sec": 2.846,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
       "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
-      "prediction": "The user wants me to determine the chronological order of three specific visual elements as the vehicle moves forward.\n\n1.  **Identify the elements:**\n    *   **ATM sign:** I see a blue sign on the right side of the street in the early frames. It says \"ATM\" on it.\n    *   **Address 43-02 37th ST.:** This is written on the back of the white box truck (\"Soundstone Floors, Inc.\").\n    *   **Yellow warning sign:** There is a yellow diamond-shaped sign on the left side of the road, visible later in",
-      "inference_time_sec": 13.135,
+      "prediction": "ATM sign, yellow warning sign, address 43-02 37th ST.",
+      "inference_time_sec": 4.57,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
       "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
-      "prediction": "The user wants to identify warning text on a utility pole.\n\n1.  **Scan the video for utility poles:** I see utility poles throughout the video, especially near the intersection.\n2.  **Look for signs attached to poles:**\n    *   In the first few frames (00:00 - 00:02), there's a pole on the right with a blue sign (\"Meds...\").\n    *   As the car approaches the intersection (00:03), I see a yellow diamond-shaped sign on a pole to the left of the road.\n    *   Let's",
-      "inference_time_sec": 13.228,
+      "prediction": "DRIVERS WAIVED",
+      "inference_time_sec": 3.049,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
       "ground_truth": "Commercial and industrial district",
-      "prediction": "The user wants to know what the text visible in the video suggests about the driving environment.\n\n1.  **Identify the relevant timeframe:** The user specifies \"between 3.0 seconds and 7.0 seconds\".\n2.  **Scan the video for text in that timeframe:**\n    *   **00:03:** I see \"Soundstone FLOORS, INC.\" on the white truck. I see \"43 AV\" on a street sign. I see \"DRIVERS WANTED\" on a blue sign.\n    *   **00:04:** I see \"DRIVERS",
-      "inference_time_sec": 13.154,
+      "prediction": "Urban",
+      "inference_time_sec": 2.838,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
       "ground_truth": "L.I.C., N.Y. [entity_016]",
-      "prediction": "The user wants to identify specific text on a brick building that indicates the location.\n\n1.  **Analyze the video:** I'll scan the video frames, particularly looking at the buildings on the right side.\n2.  **Focus on the brick building:** In the first few frames (00:00 - 00:02), there's a brick building on the right.\n3.  **Identify text:** I see a blue awning/sign. Let's look closer.\n    *   Frame 00:00: There's a blue sign that says \"Meds & F",
-      "inference_time_sec": 13.196,
+      "prediction": "L.I.C., N.Y.",
+      "inference_time_sec": 3.322,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
       "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
-      "prediction": "The user wants to find the timestamp when the ambulance with identifier 592 starts moving forward.\n\n1.  **Identify the ambulance:** I need to look for an ambulance. In the first few frames (00:00 - 00:02), there is a white ambulance on the left side of the road.\n2.  **Verify the identifier:** I need to check if it has the number 592.\n    *   At 00:00, the ambulance is partially visible.\n    *   At 00:01, the ambulance is clearer.",
-      "inference_time_sec": 13.206,
+      "prediction": "0.2",
+      "inference_time_sec": 2.963,
       "error": ""
     }
   ]

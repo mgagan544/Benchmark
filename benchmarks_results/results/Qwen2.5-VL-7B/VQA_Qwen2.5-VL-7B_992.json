@@ -1,0 +1,70 @@
+{
+  "video_id": 992,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/992.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text Ave relative to the text Blvdnn on the overhead highway signage?",
+      "ground_truth": "directly below Blvdnn [entity_006]",
+      "prediction": "The text \"Ave\" appears to be positioned below and to the left of the text \"Blvdnn\" on the overhead highway signage. The \"Ave\" likely refers to Avenue, which is a type of street name, while \"Blvdnn\" could be an abbreviation or a specific designation for Boulevard. The exact meaning of \"Blvdnn\" would depend on the local naming conventions in that area.",
+      "inference_time_sec": 8.717,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text on the overhead highway signage are visible in this clip?",
+      "ground_truth": "7",
+      "prediction": "In the overhead highway signage visible in the image, there are three distinct pieces of text:\n\n1. \"West\"\n2. \"East\"\n3. \"Exit 25\"",
+      "inference_time_sec": 6.096,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the destination signs Brooklyn and Queens are encountered at 3.3 seconds?",
+      "ground_truth": "Brooklyn [entity_002] is 1st, Queens [entity_005] is 2nd",
+      "prediction": "At 3.3 seconds, the destination sign for Brooklyn is encountered first, followed by the sign for Queens.",
+      "inference_time_sec": 5.337,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text on the overhead signage indicate a specific highway direction for Brooklyn?",
+      "ground_truth": "WEST [entity_001]",
+      "prediction": "The overhead signage in the image does not clearly indicate a specific highway direction for Brooklyn. The signs appear to be general directional signs, possibly indicating exits or directions to various locations, but they do not specify \"Brooklyn\" as a destination. The text is too small and not legible enough from this perspective to determine if it includes a direction to Brooklyn.",
+      "inference_time_sec": 8.044,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the overhead green highway signs displaying Brooklyn and Queens?",
+      "ground_truth": "highway",
+      "prediction": "The overhead green highway signs displaying \"Brooklyn\" and \"Queens\" suggest that the driving environment is in or near New York City, specifically on a highway leading to these boroughs. The presence of multiple lanes and the overhead signs indicate that this is likely a major highway, possibly an interstate or a state highway, designed for high-speed travel. The signs also imply that the area is urban, with access to two of the five boroughs of New York City, which are known for their dense populations and significant traffic volumes. The clear blue sky and the presence of other vehicles suggest good weather conditions and moderate traffic flow at the time the",
+      "inference_time_sec": 11.158,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which destination names visible on the overhead signage suggest the vehicle is driving in or near New York City?",
+      "ground_truth": "Brooklyn [entity_002] and Queens [entity_005]",
+      "prediction": "The overhead signage in the image includes destinations such as \"Manhattan,\" \"Midtown,\" and \"Downtown.\" These are well-known areas within New York City, indicating that the vehicle is likely driving in or near the city.",
+      "inference_time_sec": 6.634,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "Between what timestamps are the destination signs for Brooklyn and Queens visible before the vehicle enters the shadow under the stone arch bridge?",
+      "ground_truth": "From 3.3 seconds to 6.333 seconds",
+      "prediction": "The destination signs for Brooklyn and Queens are visible in the video between approximately 0:00 to 0:10 seconds, just before the vehicle enters the shadow under the stone arch bridge. The signs are clearly visible above the road, indicating the directions to Brooklyn and Queens.",
+      "inference_time_sec": 7.28,
+      "error": ""
+    }
+  ]
+}

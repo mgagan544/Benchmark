@@ -1,0 +1,70 @@
+{
+  "video_id": 917,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/917.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
+      "ground_truth": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane",
+      "prediction": "The pavement marking showing AXI is located to the right of the designated taxi lane.",
+      "inference_time_sec": 3.534,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct pavement or infrastructure markings visible on the roadway throughout the entire clip. These include white dashed lines indicating lanes, a solid white line marking the edge of the road, and a red curb indicating a no-parking zone.",
+      "inference_time_sec": 5.006,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
+      "ground_truth": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'",
+      "prediction": "The vehicle first encounters the pavement markings '03', then 'AXI', and finally '06' as it progresses through the airport tunnel.",
+      "inference_time_sec": 4.166,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
+      "ground_truth": "TAXI [entity_001]",
+      "prediction": "The lane on the left side of the pavement is marked with the text 'LAX' on the pavement, indicating that it is reserved for specific transport vehicles, likely those designated for Los Angeles International Airport operations. This marking helps in directing the flow of traffic and ensuring the smooth functioning of the airport's transport system.",
+      "inference_time_sec": 5.569,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
+      "ground_truth": "Airport terminal arrival area",
+      "prediction": "The environment depicted is a commercial airport terminal. This is indicated by the presence of taxi lanes, terminal seating, and various signs and symbols related to the airport's operations and facilities.",
+      "inference_time_sec": 4.315,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the airline signage and pavement markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The airline signage and pavement markings in the scene are in both English and Spanish. The signs include the 'Lufthansa' logo and the directional signs for Terminal 1, Terminal 2, and Terminal 3, as well as the yellow pedestrian crossing signs. The pavement markings are also clearly labeled with 'P' for parking and 'PULL' indicating the direction for pulling over. This bilingual approach is common in airports to cater to a diverse and international clientele, ensuring clear communication for the smooth operation of the airport.",
+      "inference_time_sec": 7.809,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
+      "ground_truth": "4.1 seconds",
+      "prediction": "The pavement marking showing AXI passed by the host vehicle is at the 2-second mark.",
+      "inference_time_sec": 3.597,
+      "error": ""
+    }
+  ]
+}

@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located directly to the left of MARTIAL?",
       "ground_truth": "RESTAURANT BAR [entity_008]",
-      "prediction": "The user wants to identify the text to the left of the word \"MARTIAL\".\n\n1.  **Locate \"MARTIAL\":** I see a blue sign on the storefronts. It says \"MARTIAL ARTS\".\n2.  **Identify the text to the left:** Looking at the sign, the word \"MARTIAL\" is followed by \"ARTS\". Wait, the question asks for text *to the left* of \"MARTIAL\".\n3.  **Re-evaluating the sign:** Let's look closely at the blue sign. It reads \"MARTIAL ART",
-      "inference_time_sec": 13.156,
+      "prediction": "ARTS",
+      "inference_time_sec": 2.922,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances containing numbers are associated with the EL TEQ storefront?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the distinct text instances containing numbers associated with the \"EL TEQ\" storefront.\n\n1.  **Identify the storefront:** I need to find the sign that says \"EL TEQ\". Looking at the images, specifically the later ones (0.03s, 0.04s), there is a white sign on the right side with red text \"EL TEQ\" and green text \"RESTAURANT\".\n2.  **Locate numbers on the sign:**\n    *   Under \"EL TEQ\", there is a phone number: \"718-5",
-      "inference_time_sec": 13.164,
+      "prediction": "2",
+      "inference_time_sec": 2.832,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the signs for DENTIST, CHURCH, and BUSES ONLY are encountered between 1.3s and 2.8s?",
       "ground_truth": "1st: DENTIST [entity_009], 2nd: CHURCH [entity_010], 3rd: BUSES [entity_011] ONLY [entity_012]",
-      "prediction": "The user wants to know the order of appearance for three specific signs: \"DENTIST\", \"CHURCH\", and \"BUSES ONLY\".\nI need to scan the video frames between 1.3s and 2.8s to find these signs.\n\n1.  **Scan 1.3s:**\n    *   I see a blue sign \"MARTIAL ARTS\".\n    *   To the right of it, there's a white sign with red text. It looks like \"HALAL DINASTY\".\n    *   Wait, let's look closer at the signs.",
-      "inference_time_sec": 13.195,
+      "prediction": "DENTIST, CHURCH, BUSES ONLY",
+      "inference_time_sec": 3.67,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the signs near the DENTIST sign constrains vehicle movement or lane usage?",
       "ground_truth": "ONE WAY [entity_013], BUSES [entity_011] ONLY [entity_012]",
-      "prediction": "The user wants to identify specific text on signs near a \"DENTIST\" sign that relates to traffic rules.\n\n1.  **Locate the \"DENTIST\" sign:** Looking at the first frame, there is a blue sign on the left side of the street that says \"MARTIAL ARTS\". Wait, let me look closer. Ah, there's a sign further down the street on the left, but let's look at the immediate foreground.\n2.  **Re-evaluating the \"DENTIST\" sign:** In the first frame, on the far left, there's a blue sign that",
-      "inference_time_sec": 13.211,
+      "prediction": "ONE WAY",
+      "inference_time_sec": 2.897,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the density and type of legible text, such as MARTIAL ARTS, HALAL, and PARA TI, what kind of driving environment does this clip depict?",
       "ground_truth": "Commercial business district",
-      "prediction": "The user wants me to identify the type of driving environment based on the visible text in the video.\n\n1.  **Analyze the text:**\n    *   \"MARTIAL ARTS\": This suggests a gym or dojo, common in urban areas.\n    *   \"HALAL\": This indicates a restaurant serving Halal food, which is common in diverse, multicultural urban neighborhoods.\n    *   \"PARA TI COLOMBIA CON SABOR\": This is Spanish for \"For you Colombia with flavor,\" indicating a Colombian restaurant.\n    *   \"RESTAURANT BAR\": Generic but points to commercial",
-      "inference_time_sec": 13.284,
+      "prediction": "Urban commercial area",
+      "inference_time_sec": 3.045,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What regional location is suggested by the area codes in the phone numbers on the storefronts?",
       "ground_truth": "New York City",
-      "prediction": "The user wants to identify the regional location based on the phone numbers visible on the storefronts.\n\n1.  **Scan the video for phone numbers:** I need to look closely at the signs on the buildings.\n    *   In the first few frames (00:00 - 00:01), I see a blue sign for \"Martial Arts\" but no clear phone number.\n    *   In frame 00:02, I see a green sign \"HALAL DINASTY\" and a red/blue sign \"RESTAURANT BAR\".\n    *   In frame 0",
-      "inference_time_sec": 13.314,
+      "prediction": "New York",
+      "inference_time_sec": 2.922,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the license plate AC-91331 first become legible in the clip?",
       "ground_truth": "0.5s",
-      "prediction": "The user wants to find the timestamp when the license plate \"AC-91331\" becomes legible.\n\n1.  **Analyze the video:** I need to look at the frames provided and identify the license plate in question.\n2.  **Locate the license plate:**\n    *   In the first frame (00:00), there's a white car turning left or waiting to turn. It's partially visible.\n    *   In the second frame (00:01), the white car is more visible. It's a white sedan, possibly a Ford Crown Victoria or similar",
-      "inference_time_sec": 13.208,
+      "prediction": "0.2 seconds",
+      "inference_time_sec": 3.094,
       "error": ""
     }
   ]

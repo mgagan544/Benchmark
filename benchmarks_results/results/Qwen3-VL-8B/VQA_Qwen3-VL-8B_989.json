@@ -1,0 +1,70 @@
+{
+  "video_id": 989,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/989.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks?",
+      "ground_truth": "A residential concrete pathway and sidewalk between the driveways and the crosswalks.",
+      "prediction": "Between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks lies a **white picket fence**. This fence runs along the property line, separating the driveways from the sidewalk and crosswalk area. It is a common feature in suburban neighborhoods, providing a boundary while maintaining an aesthetic appeal.",
+      "inference_time_sec": 8.925,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct moving vehicles cross the intersection between 00:01 and 00:08?",
+      "ground_truth": "3",
+      "prediction": "3",
+      "inference_time_sec": 3.632,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the white SUV, black SUV, and large black pickup truck clear the intersection?",
+      "ground_truth": "1st: white SUV, 2nd: black SUV, 3rd: large black pickup truck",
+      "prediction": "The order in which the vehicles clear the intersection is:\n\n1. **White SUV** — It is the first vehicle to clear the intersection, turning left from the viewer’s perspective.\n2. **Black SUV** — It follows the white SUV, also turning left.\n3. **Large black pickup truck** — It is the last to clear the intersection, turning right.\n\nThis sequence is observed from the perspective of the camera inside the vehicle, which is stopped at the intersection. The white SUV enters the intersection first, followed by the black SUV, and finally the large black pickup truck.",
+      "inference_time_sec": 12.603,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What signal hanging in the center of the intersection indicates that the driver should proceed with caution?",
+      "ground_truth": "The overhead flashing yellow traffic light.",
+      "prediction": "The signal hanging in the center of the intersection is a **traffic light**. In this case, it is showing a **red light**, which indicates that the driver should **stop** and **not proceed**. \n\nHowever, if the signal were showing **yellow** or **amber**, that would indicate that the light is about to change to red, and drivers should **proceed with caution** and prepare to stop if it is safe to do so.\n\nSince the video shows a **red light**, the correct interpretation is that the driver should **stop** — not proceed with caution. The phrase “proceed with caution” typically applies",
+      "inference_time_sec": 15.956,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the surrounding environment, including houses, lawns, and private driveways, what type of area is this?",
+      "ground_truth": "Residential area",
+      "prediction": "Based on the visual evidence in the video, this appears to be a **residential neighborhood**.\n\nHere’s why:\n\n- **Houses**: There are multiple single-family homes visible along the street, each with its own distinct architecture and front yard.\n- **Lawns and Driveways**: The houses are set back from the street with private lawns and driveways, which is typical of suburban or residential areas.\n- **Trees and Fencing**: Mature trees line the streets, and some properties have white picket fences, adding to the suburban, residential feel.\n- **Traffic Flow**: The presence of cars parked along the street and",
+      "inference_time_sec": 13.579,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What written language or script is visible on the signs in this intersection?",
+      "ground_truth": "No signs with visible text are present in the clip.",
+      "prediction": "There is no visible written language or script on the signs in this intersection. The traffic light and road markings are standard, and no signs with text are clearly visible in the frame.",
+      "inference_time_sec": 6.24,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the large black pickup truck visible crossing the intersection?",
+      "ground_truth": "00:06 to 00:08",
+      "prediction": "The large black pickup truck is visible crossing the intersection from 0.2 to 0.4 seconds.",
+      "inference_time_sec": 5.292,
+      "error": ""
+    }
+  ]
+}

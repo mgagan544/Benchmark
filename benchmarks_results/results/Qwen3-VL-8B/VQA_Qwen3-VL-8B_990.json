@@ -1,0 +1,70 @@
+{
+  "video_id": 990,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/990.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the Linden Blvd and JUNIUS street signs relative to the white commuter van?",
+      "ground_truth": "Directly above HAPPY [entity_019] ISLAND [entity_020] SENOR [entity_021] CENTER [entity_022]",
+      "prediction": "The Linden Blvd and JUNIUS street signs are located to the right of the white commuter van.",
+      "inference_time_sec": 5.208,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to street or regulatory signs in this scene?",
+      "ground_truth": "9",
+      "prediction": "4",
+      "inference_time_sec": 3.644,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the DRIVE sign, the Linden Plaza sign, and the DO NOT ENTER sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: DRIVE [entity_002], 2nd: Linden Plaza [entity_006], 3rd: DO NOT [entity_017] ENTER [entity_016]",
+      "prediction": "As the vehicle moves forward, the order in which the signs are encountered is:\n\n1. **Linden Plaza sign** — This is the first sign visible as the vehicle emerges from under the overpass.\n2. **DRIVE sign** — This appears next, likely part of the Burger King signage.\n3. **DO NOT ENTER sign** — This is the last sign encountered, positioned on the right side of the road.\n\nSo, the correct order is: **Linden Plaza sign → DRIVE sign → DO NOT ENTER sign**.",
+      "inference_time_sec": 12.084,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text constrains movement near the drive-thru lane entrance?",
+      "ground_truth": "DO NOT [entity_017] ENTER [entity_016]",
+      "prediction": "The warning text that constrains movement near the drive-thru lane entrance is \"NO STANDING.\"",
+      "inference_time_sec": 4.976,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs like Burger King and Family Dollar, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "This clip depicts a **urban or suburban commercial driving environment**.\n\nHere’s why:\n\n- **High Density of Commercial Signs**: The presence of major national chains like **Burger King** and **Family Dollar** indicates a commercial area designed for retail and fast food, typical of city or suburban centers where foot and vehicle traffic are high.\n  \n- **Traffic and Infrastructure**: The video shows multiple lanes of traffic, traffic lights, and street signs (e.g., “Linden Blvd,” “Junius St”), suggesting a well-developed road network common in urban or suburban areas.\n\n- **Mix of Land Uses**: You can see a **",
+      "inference_time_sec": 13.488,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the area code in the phone number displayed on the commuter van?",
+      "ground_truth": "New York City",
+      "prediction": "The area code suggested by the phone number displayed on the commuter van is 347, which is associated with New York City.",
+      "inference_time_sec": 5.569,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the Linden Plaza sign remain continuously visible in the clip?",
+      "ground_truth": "0.6s to 1.33s for Linden Plaza [entity_006]",
+      "prediction": "The Linden Plaza sign remains continuously visible from 0:00 to 0:02.",
+      "inference_time_sec": 5.117,
+      "error": ""
+    }
+  ]
+}

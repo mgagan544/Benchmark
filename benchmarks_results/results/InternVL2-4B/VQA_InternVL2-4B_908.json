@@ -1,0 +1,70 @@
+{
+  "video_id": 908,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/908.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the covered pedestrian structure marked WALKWAY relative to the Care emblem?",
+      "ground_truth": "To the left of Care [entity_004]",
+      "prediction": "The covered pedestrian structure marked WALKWAY is located to the left of the Care emblem on the bus. It is situated near the bus stop area, providing shelter for pedestrians waiting to board the bus.",
+      "inference_time_sec": 7.681,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in this clip are mounted on the transit bus?",
+      "ground_truth": 4,
+      "prediction": "There are three distinct pieces of text visible on the transit bus in this clip.",
+      "inference_time_sec": 5.455,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the first three text instances detected on the transit bus?",
+      "ground_truth": "1st: 35627-88 [entity_001], 2nd: 710 [entity_002], 3rd: THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The first text instance detected on the transit bus is \"710,\" which appears in the middle of the bus. The second text instance is \"CAR,\" which is located towards the bottom of the bus. The third text instance is \"THE PORT AUTHORITY OF L.A. U.S.A.,\" which is found at the very bottom of the bus.",
+      "inference_time_sec": 10.098,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the pavement markings near the green commuter waiting shelters, what driving action is required?",
+      "ground_truth": "Stop at the painted 'STOP' stencil",
+      "prediction": "The pavement markings near the green commuter waiting shelters indicate that drivers should yield to pedestrians. This is indicated by the white dashed lines and the word \"YIELD\" painted on the pavement.",
+      "inference_time_sec": 7.598,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of transit bus markings and a walkway sign suggest about the driving environment?",
+      "ground_truth": "Transit hub or commuter terminal area",
+      "prediction": "The presence of transit bus markings and a walkway sign suggests that the driving environment is one that accommodates public transportation and pedestrian traffic. The transit bus markings indicate that the area is designated for buses, which may include bus stops or bus lanes, and the walkway sign implies that there is a pedestrian pathway nearby, likely for the convenience of passengers getting on and off the bus. This indicates a well-organized traffic system that considers the needs of both vehicles and pedestrians, promoting safety and accessibility.",
+      "inference_time_sec": 12.471,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which visible text suggests the geographical region where this clip was recorded?",
+      "ground_truth": "THE PORT AUTHORITY OF NY &NJ [entity_003]",
+      "prediction": "The visible text on the bus, \"THE PORT AUTHORITY OF L.A. TX,\" suggests that the geographical region where this clip was recorded is likely in Texas, as indicated by the abbreviation \"TX.\"",
+      "inference_time_sec": 7.648,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the fleet designation number 710 first become clearly detected on the bus?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The fleet designation number 710 first becomes clearly detected on the bus at the timestamp 00:00:00.000.",
+      "inference_time_sec": 6.548,
+      "error": ""
+    }
+  ]
+}

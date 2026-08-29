@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "As the vehicle moves forward, CHECKSCASH is positioned to the left of the road, while SHED is situated to the right. The CHECKSCASH sign is closer to the camera's perspective, indicating it is further down the road, while the SHED sign is slightly ahead, closer to the intersection.",
+      "inference_time_sec": 10.198,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "Between 4.0 and 7.0 seconds, the vehicle encounters two distinct, legible text instances. The first is a street sign that reads \"Hillside Ave,\" and the second is a billboard with the text \"The Phone.\"",
+      "inference_time_sec": 9.594,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "As the vehicle moves forward, the storefronts are encountered in the following order: SHED, boost, and CHECKSCASH.",
+      "inference_time_sec": 8.098,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The traffic regulator sign located to the right of the signboard displaying 4CAR implies that the traffic flow is regulated, likely to manage the number of vehicles on the road. This could mean that the road is experiencing congestion, and the traffic is being controlled to prevent overcrowding and to maintain orderly movement. The sign is typically used to indicate that vehicles should follow the instructions provided by the traffic lights or other regulatory measures to ensure smooth traffic flow.",
+      "inference_time_sec": 12.053,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The driving environment depicted in the video is urban, characterized by a moderate to high density of commercial establishments. The presence of multiple storefronts with distinct signage, such as SHED, boost, and MARKET, suggests a commercial area with a variety of businesses catering to the needs of the local community. This type of environment typically requires drivers to be attentive to pedestrian traffic, as evidenced by the individuals crossing the street, and to navigate through a mix of vehicular and pedestrian traffic. The urban setting is further indicated by the presence of a bridge in the background, which is a common feature in cityscapes.",
+      "inference_time_sec": 14.311,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The street name \"Hunt Avenue\" and the area code \"718\" suggest that this clip is filmed in New York City. The area code \"718\" is commonly associated with Brooklyn, one of the boroughs of New York City.",
+      "inference_time_sec": 9.462,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The vehicle passes the storefront of SHED, located to the right of CHECKSCASH, at the timestamp of 00:00:00.",
+      "inference_time_sec": 8.308,
+      "error": ""
+    }
+  ]
+}

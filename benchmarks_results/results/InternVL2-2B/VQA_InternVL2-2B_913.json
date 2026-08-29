@@ -1,0 +1,70 @@
+{
+  "video_id": 913,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/913.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the right of the orange construction signboard containing the word ROAD?",
+      "ground_truth": "SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] on the digital display sign",
+      "prediction": "The readable text to the right of the orange construction signboard is \"ROAD WORK AHEAD.\"",
+      "inference_time_sec": 4.768,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct pieces of text displayed on the orange construction signboard. The first line reads \"MOTEL,\" the second line reads \"ROAD WORK AHEAD,\" and the third line is partially obscured, but it appears to say \"MOTEL.\"",
+      "inference_time_sec": 5.151,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?",
+      "ground_truth": "1st: ROAD [entity_001], 2nd: WORK [entity_002], 3rd: AHEAD [entity_003]",
+      "prediction": "The text on the orange construction signboard is encountered in the following order from timestamp 0.0 to 0.5: \"ROAD WORK AHEAD\".",
+      "inference_time_sec": 4.292,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?",
+      "ground_truth": "ROAD [entity_001] WORK [entity_002] AHEAD [entity_003] on the left side of the ramp",
+      "prediction": "Yes, there is visible text in the clip that indicates a hazard or road condition ahead. The text is located on a sign attached to the metal railing on the left side of the bridge. The sign reads \"ROAD WORK AHEAD,\" which is a common warning for drivers to be cautious of any construction or maintenance work that may be in progress.",
+      "inference_time_sec": 5.955,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "An elevated highway construction zone",
+      "prediction": "The driving environment depicted in the video is one of urban infrastructure with ongoing construction and traffic management. The presence of construction signs indicates that there is ongoing work on the bridge, which is common in urban areas undergoing development or maintenance. The speed display sign suggests that the bridge is designed to manage traffic flow and ensure safety, which is typical in busy urban areas. The combination of these elements indicates a dynamic and potentially busy environment where traffic management and construction are integral to the infrastructure.",
+      "inference_time_sec": 6.996,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction signboard and the digital display sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction signboard and the digital display sign is in English.",
+      "inference_time_sec": 3.549,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the word SPEED first become legible on the digital display sign?",
+      "ground_truth": "7.967",
+      "prediction": "The word \"SPEED\" first becomes legible on the digital display sign at the beginning of the video. It is visible on the sign as the camera pans across the bridge, indicating the start of the traffic signal display.",
+      "inference_time_sec": 4.88,
+      "error": ""
+    }
+  ]
+}

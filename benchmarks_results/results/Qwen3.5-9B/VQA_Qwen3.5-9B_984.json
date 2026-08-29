@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located directly above the identifier 91204-MD on the white shredding truck?",
       "ground_truth": "DRIVERS WANTED [entity_009]",
-      "prediction": "The user wants to identify the text directly above the identifier \"91204-MD\" on the white shredding truck.\n\n1.  **Locate the truck:** The truck is the central vehicle in the video, labeled \"AMERICAN SECURITY SHREDDING\".\n2.  **Locate the identifier:** I need to find \"91204-MD\". Looking at the back of the truck, specifically on the left side near the bumper area.\n3.  **Find the text above it:**\n    *   In the first frame (00:00), I see a yellow",
-      "inference_time_sec": 13.158,
+      "prediction": "DRIVERS WANTED",
+      "inference_time_sec": 3.095,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are visible on the commercial delivery van branded with GoodMart?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the distinct text instances on the \"GoodMart\" delivery van.\n\n1.  **Identify the van:** I see a white van on the right side of the frame in the early seconds (00:00 - 00:02). It has \"GoodMart\" branding.\n2.  **Scan for text:**\n    *   **Rear Door:** There is a large \"GoodMart\" logo on the back door. Wait, looking closely at the first few frames, the van is actually facing away, but the side is visible. Let's re-examine.",
-      "inference_time_sec": 13.288,
+      "prediction": "2",
+      "inference_time_sec": 2.838,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order in which the two delivery van brands are encountered on the right side of the road?",
       "ground_truth": "1st: GoodMart [entity_012], 2nd: IBC [entity_017]",
-      "prediction": "The user wants to identify the order of two delivery van brands seen on the right side of the road.\n\n1.  **Identify the first van:** Looking at the first few frames (00:00 - 00:01), there is a white truck/van immediately to the right of the \"American Security Shredding\" truck. The side of this vehicle is partially visible. It has a logo that looks like \"Good...\" or \"Goodwill\". Wait, let's look closer. In frame 00:00, it's a white truck cab. In frame 00:0",
-      "inference_time_sec": 13.159,
+      "prediction": "Goodwill, U-Haul",
+      "inference_time_sec": 3.262,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What regulatory text near the intersection indicates a direction restriction for drivers?",
       "ground_truth": "KEEP [entity_021] RIGHT [entity_022]",
-      "prediction": "The user wants to identify regulatory text near the intersection that indicates a direction restriction.\n\n1.  **Analyze the video:** I'll scan the video, particularly the later frames where the car approaches an intersection.\n2.  **Locate the intersection:** Around 00:03 and 00:04, the car approaches a crosswalk and traffic lights.\n3.  **Identify signs:**\n    *   There's a yellow diamond sign on the left side of the road (visible clearly at 00:04). It has a black arrow pointing left and right. This is a",
-      "inference_time_sec": 13.279,
+      "prediction": "ONE WAY",
+      "inference_time_sec": 2.921,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggest about the driving environment?",
       "ground_truth": "Busy urban commercial district",
-      "prediction": "The user wants me to interpret the driving environment based on the visual cues in the video.\n\n1.  **Identify the key elements:**\n    *   **Commercial delivery vans:** I see a white van with \"Good...\" on the side (likely Goodwill or similar) and another white truck/van to the right.\n    *   **Shredding truck:** A large white truck with \"AMERICAN SECURITY SHREDDING\" on the back is directly in front.\n    *   **Taxi:** A yellow taxi cab is visible in the right lane.\n    *   **Construction scaffolding:** There",
-      "inference_time_sec": 13.243,
+      "prediction": "Busy urban area",
+      "inference_time_sec": 2.977,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is the text on the shredding truck and delivery vans written in?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the text on the vehicles in the video.\n\n1.  **Analyze the text on the shredding truck:**\n    *   The truck in the center has large text: \"AMERICAN SECURITY SHREDDING\".\n    *   Below that is a phone number: \"1-800-882-1979\".\n    *   Below that is a website: \"www.americanshredding1.com\".\n    *   There is also smaller text like \"DRIVERS WANTED\" and a phone number \"516-7",
-      "inference_time_sec": 13.255,
+      "prediction": "English",
+      "inference_time_sec": 2.771,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During what time range is the GoodMart delivery van text visible before being replaced by the IBC van?",
       "ground_truth": "0.000 seconds to 5.967 seconds",
-      "prediction": "The user wants to find the time range where the \"GoodMart\" delivery van text is visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** I see a white truck on the right. The text \"GoodMart\" is partially visible on the side of a white van behind it. Wait, looking closely at the first frame, there's a white van behind the shredding truck. The text \"GoodMart\" is visible on the side of the van to the right of the shredding truck.\n    *   **00:01:** The camera moves forward.",
-      "inference_time_sec": 13.246,
+      "prediction": "0.0 - 0.2",
+      "inference_time_sec": 3.671,
       "error": ""
     }
   ]

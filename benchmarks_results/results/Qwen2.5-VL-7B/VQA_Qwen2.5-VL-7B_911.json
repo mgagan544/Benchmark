@@ -1,0 +1,70 @@
+{
+  "video_id": 911,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/911.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the storefront displaying Clifton Tile relative to the sports facility operated by SDA?",
+      "ground_truth": "To the right of SDA [entity_007]",
+      "prediction": "The storefront displaying \"Clifton Tile\" appears to be located on the right side of the road, while the sports facility operated by SDA is not visible in this particular image. The image shows a view from inside a vehicle moving along a road with multiple lanes and some buildings on both sides, but it does not provide enough detail to determine the exact spatial relationship between the two locations.",
+      "inference_time_sec": 8.278,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the buildings and billboard between House 46 and the parked minivan?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances containing numbers visible in the image:\n\n1. \"46\" on the building near the parked minivan.\n2. \"35-87\" on the billboard between \"House 46\" and the parked minivan.\n\nSo, there are two distinct text instances containing numbers.",
+      "inference_time_sec": 8.528,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds?",
+      "ground_truth": "1st: HOUSE 46 [entity_001], 2nd: 1075 [entity_004], 3rd: CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "Between 0.40 and 2.40 seconds, the locations encountered in the video are:\n\n1. **House 46** - This appears to be a house or residential area on the left side of the road.\n2. **The building at 1075** - This is likely a commercial building, possibly a store or office, as it has a sign with \"1075\" on it.\n3. **Clifton Tile** - This is another commercial establishment, as indicated by its signage.\n\nSo, the order is: House 46, then the building at 107",
+      "inference_time_sec": 11.579,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37?",
+      "ground_truth": "EXIT [entity_031] ONLY [entity_032], DO NOT [entity_033] ENTRY [entity_034]",
+      "prediction": "The image does not provide clear text indicating a driving restriction or direction constraint at the driveway located between building 1033 and the entrance displaying \"35-37.\" The view is somewhat obstructed, and the text on the signs in that area is not fully legible from this perspective. If there is any such text, it would likely be on a sign that is not clearly visible in the provided image.",
+      "inference_time_sec": 8.761,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, tile shops, and commercial billboards, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts an urban or suburban driving environment characterized by a mix of commercial activity. The presence of multiple storefronts, tile shops, and commercial billboards suggests that this area is likely a commercial district or a strip mall. The density of these establishments indicates a high level of commercial activity, which is typical in areas where people frequent for shopping, dining, and other services. The road appears to be a multi-lane highway or a major street, which is common in such areas to accommodate heavy traffic flow. The presence of power lines and utility poles also suggests that this is a developed area with infrastructure to support the commercial activities. Overall,",
+      "inference_time_sec": 11.07,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any business names visible in the clip suggest a specific regional location or city name?",
+      "ground_truth": "CLIFTON [entity_010] TILE [entity_011]",
+      "prediction": "The video does not provide clear and legible text that would suggest a specific regional location or city name based on the visible business names. The signs appear to be generic and do not include distinctive words or logos that are commonly associated with particular cities or regions. Therefore, it is not possible to determine a specific location from the image alone.",
+      "inference_time_sec": 7.761,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the building at address 1075 first come into view?",
+      "ground_truth": "Between 1.6 and 1.86 seconds",
+      "prediction": "The building at address 1075 first comes into view around the 2-second mark in the video.",
+      "inference_time_sec": 5.349,
+      "error": ""
+    }
+  ]
+}

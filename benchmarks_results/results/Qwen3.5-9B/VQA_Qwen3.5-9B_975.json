@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is displayed on the overhead road sign located adjacent to the sign showing 20 AV?",
       "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007] adjacent to 20 AV [entity_001]",
-      "prediction": "The user wants me to identify the text on a specific road sign.\n\n1.  **Locate the reference sign:** The user specifies the sign showing \"20 AV\". Looking at the video, particularly in the first few frames (00:00 - 00:02), there are street signs hanging from the traffic light pole.\n2.  **Identify the adjacent sign:** Next to the \"20 AV\" sign, there is another green street sign.\n3.  **Read the text on the adjacent sign:**\n    *   In the first frame (00:00),",
-      "inference_time_sec": 13.306,
+      "prediction": "Parsons Blvd",
+      "inference_time_sec": 2.976,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct pieces of text visible in the clip are mounted on vehicles?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count distinct pieces of text visible on vehicles in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify vehicles and any text on them.\n    *   **Frame 1:**\n        *   There's a white bus turning left. It has \"TOWER\" written on the side.\n        *   There's a dark SUV in the foreground. It has a sticker on the rear bumper that says \"star\".\n        *   There's a car parked on the left (black sedan). No clear text.\n        *   There's a car",
-      "inference_time_sec": 13.26,
+      "prediction": "2",
+      "inference_time_sec": 2.815,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order in which the ego vehicle encounters the intersection street names and the highway directional signs?",
       "ground_truth": "1st: 20 AV [entity_001] and Parsons Blvd [entity_002], 2nd: WHITESTONE [entity_006] EXPWY [entity_007]",
-      "prediction": "The user wants to know the order in which the ego vehicle sees specific signs.\n\n1.  **Identify the signs:**\n    *   **Intersection street names:** I see \"20 Av\" and \"Parsons Blvd\" hanging over the intersection.\n    *   **Highway directional signs:** I see a green sign on the left pole that says \"I-95 South\" and \"I-495 North\".\n\n2.  **Determine the order of appearance:**\n    *   **00:00 - 00:01:** The camera is approaching the intersection.",
-      "inference_time_sec": 13.243,
+      "prediction": "intersection street names, highway directional signs",
+      "inference_time_sec": 3.332,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What directional text is displayed on the overhead sign near the traffic lights to guide drivers toward the expressway?",
       "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007]",
-      "prediction": "The user wants to identify the text on a specific overhead sign.\n\n1.  **Locate the sign:** I need to look at the traffic lights and find an overhead sign near them.\n2.  **Scan the frames:**\n    *   In the first few frames (00:00 - 00:02), there are traffic lights hanging over the intersection.\n    *   To the left of the main traffic lights, there's a green street sign.\n    *   Looking closely at the sign hanging near the traffic lights on the left side (above the left lane/turn lane), I",
-      "inference_time_sec": 13.245,
+      "prediction": "Expressway",
+      "inference_time_sec": 3.032,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of residential homes, hedges, and apartment buildings suggest about the driving environment?",
       "ground_truth": "Residential area",
-      "prediction": "The user wants me to interpret the visual cues in the video to describe the driving environment.\n\n1.  **Identify the key elements:**\n    *   **Residential homes:** I see single-family houses on the right side (white house, yellow house).\n    *   **Hedges:** There are green hedges lining the properties, separating them from the street.\n    *   **Apartment buildings:** On the left side, there's a larger, multi-story brick building that looks like an apartment complex or a larger residential building.\n    *   **Traffic:** There are cars, a bus, and traffic",
-      "inference_time_sec": 13.288,
+      "prediction": "Suburban",
+      "inference_time_sec": 3.0,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which street names and expressway abbreviations suggest this clip is set in New York City?",
       "ground_truth": "20 AV [entity_001], Parsons Blvd [entity_002], and WHITESTONE [entity_006] EXPWY [entity_007]",
-      "prediction": "The user wants to identify street names and expressway abbreviations from the video that point to New York City.\n\n1.  **Analyze the video for street signs:**\n    *   I see a green street sign hanging over the intersection. It reads \"20 Av\". This is likely 20th Avenue.\n    *   Next to it, another sign reads \"Parsons Blvd\". This is Parsons Boulevard.\n    *   There's another sign on the left pole that says \"20 Av\".\n    *   Looking closely at the bus, there is text on the side. It says \"TOWER",
-      "inference_time_sec": 13.345,
+      "prediction": "20 Av, Parsons Blvd",
+      "inference_time_sec": 3.243,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the vehicle carrying the license plate GKD-4491 begin to accelerate through the intersection?",
       "ground_truth": "2.367 seconds",
-      "prediction": "The user wants to find the timestamp when the vehicle with license plate GKD-4491 starts accelerating through the intersection.\n\n1.  **Identify the vehicle:** I need to look for a dark SUV with the license plate GKD-4491.\n    *   In the first frame (00:00), there is a dark SUV directly in front of the camera. The license plate is visible but slightly blurry. It looks like GKD-4491.\n    *   In the second frame (00:01), the SUV is still there, moving forward. The",
-      "inference_time_sec": 13.15,
+      "prediction": "0.1",
+      "inference_time_sec": 2.997,
       "error": ""
     }
   ]

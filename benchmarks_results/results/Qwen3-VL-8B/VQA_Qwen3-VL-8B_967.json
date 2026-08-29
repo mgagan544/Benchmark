@@ -1,0 +1,70 @@
+{
+  "video_id": 967,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/967.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the left of MARTIAL?",
+      "ground_truth": "RESTAURANT BAR [entity_008]",
+      "prediction": "ARTS",
+      "inference_time_sec": 3.652,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are associated with the EL TEQ storefront?",
+      "ground_truth": "3",
+      "prediction": "2",
+      "inference_time_sec": 3.611,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for DENTIST, CHURCH, and BUSES ONLY are encountered between 1.3s and 2.8s?",
+      "ground_truth": "1st: DENTIST [entity_009], 2nd: CHURCH [entity_010], 3rd: BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "Between 1.3s and 2.8s, the signs for DENTIST, CHURCH, and BUSES ONLY are encountered in the following order:\n\n1. **DENTIST** — First encountered at 1.3s.\n2. **CHURCH** — Encountered next at 1.7s.\n3. **BUSES ONLY** — Last encountered at 2.8s.\n\nThis sequence is determined by the timestamps provided in the video description, which indicate the order in which each sign appears as the camera moves forward.",
+      "inference_time_sec": 12.681,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the signs near the DENTIST sign constrains vehicle movement or lane usage?",
+      "ground_truth": "ONE WAY [entity_013], BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The text on the signs near the DENTIST sign that constrains vehicle movement or lane usage is \"ONE WAY\".",
+      "inference_time_sec": 5.452,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible text, such as MARTIAL ARTS, HALAL, and PARA TI, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "This clip depicts a **dense, urban driving environment** with a **high concentration of commercial businesses** and **multilingual signage**, suggesting a **diverse, multicultural neighborhood**.\n\nHere’s why:\n\n- **High Density of Signage**: The presence of multiple storefront signs (e.g., “MARTIAL ARTS,” “HALAL DINAST,” “PARA TI COLOMBIA CON SABOR,” “EL TEC RESTAURANT”) in close proximity indicates a commercial corridor packed with small businesses.\n- **Multilingual Text**: Signs include English, Spanish (“PARA TI COLOMBIA CON SAB",
+      "inference_time_sec": 16.066,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location is suggested by the area codes in the phone numbers on the storefronts?",
+      "ground_truth": "New York City",
+      "prediction": "The area codes suggested by the phone numbers on the storefronts are **718** and **298**.\n\n- **718** is the area code for **Brooklyn, New York**.\n- **298** is not a valid area code in the United States. It appears to be a typo or error, as area codes in the U.S. are typically 3-digit numbers ranging from 200 to 999, and 298 is not assigned to any region.\n\nTherefore, the regional location suggested by the phone numbers is **Brooklyn, New York**.",
+      "inference_time_sec": 13.522,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AC-91331 first become legible in the clip?",
+      "ground_truth": "0.5s",
+      "prediction": "The license plate AC-91331 first becomes legible at 0:00.",
+      "inference_time_sec": 5.11,
+      "error": ""
+    }
+  ]
+}

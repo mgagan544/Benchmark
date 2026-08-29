@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of Messubim relative to NEXT EXITS on the overhead gantry?",
       "ground_truth": "To the left of NEXT EXITS [entity_006]",
-      "prediction": "The user wants to know the spatial relationship between \"Messubim\" and \"NEXT EXITS\" on the overhead gantry.\n\n1.  **Identify the relevant frame:** I need to find a frame where the overhead gantry is clearly visible and readable.\n    *   Frame at 00:00: The gantry is visible but the text is a bit blurry.\n    *   Frame at 00:01: The gantry is clearer. I can see \"Messubim\" and \"NEXT EXITS\".\n    *   Frame at 00:02: The gan",
-      "inference_time_sec": 13.178,
+      "prediction": "to the left",
+      "inference_time_sec": 2.421,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct license plates are visible on vehicles throughout the entire clip?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the distinct license plates visible on vehicles throughout the video.\n\n1.  **Analyze the video:** I'll go through the video frame by frame (or second by second) and identify license plates.\n    *   **00:00:**\n        *   Left lane: White van (partially visible, plate obscured/blurry).\n        *   Left lane: White sedan (plate visible: `1234567` - wait, let's look closer. It's `1234567`? No, looks like `123",
-      "inference_time_sec": 15.64,
+      "prediction": "1",
+      "inference_time_sec": 2.241,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order in which the code 67. 487. 75, the roadside sign showing Mesubim, and the overhead gantry displaying NEXT EXITS are encountered?",
       "ground_truth": "1st: 67. 487. 75 [entity_002], 2nd: Mesubim [entity_003], 3rd: NEXT EXITS [entity_006]",
-      "prediction": "The user wants to determine the chronological order of three specific visual elements in the video.\n\n1.  **Code 67. 487. 75**: I need to find a license plate or code that matches this. Looking at the white car in the center lane, its license plate is visible.\n    *   At 00:00, the white car is ahead. The plate is blurry but looks like it ends in something.\n    *   At 00:01, the car is closer. The plate is `67 487 75`. This is",
-      "inference_time_sec": 12.673,
+      "prediction": "67. 487. 75, the roadside sign showing Mesubim, the overhead gantry displaying NEXT EXITS",
+      "inference_time_sec": 4.37,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the roadside sign visible on the right, what driving action is indicated at a distance of 1000 meters?",
       "ground_truth": "Exit at the Mesubim [entity_003] interchange [entity_005]",
-      "prediction": "The user wants to identify a driving action based on a sign.\n\n1.  **Locate the sign:** I need to look at the right side of the road in the provided video frames.\n2.  **Identify the relevant frame:** In the first few frames (0.0s to 0.2s), there is a green sign on the right side of the road.\n3.  **Read the sign:**\n    *   The sign is green with white text.\n    *   It has an arrow pointing right.\n    *   The text at the top says \"1km\".",
-      "inference_time_sec": 12.696,
+      "prediction": "Exit",
+      "inference_time_sec": 2.237,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment is suggested by the presence of overhead gantries, exit signs, and multiple license plates?",
       "ground_truth": "Multi-lane highway",
-      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead gantries:** I see large metal structures spanning across the road with signs attached. This is a classic feature of major highways or freeways.\n    *   **Exit signs:** The green signs hanging from the gantries (e.g., at 0:01 and 0:02) clearly show destinations like \"Masada\" and \"Moshavim\" along with distances (e.g., \"1000\"). This",
-      "inference_time_sec": 12.73,
+      "prediction": "Highway",
+      "inference_time_sec": 2.236,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific location names visible on the overhead gantry suggest the region or country this highway is located in?",
       "ground_truth": "Messubim [entity_007], Gannot [entity_008], and HaShiv's [entity_009]",
-      "prediction": "The user wants to identify location names on the overhead gantry to determine the region or country.\n\n1.  **Analyze the video:** I need to look at the overhead signs, specifically the green ones.\n2.  **Locate the gantry:** In the first few frames (0.0s - 0.3s), there is a large green overhead gantry.\n3.  **Read the text:**\n    *   Frame 0.0s: The sign is visible but a bit far. I can see \"Moshavim\" and \"Ganot\".\n    *",
-      "inference_time_sec": 12.664,
+      "prediction": "Masada, Ma'agan Michael, and Hadera",
+      "inference_time_sec": 3.043,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the license plate 55:007 34 first become visible in the clip?",
       "ground_truth": "6.933 seconds",
-      "prediction": "The user wants to find the timestamp when the license plate \"55:007 34\" first appears.\n\n1.  **Analyze the frames:**\n    *   **00:00:** I see a white car in the left lane (license plate ending in 55:007 34 is visible on the rear). Wait, let me look closer. The white car on the left has a yellow plate. The text is a bit blurry but looks like \"55:007 34\". Let's check the other cars. The car in the center lane (",
-      "inference_time_sec": 12.641,
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 2.502,
       "error": ""
     }
   ]

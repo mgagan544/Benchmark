@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the SCHOOL road marking relative to the SLOW road marking as the vehicle moves forward?",
       "ground_truth": "Beside SLOW [entity_001]",
-      "prediction": "The user wants to know the spatial relationship between the \"SCHOOL\" and \"SLOW\" road markings.\n\n1.  **Identify the markings:** I need to look at the road surface in the video.\n    *   At 00:00, I see \"SLOW\" painted on the road. It's partially visible, just the \"S\" and \"L\" and part of \"O\". Wait, looking closer at 00:00, it's actually just \"S\" and \"L\" visible on the left side, but looking at the next frame, it's clearer.",
-      "inference_time_sec": 13.264,
+      "prediction": "ahead",
+      "inference_time_sec": 2.793,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many yellow road markings are painted on the asphalt of this residential street?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the yellow road markings painted on the asphalt.\n\n1.  **Analyze the video:** I'll scan through the frames to identify any yellow text or symbols painted on the road surface.\n2.  **Frame 00:00:** I see \"S\" and \"L\" visible on the left side, likely part of \"SLOW\". There are also yellow lines on the curb/sidewalk edge, but the question asks for markings on the *asphalt*. Wait, looking closely at the bottom, there are yellow lines painted on the road surface near the bottom edge, possibly",
-      "inference_time_sec": 13.228,
+      "prediction": "2",
+      "inference_time_sec": 2.823,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order in which the yellow road markings are passed by the vehicle between 3.00 and 7.50 seconds?",
       "ground_truth": "1st: SLOW [entity_001], 2nd: SCHOOL [entity_002], 3rd: XING [entity_003]",
-      "prediction": "The user wants to identify the chronological order of yellow road markings passed by the vehicle.\n\n1.  **Analyze the video:** I need to watch the video from 3.00 seconds to 7.50 seconds and look for yellow markings on the road.\n2.  **Identify markings:**\n    *   Around 00:00 - 00:01: There are yellow markings on the road, but they are partially visible and blurry. Wait, looking closely at the first frame (00:00), there are yellow markings on the road surface. It looks like \"",
-      "inference_time_sec": 13.209,
+      "prediction": "SLOW, SCHOOL",
+      "inference_time_sec": 3.043,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What warning or instructional text is painted on the road surface to advise the driver to reduce speed?",
       "ground_truth": "SLOW [entity_001]",
-      "prediction": "The user wants to identify the text painted on the road.\n\n1.  **Analyze the video frames:** I'll look through the frames to find where the road surface is clearly visible and has text.\n2.  **Frame 00:00:** I see \"S\" painted on the road. This is likely part of a word.\n3.  **Frame 00:01:** The car is moving forward. I see \"SLOW\" painted on the road.\n4.  **Frame 00:02:** The car is further down the road. I see \"S",
-      "inference_time_sec": 13.177,
+      "prediction": "SLOW",
+      "inference_time_sec": 2.865,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the road markings indicating a school crossing and the surrounding buildings, what type of driving environment is depicted?",
       "ground_truth": "Residential school zone",
-      "prediction": "The user wants me to identify the type of driving environment based on the visual cues in the video.\n\n1.  **Analyze the road markings:**\n    *   I see \"SLOW\" painted on the road in large yellow letters.\n    *   I see \"SCHOOL\" painted on the road in large yellow letters.\n    *   I see \"XING\" (crossing) painted on the road.\n    *   These markings strongly suggest a school zone or a residential area near a school where children might be crossing.\n\n2.  **Analyze the surroundings:**\n    *   There are",
-      "inference_time_sec": 13.26,
+      "prediction": "Urban residential area",
+      "inference_time_sec": 3.129,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the road markings painted on the asphalt?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the road markings.\n\n1.  **Analyze the video:** I'll scan the video frames to find clear shots of the road surface.\n2.  **Locate text:**\n    *   In the first few frames (00:00 - 00:01), I see \"SLOW\" painted on the road.\n    *   In the later frames (00:02 - 00:03), I see \"SCHOOL\" painted on the road.\n    *   In the final frame (00:04),",
-      "inference_time_sec": 13.242,
+      "prediction": "English",
+      "inference_time_sec": 2.85,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the vehicle roll over the yellow road marking SCHOOL?",
       "ground_truth": "5.867 seconds",
-      "prediction": "The user wants to find the timestamp where the vehicle passes over the word \"SCHOOL\" painted on the road.\n\n1.  **Analyze the video frames:**\n    *   **00:00:** The car is approaching a yellow marking. It looks like the end of a word, possibly \"SLOW\".\n    *   **00:01:** The car is moving forward. The word \"SLOW\" is visible on the road.\n    *   **00:02:** The car is further down the road. The word \"SCHOOL\" is clearly visible painted on the road",
-      "inference_time_sec": 13.315,
+      "prediction": "0.3 seconds",
+      "inference_time_sec": 3.069,
       "error": ""
     }
   ]

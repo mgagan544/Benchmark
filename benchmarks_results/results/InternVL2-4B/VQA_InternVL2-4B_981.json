@@ -1,0 +1,70 @@
+{
+  "video_id": 981,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/981.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What temporary sign is located to the left of the concrete retaining wall on the shoulder beneath the overpass?",
+      "ground_truth": "TRS [entity_009] NOW [entity_010] OPEN [entity_011] to the left of the concrete retaining wall",
+      "prediction": "To the left of the concrete retaining wall on the shoulder beneath the overpass, there is a temporary sign indicating a speed limit of 55 mph.",
+      "inference_time_sec": 6.531,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct overhead highway signs or route markers are mentioned on the two overpasses?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct overhead highway signs or route markers mentioned on the two overpasses. The first sign indicates directions to \"East Henderson\" and \"West Las Vegas,\" while the second sign shows directions to \"East Henderson\" and \"West Las Vegas\" as well, but it is located on a different overpass.",
+      "inference_time_sec": 9.097,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the SPEED LIMIT sign, the RTC transit sign, and the TRS NOW OPEN sign are encountered by the vehicle?",
+      "ground_truth": "1st: SPEED [entity_001] LIMIT [entity_002], 2nd: RTC [entity_008], 3rd: TRS [entity_009] NOW [entity_010] OPEN [entity_011]",
+      "prediction": "The vehicle first encounters the SPEED LIMIT sign, which is located on the right side of the road, indicating a speed limit of 55. Following this, the RTC transit sign is seen, which is positioned above the highway, indicating the presence of a transit system. The TRS NOW OPEN sign is encountered after the RTC transit sign, placed on the right side of the road, indicating the opening of a toll road.",
+      "inference_time_sec": 11.097,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed at the beginning of the clip?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
+      "prediction": "The white sign on the right side of the road indicates a speed limit of 55 mph.",
+      "inference_time_sec": 5.697,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multi-lane overhead gantries, route markers, and speed limit signs, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a controlled-access highway, likely a freeway or a major arterial road designed for high-speed travel. The presence of multi-lane overhead gantries indicates that the road is designed to manage traffic flow and provide drivers with clear directions for merging or exiting. The route markers and speed limit signs suggest that the road is well-regulated and that drivers are expected to adhere to specific speed limits and lane usage rules. The environment is likely in a suburban or urban area, given the infrastructure and the presence of commercial vehicles, which are common in such settings.",
+      "inference_time_sec": 13.129,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional cities or destinations are indicated by the overhead highway signs?",
+      "ground_truth": "Henderson [entity_005] and Las Vegas [entity_007]",
+      "prediction": "The overhead highway signs indicate directions to two regional cities or destinations: Henderson and Las Vegas. These destinations are likely significant points of interest or hubs of activity in the area, as they are prominently displayed on the signs for drivers to choose their route.",
+      "inference_time_sec": 8.111,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the SPEED LIMIT sign first become legible to the vehicle?",
+      "ground_truth": "0.3 seconds",
+      "prediction": "The SPEED LIMIT sign first becomes legible to the vehicle at the timestamp when the car is driving on the highway.",
+      "inference_time_sec": 5.928,
+      "error": ""
+    }
+  ]
+}

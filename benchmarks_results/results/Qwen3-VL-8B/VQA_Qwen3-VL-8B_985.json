@@ -1,0 +1,70 @@
+{
+  "video_id": 985,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/985.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle moves forward and the overhead signs come into view at 6.233 seconds, which sign is positioned to the right of the Riverhead sign?",
+      "ground_truth": "WEST [entity_001] sign",
+      "prediction": "At 6.233 seconds, as the vehicle moves forward and the overhead signs come into view, the sign positioned to the right of the Riverhead sign is the **New York** sign. \n\nThis is because the overhead sign displays \"Riverhead, New York\" with \"Riverhead\" on the left and \"New York\" on the right, as indicated by the directional arrows. The \"New York\" sign is clearly to the right of the \"Riverhead\" sign in the visual frame.",
+      "inference_time_sec": 11.613,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway signs are positioned above the divided roadway that come into clear view at 6.233 seconds?",
+      "ground_truth": "5",
+      "prediction": "At 6.233 seconds, two distinct highway signs come into clear view above the divided roadway:\n\n1. A green rectangular sign indicating \"Riverhead, New York\" with arrows pointing to the right.\n2. A smaller, white rectangular sign with black text that reads \"EXIT 13\" and \"Riverhead, New York\" with arrows pointing to the right.\n\nTherefore, there are **two** distinct highway signs positioned above the divided roadway at that time.",
+      "inference_time_sec": 11.134,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the following events: (1) the traffic light turns green, (2) the school bus passes on the left, (3) the highway signs come into view?",
+      "ground_truth": "1st: school bus passes, 2nd: traffic light turns green, 3rd: highway signs come into view",
+      "prediction": "The correct order of events is:  \n**(2) the school bus passes on the left**,  \n**(1) the traffic light turns green**,  \n**(3) the highway signs come into view**.\n\n### Explanation:\n- At **0:00**, the school bus is visible on the left side of the road, and the traffic light is green (as seen in the frame). So the bus passing and the light turning green happen simultaneously or very close in time — but since the bus is already on the road and moving, it’s reasonable to consider its passage as the first event.\n- At **0:01**, the",
+      "inference_time_sec": 13.547,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the signs that come into view at 6.233 seconds, what directional routes are indicated for the driver?",
+      "ground_truth": "EAST [entity_003] and WEST [entity_001]",
+      "prediction": "At 6.233 seconds, the signs indicate the following directional routes for the driver:\n\n- **Left**: Riverhead, New York\n- **Right**: Riverhead, New York\n\nThis suggests that both lanes (left and right) lead to Riverhead, New York, with no separate destination indicated for each direction. The signs are likely guiding drivers to merge or choose a lane based on their intended route to Riverhead.",
+      "inference_time_sec": 12.151,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the combination of a commercial building and overhead highway signs coming into view at 6.233 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial highway corridor",
+      "prediction": "The combination of a commercial building and overhead highway signs coming into view at 6.233 seconds suggests that the driving environment is transitioning from a more residential or suburban area to a more urban or commercial zone. This indicates that the road is likely approaching a city center, business district, or a major intersection where commercial activity is prominent. The presence of overhead signs also implies that this is a major roadway with significant traffic volume, possibly a highway or arterial road designed to handle high-speed or high-volume travel. The commercial building further reinforces the idea that the driver is entering an area with economic activity, services, or retail establishments. Overall,",
+      "inference_time_sec": 13.62,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or state name is visible on the highway signs that come into view at 6.233 seconds?",
+      "ground_truth": "New York [entity_005]",
+      "prediction": "Riverhead, New York",
+      "inference_time_sec": 4.074,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For how long after the traffic light turns green at 2.633 seconds does it take for the 495 sign to come into clear view?",
+      "ground_truth": "3.6 seconds",
+      "prediction": "The traffic light turns green at 2.633 seconds, and the 495 sign comes into clear view at 3.033 seconds. \n\nTo find the duration between these two events, subtract the earlier time from the later time:\n\n3.033 seconds - 2.633 seconds = 0.4 seconds\n\nTherefore, it takes **0.4 seconds** for the 495 sign to come into clear view after the traffic light turns green.",
+      "inference_time_sec": 13.727,
+      "error": ""
+    }
+  ]
+}

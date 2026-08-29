@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
       "ground_truth": "S E [entity_005]",
-      "prediction": "The user wants me to identify text on a semi-truck.\n1.  **Locate the semi-truck:** In the first few frames (0.0s, 0.1s, 0.2s), there is a large white semi-truck on the right side of the frame.\n2.  **Locate the specific text:** The user mentions \"RAY'S TRUCKS\" and \"Elizabeth N.J.\".\n3.  **Find the text:** Looking closely at the mudflap of the truck in the first frame (0.0s), I see a logo and text.",
-      "inference_time_sec": 12.969,
+      "prediction": "408-436-00-55",
+      "inference_time_sec": 3.229,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
       "ground_truth": "7",
-      "prediction": "The user wants me to count distinct vehicle-mounted text elements on the semi-truck on the right.\n\n1.  **Identify the truck:** It's the large white semi-truck in the right lane, closest to the camera.\n2.  **Scan for text elements:**\n    *   **On the container:** There's a large logo with a star and the letters \"M\" and \"SE\" visible. Wait, looking closer at the first few frames, it says \"M\" and \"SE\" vertically. Actually, it looks like \"M\" and \"SE\" are part of a larger logo, possibly",
-      "inference_time_sec": 12.661,
+      "prediction": "2",
+      "inference_time_sec": 2.264,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
       "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
-      "prediction": "The user wants to know the order in which three specific text elements appear as the video progresses.\n\n1.  **Identify the text elements:**\n    *   \"FUEL CO\"\n    *   \"milea\"\n    *   \"HINO\"\n\n2.  **Scan the video frames chronologically to find each text element.**\n\n    *   **Frame 0.0s - 0.1s:**\n        *   On the right, there's a large white truck. On the mud flap, I see \"FUEL CO\" and \"EXCELLENT FUEL\". So,",
-      "inference_time_sec": 12.648,
+      "prediction": "FUEL CO, milea, HINO",
+      "inference_time_sec": 2.891,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
       "ground_truth": "None",
-      "prediction": "The user wants to know if there is any visible text in the video that indicates a hazard, warning, or driving constraint.\n\n1.  **Analyze the video:** I'll scan through the frames, looking for text on vehicles, signs, or road markings.\n2.  **Frame 1:**\n    *   Right side: A large white truck with \"MA\" and \"SE\" visible on the container. Below that, on the mud flap, there's text: \"NORTH FRIEDLAND TRUCK HALL\", \"EASTON, NJ\", \"908-436-0",
-      "inference_time_sec": 12.655,
+      "prediction": "No",
+      "inference_time_sec": 2.228,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
       "ground_truth": "Highway",
-      "prediction": "The user wants me to identify the type of road based on specific visual cues: route number 278 and the presence of commercial trucks.\n\n1.  **Analyze the visual evidence:**\n    *   **Route Number 278:** In the later frames (around 0.04s and 0.05s), a blue sign with the number \"278\" is visible on the right side of the road. This is a standard Interstate highway sign.\n    *   **Commercial Trucks:** There are large semi-trucks (like the one with \"M\" and \"SE\" on",
-      "inference_time_sec": 12.639,
+      "prediction": "Interstate highway",
+      "inference_time_sec": 2.368,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
       "ground_truth": "Elizabeth N.J. [entity_003]",
-      "prediction": "The user wants to identify specific text on a semi-truck that indicates a New Jersey connection.\n\n1.  **Analyze the images:** I need to look at the semi-truck visible in the frames, particularly the one on the right side.\n2.  **Locate the truck:** In the first few frames (0.0s, 0.1s, 0.2s), there is a large white semi-truck with a container on the right.\n3.  **Read the text:**\n    *   On the side of the container, there's a large logo with a star and",
-      "inference_time_sec": 12.661,
+      "prediction": "New Jersey",
+      "inference_time_sec": 2.413,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
       "ground_truth": "1.2s to 1.3s",
-      "prediction": "The user wants to find the specific time range when the text \"FUEL CO\" and \"S J\" appears on the semi-truck.\n\n1.  **Analyze the first frame (00:00):** I see a large semi-truck on the right. The side of the container is visible. I can see \"MA\" and \"SE\" clearly. Below the wheels, there is a sticker. Let's look closely at the sticker. It says \"FUEL CO\" and \"S J\". Wait, let me re-examine.\n    *   Looking at the sticker on the mud flap/wheel",
-      "inference_time_sec": 12.605,
+      "prediction": "0.0s - 0.5s",
+      "inference_time_sec": 3.079,
       "error": ""
     }
   ]

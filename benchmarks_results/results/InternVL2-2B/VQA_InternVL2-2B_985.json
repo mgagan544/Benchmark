@@ -1,0 +1,70 @@
+{
+  "video_id": 985,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/985.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle moves forward and the overhead signs come into view at 6.233 seconds, which sign is positioned to the right of the Riverhead sign?",
+      "ground_truth": "WEST [entity_001] sign",
+      "prediction": "At 6.233 seconds, the sign positioned to the right of the Riverhead sign is the \"New York State\" sign.",
+      "inference_time_sec": 4.711,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway signs are positioned above the divided roadway that come into clear view at 6.233 seconds?",
+      "ground_truth": "5",
+      "prediction": "At 6.233 seconds, there are two distinct highway signs positioned above the divided roadway that come into clear view. One sign is a green arrow pointing to the right, and the other is a green sign indicating the direction to New York.",
+      "inference_time_sec": 5.062,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the following events: (1) the traffic light turns green, (2) the school bus passes on the left, (3) the highway signs come into view?",
+      "ground_truth": "1st: school bus passes, 2nd: traffic light turns green, 3rd: highway signs come into view",
+      "prediction": "The order of events in the video is as follows:\n\n1. The traffic light turns green.\n2. The school bus passes on the left.\n3. The highway signs come into view.",
+      "inference_time_sec": 4.518,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the signs that come into view at 6.233 seconds, what directional routes are indicated for the driver?",
+      "ground_truth": "EAST [entity_003] and WEST [entity_001]",
+      "prediction": "Based on the signs that come into view at 6.233 seconds, the driver is directed to take the left turn to the right. This is indicated by the green arrow on the sign, which is a common directional indicator used to direct drivers to take a specific path or lane.",
+      "inference_time_sec": 5.305,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the combination of a commercial building and overhead highway signs coming into view at 6.233 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial highway corridor",
+      "prediction": "The combination of a commercial building and overhead highway signs coming into view at 6.233 seconds suggests that the driving environment is a mix of urban and suburban elements. The presence of a commercial building indicates that the area is likely a commercial district or a business area, while the highway signs point to a well-developed roadway that connects different parts of the city or region. This mix of commercial and transportation infrastructure suggests a bustling urban area with a mix of residential and commercial zones.",
+      "inference_time_sec": 7.018,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or state name is visible on the highway signs that come into view at 6.233 seconds?",
+      "ground_truth": "New York [entity_005]",
+      "prediction": "The specific city or state name visible on the highway signs that come into view at 6.233 seconds is \"New York.\" This can be identified by the distinctive green sign with white lettering that reads \"New York\" on the right side of the road.",
+      "inference_time_sec": 5.133,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For how long after the traffic light turns green at 2.633 seconds does it take for the 495 sign to come into clear view?",
+      "ground_truth": "3.6 seconds",
+      "prediction": "At 2.633 seconds, the traffic light turns green, and the 495 sign comes into clear view. This is determined by observing the progression of the video, where the green light is shown at 2.633 seconds, and the 495 sign is visible in the distance.",
+      "inference_time_sec": 5.348,
+      "error": ""
+    }
+  ]
+}

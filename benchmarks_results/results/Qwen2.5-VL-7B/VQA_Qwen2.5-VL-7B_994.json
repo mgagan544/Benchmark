@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located to the left of the green directional sign. The green directional sign indicates directions to \"Grand Central Pkwy,\" \"RFK Br,\" and \"Bklyn-Ons Expwy.\" The deliveries sign is positioned on the left side of the road, near the curb, and appears to be a smaller sign with an arrow pointing towards the direction of the deliveries.",
+      "inference_time_sec": 9.508,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are three distinct text entities visible on the signs in the clip:\n\n1. \"TO GRAND CENTRAL PKWY\"\n2. \"RFK BR\"\n3. \"BKLYN-ONS EXPWY\"",
+      "inference_time_sec": 6.57,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "As the vehicle moves forward between 2.5 and 4.0 seconds, the following sequence of signs can be observed:\n\n1. **Green sign with white text**: This sign indicates directions to \"Grand Central Pkwy,\" \"RFK Br,\" and \"Bklyn-Queens Expwy.\" It is located on the right side of the road.\n2. **Red traffic light**: The vehicle passes under this traffic light, which is hanging from an overhead structure.\n3. **Green sign with white text**: This sign is located further ahead on the left side of the road, indicating directions to \"Grand Central Pk",
+      "inference_time_sec": 11.15,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The sign in the image does not explicitly mention a weight restriction for vehicles near the overpass structure. However, there is a sign that reads \"NO TRUCKS OVER 28' LENGTH\" which suggests a length restriction rather than a weight restriction. If you need to know about weight restrictions, it would typically be indicated by a sign that specifies a maximum weight limit, such as \"MAXIMUM WEIGHT 10 TONS\" or similar wording.",
+      "inference_time_sec": 9.182,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names and weight limit signs suggests that this is a transition or an intersection where different highways meet, and there might be a need to control the flow of traffic and ensure safety for vehicles of varying sizes. The presence of the weight limit sign indicates that there could be a bridge or a section of the road that has specific weight restrictions, which is common in urban areas where bridges often have weight limits due to structural integrity concerns. The highway names (e.g., Grand Central Parkway, RFK Bridge) suggest that this is likely an urban or suburban area with significant infrastructure, possibly near a major city or transportation hub.",
+      "inference_time_sec": 10.859,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The green directional sign in the image includes the abbreviation \"NYC,\" which stands for New York City. This suggests that the location is likely in the New York City region, possibly near an intersection that provides directions to Grand Central Parkway and other routes related to New York City.",
+      "inference_time_sec": 7.024,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text \"DELIVERIES ENTRANCE 9\" becomes visible at approximately 0:02 seconds into the video.",
+      "inference_time_sec": 5.474,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 945,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/945.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located to the left of the regulatory notice warning about doubled speeding fines?",
+      "ground_truth": "ROAD [entity_011] WORK [entity_012] AHEAD [entity_004] sign",
+      "prediction": "To the left of the regulatory notice warning about doubled speeding fines, there is a sign indicating a speed limit of 30 mph.",
+      "inference_time_sec": 6.462,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 0.2 seconds and 2.0 seconds?",
+      "ground_truth": "4",
+      "prediction": "Between 0.2 seconds and 2.0 seconds, the vehicle encounters two distinct, legible text instances. The first is the \"RUN LANE CLOSURE AHEAD\" sign, and the second is the \"SPEED LIMIT 30\" sign.",
+      "inference_time_sec": 8.72,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence in which the speed limit sign, the sidewalk closed placard, and the road work warning sign are encountered?",
+      "ground_truth": "1st: ROAD [entity_011] WORK [entity_012] AHEAD [entity_004], 2nd: SPEED [entity_013] LIMIT [entity_014], 3rd: SIDEWALK [entity_015] closed FOR CONST [entity_016]",
+      "prediction": "The sequence in which the speed limit sign, the sidewalk closed placard, and the road work warning sign are encountered is as follows: the speed limit sign is first seen at the beginning of the video, indicating a speed limit of 30 mph. The sidewalk closed placard is then observed, indicating that the sidewalk is closed for construction. Finally, the road work warning sign is encountered, alerting drivers to the ongoing road work ahead.",
+      "inference_time_sec": 11.001,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the speed limit sign located to the left of the sidewalk closed placard?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014] of 30",
+      "prediction": "The speed limit sign located to the left of the sidewalk closed placard indicates a speed limit of 30 miles per hour.",
+      "inference_time_sec": 6.194,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the signs for exits, street names, and work zones, what kind of driving environment is depicted?",
+      "ground_truth": "Urban highway construction zone",
+      "prediction": "The driving environment depicted in the video is an urban setting with a mix of residential and commercial areas. The presence of street signs indicating exits and street names suggests a well-developed area with multiple routes and destinations. The work zones indicated by the orange cones and barriers suggest ongoing construction or maintenance, which is common in urban areas where infrastructure is regularly updated. The overcast sky and wet road conditions imply that the area experiences a range of weather conditions, which is typical for cities that may experience rain or snow. The mix of vehicles and the presence of a bridge in the background further indicate that this is",
+      "inference_time_sec": 13.197,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street names visible on the overhead gantry suggest a specific city? What text supports this?",
+      "ground_truth": "New York City, supported by E 125 St [entity_019] and 2Ave [entity_021]",
+      "prediction": "The street names visible on the overhead gantry, such as \"BROADWAY\" and \"W 18TH STREET,\" suggest a specific city. The text \"BROADWAY\" and \"W 18TH STREET\" supports this, as they are common street names in urban areas.",
+      "inference_time_sec": 9.126,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the regulatory sign warning about doubled speeding fines first become legible, and when does it become illegible?",
+      "ground_truth": "Legible at 0.467 seconds, illegible at 0.6 seconds",
+      "prediction": "The regulatory sign warning about doubled speeding fines first becomes legible at the timestamp of 00:00:00:00 and remains so until the timestamp of 00:00:00:00. After that, it becomes illegible due to the camera's angle and the distance from the sign.",
+      "inference_time_sec": 9.609,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 933,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/933.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly beneath the sign TRAFFIC on the wooden utility pole?",
+      "ground_truth": "DETOUR [entity_003] directly beneath TRAFFIC [entity_002]",
+      "prediction": "The sign located directly beneath the \"TRAFFIC\" sign on the wooden utility pole is a **red sign with a black arrow pointing left**, indicating that all traffic should turn left.",
+      "inference_time_sec": 6.468,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street or regulatory signs are visible on the wooden utility pole and the adjacent signpost combined?",
+      "ground_truth": "5",
+      "prediction": "There are **three** distinct street or regulatory signs visible on the wooden utility pole and the adjacent signpost combined.\n\nHere's the breakdown:\n\n1.  **\"ALL TRAFFIC\" sign** – This is a white rectangular sign with black text and a black arrow pointing left. It is mounted on the wooden utility pole.\n2.  **\"NO PARKING\" sign** – This is a red rectangular sign with white text and a white \"P\" crossed out. It is mounted directly below the \"ALL TRAFFIC\" sign on the same utility pole.\n3.  **\"ONE WAY\" sign** – This is",
+      "inference_time_sec": 13.568,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs on the adjacent signpost are encountered after the vehicle completes its turn?",
+      "ground_truth": "1st: 56\"Road [entity_004], 2nd: ANYTIME [entity_005]",
+      "prediction": "After the vehicle completes its turn, the order in which the signs on the adjacent signpost are encountered is:\n\n1. **ALL TRAFFIC** sign (white background with black text and arrow pointing left)\n2. **NO PARKING** sign (red background with white text and a red circle with a diagonal line through it)\n3. **NO STANDING** sign (red background with white text and a red circle with a diagonal line through it)\n\nThis sequence is based on the visual progression as the vehicle moves forward after turning, with the signs appearing in that specific order from top to bottom on the signpost.",
+      "inference_time_sec": 13.244,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What detour instruction is displayed on the wooden utility pole at the T-junction?",
+      "ground_truth": "ALL [entity_001] TRAFFIC [entity_002] DETOUR [entity_003]",
+      "prediction": "The detour instruction displayed on the wooden utility pole at the T-junction is \"ALL TRAFFIC\" with an arrow pointing to the left.",
+      "inference_time_sec": 5.878,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a detour sign, concrete barriers, orange barrels, and a light tower, what type of zone is this?",
+      "ground_truth": "Active road construction zone",
+      "prediction": "This is a **construction zone**.\n\nHere’s why:\n\n- **Detour Sign**: Clearly indicates that the normal route is blocked or altered, which is standard in construction areas.\n- **Concrete Barriers and Orange Barrels**: These are common safety and traffic control devices used to direct traffic, block off hazardous areas, and warn drivers of upcoming changes or obstacles.\n- **Light Tower**: Often used at construction sites to provide illumination for workers and equipment during night shifts or in low-light conditions.\n\nTogether, these elements strongly suggest that the area is under active construction or renovation, requiring traffic redirection and safety measures.",
+      "inference_time_sec": 13.163,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the signs visible along the road?",
+      "ground_truth": "English",
+      "prediction": "The text on the signs visible along the road is in English.",
+      "inference_time_sec": 4.596,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the sign 56\"Road first become visible to the camera?",
+      "ground_truth": "0.833s for 56\"Road [entity_004]",
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.764,
+      "error": ""
+    }
+  ]
+}

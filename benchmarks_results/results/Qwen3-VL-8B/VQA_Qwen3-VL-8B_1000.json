@@ -1,0 +1,70 @@
+{
+  "video_id": 1000,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/1000.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle drives forward from the wrapping business at 0.0s, what is the spatial position of the HOME TILE CENTER SHOWROOM relative to the LETTERS & WRAPS SIGN?",
+      "ground_truth": "To the right of LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001]",
+      "prediction": "At 0.0 seconds, the HOME TILE CENTER SHOWROOM is located to the right of the LETTERS & WRAPS SIGN.",
+      "inference_time_sec": 5.579,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers, such as phone numbers or license plates, are mentioned in the clip?",
+      "ground_truth": "3",
+      "prediction": "2",
+      "inference_time_sec": 3.487,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle passes the LETTERS & WRAPS SIGN and the HOME TILE CENTER?",
+      "ground_truth": "1st: LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001], 2nd: HOME [entity_011] TILE [entity_009] CENTER [entity_008]",
+      "prediction": "The vehicle passes the LETTERS & WRAPS SIGN first, then the HOME TILE CENTER.",
+      "inference_time_sec": 4.852,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving constraint or warning, and where is it located?",
+      "ground_truth": "DO NOT BLOCK [entity_019] on the ACTIVE [entity_018] DRIVE WAY [entity_017]",
+      "prediction": "Yes, there is visible text indicating a driving constraint or warning. The text “SPEED LIMIT 30” is located on a sign on the left side of the road, near the traffic light. This sign indicates a speed limit constraint for drivers in that area.",
+      "inference_time_sec": 7.813,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefronts and commercial vehicles, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial strip",
+      "prediction": "This clip depicts a **dense urban commercial driving environment**, likely in a major city such as New York City, given the visual cues:\n\n- **High density of storefronts**: The video shows a continuous row of commercial businesses — including “Vehicle Letters & Wraps,” “Home Tile Center,” and “TOTO” (a well-known bathroom fixture brand). This indicates a commercial corridor or downtown area with high foot and vehicle traffic.\n  \n- **Heavy commercial vehicle presence**: Multiple vans (including a white Ford Transit van and another white van with “S. DONADIC INC.” branding) are visible, suggesting a high volume of delivery,",
+      "inference_time_sec": 13.553,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the storefronts and vehicles written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the storefronts and vehicles is written in English.",
+      "inference_time_sec": 4.975,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the LETTERS & WRAPS SIGN visible before transitioning to the HOME TILE CENTER?",
+      "ground_truth": "0.0s to 1.133s",
+      "prediction": "The LETTERS & WRAPS SIGN is visible from 0:00 to 0:01. It transitions to the HOME TILE CENTER at 0:02.",
+      "inference_time_sec": 6.464,
+      "error": ""
+    }
+  ]
+}

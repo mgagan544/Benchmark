@@ -1,0 +1,70 @@
+{
+  "video_id": 974,
+  "model": "InternVL3-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/974.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark is located to the left of the yellow directional sign pointing to Terminal C?",
+      "ground_truth": "Hilton [entity_003] to the left of Terminal [entity_004] C",
+      "prediction": "A tall building.",
+      "inference_time_sec": 3.349,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct destinations are listed to the right of the Food and Gas signs?",
+      "ground_truth": "4",
+      "prediction": "Three",
+      "inference_time_sec": 2.388,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the Hilton hotel, the Terminal C sign, and the Clellan street exit sign are encountered by the vehicle?",
+      "ground_truth": "1st: Hilton [entity_003], 2nd: Terminal [entity_004] C, 3rd: Clellan [entity_007]",
+      "prediction": "The vehicle first encounters the Hilton hotel, then the Terminal C sign, and finally the Clellan street exit sign.",
+      "inference_time_sec": 3.557,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instruction is given to drivers on the overhead green gantry signs directing to Newark Airport?",
+      "ground_truth": "USE BOTH LANES [entity_011]",
+      "prediction": "The green gantry signs direct drivers to the Newark airport.",
+      "inference_time_sec": 3.012,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by signs for airport terminals, parking, and rental car returns?",
+      "ground_truth": "Airport access highway",
+      "prediction": "The signs suggest that the driver is approaching an airport or a transportation hub.",
+      "inference_time_sec": 3.129,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific airport is indicated by the overhead green directional signs?",
+      "ground_truth": "Newark Airport [entity_012]",
+      "prediction": "The airport indicated by the overhead green directional signs is baltimore/washington international airport.",
+      "inference_time_sec": 3.259,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "Between what timestamps is the yellow directional sign for Terminal C visible to the driver?",
+      "ground_truth": "2.3 seconds to 3.433 seconds",
+      "prediction": "10-15 seconds",
+      "inference_time_sec": 2.706,
+      "error": ""
+    }
+  ]
+}

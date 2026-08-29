@@ -1,0 +1,70 @@
+{
+  "video_id": 969,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/969.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the text Prospect?",
+      "ground_truth": "Expwy [entity_001] to the right of Prospect [entity_002]",
+      "prediction": "The readable text located directly to the right of the text \"Prospect\" is \"Expwy\".",
+      "inference_time_sec": 5.112,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances first come into view or are detected between 2.1 and 2.8 seconds?",
+      "ground_truth": "3",
+      "prediction": "Between 2.1 and 2.8 seconds, there is one distinct, legible text instance that comes into view: \"Prospect Expwy.\"",
+      "inference_time_sec": 5.681,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of detection for the signs Prospect and EXIT 24?",
+      "ground_truth": "1st: Prospect [entity_002], 2nd: EXIT 24 [entity_003]",
+      "prediction": "The order of detection for the signs \"Prospect\" and \"EXIT 24\" in the image is as follows:\n\n1. The sign \"Prospect Expwy\" is detected first, as it is positioned above the road and is clearly visible.\n2. The sign \"EXIT 24\" is detected second, as it is located further down the road and is also clearly visible.\n\nSo, the order is: \"Prospect Expwy\" followed by \"EXIT 24\".",
+      "inference_time_sec": 9.528,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific vehicle types are restricted from the left lane according to the white regulatory sign?",
+      "ground_truth": "TRUCKS [entity_009], BUSES [entity_010], and TRAILERS [entity_011]",
+      "prediction": "The white regulatory sign on the right side of the highway indicates that trucks, buses, and large vehicles are restricted from using the left lane. This is typically done to ensure that smaller vehicles have priority in the left lane for merging onto other highways or for accessing exits, while larger vehicles can safely use the right lane.",
+      "inference_time_sec": 7.606,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of directional signs, exit indicators, and lane restrictions suggest about the driving environment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of directional signs, exit indicators, and lane restrictions in the image suggests that the driving environment is complex and requires careful attention from drivers. The presence of multiple signs pointing to different destinations (such as \"Prospect Expwy\" and \"Verrazano Br Staten Is\") indicates that this is likely a major highway or an intercity road where drivers need to make significant route changes. \n\nThe exit indicators help drivers prepare for upcoming exits, which is crucial for maintaining safety and preventing accidents. The lane restrictions, such as the \"TRUCKS USE RIGHT LANE\" sign, ensure that larger vehicles can navigate the highway safely without",
+      "inference_time_sec": 11.087,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge and island names visible on the directional signs suggest the vehicle is in the New York City area?",
+      "ground_truth": "Verrazano Br [entity_008] and Staten Is [entity_005]",
+      "prediction": "The directional signs in the image mention \"Verrazano Br\" and \"Staten Is,\" which indicate that the vehicle is likely on the Verrazano-Narrows Bridge, which connects Staten Island to Brooklyn over the Narrows strait between Staten Island and Brooklyn in New York City. The Verrazano-Narrows Bridge is a significant landmark in the New York City area.",
+      "inference_time_sec": 8.497,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the distant skyline advertisement text PEPSI first become visible?",
+      "ground_truth": "4.533 seconds",
+      "prediction": "The distant skyline advertisement text \"PEPSI\" becomes visible at approximately 0:15 seconds into the video.",
+      "inference_time_sec": 5.414,
+      "error": ""
+    }
+  ]
+}

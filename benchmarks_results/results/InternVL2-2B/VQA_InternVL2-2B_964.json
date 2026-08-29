@@ -1,0 +1,70 @@
+{
+  "video_id": 964,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/964.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What overhead sign is located to the right of the exit sign for E 138 St?",
+      "ground_truth": "Macombs [entity_003] Dam [entity_002] and E 161 St [entity_001] to the right of E 138 St [entity_005]",
+      "prediction": "The overhead sign located to the right of the exit sign for E 138 St is a green sign with white lettering that reads \"MADISON AVE BR 1 M E BR.\"",
+      "inference_time_sec": 5.313,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the white commercial pickup truck?",
+      "ground_truth": "10",
+      "prediction": "There are three distinct text instances mounted on the white commercial pickup truck. The first is the word \"LONGO,\" which is repeated twice on the side of the truck. The second instance is \"REPAIR,\" which is also repeated twice. The third instance is \"PHOTOGRAPHY,\" which is displayed once on the side of the truck.",
+      "inference_time_sec": 5.879,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What text is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass?",
+      "ground_truth": "WORK [entity_008] ZONE [entity_009] SPEED [entity_010] LIMIT [entity_011] 35",
+      "prediction": "The text visible on the left side of the highway right before the vehicle passes the green pedestrian overpass reads \"WORK ZONE SPEED LIMIT 35.\"",
+      "inference_time_sec": 4.177,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the concrete median barrier restricts certain vehicles from using the left lane?",
+      "ground_truth": "TRUCKS [entity_025], BUSES [entity_026], and TRAILERS [entity_027] from the LEFT LANE [entity_028]",
+      "prediction": "The text on the concrete median barrier restricts certain vehicles from using the left lane. It reads \"NO TRUCKS, TRAILERS, VEHICLES, OR CARS\" and \"SPEED LIMIT 35.\"",
+      "inference_time_sec": 4.816,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, route shields, and speed limit signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The driving environment depicted in the video is a typical urban highway with a mix of commercial and residential areas. The presence of overhead exit signs, route shields, and speed limit signs indicates that this is a well-organized roadway with clear traffic management. The signs suggest that the road is part of a larger network, possibly a highway or a major road, where drivers are expected to adhere to specific speed limits and exit routes. The environment is likely to be busy, with a mix of vehicles, including commercial trucks and personal cars, indicating a high-traffic area.",
+      "inference_time_sec": 7.759,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and bridge names visible in the clip suggest the setting is in New York City?",
+      "ground_truth": "E 138 St [entity_005], Madison [entity_006] Ave Br [entity_007], and W 161 St [entity_013]",
+      "prediction": "The street names and bridge names visible in the clip suggest the setting is in New York City due to the presence of the \"Madison Ave Br\" and \"E 161 St\" signs, which are typical of New York City's roadways. Additionally, the green street sign with the name \"W 161 St\" is a common feature in New York City, indicating a specific street within the city. The bridge's name, \"Mackins Crossing,\" is also indicative of New York City, as it is a well-known bridge in the area. These elements collectively point to the location being in New York City.",
+      "inference_time_sec": 8.36,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the white pickup truck's contact number visible in the clip?",
+      "ground_truth": "0.833 to 4.267 seconds",
+      "prediction": "The white pickup truck's contact number is visible in the clip as a phone number displayed on the back of the truck. The specific time range for this phone number is not clear from the video alone, as the phone number is not highlighted or emphasized in any way. It is simply part of the truck's branding and is not part of the visual content of the video.",
+      "inference_time_sec": 6.078,
+      "error": ""
+    }
+  ]
+}

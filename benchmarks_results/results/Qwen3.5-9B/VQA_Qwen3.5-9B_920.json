@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What yellow clearance warning text is located directly to the right of the overhead sign containing Terminals?",
       "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
-      "prediction": "The user wants me to identify specific text from the video.\n\n1.  **Locate the overhead sign:** I need to find the green overhead sign that mentions \"Terminals\". Looking at the frames, specifically around 00:02 and 00:03, there is a large green sign structure spanning the road.\n2.  **Identify the \"Terminals\" part:** The sign has three main panels.\n    *   Left panel: \"Central Terminal Arriving Flights\"\n    *   Middle panel: \"Central Terminal Departing Flights\"\n    *   Right panel: \"",
-      "inference_time_sec": 13.226,
+      "prediction": "CLEARANCE 11'-0\"",
+      "inference_time_sec": 3.501,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct license plates are visible on vehicles in this clip?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the distinct license plates visible on vehicles in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify vehicles and their license plates.\n    *   **Frame 1 (00:00):**\n        *   There's a black car in the center lane. Its license plate is visible. It looks like a New York plate. Let's call this Plate 1.\n        *   There's a white car further ahead in the left lane. It's blurry, but a plate might be visible. Wait, looking closer at the next frame.",
-      "inference_time_sec": 13.244,
+      "prediction": "3",
+      "inference_time_sec": 2.847,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of the first three distinct vehicle-mounted text instances encountered on the NYPD cruiser?",
       "ground_truth": "1st POLICE [entity_002], 2nd 50341 [entity_003], 3rd PLOW [entity_005]",
-      "prediction": "The user wants me to identify the order of text on an NYPD cruiser.\n\n1.  **Scan the video for an NYPD cruiser.**\n    *   00:00 - 00:01: No police car visible. Just regular cars.\n    *   00:02: A white police car appears on the left side of the frame. It's an NYPD cruiser.\n    *   00:03: The police car is still visible on the left, but it's moving out of frame or the camera is panning away. Wait, looking closely at 0",
-      "inference_time_sec": 13.278,
+      "prediction": "50341\nP\nP",
+      "inference_time_sec": 3.485,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What warning text on the yellow sign indicates a height restriction for vehicles passing under the gantry?",
       "ground_truth": "CLEARANCE [entity_018] 11-0 [entity_019]",
-      "prediction": "The user wants to identify a specific warning text on a yellow sign.\n1.  **Scan the video for yellow signs:** I see a large green overhead sign structure. Above the green signs, there are smaller yellow signs.\n2.  **Locate the specific sign:** In the frames around 00:03 and 00:04, as the car approaches the gantry, there is a yellow sign centered above the green signs.\n3.  **Read the text:** Zooming in on that yellow sign in the clearest frame (around 00:03), the text reads \"",
-      "inference_time_sec": 13.273,
+      "prediction": "CLEARANCE 11'-0\"",
+      "inference_time_sec": 3.444,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of facility does the mix of overhead and roadside signs indicate the vehicle is approaching?",
       "ground_truth": "Airport terminal area",
-      "prediction": "The user wants to identify the type of facility the vehicle is approaching based on the signs in the video.\n\n1.  **Analyze the overhead signs:**\n    *   At 00:03, there are large green overhead signs.\n    *   The left sign says \"Central Terminal Arriving Flights\".\n    *   The middle sign says \"Central Terminal Departing Flights\".\n    *   The right sign says \"Daily Pkg Wait Area\" and \"Airport Exit\".\n    *   There are also smaller signs below indicating \"B\" and \"C\" terminals.\n\n2.  **",
-      "inference_time_sec": 13.321,
+      "prediction": "Airport",
+      "inference_time_sec": 2.832,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which city's police department is indicated by the markings on the parked patrol cruiser?",
       "ground_truth": "New York City",
-      "prediction": "The user wants to identify the city's police department based on the markings on a parked patrol cruiser.\n\n1.  **Scan the video for a police car.**\n    *   In the first few frames (00:00 - 00:01), I see a black car and a grey car driving. No police car.\n    *   At 00:02, a white police car appears on the left side of the frame, parked or stopped near the construction barriers.\n    *   Let's look closely at the markings on this car.\n    *   The car is white with",
-      "inference_time_sec": 13.251,
+      "prediction": "New York",
+      "inference_time_sec": 2.918,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the license plate N202894C first become visible in the travel lane?",
       "ground_truth": "2.933 seconds for N202894C [entity_001]",
-      "prediction": "The user wants to find the timestamp when the license plate N202894C first becomes visible.\n\n1.  **Analyze the video frames:** I need to look at the sequence of images provided.\n2.  **Frame 00:00:** I see a black car ahead. The license plate is visible but blurry. It looks like it ends in 94C. Let's look closer. It's partially visible.\n3.  **Frame 00:01:** The car is closer. The license plate is clearer. It reads N202894C",
-      "inference_time_sec": 13.175,
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.047,
       "error": ""
     }
   ]

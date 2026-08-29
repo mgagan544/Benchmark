@@ -1,0 +1,70 @@
+{
+  "video_id": 981,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/981.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What temporary sign is located to the left of the concrete retaining wall on the shoulder beneath the overpass?",
+      "ground_truth": "TRS [entity_009] NOW [entity_010] OPEN [entity_011] to the left of the concrete retaining wall",
+      "prediction": "To the left of the concrete retaining wall on the shoulder beneath the overpass, there is a temporary sign that reads 'EXIT 400'. This sign is likely indicating the direction to Las Vegas, providing drivers with an alternative route if they are heading towards Henderson.",
+      "inference_time_sec": 5.59,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct overhead highway signs or route markers are mentioned on the two overpasses?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct overhead highway signs or route markers mentioned on the two overpasses.",
+      "inference_time_sec": 3.814,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the SPEED LIMIT sign, the RTC transit sign, and the TRS NOW OPEN sign are encountered by the vehicle?",
+      "ground_truth": "1st: SPEED [entity_001] LIMIT [entity_002], 2nd: RTC [entity_008], 3rd: TRS [entity_009] NOW [entity_010] OPEN [entity_011]",
+      "prediction": "The vehicle first encounters the SPEED LIMIT sign, followed by the RTC transit sign, and finally the TRS NOW OPEN sign.",
+      "inference_time_sec": 4.221,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed at the beginning of the clip?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
+      "prediction": "At the beginning of the clip, the regulatory text '55' on the right side of the road indicates the speed limit for that lane. This text serves as a regulatory constraint for the vehicle's speed, ensuring that the speed does not exceed the specified limit of 55 mph.",
+      "inference_time_sec": 5.239,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multi-lane overhead gantries, route markers, and speed limit signs, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a well-maintained highway with multiple lanes, designed for high-speed travel. The presence of overhead gantries, route markers, and speed limit signs indicates that this is a regulated highway, likely in a region where such infrastructure is common, such as the United States. The environment appears to be designed for efficient traffic flow, with clear signage to guide drivers to their destinations.",
+      "inference_time_sec": 6.367,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional cities or destinations are indicated by the overhead highway signs?",
+      "ground_truth": "Henderson [entity_005] and Las Vegas [entity_007]",
+      "prediction": "The overhead highway signs indicate directions to regional cities or destinations such as Henderson and Las Vegas.",
+      "inference_time_sec": 3.564,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the SPEED LIMIT sign first become legible to the vehicle?",
+      "ground_truth": "0.3 seconds",
+      "prediction": "The SPEED LIMIT sign first becomes legible to the vehicle at the timestamp of 7:00.",
+      "inference_time_sec": 3.709,
+      "error": ""
+    }
+  ]
+}

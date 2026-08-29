@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "As the vehicle moves forward, CHECKSCASH is positioned to the right of SHED.",
+      "inference_time_sec": 5.602,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "Between 4.0 and 7.0 seconds, the vehicle encounters two distinct, legible text instances. The first is the \"Hunts Point\" sign on the left side of the road, and the second is the \"Bronx Terminal\" sign on the right side of the road.",
+      "inference_time_sec": 8.879,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "As the vehicle moves forward, the storefronts SHED, boost, and CHECKSCASH are encountered in the following order: SHED is first, followed by boost, and then CHECKSCASH.",
+      "inference_time_sec": 7.153,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The traffic regulator sign located to the right of the signboard displaying \"4CAR\" implies that the traffic light is currently showing a red signal for the cars on the right side of the road. This is indicated by the red light visible on the traffic light, which is a standard traffic regulator sign used to control the flow of vehicles at intersections.",
+      "inference_time_sec": 9.304,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The presence of storefronts such as SHED, boost, and MARKET suggests a commercial area with a variety of businesses. This indicates that the driving environment is likely in a city or town where there is a mix of residential and commercial properties. The density of these businesses implies that the area is bustling and possibly frequented by both locals and visitors. The variety of storefronts also suggests that the area caters to a diverse range of needs and interests, which is typical of urban or suburban commercial districts.",
+      "inference_time_sec": 11.97,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The street name \"Broadway\" and the phone area code \"212\" suggest that this clip is filmed in New York City.",
+      "inference_time_sec": 6.315,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The vehicle passes the storefront of SHED, located to the right of CHECKSCASH, at the timestamp when the traffic light turns green, allowing the car to proceed.",
+      "inference_time_sec": 6.634,
+      "error": ""
+    }
+  ]
+}

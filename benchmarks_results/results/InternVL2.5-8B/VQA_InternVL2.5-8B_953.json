@@ -1,0 +1,70 @@
+{
+  "video_id": 953,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/953.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly below the REWARDS sign on the main promotion board?",
+      "ground_truth": "STATUS [entity_002] sign directly below REWARDS [entity_003] sign",
+      "prediction": "Directly below the REWARDS sign on the main promotion board, there is a sign that reads 'GOLD SHOPPING'. This sign is part of the promotional material for the gas station and is positioned to attract the attention of potential customers.",
+      "inference_time_sec": 9.381,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct fuel price text instances are displayed on the gas station signs during the clip?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct fuel price text instances displayed on the gas station signs during the clip. The first sign shows 'Regular Gasoline $2.59' and the second sign shows 'Regular Gasoline $2.59' as well.",
+      "inference_time_sec": 9.225,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the price signs showing 3591 and 359 are encountered?",
+      "ground_truth": "1st: 3591 [entity_006], 2nd: 359 [entity_007]",
+      "prediction": "The price signs showing 3591 and 359 are encountered in the following order: first, the sign showing 3591 is seen as the car approaches the intersection, and then, as the car moves forward, the sign showing 359 becomes visible.",
+      "inference_time_sec": 9.324,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Is there any directional or instructional text that a driver must act on near the Shell Gas Station?",
+      "ground_truth": "None is present",
+      "prediction": "Yes, there is a sign near the Shell Gas Station that reads 'NO TURN ON RED', which is a directional instruction for drivers to follow.",
+      "inference_time_sec": 8.171,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a gas station, tire shop, and sheet metal business?",
+      "ground_truth": "Commercial district",
+      "prediction": "The presence of a gas station, tire shop, and sheet metal business suggests a commercial driving environment. These establishments are typically found in urban or suburban areas where there is a mix of commercial and residential properties. The gas station indicates a place where vehicles can refuel, the tire shop suggests a location where vehicle maintenance is available, and the sheet metal business implies a place where metal fabrication and repair services are provided. This combination of businesses is common in areas that serve as transit points or hubs for local commerce, catering to the needs of both residents and travelers.",
+      "inference_time_sec": 13.09,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language is the text on the Action Sheetmetal building written?",
+      "ground_truth": "English",
+      "prediction": "The text on the Action Sheetmetal building is written in English.",
+      "inference_time_sec": 7.146,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range do the flat fix related signs first become visible in the clip?",
+      "ground_truth": "From 9.5 seconds onwards",
+      "prediction": "The flat fix related signs first become visible in the clip between the timestamps of 00:00:00:00 and 00:00:00:04.",
+      "inference_time_sec": 8.242,
+      "error": ""
+    }
+  ]
+}

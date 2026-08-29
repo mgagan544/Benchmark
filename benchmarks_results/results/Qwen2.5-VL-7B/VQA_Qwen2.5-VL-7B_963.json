@@ -1,0 +1,70 @@
+{
+  "video_id": 963,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/963.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is visible on the orange sign located to the left of the EXIT 3 marker across the lanes?",
+      "ground_truth": "WORK [entity_015] ZONE [entity_016]",
+      "prediction": "The orange sign located to the left of the EXIT 3 marker across the lanes has the text \"SPEED LIMIT 35\" visible on it.",
+      "inference_time_sec": 5.726,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the billboard that comes into view around 4.7 seconds?",
+      "ground_truth": "5",
+      "prediction": "The billboard that comes into view around 4.7 seconds displays the following distinct text instances:\n\n1. \"EXIT 3\"\n2. \"E 138 St\"\n3. \"Madison Ave Br\"\n4. \"1 MILE\"\n5. \"EXIT 5\"\n6. \"E 161 St\"\n7. \"Macombs Dam Br\"\n\nThere are 7 distinct text instances displayed on the billboard.",
+      "inference_time_sec": 8.913,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs for E 138 St and E 161 St are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: E 138 St [entity_008], 2nd: E 161 St [entity_010]",
+      "prediction": "As the vehicle moves forward, the overhead signs for E 138 St and E 161 St are encountered in the following order:\n\n1. The sign for E 138 St appears first.\n2. After passing under the E 138 St sign, the sign for E 161 St appears next.\n\nSo, the order is: E 138 St sign → E 161 St sign.",
+      "inference_time_sec": 9.042,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit constraint is indicated by the regulatory sign passed on the left shoulder at 1.867 seconds?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002] 35",
+      "prediction": "The regulatory sign on the left shoulder indicates a speed limit of 35 mph.",
+      "inference_time_sec": 5.007,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead signs for E 138 St and E 161 St, what type of driving environment is depicted?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of overhead signs for E 138 St and E 161 St indicates that the driving environment is likely an urban or suburban highway with multiple exits leading to different streets. These types of signs are typically found in areas where there are significant road networks and a need for clear guidance to help drivers navigate to their desired destinations efficiently. The signs suggest that this is a well-maintained area with organized traffic flow, possibly near residential or commercial zones.",
+      "inference_time_sec": 9.379,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street and bridge names visible on the overhead signs suggest this clip is filmed in New York City?",
+      "ground_truth": "E 138 St [entity_008] and Madison Ave Br [entity_009]",
+      "prediction": "The overhead signs in the video display street and bridge names that are characteristic of New York City. Specifically, the signs mention \"E 138 St,\" \"Madison Ave Br,\" \"E 161 St,\" and \"Macombs Dam Br.\" These names correspond to actual streets and bridges in New York City, further confirming that the video was filmed in the city.",
+      "inference_time_sec": 8.322,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible?",
+      "ground_truth": "Near 7.4 seconds",
+      "prediction": "The signs displaying \"1 MILE,\" \"EXIT,\" and \"EXIT 3\" become fully legible at approximately 4 seconds into the video.",
+      "inference_time_sec": 5.584,
+      "error": ""
+    }
+  ]
+}

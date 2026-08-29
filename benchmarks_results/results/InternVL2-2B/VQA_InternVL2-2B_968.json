@@ -1,0 +1,70 @@
+{
+  "video_id": 968,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/968.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located directly below the street signs for Hancock and Evergreen?",
+      "ground_truth": "ONE WAY [entity_004] below Hancock [entity_006] and Evergreen [entity_007]",
+      "prediction": "Directly below the street signs for Hancock and Evergreen, there is a regulatory sign that reads \"No Parking\" in white letters on a red background.",
+      "inference_time_sec": 5.095,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this scene represent storefront names, commercial advertisements, or business contact details?",
+      "ground_truth": "8",
+      "prediction": "There are three distinct text instances in the scene that represent storefront names, commercial advertisements, or business contact details. The first is the \"FOOD CORP\" sign on the left side of the street, the second is the \"Laundry\" sign on the right side, and the third is the \"P\" logo on the right side of the street.",
+      "inference_time_sec": 6.052,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance for the regulatory ONE WAY sign, the signboard FOODCORP., and the contact number 718-443-7192?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: FOODCORP. [entity_011], 3rd: 718-443-7192 [entity_013]",
+      "prediction": "The order of appearance for the regulatory ONE WAY sign, the signboard FOODCORP., and the contact number 718-443-7192 is as follows:\n\n1. The ONE WAY sign is placed at the intersection of the street.\n2. The signboard FOODCORP. is positioned on the left side of the intersection.\n3. The contact number 718-443-7192 is displayed on the signboard FOODCORP.",
+      "inference_time_sec": 6.897,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is implied at the starting intersection?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The driving action implied at the starting intersection is a stop. This is indicated by the large white \"STOP\" sign painted on the road, which is a universal sign for vehicles to come to a complete stop before proceeding.",
+      "inference_time_sec": 4.775,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefront signs, food advertisements, and street signs, what kind of driving environment is depicted?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The driving environment depicted in the video is a bustling urban area with a high density of commercial establishments. The presence of multiple storefront signs, including one for a food company, suggests a commercial district where businesses are likely to be open and active. The street signs, such as the \"STOP\" sign and the \"FOOD CORP\" sign, indicate that the area is regulated and navigated by traffic rules. The variety of storefronts and the density of signage imply a vibrant, possibly tourist-friendly area where pedestrians and vehicles coexist. The overall impression is of a lively, commercial street with a focus on commerce and",
+      "inference_time_sec": 8.384,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text instance suggests the region or city where this clip was recorded?",
+      "ground_truth": "718-443-7192 [entity_013]",
+      "prediction": "The text \"FOOD CORP\" on the blue storefront sign suggests that the clip was recorded in a region where this type of business is common, likely in the United States. The presence of a \"STOP\" sign in the middle of the street also indicates that the area is in a city where traffic control is regulated, which is common in many urban areas. The architecture of the buildings, the style of the cars, and the overall layout of the street are consistent with a city setting in the United States.",
+      "inference_time_sec": 7.406,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the street signs for Hancock and Evergreen come into clearer view?",
+      "ground_truth": "1.333s - 2.033s",
+      "prediction": "The street signs for Hancock and Evergreen come into clearer view as the video progresses. Initially, the signs are partially obscured by the vehicles and the pedestrian crossing, but as the video continues, the signs become more visible and legible.",
+      "inference_time_sec": 5.065,
+      "error": ""
+    }
+  ]
+}

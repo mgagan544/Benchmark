@@ -1,0 +1,70 @@
+{
+  "video_id": 917,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/917.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
+      "ground_truth": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane",
+      "prediction": "The pavement marking showing \"AXI\" is located on the left side of the road, near the center of the image. It appears to be a designated area or lane, possibly for a specific purpose such as parking or a taxi stand, indicated by the \"AXI\" marking. The \"AXI\" marking is typically used in airports to designate areas where taxis can pick up passengers.",
+      "inference_time_sec": 8.37,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "In the video, there are several distinct pavement and infrastructure markings visible on the roadway. Here's a breakdown:\n\n1. **White dashed lines**: These are visible on the left side of the road, indicating a lane divider.\n2. **White solid lines**: These are visible on the right side of the road, likely indicating the edge of the lane.\n3. **Yellow diamond-shaped signs**: There are multiple yellow diamond-shaped signs with black arrows pointing to the right, indicating a turn or lane change ahead.\n4. **Blue signs**: There are blue signs with white text, which appear to be directional signs, but their specific content is",
+      "inference_time_sec": 11.114,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
+      "ground_truth": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'",
+      "prediction": "The video shows the vehicle moving through an airport terminal, passing under various signs and markings. The pavement markings '03', 'AXI', and '06' appear in that specific order as the vehicle progresses along the road. Here's the sequence:\n\n1. The vehicle first encounters the pavement marking '03'.\n2. Following '03', it then encounters the pavement marking 'AXI'.\n3. Finally, the vehicle sees the pavement marking '06'.\n\nThis sequence is consistent with the video footage provided.",
+      "inference_time_sec": 9.985,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
+      "ground_truth": "TAXI [entity_001]",
+      "prediction": "The text on the pavement that designates the lane reserved for specific transport vehicles on the left is \"Shuttle Bus.\" This is indicated by the sign on the left side of the road, which reads \"Shuttle Bus\" and points to the left lane.",
+      "inference_time_sec": 6.937,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
+      "ground_truth": "Airport terminal arrival area",
+      "prediction": "The environment depicted in the image is an airport terminal. The presence of taxi lanes indicates that this area is designated for vehicles to drop off passengers, which is typical in airport settings. Terminal seating suggests that there are areas where passengers can wait, which is common in airports. Additionally, the airline signage further confirms that this is an airport, as airlines use such signage to direct passengers to their respective gates or check-in counters.",
+      "inference_time_sec": 8.712,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the airline signage and pavement markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The airline signage and pavement markings in the scene appear to be in English. The signs include words like \"Terminal\" and \"Gate,\" which are commonly used in English-speaking airports. Additionally, the pavement markings such as \"Taxiway\" and directional arrows are also typically in English.",
+      "inference_time_sec": 7.124,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
+      "ground_truth": "4.1 seconds",
+      "prediction": "The pavement marking showing \"AXI\" is visible in the video, but it's not clear from the provided image alone when the host vehicle passes this marking. To determine the exact timestamp, you would need to refer to the video timeline or have additional context about the sequence of events captured in the video. If you have access to the full video, you can look for the moment where the \"AXI\" marking becomes visible and note the corresponding timestamp.",
+      "inference_time_sec": 9.077,
+      "error": ""
+    }
+  ]
+}

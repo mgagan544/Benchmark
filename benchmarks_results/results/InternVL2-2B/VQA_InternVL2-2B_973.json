@@ -1,0 +1,70 @@
+{
+  "video_id": 973,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/973.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the Harrison sign?",
+      "ground_truth": "ANY [entity_004] and TIME [entity_005] below Harrison [entity_003]",
+      "prediction": "The text located directly below the Harrison sign reads \"PUBLIC PARKING.\"",
+      "inference_time_sec": 4.066,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are passed by the vehicle on the right side of the road between 0.0s and 2.0s?",
+      "ground_truth": "5",
+      "prediction": "Between 0.0s and 2.0s, there are two distinct text instances passed by the vehicle on the right side of the road. One is a yellow sign with black text that reads \"PUBLIC PARKING,\" and the other is a yellow sign with black text that reads \"NO PARKING.\"",
+      "inference_time_sec": 5.723,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the parking signs and advertisements visible between 3.5s and 6.4s?",
+      "ground_truth": "1st: PUBLIC [entity_006] PARKING [entity_007], 2nd: eaze [entity_008], 3rd: FLAT RATE [entity_009], 4th: WEEK [entity_010]",
+      "prediction": "Between 3.5 seconds and 6.4 seconds, the parking signs and advertisements are visible in the following order: The yellow sign with the word \"PUBLIC\" is first, followed by the sign with the number \"1\" and the word \"PARKING,\" and then the sign with the number \"2\" and the word \"PARKING.\" The advertisement for \"HOTEL\" is also visible, but it is not clear if it is part of the same sequence or if it is a separate advertisement.",
+      "inference_time_sec": 7.424,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed near the end of the clip to alert drivers about the bridge?",
+      "ground_truth": "CAUTION [entity_012] VERTOCAL [entity_013] BRIDGE [entity_014] VERTICAL [entity_015] CLEARANCE [entity_016]",
+      "prediction": "Near the end of the clip, there is a yellow sign with black text that reads \"PUBLIC PARKING ONLY\" to alert drivers that parking is restricted on the bridge.",
+      "inference_time_sec": 4.405,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of parking rates, advertisements, and a highway overpass?",
+      "ground_truth": "urban commercial zone under highway overpass",
+      "prediction": "The presence of parking rates, advertisements, and a highway overpass suggests a busy urban environment. The parking rates indicate a high demand for parking spaces, which is common in densely populated areas. The advertisements, particularly the one for a hotel, imply a commercial area with businesses catering to the needs of travelers. The highway overpass indicates that the area is likely a major thoroughfare, which is typical of urban settings where traffic is high and infrastructure supports a significant volume of vehicles.",
+      "inference_time_sec": 6.966,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the legible signs in this scene?",
+      "ground_truth": "English",
+      "prediction": "The language used for all the legible signs in this scene is Chinese.",
+      "inference_time_sec": 3.488,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the advertisement for eaze visible in the clip?",
+      "ground_truth": "3.5s to 4.067s",
+      "prediction": "The advertisement for eaze is visible in the clip during the middle of the video. It is positioned on a building across the street from the car, and its text is legible, although the specific details of the advertisement are not clear due to the resolution and distance.",
+      "inference_time_sec": 5.214,
+      "error": ""
+    }
+  ]
+}

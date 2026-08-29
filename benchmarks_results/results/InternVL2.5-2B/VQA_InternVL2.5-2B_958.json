@@ -1,0 +1,70 @@
+{
+  "video_id": 958,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/958.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+      "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
+      "prediction": "The parking sign to the left of the license registration AT * 665J reads 'PARKING ONLY'.",
+      "inference_time_sec": 3.762,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances on the automotive service building. The first is 'Auto Repair', the second is 'Auto Parts', and the third is 'Auto', which appears to be part of a larger word or phrase that is not fully visible.",
+      "inference_time_sec": 4.994,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+      "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
+      "prediction": "The first text instance on the right side of the street is 'fame', followed by 'fame', and then 'fame'.",
+      "inference_time_sec": 4.022,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+      "ground_truth": "TURNS [entity_010]",
+      "prediction": "The regulatory traffic sign that indicates a driving constraint or instruction is a 'NO STANDING' sign, which is positioned on the right side of the street, directly across from the 'DAK' sign. This sign is typically used to inform drivers that they are not allowed to stand in the designated area, which in this case is likely a no-standing zone, and to instruct them to remain seated or keep their vehicle in the lane.",
+      "inference_time_sec": 6.567,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The storefronts, digital billboards, and commercial signs suggest a bustling urban environment, likely a downtown area of a city. The presence of these elements indicates a commercial zone with businesses catering to pedestrians and drivers alike. The digital billboards are a common feature in urban areas, often used for advertising or public information, while the storefronts suggest retail establishments. The signs, including the 'Auto Repair' sign, point towards a variety of services and products available in this area, which is typical of a city's central business district or a commercial hub. The overall setting is one of organized urban development, designed to accommodate both",
+      "inference_time_sec": 8.343,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+      "ground_truth": "New York City, New York State",
+      "prediction": "The area code '212' and the text 'City of New York' suggest that the video was taken in New York City, specifically in the Bronx.",
+      "inference_time_sec": 4.162,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+      "ground_truth": "0.0s to 0.233s",
+      "prediction": "At the start of the clip, the digital billboard texts THE, DISPLAYERS, and Snycom are tracked within a time range of approximately 0 to 5 seconds.",
+      "inference_time_sec": 4.394,
+      "error": ""
+    }
+  ]
+}

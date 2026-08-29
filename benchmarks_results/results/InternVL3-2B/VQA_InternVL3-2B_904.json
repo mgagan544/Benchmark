@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What street sign text is located beside the price signboard displaying 299, CASH, and 9/10?",
       "ground_truth": "Citrus Ave [entity_008]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.204,
+      "prediction": "The street sign text beside the price signboard displaying 299, CASH, and 9/10 is 'for sale'.",
+      "inference_time_sec": 5.095,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct pieces of text visible in the clip are mounted on the white moving truck?",
       "ground_truth": "2",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.128,
+      "prediction": "two",
+      "inference_time_sec": 2.507,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the moving truck text, the gas station brand, and the cross street sign are encountered?",
       "ground_truth": "1st: BEKINS [entity_003] and USA [entity_004], 2nd: FLYERS [entity_005], 3rd: Citrus Ave [entity_008]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.174,
+      "prediction": "The moving truck text is encountered first, followed by the gas station brand, and finally the cross street sign.",
+      "inference_time_sec": 3.541,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What regulatory text visible at the start of the clip indicates a speed restriction on the roadway?",
       "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.442,
+      "prediction": "The speed limit sign indicates a speed limit of 35 mph.",
+      "inference_time_sec": 3.181,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment does the presence of a gas station, price signboard, and street sign suggest?",
       "ground_truth": "commercial strip",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.238,
+      "prediction": "The presence of a gas station, price signboard, and street sign suggests a commercial or urban area with businesses and traffic regulations.",
+      "inference_time_sec": 3.858,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is the visible text on the speed limit sign and street sign written in?",
       "ground_truth": "English",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.11,
+      "prediction": "The text on the speed limit sign and street sign is written in english.",
+      "inference_time_sec": 3.227,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During what time range does the price board displaying 299, CASH, and 9/10 become clearly visible as the vehicle approaches the intersection?",
       "ground_truth": "7.1 seconds to 8.333 seconds",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.668,
+      "prediction": "The price board displaying 299, CASH, and 9/10 becomes clearly visible as the vehicle approaches the intersection around the 10-second mark. This is when the board is positioned in the right lane, and the vehicle is moving forward, allowing the camera to capture the board's details.",
+      "inference_time_sec": 5.87,
       "error": ""
     }
   ]

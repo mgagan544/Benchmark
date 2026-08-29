@@ -1,0 +1,70 @@
+{
+  "video_id": 980,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/980.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Upper Happy on the overhead sign?",
+      "ground_truth": "Valley Rd [entity_003] directly below Upper Happy [entity_002]",
+      "prediction": "The text located directly below Upper Happy on the overhead sign is 'Acreage Rd'.",
+      "inference_time_sec": 3.514,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the highway signs mentioned in the scene?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances displayed on the highway signs in the scene. The first sign indicates directions to 'Acres Orpheum Superhighway,' the second sign is a yellow diamond-shaped sign with a black border, and the third sign is a white rectangular sign with black lettering.",
+      "inference_time_sec": 5.436,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds?",
+      "ground_truth": "1st: Acalanes Rd [entity_001], Upper Happy [entity_002], Valley Rd [entity_003]; 2nd: EXIT [entity_004]",
+      "prediction": "Starting from the left, the vehicle first encounters a green highway sign indicating 'Acres Ave South' with an arrow pointing right. Following this, the vehicle approaches a yellow diamond-shaped sign with a black arrow pointing right, indicating a merging lane. After passing this sign, the vehicle continues to encounter the green highway sign again, this time with an arrow pointing left, indicating the direction to 'Acres Ave North'.",
+      "inference_time_sec": 6.399,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text, what driving action is indicated near the green gore sign?",
+      "ground_truth": "An exit action is indicated by the EXIT [entity_004] sign.",
+      "prediction": "The green gore sign indicates a merging traffic lane, suggesting that drivers should prepare to merge into the right lane if it is available.",
+      "inference_time_sec": 4.267,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of signs like Acalanes Rd and EXIT suggest?",
+      "ground_truth": "Highway",
+      "prediction": "The mix of signs like Acalanes Rd and EXIT suggests a mixed-use environment, likely indicating the proximity of residential areas to commercial or recreational areas. Acalanes Rd is a major road in Santa Barbara, known for its shopping, dining, and entertainment options. The EXIT sign points towards a possible exit to a nearby park or community, which could be a popular destination for locals and visitors alike. This type of signage is common in areas where roads intersect with residential zones, providing drivers with directions to nearby amenities and attractions.",
+      "inference_time_sec": 8.583,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the overhead and gore signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead and gore signs is written in both English and Spanish.",
+      "inference_time_sec": 3.483,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the vehicle pass the green gore sign displaying EXIT?",
+      "ground_truth": "Between 2.633 and 2.733 seconds for EXIT [entity_004]",
+      "prediction": "The vehicle passes the green gore sign displaying EXIT after the first few seconds of the video, which is after the transition from the first to the second frame.",
+      "inference_time_sec": 4.535,
+      "error": ""
+    }
+  ]
+}

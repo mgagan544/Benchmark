@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "Where is the regulatory sign displaying NO PARKING ANY TIME located relative to the speed limit sign?",
       "ground_truth": "Adjacent to the speed limit sign displaying SPEED [entity_002] and LIMIT [entity_003]",
-      "prediction": "The user wants to know the relative position of the \"NO PARKING ANY TIME\" sign compared to the speed limit sign.\n\n1.  **Identify the signs:**\n    *   **Speed limit sign:** I see a \"SPEED LIMIT 20\" sign on the right side of the road, attached to a pole. It's visible in the frames from 00:00 to 00:04.\n    *   **No Parking sign:** I need to look for a sign that says \"NO PARKING ANY TIME\". Looking at the frames, specifically around 00:00",
-      "inference_time_sec": 13.324,
+      "prediction": "to the right",
+      "inference_time_sec": 2.413,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are visible on the regulatory sign that restricts parking?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the distinct text instances on a specific regulatory sign.\n\n1.  **Identify the sign:** I need to find a \"regulatory sign that restricts parking\". Looking through the frames, specifically around 00:03 and 00:04, there is a white rectangular sign on the right side of the road, near the concrete barrier/wall. It looks like a standard parking restriction sign.\n2.  **Locate the sign:** In frame 00:03 and 00:04, the sign is clearly visible on the right. It's",
-      "inference_time_sec": 12.709,
+      "prediction": "2",
+      "inference_time_sec": 2.248,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of the signs passed on the right side of the road between 00:02 and 00:06?",
       "ground_truth": "1st: SPEED [entity_002] LIMIT [entity_003], 2nd: NO PARKING [entity_004] ANY [entity_005] TIME [entity_006]",
-      "prediction": "The user wants to identify the order of signs passed on the right side of the road between the timestamps 00:02 and 00:06.\n\n1.  **Analyze the video frames:**\n    *   **00:00 - 00:01:** The car is approaching an intersection. There are signs on the left and right, but the question specifies \"between 00:02 and 00:06\". Wait, the timestamps in the prompt are 00:00, 00:01, 00:02,",
-      "inference_time_sec": 12.713,
+      "prediction": "Speed limit 20, School Zone",
+      "inference_time_sec": 2.787,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What painted warning on the road surface indicates a driving constraint as the vehicle drives between 00:02 and 00:03?",
       "ground_truth": "SCHOOL [entity_001] on the road surface",
-      "prediction": "The user wants to identify a painted warning on the road surface visible between 00:02 and 00:03.\n\n1.  **Analyze the frames:**\n    *   **Frame 00:00:** The car is at an intersection. No road markings are clearly visible ahead.\n    *   **Frame 00:01:** The car is driving down a road. There are yellow double lines. Further ahead, there's a sign structure.\n    *   **Frame 00:02:** The car is approaching a sign. On the road surface, the",
-      "inference_time_sec": 12.717,
+      "prediction": "SCHOOL",
+      "inference_time_sec": 2.341,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of single-family homes and the painted road warning, what type of area is this?",
       "ground_truth": "residential school zone",
-      "prediction": "The user wants me to identify the type of area shown in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Houses:** I see single-family homes. They look like typical suburban houses, some with lawns, driveways, and fences. This suggests a residential neighborhood.\n    *   **Road markings:** In the second and third frames, the word \"SCHOOL\" is painted in large white letters on the road surface.\n    *   **Traffic signs:** There are overhead signs (though blurry) and a \"SCHOOL\" sign visible in the distance in the second frame.",
-      "inference_time_sec": 12.72,
+      "prediction": "Residential area",
+      "inference_time_sec": 2.472,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is the text on the road surface and regulatory signs written in?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the text visible on the road and signs.\n\n1.  **Analyze the road surface text:**\n    *   In the frame at `00:01` and `00:02`, the word \"SCHOOL\" is painted in large white letters on the road surface.\n    *   \"SCHOOL\" is an English word.\n\n2.  **Analyze the regulatory signs:**\n    *   In the frame at `00:00`, there is a green street sign on the left. It's partially obscured but looks like a standard US",
-      "inference_time_sec": 12.707,
+      "prediction": "English",
+      "inference_time_sec": 2.268,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range is the regulatory sign indicating NO PARKING ANY TIME visible in the clip?",
       "ground_truth": "00:04 to 00:06",
-      "prediction": "The user wants to find the time range for a specific sign: \"NO PARKING ANY TIME\".\n\n1.  **Analyze the video:** I need to scan the video frames for a sign that says \"NO PARKING ANY TIME\".\n2.  **Frame 1 (00:00):** The car is at an intersection. No clear \"NO PARKING\" sign is prominent. There's a green street sign.\n3.  **Frame 2 (00:01):** The car is driving down a road. There's a sign on the right side, near the concrete wall. It looks",
-      "inference_time_sec": 12.62,
+      "prediction": "0.0 - 0.5 seconds",
+      "inference_time_sec": 2.933,
       "error": ""
     }
   ]

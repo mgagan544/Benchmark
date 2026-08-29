@@ -1,0 +1,70 @@
+{
+  "video_id": 909,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/909.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the THRU road text relative to the LANE road text?",
+      "ground_truth": "To the left of LANE [entity_003]",
+      "prediction": "The THRU road text is positioned to the right of the LANE road text, indicating that vehicles passing through this lane must continue forward without stopping.",
+      "inference_time_sec": 4.083,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct mounted signs are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct mounted signs visible in this clip.",
+      "inference_time_sec": 3.267,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the three road text markings are first encountered in the clip?",
+      "ground_truth": "THRU [entity_001] 1st, BUS [entity_002] 2nd, LANE [entity_003] 3rd",
+      "prediction": "The three road text markings encountered in the clip are first encountered from left to right in the following order: 'LANE 1', 'LANE 2', and 'LANE 3 THRU'.",
+      "inference_time_sec": 4.629,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is required near the zebra-striped pedestrian crosswalk based on the visible signage?",
+      "ground_truth": "Stop at the STOP [entity_004] sign",
+      "prediction": "The explicit driving action required near the zebra-striped pedestrian crosswalk is to 'TURN LEFT'. This is indicated by the signage on the road, which clearly states 'TURN LEFT' in large white letters on a red background. This directive is a clear and explicit instruction for drivers to make a left turn at the designated location. The presence of this sign, along with the other road markings, serves as a visual cue for drivers to follow the traffic rules and ensure safety at the intersection.",
+      "inference_time_sec": 7.073,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment does the mix of waiting structures and road markings suggest?",
+      "ground_truth": "Airport shuttle terminal",
+      "prediction": "The mix of waiting structures, such as the bus stop and the 'Lane Thru' sign, along with the road markings, suggests a parking area or transit station environment. This environment is designed to facilitate the movement of vehicles and public transportation, indicated by the presence of the bus and the designated lanes for traffic flow. The structures are likely there to provide passengers with a place to wait for public transportation and to guide vehicles into designated lanes, ensuring orderly movement within the area.",
+      "inference_time_sec": 7.054,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the road markings and signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "The language used for the road markings and signs in this clip is Portuguese. The words 'LANE THRU' and 'LANE' are written in Portuguese, indicating that the video was filmed in a Portuguese-speaking country.",
+      "inference_time_sec": 4.789,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the green directional EXIT sign first come into full view?",
+      "ground_truth": "EXIT [entity_005] sign at 5.933 seconds",
+      "prediction": "The green directional EXIT sign first comes into full view at the beginning of the video, immediately after the bus and the stop sign.",
+      "inference_time_sec": 3.972,
+      "error": ""
+    }
+  ]
+}

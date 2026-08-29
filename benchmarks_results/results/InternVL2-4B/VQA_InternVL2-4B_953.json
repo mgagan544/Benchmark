@@ -1,0 +1,70 @@
+{
+  "video_id": 953,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/953.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly below the REWARDS sign on the main promotion board?",
+      "ground_truth": "STATUS [entity_002] sign directly below REWARDS [entity_003] sign",
+      "prediction": "Directly below the REWARDS sign on the main promotion board, there is a sign that reads \"GOLD COINS.\"",
+      "inference_time_sec": 6.213,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct fuel price text instances are displayed on the gas station signs during the clip?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct fuel price text instances displayed on the gas station signs during the clip.",
+      "inference_time_sec": 5.504,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the price signs showing 3591 and 359 are encountered?",
+      "ground_truth": "1st: 3591 [entity_006], 2nd: 359 [entity_007]",
+      "prediction": "The price signs showing 3591 and 359 are encountered in the following chronological order: first, the sign showing 3591 is seen on the left side of the street, and then, the sign showing 359 is seen on the right side of the street.",
+      "inference_time_sec": 8.539,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Is there any directional or instructional text that a driver must act on near the Shell Gas Station?",
+      "ground_truth": "None is present",
+      "prediction": "Yes, there is a directional sign near the Shell Gas Station that reads \"ACTION STREET,\" which indicates the direction a driver must take.",
+      "inference_time_sec": 6.414,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a gas station, tire shop, and sheet metal business?",
+      "ground_truth": "Commercial district",
+      "prediction": "The presence of a gas station, tire shop, and sheet metal business suggests a commercial driving environment, likely in an urban or suburban area where such services are in demand. These businesses are typically found in areas with a high volume of traffic, where drivers may need to refuel, perform vehicle maintenance, or purchase parts. The proximity of these businesses to the road indicates that they cater to the needs of drivers who are either passing through or stopping to service their vehicles. This environment is characterized by a mix of commercial and residential or industrial buildings, and the presence of pedestrians and vehicles indicates a",
+      "inference_time_sec": 13.168,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language is the text on the Action Sheetmetal building written?",
+      "ground_truth": "English",
+      "prediction": "The text on the Action Sheetmetal building is written in Spanish.",
+      "inference_time_sec": 5.258,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range do the flat fix related signs first become visible in the clip?",
+      "ground_truth": "From 9.5 seconds onwards",
+      "prediction": "The flat fix related signs first become visible in the clip between the timestamps of 10.000 and 12.000.",
+      "inference_time_sec": 6.484,
+      "error": ""
+    }
+  ]
+}

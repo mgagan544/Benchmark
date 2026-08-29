@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "The text located directly to the right of the ARROWHEAD brand on the red delivery truck is 'direct'. This text is part of the truck's branding and is positioned to the right of the ARROWHEAD logo, which is prominently displayed on the side of the truck. The 'direct' text is in a smaller font size compared to the ARROWHEAD logo and is colored in white, which contrasts with the red background of the truck.",
+      "inference_time_sec": 13.25,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct text instances visible in the clip that are mounted on delivery trucks. The first is 'odwalla' on the orange truck, the second is 'Arrowhead direct' on the red truck, and the third is '1-800-1-800-1-800' on the same red truck.",
+      "inference_time_sec": 11.368,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "As the vehicle moves forward, the text instances are encountered in the following order: first, the text 'TAXI' is seen on the side of a white car, then the text 'Odwalla' appears on the side of a red truck, and finally, the text 'ARROWHEAD' is seen on the side of a red truck.",
+      "inference_time_sec": 11.923,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs indicate height clearance limits of 12 feet 9 inches for vehicles entering the covered underpass.",
+      "inference_time_sec": 7.728,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The mix of text and landmarks visible in the clip, such as the 'Arrowhead direct' truck, the 'odwalla' truck, and the 'EERIE'S' sign, suggests that the driving environment is a busy, commercial area, likely near a transportation hub or a commercial district. The presence of multiple trucks and commercial vehicles indicates that this is a location where goods are transported, possibly a loading or unloading zone. The signage, including the pedestrian crossing signs, points to a regulated and controlled traffic area, likely with specific lanes for different types of vehicles, such as trucks and cars. The overall scene reflects a",
+      "inference_time_sec": 14.034,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The visible text '1-800-555-1212' indicates the United States' measurement system and phone format.",
+      "inference_time_sec": 7.846,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "The TAXI sign first becomes visible in the segregated transit lane at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.895,
+      "error": ""
+    }
+  ]
+}

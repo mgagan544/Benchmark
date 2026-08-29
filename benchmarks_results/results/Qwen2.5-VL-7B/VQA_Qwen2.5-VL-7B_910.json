@@ -1,0 +1,70 @@
+{
+  "video_id": 910,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/910.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the sign for Broad St on the overhead gantry?",
+      "ground_truth": "Grove St [entity_006] directly beneath Broad St [entity_005]",
+      "prediction": "The text located directly beneath the sign for \"Broad St\" on the overhead gantry is \"19 NORTH.\"",
+      "inference_time_sec": 5.268,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are encountered after the vehicle passes the medical office building at 5.100 seconds?",
+      "ground_truth": "4",
+      "prediction": "After the vehicle passes the medical office building, there is one distinct text instance containing numbers that can be seen in the image. The sign indicates \"EXIT 27\" with the number \"27\" clearly visible.",
+      "inference_time_sec": 6.467,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle encounters the text CENTER, Broad St, and Enrite?",
+      "ground_truth": "1st: CENTER [entity_003], 2nd: Broad St [entity_005], 3rd: Enrite [entity_015]",
+      "prediction": "The vehicle encounters the text in the following order:\n\n1. **Enrite**: The first sign the vehicle sees is for \"Enrite,\" indicating an exit or direction.\n2. **Broad St**: After passing the \"Enrite\" sign, the next sign reads \"Broad St,\" which likely indicates another exit or direction.\n3. **CENTER**: Finally, the vehicle encounters the sign that says \"CENTER,\" which could be part of a larger sign or a separate sign indicating a specific location or direction.\n\nSo, the order is: Enrite, Broad St, CENTER.",
+      "inference_time_sec": 10.383,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead gantry, what driving action is indicated for reaching Passaic?",
+      "ground_truth": "Exit in 1/2 mile as indicated by EXIT 1/2 MILE [entity_012]",
+      "prediction": "The overhead gantry sign indicates that to reach Passaic, you should take the exit 21 North.",
+      "inference_time_sec": 5.245,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a large overhead gantry and multiple roadside businesses?",
+      "ground_truth": "highway corridor with commercial zones",
+      "prediction": "The presence of a large overhead gantry with directional signs and multiple roadside businesses suggests an urban or suburban driving environment. The overhead gantry is typically used to provide clear and visible directional information for drivers, which is common in areas with higher traffic volumes where it's important to guide vehicles efficiently. The presence of businesses along the roadside indicates that this area might be near a commercial zone, possibly a shopping district or a business park. This kind of infrastructure is often found in places where there is a mix of residential and commercial activities, making it a typical setting for commuting and daily errands.",
+      "inference_time_sec": 10.484,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city names visible on the overhead highway gantry suggest the geographic region of the route?",
+      "ground_truth": "Clifton [entity_010] and Passaic [entity_011]",
+      "prediction": "The overhead highway gantry in the image displays signs for \"Brandywine\" and \"Van Houten,\" which are not well-known city names. However, these names could be part of a fictional or stylized representation rather than actual city names. In reality, such names might not correspond to any specific geographic region unless they are part of a themed area or a creative depiction.\n\nIf we were to interpret this as a real-world scenario, it's important to note that the names \"Brandywine\" and \"Van Houten\" do not correspond to any major cities in the United States. The Brandywine River is located",
+      "inference_time_sec": 10.849,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the overhead highway sign displaying Broad St remain visible as the vehicle drives underneath it?",
+      "ground_truth": "6.667 to 7.433 seconds",
+      "prediction": "The overhead highway sign displaying \"Broad St\" remains visible for a short duration as the vehicle drives underneath it. The exact time range is not specified in the image, but it can be inferred that the sign is visible during the period when the vehicle is passing directly beneath it. This typically occurs for a few seconds, depending on the speed of the vehicle and the length of the sign.",
+      "inference_time_sec": 8.371,
+      "error": ""
+    }
+  ]
+}

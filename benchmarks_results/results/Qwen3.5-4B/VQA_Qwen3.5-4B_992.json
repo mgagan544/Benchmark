@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the text Ave relative to the text Blvdnn on the overhead highway signage?",
       "ground_truth": "directly below Blvdnn [entity_006]",
-      "prediction": "The user wants to know the spatial relationship between the text \"Ave\" and \"Blvd\" on the overhead signs.\n\n1.  **Identify the signs:** I need to look at the overhead green highway signs visible in the video.\n2.  **Locate \"Ave\":** Looking at the frames, specifically around 0.0s to 0.3s, there are two main green signs.\n    *   The left sign says \"280 QUEENS Fwy\" and below that \"Brooklyn 5.5 MILES\". Wait, let me look closer.\n    *",
-      "inference_time_sec": 13.405,
+      "prediction": "to the left of",
+      "inference_time_sec": 2.552,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct pieces of text on the overhead highway signage are visible in this clip?",
       "ground_truth": "7",
-      "prediction": "The user wants me to count the distinct pieces of text on the overhead highway signage visible in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify the overhead signs.\n2.  **Identify signs:**\n    *   Around 00:00 - 00:02, there's a large green overhead sign structure.\n    *   It seems to have multiple panels.\n    *   Let's look closely at the text.\n    *   There's a sign on the left side of the gantry. It says \"280 QUEENS",
-      "inference_time_sec": 12.768,
+      "prediction": "3",
+      "inference_time_sec": 2.323,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the destination signs Brooklyn and Queens are encountered at 3.3 seconds?",
       "ground_truth": "Brooklyn [entity_002] is 1st, Queens [entity_005] is 2nd",
-      "prediction": "The user wants to know the order of destination signs for Brooklyn and Queens based on the provided video frames.\n\n1.  **Analyze the frames:** I need to look at the frames to find the green highway signs.\n2.  **Locate the signs:**\n    *   Frame 0.0s: There are green signs overhead. One says \"Brooklyn\" and another says \"Queens\".\n    *   Frame 0.1s: The car is approaching the signs.\n    *   Frame 0.2s: The car is closer. The signs are clearly visible.\n    *",
-      "inference_time_sec": 12.745,
+      "prediction": "Brooklyn, Queens",
+      "inference_time_sec": 2.528,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Does any visible text on the overhead signage indicate a specific highway direction for Brooklyn?",
       "ground_truth": "WEST [entity_001]",
-      "prediction": "The user wants to know if there's text on the overhead signage indicating a direction for Brooklyn.\n\n1.  **Analyze the video:** I'll scan through the frames to find overhead signs.\n2.  **Locate signs:**\n    *   Frame 0.0s: There are green signs in the distance. One is partially visible.\n    *   Frame 0.1s: The signs are clearer. One sign says \"Brooklyn\".\n    *   Frame 0.2s: The sign is very clear. It reads \"Brooklyn 5.5 MILES\".\n    *",
-      "inference_time_sec": 12.723,
+      "prediction": "Yes",
+      "inference_time_sec": 2.329,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment is suggested by the overhead green highway signs displaying Brooklyn and Queens?",
       "ground_truth": "highway",
-      "prediction": "The user wants to identify the type of driving environment based on the visual cues in the video, specifically the overhead green highway signs.\n\n1.  **Analyze the visual evidence:**\n    *   **Overhead signs:** I see green rectangular signs hanging over the road.\n    *   **Text on signs:** In the later frames (around 0.0s to 0.4s), the signs are partially visible. One sign clearly says \"Brooklyn\" and \"Queens\". Another sign mentions \"25\" and \"Tunnel\".\n    *   **Road markings:** There are multiple lanes, yellow",
-      "inference_time_sec": 12.663,
+      "prediction": "Urban highway",
+      "inference_time_sec": 2.339,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which destination names visible on the overhead signage suggest the vehicle is driving in or near New York City?",
       "ground_truth": "Brooklyn [entity_002] and Queens [entity_005]",
-      "prediction": "The user wants me to identify destination names from the overhead signs that indicate the location is near New York City.\n\n1.  **Analyze the video:** I'll scan the video frames, specifically looking for overhead green highway signs.\n2.  **Locate the signs:**\n    *   Around 00:00 to 00:02, there are green signs overhead.\n    *   At 00:02 and 00:03, the signs become clearer as the car approaches the bridge.\n    *   The signs are visible just before the car goes under the bridge",
-      "inference_time_sec": 12.702,
+      "prediction": "Brooklyn",
+      "inference_time_sec": 2.374,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "Between what timestamps are the destination signs for Brooklyn and Queens visible before the vehicle enters the shadow under the stone arch bridge?",
       "ground_truth": "From 3.3 seconds to 6.333 seconds",
-      "prediction": "The user wants to find the timestamps where specific signs are visible.\n1.  **Identify the signs:** I need to look for green highway signs. One says \"Brooklyn\" and the other says \"Queens\".\n2.  **Identify the condition:** The signs must be visible *before* the vehicle enters the shadow under the stone arch bridge.\n3.  **Scan the video:**\n    *   **00:00:** The signs are visible in the distance. I can see \"Brooklyn\" and \"Queens\" on the green overhead signs. The vehicle is approaching the bridge.",
-      "inference_time_sec": 12.664,
+      "prediction": "0.0s - 0.4s",
+      "inference_time_sec": 3.093,
       "error": ""
     }
   ]

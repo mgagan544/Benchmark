@@ -1,0 +1,70 @@
+{
+  "video_id": 965,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/965.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the word BUSES on the regulatory sign?",
+      "ground_truth": "TRAILERS [entity_003]",
+      "prediction": "The text directly to the right of the word \"BUSES\" on the regulatory sign is \"20.\"",
+      "inference_time_sec": 7.773,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this video clip?",
+      "ground_truth": "2",
+      "prediction": "Based on the video, there are at least five distinct license plates visible on the vehicles. These include a white van with a plate that is not fully legible, a black SUV with a visible plate, a white truck with a plate, a black car with a plate, and a white car with a plate. The exact number of distinct plates could be higher, but the video does not provide a clear view of all the plates on the vehicles.",
+      "inference_time_sec": 12.028,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the driver encounter the text TRUCKS, Macombs Dam Br, and EXIT as the vehicle travels forward?",
+      "ground_truth": "1st: TRUCKS [entity_001], 2nd: Macombs Dam Br [entity_006], 3rd: EXIT [entity_011]",
+      "prediction": "The driver encounters the text TRUCKS first, followed by Macombs Dam Br, and then the EXIT as the vehicle travels forward.",
+      "inference_time_sec": 8.091,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the regulatory sign on the left side of the road restricts certain vehicles from the left lane?",
+      "ground_truth": "TRUCKS [entity_001], BUSES [entity_002], TRAILERS [entity_003], LEFT [entity_004], LANE [entity_005]",
+      "prediction": "The regulatory sign on the left side of the road restricts buses and trucks from the left lane.",
+      "inference_time_sec": 7.619,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway or expressway. This is indicated by the presence of regulatory lane signs, which are typically used to guide traffic on highways, and the overhead exit gantry signs that provide directions to various exits. The multiple lanes of traffic, with vehicles moving in both directions, further support the conclusion that this is a major road designed to handle a high volume of traffic.",
+      "inference_time_sec": 11.505,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location in New York is suggested by the overhead exit signage text?",
+      "ground_truth": "Macombs Dam Br [entity_006]",
+      "prediction": "The overhead exit signage text suggests that the regional location in New York is Macombs Dam Br, which is a bridge in the Bronx. This is indicated by the sign that reads \"E 161 St Macombs Dam Br,\" which is a well-known landmark in the Bronx.",
+      "inference_time_sec": 10.113,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the yellow advisory exit sign displaying EXIT first come clearly into view, and what text is located directly below it?",
+      "ground_truth": "4.633s, M P H [entity_012]",
+      "prediction": "The yellow advisory exit sign displaying EXIT first comes clearly into view at the timestamp of 00:00:00. The text directly below it reads \"20 MPH,\" indicating the speed limit for vehicles exiting the highway.",
+      "inference_time_sec": 9.171,
+      "error": ""
+    }
+  ]
+}

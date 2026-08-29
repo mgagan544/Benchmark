@@ -1,0 +1,70 @@
+{
+  "video_id": 964,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/964.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What overhead sign is located to the right of the exit sign for E 138 St?",
+      "ground_truth": "Macombs [entity_003] Dam [entity_002] and E 161 St [entity_001] to the right of E 138 St [entity_005]",
+      "prediction": "The overhead sign located to the right of the exit sign for E 138 St is a green street sign indicating the name of the street as Madison Ave Br.",
+      "inference_time_sec": 4.152,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the white commercial pickup truck?",
+      "ground_truth": "10",
+      "prediction": "There are three distinct text instances mounted on the white commercial pickup truck.",
+      "inference_time_sec": 3.368,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What text is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass?",
+      "ground_truth": "WORK [entity_008] ZONE [entity_009] SPEED [entity_010] LIMIT [entity_011] 35",
+      "prediction": "Before the vehicle passes the green pedestrian overpass, the text 'WORK ZONE SPEED LIMIT 35' is visible on the left side of the highway.",
+      "inference_time_sec": 4.199,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the concrete median barrier restricts certain vehicles from using the left lane?",
+      "ground_truth": "TRUCKS [entity_025], BUSES [entity_026], and TRAILERS [entity_027] from the LEFT LANE [entity_028]",
+      "prediction": "The concrete median barrier has the text 'NO TRUCKS, BUSES, TRAILERS OR VEHICLES OVER 80 FEET LONG IN THE LEFT LANE' written on it, which restricts the movement of large vehicles such as trucks and trailers from using the left lane.",
+      "inference_time_sec": 5.408,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, route shields, and speed limit signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The clip depicts a busy urban driving environment, specifically a highway or expressway with multiple lanes. The presence of overhead exit signs indicates that the road is designed for high-speed travel and that drivers need to be aware of their route and destination. The speed limit sign suggests that the area is regulated for safety, and the presence of route shields further implies that the road is well-maintained and possibly a major thoroughfare. The overall setting is one of organized traffic flow within a city or urban area.",
+      "inference_time_sec": 7.244,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and bridge names visible in the clip suggest the setting is in New York City?",
+      "ground_truth": "E 138 St [entity_005], Madison [entity_006] Ave Br [entity_007], and W 161 St [entity_013]",
+      "prediction": "The street names and bridge names visible in the clip that suggest the setting is in New York City include 'Madison Ave Br' and 'E 161 St' for the street names, and 'Madison Ave' and 'E 161 St' for the bridge names. Additionally, the presence of a 'WORK ZONE' sign and the speed limit of 35 mph are common in New York City's traffic infrastructure.",
+      "inference_time_sec": 6.539,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the white pickup truck's contact number visible in the clip?",
+      "ground_truth": "0.833 to 4.267 seconds",
+      "prediction": "The white pickup truck's contact number is visible from 0:00 to 0:30 of the clip, indicating that the number is displayed during the first 30 seconds of the video.",
+      "inference_time_sec": 4.482,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 970,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/970.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark destination is located directly below the highway number 278?",
+      "ground_truth": "Verrazano Br [entity_003]",
+      "prediction": "The landmark destination located directly below the highway number 278 is the **Verrazano Bridge**.",
+      "inference_time_sec": 5.835,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct highway sign text instances are described on the large overhead gantry?",
+      "ground_truth": "9",
+      "prediction": "There are 4 distinct highway sign text instances described on the large overhead gantry:\n\n1. \"EAST 27 Prospect Expwy\"\n2. \"EAST 27 Prospect Expwy\"\n3. \"EAST 27 Prospect Expwy\"\n4. \"EAST 27 Prospect Expwy\"\n\nWait, let me re-examine the description.\n\nActually, the description says: \"EAST 27 Prospect Expwy\" appears twice, and \"EAST 27 Prospect Expwy\" appears again, and \"EAST 27 Prospect Expwy\" appears once more. That's four instances.",
+      "inference_time_sec": 13.514,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the highway number 278 and the airport destination JFK become clearly legible as the vehicle moves forward?",
+      "ground_truth": "1st: 278 [entity_002], 2nd: JFK [entity_009]",
+      "prediction": "The highway number **278** becomes clearly legible first, followed by the airport destination **JFK**. \n\nAs the vehicle moves forward, the camera approaches the overhead sign. Initially, the **278** sign is visible on the left side of the sign structure. Then, as the vehicle gets closer, the **JFK** destination sign becomes clearly legible on the right side of the same overhead structure. \n\nThis sequence is consistent with the vehicle’s forward motion and the spatial arrangement of the signs on the overhead gantry.",
+      "inference_time_sec": 12.191,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead gantry signs, what explicit exit number is indicated for drivers wishing to transition to the Prospect Expwy?",
+      "ground_truth": "EXIT 24 [entity_006]",
+      "prediction": "Based on the overhead gantry signs visible in the video, the explicit exit number indicated for drivers wishing to transition to the Prospect Expwy is **Exit 4**.\n\nThe green sign clearly displays:\n- **\"EXIT 4\"**\n- **\"Prospect Expwy\"**\n\nThis information is visible in the frame at 0:02, just before the vehicle passes under the gantry.",
+      "inference_time_sec": 11.546,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a multi-lane divided highway and a massive overhead gantry with highway numbers and exit signs?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of a multi-lane divided highway and a massive overhead gantry with highway numbers and exit signs suggests a **highway or freeway environment**, typically found in **urban or suburban areas with significant traffic volume**.\n\n### Key Indicators:\n1. **Multi-lane Divided Highway**: This indicates a major road designed for high-speed, high-volume traffic, often connecting cities or regions.\n2. **Overhead Gantry with Highway Numbers and Exit Signs**: This is characteristic of **controlled-access highways** (freeways or expressways), where signage directs drivers to specific exits or destinations. The gantry is a structural element used to",
+      "inference_time_sec": 13.386,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any landmark destinations or highway labels suggest a specific metropolitan area or region for this highway?",
+      "ground_truth": "Verrazano Br [entity_003] and Staten is [entity_004] suggest New York",
+      "prediction": "Yes, the highway signs indicate this is in the New York metropolitan area. The signs mention “Prospect Expwy” (Prospect Expressway) and “Verrazano Br” (Verrazano Bridge), which are both located in New York City. The Verrazano-Narrows Bridge connects Brooklyn and Staten Island, and the Prospect Expressway is part of the New York State Thruway system. The presence of these specific landmarks strongly suggests the location is in or near New York City.",
+      "inference_time_sec": 11.637,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the airport destination indicator JFK first become clearly legible on the sign?",
+      "ground_truth": "6.767 seconds",
+      "prediction": "0.3 seconds",
+      "inference_time_sec": 3.825,
+      "error": ""
+    }
+  ]
+}

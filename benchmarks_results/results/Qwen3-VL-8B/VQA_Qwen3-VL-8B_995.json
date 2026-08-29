@@ -1,0 +1,70 @@
+{
+  "video_id": 995,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/995.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located directly to the right of the 1042 number on the first parked school bus?",
+      "ground_truth": "738-7373 [entity_005] to the right of 1042 [entity_004]",
+      "prediction": "The readable text located directly to the right of the \"1042\" number on the first parked school bus is \"Dell Transportation Corp.\"",
+      "inference_time_sec": 5.926,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible on the first parked school bus?",
+      "ground_truth": "3",
+      "prediction": "2",
+      "inference_time_sec": 3.655,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text labels Richie, Service, and 4290 are passed by the ego vehicle?",
+      "ground_truth": "1st: 4290 [entity_011], 2nd: Service [entity_012], 3rd: Richie [entity_013]",
+      "prediction": "The text labels are passed by the ego vehicle in the following order: **Richie**, then **Service**, then **4290**.\n\n### Explanation:\n- **Richie**: This label appears on the side of a school bus on the right side of the road at the beginning of the video (around 0:00–0:01). The bus is stationary or moving slowly, and the text is visible as the ego vehicle passes by.\n- **Service**: This label appears on the side of another school bus further down the road, also on the right side, after the Richie bus. It is visible as",
+      "inference_time_sec": 13.522,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the first parked school bus indicates a potential driving constraint or warning?",
+      "ground_truth": "STOP [entity_002]",
+      "prediction": "The text \"SCHOOL BUS\" on the first parked school bus indicates a potential driving constraint or warning. This text signals to other drivers that the vehicle is a school bus, which typically has special regulations and safety protocols, such as mandatory stopping when its stop arm is extended or when its lights are flashing. The presence of this text alerts drivers to exercise caution and be prepared to stop if necessary.",
+      "inference_time_sec": 9.779,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of area does the combination of residential buildings, a public park, and school buses suggest?",
+      "ground_truth": "residential school zone",
+      "prediction": "The combination of residential buildings, a public park, and school buses strongly suggests a **suburban or residential neighborhood**.\n\nHere’s why:\n\n- **Residential Buildings**: These indicate a community where people live, typically families with children.\n- **Public Park**: Parks are common in suburban areas, providing recreational space for residents and their children.\n- **School Buses**: The presence of school buses is a clear indicator of a school nearby, which is typical in residential neighborhoods where children attend local schools.\n\nTogether, these elements point to a **family-oriented, community-focused area** — likely a suburb or a well-established residential district — where daily",
+      "inference_time_sec": 13.577,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific telephone area code visible on the first school bus suggests the vehicle is in New York City?",
+      "ground_truth": "718 [entity_007]",
+      "prediction": "The telephone area code **718** visible on the first school bus suggests the vehicle is in New York City.\n\n### Explanation:\n- The area code **718** is one of the primary area codes for **Brooklyn**, a borough of New York City.\n- While New York City as a whole includes area codes like 212, 347, 917, 718, and others, **718** is specifically associated with Brooklyn, which is part of NYC.\n- The bus also has “Dell Transportation Corp.” and “Corinda Ent., Ltd.” — these",
+      "inference_time_sec": 13.563,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the text Little Linda visible on the first parked school bus?",
+      "ground_truth": "00:02 - 00:04",
+      "prediction": "The text \"Little Linda\" is visible on the first parked school bus during the time range 0:00 to 0:01.",
+      "inference_time_sec": 5.943,
+      "error": ""
+    }
+  ]
+}

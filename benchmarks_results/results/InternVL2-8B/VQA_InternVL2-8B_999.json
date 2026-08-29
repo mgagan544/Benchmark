@@ -1,0 +1,70 @@
+{
+  "video_id": 999,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/999.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What store is located to the left of the pharmacy named PIEKIELKO ONE PHARMACY?",
+      "ground_truth": "Walgreen [entity_022] to the left of PIEKIELKO [entity_021] ONE [entity_019] PHARMACY [entity_020]",
+      "prediction": "The store located to the left of the pharmacy named PIEKIELKO ONE PHARMACY is a red-brick building with a sign that reads \"BUTABARO'S.\"",
+      "inference_time_sec": 8.832,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are displayed on the corner building featuring BUFFALO JO'S?",
+      "ground_truth": "11",
+      "prediction": "There are two distinct text entities displayed on the corner building featuring BUFFALO JO'S. The first is the name \"BUFFALO JO'S\" in large, bold letters, and the second is a smaller sign below it that reads \"BUFFALO JO'S BUFFALO WINGS.\"",
+      "inference_time_sec": 10.248,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which FOREST, BUFFALO JO'S, and SPEED are encountered by the vehicle?",
+      "ground_truth": "1st: FOREST [entity_001], 2nd: BUFFALO JO'S [entity_003], 3rd: SPEED [entity_016]",
+      "prediction": "The vehicle encounters FOREST first, followed by BUFFALO JO'S, and then SPEED.",
+      "inference_time_sec": 7.773,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the road sign indicates a speed restriction after the vehicle turns left past the corner building?",
+      "ground_truth": "SPEED [entity_016] LIMIT [entity_014] 25",
+      "prediction": "The road sign indicating a speed restriction after the vehicle turns left past the corner building is a white sign with a red border, displaying the number \"25\" in black, which is a common symbol for a speed limit of 25 miles per hour.",
+      "inference_time_sec": 9.567,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, pharmacies, and medical offices, what type of driving environment is depicted?",
+      "ground_truth": "commercial district",
+      "prediction": "The driving environment depicted in the video is a commercial and residential area with a moderate density of storefronts, pharmacies, and medical offices. This suggests a mixed-use area where businesses cater to the daily needs of the local community, including healthcare services. The presence of multiple cars and pedestrians indicates a busy street with moderate traffic flow, typical of a suburban or urban neighborhood where commercial activities are integrated with residential living.",
+      "inference_time_sec": 11.599,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area code visible on the corner building's signage suggests the driving location is in New York City?",
+      "ground_truth": "718-366 [entity_012]",
+      "prediction": "The telephone area code visible on the corner building's signage is \"718,\" which is known to be associated with Brooklyn, New York City. This detail, along with the architectural style of the buildings and the street signs, supports the inference that the driving location is indeed in New York City.",
+      "inference_time_sec": 10.11,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the speed limit sign displaying SPEED visible as the vehicle continues forward?",
+      "ground_truth": "3.1s to 5.0s",
+      "prediction": "The speed limit sign displaying 'SPEED' is visible as the vehicle continues forward from the beginning of the video until the end. It is positioned on the right side of the road, adjacent to the sidewalk, and remains in view throughout the duration of the footage.",
+      "inference_time_sec": 9.661,
+      "error": ""
+    }
+  ]
+}

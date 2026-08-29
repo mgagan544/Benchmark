@@ -1,0 +1,70 @@
+{
+  "video_id": 932,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/932.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
+      "ground_truth": "CLEANERS [entity_019]",
+      "prediction": "The business name located adjacent to the storefront of \"COAST FOR GOLD\" on the right side of the street is \"LAZARUS.\"",
+      "inference_time_sec": 5.736,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances visible on the regulatory sign post to the right of the lane marking:\n\n1. \"SCHOOL\"\n2. \"BUS\"",
+      "inference_time_sec": 6.087,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
+      "prediction": "The order of appearance of the text instances in the video clip is as follows:\n\n1. **ONLY** - This appears first on the road surface.\n2. **BUSES ONLY** - This appears next on the road surface.\n3. **SCHOOL BUS** - This appears last on the road surface.\n\nThese text instances are likely part of a traffic sign or road marking indicating specific rules for vehicles, particularly buses, in that area.",
+      "inference_time_sec": 8.876,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
+      "ground_truth": "ONE WAY [entity_004]",
+      "prediction": "The regulatory sign post in the image indicates a \"SCHOOL BUS ONLY\" direction restriction. This means that only school buses are allowed to use this lane, and other vehicles must not enter it.",
+      "inference_time_sec": 6.024,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
+      "ground_truth": "Commercial urban street",
+      "prediction": "The image depicts an urban driving environment in a residential or mixed-use area. The presence of storefronts such as \"COAST FOR GOLD\" and \"CLEANERS\" suggests that the area has commercial establishments catering to local residents. The street is lined with parked cars and buildings, indicating a dense urban setting. The presence of school buses also suggests that this area might be near schools, adding to the residential character of the neighborhood. The clear sky and snow on the ground suggest it could be winter, but the overall scene is typical of a busy city street during the day.",
+      "inference_time_sec": 12.157,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific phone number on the first school bus suggests a New York City location?",
+      "ground_truth": "(718)852-0286 [entity_011]",
+      "prediction": "The phone number on the first school bus is \"718-436-5000,\" which is a common area code for New York City. This suggests that the bus is likely operating in or near New York City.",
+      "inference_time_sec": 6.849,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
+      "ground_truth": "4.267 seconds",
+      "prediction": "The text \"BUSES ONLY\" becomes visible at approximately 0:02 seconds into the video.",
+      "inference_time_sec": 5.268,
+      "error": ""
+    }
+  ]
+}

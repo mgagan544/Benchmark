@@ -1,0 +1,70 @@
+{
+  "video_id": 972,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/972.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
+      "ground_truth": "To the right of VIDE [entity_002]",
+      "prediction": "The regulatory text \"MON WED FRI\" is located on the yellow sign that is attached to the windshield of the car. It is positioned towards the bottom right corner of the sign, slightly above the center. The commercial sign \"VIDE\" is located towards the upper right corner of the windshield, closer to the top edge.",
+      "inference_time_sec": 6.188,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct pieces of vehicle-mounted text visible on the dark grey pickup truck. The text is in English and reads \"4X4\" on the side of the truck, \"FORD\" on the back, and \"FORD\" again on the side of the truck.",
+      "inference_time_sec": 5.321,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
+      "ground_truth": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]",
+      "prediction": "The markings on the pickup truck become visible in the following order: the F150, the 4X4, and the P150. The F150 is clearly visible on the rear of the truck, followed by the 4X4 on the side, and finally the P150 on the rear of the truck.",
+      "inference_time_sec": 5.563,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
+      "ground_truth": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]",
+      "prediction": "The regulatory sign near the commercial building reads \"PARKING ONLY\" in bold letters, indicating that parking is restricted in that area.",
+      "inference_time_sec": 3.921,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of commercial signs and parking regulations suggests a busy urban environment where both commercial activity and traffic regulations coexist. The presence of commercial signs indicates a commercial area, likely with businesses that cater to the local population. The parking regulations, such as the bike lane, imply a city that values sustainable transportation and pedestrian-friendly infrastructure. This combination of elements suggests a dynamic and possibly congested urban setting where drivers must navigate through commercial zones while adhering to traffic rules.",
+      "inference_time_sec": 6.756,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
+      "ground_truth": "English",
+      "prediction": "The language used for the text on the regulatory parking sign and the commercial building is Chinese.",
+      "inference_time_sec": 3.496,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
+      "ground_truth": "3.033s",
+      "prediction": "The STREET CLEANING sign first becomes clearly readable at the beginning of the video. It is visible on the right side of the frame, near the sidewalk, and is written in English.",
+      "inference_time_sec": 4.405,
+      "error": ""
+    }
+  ]
+}

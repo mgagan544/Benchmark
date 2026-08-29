@@ -1,0 +1,70 @@
+{
+  "video_id": 999,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/999.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What store is located to the left of the pharmacy named PIEKIELKO ONE PHARMACY?",
+      "ground_truth": "Walgreen [entity_022] to the left of PIEKIELKO [entity_021] ONE [entity_019] PHARMACY [entity_020]",
+      "prediction": "The store located to the left of the pharmacy named \"PIEKIELKO ONE PHARMACY\" appears to be a McDonald's restaurant, as indicated by the visible signage on the building.",
+      "inference_time_sec": 6.739,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are displayed on the corner building featuring BUFFALO JO'S?",
+      "ground_truth": "11",
+      "prediction": "The corner building featuring \"BUFFALO JO'S\" has three distinct text entities displayed:\n\n1. \"BUFFALO JO'S\"\n2. \"BONELESS WINGS\"\n3. \"BBQ WING\"\n\nSo, there are 3 distinct text entities.",
+      "inference_time_sec": 7.813,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which FOREST, BUFFALO JO'S, and SPEED are encountered by the vehicle?",
+      "ground_truth": "1st: FOREST [entity_001], 2nd: BUFFALO JO'S [entity_003], 3rd: SPEED [entity_016]",
+      "prediction": "The vehicle encounters the following in the order listed:\n\n1. **FOREST**: The first sign visible on the left side of the street reads \"FOREST.\"\n2. **BUFFALO JO'S**: The next sign visible is for \"BUFFALO JO'S,\" which appears to be a restaurant.\n3. **SPEED**: The last sign visible on the right side of the street reads \"SPEED.\"\n\nSo, the order is: FOREST, BUFFALO JO'S, SPEED.",
+      "inference_time_sec": 9.514,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the road sign indicates a speed restriction after the vehicle turns left past the corner building?",
+      "ground_truth": "SPEED [entity_016] LIMIT [entity_014] 25",
+      "prediction": "The text on the road sign that indicates a speed restriction after the vehicle turns left past the corner building is \"25\". This suggests that the speed limit for vehicles traveling in the direction indicated by the arrow on the sign is 25 miles per hour.",
+      "inference_time_sec": 6.993,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts, pharmacies, and medical offices, what type of driving environment is depicted?",
+      "ground_truth": "commercial district",
+      "prediction": "The image depicts an urban or suburban commercial area with a high density of storefronts, including pharmacies and medical offices. This suggests that the driving environment is likely in a busy part of town where people frequently visit these establishments for daily needs such as shopping, healthcare services, and prescriptions. The presence of multiple businesses indicates a well-developed commercial district, which is common in areas with a significant population and active local commerce.",
+      "inference_time_sec": 8.635,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area code visible on the corner building's signage suggests the driving location is in New York City?",
+      "ground_truth": "718-366 [entity_012]",
+      "prediction": "The telephone area code \"212\" visible on the corner building's signage suggests that the driving location is likely in New York City, as 212 is one of the area codes for Manhattan and parts of the Bronx.",
+      "inference_time_sec": 6.645,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the speed limit sign displaying SPEED visible as the vehicle continues forward?",
+      "ground_truth": "3.1s to 5.0s",
+      "prediction": "The speed limit sign displaying \"SPEED\" is not clearly visible in the provided images. The images show different parts of the street and vehicles, but there is no clear view of a speed limit sign with the word \"SPEED\" on it. Therefore, it is not possible to determine during which time range the speed limit sign is visible based on the given images.",
+      "inference_time_sec": 8.133,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 936,
+  "model": "InternVL3-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/936.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the green overhead exit sign for Industrial Boulevard and Hesperian Boulevard?",
+      "ground_truth": "An orange diamond-shaped construction sign to the right of the green overhead exit sign",
+      "prediction": "The yellow sign indicating exit 35.",
+      "inference_time_sec": 3.24,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signs containing text or numbers appear on the right shoulder between 0:02 and 0:05?",
+      "ground_truth": "2",
+      "prediction": "Two",
+      "inference_time_sec": 2.33,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the orange road work sign, the green overhead exit sign, and the dark overpass bridge are encountered?",
+      "ground_truth": "1st: orange road work sign, 2nd: green overhead exit sign, 3rd: dark overpass bridge",
+      "prediction": "The orange road work sign is first seen in the distance, followed by the green overhead exit sign, and finally the dark overpass bridge is encountered as the vehicle approaches the exit.",
+      "inference_time_sec": 4.717,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning and speed advisory information is displayed on the right shoulder between 0:02 and 0:05?",
+      "ground_truth": "Road work ahead warning and a 35 speed advisory",
+      "prediction": "The warning and speed advisory information is displayed on the right shoulder between 0:02 and 0:05.",
+      "inference_time_sec": 4.011,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the green overhead exit sign and multi-lane setup?",
+      "ground_truth": "Highway",
+      "prediction": "The green overhead exit sign and multi-lane setup suggest that the driver is on a highway or freeway, which is a type of driving environment that requires careful navigation and adherence to traffic rules.",
+      "inference_time_sec": 4.793,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the street names on the green overhead exit sign?",
+      "ground_truth": "English",
+      "prediction": "English",
+      "inference_time_sec": 2.39,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the green overhead guide sign for Industrial Boulevard and Hesperian Boulevard visible before the vehicle passes underneath it?",
+      "ground_truth": "0:05 to 0:07",
+      "prediction": "The green overhead guide sign is visible for a brief moment before the vehicle passes underneath it.",
+      "inference_time_sec": 3.437,
+      "error": ""
+    }
+  ]
+}

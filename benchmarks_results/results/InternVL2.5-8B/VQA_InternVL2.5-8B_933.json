@@ -1,0 +1,70 @@
+{
+  "video_id": 933,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/933.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly beneath the sign TRAFFIC on the wooden utility pole?",
+      "ground_truth": "DETOUR [entity_003] directly beneath TRAFFIC [entity_002]",
+      "prediction": "Directly beneath the sign TRAFFIC on the wooden utility pole, there is a sign that reads 'ALL TRAFFIC'. This sign is positioned to inform drivers that all traffic, regardless of direction, is required to follow the rules and directions indicated by the sign. It is a standard traffic sign used to ensure that drivers are aware of the need to yield or follow specific instructions at an intersection or construction zone.",
+      "inference_time_sec": 11.346,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street or regulatory signs are visible on the wooden utility pole and the adjacent signpost combined?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct street or regulatory signs visible on the wooden utility pole and the adjacent signpost. The first sign is a 'No Parking' sign, the second is a 'No Standing' sign, and the third is a 'No Parking' sign with additional text that is not fully legible in the video.",
+      "inference_time_sec": 10.198,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs on the adjacent signpost are encountered after the vehicle completes its turn?",
+      "ground_truth": "1st: 56\"Road [entity_004], 2nd: ANYTIME [entity_005]",
+      "prediction": "After the vehicle completes its turn, the order of the signs on the adjacent signpost is as follows: 'ALL TRAFFIC', 'NO TURN ON RED', and 'NO TURN ON RED'.",
+      "inference_time_sec": 8.897,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What detour instruction is displayed on the wooden utility pole at the T-junction?",
+      "ground_truth": "ALL [entity_001] TRAFFIC [entity_002] DETOUR [entity_003]",
+      "prediction": "The wooden utility pole at the T-junction displays a sign that reads 'ALL TRAFFIC DETOUR' with an arrow pointing to the right, indicating that all traffic should take the detour to the right.",
+      "inference_time_sec": 8.942,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a detour sign, concrete barriers, orange barrels, and a light tower, what type of zone is this?",
+      "ground_truth": "Active road construction zone",
+      "prediction": "The presence of a detour sign, concrete barriers, orange barrels, and a light tower suggests that this is a construction zone. These elements are typically used to manage traffic flow, direct vehicles, and ensure safety during construction activities.",
+      "inference_time_sec": 9.304,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the signs visible along the road?",
+      "ground_truth": "English",
+      "prediction": "The text on the signs visible along the road is in English. The signs include directions and warnings, such as 'ALL TRAFFIC', 'NO TURN ON RED', and 'ROAD WORK AHEAD'. The use of English text indicates that the location is likely in an English-speaking country.",
+      "inference_time_sec": 9.949,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the sign 56\"Road first become visible to the camera?",
+      "ground_truth": "0.833s for 56\"Road [entity_004]",
+      "prediction": "The sign 56\"Road first becomes visible to the camera at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.713,
+      "error": ""
+    }
+  ]
+}

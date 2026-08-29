@@ -1,0 +1,70 @@
+{
+  "video_id": 940,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/940.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
+      "ground_truth": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]",
+      "prediction": "Directly adjacent to the parking area on the right side of the driving lane, there are signs for 'Danice' and 'MODELL'S SPORTING GOODS'. These signs are positioned above the storefronts, indicating the presence of these retail establishments within the shopping center.",
+      "inference_time_sec": 9.74,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct pieces of text on the storefront signs or banners on the left side of the driving lane. These include 'SUPPLY', 'MODELL'S', and 'FALLAS'.",
+      "inference_time_sec": 8.862,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]",
+      "prediction": "The camera vehicle first encounters the storefront of FALLAS and the signs for Danice as it moves forward through the parking lot. The FALLAS storefront is seen on the right side of the frame, while the Danice signs are visible on the right side of the frame as well.",
+      "inference_time_sec": 10.044,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
+      "ground_truth": "Stop",
+      "prediction": "The painted road marking adjacent to the concrete sidewalk on the left, which reads 'STOP', implies that vehicles are required to come to a complete stop at that point. This marking is typically used to indicate a stop line for traffic control, ensuring that vehicles halt before proceeding, likely to allow pedestrians to cross the street safely or to prevent vehicles from entering the parking lot area.",
+      "inference_time_sec": 10.817,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
+      "ground_truth": "Commercial strip mall",
+      "prediction": "The driving environment depicted in the video is a commercial area with a variety of retail stores. The presence of storefronts such as 'FALLAS', 'Danice', and 'MODELL'S SPORTING GOODS' indicates a shopping center or strip mall. The parking lot is filled with cars, suggesting a busy time of day, possibly during a weekday when people are out shopping. The clear sky and the absence of any traffic congestion on the roads imply that the weather is fair and the traffic flow is smooth. The video captures a typical suburban or urban commercial area where people are engaged in shopping activities.",
+      "inference_time_sec": 13.7,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
+      "ground_truth": "English",
+      "prediction": "The storefront signs and promotional banners visible in the clip are in English. The 'FALLAS' sign, 'Danice' sign, and 'MODELL'S SPORTING GOODS' banner are all written in English, indicating that the location is likely in an English-speaking country.",
+      "inference_time_sec": 9.723,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
+      "ground_truth": "5.233s to 5.6s",
+      "prediction": "The camera vehicle approaches the storefront windows of FALLAS showing promotional text between 1:00 and 1:05.",
+      "inference_time_sec": 7.883,
+      "error": ""
+    }
+  ]
+}

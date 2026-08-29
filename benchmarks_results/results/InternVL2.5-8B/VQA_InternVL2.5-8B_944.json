@@ -1,0 +1,70 @@
+{
+  "video_id": 944,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/944.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the PASSENGER CARS ONLY sign located relative to the Drive SOUTH sign?",
+      "ground_truth": "Adjacent to Drive [entity_006] SOUTH [entity_007]",
+      "prediction": "The PASSENGER CARS ONLY sign is located to the right of the Drive SOUTH sign.",
+      "inference_time_sec": 7.623,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities make up the construction warning sign visible at the start of the clip?",
+      "ground_truth": "4",
+      "prediction": "The construction warning sign visible at the start of the clip consists of two distinct text entities: '12-6' and 'No Parking'.",
+      "inference_time_sec": 8.067,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the low clearance warning sign, the construction warning signs, and the PASSENGER CARS ONLY sign?",
+      "ground_truth": "1st: 12-6 [entity_005] and construction signs, 2nd: PASSENGER CARS ONLY [entity_009]",
+      "prediction": "The vehicle first encounters the low clearance warning sign, followed by the construction warning signs, and finally the PASSENGER CARS ONLY sign.",
+      "inference_time_sec": 8.246,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What low clearance limit is indicated by the warning sign to the right of the concrete barrier?",
+      "ground_truth": "12-6 [entity_005]",
+      "prediction": "The warning sign to the right of the concrete barrier indicates a low clearance limit of 12 feet 6 inches. This sign is a standard traffic sign used to alert drivers to the height restriction of the road or bridge ahead. It is typically placed at the beginning of a bridge or underpass to ensure that vehicles with a height greater than the specified limit do not attempt to pass under the structure, which could result in damage to the vehicle or the structure itself. The presence of this sign in the video suggests that the road or bridge the vehicle is approaching has a height restriction, and drivers are advised to check their vehicle's height before proceeding.",
+      "inference_time_sec": 14.0,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the transition from a curved ramp with construction signs to a highway depict?",
+      "ground_truth": "Highway transition zone",
+      "prediction": "The transition from a curved ramp with construction signs to a highway depicts a driving environment that is urban with construction activity. The presence of construction signs, barriers, and the urban setting with buildings and parked cars indicate a cityscape where roadwork is taking place. The transition to the highway shows a more open and less congested road, with fewer vehicles and a clearer path ahead, suggesting a move from a busy urban area to a less crowded highway section.",
+      "inference_time_sec": 11.84,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction warning signs and overhead directional signs?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction warning signs and overhead directional signs is in English. The construction warning signs read 'ROAD WORK AHEAD' and 'SLOW DOWN', while the overhead sign indicates 'ONE WAY'.",
+      "inference_time_sec": 8.873,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Drive SOUTH sign first come into view, and when does the vehicle pass it?",
+      "ground_truth": "First visible at 3.767 seconds, passed at 5.133 seconds",
+      "prediction": "The Drive SOUTH sign first comes into view at the timestamp of 00:00:00:00. The vehicle passes it at the timestamp of 00:00:05:00.",
+      "inference_time_sec": 8.772,
+      "error": ""
+    }
+  ]
+}

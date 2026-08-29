@@ -1,0 +1,70 @@
+{
+  "video_id": 922,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/922.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lane indicator is visible overhead at 0.0 seconds to the right of the Airport Exit sign?",
+      "ground_truth": "EXIT [entity_004] to the right of Airport Exit [entity_002]",
+      "prediction": "At 0.0 seconds to the right of the Airport Exit sign, an arrow indicating a right turn is visible overhead. This lane indicator is part of the traffic signage that guides drivers to the designated exit lane, ensuring they are aware of the upcoming right turn they need to make.",
+      "inference_time_sec": 5.372,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street, regulatory, or warning text elements are visible in this clip?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct street, regulatory, or warning text elements visible in this clip.",
+      "inference_time_sec": 3.633,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the text elements on the orange warning sign encountered after passing the concrete overpass?",
+      "ground_truth": "1st: ROAD [entity_005], 2nd: WORK [entity_006], 3rd: AHEAD [entity_007]",
+      "prediction": "The order of the text elements on the orange warning sign is as follows: 'DANGER ROAD WORK AHEAD', 'ROAD WORK AHEAD', and 'YIELD TO PROTECT PASSENGERS'.",
+      "inference_time_sec": 4.7,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint with the text 'STOP HERE BY RIGHT TURN'. This sign is typically used to instruct drivers to stop at an intersection or to yield the right of way for a turn, ensuring that they do not proceed through the area where the construction is taking place. The presence of this sign is a clear indication of the construction zone and the need for vehicles to stop before proceeding, which is a common safety measure in construction zones to prevent accidents and ensure that workers and other vehicles can pass through safely.",
+      "inference_time_sec": 7.933,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs like Airport Exit and ROAD WORK AHEAD, what kind of driving environment is depicted?",
+      "ground_truth": "Highway construction zone",
+      "prediction": "The driving environment depicted is one of construction and roadwork, likely in an urban area near an airport. The presence of the Airport Exit sign indicates proximity to an airport, and the ROAD WORK AHEAD sign suggests that the road is undergoing construction or maintenance. This setting implies that drivers should be cautious and prepared for potential delays or changes in the road conditions.",
+      "inference_time_sec": 6.834,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead and warning signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead and warning signs in this clip is in both English and Spanish. The overhead sign reads 'Airport Exit' with an arrow pointing to the right, and the warning sign reads 'DO NOT ENTER' in English. The same message is also repeated in Spanish, indicating that the area is likely a border crossing or a point of entry to the airport.",
+      "inference_time_sec": 7.067,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the STOP sign held by the construction flagger visible and legible?",
+      "ground_truth": "0.0 to 2.633 seconds",
+      "prediction": "The STOP sign held by the construction flagger is visible and legible from approximately the 5th to the 8th second of the video.",
+      "inference_time_sec": 4.558,
+      "error": ""
+    }
+  ]
+}

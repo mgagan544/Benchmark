@@ -1,0 +1,70 @@
+{
+  "video_id": 948,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/948.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which sign, located directly below the FDR DR SOUTH sign on the overhead gantry, comes into view between 2.4 and 2.567 seconds?",
+      "ground_truth": "LEFT 2 LANES [entity_006]",
+      "prediction": "Between 2.4 and 2.567 seconds, the sign that comes into view is \"Harlem River.\"",
+      "inference_time_sec": 5.865,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signs containing lane designations or lane restrictions are visible on the overhead gantry before the vehicle enters the steel truss structure?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct signs visible on the overhead gantry before the vehicle enters the steel truss structure. The first sign indicates \"Harlem River\" and provides lane information, directing drivers to the right lanes for the existing lanes and the left lanes for the new lanes. The second sign is partially obscured but appears to be another lane designation or restriction sign.",
+      "inference_time_sec": 8.989,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs 2 Ave-12S st, FDR DR SOUTH, and FINE + POINTS are encountered by the vehicle?",
+      "ground_truth": "1st: 2 Ave-12S st [entity_001], 2nd: FDR DR SOUTH [entity_005], 3rd: FINE + POINTS [entity_010]",
+      "prediction": "The vehicle encounters the signs in the following order:\n\n1. **FDR DR SOUTH** - This sign is likely the first one seen as the vehicle approaches the bridge.\n2. **2 Ave-12S st** - This sign appears next, indicating the exit for 2nd Avenue and 12th Street South.\n3. **FINE + POINTS** - This sign is the last one visible in the sequence, possibly indicating a toll booth or a point of interest related to fines.\n\nSo, the order is: **FDR DR SOUTH**, then **2 Ave-12S st**, and finally **FINE +",
+      "inference_time_sec": 12.924,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text, located to the left of the STRICTLY ENFORCED sign, becomes visible at 2.733 seconds to indicate traffic penalties?",
+      "ground_truth": "FINE + POINTS [entity_010]",
+      "prediction": "The warning text that becomes visible to the left of the \"STRICTLY ENFORCED\" sign is \"NO STOPPING ANYTIME.\"",
+      "inference_time_sec": 6.052,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggest about the driving environment?",
+      "ground_truth": "Expressway bridge approach",
+      "prediction": "The mix of highway signs and lane restrictions visible in the video suggests that the driving environment is complex and requires careful attention from drivers. The signs indicate directions to different destinations, such as \"Harlem River,\" and provide information on lane usage, such as \"Right 2 lanes.\" This setup implies that there might be multiple routes available for drivers, which could lead to potential confusion or congestion if not navigated correctly. The presence of lane restrictions also indicates that drivers must adhere to specific rules regarding which lanes they can use, which can add an element of complexity to the driving experience. Overall, this scene highlights the importance of paying close attention to",
+      "inference_time_sec": 11.269,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city is suggested by the highway names FDR DR SOUTH and Harlem RIv Dr visible on the overhead gantry?",
+      "ground_truth": "New York City",
+      "prediction": "The highway names \"FDR DR SOUTH\" and \"Harlem Riv Dr\" suggest that the location is New York City. The FDR Drive (Fuller D. Roosevelt Drive) is a major north-south highway in Manhattan, and Harlem River Drive is a road that runs along the Harlem River, which is part of the New York City skyline.",
+      "inference_time_sec": 8.009,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the lead blue vehicle with license plate FOD-3149 tracked at the beginning of the clip?",
+      "ground_truth": "00:00 to 00:02",
+      "prediction": "The lead blue vehicle with the license plate FOD-3149 is tracked from the beginning of the video until it exits the frame, which appears to be around 5 seconds based on the video's duration and the speed of the vehicles. The exact time range cannot be determined without additional context or a timestamp, but it is within the first few seconds of the video.",
+      "inference_time_sec": 8.176,
+      "error": ""
+    }
+  ]
+}

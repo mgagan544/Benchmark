@@ -1,0 +1,70 @@
+{
+  "video_id": 944,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/944.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the PASSENGER CARS ONLY sign located relative to the Drive SOUTH sign?",
+      "ground_truth": "Adjacent to Drive [entity_006] SOUTH [entity_007]",
+      "prediction": "The PASSENGER CARS ONLY sign is located to the left of the Drive SOUTH sign.",
+      "inference_time_sec": 3.728,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities make up the construction warning sign visible at the start of the clip?",
+      "ground_truth": "4",
+      "prediction": "The construction warning sign visible at the start of the clip consists of three distinct text entities. These are the words 'Construction', 'Warning', and 'Keep Right', each placed on its own line and separated by a vertical bar. The sign is yellow with black lettering, which is a common color scheme for warning signs to ensure high visibility and immediate recognition by drivers.",
+      "inference_time_sec": 6.019,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the low clearance warning sign, the construction warning signs, and the PASSENGER CARS ONLY sign?",
+      "ground_truth": "1st: 12-6 [entity_005] and construction signs, 2nd: PASSENGER CARS ONLY [entity_009]",
+      "prediction": "The vehicle first encounters the low clearance warning sign as it approaches the construction area, followed by the construction warning signs, and finally the PASSENGER CARS ONLY sign as it passes the construction area.",
+      "inference_time_sec": 4.581,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What low clearance limit is indicated by the warning sign to the right of the concrete barrier?",
+      "ground_truth": "12-6 [entity_005]",
+      "prediction": "The warning sign to the right of the concrete barrier indicates a low clearance limit of 6 feet. This sign is typically used to alert drivers to the proximity of a structure or obstacle that they need to be cautious around to avoid hitting it. In this context, it serves as a safety measure to alert the driver to the need to maintain a safe distance from the concrete barrier while navigating the road.",
+      "inference_time_sec": 6.226,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the transition from a curved ramp with construction signs to a highway depict?",
+      "ground_truth": "Highway transition zone",
+      "prediction": "The transition from a curved ramp with construction signs to a highway depicts a shift from a city environment to a more open and structured driving environment. The initial scene is characterized by urban elements such as buildings, trees, and traffic signs, indicating a city setting. As the vehicle moves forward, the environment changes to a highway, marked by the absence of construction barriers and the presence of a clear roadway. The highway is lined with trees and buildings, suggesting a suburban or semi-urban area. The highway itself is marked with white lane lines, and the weather appears to be clear, with no visible precipitation. The transition from a city to",
+      "inference_time_sec": 8.306,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction warning signs and overhead directional signs?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction warning signs and the overhead directional signs is in both English and Spanish. This bilingual presentation is common in urban areas to cater to a diverse population that speaks different languages. The use of English and Spanish ensures that drivers and pedestrians can understand the information provided, which is crucial for safety and compliance with traffic regulations.",
+      "inference_time_sec": 5.747,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Drive SOUTH sign first come into view, and when does the vehicle pass it?",
+      "ground_truth": "First visible at 3.767 seconds, passed at 5.133 seconds",
+      "prediction": "The Drive SOUTH sign first comes into view at the 2-second mark in the video, and the vehicle passes it at the 5-second mark.",
+      "inference_time_sec": 4.097,
+      "error": ""
+    }
+  ]
+}

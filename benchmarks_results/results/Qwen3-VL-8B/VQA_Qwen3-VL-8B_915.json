@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "The text located directly to the right of the ARROWHEAD brand on the red delivery truck is \"direct\".",
+      "inference_time_sec": 5.295,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "2",
+      "inference_time_sec": 3.702,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "The text instances are encountered in the following order as the vehicle moves forward: TAXI, Odwalla, ARROWHEAD.",
+      "inference_time_sec": 6.162,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs indicating height clearance limits for vehicles entering the covered underpass are not visible in the provided video frames. The video primarily shows vehicles, including trucks and cars, moving through an underpass or tunnel-like structure, with overhead lighting and signage related to directions or services (e.g., “Car Return Terminal”). However, there are no clear signs displaying height restrictions.\n\nIn real-world scenarios, height clearance signs are typically marked with a horizontal bar and text indicating the maximum allowable height (e.g., “8 ft” or “2.4 m”), often accompanied by a warning symbol such as a truck silhouette. If such signs were",
+      "inference_time_sec": 13.555,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The mix of text and landmarks visible in the clip suggests that the driving environment is an **airport access road or terminal area**, likely in a **modern, well-developed urban or suburban location**.\n\nHere’s why:\n\n1. **Airport Infrastructure**: The presence of large, covered structures with overhead lighting, signage for “Terminal,” and pedestrian walkways (indicated by “pedestrian crossing” signs) strongly suggests proximity to an airport terminal or a designated drop-off/pick-up zone.\n\n2. **Commercial and Logistics Activity**: The presence of large trucks — including one with “Arrowhead Direct” and another with “Codwalla",
+      "inference_time_sec": 15.96,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The visible text indicates the United States' measurement system and phone format. This is evident from the phone number format \"1-800-...\" which is standard in the United States, and the use of \"direct\" in the context of a trucking company, which is common in U.S. commercial operations. Additionally, the presence of \"Arrowhead\" and \"Codwalla\" suggests U.S.-based companies, further supporting the inference.",
+      "inference_time_sec": 10.732,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.826,
+      "error": ""
+    }
+  ]
+}

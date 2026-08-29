@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is located to the left of the pavement marking 'ONLY' as the vehicle moves forward?",
       "ground_truth": "A prominent chain-link fence to the left of 'ONLY' [entity_001]",
-      "prediction": "The user wants to identify what is to the left of the pavement marking 'ONLY'.\n\n1.  **Analyze the video:** I need to look for the pavement marking 'ONLY'.\n2.  **Locate the marking:**\n    *   At 00:00, the car is approaching an intersection. No 'ONLY' marking is clearly visible yet.\n    *   At 00:01, the car is turning right.\n    *   At 00:02, the car is driving straight. I see \"ONLY\" painted on the road. It's part of a",
-      "inference_time_sec": 12.93,
+      "prediction": "A white arrow",
+      "inference_time_sec": 2.393,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many pavement markings with legible text are visible in the lane after the vehicle completes its left turn?",
       "ground_truth": "1",
-      "prediction": "The user wants to count pavement markings with legible text in the lane after the vehicle completes its left turn.\n\n1.  **Identify the turn:** The video starts with the car approaching an intersection. At around 00:03, the car is turning left. By 00:04, the car has completed the turn and is driving straight in a new lane.\n2.  **Identify the lane:** The car is now in a lane going straight.\n3.  **Identify pavement markings with legible text:**\n    *   Looking at the road surface in the lane the car",
-      "inference_time_sec": 12.667,
+      "prediction": "1",
+      "inference_time_sec": 2.29,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order of the legible text instances encountered on the road surface during the clip?",
       "ground_truth": "1st: 'ONLY' [entity_001]",
-      "prediction": "The user wants me to identify the legible text on the road surface in the provided video clip and list them in chronological order.\n\n1.  **Analyze the video:** I'll watch the video frame by frame to spot any text painted on the road.\n2.  **Frame 00:00 - 00:02:** The car is approaching an intersection. There are crosswalk markings (white stripes), but no legible words.\n3.  **Frame 00:03:** The car is turning right. I see \"ONLY\" painted on the road surface in the lane the",
-      "inference_time_sec": 12.637,
+      "prediction": "ONLY, ONLY, ONLY",
+      "inference_time_sec": 2.519,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What instructional text is painted on the lane surface to guide the driver's lane choice after turning?",
       "ground_truth": "'ONLY' [entity_001]",
-      "prediction": "The user wants to identify the instructional text painted on the road surface.\n\n1.  **Analyze the video:** I'll scan through the frames to find a clear shot of the road markings.\n2.  **Locate the text:**\n    *   Frame 00:00: Shows a crosswalk and green lights. No lane text visible yet.\n    *   Frame 00:01: The car is turning right. No clear lane text.\n    *   Frame 00:02: The car is approaching an intersection. There are red lights. I see \"ONLY\"",
-      "inference_time_sec": 12.684,
+      "prediction": "ONLY",
+      "inference_time_sec": 2.33,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggest about the driving environment?",
       "ground_truth": "Residential or urban fringe area",
-      "prediction": "The user wants me to interpret the visual cues in the video to describe the driving environment.\n\n1.  **Analyze the visual elements:**\n    *   **Snow-covered sidewalks:** Visible on the left and right sides of the road. This indicates cold weather, likely winter.\n    *   **Parked vehicles:** There are cars parked along the curb on the right side (visible in frames 00:02, 00:03, 00:04). This suggests a residential or mixed-use area where people park cars.\n    *   **Chain-link fence:** Visible in the background",
-      "inference_time_sec": 12.62,
+      "prediction": "Winter conditions",
+      "inference_time_sec": 2.451,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is the pavement marking 'ONLY' written in?",
       "ground_truth": "English",
-      "prediction": "The user is asking about the language of the pavement marking 'ONLY'.\n\n1.  **Identify the marking:** I need to look at the video frames to find the word \"ONLY\" painted on the road.\n2.  **Locate the marking:**\n    *   Frame at 0.0s: No \"ONLY\" visible.\n    *   Frame at 0.1s: No \"ONLY\" visible.\n    *   Frame at 0.2s: The word \"ONLY\" is clearly visible painted on the road surface in the lane the car is approaching. It's part of a",
-      "inference_time_sec": 12.584,
+      "prediction": "English",
+      "inference_time_sec": 2.245,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the pavement marking 'ONLY' first become visible in the clip?",
       "ground_truth": "00:05",
-      "prediction": "The user wants to find the timestamp when the pavement marking 'ONLY' first appears.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The car is approaching an intersection. The road markings are visible but it's dark and blurry. No clear \"ONLY\" text.\n    *   **00:01:** The car is moving forward. Still approaching the intersection. No clear \"ONLY\" text.\n    *   **00:02:** The car is getting closer to the intersection. The road markings are becoming clearer. I can see \"ONLY\" painted on",
-      "inference_time_sec": 12.647,
+      "prediction": "0.3 seconds",
+      "inference_time_sec": 2.446,
       "error": ""
     }
   ]

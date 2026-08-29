@@ -1,0 +1,70 @@
+{
+  "video_id": 982,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/982.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of Las Vegas relative to WEST on the overhead gantry?",
+      "ground_truth": "to the right of WEST [entity_005]",
+      "prediction": "The spatial position of Las Vegas relative to WEST on the overhead gantry is indicated by the sign that reads 'Las Vegas WEST 1/4 MILE'. This sign is positioned to the right of the gantry, indicating that Las Vegas is to the west of the viewer's current position on the highway. The sign is green with white lettering, and it is mounted on a metal gantry that spans across the highway. The sign is clearly visible and provides directional information to drivers, indicating that Las Vegas is a quarter mile to the west.",
+      "inference_time_sec": 13.178,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the green roadside sign on the right side of the road?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances on the green roadside sign. The first instance reads 'Las Vegas,' the second 'Rental Car Return,' and the third 'SOUTH 1/4 MILE.'",
+      "inference_time_sec": 8.912,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances NSKI, STOPS AT, and Rental are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: Rental [entity_009], 2nd: NSKI [entity_014], 3rd: STOPS AT [entity_015]",
+      "prediction": "As the vehicle moves forward, the first text instance encountered is 'NSKI', followed by 'STOPS AT', and then 'Rental'.",
+      "inference_time_sec": 8.351,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional text on the green roadside sign indicates where a driver should turn to return a rental car?",
+      "ground_truth": "NEXT RIGHT [entity_010]",
+      "prediction": "The green roadside sign indicates that a driver should turn right to return a rental car. This instruction is part of the sign's message that reads 'Las Vegas Rental Car Return' with an arrow pointing to the right, suggesting the direction for the rental car return.",
+      "inference_time_sec": 9.568,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the overhead route signs and roadside signs, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a highway setting with multiple lanes, as indicated by the overhead route signs directing traffic to Henderson and Las Vegas. The presence of a school bus and a sedan suggests a mix of passenger and possibly school-related traffic. The roadside sign for 'Las Vegas Rental Car Return' indicates the proximity to a rental car return facility, which is a common feature in areas with a high volume of tourists. The highway is well-maintained, with clear lane markings and a concrete barrier separating the lanes, which is typical of a controlled and regulated driving environment. The overcast sky suggests variable weather conditions, which could affect driving",
+      "inference_time_sec": 14.002,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city name visible on the overhead gantry suggests the geographical region of the clip?",
+      "ground_truth": "Las Vegas [entity_006]",
+      "prediction": "The city name 'Las Vegas' visible on the overhead gantry suggests that the clip is set in the Las Vegas metropolitan area.",
+      "inference_time_sec": 7.869,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text NSKI first become visible on the back of the bus?",
+      "ground_truth": "4.467 seconds",
+      "prediction": "The text NSKI first becomes visible on the back of the bus at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.887,
+      "error": ""
+    }
+  ]
+}

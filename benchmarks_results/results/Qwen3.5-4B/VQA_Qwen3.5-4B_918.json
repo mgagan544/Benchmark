@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What specific text is located directly to the right of the highway shield 280 on the overhead gantry?",
       "ground_truth": "San [entity_001]",
-      "prediction": "The user wants me to identify specific text on a highway sign.\n\n1.  **Locate the sign:** I need to find the overhead gantry with the highway shield. Looking at the frames, specifically around 0.0s to 0.3s, there is a large green overhead sign.\n2.  **Identify the shield:** On the left side of the gantry, there is a shield with the number \"280\" inside it. This is the Interstate 280 shield.\n3.  **Find the text to the right:** Directly to the right of the \"2",
-      "inference_time_sec": 12.936,
+      "prediction": "San Francisco",
+      "inference_time_sec": 2.362,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances on the overhead highway gantry contain numbers?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the distinct text instances on the overhead highway gantry that contain numbers.\n\n1.  **Identify the gantry:** I see a large overhead sign structure spanning the highway. It appears clearly in the frames from 00:01 to 00:03.\n2.  **Locate the text instances:**\n    *   On the left side of the gantry, there's a sign pointing \"NORTH\". Below it is \"San Francisco\" and a route number \"280\".\n    *   On the right side of the gantry, there's a",
-      "inference_time_sec": 12.717,
+      "prediction": "2",
+      "inference_time_sec": 2.217,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the text instances 49A, EXIT, and John Daly Blvd become clearly visible or readable between 4.00 and 5.50 seconds?",
       "ground_truth": "1st: John Daly Blvd [entity_003], 2nd: 49A [entity_009], 3rd: EXIT [entity_010]",
-      "prediction": "The user wants to know the order of visibility for specific text instances: \"49A\", \"EXIT\", and \"John Daly Blvd\".\n\n1.  **Analyze the video:** I need to watch the video from 4.00 seconds to 5.50 seconds.\n2.  **Locate the text:**\n    *   **49A:** This is likely part of a highway sign. Looking at the frames, specifically around 4.0s - 4.5s, there's a green overhead sign. Wait, let me re-examine the timestamps. The prompt asks for the",
-      "inference_time_sec": 12.646,
+      "prediction": "49A, EXIT, John Daly Blvd",
+      "inference_time_sec": 3.259,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the overhead gantry signs, what action is implied for a driver wishing to reach John Daly Blvd?",
       "ground_truth": "Take exit 49A [entity_009]",
-      "prediction": "The user wants to know the implied action for a driver wanting to reach John Daly Blvd based on the overhead signs.\n\n1.  **Identify the relevant sign:** I need to look at the overhead gantry signs visible in the video, particularly around the 0:02 mark where they are most clear.\n2.  **Read the sign:** The sign on the right side of the gantry says \"John Daly Blvd\" and \"Junipero Serra Blvd\". Below that, it says \"1/4 MILES\".\n3.  **Analyze the layout:** The sign is positioned over the lanes. The",
-      "inference_time_sec": 12.7,
+      "prediction": "Exit",
+      "inference_time_sec": 2.426,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of overhead gantry signs with highway shields and exit numbers, what kind of driving environment is depicted?",
       "ground_truth": "Highway",
-      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead gantry signs:** I see large signs hanging over the road.\n    *   **Highway shields:** The signs have the distinctive blue and red shield shape used in the US for interstate highways (specifically Interstate 280).\n    *   **Exit numbers:** The signs list destinations like \"San Francisco\" and \"John Daly Blvd / Junipero Serra Blvd\" along with distances (e.g., \"1 1/4 MILES\").",
-      "inference_time_sec": 12.643,
+      "prediction": "Highway",
+      "inference_time_sec": 2.374,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which destination name visible on the overhead gantry suggests the vehicle is traveling near a major city in California?",
       "ground_truth": "San [entity_001] Francisco [entity_002]",
-      "prediction": "The user wants me to identify a destination name from an overhead gantry in the video.\n\n1.  **Analyze the video:** I need to look through the frames to find an overhead gantry with text.\n2.  **Locate the gantry:**\n    *   Frame 0.0s: No gantry visible.\n    *   Frame 0.1s: A gantry is coming into view on the right.\n    *   Frame 0.2s: The gantry is clearly visible. It has text on it.\n    *   Frame 0.3s:",
-      "inference_time_sec": 15.632,
+      "prediction": "San Francisco",
+      "inference_time_sec": 2.35,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the exit number 49A first become clearly visible on the right panel of the gantry?",
       "ground_truth": "4.633 seconds",
-      "prediction": "The user wants to find the timestamp where the exit number \"49A\" is first clearly visible on the right panel of the overhead gantry.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The gantry is not fully visible yet. Just the top edge of a sign is seen on the right.\n    *   **00:01:** The gantry is coming into view. The left panel says \"San Francisco\". The right panel is partially visible but blurry. I can see \"John Daly Blvd\" and \"Junipero Serra Blvd\". The number \"",
-      "inference_time_sec": 12.691,
+      "prediction": "0.1 seconds",
+      "inference_time_sec": 2.523,
       "error": ""
     }
   ]

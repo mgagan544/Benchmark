@@ -1,0 +1,70 @@
+{
+  "video_id": 948,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/948.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which sign, located directly below the FDR DR SOUTH sign on the overhead gantry, comes into view between 2.4 and 2.567 seconds?",
+      "ground_truth": "LEFT 2 LANES [entity_006]",
+      "prediction": "The sign that comes into view directly below the FDR DR SOUTH sign between 2.4 and 2.567 seconds is the **\"RIGHT 2 LANE\"** sign.",
+      "inference_time_sec": 6.74,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signs containing lane designations or lane restrictions are visible on the overhead gantry before the vehicle enters the steel truss structure?",
+      "ground_truth": "3",
+      "prediction": "There are **two** distinct signs containing lane designations or lane restrictions visible on the overhead gantry before the vehicle enters the steel truss structure.\n\n1. **\"RIGHT 2 LANE\"** – This sign indicates that the right two lanes are designated for a specific purpose (likely for a specific direction or type of vehicle, though the exact restriction isn't fully visible).\n2. **\"LEFT 2 LANE\"** – This sign indicates that the left two lanes are designated for a specific purpose (likely for a specific direction or type of vehicle, though the exact restriction isn't fully visible).\n\nThese signs are clearly visible on",
+      "inference_time_sec": 13.597,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs 2 Ave-12S st, FDR DR SOUTH, and FINE + POINTS are encountered by the vehicle?",
+      "ground_truth": "1st: 2 Ave-12S st [entity_001], 2nd: FDR DR SOUTH [entity_005], 3rd: FINE + POINTS [entity_010]",
+      "prediction": "The vehicle encounters the signs in the following order:\n\n1. **FDR DR SOUTH** — This sign is seen first as the vehicle approaches the bridge, displayed prominently on the overhead structure.\n2. **2 Ave-12S st** — This sign appears next, likely as the vehicle continues forward and the perspective shifts, revealing additional directional signage.\n3. **FINE + POINTS** — This sign is encountered last, appearing as the vehicle progresses further along the bridge, possibly near the exit or a specific lane designation.\n\nThis sequence is based on the visual progression of the signs as the vehicle moves forward, with FDR DR SOUTH",
+      "inference_time_sec": 13.513,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text, located to the left of the STRICTLY ENFORCED sign, becomes visible at 2.733 seconds to indicate traffic penalties?",
+      "ground_truth": "FINE + POINTS [entity_010]",
+      "prediction": "The warning text that becomes visible at 2.733 seconds, located to the left of the \"STRICTLY ENFORCED\" sign, is: \"TOW AWAY ZONE\".",
+      "inference_time_sec": 6.829,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggest about the driving environment?",
+      "ground_truth": "Expressway bridge approach",
+      "prediction": "The mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggests a complex and potentially congested driving environment. Here’s what it implies:\n\n1. **Multiple Lane Restrictions**: The signs indicate that certain lanes are restricted for specific vehicles (e.g., “TOLL LANE” or “TOLL LANE ONLY”), which can lead to confusion or forced lane changes for drivers unfamiliar with the rules. This often results in slower traffic flow as drivers adjust to the restrictions.\n\n2. **Highway Congestion**: The presence of multiple signs and lane restrictions typically indicates a high-traffic",
+      "inference_time_sec": 13.601,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city is suggested by the highway names FDR DR SOUTH and Harlem RIv Dr visible on the overhead gantry?",
+      "ground_truth": "New York City",
+      "prediction": "The highway names **FDR DR SOUTH** and **Harlem Riv Dr** visible on the overhead gantry strongly suggest that the location is **New York City**.\n\nHere’s why:\n\n- **FDR Dr** stands for **Franklin D. Roosevelt Drive**, a major north-south arterial road in New York City, running through Manhattan and Queens. The “South” designation indicates the direction of travel.\n- **Harlem Riv Dr** refers to the **Harlem River Drive**, which runs along the Harlem River, connecting Manhattan to the Bronx. This is a well-known thoroughfare in the New York City area.\n\nThese names",
+      "inference_time_sec": 13.635,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the lead blue vehicle with license plate FOD-3149 tracked at the beginning of the clip?",
+      "ground_truth": "00:00 to 00:02",
+      "prediction": "The lead blue vehicle with license plate FOD-3149 is tracked from 0:00 to 0:04.",
+      "inference_time_sec": 5.9,
+      "error": ""
+    }
+  ]
+}

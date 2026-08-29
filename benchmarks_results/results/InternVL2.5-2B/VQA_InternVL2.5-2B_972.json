@@ -1,0 +1,70 @@
+{
+  "video_id": 972,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/972.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
+      "ground_truth": "To the right of VIDE [entity_002]",
+      "prediction": "The regulatory text MON WED FRI is located on the windshield, directly in front of the commercial sign VIDE. The text is positioned towards the bottom edge of the windshield, while the sign is situated higher up on the building facade.",
+      "inference_time_sec": 4.885,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct pieces of vehicle-mounted text visible on the dark grey pickup truck.",
+      "inference_time_sec": 3.494,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
+      "ground_truth": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]",
+      "prediction": "The markings on the pickup truck become visible in the following order: first the 'F150' marking, then the '4X4' marking, and finally the 'P150' marking.",
+      "inference_time_sec": 4.477,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
+      "ground_truth": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]",
+      "prediction": "The regulatory sign near the commercial building states that parking is not allowed between the hours of 7:00 AM to 9:00 AM and 4:00 PM to 7:00 PM.",
+      "inference_time_sec": 4.508,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of commercial signs and parking regulations in the driving environment suggests a busy urban area where various activities and regulations coexist. Commercial signs indicate the presence of businesses and shops, which are essential for the local economy and daily life of the residents. On the other hand, parking regulations, such as the 'No Parking Sundays 8AM-1PM' sign, indicate a structured approach to managing parking spaces, ensuring that there is enough room for vehicles and pedestrians. This combination of commercial and regulatory elements reflects the organized yet bustling nature of city life, where different aspects of urban living are integrated into the same space.",
+      "inference_time_sec": 8.145,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
+      "ground_truth": "English",
+      "prediction": "The text on both the regulatory parking sign and the commercial building is in Spanish. The sign reads 'REGULACIÓN DE PARKING', and the building has a sign that says 'VIDE'.",
+      "inference_time_sec": 4.578,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
+      "ground_truth": "3.033s",
+      "prediction": "The STREET CLEANING sign first becomes clearly readable at the 0:00 timestamp.",
+      "inference_time_sec": 3.599,
+      "error": ""
+    }
+  ]
+}

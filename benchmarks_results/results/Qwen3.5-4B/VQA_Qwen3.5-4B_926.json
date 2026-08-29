@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the safety sign marked with AMER relative to the vehicle with license plate T679966C?",
       "ground_truth": "AMER [entity_008] is to the right of T679966C [entity_007]",
-      "prediction": "The user wants to know the spatial relationship between two objects: a safety sign marked with \"AMER\" and a vehicle with license plate \"T679966C\".\n\n1.  **Identify the vehicle with license plate T679966C:**\n    *   Looking through the frames, I see a gold/beige SUV in the center lane.\n    *   Let's check the license plate. In the later frames (00:02, 00:03, 00:04), the license plate is clearly visible. It reads \"T67",
-      "inference_time_sec": 12.894,
+      "prediction": "right",
+      "inference_time_sec": 2.221,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances belong to the highway direction sign pointing toward the wait area?",
       "ground_truth": "4",
-      "prediction": "The user wants me to count the distinct text instances on a specific highway sign.\n\n1.  **Identify the sign:** The user specifies \"the highway direction sign pointing toward the wait area\".\n2.  **Locate the sign:** Looking through the frames, specifically around 00:01 and 00:02, there is a green highway sign on the right side of the road, near the construction area.\n3.  **Read the text:** The sign has multiple lines of text.\n    *   Top line: \"Term A\" (or similar, looks like \"Term A\")",
-      "inference_time_sec": 12.624,
+      "prediction": "2",
+      "inference_time_sec": 2.15,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the airport facility sign, the highway direction sign, and the license plate are encountered between 0.9 and 5.0 seconds?",
       "ground_truth": "1st: AMERICAN [entity_001] AIRLINES [entity_002], 2nd: Long [entity_003] Term [entity_004] Wait [entity_005] Area [entity_006], 3rd: T679966C [entity_007]",
-      "prediction": "The user wants to know the order of three specific visual elements: an airport facility sign, a highway direction sign, and a license plate.\nThe timeframe is between 0.9 and 5.0 seconds.\n\n1.  **Analyze the video frames:**\n    *   **0.9s:** The camera car is following a gold SUV. To the right, there's a black car. In the distance, there are green highway signs.\n    *   **1.0s:** The gold SUV is still ahead. The black car is to the right. A green sign is visible further up.",
-      "inference_time_sec": 12.699,
+      "prediction": "airport facility sign, highway direction sign, license plate",
+      "inference_time_sec": 2.887,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint? If so, what does it say and where is it located?",
       "ground_truth": "AMER [entity_008] on a construction notice at the airport construction site",
-      "prediction": "The user wants me to identify any text in the video that relates to hazards, warnings, or driving constraints.\n\n1.  **Scan the video for signs:** I'll look at the overhead signs, road markings, and construction signage.\n2.  **Analyze the first few frames (00:00 - 00:01):**\n    *   There's a green overhead sign on the left. It's partially visible but looks like a standard highway sign.\n    *   There's a yellow construction sign on the far left. It's blurry but looks like a standard warning sign.\n    *",
-      "inference_time_sec": 12.616,
+      "prediction": "Yes, the text \"TWO LANE ROAD AHEAD\" is visible on a green sign on the right side of the road.",
+      "inference_time_sec": 4.41,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the visible text mentioning airlines and long term wait area, what type of driving environment is depicted?",
       "ground_truth": "Airport access road",
-      "prediction": "The user wants me to identify the type of driving environment based on specific text visible in the video.\n\n1.  **Analyze the text:** I see a sign on the right side of the road.\n    *   It says \"Term A\" and \"P\".\n    *   Below that, it says \"Long Term Wait Area\".\n    *   Further right, there's a sign for \"AMERICAN AIRLINES\".\n    *   There's also a sign for \"JFK\" visible in the distance (though slightly blurry, the context of airlines and terminals strongly suggests an airport).\n\n2.",
-      "inference_time_sec": 12.612,
+      "prediction": "Airport",
+      "inference_time_sec": 2.312,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language or script is the visible text on the airport hangar and highway direction sign written in?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language or script of the text visible on two specific things:\n1.  **Airport hangar:** Looking at the right side of the road, there's a building with \"AMERICAN AIRLINES\" written on it. This is English.\n2.  **Highway direction sign:** Looking ahead, there are green highway signs. One sign says \"Tarmac A\", \"P\", \"Landing\", \"B\", \"Wait Area\". Another sign further up says \"Tarmac B\". These are English words.\n\nTherefore, the language is English. The script is the Latin alphabet.",
-      "inference_time_sec": 12.597,
+      "prediction": "English",
+      "inference_time_sec": 2.216,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the license plate on the gold lead SUV become clearly visible?",
       "ground_truth": "4.0 seconds for T679966C [entity_007]",
-      "prediction": "The user wants to find the timestamp when the license plate on the gold SUV becomes clearly visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The gold SUV is ahead. The license plate is visible but a bit blurry and distant.\n    *   **00:01:** The car is slightly closer. The plate is still somewhat blurry but more distinct.\n    *   **00:02:** The car is closer. The plate is becoming clearer.\n    *   **00:03:** The car is quite close now. The license plate",
-      "inference_time_sec": 12.637,
+      "prediction": "0.3",
+      "inference_time_sec": 2.293,
       "error": ""
     }
   ]

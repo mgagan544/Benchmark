@@ -1,0 +1,70 @@
+{
+  "video_id": 931,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/931.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
+      "ground_truth": "S E [entity_005]",
+      "prediction": "The text located between \"RAY'S TRUCKS\" and \"Elizabeth N.J.\" on the semi-truck reads \"808-436-0251\".",
+      "inference_time_sec": 6.109,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct vehicle-mounted text elements visible on the semi-truck on the right side of the host vehicle:\n\n1. \"Milea\" (on the side of the truck).\n2. \"PARTS DELIVERY\" (on the side of the truck).\n3. \"www.mileagroup.com\" (on the side of the truck).",
+      "inference_time_sec": 7.868,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
+      "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
+      "prediction": "As the host vehicle moves forward, the text elements appear in the following order:\n\n1. **FUEL CO**: This text appears on the side of a white van that is visible to the left of the host vehicle.\n2. **milea**: This text appears on the side of a white truck that is visible further ahead on the right side of the road.\n3. **HINO**: This text appears on the side of another white truck that is also visible further ahead on the right side of the road.\n\nThe sequence of appearance is: FUEL CO, then milea, and finally HINO.",
+      "inference_time_sec": 10.637,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "None",
+      "prediction": "The image shows a highway scene with multiple vehicles, including trucks and cars, traveling on a multi-lane road. There is no visible text in the image that indicates a hazard, warning, or driving constraint. The focus of the image appears to be on the traffic flow and the surrounding infrastructure, such as the bridge in the background. If there were any text indicating hazards or constraints, it would typically be located on signs or within the vehicle's dashboard display, which are not visible in this image.",
+      "inference_time_sec": 9.619,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The host vehicle appears to be traveling on a highway or an expressway. The presence of route number 278 suggests it is a state route, which typically indicates a major road used for long-distance travel. Additionally, the multiple commercial trucks and the overall layout of the road with multiple lanes and a concrete barrier further support this conclusion. Highways and expressways are designed to handle heavy traffic, including commercial vehicles, and provide clear lane markings and barriers to ensure safety and efficient flow of traffic.",
+      "inference_time_sec": 9.467,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
+      "ground_truth": "Elizabeth N.J. [entity_003]",
+      "prediction": "The text \"Elizabeth, NJ\" on the semi-truck suggests that the vehicle is associated with Elizabeth, which is a city in New Jersey.",
+      "inference_time_sec": 5.637,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
+      "ground_truth": "1.2s to 1.3s",
+      "prediction": "The text elements \"FUEL CO\" and \"S J\" first become visible on the semi-truck as the camera moves closer to it, indicating that these details are part of the truck's branding or company information. The exact time range cannot be determined from the image alone without additional context or a timeline of the video. However, based on the sequence of frames provided, it appears that these text elements become visible after the camera has moved past the initial view of the highway and is now focused more closely on the semi-truck.",
+      "inference_time_sec": 9.911,
+      "error": ""
+    }
+  ]
+}

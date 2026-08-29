@@ -1,0 +1,70 @@
+{
+  "video_id": 975,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/975.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead road sign located adjacent to the sign showing 20 AV?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007] adjacent to 20 AV [entity_001]",
+      "prediction": "The overhead road sign adjacent to the sign showing 20 AV displays the text 'NO STOPPING ANYTIME'. This sign is positioned to inform drivers that they are not permitted to stop at this intersection at any time. The sign is a regulatory element of the traffic environment, providing clear and direct instructions to road users.",
+      "inference_time_sec": 5.555,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in the clip are mounted on vehicles?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct pieces of text visible in the clip mounted on vehicles. One is on the back of the dark grey SUV, and the other is on the back of the white bus.",
+      "inference_time_sec": 4.388,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the ego vehicle encounters the intersection street names and the highway directional signs?",
+      "ground_truth": "1st: 20 AV [entity_001] and Parsons Blvd [entity_002], 2nd: WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "First, the ego vehicle approaches the intersection where the street names '23rd St' and 'Riverside Ave' are visible. Then, the scene transitions to a view where the highway directional signs indicate 'Riverside Ave' and '23rd St' with the highway sign reading 'Riverside Expressway West 495'.",
+      "inference_time_sec": 5.819,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional text is displayed on the overhead sign near the traffic lights to guide drivers toward the expressway?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The overhead sign near the traffic lights displays the directional text '20 Av' to guide drivers toward the expressway.",
+      "inference_time_sec": 3.88,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential homes, hedges, and apartment buildings suggest about the driving environment?",
+      "ground_truth": "Residential area",
+      "prediction": "The mix of residential homes, hedges, and apartment buildings suggests a suburban or semi-urban driving environment. This indicates that the area is likely a residential neighborhood with a mix of single-family homes and possibly apartment buildings, which are common in suburban areas. The presence of these structures implies that the driver is in a place where residential living is prevalent, and there is a blend of private residences and possibly shared or apartment spaces. The hedges and trees also contribute to the suburban aesthetic, providing a green space and a sense of community. The overall environment appears to be a typical residential area with a focus on safety and orderly traffic flow",
+      "inference_time_sec": 8.334,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and expressway abbreviations suggest this clip is set in New York City?",
+      "ground_truth": "20 AV [entity_001], Parsons Blvd [entity_002], and WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The street signs visible in the video indicate '20 Av' and 'Rt 1st St', which are common street names and expressway abbreviations found in New York City. Additionally, the presence of a bus stop sign and the dense urban environment with multi-story buildings are typical of city settings.",
+      "inference_time_sec": 5.446,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle carrying the license plate GKD-4491 begin to accelerate through the intersection?",
+      "ground_truth": "2.367 seconds",
+      "prediction": "The vehicle carrying the license plate GKD-4491 begins to accelerate through the intersection at the 1-second mark of the video.",
+      "inference_time_sec": 4.343,
+      "error": ""
+    }
+  ]
+}

@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located across the street relative to the overhead crossing sign displaying AHE?",
       "ground_truth": "CASH 4 [entity_003] to the left of AHE [entity_002]",
-      "prediction": "The user wants to identify text located across the street relative to a specific sign.\n\n1.  **Identify the sign:** The user mentions an \"overhead crossing sign displaying AHE\". Looking at the first few frames (00:00 - 00:01), there is a yellow diamond-shaped sign on a pole on the right side of the road. It has a symbol of a person walking and the letters \"AHE\" below it. Wait, let me look closer. It's a yellow diamond sign with a pedestrian symbol and the letters \"AHE\" underneath. This is likely a \"School Crossing",
-      "inference_time_sec": 13.217,
+      "prediction": "School Crossing",
+      "inference_time_sec": 2.39,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?",
       "ground_truth": "7",
-      "prediction": "The user wants me to count the distinct text instances on the yellow school bus parked on the right.\n\n1.  **Identify the bus:** The bus is visible in the first few frames (00:00 - 00:02) parked on the right side of the road.\n2.  **Locate text on the bus:**\n    *   **Front:** There is text on the front of the bus. It says \"SCHOOL BUS\".\n    *   **Side:** There is text running along the side of the bus. It says \"SCHOOL BUS\" again, and further down",
-      "inference_time_sec": 12.626,
+      "prediction": "3",
+      "inference_time_sec": 2.322,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?",
       "ground_truth": "1st: SCHOOL [entity_001], 2nd: AHE [entity_002], 3rd: CASH 4 [entity_003]",
-      "prediction": "The user wants me to identify the chronological order of the first three text instances visible in the video from the start up to 3.0 seconds.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a yellow school bus on the right side of the road.\n    *   On the back of the bus, there is text. It reads \"SCHOOL BUS\".\n    *   This is the first text instance.\n\n2.  **Analyze subsequent frames (00:01 - 00:02):**\n    *   The camera car",
-      "inference_time_sec": 12.658,
+      "prediction": "1. School Bus\n2. No Parking\n3. No Parking",
+      "inference_time_sec": 3.22,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?",
       "ground_truth": "PARKING [entity_011]",
-      "prediction": "The user wants to identify a specific regulatory text on a utility post.\n\n1.  **Locate the utility post:** I need to look at the right sidewalk. In the first few frames (0.0s - 0.2s), there's a yellow sign on a pole. Further down, near the school bus, there's another pole.\n2.  **Identify the relevant sign:** The question asks about text constraining parking near the *end* of the clip.\n    *   At 0.0s, there's a yellow diamond sign (crosswalk) and a blue sign below it",
-      "inference_time_sec": 12.69,
+      "prediction": "No Parking",
+      "inference_time_sec": 2.457,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?",
       "ground_truth": "School zone",
-      "prediction": "The user wants to know what the visible text suggests about the area.\n\n1.  **Identify the text:** I need to look closely at the frames between 0.267 and 3.200 seconds.\n    *   At 0.267s, there's a yellow school bus. The text on the side is partially visible but blurry. It looks like \"SCHOOL BUS\".\n    *   At 0.300s, the bus is further away.\n    *   At 0.333s, the bus is parked on the right. The",
-      "inference_time_sec": 12.769,
+      "prediction": "School zone",
+      "inference_time_sec": 2.534,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What city is suggested by the contact number displayed on the side of the school bus?",
       "ground_truth": "New York City",
-      "prediction": "The user wants to identify the city based on the text on the school bus.\n\n1.  **Locate the school bus:** In the first few frames (0.0s, 0.1s, 0.2s), a yellow school bus is visible on the right side of the road.\n2.  **Zoom in on the text:** I need to look closely at the side of the bus.\n3.  **Read the text:** In frame 0.2s, the text on the side of the bus is partially visible. It reads \"NEW YORK CITY SCHOOLS\".\n4",
-      "inference_time_sec": 12.77,
+      "prediction": "New York",
+      "inference_time_sec": 2.363,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range does the regulatory parking sign remain continuously visible in the clip?",
       "ground_truth": "6.400 seconds to 7.367 seconds",
-      "prediction": "The user wants to find the time range where a specific regulatory parking sign is visible.\n\n1.  **Identify the sign:** I need to look for a \"regulatory parking sign\". In the first few frames, there's a sign on the right side of the road, near the school bus. It looks like a \"No Parking\" sign (a circle with a P and a slash through it, or similar). Let's look closer.\n    *   Frame 00:00: There's a sign on a pole on the right sidewalk. It's partially obscured but looks like a parking regulation sign. Wait",
-      "inference_time_sec": 12.65,
+      "prediction": "0.0 - 0.5 seconds",
+      "inference_time_sec": 3.273,
       "error": ""
     }
   ]

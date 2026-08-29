@@ -1,0 +1,70 @@
+{
+  "video_id": 928,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/928.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the guide sign indicating Bron EXPWY?",
+      "ground_truth": "178 [entity_007] and NORTH [entity_008] to the right of Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The sign located directly to the right of the guide sign indicating Bron EXPWY is a green sign with white lettering.",
+      "inference_time_sec": 4.181,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible in this clip?",
+      "ground_truth": "4",
+      "prediction": "In the video, there are two distinct text instances containing numbers. One is on the green sign that reads \"BRONX EXEWAY,\" and the other is on the green sign that reads \"C-Bron Xeway.\"",
+      "inference_time_sec": 4.824,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?",
+      "ground_truth": "1st: 3030 [entity_001], 2nd: SPEED [entity_002] LIMIT [entity_003], 3rd: Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered in the order of their appearance. The roadside marker is positioned on the right side of the road, the speed limit sign is placed on the left side, and the Bron EXPWY guide sign is positioned above the speed limit sign.",
+      "inference_time_sec": 5.721,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the overhead structure to indicate a height restriction?",
+      "ground_truth": "CLEARANCE 13-6 [entity_006]",
+      "prediction": "The warning text displayed on the overhead structure to indicate a height restriction is \"CAUTION 25 FT AHEAD.\"",
+      "inference_time_sec": 3.732,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of guide signs, speed limits, and clearance warnings indicates that the driving environment is a well-regulated and potentially busy urban area. The signs provide guidance to drivers on the correct lane to take, the speed limit to adhere to, and the need to maintain a certain distance from the vehicle ahead to ensure safety. The clear and visible road markings, along with the illuminated signs, suggest that the area is well-maintained and that drivers are expected to adhere to traffic rules and safety protocols.",
+      "inference_time_sec": 7.142,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region or city is suggested by the guide sign indicating Bron EXPWY?",
+      "ground_truth": "Bronx, New York",
+      "prediction": "The guide sign indicating Bron EXPWY suggests that the location is in Bronx, New York.",
+      "inference_time_sec": 3.58,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the vehicle directly ahead become clearly readable?",
+      "ground_truth": "8.7",
+      "prediction": "The license plate on the vehicle directly ahead becomes clearly readable at the timestamp when the video shows the car's rear end.",
+      "inference_time_sec": 3.765,
+      "error": ""
+    }
+  ]
+}

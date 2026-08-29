@@ -1,0 +1,70 @@
+{
+  "video_id": 907,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/907.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the text 25 A on the overhead street sign?",
+      "ground_truth": "Northern [entity_012] Bird [entity_013]",
+      "prediction": "The text located directly to the right of the text 25 A on the overhead street sign is 'NORTH'.",
+      "inference_time_sec": 8.053,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the parked white box truck?",
+      "ground_truth": "6",
+      "prediction": "There are two distinct text instances mounted on the parked white box truck. One reads 'CONTRACTORS' and the other 'ELECTRICAL LLC'.",
+      "inference_time_sec": 8.766,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the text groups on the brick industrial building's banner are encountered?",
+      "ground_truth": "1st: DRIVERS [entity_001] and WANTED [entity_002], 2nd: 718 [entity_003] and 729-7777 [entity_004]",
+      "prediction": "The text groups on the brick industrial building's banner are encountered in the following order: 'DRIVERS WANTED', 'TRUCK DRIVERS', and 'BUS DRIVERS'.",
+      "inference_time_sec": 8.409,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the sign near the traffic light at the intersection?",
+      "ground_truth": "ENTER [entity_016]",
+      "prediction": "The sign near the traffic light at the intersection displays the text 'NO TURN ON RED' in red letters, indicating that vehicles are not allowed to make a turn on red. This sign is a regulatory instruction meant to ensure the safety of pedestrians and other road users by preventing vehicles from turning into oncoming traffic.",
+      "inference_time_sec": 10.12,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?",
+      "ground_truth": "Industrial and commercial district",
+      "prediction": "The presence of a contractor vehicle with text and an industrial building with banners reading 'DRIVERS WANTED' suggests that the driving environment is likely an urban or industrial area with ongoing construction or industrial activity. The banners indicate that there may be job opportunities available for drivers in the vicinity, which could imply a bustling area with active businesses and possibly a need for additional transportation services. The overall scene, with its mix of commercial vehicles and industrial buildings, paints a picture of a working-class neighborhood or a section of the city that is undergoing development or has a strong industrial presence.",
+      "inference_time_sec": 13.092,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the area code 718 found on the visible signs?",
+      "ground_truth": "New York City",
+      "prediction": "The area code 718 is associated with Brooklyn, New York. This can be inferred from the context of the video, which shows a typical urban street scene in Brooklyn, with the presence of a 'Drivers Wanted' sign, a construction truck, and the general layout of the streets and buildings.",
+      "inference_time_sec": 10.053,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the phone number 718.786.2505 on the parked white box truck visible?",
+      "ground_truth": "4.8 seconds to 6.233 seconds",
+      "prediction": "The phone number 718.786.2505 is visible on the parked white box truck from the beginning of the video until the truck starts to move and exits the frame.",
+      "inference_time_sec": 8.473,
+      "error": ""
+    }
+  ]
+}

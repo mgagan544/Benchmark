@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located directly below Upper Happy on the overhead sign?",
       "ground_truth": "Valley Rd [entity_003] directly below Upper Happy [entity_002]",
-      "prediction": "The user wants to identify the text below \"Upper Happy\" on the overhead sign.\n\n1.  **Locate the sign:** I see a green overhead highway sign in the first frame (00:00).\n2.  **Read the sign:** The sign has three lines of text.\n    *   Top line: \"Acalanes Rd\"\n    *   Middle line: \"Upper Happy\"\n    *   Bottom line: \"Valley Rd\"\n3.  **Identify the target text:** The user asked for the text directly below \"Upper Happy\".\n4.  **Extract the",
-      "inference_time_sec": 13.151,
+      "prediction": "Valley Rd",
+      "inference_time_sec": 2.424,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are displayed on the highway signs mentioned in the scene?",
       "ground_truth": "4",
-      "prediction": "The user wants me to count the distinct text instances on the highway signs.\n\n1.  **Identify the signs:** I see a green highway sign on the right side of the road.\n2.  **Read the text on the sign:**\n    *   Top line: \"Acalanes Rd\"\n    *   Middle line: \"Upper Happy\"\n    *   Bottom line: \"Valley Rd\"\n3.  **Count the distinct text instances:**\n    *   \"Acalanes Rd\" is one instance.\n    *   \"Upper Happy\" is a second instance.\n    *",
-      "inference_time_sec": 12.703,
+      "prediction": "3",
+      "inference_time_sec": 2.242,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the sequence of signs encountered by the vehicle from the start of the clip to 3.0 seconds?",
       "ground_truth": "1st: Acalanes Rd [entity_001], Upper Happy [entity_002], Valley Rd [entity_003]; 2nd: EXIT [entity_004]",
-      "prediction": "The user wants me to identify the sequence of signs seen in the video from the beginning up to the 3.0-second mark.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a large green overhead highway sign on the right side.\n    *   The text on the sign reads:\n        *   \"Acalanes Rd\"\n        *   \"Upper Happy\"\n        *   \"Valley Rd\"\n    *   There is an arrow pointing right.\n    *   This is the first sign.\n\n2.  **Analyze the",
-      "inference_time_sec": 12.698,
+      "prediction": "Acalanes Rd, Upper Happy Valley Rd, Exit 127, Exit 128",
+      "inference_time_sec": 3.838,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the visible text, what driving action is indicated near the green gore sign?",
       "ground_truth": "An exit action is indicated by the EXIT [entity_004] sign.",
-      "prediction": "The user wants to identify a driving action based on the text on a green sign.\n\n1.  **Locate the sign:** I see a green overhead sign in the first frame (00:00) and partially in the second frame (00:01). It's positioned over the lanes to the right.\n2.  **Read the text:** The sign says:\n    *   \"Acalanes Rd\"\n    *   \"Upper Happy\"\n    *   \"Valley Rd\"\n    *   There is an arrow pointing right next to \"Upper Happy Valley Rd\".\n    *",
-      "inference_time_sec": 12.745,
+      "prediction": "Exit",
+      "inference_time_sec": 2.302,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment does the mix of signs like Acalanes Rd and EXIT suggest?",
       "ground_truth": "Highway",
-      "prediction": "The user wants to identify the type of driving environment based on the visible signs.\n\n1.  **Analyze the signs:**\n    *   The first sign (visible in the first frame) is a green overhead highway sign. It lists destinations: \"Acalanes Rd\", \"Upper Happy\", \"Valley Rd\". It has an arrow pointing right, indicating an exit.\n    *   The second sign (visible in the second frame) is a smaller green sign that says \"EXIT\" with an arrow pointing right.\n    *   There are also yellow diamond-shaped signs, which are standard warning signs for road conditions or",
-      "inference_time_sec": 12.668,
+      "prediction": "Highway",
+      "inference_time_sec": 2.359,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is the text on the overhead and gore signs written in?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the text on the signs.\n\n1.  **Analyze the first image:**\n    *   There is a green overhead sign.\n    *   The text reads: \"Acalanes Rd\", \"Upper Happy\", \"Valley Rd\".\n    *   There is an arrow pointing right.\n    *   This looks like English. \"Road\" is abbreviated as \"Rd\". \"Upper Happy Valley Road\" is a place name.\n\n2.  **Analyze the second image:**\n    *   There is a green sign on the right side.\n    *",
-      "inference_time_sec": 12.628,
+      "prediction": "English",
+      "inference_time_sec": 2.309,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what time range does the vehicle pass the green gore sign displaying EXIT?",
       "ground_truth": "Between 2.633 and 2.733 seconds for EXIT [entity_004]",
-      "prediction": "The user wants to find the specific time range where a green gore sign with the word \"EXIT\" is visible.\n\n1.  **Scan the video frames:** I will look through the provided frames to locate the sign.\n2.  **Frame 00:00:** There is a green overhead sign, but it lists destinations like \"Acalanes Rd\", \"Upper Happy Valley Rd\". It's not a gore sign with just \"EXIT\".\n3.  **Frame 00:01:** As the car moves forward, a new sign appears on the right side. It is a green rectangular sign mounted",
-      "inference_time_sec": 12.627,
+      "prediction": "0.0 - 0.5 seconds",
+      "inference_time_sec": 2.894,
       "error": ""
     }
   ]

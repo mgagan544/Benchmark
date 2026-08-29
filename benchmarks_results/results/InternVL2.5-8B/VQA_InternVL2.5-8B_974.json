@@ -1,0 +1,70 @@
+{
+  "video_id": 974,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/974.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark is located to the left of the yellow directional sign pointing to Terminal C?",
+      "ground_truth": "Hilton [entity_003] to the left of Terminal [entity_004] C",
+      "prediction": "To the left of the yellow directional sign pointing to Terminal C, there is a large building with a pinkish hue, which appears to be a significant landmark in the vicinity. This building stands out due to its size and color, contrasting with the surrounding environment. It is situated near the highway, making it easily visible to drivers and passengers. The building's presence adds to the urban landscape and serves as a reference point for navigation.",
+      "inference_time_sec": 11.649,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct destinations are listed to the right of the Food and Gas signs?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct destinations listed to the right of the Food and Gas signs. They are 'Newark Airport', 'Newark Airport Exit 14A', and 'Newark Airport Exit 14B'.",
+      "inference_time_sec": 8.934,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the Hilton hotel, the Terminal C sign, and the Clellan street exit sign are encountered by the vehicle?",
+      "ground_truth": "1st: Hilton [entity_003], 2nd: Terminal [entity_004] C, 3rd: Clellan [entity_007]",
+      "prediction": "The vehicle first encounters the Hilton hotel sign, then the Terminal C sign, and finally the Clellan street exit sign.",
+      "inference_time_sec": 7.915,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instruction is given to drivers on the overhead green gantry signs directing to Newark Airport?",
+      "ground_truth": "USE BOTH LANES [entity_011]",
+      "prediction": "The overhead green gantry signs direct drivers to Newark Airport with the instruction 'Keep Right for Newark Airport' and provide the distance to the airport as '1/4 MILE'.",
+      "inference_time_sec": 8.669,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by signs for airport terminals, parking, and rental car returns?",
+      "ground_truth": "Airport access highway",
+      "prediction": "The presence of signs for airport terminals, parking, and rental car returns suggests that the driving environment is near an airport. These signs typically indicate the proximity to airport facilities, which are common in areas where airports are located. The signs are designed to provide clear directions to travelers who are either arriving at the airport or departing from it. The specific mention of 'Terminal 3' and 'Terminal 4' suggests that the airport has multiple terminals, which is common for larger airports that serve a significant number of passengers. The signs for parking and rental car returns indicate that there are facilities available for travelers to park their vehicles or rent cars,",
+      "inference_time_sec": 13.934,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific airport is indicated by the overhead green directional signs?",
+      "ground_truth": "Newark Airport [entity_012]",
+      "prediction": "The overhead green directional signs indicate 'Newark Airport'. This is discernible from the signage that reads 'Newark Airport' with an arrow pointing to the right, suggesting that the direction to the airport is to the right of the road.",
+      "inference_time_sec": 10.044,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "Between what timestamps is the yellow directional sign for Terminal C visible to the driver?",
+      "ground_truth": "2.3 seconds to 3.433 seconds",
+      "prediction": "The yellow directional sign for Terminal C is visible to the driver from the timestamp of 00:00:00 to 00:00:10.",
+      "inference_time_sec": 8.152,
+      "error": ""
+    }
+  ]
+}

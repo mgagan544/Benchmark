@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "To the right of the marked zebra crossing, there is a sidewalk with a red and white curb, and beyond that, a grassy area with a few trees and a bus stop shelter.",
+      "inference_time_sec": 8.708,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "At the start of the clip, there are two distinct signboards containing numbers visible on the right side of the road.",
+      "inference_time_sec": 7.859,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "After passing the signboard 9999, the vehicle encounters a large billboard on the far left. This billboard is rectangular in shape and features a prominent advertisement with a red background and white text. The advertisement is for a product or service, but the specific details of the content are not discernible from the video. The billboard is positioned on the side of the road, adjacent to the grassy area, and is one of the first landmarks encountered as the vehicle progresses down the road.",
+      "inference_time_sec": 12.482,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "The signboard 9999 does not provide explicit information about driving actions or constraints. It appears to be an advertisement, as indicated by the presence of a phone number and the word 'phone', which suggests it is promoting a service or product. There are no visible traffic signs or signals that would indicate specific driving actions or constraints such as speed limits, traffic rules, or directions. The video does not show any changes in the traffic light status or any other indicators that would suggest a need for drivers to alter their speed or direction. Therefore, based on the visible content of the signboard 9999, no explicit driving actions or constraints are",
+      "inference_time_sec": 13.94,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road, a gas station, and a signboard suggests that the driving environment is a well-developed urban area with infrastructure catering to vehicular traffic. The multi-lane road indicates that the area is designed to handle a significant volume of traffic, while the gas station provides a service for vehicles, indicating a commercial aspect to the area. The signboard, although not legible, is a common feature in urban settings, used for providing directions, information, or advertisements. These elements together paint a picture of a busy, organized, and possibly commercial part of the city.",
+      "inference_time_sec": 13.803,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The text on the signboard on the right is in Hebrew, which is a script used for the Hebrew language. The signboard displays a promotional message with the number '99' prominently featured, suggesting a discount or special offer.",
+      "inference_time_sec": 9.183,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard 9999 first becomes visible at timestamp 00:00:00:00, and it is passed by the ego vehicle at timestamp 00:00:05:00.",
+      "inference_time_sec": 8.699,
+      "error": ""
+    }
+  ]
+}

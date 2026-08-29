@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "Which readable text instances appear between the ONE WAY sign and the CARS CASH sign on the commercial facade?",
       "ground_truth": "BREAKFAST [entity_004], FREE DELIV [entity_002], and 718-392-6 [entity_003]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.674,
+      "prediction": "The readable text instances between the ONE WAY sign and the CARS CASH sign on the commercial facade are 'DRIVERS WANTED' and '718 W'.",
+      "inference_time_sec": 5.04,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances representing phone numbers or parts of phone numbers are visible on the commercial facade and the brick building?",
       "ground_truth": "7",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.128,
+      "prediction": "There are two distinct text instances visible on the commercial facade and the brick building.",
+      "inference_time_sec": 3.429,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the address markers 35-11 and 42-11 are encountered as the vehicle drives forward?",
       "ground_truth": "1st: 35-11 [entity_017], 2nd: 42-11 [entity_018]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.039,
+      "prediction": "The address markers 35-11 and 42-11 are encountered in the order of 35-11, then 42-11.",
+      "inference_time_sec": 4.356,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What instructional or regulatory text is visible on the road surface and adjacent sign near the end of the clip?",
       "ground_truth": "SLOW [entity_020] and STOP [entity_019]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.003,
+      "prediction": "The instructional text on the road surface reads 'BICYCLE', indicating a designated area for cyclists. Adjacent to it is a sign with a red border and white background, which is likely a warning or informational sign.",
+      "inference_time_sec": 4.74,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of text visible between 0.0s and 2.10s suggest about the type of area?",
       "ground_truth": "Commercial district",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.038,
+      "prediction": "The mix of text suggests that the area is a commercial or industrial zone, as it includes signs for a drivers' wanted post and a sign for a business.",
+      "inference_time_sec": 4.043,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which regional telephone area codes visible in the clip suggest the video was filmed in New York City?",
       "ground_truth": "718 [entity_015] and (917) [entity_012]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 6.119,
+      "prediction": "The video shows a '718' area code, which is a common area code for New York City.",
+      "inference_time_sec": 3.592,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range is the license plate of the lead vehicle visible in the clip?",
       "ground_truth": "0.0s to 1.37s",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.865,
+      "prediction": "The license plate of the lead vehicle is visible from  to",
+      "inference_time_sec": 3.114,
       "error": ""
     }
   ]

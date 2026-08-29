@@ -1,0 +1,70 @@
+{
+  "video_id": 971,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/971.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead sign adjacent to the Prospect Expwy sign?",
+      "ground_truth": "WEST [entity_006] Verrazano Br [entity_007] Staten is [entity_008]",
+      "prediction": "The text displayed on the overhead sign adjacent to the Prospect Expwy sign is \"NEW LOWER PRICES START HERE\".",
+      "inference_time_sec": 5.353,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the roadside billboard on the right side of the highway?",
+      "ground_truth": "4",
+      "prediction": "2",
+      "inference_time_sec": 3.651,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate, the billboard text, and the overhead highway signs are first encountered in the clip?",
+      "ground_truth": "1st: license plate, 2nd: billboard text, 3rd: overhead highway signs",
+      "prediction": "The order in which these elements are first encountered in the clip is:\n\n1. **The license plate** — visible on the black car directly ahead of the camera vehicle, appearing at the very beginning of the clip (0:00).\n2. **The billboard text** — appears on the right side of the highway, becoming visible as the camera vehicle moves forward, around 0:01–0:02.\n3. **The overhead highway signs** — appear further ahead, above the road, becoming visible as the camera vehicle approaches them, around 0:02–0:03.\n\nThus, the correct",
+      "inference_time_sec": 13.453,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead signs, what direction should a driver follow for the Prospect Expwy?",
+      "ground_truth": "EAST [entity_011]",
+      "prediction": "Based on the overhead signs visible in the video, a driver should follow the **right lane** for the Prospect Expwy.\n\nHere's the reasoning:\n\n1.  **Signage:** The green overhead sign clearly indicates \"Prospect Expwy\" with an arrow pointing to the **right**.\n2.  **Lane Position:** The cars in the right lane are positioned to take that exit. The black sedan directly in front of the camera is in the right lane, and the silver SUV to its right is also in the right lane, both aligned with the direction of the arrow.\n3.  **Lane Guidance:** The sign also shows",
+      "inference_time_sec": 13.438,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, a steel guardrail, and a license plate, what type of driving environment is depicted?",
+      "ground_truth": "highway",
+      "prediction": "The driving environment depicted is a **highway or freeway**.\n\nHere’s why:\n\n- **Overhead Exit Signs**: These are standard features of highways, providing drivers with advance notice of upcoming exits and directions to destinations. The green signs visible in the video are typical of U.S. interstate or major highway signage.\n  \n- **Steel Guardrail**: This is commonly installed along the edges of highways to prevent vehicles from leaving the roadway and to provide safety in case of accidents or sudden maneuvers.\n\n- **License Plate**: The presence of a license plate on the black sedan ahead indicates that this is a public road with vehicle registration requirements, which is",
+      "inference_time_sec": 13.583,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any names on the overhead highway signs suggest a specific region, and what text supports this?",
+      "ground_truth": "New York, supported by Verrazano Br [entity_007] and Staten is [entity_008]",
+      "prediction": "Yes, the overhead highway signs suggest a specific region. The green overhead sign clearly indicates “New York City” and “New Jersey,” which are major metropolitan areas in the northeastern United States. Additionally, the sign points toward “Westchester, NY,” which is a county in New York State, further confirming the regional context. The text “NEW LOWER PRICES START HERE” on a billboard to the right also implies a commercial area typical of the New York/New Jersey region.",
+      "inference_time_sec": 11.006,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the billboard slogan More Saving, More doing. first become clearly visible?",
+      "ground_truth": "6.6 seconds",
+      "prediction": "0.3 seconds",
+      "inference_time_sec": 3.774,
+      "error": ""
+    }
+  ]
+}

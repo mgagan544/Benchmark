@@ -1,0 +1,70 @@
+{
+  "video_id": 984,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/984.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly above the identifier 91204-MD on the white shredding truck?",
+      "ground_truth": "DRIVERS WANTED [entity_009]",
+      "prediction": "The text located directly above the identifier 91204-MD on the white shredding truck is '91204-MD'. This identifier is typically used for tracking and identification purposes in logistics and transportation management. It is often used on trucks to help in the tracking of the vehicle across different locations and for various regulatory and safety compliance purposes.",
+      "inference_time_sec": 5.82,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the commercial delivery van branded with GoodMart?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances visible on the commercial delivery van branded with GoodMart. The first instance is the GoodMart logo, which is a blue rectangle with the word 'GOODMART' in white capital letters. The second instance is the GoodMart logo again, but this time it is accompanied by the slogan 'Shop Smart. Save Big.' in smaller white text.",
+      "inference_time_sec": 6.258,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the two delivery van brands are encountered on the right side of the road?",
+      "ground_truth": "1st: GoodMart [entity_012], 2nd: IBC [entity_017]",
+      "prediction": "The first delivery van brand encountered on the right side of the road is 'American Security Shredding', followed by the 'Goodyear Tire & Auto Service' van.",
+      "inference_time_sec": 4.364,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text near the intersection indicates a direction restriction for drivers?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_022]",
+      "prediction": "The regulatory text near the intersection that indicates a direction restriction for drivers is 'NO STANDING ANYTIME'. This sign is typically placed at intersections to ensure pedestrian safety and to prevent drivers from stopping in the middle of the road, which could obstruct traffic flow. The presence of this sign suggests that the area is regulated to maintain order and safety for all road users.",
+      "inference_time_sec": 6.042,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggest about the driving environment?",
+      "ground_truth": "Busy urban commercial district",
+      "prediction": "The presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggests that the driving environment is a busy urban area with active road construction and traffic management. The vans and truck indicate commercial activity, while the taxi and construction equipment imply ongoing road work. The intersection with traffic lights and pedestrian crosswalks further emphasizes the need for traffic control and safety measures in this bustling city setting.",
+      "inference_time_sec": 6.606,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the shredding truck and delivery vans written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the shredding truck and delivery vans is written in English. This can be determined by the recognizable English language characters and the presence of a phone number and website address, which are typical of English-language contact information. Additionally, the use of English in street signs and traffic signals further confirms the language of the text.",
+      "inference_time_sec": 5.686,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the GoodMart delivery van text visible before being replaced by the IBC van?",
+      "ground_truth": "0.000 seconds to 5.967 seconds",
+      "prediction": "The GoodMart delivery van's text is visible before being replaced by the IBC van between the 4th and 5th seconds of the video.",
+      "inference_time_sec": 4.188,
+      "error": ""
+    }
+  ]
+}

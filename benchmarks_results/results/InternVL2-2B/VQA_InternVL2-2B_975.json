@@ -1,0 +1,70 @@
+{
+  "video_id": 975,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/975.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead road sign located adjacent to the sign showing 20 AV?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007] adjacent to 20 AV [entity_001]",
+      "prediction": "The overhead road sign located adjacent to the sign showing 20 AV displays the text \"20 AV\" in white letters on a green background.",
+      "inference_time_sec": 4.568,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in the clip are mounted on vehicles?",
+      "ground_truth": "3",
+      "prediction": "In the video, there are two distinct pieces of text visible mounted on vehicles. One is on the rear of a white van, and the other is on the rear of a black SUV.",
+      "inference_time_sec": 4.416,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the ego vehicle encounters the intersection street names and the highway directional signs?",
+      "ground_truth": "1st: 20 AV [entity_001] and Parsons Blvd [entity_002], 2nd: WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The ego vehicle encounters the intersection street names and the highway directional signs in the following order: The street names are first seen as the vehicle approaches the intersection, and the highway directional signs are seen as the vehicle passes by the intersection.",
+      "inference_time_sec": 4.778,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional text is displayed on the overhead sign near the traffic lights to guide drivers toward the expressway?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The overhead sign near the traffic lights displays the text \"20 Ave\" in white letters on a green background. This indicates that drivers should proceed straight ahead on the 20th Avenue to reach the expressway.",
+      "inference_time_sec": 4.615,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential homes, hedges, and apartment buildings suggest about the driving environment?",
+      "ground_truth": "Residential area",
+      "prediction": "The mix of residential homes, hedges, and apartment buildings suggests a suburban environment with a blend of private residences and shared spaces. The presence of hedges and the residential nature of the buildings indicate a neighborhood that values privacy and community, while the shared sidewalks and the presence of a bus suggest a neighborhood with a degree of accessibility and public transportation. This environment likely offers a balance between residential comfort and the convenience of public transportation, catering to a diverse population.",
+      "inference_time_sec": 6.802,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and expressway abbreviations suggest this clip is set in New York City?",
+      "ground_truth": "20 AV [entity_001], Parsons Blvd [entity_002], and WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The street names and expressway abbreviations that suggest this clip is set in New York City include the green street signs that read \"20 Ave\" and \"20 St,\" which are common in New York City. Additionally, the \"20 Ave\" sign is a well-known street name in the city, and the \"20 St\" sign is also a recognizable street name in New York. The presence of a \"No Turn On Red\" sign is a standard traffic regulation in New York City, and the \"No Parking\" sign is another common sight in the city. The overall layout of the street, with its dense traffic flow and urban",
+      "inference_time_sec": 8.297,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle carrying the license plate GKD-4491 begin to accelerate through the intersection?",
+      "ground_truth": "2.367 seconds",
+      "prediction": "The vehicle carrying the license plate GKD-4491 begins to accelerate through the intersection at the timestamp shown in the video.",
+      "inference_time_sec": 3.873,
+      "error": ""
+    }
+  ]
+}

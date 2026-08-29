@@ -1,0 +1,70 @@
+{
+  "video_id": 938,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/938.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable sign is located directly to the left of the Parking sign on the overhead gantry, which becomes visible at 0.767s?",
+      "ground_truth": "KEEP LEFT [entity_005] signboard, to the left of Parking [entity_003] sign",
+      "prediction": "The sign located directly to the left of the Parking sign on the overhead gantry is a blue sign with white text that reads \"Terminal Exit.\"",
+      "inference_time_sec": 6.488,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many street, regulatory, or airport signs are identified in the scene description, including those passed between 0.0s and 2.933s?",
+      "ground_truth": "8",
+      "prediction": "In the scene description, there are a total of 10 signs identified. These include street signs, regulatory signs, and airport signs.",
+      "inference_time_sec": 6.412,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the Airport sign, the Blue Parking sign, and the ONE WAY sign are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Airport [entity_001], 2nd: Blue Parking [entity_007], 3rd: ONE WAY [entity_009]",
+      "prediction": "The chronological order in which the signs are first encountered by the camera vehicle is as follows: the ONE WAY sign is first seen at the beginning of the video, indicating the direction of traffic flow. The Blue Parking sign is next, located on the right side of the road, indicating parking availability. Finally, the Airport sign is seen further down the road, providing information about the direction to the airport.",
+      "inference_time_sec": 10.48,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory sign on a roadside post, passed at 2.933s, indicates a directional constraint for drivers?",
+      "ground_truth": "ONE WAY [entity_009] sign",
+      "prediction": "The regulatory sign on a roadside post, passed at 2.933s, indicates a directional constraint for drivers.",
+      "inference_time_sec": 6.21,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is depicted, given the presence of the Terminal and Parking signs on the gantry and the Blue Parking Garage?",
+      "ground_truth": "Airport terminal roadway",
+      "prediction": "The driving environment depicted is an airport, as indicated by the presence of the Terminal and Parking signs on the gantry. The Blue Parking Garage sign suggests that there is a designated parking area for vehicles, which is common in airport settings to accommodate the large number of vehicles that arrive and depart. The presence of these signs, along with the infrastructure of the highway, which includes multiple lanes and a gantry system for traffic management, supports the conclusion that this is an airport environment.",
+      "inference_time_sec": 11.722,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead gantry signs and the ONE WAY sign?",
+      "ground_truth": "English",
+      "prediction": "The language used for the text on the overhead gantry signs and the ONE WAY sign is English.",
+      "inference_time_sec": 5.892,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Blue Parking Garage structure first become fully visible on the left side of the roadway?",
+      "ground_truth": "2.133s with Blue Parking Garage [entity_008]",
+      "prediction": "The Blue Parking Garage structure first becomes fully visible on the left side of the roadway at the timestamp of 00:00:00.",
+      "inference_time_sec": 6.586,
+      "error": ""
+    }
+  ]
+}

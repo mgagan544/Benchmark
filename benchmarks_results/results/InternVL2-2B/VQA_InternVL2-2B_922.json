@@ -1,0 +1,70 @@
+{
+  "video_id": 922,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/922.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lane indicator is visible overhead at 0.0 seconds to the right of the Airport Exit sign?",
+      "ground_truth": "EXIT [entity_004] to the right of Airport Exit [entity_002]",
+      "prediction": "At 0.0 seconds to the right of the Airport Exit sign, the lane indicator visible overhead is a green arrow pointing to the right.",
+      "inference_time_sec": 4.831,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street, regulatory, or warning text elements are visible in this clip?",
+      "ground_truth": "7",
+      "prediction": "In the video, there are several distinct street, regulatory, or warning text elements visible. These include a stop sign with the word \"STOP\" in white letters, a yellow and black sign indicating \"Airport Exit,\" a yellow and black sign with the word \"ONLY,\" and a yellow and black sign with the word \"EXIT.\" Additionally, there are orange traffic cones and a yellow and black sign with the word \"ONLY\" on the right side of the road.",
+      "inference_time_sec": 7.005,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the text elements on the orange warning sign encountered after passing the concrete overpass?",
+      "ground_truth": "1st: ROAD [entity_005], 2nd: WORK [entity_006], 3rd: AHEAD [entity_007]",
+      "prediction": "The orange warning sign encountered after passing the concrete overpass reads \"STOP\" at the top, followed by \"Airport Exit\" in bold letters. This sequence indicates that the sign is meant to alert drivers to stop at the airport exit, which is the last destination before reaching the highway.",
+      "inference_time_sec": 5.304,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint by stating \"STOP HERE ON RED SIGNAL.\" This sign is typically used to alert drivers to stop at a red light or stop sign, which is a common safety measure to prevent accidents and ensure the safety of all road users.",
+      "inference_time_sec": 5.739,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs like Airport Exit and ROAD WORK AHEAD, what kind of driving environment is depicted?",
+      "ground_truth": "Highway construction zone",
+      "prediction": "The driving environment depicted in the video is one of active construction and roadwork. The presence of construction barriers, orange cones, and the \"ROAD WORK AHEAD\" sign indicates that the area is under construction, which typically involves temporary road closures and detours. The driver is navigating through a work zone, which is a common scenario during construction projects to ensure safety and manage traffic flow. The construction vehicles, such as the red truck with a large load, are also indicative of ongoing construction activities.",
+      "inference_time_sec": 7.207,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead and warning signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "The language used for the text on the overhead and warning signs in this clip is English.",
+      "inference_time_sec": 3.718,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the STOP sign held by the construction flagger visible and legible?",
+      "ground_truth": "0.0 to 2.633 seconds",
+      "prediction": "The STOP sign held by the construction flagger is visible and legible throughout the video. It is held in a position that clearly indicates the need for a stop, which is a standard practice in construction zones to ensure safety for both workers and motorists.",
+      "inference_time_sec": 5.14,
+      "error": ""
+    }
+  ]
+}

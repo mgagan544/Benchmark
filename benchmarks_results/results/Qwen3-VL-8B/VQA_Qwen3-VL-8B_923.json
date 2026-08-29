@@ -1,0 +1,70 @@
+{
+  "video_id": 923,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/923.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What destination text is located directly below the route name Van Wyck Expwy on the overhead gantry?",
+      "ground_truth": "Kennedy Airport [entity_004] directly below Van Wyck Expwy [entity_002]",
+      "prediction": "Kennedy Airport",
+      "inference_time_sec": 3.842,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the overhead highway gantry signs at the start of the clip?",
+      "ground_truth": "9",
+      "prediction": "There are 5 distinct text instances visible on the overhead highway gantry signs at the start of the clip.",
+      "inference_time_sec": 5.349,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the overhead sign Kennedy Airport and the taxi license plate T642185C encountered as legible text in the clip?",
+      "ground_truth": "1st: Kennedy Airport [entity_004], 2nd: T642185C [entity_010]",
+      "prediction": "The overhead sign for Kennedy Airport is encountered first, followed by the taxi license plate T642185C.",
+      "inference_time_sec": 5.568,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the indicators below the Exit 6 sign, what explicit driving constraint is implied for that lane?",
+      "ground_truth": "EXIT [entity_007] and ONLY [entity_008]",
+      "prediction": "The explicit driving constraint implied for that lane is that it is designated for **exit-only** traffic. This is indicated by the yellow sign below the Exit 6 sign that reads \"EXIT ONLY.\" This means vehicles in that lane are not permitted to continue straight or turn left/right onto other roads; they must exit the highway at Exit 6.",
+      "inference_time_sec": 8.979,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is depicted in this clip based on the overhead signs and road layout?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in this clip is a **highway or freeway** with **multiple lanes and overhead directional signage**. The presence of large green highway signs indicating directions to “Kennedy Airport” and “Van Wyck Expwy,” along with an “EXIT ONLY” sign, suggests this is a **controlled-access highway** typical of urban or suburban areas with major transportation routes. The road layout, including the overpass and multiple lanes of traffic, further supports this classification. The environment appears to be **urban or suburban**, given the proximity to major infrastructure like airports and expressways.",
+      "inference_time_sec": 12.823,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific destination and route names visible on the overhead gantry suggest this clip is filmed in the New York City area?",
+      "ground_truth": "Van Wyck Expwy [entity_002] and Kennedy Airport [entity_004]",
+      "prediction": "The overhead gantry signs clearly indicate “Kennedy Airport” and “Van Wyck Expwy,” both of which are located in the New York City area. Kennedy Airport (JFK) is one of the major international airports serving New York City, and the Van Wyck Expressway (I-678) is a major highway in Queens, New York, connecting to JFK Airport. These specific route and destination names are unique to the New York City metropolitan area.",
+      "inference_time_sec": 12.918,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate T642185C on the lime-green taxi first become readable?",
+      "ground_truth": "3.433s for license plate T642185C [entity_010]",
+      "prediction": "The license plate T642185C on the lime-green taxi first becomes readable at 0:00.",
+      "inference_time_sec": 5.572,
+      "error": ""
+    }
+  ]
+}

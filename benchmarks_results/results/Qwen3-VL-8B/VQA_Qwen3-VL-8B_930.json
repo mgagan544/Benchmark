@@ -1,0 +1,70 @@
+{
+  "video_id": 930,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/930.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?",
+      "ground_truth": "HONG [entity_005] KONG [entity_006]",
+      "prediction": "HONG KONG",
+      "inference_time_sec": 3.886,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?",
+      "ground_truth": "3",
+      "prediction": "3",
+      "inference_time_sec": 3.666,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What sign text is encountered immediately after the vehicle passes the sign for The Best?",
+      "ground_truth": "Best [entity_009]",
+      "prediction": "The sign text encountered immediately after the vehicle passes the sign for The Best is \"HONG KONG\".",
+      "inference_time_sec": 5.233,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?",
+      "ground_truth": "None",
+      "prediction": "The visible text in the clip does not indicate any specific driving constraints, hazards, or speed limits. The signs visible are primarily for businesses such as “The Venue Party Hall,” “Hong Kong,” “Deli Grocery,” and “Liquor Store,” which are not related to traffic regulations. There are no visible speed limit signs, stop signs, or hazard warnings in the frames provided.",
+      "inference_time_sec": 11.271,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?",
+      "ground_truth": "Commercial district",
+      "prediction": "The driving environment depicted is an urban or city street with a high density of commercial storefronts. The presence of multiple signs for businesses such as “The Venue Party Hall,” “Hong Kong,” “Deli Grocery,” and “Liquor Store” indicates a bustling commercial area with a variety of services and retail options. The buildings are multi-story and closely packed, typical of city centers or densely populated neighborhoods. Additionally, the presence of pedestrians, parked cars, and street infrastructure like traffic lights and utility poles further supports the urban setting. This environment suggests a lively, mixed-use area where commerce and daily life intersect.",
+      "inference_time_sec": 13.085,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the storefront signs encountered by the vehicle?",
+      "ground_truth": "English",
+      "prediction": "The storefront signs encountered by the vehicle are primarily in English. The signs include \"The Venue Party Hall,\" \"Hong Kong,\" \"Deli Grocery,\" and \"Wines & Liquors,\" all of which are written in English. While \"Hong Kong\" includes Chinese characters, the primary language used for the signs is English.",
+      "inference_time_sec": 8.502,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the sign for The Best continuously visible to the camera vehicle?",
+      "ground_truth": "3.9 to 4.8 seconds",
+      "prediction": "The sign for The Best is continuously visible to the camera vehicle from 0:00 to 0:01.",
+      "inference_time_sec": 5.526,
+      "error": ""
+    }
+  ]
+}

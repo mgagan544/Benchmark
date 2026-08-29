@@ -1,0 +1,70 @@
+{
+  "video_id": 923,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/923.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What destination text is located directly below the route name Van Wyck Expwy on the overhead gantry?",
+      "ground_truth": "Kennedy Airport [entity_004] directly below Van Wyck Expwy [entity_002]",
+      "prediction": "The destination text located directly below the route name Van Wyck Expwy on the overhead gantry is 'Kennedy Airport'. This text is part of the green highway signage that provides directions to various destinations. The signage is designed to be easily readable from a distance, with the route name in larger font at the top and the destination in a smaller font below it. The text is white on a green background, which is a common color scheme for highway signs in many regions, providing high contrast for visibility.",
+      "inference_time_sec": 12.587,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the overhead highway gantry signs at the start of the clip?",
+      "ground_truth": "9",
+      "prediction": "At the start of the clip, there are three distinct text instances visible on the overhead highway gantry signs. The first sign indicates 'Van Wyck Expwy' with an arrow pointing to the right, the second sign points to 'Kennedy Airport' with an arrow pointing straight ahead, and the third sign points to 'Hillside Ave Jamaica Ave' with an arrow pointing to the right.",
+      "inference_time_sec": 11.183,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the overhead sign Kennedy Airport and the taxi license plate T642185C encountered as legible text in the clip?",
+      "ground_truth": "1st: Kennedy Airport [entity_004], 2nd: T642185C [entity_010]",
+      "prediction": "The overhead sign Kennedy Airport is encountered first, followed by the taxi license plate T642185C.",
+      "inference_time_sec": 7.673,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the indicators below the Exit 6 sign, what explicit driving constraint is implied for that lane?",
+      "ground_truth": "EXIT [entity_007] and ONLY [entity_008]",
+      "prediction": "The indicators below the Exit 6 sign explicitly state 'EXIT ONLY', which implies that the lane is designated for vehicles that are either exiting the highway or are in the process of merging onto the exit ramp. This constraint is meant to ensure that vehicles in this lane are not using the main highway lanes for travel but are instead preparing to leave the highway.",
+      "inference_time_sec": 10.527,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is depicted in this clip based on the overhead signs and road layout?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the clip is a highway interchange with multiple lanes and exits. The overhead signs indicate directions to Kennedy Airport and exits for Hillside Ave and Jamaica Ave, suggesting that the location is near an airport and has multiple routes for traffic to follow. The presence of a concrete barrier on the left side of the road and the structure of the overpass overhead further confirm that this is a complex highway interchange designed to manage the flow of traffic efficiently.",
+      "inference_time_sec": 11.863,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific destination and route names visible on the overhead gantry suggest this clip is filmed in the New York City area?",
+      "ground_truth": "Van Wyck Expwy [entity_002] and Kennedy Airport [entity_004]",
+      "prediction": "The overhead gantry displays 'Van Wyck Expwy' and 'Kennedy Airport', which are specific to the New York City area. The Van Wyck Expressway is a major highway in New York City, and Kennedy Airport is a well-known airport in the city. These names, along with the presence of a taxi, are indicative of the New York City area.",
+      "inference_time_sec": 11.036,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate T642185C on the lime-green taxi first become readable?",
+      "ground_truth": "3.433s for license plate T642185C [entity_010]",
+      "prediction": "The license plate T642185C on the lime-green taxi becomes readable at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.88,
+      "error": ""
+    }
+  ]
+}

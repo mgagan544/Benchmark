@@ -1,0 +1,70 @@
+{
+  "video_id": 917,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/917.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the pavement marking showing AXI located relative to the designated taxi lane?",
+      "ground_truth": "AXI [entity_002] is adjacent to the TAXI [entity_001] lane",
+      "prediction": "The pavement marking showing \"AXI\" is located on the right side of the designated taxi lane. It is positioned on the edge of the lane, adjacent to the curb, and is painted in white, contrasting with the black asphalt of the road. This marking is likely intended to guide drivers to the correct lane for dropping off or picking up passengers from the airport.",
+      "inference_time_sec": 11.084,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pavement or infrastructure markings are visible on the roadway throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "Throughout the entire clip, there are several distinct pavement and infrastructure markings visible on the roadway. These include white dashed lines indicating the lanes, a pedestrian crossing marked by white stripes, a yellow pedestrian crossing sign, a red and white striped curb, and a yellow sign with a black arrow pointing to the right. Additionally, there are white lines on the road surface, possibly indicating parking spaces or other road markings.",
+      "inference_time_sec": 11.775,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the pavement markings '03', 'AXI', and '06' are encountered by the vehicle?",
+      "ground_truth": "1st: '03', 2nd: AXI [entity_002], 3rd: '06'",
+      "prediction": "The pavement markings '03', 'AXI', and '06' are encountered in the following order: '03' is first, followed by 'AXI', and then '06'.",
+      "inference_time_sec": 9.031,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the pavement designates the lane reserved for specific transport vehicles on the left?",
+      "ground_truth": "TAXI [entity_001]",
+      "prediction": "The pavement designates the lane reserved for specific transport vehicles on the left with a series of white dashes. These dashes are a common pavement marking used to indicate a no-parking zone or a lane that is reserved for buses, taxis, or other designated vehicles.",
+      "inference_time_sec": 9.865,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of taxi lanes, terminal seating, and airline signage, what type of environment is depicted?",
+      "ground_truth": "Airport terminal arrival area",
+      "prediction": "The environment depicted in the video is that of an airport terminal. This is indicated by the presence of taxi lanes, which are typically found at airports for the pickup and drop-off of passengers. The terminal seating areas, where people are seated, are also characteristic of airport terminals where passengers wait for their flights. Additionally, the signage for airlines is a common feature in airport terminals, providing information about flight schedules and gate numbers. The overall layout and infrastructure, including the covered walkway and the design of the road, are consistent with those found in airport environments.",
+      "inference_time_sec": 13.374,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the airline signage and pavement markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The language used for the airline signage and pavement markings in this scene is English. This can be determined by the text on the signs, which includes words like \"Airport,\" \"Terminal,\" and \"Arrivals,\" as well as the pavement markings that are standard for English-speaking countries.",
+      "inference_time_sec": 10.262,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the pavement marking showing AXI passed by the host vehicle?",
+      "ground_truth": "4.1 seconds",
+      "prediction": "The pavement marking showing AXI passed by the host vehicle is visible at the timestamp of 00:00:00, indicating the start of the video.",
+      "inference_time_sec": 8.405,
+      "error": ""
+    }
+  ]
+}

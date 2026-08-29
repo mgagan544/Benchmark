@@ -1,0 +1,70 @@
+{
+  "video_id": 942,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/942.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text Without relative to the Studio Prices text on the first billboard?",
+      "ground_truth": "To the right of Studio Prices [entity_003]",
+      "prediction": "The text \"Without\" appears to be positioned above the text \"Studio Prices\" on the first billboard. The word \"Without\" is likely part of a larger phrase or advertisement, and it is placed higher up on the billboard compared to the \"Studio Prices\" text, which is positioned below it.",
+      "inference_time_sec": 7.405,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to street, highway, or regulatory signs in this clip?",
+      "ground_truth": "6",
+      "prediction": "In the image provided, there are several signs visible that contain text related to streets, highways, or regulatory information. Here is a breakdown:\n\n1. \"FDR Drive SOUTH\"\n2. \"Lexington Avenue\"\n3. \"Studio Classes\"\n4. \"Do More\"\n5. \"ENLIGHTENED\"\n6. \"24 HOUR ICE CREAM\"\n7. \"YES, YOU\"\n\nCounting these distinct pieces of text, we have:\n\n- 3 from street and highway signs: \"FDR Drive SOUTH,\" \"Lexington Avenue.\"\n- 4 from other signs: \"Studio Classes,\" \"Do More,\" \"EN",
+      "inference_time_sec": 10.869,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the billboard displaying Studio Closses and the billboard displaying eatenlightened.com are encountered?",
+      "ground_truth": "1st: Studio Closses [entity_001], 2nd: eatenlightened.com [entity_009]",
+      "prediction": "The video shows the billboard displaying \"Studio Classes\" first, followed by the billboard displaying \"eatenlightened.com.\" The sequence of encountering these billboards is as follows:\n\n1. Billboard displaying \"Studio Classes\"\n2. Billboard displaying \"eatenlightened.com\"",
+      "inference_time_sec": 7.002,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a height restriction constraint? If so, what does it say and where is it located?",
+      "ground_truth": "12-6 [entity_013] adjacent to Lexington Avenue [entity_011]",
+      "prediction": "No, there is no visible text in the clip that indicates a height restriction constraint. The image shows a highway scene with traffic signs, but none of them appear to specify a height restriction. The signs visible include directions for \"FDR Drive SOUTH\" and \"Lexington Avenue,\" as well as other standard highway signage.",
+      "inference_time_sec": 7.605,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible highway signs and large billboards, what kind of driving environment is depicted?",
+      "ground_truth": "Highway overpass or elevated highway ramp",
+      "prediction": "The image depicts an urban driving environment with multiple lanes and traffic signals. The presence of highway signs indicating directions to \"FDR Drive SOUTH\" and \"Lexington Avenue\" suggests that this is a major city highway, likely in New York City given the style of the signs and the architecture of the buildings in the background. The large billboards and the wet road surface indicate that it might be a busy area with commercial activity, possibly during or after a rainstorm. The overall scene suggests a typical day in a bustling city with moderate traffic flow.",
+      "inference_time_sec": 9.92,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street or highway names visible on the overhead signs suggest a specific city? If so, what text supports this?",
+      "ground_truth": "New York City, supported by FDR Drive SOUTH [entity_010] and Lexington Avenue [entity_011]",
+      "prediction": "The overhead signs in the image do not provide explicit text that directly suggests a specific city. However, the presence of \"FDR Drive SOUTH\" and \"Lexington Avenue\" is notable. FDR Drive is a well-known highway in New York City, and Lexington Avenue is a major street in Manhattan. These names strongly suggest that the location is New York City.",
+      "inference_time_sec": 8.116,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range does the overhead highway sign for 2 Avenue remain visible to the camera vehicle?",
+      "ground_truth": "8.733 seconds to 9.367 seconds",
+      "prediction": "The overhead highway sign for \"2 Avenue\" remains visible to the camera vehicle throughout the entire sequence of the video. The sign is consistently in view as the camera vehicle approaches and passes under it, indicating that it is part of the road infrastructure along this section of the highway.",
+      "inference_time_sec": 7.146,
+      "error": ""
+    }
+  ]
+}

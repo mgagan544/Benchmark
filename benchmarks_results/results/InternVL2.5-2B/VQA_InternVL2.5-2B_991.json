@@ -1,0 +1,70 @@
+{
+  "video_id": 991,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/991.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the instruction to use the other side relative to the sidewalk sign?",
+      "ground_truth": "To the right of SIDEWALK [entity_001]",
+      "prediction": "The instruction to use the other side is located on the left side of the sidewalk sign.",
+      "inference_time_sec": 3.605,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the blue police barricades?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances visible on the blue police barricades.",
+      "inference_time_sec": 3.45,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances on the blue barricades are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: POLICE LINE [entity_005], 2nd: DO NOT CROSS [entity_006], 3rd: NYPD [entity_007]",
+      "prediction": "As the vehicle moves forward, the first text instance on the blue barricade reads 'POLICE LINE - DO NOT CROSS'. Following this, the second text on the barricade reads 'WEST 39th ST'. The third text on the barricade is 'NO TRESPASSING', and the fourth text reads 'WEST 39th ST'.",
+      "inference_time_sec": 6.166,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the large orange sign on the left side of the road?",
+      "ground_truth": "CLOSED [entity_002]",
+      "prediction": "The large orange sign on the left side of the road displays the warning text 'POLICE LINE - DO NOT CROSS'.",
+      "inference_time_sec": 3.883,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of construction barriers, police barricades, and a commercial building, what kind of driving environment is depicted?",
+      "ground_truth": "Urban construction zone",
+      "prediction": "The driving environment depicted is an urban area with ongoing construction work. This is indicated by the presence of construction barriers, police barricades, and a commercial building, suggesting that the area is undergoing development or maintenance.",
+      "inference_time_sec": 4.717,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which abbreviation on the blue barricades suggests the city where this clip was filmed?",
+      "ground_truth": "NYPD [entity_007]",
+      "prediction": "The abbreviation 'NJ' on the blue barricades suggests that this clip was filmed in New Jersey.",
+      "inference_time_sec": 3.791,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the instruction to use the other side first become visible on the left?",
+      "ground_truth": "0.133 seconds",
+      "prediction": "The instruction to use the other side first becomes visible on the left at the timestamp 4:00.",
+      "inference_time_sec": 3.698,
+      "error": ""
+    }
+  ]
+}

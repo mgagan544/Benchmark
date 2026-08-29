@@ -1,0 +1,70 @@
+{
+  "video_id": 987,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/987.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory sign displaying the word STANDING relative to the parked dark green SUV?",
+      "ground_truth": "Adjacent to the dark green SUV, as STANDING [entity_001]",
+      "prediction": "The regulatory sign displaying the word STANDING is located to the right of the parked dark green SUV.",
+      "inference_time_sec": 3.78,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory signs are visible in this clip?",
+      "ground_truth": "1",
+      "prediction": "There are three distinct regulatory signs visible in this clip. The first is a 'No Parking' sign on the right side of the road, the second is a 'No Standing' sign on the left side of the road, and the third is a 'No Turn' sign on the left side of the road.",
+      "inference_time_sec": 5.531,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles passed by the ego vehicle on the right side of the road between 00:00 and 00:06?",
+      "ground_truth": "1st: white sedan, 2nd: dark sedan, 3rd: silver sedan, 4th: grey minivan",
+      "prediction": "Between 00:00 and 00:06, the ego vehicle passes a white sedan, a black SUV, a white pickup truck, a silver sedan, a white minivan, and a white SUV on the right side of the road.",
+      "inference_time_sec": 5.003,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the regulatory sign visible at the intersection near the end of the clip?",
+      "ground_truth": "STANDING [entity_001] indicates a standing restriction",
+      "prediction": "The regulatory sign visible at the intersection near the end of the clip indicates a 'No Stopping Anytime' restriction. This sign is a traffic regulation that prohibits drivers from stopping at any time within the designated stopping zone, which is typically a marked area on the road. The presence of such a sign is intended to enhance traffic safety by reducing the likelihood of sudden stops that could lead to accidents or congestion. The sign is a clear indication to drivers that they must remain in their lanes and not stop for any reason, emphasizing the importance of adherence to traffic laws and the potential consequences of non-compliance.",
+      "inference_time_sec": 8.154,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the environment and the parked vehicles, what type of area is the vehicle traveling through?",
+      "ground_truth": "Residential area",
+      "prediction": "The vehicle is traveling through a residential area, as indicated by the presence of parked cars on both sides of the street and the typical suburban houses with yards.",
+      "inference_time_sec": 4.187,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the regulatory sign at the intersection written in?",
+      "ground_truth": "English",
+      "prediction": "The regulatory sign at the intersection is written in both English and Spanish.",
+      "inference_time_sec": 3.43,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text on the regulatory sign first become visible to the ego vehicle?",
+      "ground_truth": "00:08",
+      "prediction": "The text on the regulatory sign first becomes visible to the ego vehicle at the timestamp 4 seconds into the video.",
+      "inference_time_sec": 3.83,
+      "error": ""
+    }
+  ]
+}

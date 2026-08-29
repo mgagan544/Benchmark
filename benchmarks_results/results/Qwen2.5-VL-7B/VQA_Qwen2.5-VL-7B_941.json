@@ -1,0 +1,70 @@
+{
+  "video_id": 941,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/941.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located directly below the overhead sign that says \"To Belt Pkwy\"?",
+      "ground_truth": "KEEP RIGHT [entity_005] below To Belt Pkwy [entity_004]",
+      "prediction": "The regulatory sign located directly below the overhead sign that says \"To Belt Pkwy\" is a yellow diamond-shaped sign with a red traffic light symbol, indicating a stop sign ahead.",
+      "inference_time_sec": 5.894,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are painted on the road surface or function as regulatory signs in this clip?",
+      "ground_truth": "2",
+      "prediction": "In the image, there are two distinct text instances that appear to be regulatory signs:\n\n1. \"NEXT RIGHT\" - This is painted on the road surface.\n2. \"Airport Exit via JFK Expwy\" - This is also a regulatory sign, indicating the direction for the airport exit.\n\nSo, there are two distinct text instances in the image.",
+      "inference_time_sec": 7.98,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the first overhead sign structure, the road marking, and the second overhead gantry?",
+      "ground_truth": "1st: Airport Exit [entity_001], 2nd: ONLY [entity_006], 3rd: Long Term Parking [entity_007]",
+      "prediction": "The order of encounter for the first overhead sign structure, the road marking, and the second overhead gantry is as follows:\n\n1. **First Overhead Sign Structure**: The first overhead sign structure is encountered first. It provides directions to various exits, including \"Airport Exit via Van Wyck Expwy\" and \"Airport Exit via JFK Expwy.\"\n\n2. **Road Marking**: After passing under the first overhead sign structure, the next element encountered is the road marking. The road marking includes lane indicators and directional arrows, which guide the driver on how to navigate through the highway.\n\n3. **Second Overhead Gantry**: Finally,",
+      "inference_time_sec": 11.35,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory instruction is displayed on the lane surface below the sign that says \"KEEP RIGHT\"?",
+      "ground_truth": "ONLY [entity_006]",
+      "prediction": "The regulatory instruction displayed on the lane surface below the sign that says \"KEEP RIGHT\" is an arrow pointing to the right, indicating that vehicles should stay in their respective lanes and not merge into other lanes. This is a common instruction to ensure traffic flow and safety on highways and expressways.",
+      "inference_time_sec": 7.297,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of transportation hub is the vehicle navigating, based on the visible signs?",
+      "ground_truth": "Airport",
+      "prediction": "The vehicle appears to be navigating an airport transportation hub. The signs indicate directions to \"Airport Exit via Van Wyck Expwy,\" \"Airport Exit via JFK Expwy,\" and \"Long Term Parking,\" which are typical features found at airports. These signs help guide vehicles to different exits and parking areas within the airport complex.",
+      "inference_time_sec": 7.582,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific New York airport expressway is indicated by the signs on the first overhead structure?",
+      "ground_truth": "JFK Expwy [entity_003]",
+      "prediction": "The signs on the first overhead structure indicate the \"Airport Exit via JFK Expwy.\" This suggests that the expressway leading to the airport is the John F. Kennedy International Airport Expressway (JFK Expwy).",
+      "inference_time_sec": 6.499,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass over the road marking that says \"ONLY\"?",
+      "ground_truth": "5.367 seconds",
+      "prediction": "The vehicle passes over the road marking that says \"ONLY\" at approximately 0:15 seconds into the video.",
+      "inference_time_sec": 5.458,
+      "error": ""
+    }
+  ]
+}

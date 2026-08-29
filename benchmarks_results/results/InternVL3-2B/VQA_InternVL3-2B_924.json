@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What readable text is located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry?",
       "ground_truth": "Long [entity_005] Term [entity_006] Parking [entity_007]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.859,
+      "prediction": "The text on the overhead gantry is not readable.",
+      "inference_time_sec": 3.762,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are visible on the green overhead exit sign located on the left side of the roadway?",
       "ground_truth": "3",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.862,
+      "prediction": "two",
+      "inference_time_sec": 2.449,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the text on the overhead gantry, the roadside infrastructure, and the green exit sign are first encountered as the vehicle moves forward?",
       "ground_truth": "1st: B C D [entity_001] Terminals [entity_003] RIGHT LANE [entity_002], 2nd: RIZZO [entity_004], 3rd: Long [entity_005] Term [entity_006] Parking [entity_007]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.913,
+      "prediction": "The text on the overhead gantry is first encountered as the vehicle moves forward, followed by the roadside infrastructure, and finally the green exit sign.",
+      "inference_time_sec": 3.926,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What directional or instructional text is displayed on the large overhead gantry above the multi-lane roadway?",
       "ground_truth": "RIGHT LANE [entity_002]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.884,
+      "prediction": "The large overhead gantry displays a sign that reads 'LONG PARKING', indicating a parking area ahead.",
+      "inference_time_sec": 3.799,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the visible signs indicating terminals and parking, what type of facility is this roadway accessing?",
       "ground_truth": "Airport access road",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.842,
+      "prediction": "The roadway is likely accessing an airport or a similar transportation hub, as indicated by the presence of a control tower, construction equipment, and signage for 'terminals' and 'parking'.",
+      "inference_time_sec": 4.898,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "In what language and script is the text on the overhead gantry and exit signs written?",
       "ground_truth": "English in Latin script",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.907,
+      "prediction": "The text on the overhead gantry and exit signs is written in english.",
+      "inference_time_sec": 3.366,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the text B C D first become visible, and when does the full layout of that gantry sign become readable?",
       "ground_truth": "Visible at 5.1 seconds, fully readable at 5.233 seconds",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.825,
+      "prediction": "The text B C D first becomes visible at the 15-second mark, and the full layout of the gantry sign becomes readable at the 18-second mark.",
+      "inference_time_sec": 4.691,
       "error": ""
     }
   ]

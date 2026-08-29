@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is located to the left of the pavement marking 'ONLY' as the vehicle moves forward?",
       "ground_truth": "A prominent chain-link fence to the left of 'ONLY' [entity_001]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.797,
+      "prediction": "A car is parked on the side of the road.",
+      "inference_time_sec": 3.454,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many pavement markings with legible text are visible in the lane after the vehicle completes its left turn?",
       "ground_truth": "1",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.8,
+      "prediction": "two",
+      "inference_time_sec": 2.381,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order of the legible text instances encountered on the road surface during the clip?",
       "ground_truth": "1st: 'ONLY' [entity_001]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.831,
+      "prediction": "ONLY, STOP, LEFT TURN ONLY",
+      "inference_time_sec": 2.672,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What instructional text is painted on the lane surface to guide the driver's lane choice after turning?",
       "ground_truth": "'ONLY' [entity_001]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.795,
+      "prediction": "The instructional text painted on the lane surface is 'ONLY', which indicates that the lane is for the right turn only.",
+      "inference_time_sec": 3.909,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggest about the driving environment?",
       "ground_truth": "Residential or urban fringe area",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.853,
+      "prediction": "The presence of snow-covered sidewalks, parked vehicles, and a chain-link fence suggests that the driving environment is in a cold climate, likely during winter. The snow indicates that the area has experienced recent snowfall, and the presence of parked vehicles suggests that the area is residential or commercial, with people likely having left their cars there. The chain-link fence adds to the urban setting, indicating that the area is bordered by a more open space, possibly a park or undeveloped land.",
+      "inference_time_sec": 8.832,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is the pavement marking 'ONLY' written in?",
       "ground_truth": "English",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.839,
+      "prediction": "The pavement marking 'ONLY' is written in english.",
+      "inference_time_sec": 3.072,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the pavement marking 'ONLY' first become visible in the clip?",
       "ground_truth": "00:05",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.779,
+      "prediction": "The pavement marking 'ONLY' first becomes visible in the clip at the 10-second mark.",
+      "inference_time_sec": 3.37,
       "error": ""
     }
   ]

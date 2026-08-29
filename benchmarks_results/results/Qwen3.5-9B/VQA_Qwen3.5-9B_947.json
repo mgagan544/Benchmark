@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the sign containing the text STATE relative to the speed warning sign?",
       "ground_truth": "To the right of SPEED [entity_005]",
-      "prediction": "The user wants to know the spatial relationship between two signs.\n1.  **Identify the \"sign containing the text STATE\"**: Looking at the images, specifically around 00:03 and 00:04, there is a white rectangular sign on the right side of the road. It has text on it. Let's look closer. It says \"STATE LAW FINES DOUBLED FOR SPEEDING\". So this is the sign.\n2.  **Identify the \"speed warning sign\"**: This is likely the green highway sign above it that says \"EXIT 27 Atlantic Ave 3",
-      "inference_time_sec": 13.181,
+      "prediction": "below",
+      "inference_time_sec": 2.791,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are mounted on the silver minivan?",
       "ground_truth": "2",
-      "prediction": "The user wants me to count the distinct text instances on the silver minivan.\n\n1.  **Identify the silver minivan:** It's the vehicle directly in front of the camera car, slightly to the right. It's a Chevrolet Uplander or similar model.\n2.  **Scan the minivan for text:**\n    *   **License Plate:** There's a yellow license plate on the rear bumper. The text \"HEG-1344\" is clearly visible.\n    *   **Rear Window:** There might be some text on the rear window, but it's hard to read.",
-      "inference_time_sec": 13.245,
+      "prediction": "2",
+      "inference_time_sec": 2.74,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the green exit sign, the white regulatory sign, and the minivan's license plate are first encountered?",
       "ground_truth": "1st: EXIT [entity_001], 2nd: STATE [entity_006], 3rd: HEG-1344 [entity_010]",
-      "prediction": "The user wants me to determine the order in which three specific objects are first seen in the video.\n\n1.  **Green exit sign:** I need to find the first frame where the green sign indicating \"EXIT 27 Atlantic Ave\" is visible.\n    *   Looking at the first frame (00:00), the green sign is clearly visible on the right side of the road. It says \"EXIT 27 Atlantic Ave\". So, this is the first object encountered.\n\n2.  **White regulatory sign:** I need to find the first frame where a white sign with regulatory text (like speed limit",
-      "inference_time_sec": 13.135,
+      "prediction": "green exit sign, white regulatory sign, minivan's license plate",
+      "inference_time_sec": 3.83,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the regulatory sign indicates a financial penalty for driving too fast?",
       "ground_truth": "STATE [entity_006] LAW [entity_007] fines DOUBLED FOR [entity_008] SPEEDING [entity_009]",
-      "prediction": "The user wants to identify specific text on a regulatory sign that mentions a financial penalty for speeding.\n\n1.  **Scan the video for signs:** I see a green highway sign (\"EXIT 27 Atlantic Ave\") and a white rectangular sign next to it.\n2.  **Focus on the white sign:** This looks like a regulatory sign. It's positioned to the right of the green exit sign.\n3.  **Read the text on the white sign:**\n    *   Top line: \"STATE LAW\"\n    *   Middle line: \"FINES\"\n    *   Bottom line: \"DOUB",
-      "inference_time_sec": 13.213,
+      "prediction": "FINES DOUBLES FOR SPEEDING",
+      "inference_time_sec": 3.436,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of road environment is suggested by the presence of exit signs, speed warning signs, and regulatory signs?",
       "ground_truth": "Highway",
-      "prediction": "The user wants to identify the type of road environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Exit signs:** I see a green sign that says \"EXIT 27 Atlantic Ave\". This is a classic highway/interstate sign.\n    *   **Speed warning signs:** There's a white sign with black text that says \"STATE LAW FINES DOUBLED FOR SPEEDING\". This is a regulatory sign often found on major roads.\n    *   **Speed limit sign:** There's a sign indicating a speed limit of 45.",
-      "inference_time_sec": 13.168,
+      "prediction": "highway",
+      "inference_time_sec": 2.84,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific state or region is indicated by the text on the silver minivan's license plate?",
       "ground_truth": "NEW YORK [entity_011]",
-      "prediction": "The user wants to identify the state or region from the license plate of the silver minivan.\n\n1.  **Locate the silver minivan:** In the video, there is a silver minivan directly in front of the camera car. It becomes very clear in the later frames (00:03, 00:04, 00:05).\n2.  **Zoom in on the license plate:** I need to look closely at the license plate on the rear of this minivan.\n3.  **Read the text:**\n    *   In frame 00:03",
-      "inference_time_sec": 13.239,
+      "prediction": "New York",
+      "inference_time_sec": 2.907,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range is the license plate HEG-1344 clearly legible on the silver minivan?",
       "ground_truth": "6.167s to 9.2s",
-      "prediction": "The user wants to find the specific time range where the license plate \"HEG-1344\" is clearly visible on the silver minivan.\n\n1.  **Analyze the frames:**\n    *   **00:00 - 00:02:** The silver minivan is visible in the distance. The license plate is too small and blurry to read.\n    *   **00:03:** The camera car is getting closer. The minivan is still a bit far, but the plate is becoming more distinct. It looks like \"HEG-1344\" but",
-      "inference_time_sec": 13.133,
+      "prediction": "0.3-0.5 seconds",
+      "inference_time_sec": 3.345,
       "error": ""
     }
   ]

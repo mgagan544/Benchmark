@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "Where is the overhead Terminal sign located relative to the delivery truck?",
       "ground_truth": "To the left of GOLDEN RULE [entity_001] and PRODUCE INC [entity_002]",
-      "prediction": "The user wants to know the location of the \"Terminal\" sign relative to the delivery truck.\n\n1.  **Identify the delivery truck:** In the first few frames (00:00 - 00:01), there is a large white truck on the right side of the lane. It has \"GOLDEN VALLEY\" written on the side. This is clearly a delivery truck.\n2.  **Identify the overhead Terminal sign:** As the camera car moves forward, a sign hanging from the ceiling comes into view. In frame 00:01, I can see a sign that",
-      "inference_time_sec": 12.984,
+      "prediction": "ahead of the delivery truck",
+      "inference_time_sec": 2.582,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances in this clip are mounted on vehicles?",
       "ground_truth": "5",
-      "prediction": "The user wants me to count distinct text instances mounted on vehicles in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify vehicles and any readable text on them.\n2.  **Frame 1 (00:00):**\n    *   Left truck: \"AMERICAN\" is visible on the side.\n    *   Right truck: \"GOLDEN STATE\" is visible on the side.\n3.  **Frame 2 (00:01):**\n    *   Left truck: \"AMERICAN\" is still visible.\n    *   Right",
-      "inference_time_sec": 12.745,
+      "prediction": "2",
+      "inference_time_sec": 2.241,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds?",
       "ground_truth": "1st: Terminal [entity_004], 2nd: BUS [entity_005], 3rd: STOP [entity_006]",
-      "prediction": "The user wants me to identify the chronological order of legible text instances seen in the video between 2.0 seconds and 5.0 seconds.\n\n1.  **Analyze the video frames:**\n    *   **0.0s - 0.1s:** The vehicle is driving under a covered area, likely an airport drop-off zone. There are trucks on the left and right. No clear legible text yet, maybe \"20\" on the road.\n    *   **0.2s:** A sign on the right says \"Terminal 2\".\n    *   **0.3",
-      "inference_time_sec": 12.697,
+      "prediction": "Terminal, Stop, Airporters",
+      "inference_time_sec": 2.626,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What road markings indicating driving constraints or lane designations are painted on the road surface just before passing the shuttle van?",
       "ground_truth": "BUS [entity_005] and STOP [entity_006]",
-      "prediction": "The user wants to identify specific road markings visible in the video just before the shuttle van passes.\n\n1.  **Identify the shuttle van:** The shuttle van is the white vehicle with red and yellow stripes, labeled \"AIRPORT SHUTTLE\". It appears around the 00:03 mark.\n2.  **Locate the moment \"just before passing\":** The camera car is approaching the van. The van is ahead.\n3.  **Examine the road surface:** Look at the asphalt immediately in front of the camera car and leading up to where the van is.\n4.  **Ident",
-      "inference_time_sec": 12.61,
+      "prediction": "STOP",
+      "inference_time_sec": 2.211,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What kind of driving environment is suggested by the presence of terminal, bus, and cell phone lot signs?",
       "ground_truth": "Airport terminal area",
-      "prediction": "The user wants to identify the driving environment based on specific signs visible in the video.\n\n1.  **Analyze the visual evidence:**\n    *   **Signage:** I see signs that say \"Terminal\", \"Bus\", and \"Cell Phone Lot\".\n    *   **Vehicles:** There are large trucks (likely delivery or transport), a bus, and an ambulance.\n    *   **Infrastructure:** The area is covered by a large roof structure, typical of drop-off/pick-up zones. There are lane markings like \"STOP\" and \"BUS\".\n    *   **Context:** These signs are standard indicators",
-      "inference_time_sec": 12.684,
+      "prediction": "Airport",
+      "inference_time_sec": 2.171,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "In what language are all the legible signs and road markings written?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the signs and road markings in the video.\n\n1.  **Analyze the video frames:**\n    *   **Frame 1:** I see a truck with \"GOLDEN VALLEY\" on the side. This is English.\n    *   **Frame 2:** I see a sign that says \"Terminal 2\". This is English.\n    *   **Frame 3:** I see a sign that says \"Airport\". This is English. There are also blue signs with arrows and text, likely directions.\n    *   **Frame 4:** I see a",
-      "inference_time_sec": 12.641,
+      "prediction": "English",
+      "inference_time_sec": 2.109,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the phone number 1-800-497-4972 first become legible on the delivery truck?",
       "ground_truth": "1.367 seconds",
-      "prediction": "The user wants to find the timestamp when the phone number \"1-800-497-4972\" becomes legible on a delivery truck.\n\n1.  **Analyze the video frames:**\n    *   **00:00:** The camera is inside a vehicle, looking forward. There are trucks on the left and right. The truck on the right is a white box truck. The text on it is blurry and moving. I can see \"GOLDEN VALLEY\" and a sun logo, but no phone number is clearly visible yet.\n    *   **00:",
-      "inference_time_sec": 12.632,
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 2.452,
       "error": ""
     }
   ]

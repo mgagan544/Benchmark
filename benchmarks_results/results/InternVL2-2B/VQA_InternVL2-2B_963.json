@@ -1,0 +1,70 @@
+{
+  "video_id": 963,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/963.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is visible on the orange sign located to the left of the EXIT 3 marker across the lanes?",
+      "ground_truth": "WORK [entity_015] ZONE [entity_016]",
+      "prediction": "The orange sign located to the left of the EXIT 3 marker across the lanes has the text \"EXIT 3\" in white letters.",
+      "inference_time_sec": 4.733,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the billboard that comes into view around 4.7 seconds?",
+      "ground_truth": "5",
+      "prediction": "Based on the video, there are three distinct text instances displayed on the billboard that comes into view around 4.7 seconds. The first instance is the word \"EXIT,\" the second is the word \"EXIT,\" and the third is the word \"EXIT.\"",
+      "inference_time_sec": 5.135,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs for E 138 St and E 161 St are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: E 138 St [entity_008], 2nd: E 161 St [entity_010]",
+      "prediction": "The overhead signs for E 138 St and E 161 St are encountered in the following order as the vehicle moves forward: E 138 St first, followed by E 161 St. This is evident from the sequence of the green signs as the vehicle passes under the bridge, with the E 138 St sign being the first to be seen and the E 161 St sign being the last to be seen as the vehicle continues forward.",
+      "inference_time_sec": 6.561,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit constraint is indicated by the regulatory sign passed on the left shoulder at 1.867 seconds?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002] 35",
+      "prediction": "The regulatory sign on the left shoulder indicates a speed limit of 35 miles per hour (55 kilometers per hour).",
+      "inference_time_sec": 3.763,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead signs for E 138 St and E 161 St, what type of driving environment is depicted?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The presence of overhead signs for E 138 St and E 161 St indicates that the driving environment is a multi-lane highway with multiple exits. This suggests that the traffic is likely to be moderate to heavy, as the signs are placed at intervals to guide drivers to their destinations. The signs are positioned at a height that is easily visible from a distance, which is typical for highways where drivers need to be aware of their exit points. The environment is likely to be urban or suburban, as the signs are not in a rural setting where such signs would be less common.",
+      "inference_time_sec": 7.821,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street and bridge names visible on the overhead signs suggest this clip is filmed in New York City?",
+      "ground_truth": "E 138 St [entity_008] and Madison Ave Br [entity_009]",
+      "prediction": "The specific street and bridge names visible on the overhead signs that suggest this clip is filmed in New York City include \"Madison Ave,\" \"E 138 St,\" \"E 161 St,\" and \"Macombs Dam Br.\" These names are characteristic of the streets and bridges found in New York City, particularly in the borough of Manhattan. The presence of these names, along with the dense traffic and urban environment, supports the conclusion that the clip is likely taken in New York City.",
+      "inference_time_sec": 7.084,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible?",
+      "ground_truth": "Near 7.4 seconds",
+      "prediction": "The signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible towards the end of the video. This is evident as the video shows the signs with the text fully visible and readable, indicating the distance to the next exit and the specific exit number.",
+      "inference_time_sec": 5.115,
+      "error": ""
+    }
+  ]
+}

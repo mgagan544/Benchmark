@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
       "ground_truth": "To the right of VIDE [entity_002]",
-      "prediction": "The user wants to know the spatial relationship between two specific text elements in the image.\n\n1.  **Identify the first element:** \"MON WED FRI\". I need to find this text. Looking at the top right corner of the image, there is a small red and white sign attached to a pole. The text on it reads \"MON WED FRI\".\n2.  **Identify the second element:** \"VIDE\". I need to find this text. Looking at the building on the right side, there is a large window with a sign above it. The sign says \"VIDE\".\n3",
-      "inference_time_sec": 13.127,
+      "prediction": "above",
+      "inference_time_sec": 2.808,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
       "ground_truth": "5",
-      "prediction": "The user wants me to count the distinct pieces of text visible on the dark grey pickup truck.\n\n1.  **Identify the truck:** It's the dark grey Ford F-150 on the right side of the frame, entering the lane.\n2.  **Scan for text:**\n    *   **Tailgate:** There's a Ford logo. Next to it, on the right side of the tailgate, is the model name \"F-150\". Wait, looking closely at the crop images, specifically the second and third crops, I can see \"F-150\" on the tail",
-      "inference_time_sec": 13.154,
+      "prediction": "2",
+      "inference_time_sec": 2.88,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
       "ground_truth": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]",
-      "prediction": "The user wants to know the order in which three specific markings appear on the pickup truck.\n\n1.  **Identify the pickup truck:** A dark grey/black Ford pickup truck enters the frame from the right side around 00:01.\n2.  **Locate the markings:**\n    *   **F150:** This is likely part of the \"F-150\" badge on the tailgate. Looking closely at the truck as it enters, the \"F-150\" badge is on the left side of the tailgate. Wait, let me re-examine.",
-      "inference_time_sec": 13.121,
+      "prediction": "4X4, F150, P150",
+      "inference_time_sec": 4.203,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
       "ground_truth": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]",
-      "prediction": "The user wants to identify the text on a regulatory sign near a commercial building that constrains parking.\n\n1.  **Scan the image for signs:** I see traffic lights, street signs, and a sign on the building.\n2.  **Locate the commercial building:** On the right side of the frame, there's a yellowish building with a storefront.\n3.  **Identify the regulatory sign:** Near the top right corner, attached to a pole or the building, there's a small white rectangular sign.\n4.  **Read the text:** Zooming in on that sign (visible in the first",
-      "inference_time_sec": 13.319,
+      "prediction": "MON WED FRI",
+      "inference_time_sec": 3.18,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
       "ground_truth": "Commercial district",
-      "prediction": "The user wants me to interpret the driving environment based on visual cues like commercial signs and parking regulations.\n\n1.  **Identify Commercial Signs:**\n    *   I see a sign for \"VIDE\" on the right, which looks like a restaurant or shop.\n    *   There's a blue van with \"EAT\" and food-related graphics, suggesting food delivery or a food truck.\n    *   There are overhead billboards in the distance.\n    *   There's a \"MON WED FRI\" sign on a pole, likely related to parking or business hours.\n    *   The presence",
-      "inference_time_sec": 13.326,
+      "prediction": "Urban setting",
+      "inference_time_sec": 2.872,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the text on specific signs in the video.\n\n1.  **Locate the regulatory parking sign:** In the top right corner, there is a small white sign attached to a pole. It reads \"MON WED FRI\" and \"LIMITED CLEARING\". This is English.\n2.  **Locate the commercial building:** On the right side, there is a building with a sign that says \"VIDE\". Below that, there's a window with some text, but it's hard to read clearly. However, looking at the license plates and general street signs (like \"",
-      "inference_time_sec": 13.216,
+      "prediction": "English",
+      "inference_time_sec": 2.902,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
       "ground_truth": "3.033s",
-      "prediction": "The user wants to find the timestamp when the \"STREET CLEANING\" sign becomes clearly readable.\n\n1.  **Analyze the video:** I'll scan through the frames, looking specifically at the top right corner where street signs are usually located.\n2.  **Locate the sign:** In the first frame (00:00), there is a red and white sign on a pole on the far right sidewalk.\n3.  **Check readability:**\n    *   00:00: The sign is visible. It's a red rectangle with white text. The text \"STREET CLEANING",
-      "inference_time_sec": 13.279,
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.113,
       "error": ""
     }
   ]

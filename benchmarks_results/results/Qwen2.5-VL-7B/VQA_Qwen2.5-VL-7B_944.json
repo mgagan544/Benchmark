@@ -1,0 +1,70 @@
+{
+  "video_id": 944,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/944.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the PASSENGER CARS ONLY sign located relative to the Drive SOUTH sign?",
+      "ground_truth": "Adjacent to Drive [entity_006] SOUTH [entity_007]",
+      "prediction": "The \"PASSENGER CARS ONLY\" sign is located to the right of the \"Drive SOUTH\" sign, as seen in the image. The \"Drive SOUTH\" sign is green and white, indicating the direction of travel, while the \"PASSENGER CARS ONLY\" sign is orange and black, providing additional traffic information.",
+      "inference_time_sec": 7.823,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities make up the construction warning sign visible at the start of the clip?",
+      "ground_truth": "4",
+      "prediction": "The construction warning sign visible at the start of the clip contains the following distinct text entities:\n\n1. \"RIGHT LANE CLOSED\"\n2. \"500 FT\"\n\nSo, there are 2 distinct text entities on the construction warning sign.",
+      "inference_time_sec": 6.575,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the low clearance warning sign, the construction warning signs, and the PASSENGER CARS ONLY sign?",
+      "ground_truth": "1st: 12-6 [entity_005] and construction signs, 2nd: PASSENGER CARS ONLY [entity_009]",
+      "prediction": "The vehicle encounters the signs in the following order:\n\n1. **Low Clearance Warning Sign**: The first sign encountered is the yellow \"Low Clearance\" sign with the height restriction of 12'-6\".\n2. **Construction Warning Signs**: After passing the low clearance sign, the vehicle encounters the construction warning signs, which include orange signs indicating that the right lane is closed 500 feet ahead.\n3. **PASSENGER CARS ONLY Sign**: Finally, the vehicle encounters the green \"PASSENGER CARS ONLY\" sign.\n\nSo, the sequence is: Low Clearance Warning Sign → Construction Warning Signs →",
+      "inference_time_sec": 11.188,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What low clearance limit is indicated by the warning sign to the right of the concrete barrier?",
+      "ground_truth": "12-6 [entity_005]",
+      "prediction": "The warning sign to the right of the concrete barrier indicates a low clearance limit of 12 feet and 6 inches (12'-6\"). This means that vehicles must be aware of their height and ensure they do not exceed this limit when passing under the structure or bridge.",
+      "inference_time_sec": 7.236,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the transition from a curved ramp with construction signs to a highway depict?",
+      "ground_truth": "Highway transition zone",
+      "prediction": "The transition from a curved ramp with construction signs to a highway depicts a change in driving environment that involves navigating through a construction zone before entering a more open and structured highway setting. The presence of construction signs and barriers on the curved ramp indicates ongoing roadwork or maintenance, which can require drivers to be cautious and follow specific traffic rules. Once the vehicle exits the construction zone onto the highway, the environment becomes smoother and more predictable, with clear lane markings and fewer obstacles. This transition highlights the importance of adapting to different driving conditions and maintaining awareness of one's surroundings as they move from one type of roadway to another.",
+      "inference_time_sec": 10.903,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction warning signs and overhead directional signs?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction warning signs and overhead directional signs appears to be in English. The signs include phrases like \"RIGHT LANE CLOSED 500 FT\" and \"FDR Drive South,\" which are typical English phrases used for traffic and road information.",
+      "inference_time_sec": 7.02,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Drive SOUTH sign first come into view, and when does the vehicle pass it?",
+      "ground_truth": "First visible at 3.767 seconds, passed at 5.133 seconds",
+      "prediction": "The \"Drive SOUTH\" sign first comes into view at approximately 0:02 seconds into the video. The vehicle passes this sign around 0:04 seconds.",
+      "inference_time_sec": 5.968,
+      "error": ""
+    }
+  ]
+}

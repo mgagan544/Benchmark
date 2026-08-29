@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "Where is the painted road marking SCHOOL, passed at 0.967 seconds, located relative to the MPH marking?",
       "ground_truth": "To the right of MPH [entity_002]",
-      "prediction": "The user wants to know the relative position of the \"SCHOOL\" marking compared to the \"MPH\" marking.\n\n1.  **Identify the \"SCHOOL\" marking:** Looking at the first frame (00:00), I see \"SCHOOL\" painted on the road surface. It's located further down the road, closer to the intersection.\n2.  **Identify the \"MPH\" marking:** In the same frame (00:00), I see \"MPH\" painted on the road surface. It is located closer to the camera (the bottom of the frame) than the",
-      "inference_time_sec": 13.193,
+      "prediction": "Above",
+      "inference_time_sec": 2.835,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances painted directly on the road pavement does the vehicle pass over in the first second of the clip?",
       "ground_truth": "3",
-      "prediction": "The user wants to count distinct text instances painted on the road pavement that the vehicle passes over in the first second of the video.\n\n1.  **Analyze the video:** I need to watch the first second (00:00 to 00:01) carefully.\n2.  **Identify text on the road:**\n    *   At 00:00, I see \"SCHOOL\" painted on the road.\n    *   Just before \"SCHOOL\", there is \"MPH\".\n    *   Below \"MPH\", there is a number \"20\".",
-      "inference_time_sec": 13.306,
+      "prediction": "2",
+      "inference_time_sec": 2.831,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the vehicle encounters the road marking SCHOOL, the storefront JACKSON HO, and the sign RECTAURA?",
       "ground_truth": "1st: SCHOOL [entity_003], 2nd: JACKSON HO [entity_004], 3rd: RECTAURA [entity_005]",
-      "prediction": "The user wants me to determine the chronological order of three specific visual elements as the vehicle drives down the street.\n\n1.  **Identify the elements:**\n    *   **Road marking \"SCHOOL\":** I need to look for the word \"SCHOOL\" painted on the road surface.\n    *   **Storefront \"JACKSON HO\":** I need to look for a sign or storefront with this text.\n    *   **Sign \"RECTAURA\":** I need to look for a sign with this text.\n\n2.  **Scan the video frames chronologically:**\n\n    *   **",
-      "inference_time_sec": 13.215,
+      "prediction": "SCHOOL, JACKSON HO, RECTAURA",
+      "inference_time_sec": 3.58,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What speed limit and warning text markings are passed by the vehicle on the road pavement before 1.0 second?",
       "ground_truth": "2020 [entity_001], MPH [entity_002], and SCHOOL [entity_003]",
-      "prediction": "The user wants to identify specific road markings visible in the video before the 1.0-second mark.\n\n1.  **Analyze the video frames:**\n    *   **00:00:** The car is driving down a street. On the pavement, I can see \"SCHOOL\" and \"MPH\" and \"20\".\n    *   **00:01:** The car is closer to the intersection. The word \"SCHOOL\" is clearly visible on the road surface.\n    *   **00:02:** The car is passing the crosswalk. The \"SCHOOL",
-      "inference_time_sec": 13.25,
+      "prediction": "20",
+      "inference_time_sec": 2.941,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment is suggested by the storefronts JACKSON HO and RECTAURA appearing on the right side of the street at 2.533 seconds?",
       "ground_truth": "Commercial business district",
-      "prediction": "The user is asking for an interpretation of the driving environment based on specific visual cues in the video.\n\n1.  **Identify the specific moment:** The user points to \"2.533 seconds\". Looking at the provided frames, I need to find the one closest to this timestamp.\n    *   Frame 1 (0.0s): Driving down a street, \"SCHOOL\" painted on the road.\n    *   Frame 2 (0.1s): Approaching an intersection.\n    *   Frame 3 (0.2s): Passing a crosswalk.\n    *   Frame",
-      "inference_time_sec": 13.256,
+      "prediction": "Commercial",
+      "inference_time_sec": 2.874,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Based on the road markings and storefronts encountered between 0.867 and 2.533 seconds, what language is used in this area?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language used in the area based on road markings and storefronts visible between 0.867 and 2.533 seconds.\n\n1.  **Analyze the video segment:** I need to look closely at the frames provided, specifically focusing on the time range 0.867s to 2.533s.\n    *   **0.867s:** The car is approaching an intersection. There's a green traffic light. On the road, I see \"SCHOOL\" painted in large white letters.\n    *   **1.0",
-      "inference_time_sec": 13.246,
+      "prediction": "English",
+      "inference_time_sec": 2.859,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the vehicle drive past the painted SCHOOL zone marker on the road?",
       "ground_truth": "0.967 seconds",
-      "prediction": "The user wants to find the timestamp where the vehicle drives past the \"SCHOOL\" painted on the road.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The word \"SCHOOL\" is clearly visible painted on the road surface in the center lane. The car is approaching it.\n    *   **00:01:** The car is directly over or just past the word \"SCHOOL\". The word is still very prominent.\n    *   **00:02:** The car has moved past the word \"SCHOOL\". The crosswalk is now visible",
-      "inference_time_sec": 13.267,
+      "prediction": "0.1 seconds",
+      "inference_time_sec": 3.131,
       "error": ""
     }
   ]

@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What sign is located directly to the right of the green overhead exit sign for Industrial Boulevard and Hesperian Boulevard?",
       "ground_truth": "An orange diamond-shaped construction sign to the right of the green overhead exit sign",
-      "prediction": "The user wants to identify a specific sign in the video.\n\n1.  **Analyze the user's request:**\n    *   Target: A sign.\n    *   Location: Directly to the right of the green overhead exit sign.\n    *   Context: The green sign mentions \"Industrial Boulevard\" and \"Hesperian Boulevard\".\n\n2.  **Scan the video for the relevant scene:**\n    *   00:00 - 00:01: Dark road, cars ahead. No overhead signs visible yet.\n    *   00:02: A green",
-      "inference_time_sec": 13.201,
+      "prediction": "35",
+      "inference_time_sec": 2.869,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct signs containing text or numbers appear on the right shoulder between 0:02 and 0:05?",
       "ground_truth": "2",
-      "prediction": "The user wants me to count distinct signs on the right shoulder between 0:02 and 0:05.\n\n1.  **Analyze the video segment:**\n    *   **0:02:** I see a green overhead sign. It's actually more of an overhead gantry sign, but let's look closer. Wait, the prompt asks for signs on the *right shoulder*.\n    *   Let's re-examine the frames.\n    *   **Frame at 0:02:** There is a green overhead sign structure. To the right of the road, further back, there's",
-      "inference_time_sec": 13.182,
+      "prediction": "2",
+      "inference_time_sec": 2.779,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order in which the orange road work sign, the green overhead exit sign, and the dark overpass bridge are encountered?",
       "ground_truth": "1st: orange road work sign, 2nd: green overhead exit sign, 3rd: dark overpass bridge",
-      "prediction": "The user wants me to identify the chronological order of three specific objects seen in the video: an orange road work sign, a green overhead exit sign, and a dark overpass bridge.\n\n1.  **Analyze the video for the orange road work sign:**\n    *   Looking at the first few frames, specifically around 00:01 and 00:02, I see a diamond-shaped orange sign on the right side of the road. It's visible just before the green overhead sign.\n    *   At 00:01, it's clearly visible on the right shoulder.",
-      "inference_time_sec": 13.154,
+      "prediction": "orange road work sign, green overhead exit sign, dark overpass bridge",
+      "inference_time_sec": 3.872,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What warning and speed advisory information is displayed on the right shoulder between 0:02 and 0:05?",
       "ground_truth": "Road work ahead warning and a 35 speed advisory",
-      "prediction": "The user wants to know the warning and speed advisory information visible on the right shoulder of the road between 0:02 and 0:05.\n\n1.  **Analyze the video frames:**\n    *   **0:00 - 0:01:** The car is driving at night. There are taillights ahead.\n    *   **0:02:** A green overhead sign becomes visible. To the right of it, there's a yellow diamond-shaped sign and a rectangular yellow sign below it.\n    *   **0:03:** The overhead sign is clearer. It",
-      "inference_time_sec": 13.149,
+      "prediction": "Road work ahead. Speed 35.",
+      "inference_time_sec": 3.499,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment is suggested by the green overhead exit sign and multi-lane setup?",
       "ground_truth": "Highway",
-      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Green overhead exit sign:** This is a classic feature of controlled-access highways, freeways, or expressways. It indicates upcoming exits and destinations (Industrial Boulevard, Heaps Boulevard).\n    *   **Multi-lane setup:** The road has multiple lanes going in the same direction (at least two visible, likely more). There are dashed white lines separating lanes.\n    *   **Barriers:** There appears to be a concrete barrier or guardrail on the",
-      "inference_time_sec": 13.318,
+      "prediction": "Highway",
+      "inference_time_sec": 2.994,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the street names on the green overhead exit sign?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the street names on the green overhead sign.\n\n1.  **Locate the sign:** I need to find the frame where the green overhead sign is visible. Looking through the frames, it appears clearly around the 00:02 mark.\n2.  **Read the text:** I will zoom in on the sign in the 00:02 frame.\n    *   The left side says \"Industrial Boulevard\".\n    *   The right side says \"Hesperian Boulevard\".\n3.  **Identify the language:** The words \"Industrial\" and \"",
-      "inference_time_sec": 13.099,
+      "prediction": "English",
+      "inference_time_sec": 2.79,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During what time range is the green overhead guide sign for Industrial Boulevard and Hesperian Boulevard visible before the vehicle passes underneath it?",
       "ground_truth": "0:05 to 0:07",
-      "prediction": "The user wants to find the specific time range where a green overhead sign is visible.\n\n1.  **Analyze the video frames:**\n    *   **00:00:** The view is dark. I see taillights of cars ahead. No overhead sign is visible yet.\n    *   **00:01:** Still dark, but getting brighter. No sign yet.\n    *   **00:02:** A green sign is becoming visible in the distance. It's blurry but clearly an overhead highway sign.\n    *   **00:03:** The sign is much",
-      "inference_time_sec": 13.153,
+      "prediction": "0.2 - 0.3 seconds",
+      "inference_time_sec": 3.476,
       "error": ""
     }
   ]

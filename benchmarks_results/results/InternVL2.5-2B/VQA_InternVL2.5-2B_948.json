@@ -1,0 +1,70 @@
+{
+  "video_id": 948,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/948.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which sign, located directly below the FDR DR SOUTH sign on the overhead gantry, comes into view between 2.4 and 2.567 seconds?",
+      "ground_truth": "LEFT 2 LANES [entity_006]",
+      "prediction": "Between 2.4 and 2.567 seconds, the sign that comes into view is the EXIT sign located directly below the FDR DR SOUTH sign on the overhead gantry.",
+      "inference_time_sec": 4.475,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signs containing lane designations or lane restrictions are visible on the overhead gantry before the vehicle enters the steel truss structure?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct signs visible on the overhead gantry before the vehicle enters the steel truss structure. The first sign indicates 'FURDY 2/30' and '2 Av West St' with a green light, suggesting that the right lane is open for a specific duration. The second sign reads 'PARKER 7/30' and '2 Av West St' with a red light, indicating that the right lane is restricted for parking.",
+      "inference_time_sec": 6.931,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs 2 Ave-12S st, FDR DR SOUTH, and FINE + POINTS are encountered by the vehicle?",
+      "ground_truth": "1st: 2 Ave-12S st [entity_001], 2nd: FDR DR SOUTH [entity_005], 3rd: FINE + POINTS [entity_010]",
+      "prediction": "The signs are encountered in the following order: first, '2 Ave-12S st', then 'FDR DR SOUTH', and finally 'FINE + POINTS'.",
+      "inference_time_sec": 4.409,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text, located to the left of the STRICTLY ENFORCED sign, becomes visible at 2.733 seconds to indicate traffic penalties?",
+      "ground_truth": "FINE + POINTS [entity_010]",
+      "prediction": "At 2.733 seconds, the warning text 'PUNISH PROSECUTE' appears to the left of the STRICTLY ENFORCED sign, indicating traffic penalties.",
+      "inference_time_sec": 4.405,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggest about the driving environment?",
+      "ground_truth": "Expressway bridge approach",
+      "prediction": "The mix of highway signs and lane restrictions visible between 2.233 and 2.567 seconds suggests that the driving environment is a regulated highway with clear signage indicating lane changes and speed limits. The presence of these signs indicates that the driver is expected to follow specific traffic rules and be aware of other vehicles and their positions on the road. This environment is typical of a busy highway where drivers must navigate through various signs and restrictions to maintain safe and orderly traffic flow.",
+      "inference_time_sec": 6.961,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city is suggested by the highway names FDR DR SOUTH and Harlem RIv Dr visible on the overhead gantry?",
+      "ground_truth": "New York City",
+      "prediction": "The highway names FDR DR SOUTH and Harlem RIv Dr suggest that the video is set in New York City. FDR Drive is a major thoroughfare in New York City, and Harlem Rte is a street in Manhattan. The presence of these specific names indicates that the location is within the city limits of New York.",
+      "inference_time_sec": 5.826,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the lead blue vehicle with license plate FOD-3149 tracked at the beginning of the clip?",
+      "ground_truth": "00:00 to 00:02",
+      "prediction": "At the beginning of the clip, the lead blue vehicle with license plate FOD-3149 is tracked within the time range of 2.0 miles per hour.",
+      "inference_time_sec": 4.265,
+      "error": ""
+    }
+  ]
+}

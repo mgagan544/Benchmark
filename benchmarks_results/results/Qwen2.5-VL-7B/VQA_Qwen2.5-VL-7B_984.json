@@ -1,0 +1,70 @@
+{
+  "video_id": 984,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/984.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly above the identifier 91204-MD on the white shredding truck?",
+      "ground_truth": "DRIVERS WANTED [entity_009]",
+      "prediction": "The text located directly above the identifier 91204-MD on the white shredding truck is \"DRIVERS WANTED\".",
+      "inference_time_sec": 5.95,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the commercial delivery van branded with GoodMart?",
+      "ground_truth": "3",
+      "prediction": "There is one distinct text instance visible on the commercial delivery van branded with GoodMart, which is \"GoodMart.\"",
+      "inference_time_sec": 5.302,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the two delivery van brands are encountered on the right side of the road?",
+      "ground_truth": "1st: GoodMart [entity_012], 2nd: IBC [entity_017]",
+      "prediction": "The video shows two delivery vans on the right side of the road, one after the other. The first van is white with \"Good\" written on it, and the second van is also white but has \"USDOH 2941834\" written on it. Therefore, the chronological order in which these two delivery van brands are encountered is:\n\n1. Good\n2. USDOH 2941834",
+      "inference_time_sec": 9.144,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text near the intersection indicates a direction restriction for drivers?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_022]",
+      "prediction": "The regulatory text near the intersection that indicates a direction restriction for drivers is \"CASH ONLY.\" This sign suggests that only vehicles with cash can proceed in that direction, which might be a temporary measure or a specific regulation for that area.",
+      "inference_time_sec": 6.744,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggest about the driving environment?",
+      "ground_truth": "Busy urban commercial district",
+      "prediction": "The presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggests that the driving environment is likely an urban or semi-urban area with active commercial activity. The variety of vehicles indicates a mix of local deliveries, waste management services, and public transportation. The construction scaffolding implies ongoing development or maintenance work in the area, which could contribute to temporary traffic disruptions or changes in road conditions. This setting is typical of areas where businesses operate and where infrastructure is being maintained or expanded.",
+      "inference_time_sec": 9.817,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the shredding truck and delivery vans written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the shredding truck and delivery vans is written in English.",
+      "inference_time_sec": 4.894,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the GoodMart delivery van text visible before being replaced by the IBC van?",
+      "ground_truth": "0.000 seconds to 5.967 seconds",
+      "prediction": "The GoodMart delivery van text is visible in the image for a brief moment, likely during the transition from one frame to another. The exact time range cannot be determined from the still image alone, as it captures only a single moment in time. However, based on the sequence of frames provided, it appears that the GoodMart van is visible just before the IBC van enters the frame.",
+      "inference_time_sec": 8.46,
+      "error": ""
+    }
+  ]
+}

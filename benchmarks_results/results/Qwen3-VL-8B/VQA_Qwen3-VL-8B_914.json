@@ -1,0 +1,70 @@
+{
+  "video_id": 914,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/914.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the digital YOUR SPEED MPH feedback sign?",
+      "ground_truth": "ONLY [entity_005] sign to the right of YOUR [entity_001] SPEED [entity_002] MPH [entity_003]",
+      "prediction": "The sign located directly to the right of the digital \"YOUR SPEED MPH\" feedback sign is a **yellow diamond-shaped warning sign** with a **black curved arrow**, indicating a **curvy or winding road ahead**. This sign is typically used to alert drivers to upcoming changes in the road's alignment, such as sharp turns or bends.",
+      "inference_time_sec": 10.309,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory or feedback signs are located on the right side of the exit ramp?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct regulatory or feedback signs located on the right side of the exit ramp:\n\n1. A yellow diamond-shaped warning sign indicating a curve ahead, with \"20 MPH\" written below it.\n2. A rectangular white sign that reads \"YOUR SPEED\" with a digital display showing the vehicle's current speed.\n\nThese signs are positioned to provide drivers with important information about the road conditions and their current speed as they exit the ramp.",
+      "inference_time_sec": 12.159,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the camera vehicle pass the ONE WAY sign, the digital YOUR SPEED MPH feedback sign, and the ONLY sign?",
+      "ground_truth": "1st: ONE WAY [entity_004], 2nd: YOUR [entity_001] SPEED [entity_002] MPH [entity_003], 3rd: ONLY [entity_005]",
+      "prediction": "The camera vehicle passes the digital YOUR SPEED MPH feedback sign first, then the ONE WAY sign, and finally the ONLY sign.",
+      "inference_time_sec": 5.459,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Which sign indicates that traffic must flow in a single direction at the start of the ramp?",
+      "ground_truth": "ONE WAY [entity_004] sign",
+      "prediction": "The sign that indicates traffic must flow in a single direction at the start of the ramp is the **\"ONE WAY\" sign**. \n\nThis sign is typically a rectangular sign with the words \"ONE WAY\" and an arrow pointing in the direction of travel. It is placed at the beginning of a one-way street or ramp to inform drivers of the required direction of travel.\n\nIn the video, you can see a **\"ONE WAY\" sign** on the left side of the road, just before the ramp begins. This sign clearly indicates that traffic must proceed in a single direction on this ramp.\n\n**Answer: ONE WAY sign**",
+      "inference_time_sec": 13.444,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the exit ramp, elevated structure, and multi-story brick buildings, what kind of driving environment is depicted?",
+      "ground_truth": "urban exit ramp",
+      "prediction": "The driving environment depicted is an urban setting, likely in a city with dense infrastructure. The presence of an elevated roadway or exit ramp, combined with multi-story brick buildings and overhead structures, suggests a metropolitan area with heavy traffic and complex roadways. This type of environment is typical of cities like New York, where elevated highways and bridges are common, and buildings are closely packed together. The scene also indicates that the road is likely part of a major thoroughfare or highway system designed to handle high volumes of traffic in a congested urban core.",
+      "inference_time_sec": 12.058,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory and feedback signs along the ramp?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory and feedback signs along the ramp is in **English**.\n\n- The sign indicating “20 MPH” is in English.\n- The “YOUR SPEED” sign is also in English.\n- The “SPEED LIMIT 20 MPH” sign is in English.\n- The “SPEED LIMIT 20 MPH” sign is in English.\n\nAll visible text on the signs is written in English.",
+      "inference_time_sec": 10.249,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ONLY sign first become visible as the vehicle enters the underpass?",
+      "ground_truth": "4.4 seconds for ONLY [entity_005]",
+      "prediction": "0.2 seconds",
+      "inference_time_sec": 3.877,
+      "error": ""
+    }
+  ]
+}

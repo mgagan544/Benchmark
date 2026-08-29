@@ -1,0 +1,70 @@
+{
+  "video_id": 945,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/945.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located to the left of the regulatory notice warning about doubled speeding fines?",
+      "ground_truth": "ROAD [entity_011] WORK [entity_012] AHEAD [entity_004] sign",
+      "prediction": "To the left of the regulatory notice warning about doubled speeding fines, there is a 'SPEED LIMIT 30' sign. This sign is positioned on the left side of the road, adjacent to the barrier, and is clearly visible as the vehicle approaches the construction area. The sign is rectangular with a white background and black text, and it is mounted on a metal pole. It serves as a reminder to drivers to reduce their speed to 30 miles per hour in the area, which is likely due to the presence of construction and the need for caution.",
+      "inference_time_sec": 13.027,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 0.2 seconds and 2.0 seconds?",
+      "ground_truth": "4",
+      "prediction": "Between 0.2 seconds and 2.0 seconds, the vehicle encounters three distinct, legible text instances: 'ROOF LANE CLOSES AHEAD', 'SPEED LIMIT 30', and 'SPEED LIMIT 25'.",
+      "inference_time_sec": 9.489,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence in which the speed limit sign, the sidewalk closed placard, and the road work warning sign are encountered?",
+      "ground_truth": "1st: ROAD [entity_011] WORK [entity_012] AHEAD [entity_004], 2nd: SPEED [entity_013] LIMIT [entity_014], 3rd: SIDEWALK [entity_015] closed FOR CONST [entity_016]",
+      "prediction": "The sequence begins with the speed limit sign indicating 'SPEED LIMIT 30' on the left side of the road. As the vehicle progresses, the sidewalk closed placard appears on the right side of the road. Finally, the road work warning sign is seen on the right side of the road, indicating the presence of construction or road work ahead.",
+      "inference_time_sec": 10.899,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the speed limit sign located to the left of the sidewalk closed placard?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014] of 30",
+      "prediction": "The speed limit sign indicates a driving constraint of 30 mph. This sign is visible in the video as the vehicle approaches the area with the 'ROAD CLOSED AHEAD' placard. The sign is orange with white text and is positioned to the left of the sidewalk closed placard, which is also orange with white text. The presence of such a sign suggests that the road ahead may have reduced visibility or other conditions that necessitate a lower speed limit for safety.",
+      "inference_time_sec": 11.999,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the signs for exits, street names, and work zones, what kind of driving environment is depicted?",
+      "ground_truth": "Urban highway construction zone",
+      "prediction": "The driving environment depicted in the video is an urban setting with a mix of residential and commercial areas. The presence of street signs for 'BROOKLYN' and 'EAST 3 ST' indicates a city with a structured road network. The 'ROAD CLOSED AHEAD' sign and the 'SPEED LIMIT 30' sign suggest that the area is undergoing some form of construction or maintenance, which is common in urban environments. The 'NO TRUCKS' sign indicates a restriction on the type of vehicles allowed on the road, which is typical in areas with heavy traffic or where certain types of vehicles are not permitted due",
+      "inference_time_sec": 14.03,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street names visible on the overhead gantry suggest a specific city? What text supports this?",
+      "ground_truth": "New York City, supported by E 125 St [entity_019] and 2Ave [entity_021]",
+      "prediction": "Yes, the street names visible on the overhead gantry suggest that the video is set in New York City. The text 'BROOKLYN BRIDGE' and 'MANHATTAN' are visible, indicating the proximity to these well-known landmarks.",
+      "inference_time_sec": 9.527,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the regulatory sign warning about doubled speeding fines first become legible, and when does it become illegible?",
+      "ground_truth": "Legible at 0.467 seconds, illegible at 0.6 seconds",
+      "prediction": "The regulatory sign warning about doubled speeding fines first becomes legible at the timestamp of 00:00:00. It becomes illegible at the timestamp of 00:00:07.",
+      "inference_time_sec": 8.668,
+      "error": ""
+    }
+  ]
+}

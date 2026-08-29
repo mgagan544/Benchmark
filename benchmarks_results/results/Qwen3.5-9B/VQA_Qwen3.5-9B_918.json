@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What specific text is located directly to the right of the highway shield 280 on the overhead gantry?",
       "ground_truth": "San [entity_001]",
-      "prediction": "The user wants me to identify the text next to the highway shield 280 on the overhead sign.\n\n1.  **Locate the sign:** I need to find the overhead gantry sign. It appears clearly in the frame at 00:02.\n2.  **Locate shield 280:** On the left side of the sign, there is a blue shield with \"NORTH\" and \"280\" inside it.\n3.  **Identify text to the right:** Directly to the right of the shield 280, there is text.\n4.",
-      "inference_time_sec": 13.189,
+      "prediction": "San Francisco",
+      "inference_time_sec": 2.905,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances on the overhead highway gantry contain numbers?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the distinct text instances on the overhead highway gantry that contain numbers.\n\n1.  **Identify the gantry:** I see a large green overhead sign spanning the highway lanes. It's visible clearly around 00:02.\n2.  **Locate text instances:**\n    *   Left side: \"NORTH 280 San Francisco\". The \"280\" is a number.\n    *   Right side: \"John Daly Blvd Junipero Serra Blvd 1 1/4 MILES\". The \"1 1/4\" contains numbers.",
-      "inference_time_sec": 13.256,
+      "prediction": "2",
+      "inference_time_sec": 2.752,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the text instances 49A, EXIT, and John Daly Blvd become clearly visible or readable between 4.00 and 5.50 seconds?",
       "ground_truth": "1st: John Daly Blvd [entity_003], 2nd: 49A [entity_009], 3rd: EXIT [entity_010]",
-      "prediction": "The user wants to determine the order of visibility for three specific text instances: \"49A\", \"EXIT\", and \"John Daly Blvd\".\n\n1.  **Analyze the video frames:** I need to look at the frames provided, specifically focusing on the time range 4.00 to 5.50 seconds. Wait, looking at the timestamps provided in the prompt, the frames are labeled 00:00, 00:01, 00:02, 00:03, 00:04. The prompt asks for the order between 4.",
-      "inference_time_sec": 13.261,
+      "prediction": "EXIT, John Daly Blvd, 49A",
+      "inference_time_sec": 3.563,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the overhead gantry signs, what action is implied for a driver wishing to reach John Daly Blvd?",
       "ground_truth": "Take exit 49A [entity_009]",
-      "prediction": "The user wants to know the implied action for reaching John Daly Blvd based on the overhead signs.\n\n1.  **Identify the relevant sign:** I need to look at the overhead gantry signs visible in the video, particularly around the 00:02 mark.\n2.  **Read the sign:** The sign on the right side of the gantry reads:\n    *   \"NORTH 280\" (with an arrow pointing straight/leftish)\n    *   \"San Francisco\"\n    *   \"John Daly Blvd\"\n    *   \"Junipero Serra Blvd\"",
-      "inference_time_sec": 13.225,
+      "prediction": "Take exit 49A.",
+      "inference_time_sec": 3.315,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of overhead gantry signs with highway shields and exit numbers, what kind of driving environment is depicted?",
       "ground_truth": "Highway",
-      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead gantry signs:** I see large green signs suspended over the road.\n    *   **Highway shields:** One sign clearly shows a blue and red shield with \"280\" inside, which is the standard shield for Interstate 280.\n    *   **Exit numbers:** The signs indicate distances like \"1 1/4 MILES\" and \"1/2 MILE\".\n    *   **Road layout:** It's a",
-      "inference_time_sec": 13.285,
+      "prediction": "highway",
+      "inference_time_sec": 2.903,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which destination name visible on the overhead gantry suggests the vehicle is traveling near a major city in California?",
       "ground_truth": "San [entity_001] Francisco [entity_002]",
-      "prediction": "The user wants me to identify a destination name on an overhead sign in the video.\n1.  **Scan the video for overhead signs:** I see a large green overhead gantry sign appearing around the 00:02 mark.\n2.  **Read the text on the sign:** The sign has multiple panels.\n    *   One panel says \"NORTH 280 San Francisco\".\n    *   Another panel says \"John Daly Blvd Junipero Serra Blvd 1 1/4 MILES\".\n3.  **Identify the major city:** \"San Francisco\" is clearly visible on",
-      "inference_time_sec": 13.186,
+      "prediction": "San Francisco",
+      "inference_time_sec": 3.024,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the exit number 49A first become clearly visible on the right panel of the gantry?",
       "ground_truth": "4.633 seconds",
-      "prediction": "The user wants to find the timestamp when the exit number \"49A\" is first clearly visible on the right panel of the overhead gantry.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The gantry is visible in the distance, but the text is too small to read clearly.\n    *   **00:01:** The car is closer. The gantry is clearer. I can see \"NORTH 280 San Francisco\" on the left panel. On the right panel, I see \"John Daly Blvd\" and \"Junipero Serra",
-      "inference_time_sec": 13.24,
+      "prediction": "0.2",
+      "inference_time_sec": 2.985,
       "error": ""
     }
   ]

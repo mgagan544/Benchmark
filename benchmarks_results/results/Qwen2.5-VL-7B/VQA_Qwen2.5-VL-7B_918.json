@@ -1,0 +1,70 @@
+{
+  "video_id": 918,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/918.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What specific text is located directly to the right of the highway shield 280 on the overhead gantry?",
+      "ground_truth": "San [entity_001]",
+      "prediction": "The specific text located directly to the right of the highway shield 280 on the overhead gantry is \"San Francisco.\"",
+      "inference_time_sec": 5.82,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances on the overhead highway gantry contain numbers?",
+      "ground_truth": "3",
+      "prediction": "There is one distinct text instance on the overhead highway gantry that contains numbers: \"1/2 MILE\".",
+      "inference_time_sec": 5.339,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances 49A, EXIT, and John Daly Blvd become clearly visible or readable between 4.00 and 5.50 seconds?",
+      "ground_truth": "1st: John Daly Blvd [entity_003], 2nd: 49A [entity_009], 3rd: EXIT [entity_010]",
+      "prediction": "The text instances \"49A,\" \"EXIT,\" and \"John Daly Blvd\" become clearly visible or readable in the following order:\n\n1. **49A** - This appears first, likely as part of a larger sign indicating an exit number.\n2. **EXIT** - This follows, indicating that the exit is numbered 49A.\n3. **John Daly Blvd** - Finally, the name of the exit destination, \"John Daly Blvd,\" becomes clearly visible.\n\nThis sequence suggests that the camera is panning across the highway signs, revealing each piece of information in turn.",
+      "inference_time_sec": 10.612,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead gantry signs, what action is implied for a driver wishing to reach John Daly Blvd?",
+      "ground_truth": "Take exit 49A [entity_009]",
+      "prediction": "The overhead gantry sign indicates that to reach John Daly Blvd, drivers should take the right lane. The sign also mentions \"1/2 MILE,\" which suggests that the exit is approximately half a mile ahead.",
+      "inference_time_sec": 6.426,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead gantry signs with highway shields and exit numbers, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The image depicts a highway driving environment in an urban or suburban area. The overhead gantry signs with highway shields and exit numbers indicate that this is likely a major interstate or freeway system, such as those found in the United States. The signs provide directions to various destinations, including San Francisco, which suggests that this is a route leading towards the San Francisco Bay Area. The presence of multiple lanes and the American flag ribbon on the dashboard further support the idea that this is a U.S. highway. The traffic appears moderate, with several cars visible on the road, and the weather is clear with some clouds in the sky.",
+      "inference_time_sec": 10.981,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which destination name visible on the overhead gantry suggests the vehicle is traveling near a major city in California?",
+      "ground_truth": "San [entity_001] Francisco [entity_002]",
+      "prediction": "The overhead gantry sign indicates \"San Francisco,\" suggesting that the vehicle is traveling near this major city in California.",
+      "inference_time_sec": 5.765,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the exit number 49A first become clearly visible on the right panel of the gantry?",
+      "ground_truth": "4.633 seconds",
+      "prediction": "The exit number 49A first becomes clearly visible on the right panel of the gantry at approximately 0:15 seconds into the video.",
+      "inference_time_sec": 6.247,
+      "error": ""
+    }
+  ]
+}

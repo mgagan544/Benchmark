@@ -1,0 +1,70 @@
+{
+  "video_id": 959,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/959.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is visible on the green utility post located to the left of the OUTFRONT media branding?",
+      "ground_truth": "West Side [entity_006] way [entity_007] to the left of OUTFRONT [entity_003]",
+      "prediction": "The green utility post to the left of the OUTFRONT media branding has the text \"GATE C\" visible on it.",
+      "inference_time_sec": 4.313,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the vehicles in the active roadway lanes?",
+      "ground_truth": "6",
+      "prediction": "There are two distinct text instances visible on the vehicles in the active roadway lanes. One is on the side of the white truck, and the other is on the side of the red car.",
+      "inference_time_sec": 4.476,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the text on the construction fence, the FDNY SUV, and the garbage truck?",
+      "ground_truth": "1st: GATE [entity_008], 2nd: FDNY [entity_012], 3rd: DON'T [entity_013] LITTER [entity_014]",
+      "prediction": "The vehicle encounters the text on the construction fence first, as it is positioned on the left side of the road and the text is visible on the fence. The FDNY SUV is the next vehicle encountered, following the construction vehicle. The garbage truck is the last vehicle encountered, as it is on the right side of the road and the text on the garbage truck is visible on the right side of the road.",
+      "inference_time_sec": 6.373,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the rear right side of the silver garbage truck?",
+      "ground_truth": "DON'T [entity_013] LITTER [entity_014]",
+      "prediction": "The warning text displayed on the rear right side of the silver garbage truck reads \"DON'T LITTER.\"",
+      "inference_time_sec": 3.715,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a construction fence, municipal vehicles, and a large billboard?",
+      "ground_truth": "Urban city street",
+      "prediction": "The presence of a construction fence, municipal vehicles, and a large billboard suggests a busy urban environment with ongoing development and public infrastructure. The construction fence indicates ongoing construction or renovation work, which is common in urban areas. The presence of municipal vehicles, such as the red truck and the white van, implies that the area is accessible to public transportation and possibly frequented by city workers or residents. The large billboard, which is advertising a product, suggests that the area is likely a commercial zone with businesses catering to the public. The combination of these elements points to a dynamic and active urban setting.",
+      "inference_time_sec": 7.982,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which text on the emergency SUV suggests the clip is filmed in New York City?",
+      "ground_truth": "FDNY [entity_012]",
+      "prediction": "The text on the emergency SUV that suggests the clip is filmed in New York City is \"DON'T LITTER.\" This phrase is a common slogan in New York City, often associated with the city's environmental consciousness and the importance of keeping the streets clean.",
+      "inference_time_sec": 5.025,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range is the billboard text simple ingredients not a lot of sugar visible?",
+      "ground_truth": "0.0s to 1.3s",
+      "prediction": "The billboard text \"simple ingredients, not a lot of sugar\" is visible in the video from the beginning until the end. It is not visible in the first few seconds of the video, but it becomes more prominent as the video progresses.",
+      "inference_time_sec": 4.938,
+      "error": ""
+    }
+  ]
+}

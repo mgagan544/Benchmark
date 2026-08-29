@@ -1,0 +1,70 @@
+{
+  "video_id": 952,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/952.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly beneath the motto \"Common Sense Solutions To Your Environmental Concerns\" on the service vehicle?",
+      "ground_truth": "Water Trearment & Environmental Specialists [entity_012]",
+      "prediction": "The text located directly beneath the motto \"Common Sense Solutions To Your Environmental Concerns\" on the service vehicle is \"CASCADE WATER SERVICES\".",
+      "inference_time_sec": 4.217,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are printed on or designate the yellow school vehicle?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances printed on or designating the yellow school vehicle. The first is 'SCHOOL BUS', the second is 'SCHOOL', and the third is 'SCHOOL BUS'. These texts are clearly visible on the side and back of the yellow school bus as it travels down the street.",
+      "inference_time_sec": 5.528,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the decals MOBILINK, 2626, and 379 CR become visible on the service vehicle?",
+      "ground_truth": "1st: MOBILINK [entity_005], 2nd: 2626 [entity_006], 3rd: 379 CR [entity_007]",
+      "prediction": "The decals 'MOBILINK', '2626', and '379 CR' become visible in the following order: first on the back of the service vehicle, then on the side of the service vehicle, and finally on the back of the service vehicle again.",
+      "inference_time_sec": 5.19,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the yellow school vehicle indicates an emergency designation?",
+      "ground_truth": "EMERGENCY 0008 [entity_022]",
+      "prediction": "The yellow school vehicle has the text 'EMERGENCY' written in red on the back of the bus.",
+      "inference_time_sec": 3.864,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign?",
+      "ground_truth": "Residential neighborhood",
+      "prediction": "The presence of a school bus, pedestrians on a sidewalk, and a temporary garage sale sign suggests a suburban or urban environment with a mix of residential and commercial areas. The school bus indicates the presence of a school zone, while the pedestrians and garage sale sign point to a neighborhood with some commercial activity.",
+      "inference_time_sec": 5.436,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which telephone area codes visible on the vehicles suggest this clip was filmed in the New York metropolitan area?",
+      "ground_truth": "516.932.3030 [entity_003] and 718-335-6363 [entity_021]",
+      "prediction": "The telephone area codes '516' and '646' visible on the vehicles suggest that this clip was filmed in the New York metropolitan area.",
+      "inference_time_sec": 4.005,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle identification number 2626 first become clearly visible on the service vehicle?",
+      "ground_truth": "0.933s",
+      "prediction": "The vehicle identification number 2626 first becomes clearly visible on the service vehicle at the 3-second mark in the video.",
+      "inference_time_sec": 3.919,
+      "error": ""
+    }
+  ]
+}

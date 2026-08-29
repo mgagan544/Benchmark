@@ -1,0 +1,70 @@
+{
+  "video_id": 940,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/940.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
+      "ground_truth": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]",
+      "prediction": "Directly adjacent to the parking area on the right side of the driving lane, there are signs for \"Danice\" and \"PALLAS.\"",
+      "inference_time_sec": 6.462,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct pieces of text belonging to storefront signs or banners on the left side of the driving lane. These include the \"SUPPLY\" sign on the leftmost building, the \"PALLA\" sign on the second building, and the \"DANICE\" sign on the third building.",
+      "inference_time_sec": 8.923,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]",
+      "prediction": "The camera vehicle first encounters the storefront of FALLAS, which is a large retail store with a prominent red and white sign, before it comes across the signs for Danice, which are smaller and located to the right of the FALLAS sign.",
+      "inference_time_sec": 8.156,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
+      "ground_truth": "Stop",
+      "prediction": "The painted road marking adjacent to the concrete sidewalk on the left implies that there is a no-parking zone. This is indicated by the white line that runs parallel to the sidewalk, which typically signifies a boundary where parking is not allowed.",
+      "inference_time_sec": 7.914,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
+      "ground_truth": "Commercial strip mall",
+      "prediction": "The driving environment depicted in the video is a commercial shopping area, as indicated by the storefront signs such as \"PALLAS\" and \"Danice,\" which are typical of retail stores. The presence of a parking lot with multiple cars and a designated parking space for disabled individuals further supports the commercial nature of the area. The overall setting suggests that the driver is navigating through a shopping district, likely during a time of day when such areas are active with shoppers and visitors.",
+      "inference_time_sec": 11.469,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
+      "ground_truth": "English",
+      "prediction": "The storefront signs and promotional banners in the clip are in English.",
+      "inference_time_sec": 5.449,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
+      "ground_truth": "5.233s to 5.6s",
+      "prediction": "The camera vehicle approaches the storefront windows of FALLAS showing promotional text during the daytime.",
+      "inference_time_sec": 5.787,
+      "error": ""
+    }
+  ]
+}

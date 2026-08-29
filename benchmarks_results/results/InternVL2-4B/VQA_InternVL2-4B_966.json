@@ -1,0 +1,70 @@
+{
+  "video_id": 966,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/966.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of Hilltop Mall relative to DISTRICT as the vehicle moves forward?",
+      "ground_truth": "directly below DISTRICT [entity_002]",
+      "prediction": "As the vehicle moves forward, Hilltop Mall is positioned to the left of the road, while DISTRICT is located to the right.",
+      "inference_time_sec": 6.365,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the wooden directional sign on the left shoulder?",
+      "ground_truth": "8",
+      "prediction": "There are two distinct text instances visible on the wooden directional sign on the left shoulder. The first instance is the word \"POLICE,\" and the second is the word \"POLICE\" followed by a number, although the number is not fully visible in the image.",
+      "inference_time_sec": 8.252,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "Which text instances are encountered 1st and 2nd on the wooden sign at 0.77 seconds before the others become visible?",
+      "ground_truth": "1st: HILLTOP [entity_001], 2nd: DISTRICT [entity_002]",
+      "prediction": "The first text instance encountered on the wooden sign at 0.77 seconds before the others become visible is '100' and the second is '100'.",
+      "inference_time_sec": 6.835,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional destinations are listed on the wooden sign on the left shoulder to guide the driver?",
+      "ground_truth": "HILLTOP [entity_001], DISTRICT [entity_002], Hilltop Mall [entity_003], Business Park [entity_004], Hilltop Lake [entity_005], Park [entity_006], Point Pinole [entity_007], Regional Park [entity_008]",
+      "prediction": "The wooden sign on the left shoulder lists directions to \"Parking\" and \"Pedestrian Crossing.\"",
+      "inference_time_sec": 5.961,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text on the wooden sign suggest about the surrounding area?",
+      "ground_truth": "suburban recreational and commercial zone",
+      "prediction": "The mix of text on the wooden sign, although not entirely legible, suggests that the area is likely a residential or commercial zone with specific regulations or information pertinent to the locality. The presence of such signs typically indicates that the area is organized and has certain rules or guidelines that residents or visitors are expected to follow. The sign could be providing information about parking restrictions, local ordinances, or directions to nearby facilities. The fact that it is made of wood and has a rustic appearance might imply that the area has a traditional or historical character, or it could be a sign of a community that values a",
+      "inference_time_sec": 13.182,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the wooden directional sign written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the wooden directional sign is written in Spanish.",
+      "inference_time_sec": 5.211,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text HILLTOP first become legible on the wooden sign?",
+      "ground_truth": "0.77 seconds for HILLTOP [entity_001]",
+      "prediction": "The text 'HILLTOP' first becomes legible on the wooden sign at the timestamp 00:00:00.",
+      "inference_time_sec": 6.256,
+      "error": ""
+    }
+  ]
+}

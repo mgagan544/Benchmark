@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the text EXIT relative to the word Ave on the overhead sign?",
       "ground_truth": "directly below Ave [entity_002]",
-      "prediction": "The user wants to know the spatial relationship between the text \"EXIT\" and the word \"Ave\" on the overhead sign.\n\n1.  **Identify the sign:** I need to find the overhead sign in the video. Looking at the frames, specifically around 00:01 and 00:02, there is a yellow overhead sign visible on the right side of the road.\n2.  **Locate \"EXIT\":** On this sign, the word \"EXIT\" is clearly visible at the top right corner.\n3.  **Locate \"Ave\":** Below the word \"",
-      "inference_time_sec": 13.287,
+      "prediction": "above",
+      "inference_time_sec": 2.75,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct pieces of text are visible on the overhead green exit sign?",
       "ground_truth": "4",
-      "prediction": "The user wants me to count the distinct pieces of text on the overhead green exit sign.\n\n1.  **Identify the sign:** I need to find the green overhead sign. Looking at the frames, specifically around 00:01 and 00:02, there is a green sign visible on the right side of the highway, mounted on a pole.\n2.  **Examine the sign:** Let's look closely at the sign in the clearest frames.\n    *   In frame 00:01, the sign is visible but a bit blurry. It looks like a standard highway",
-      "inference_time_sec": 13.19,
+      "prediction": "2",
+      "inference_time_sec": 2.791,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan?",
       "ground_truth": "1st: passing Bradley [entity_001], 2nd: slow crawl behind red sedan",
-      "prediction": "The user wants to know the sequence of events between two specific points in the video:\n1.  **Passing the overhead exit sign:** This happens very early in the video. Looking at the frames, the sign is visible in the distance at 00:00 and becomes clearer as the car approaches. By 00:01, the car is passing under or just past it.\n2.  **Coming to a slow crawl behind the red sedan:** This happens towards the end of the clip. The red sedan is directly in front. By 00:04, the red sedan's brake lights",
-      "inference_time_sec": 13.177,
+      "prediction": "A white SUV passes on the right.",
+      "inference_time_sec": 3.373,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the text on the overhead sign, what driving action is indicated for the lane below it?",
       "ground_truth": "EXIT [entity_003] only [entity_004]",
-      "prediction": "The user wants to know the driving action indicated by the overhead sign.\n\n1.  **Identify the sign:** I need to look at the overhead sign visible in the video frames. It's a yellow rectangular sign hanging over the highway.\n2.  **Locate the sign in the frames:**\n    *   Frame 1: The sign is visible in the distance, slightly right of center. It's yellow.\n    *   Frame 2: The sign is clearer. It says \"ONLY\" on the right side.\n    *   Frame 3: The sign is very clear. It reads \"ONLY",
-      "inference_time_sec": 13.135,
+      "prediction": "Exit only",
+      "inference_time_sec": 2.873,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment is suggested by the overhead exit sign and the multi-lane road layout?",
       "ground_truth": "highway",
-      "prediction": "The user wants to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead exit sign:** I see a green sign hanging over the road. It has an arrow pointing to the right and the word \"EXIT\" (though partially obscured, the shape and context are clear). This is a classic feature of controlled-access highways.\n    *   **Multi-lane road layout:** There are multiple lanes going in the same direction (at least 3 or 4 visible). There is a concrete barrier separating opposing traffic on the left.",
-      "inference_time_sec": 13.182,
+      "prediction": "highway",
+      "inference_time_sec": 2.949,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the text on the overhead exit sign?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the text on the overhead exit sign.\n\n1.  **Locate the sign:** I need to find the overhead exit sign in the video. Looking at the frames, specifically around 00:01 and 00:02, there is a yellow overhead sign visible on the right side of the highway.\n2.  **Read the text:** I'll zoom in on the sign in my mind's eye based on the provided frames.\n    *   In the frame at 00:01, the sign is partially visible. It says \"Bray\"",
-      "inference_time_sec": 13.242,
+      "prediction": "English",
+      "inference_time_sec": 2.875,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the text Bradley first become clearly displayed on the overhead sign?",
       "ground_truth": "Bradley [entity_001] at 2.7 seconds",
-      "prediction": "The user wants to find the timestamp when the text \"Bradley\" is clearly visible on the overhead sign.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The sign is visible in the distance, but the text is blurry and illegible. It looks like a green highway sign.\n    *   **00:01:** The car is moving closer. The sign is still a bit blurry but getting clearer. I can see the shape of the text, but \"Bradley\" isn't distinct yet.\n    *   **00:02:** The car",
-      "inference_time_sec": 13.305,
+      "prediction": "0.2",
+      "inference_time_sec": 3.006,
       "error": ""
     }
   ]

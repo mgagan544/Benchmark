@@ -1,0 +1,70 @@
+{
+  "video_id": 931,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/931.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
+      "ground_truth": "S E [entity_005]",
+      "prediction": "The text located between \"RAY'S TRUCKS\" and \"Elizabeth N.J.\" on the semi-truck is \"908-438-0163\".",
+      "inference_time_sec": 6.332,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
+      "ground_truth": "7",
+      "prediction": "There are 3 distinct vehicle-mounted text elements visible on the semi-truck on the right side of the host vehicle:\n\n1. \"MAX\" (partially visible on the side of the container)\n2. \"SER\" (partially visible on the side of the container, likely part of \"SERVICE\" or similar)\n3. \"MILEA PARTS DELIVERY\" (visible on the side of the truck cab)\n\nThese are the only text elements clearly visible on the semi-truck in the provided frames.",
+      "inference_time_sec": 11.698,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
+      "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
+      "prediction": "The order of appearance of the text elements as the host vehicle moves forward is: **FUEL CO**, then **milea**, then **HINO**.\n\nHere's the reasoning:\n\n1.  **FUEL CO**: This text is visible on the side of the white van that is directly to the right of the host vehicle. The host vehicle passes this van early in the sequence, around the 0:00 mark. The text \"FUEL CO\" is clearly legible on the van's side panel as it passes.\n\n2.  **milea**: This text appears on the side of a white delivery truck that is",
+      "inference_time_sec": 13.551,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "None",
+      "prediction": "No, there is no visible text in the clip that indicates a hazard, warning, or driving constraint. The text visible on vehicles and signs is primarily related to company names, contact information, or service types (e.g., “Milea Parts Delivery,” “Volvo,” “GMC,” “Isuzu,” “Elizabeth NJ,” “800-438-0163,” “MAX SER,” “Truck Sales,” “PA”), which are not hazard or driving constraint indicators. The road appears to be operating under normal traffic conditions with no visible warning signs or hazard text.",
+      "inference_time_sec": 13.128,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "Based on the visual evidence in the video, the host vehicle is traveling on a **freeway or highway**.\n\nHere's the reasoning:\n\n1.  **Route Number 278:** The presence of a specific route number (278) indicates this is a designated, major arterial road, which is characteristic of a highway or freeway system.\n2.  **Multiple Commercial Trucks:** The video clearly shows several large commercial trucks, including a semi-truck with a shipping container and another with \"Milea Parts Delivery\" on its side. These are typical vehicles found on major highways that connect cities and facilitate long-distance freight transport",
+      "inference_time_sec": 13.582,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
+      "ground_truth": "Elizabeth N.J. [entity_003]",
+      "prediction": "The text \"NEWARK\" on the semi-truck suggests the vehicle is associated with a city in New Jersey. Newark is a major city located in the state of New Jersey, USA.",
+      "inference_time_sec": 6.626,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
+      "ground_truth": "1.2s to 1.3s",
+      "prediction": "The text elements \"FUEL CO\" and \"S J\" first become visible on the semi-truck during the time range 0:00 to 0:01.",
+      "inference_time_sec": 6.478,
+      "error": ""
+    }
+  ]
+}

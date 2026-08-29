@@ -1,0 +1,70 @@
+{
+  "video_id": 1000,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/1000.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "As the vehicle drives forward from the wrapping business at 0.0s, what is the spatial position of the HOME TILE CENTER SHOWROOM relative to the LETTERS & WRAPS SIGN?",
+      "ground_truth": "To the right of LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001]",
+      "prediction": "The HOME TILE CENTER SHOWROOM is located to the right of the lettering and wraps business, which is on the left side of the frame. The vehicle is positioned in the middle of the intersection, with the HOME TILE CENTER SHOWROOM positioned to the right of the intersection and the lettering & wraps business to the left.",
+      "inference_time_sec": 6.219,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers, such as phone numbers or license plates, are mentioned in the clip?",
+      "ground_truth": "3",
+      "prediction": "In the video, there are two distinct text instances containing numbers. One is on the license plate of the black sedan, which reads \"NY 1234.\" The other is on the rear of the white van, which reads \"S DONA.\"",
+      "inference_time_sec": 5.089,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle passes the LETTERS & WRAPS SIGN and the HOME TILE CENTER?",
+      "ground_truth": "1st: LETTERS [entity_004] & WRAPS [entity_003] SIGN [entity_001], 2nd: HOME [entity_011] TILE [entity_009] CENTER [entity_008]",
+      "prediction": "The vehicle passes the LETTERS & WRAPS SIGN first, followed by the HOME TILE CENTER. This is evident from the sequence of the video frames, where the vehicle first passes the sign, then proceeds to the center, and finally reaches the intersection where the sign is located.",
+      "inference_time_sec": 5.237,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving constraint or warning, and where is it located?",
+      "ground_truth": "DO NOT BLOCK [entity_019] on the ACTIVE [entity_018] DRIVE WAY [entity_017]",
+      "prediction": "Yes, there is visible text in the clip that indicates a driving constraint or warning. The text \"NO PARKING ANYTIME\" is located on the traffic light pole to the left of the frame. This sign is typically used to inform drivers that parking is not allowed at any time, and it is a common feature in urban areas to regulate traffic flow and ensure safety.",
+      "inference_time_sec": 6.177,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefronts and commercial vehicles, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial strip",
+      "prediction": "The driving environment depicted in the video is urban, characterized by a high density of commercial establishments and a variety of vehicles, including commercial trucks and vans. The presence of multiple storefronts with different signage suggests a commercial area with a mix of retail and service-oriented businesses. The traffic appears to be moderate, with vehicles moving in both directions, indicating a typical urban traffic flow. The clear blue sky and the absence of heavy traffic congestion suggest a well-maintained urban area with a balance between commercial activity and pedestrian-friendly zones.",
+      "inference_time_sec": 7.578,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the storefronts and vehicles written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the storefronts and vehicles is in English. There are no discernible characters or symbols that suggest a different language or script. The text is clear and legible, indicating that the language is likely to be English.",
+      "inference_time_sec": 4.903,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the LETTERS & WRAPS SIGN visible before transitioning to the HOME TILE CENTER?",
+      "ground_truth": "0.0s to 1.133s",
+      "prediction": "The LETTERS & WRAPS sign is visible from the beginning of the video until the transition to the HOME TILE CENTER. This can be determined by observing the sequence of the video frames where the sign is first seen on the left side of the street, and it remains visible until the van enters the intersection and the sign is no longer visible.",
+      "inference_time_sec": 5.865,
+      "error": ""
+    }
+  ]
+}

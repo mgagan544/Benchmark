@@ -1,0 +1,70 @@
+{
+  "video_id": 935,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/935.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the painted road marking SCHOOL, passed at 0.967 seconds, located relative to the MPH marking?",
+      "ground_truth": "To the right of MPH [entity_002]",
+      "prediction": "The painted road marking \"SCHOOL\" is located on the right side of the road, just before the intersection. The \"MPH\" marking is on the left side of the road, closer to the center of the image.",
+      "inference_time_sec": 5.406,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances painted directly on the road pavement does the vehicle pass over in the first second of the clip?",
+      "ground_truth": "3",
+      "prediction": "In the first second of the video, the vehicle passes over three distinct text instances painted directly on the road pavement. These instances are \"SCHOOL,\" \"M.P.H.,\" and \"20.\"",
+      "inference_time_sec": 4.689,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle encounters the road marking SCHOOL, the storefront JACKSON HO, and the sign RECTAURA?",
+      "ground_truth": "1st: SCHOOL [entity_003], 2nd: JACKSON HO [entity_004], 3rd: RECTAURA [entity_005]",
+      "prediction": "The vehicle encounters the road marking SCHOOL first, followed by the storefront JACKSON HO, and finally the sign RECTAURA.",
+      "inference_time_sec": 4.103,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit and warning text markings are passed by the vehicle on the road pavement before 1.0 second?",
+      "ground_truth": "2020 [entity_001], MPH [entity_002], and SCHOOL [entity_003]",
+      "prediction": "The vehicle passes a speed limit sign that reads \"25 MPH\" and a warning text marking that reads \"SCHOOL\" before 1.0 second.",
+      "inference_time_sec": 4.19,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts JACKSON HO and RECTAURA appearing on the right side of the street at 2.533 seconds?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The storefronts JACKSON HO and RECTAURA appear to be commercial establishments, which suggests a business district or a commercial area. The presence of these businesses indicates that the street is likely a commercial thoroughfare, possibly a main street or a commercial district within a city. The fact that they are visible on the right side of the street at a specific time frame suggests that the area is well-trafficked and possibly frequented by pedestrians and vehicles.",
+      "inference_time_sec": 7.021,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Based on the road markings and storefronts encountered between 0.867 and 2.533 seconds, what language is used in this area?",
+      "ground_truth": "English",
+      "prediction": "The language used in this area appears to be English, as indicated by the road markings and the presence of English words on storefronts such as \"SCHOOL\" and \"M.P.H.\"",
+      "inference_time_sec": 4.533,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle drive past the painted SCHOOL zone marker on the road?",
+      "ground_truth": "0.967 seconds",
+      "prediction": "The vehicle drives past the painted SCHOOL zone marker on the road at the timestamp of approximately 1:30 in the video.",
+      "inference_time_sec": 3.989,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 949,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/949.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located directly to the right of the building section displaying FAITH at 301-303?",
+      "ground_truth": "BBF PRINTING [entity_014] to the right of FAITH [entity_012]",
+      "prediction": "The business name located directly to the right of the building section displaying FAITH at 301-303 is 'AUTO CASH'. This can be determined by observing the video frames where the camera is positioned to capture the view from inside a vehicle, and the building section with the name 'FAITH' is visible on the left side of the frame. Directly to the right of this section, the 'AUTO CASH' business is clearly visible, indicating its location relative to the 'FAITH' building.",
+      "inference_time_sec": 12.694,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned in the text for parked vehicles?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct license plates mentioned in the text for parked vehicles: '7HJ 9X4', '7HJ 9X5', and '7HJ 9X6'.",
+      "inference_time_sec": 8.9,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the vehicle passes the FAITH storefront, the BBF PRINTING storefront, and the DOLLAR TREE plaza?",
+      "ground_truth": "1st: FAITH [entity_012], 2nd: BBF PRINTING [entity_014], 3rd: DOLLAR [entity_032] TREE [entity_033]",
+      "prediction": "The vehicle first passes the FAITH storefront, then the BBF PRINTING storefront, and finally the DOLLAR TREE plaza.",
+      "inference_time_sec": 8.696,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional text is displayed on the traffic post located on the sidewalk corner near the pedestrian?",
+      "ground_truth": "PED [entity_029] SIGNAL [entity_030] USE [entity_031]",
+      "prediction": "The traffic post displays the text 'DO NOT BLOCK INTERSECTION' in red letters, indicating a rule for drivers to prevent blocking the intersection.",
+      "inference_time_sec": 8.48,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, promotional signs, and retail plaza visible in this clip?",
+      "ground_truth": "commercial district",
+      "prediction": "The driving environment suggested by the storefronts, promotional signs, and retail plaza visible in the clip is a commercial area, likely a shopping district or a mixed-use area with both commercial and residential properties. The presence of a Dollar Tree store, a printing and shipping center, and a retail plaza indicates a bustling area with various services and retail options available to the public. The commercial nature of the area is further emphasized by the signage and the layout of the buildings, which are designed to attract customers and provide easy access to different services.",
+      "inference_time_sec": 14.709,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for all the visible storefront signs and promotional text in this clip?",
+      "ground_truth": "English",
+      "prediction": "The language used for all the visible storefront signs and promotional text in the clip is English. This can be determined by the clear visibility of English words such as 'DOLLAR TREE', 'AUTO', 'PHOTO', and 'PRINTING' on the signs. Additionally, the text on the billboard and the banners on the buildings are in English, indicating that the location is likely in an English-speaking country.",
+      "inference_time_sec": 12.811,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range does the DOLLAR TREE retail plaza and its entrance signs remain visible in the clip?",
+      "ground_truth": "4.3 seconds to 6.9 seconds",
+      "prediction": "The DOLLAR TREE retail plaza and its entrance signs remain visible throughout the entire clip, from the beginning to the end.",
+      "inference_time_sec": 8.052,
+      "error": ""
+    }
+  ]
+}

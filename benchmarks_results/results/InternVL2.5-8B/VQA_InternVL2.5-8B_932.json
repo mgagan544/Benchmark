@@ -1,0 +1,70 @@
+{
+  "video_id": 932,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/932.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
+      "ground_truth": "CLEANERS [entity_019]",
+      "prediction": "Adjacent to the storefront of COAST FOR GOLD on the right side of the street, there is a business named 'BROOKLYN BAIL BONDS'. This can be observed in the video as the camera moves forward, providing a clear view of the storefronts and their respective signage.",
+      "inference_time_sec": 10.283,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct text instances visible on the regulatory sign post to the right of the lane marking. The sign reads 'BUS LANE' in large white letters, with 'BUS' on the top line and 'LANE' on the bottom line.",
+      "inference_time_sec": 9.432,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
+      "prediction": "The text instance ONLY appears first, followed by BUSES ONLY, and then SCHOOL BUS.",
+      "inference_time_sec": 7.548,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
+      "ground_truth": "ONE WAY [entity_004]",
+      "prediction": "The regulatory sign post on the left side of the street displays a 'No Turn on Red' sign, indicating that vehicles are not allowed to make a right turn on red. This sign is a standard traffic regulation aimed at improving traffic flow and safety by preventing vehicles from turning into oncoming traffic. The sign is positioned to be clearly visible to drivers, ensuring they are aware of the restriction before making a turn.",
+      "inference_time_sec": 11.299,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
+      "ground_truth": "Commercial urban street",
+      "prediction": "The driving environment depicted in the video is a typical urban setting with a mix of commercial and residential buildings. The presence of storefronts such as COAST FOR GOLD and CLEANERS suggests a community with local businesses catering to the needs of residents and possibly students, as indicated by the school bus. The environment is likely a neighborhood with a blend of daily commuters, school children, and local shoppers, all sharing the same streets.",
+      "inference_time_sec": 11.763,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific phone number on the first school bus suggests a New York City location?",
+      "ground_truth": "(718)852-0286 [entity_011]",
+      "prediction": "The first school bus in the video has the phone number '212-555-1212' displayed on its side, which is a common area code for New York City, suggesting that the location of the video is within the city.",
+      "inference_time_sec": 9.217,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
+      "ground_truth": "4.267 seconds",
+      "prediction": "The text BUSES ONLY first becomes visible at the timestamp of 00:00:00:00.",
+      "inference_time_sec": 7.741,
+      "error": ""
+    }
+  ]
+}

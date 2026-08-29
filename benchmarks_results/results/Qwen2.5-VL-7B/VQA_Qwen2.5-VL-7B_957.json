@@ -1,0 +1,70 @@
+{
+  "video_id": 957,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/957.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What green information board is located directly to the left of the yellow speed advisory sign displaying 15 M P H?",
+      "ground_truth": "SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014] to the left of 15 M P H [entity_011]",
+      "prediction": "The green information board located directly to the left of the yellow speed advisory sign displaying \"15 M P H\" is for \"E 42 St Highway Lane.\"",
+      "inference_time_sec": 6.001,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances (such as license plates or vehicle tags) are visible between 1.2 and 1.767 seconds?",
+      "ground_truth": "5",
+      "prediction": "In the video segment from 1.2 to 1.767 seconds, there is one vehicle-mounted text instance visible on the red car in the foreground. The license plate of the red car can be seen clearly.",
+      "inference_time_sec": 6.586,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the orange construction warning sign, the yellow speed advisory sign, and the green overhead signs are encountered?",
+      "ground_truth": "1st ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010], 2nd 15 M P H [entity_011], 3rd SUNY [entity_012] STATE COLLEGE [entity_013] OPTOMETRY [entity_014]",
+      "prediction": "The order in which the signs are encountered from left to right in the image is:\n\n1. The orange construction warning sign.\n2. The yellow speed advisory sign.\n3. The green overhead signs.\n\nThese signs are typically placed in sequence to provide information to drivers as they approach an area of construction or a change in traffic conditions.",
+      "inference_time_sec": 7.773,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text on the right side of the road indicates a hazard or construction ahead?",
+      "ground_truth": "ROAD [entity_008] WORK [entity_009] 1 MILE [entity_010]",
+      "prediction": "The warning text on the right side of the road that indicates a hazard or construction ahead is \"Detour Right.\"",
+      "inference_time_sec": 5.364,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, multiple highway lanes, and construction warning signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane highway or expressway. The presence of overhead exit signs indicating destinations like \"Midtown Tun\" and \"E 42 St,\" as well as the multiple lanes and construction warning signs, suggest that this is a major urban highway designed to handle high volumes of traffic efficiently. These features are typical of highways in large cities where there is a need for organized traffic flow and clear guidance for drivers.",
+      "inference_time_sec": 8.996,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific city or region is suggested by the green information board displaying SUNY State College Optometry?",
+      "ground_truth": "New York State",
+      "prediction": "The green information board displaying \"SUNY State College Optometry\" suggests that the location is in New York, specifically in the vicinity of the State University of New York (SUNY) system. The SUNY system includes several campuses across New York state, but without additional context, it's not possible to pinpoint the exact campus or region. However, the presence of such a sign on a highway suggests that this could be near one of the SUNY campuses, possibly in a major urban area like New York City, where there are many educational institutions and healthcare facilities.",
+      "inference_time_sec": 10.451,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range are the overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE visible in the clip?",
+      "ground_truth": "8.2 to 9.3 seconds",
+      "prediction": "The overhead highway exit signs displaying EXIT 9, E 42 St, and RIGHT LANE are visible throughout the entire duration of the video clip. The camera angle remains consistent, showing the view from inside a car as it drives on the highway, with these signs prominently displayed above the road.",
+      "inference_time_sec": 7.321,
+      "error": ""
+    }
+  ]
+}

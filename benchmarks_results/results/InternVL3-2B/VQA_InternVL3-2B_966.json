@@ -1,0 +1,70 @@
+{
+  "video_id": 966,
+  "model": "InternVL3-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/966.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of Hilltop Mall relative to DISTRICT as the vehicle moves forward?",
+      "ground_truth": "directly below DISTRICT [entity_002]",
+      "prediction": "Hilltop Mall is to the left of DISTRICT.",
+      "inference_time_sec": 3.769,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the wooden directional sign on the left shoulder?",
+      "ground_truth": "8",
+      "prediction": "There are two distinct text instances visible on the wooden directional sign on the left shoulder.",
+      "inference_time_sec": 3.351,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "Which text instances are encountered 1st and 2nd on the wooden sign at 0.77 seconds before the others become visible?",
+      "ground_truth": "1st: HILLTOP [entity_001], 2nd: DISTRICT [entity_002]",
+      "prediction": "The first text instance is 'HHS-TIP' and the second text instance is 'HHS-TIP'.",
+      "inference_time_sec": 3.66,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional destinations are listed on the wooden sign on the left shoulder to guide the driver?",
+      "ground_truth": "HILLTOP [entity_001], DISTRICT [entity_002], Hilltop Mall [entity_003], Business Park [entity_004], Hilltop Lake [entity_005], Park [entity_006], Point Pinole [entity_007], Regional Park [entity_008]",
+      "prediction": "HBR, 12TP, and 12TP",
+      "inference_time_sec": 3.215,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text on the wooden sign suggest about the surrounding area?",
+      "ground_truth": "suburban recreational and commercial zone",
+      "prediction": "The mix of text on the wooden sign suggests that the area is likely a commercial or industrial zone, as such signs are often used to indicate the presence of businesses or facilities.",
+      "inference_time_sec": 4.305,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the wooden directional sign written in?",
+      "ground_truth": "English",
+      "prediction": "English.",
+      "inference_time_sec": 2.549,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text HILLTOP first become legible on the wooden sign?",
+      "ground_truth": "0.77 seconds for HILLTOP [entity_001]",
+      "prediction": "The text HILLTOP first becomes legible on the wooden sign at the 1:00 mark.",
+      "inference_time_sec": 3.586,
+      "error": ""
+    }
+  ]
+}

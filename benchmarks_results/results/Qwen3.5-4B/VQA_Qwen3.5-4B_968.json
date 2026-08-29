@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What regulatory sign is located directly below the street signs for Hancock and Evergreen?",
       "ground_truth": "ONE WAY [entity_004] below Hancock [entity_006] and Evergreen [entity_007]",
-      "prediction": "The user wants to identify a specific regulatory sign.\n1.  **Locate the street signs:** I need to find the signs for \"Hancock\" and \"Evergreen\". Looking at the first few frames (0.0s - 0.1s), I see a green street sign on the right side of the intersection. It reads \"HANCOCK\" and below it \"EVERGREEN\".\n2.  **Identify the sign below it:** Directly below these green street signs, there is a red octagonal sign.\n3.  **Determine the type of sign:** A red octagon is",
-      "inference_time_sec": 13.377,
+      "prediction": "Stop sign",
+      "inference_time_sec": 2.351,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances in this scene represent storefront names, commercial advertisements, or business contact details?",
       "ground_truth": "8",
-      "prediction": "The user wants me to count distinct text instances that represent storefront names, commercial advertisements, or business contact details.\n\n1.  **Scan the left side:**\n    *   There's a blue sign on the building on the left. It says \"FOOD CORP\". This is a storefront name.\n    *   Below \"FOOD CORP\", there's smaller text \"HOT FOOD\". This is part of the advertisement/storefront.\n    *   Further down on the same building, there's another sign that says \"Luis FOOD CORP\". This is a distinct instance of a storefront name.\n    *",
-      "inference_time_sec": 12.651,
+      "prediction": "3",
+      "inference_time_sec": 2.233,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of appearance for the regulatory ONE WAY sign, the signboard FOODCORP., and the contact number 718-443-7192?",
       "ground_truth": "1st: ONE WAY [entity_004], 2nd: FOODCORP. [entity_011], 3rd: 718-443-7192 [entity_013]",
-      "prediction": "The user wants me to identify the order of appearance for three specific signs in the video.\n\n1.  **Regulatory ONE WAY sign**: I need to look for a \"ONE WAY\" sign.\n    *   At 00:00, on the left side, above the \"FOOD CORP\" sign, there is a blue sign with white text. It says \"ONE WAY\" pointing left. Wait, let me look closer. It's a blue rectangular sign. It says \"ONE WAY\" with an arrow pointing left. This is visible right at the start.\n    *   Let's check other",
-      "inference_time_sec": 12.704,
+      "prediction": "regulatory ONE WAY sign, signboard FOODCORP., contact number 718-443-7192",
+      "inference_time_sec": 4.309,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the visible text, what driving action is implied at the starting intersection?",
       "ground_truth": "STOP [entity_001]",
-      "prediction": "The user wants to identify the implied driving action based on the text visible in the video.\n\n1.  **Analyze the initial frames:** I need to look at the first few frames, especially around the intersection.\n2.  **Locate text:**\n    *   In the first frame (00:00), there is a large \"STOP\" painted on the road surface in the lane the camera car is approaching.\n    *   There is also a red octagonal \"STOP\" sign on the right side of the street.\n    *   There is another \"STOP\" sign on the left side,",
-      "inference_time_sec": 12.676,
+      "prediction": "STOP",
+      "inference_time_sec": 2.449,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the density of storefront signs, food advertisements, and street signs, what kind of driving environment is depicted?",
       "ground_truth": "Urban commercial area",
-      "prediction": "The user wants me to identify the type of driving environment based on visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Storefronts:** I see multiple businesses lining the street.\n        *   \"FOOD CORP\" with a lobster logo (seafood/deli).\n        *   Another sign that looks like \"Luis FOOD CORP\".\n        *   A sign for \"Naruto\" (likely a restaurant or shop).\n        *   A sign for \"Honey Way\" (possibly a bakery or cafe).\n        *   A sign for",
-      "inference_time_sec": 12.723,
+      "prediction": "Urban",
+      "inference_time_sec": 2.399,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific text instance suggests the region or city where this clip was recorded?",
       "ground_truth": "718-443-7192 [entity_013]",
-      "prediction": "The user wants to identify a specific text instance in the video that suggests the location (region or city).\n\n1.  **Analyze the video frames:** I need to look for street signs, shop signs, or any other text that might indicate a place.\n2.  **Frame 1:**\n    *   Left side: \"FOOD CORP\" sign on a blue awning.\n    *   Left side: \"STOP\" sign.\n    *   Right side: \"STOP\" sign.\n    *   Right side: Street sign \"HARCOCK AVE\". This looks like a specific",
-      "inference_time_sec": 12.658,
+      "prediction": "Harcock Ave",
+      "inference_time_sec": 2.625,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During which time range do the street signs for Hancock and Evergreen come into clearer view?",
       "ground_truth": "1.333s - 2.033s",
-      "prediction": "The user wants to identify the time range when street signs for \"Hancock\" and \"Evergreen\" become clearly visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The car is approaching an intersection. There's a stop sign on the right. I can see a green street sign above it, but the text is blurry. On the left, there's a sign that says \"Evergreen\" and \"Hancock\" (partially visible, looks like \"Evergreen\" and \"Hancock St\"). Wait, let's look closer.\n    *   **00",
-      "inference_time_sec": 12.675,
+      "prediction": "0.0s - 0.5s",
+      "inference_time_sec": 3.333,
       "error": ""
     }
   ]

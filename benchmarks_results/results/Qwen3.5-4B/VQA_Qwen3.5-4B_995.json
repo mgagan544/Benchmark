@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What readable text is located directly to the right of the 1042 number on the first parked school bus?",
       "ground_truth": "738-7373 [entity_005] to the right of 1042 [entity_004]",
-      "prediction": "The user wants me to identify text on a school bus.\n\n1.  **Identify the target bus:** The user specifies the \"first parked school bus\" and mentions the number \"1042\".\n2.  **Locate the bus in the video:**\n    *   At `00:00`, there are buses parked on the right.\n    *   At `00:01`, the camera gets closer. I see a bus with \"1042\" on the back.\n    *   At `00:02`, the bus is very clear. It's",
-      "inference_time_sec": 13.787,
+      "prediction": "SCHOOL BUS",
+      "inference_time_sec": 2.428,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances containing numbers are visible on the first parked school bus?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count distinct text instances containing numbers on the first parked school bus.\n\n1.  **Identify the first parked school bus:** Looking at the images, there's a line of yellow school buses parked on the right side of the road. The \"first\" one is the closest one to the camera, partially visible in the first few frames and then fully visible as the camera car passes it. Wait, let's look closer.\n    *   In the first frame [0.0s], there are buses parked on the right. The closest one is partially visible.\n    *   In the second frame",
-      "inference_time_sec": 12.756,
+      "prediction": "3",
+      "inference_time_sec": 2.426,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the text labels Richie, Service, and 4290 are passed by the ego vehicle?",
       "ground_truth": "1st: 4290 [entity_011], 2nd: Service [entity_012], 3rd: Richie [entity_013]",
-      "prediction": "The user wants to determine the order in which three specific text labels are passed by the ego vehicle.\n\n1.  **Identify the labels:**\n    *   \"Richie\": This is likely part of the text on the side of the school bus. Looking at the frames, specifically around 00:02 and 00:03, I see \"Richie\" on the side of the bus. Wait, let me look closer. Ah, at 00:02, on the side of the bus, there is text that says \"Richie\". No, actually, looking very closely at",
-      "inference_time_sec": 12.729,
+      "prediction": "Richie, Service, 4290",
+      "inference_time_sec": 3.349,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the first parked school bus indicates a potential driving constraint or warning?",
       "ground_truth": "STOP [entity_002]",
-      "prediction": "The user wants to identify specific text on the first parked school bus that suggests a driving constraint or warning.\n\n1.  **Identify the first parked school bus:** Looking at the video, there are several yellow school buses.\n    *   At 00:00, there's a bus further back on the right.\n    *   At 00:01, a bus is clearly visible parked on the right side of the road. It's the closest one.\n    *   At 00:02, the camera gets closer to this bus.\n    *   At 00",
-      "inference_time_sec": 12.675,
+      "prediction": "STOP",
+      "inference_time_sec": 2.435,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of area does the combination of residential buildings, a public park, and school buses suggest?",
       "ground_truth": "residential school zone",
-      "prediction": "The user wants me to identify the type of area based on visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Residential buildings:** I see houses and apartment-style buildings in the background (e.g., at 0:00, 0:04). They look like typical suburban or semi-rural housing.\n    *   **Public park:** There is a large, fenced-in area with trees and snow on the right side (visible clearly from 0:00 to 0:04). It looks like a school playground or a local park.",
-      "inference_time_sec": 12.689,
+      "prediction": "Suburban",
+      "inference_time_sec": 2.495,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific telephone area code visible on the first school bus suggests the vehicle is in New York City?",
       "ground_truth": "718 [entity_007]",
-      "prediction": "The user wants me to identify a telephone area code from the first school bus in the video.\n\n1.  **Identify the first school bus:** Looking at the video, there are several yellow school buses.\n    *   At 00:00, there's a bus on the left (facing somewhat towards us but angled) and a bus on the right (facing away).\n    *   At 00:01, the bus on the right is clearly visible. It's a large yellow school bus.\n    *   At 00:02, the bus on the right",
-      "inference_time_sec": 12.654,
+      "prediction": "212",
+      "inference_time_sec": 2.615,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During which time range is the text Little Linda visible on the first parked school bus?",
       "ground_truth": "00:02 - 00:04",
-      "prediction": "The user wants to find the time range where the text \"Little Linda\" is visible on the first parked school bus.\n\n1.  **Analyze the frames:**\n    *   **00:00:** There are school buses parked on the right. The closest one is facing away. I can see \"SCHOOL BUS\" and a number \"4290\". I don't see \"Little Linda\" clearly yet. Wait, looking closely at the bus closest to the camera (the one furthest back in the line of parked buses), it's partially obscured. Let's look at the next frame.",
-      "inference_time_sec": 12.673,
+      "prediction": "0.0s - 0.1s",
+      "inference_time_sec": 3.363,
       "error": ""
     }
   ]

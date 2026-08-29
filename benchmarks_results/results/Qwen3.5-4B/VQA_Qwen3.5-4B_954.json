@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the text EXIT relative to the word Ave on the overhead sign?",
       "ground_truth": "directly below Ave [entity_002]",
-      "prediction": "The user wants to know the spatial relationship between the word \"EXIT\" and the word \"Ave\" on the overhead sign.\n\n1.  **Identify the sign:** I need to find the overhead sign. Looking through the frames, specifically around 00:00 to 00:02, there is a green overhead sign visible on the right side of the highway.\n2.  **Locate the words:**\n    *   I see the word \"EXIT\" clearly on the sign. It's in the top left part of the sign's text area.\n    *   I see the word",
-      "inference_time_sec": 13.411,
+      "prediction": "to the left of",
+      "inference_time_sec": 2.502,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct pieces of text are visible on the overhead green exit sign?",
       "ground_truth": "4",
-      "prediction": "The user wants me to count the distinct pieces of text on the overhead green exit sign.\n\n1.  **Locate the sign:** I see a green overhead sign hanging over the highway lanes. It's visible in the first few frames, particularly clear around 0.0s to 0.2s.\n2.  **Identify the text:** Looking closely at the sign in the early frames (0.0s, 0.1s, 0.2s), I can see white text on a green background.\n3.  **Break down the text:**\n    *   There's a",
-      "inference_time_sec": 12.645,
+      "prediction": "2",
+      "inference_time_sec": 2.306,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan?",
       "ground_truth": "1st: passing Bradley [entity_001], 2nd: slow crawl behind red sedan",
-      "prediction": "The user wants to know the sequence of events between two specific points in the video:\n1.  **Passing the overhead exit sign:** This happens around 00:00 to 00:01. The sign is visible on the right.\n2.  **Coming to a slow crawl behind the red sedan:** This happens towards the end of the clip, around 00:04.\n\nLet's break down the video chronologically between these two points.\n\n*   **00:00 - 00:01:** The camera car is driving on the highway. There is",
-      "inference_time_sec": 12.625,
+      "prediction": "1. The car is driving on the highway.\n2. The car passes the overhead exit sign.\n3. The car slows down and comes to a crawl behind the red sedan.",
+      "inference_time_sec": 5.143,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the text on the overhead sign, what driving action is indicated for the lane below it?",
       "ground_truth": "EXIT [entity_003] only [entity_004]",
-      "prediction": "The user wants to know the driving action indicated by the overhead sign.\n\n1.  **Identify the sign:** I need to look at the overhead signs in the video.\n2.  **Locate the relevant sign:** In the first few frames (0.0s - 0.1s), there is a green overhead sign on the right side.\n3.  **Read the text:** The sign is partially visible but clearly says \"ONLY\" at the bottom. Above that, there's an arrow pointing left. Wait, let me look closer.\n4.  **Re-evaluating the sign:**",
-      "inference_time_sec": 12.644,
+      "prediction": "Exit only",
+      "inference_time_sec": 2.338,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment is suggested by the overhead exit sign and the multi-lane road layout?",
       "ground_truth": "highway",
-      "prediction": "The user wants me to identify the type of driving environment based on visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead exit sign:** In the first few frames (0.0s - 0.2s), there is a green overhead sign hanging above the road. It has an arrow pointing right and text that looks like \"EXIT\" or a destination name (though blurry, the shape is classic for highway signs).\n    *   **Multi-lane road layout:** The road has multiple lanes going in the same direction (at least 3 or 4 visible",
-      "inference_time_sec": 12.601,
+      "prediction": "Highway",
+      "inference_time_sec": 2.223,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the text on the overhead exit sign?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language on the overhead exit sign.\n\n1.  **Locate the sign:** I need to find the overhead exit sign in the video. Looking at the frames, specifically around 0.0s to 0.2s, there is a green overhead sign hanging above the highway.\n2.  **Read the text:** The sign is partially visible but the text \"EXIT\" is clearly legible on the left side of the sign structure. Wait, let me look closer.\n3.  **Refine observation:** In the first few frames (0.0s - 0.",
-      "inference_time_sec": 12.638,
+      "prediction": "English",
+      "inference_time_sec": 2.229,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the text Bradley first become clearly displayed on the overhead sign?",
       "ground_truth": "Bradley [entity_001] at 2.7 seconds",
-      "prediction": "The user wants to find the timestamp when the text \"Bradley\" first becomes clearly visible on an overhead sign.\n\n1.  **Analyze the frames:**\n    *   **00:00:** There is a green overhead sign in the distance. It's too far away to read clearly.\n    *   **00:01:** The car has moved forward. The sign is closer but still blurry. I can see some yellow text, possibly \"Bradley\", but it's not \"clearly displayed\" yet. Wait, looking closely at the yellow sign on the right, it says \"ONLY\".",
-      "inference_time_sec": 12.629,
+      "prediction": "0.2 seconds",
+      "inference_time_sec": 2.453,
       "error": ""
     }
   ]

@@ -1,0 +1,70 @@
+{
+  "video_id": 909,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/909.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the THRU road text relative to the LANE road text?",
+      "ground_truth": "To the left of LANE [entity_003]",
+      "prediction": "The THRU road text is positioned on the right side of the lane road, which is the opposite side of the lane road. The THRU road is painted in white on the right side of the lane road, while the lane road is painted in white on the left side of the lane road.",
+      "inference_time_sec": 5.769,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct mounted signs are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "In the video, there are three distinct mounted signs visible. These signs are mounted on poles and are positioned in the following locations:\n\n1. On the left side of the frame, there is a sign with the word \"LANE\" written in white letters on a blue background.\n2. In the center of the frame, there is a sign with the word \"THRU\" written in white letters on a blue background.\n3. On the right side of the frame, there is a sign with the word \"STOP\" written in white letters on a red background.\n\nThese signs are part of the traffic control system at the intersection, guiding",
+      "inference_time_sec": 8.295,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the three road text markings are first encountered in the clip?",
+      "ground_truth": "THRU [entity_001] 1st, BUS [entity_002] 2nd, LANE [entity_003] 3rd",
+      "prediction": "The three road text markings are first encountered in the clip in the following order: \"LANE THRU\" is first seen on the road surface, followed by \"LANE\" and \"THRU\" in the same order, and then \"LANE\" is again seen on the road surface.",
+      "inference_time_sec": 5.442,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is required near the zebra-striped pedestrian crosswalk based on the visible signage?",
+      "ground_truth": "Stop at the STOP [entity_004] sign",
+      "prediction": "Near the zebra-striped pedestrian crosswalk, there is a stop sign that requires explicit driving action. The sign is clearly visible and positioned at the intersection, indicating that drivers must come to a complete stop before proceeding. This is a standard traffic control measure to ensure the safety of pedestrians crossing the street.",
+      "inference_time_sec": 5.42,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment does the mix of waiting structures and road markings suggest?",
+      "ground_truth": "Airport shuttle terminal",
+      "prediction": "The mix of waiting structures and road markings suggests a semi-urban or suburban driving environment. The presence of a bus stop indicates that the area is likely frequented by public transportation, which is common in such settings. The road markings, including the lane designation and stop signs, are typical of a roadway designed for both vehicular and pedestrian traffic. The absence of heavy traffic and the presence of a bus stop suggest that the area is not heavily trafficked, which is characteristic of suburban or less urbanized areas.",
+      "inference_time_sec": 7.394,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the road markings and signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "The language used for the road markings and signs in the video is English. This is evident from the text on the road markings, such as \"LANE THRU\" and \"STOP,\" as well as the signs that are clearly labeled in English.",
+      "inference_time_sec": 5.063,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the green directional EXIT sign first come into full view?",
+      "ground_truth": "EXIT [entity_005] sign at 5.933 seconds",
+      "prediction": "The green directional EXIT sign first comes into full view at the beginning of the video.",
+      "inference_time_sec": 3.538,
+      "error": ""
+    }
+  ]
+}

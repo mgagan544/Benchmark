@@ -1,0 +1,70 @@
+{
+  "video_id": 926,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/926.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the safety sign marked with AMER relative to the vehicle with license plate T679966C?",
+      "ground_truth": "AMER [entity_008] is to the right of T679966C [entity_007]",
+      "prediction": "The safety sign marked with \"AMER\" is on the right side of the road, while the vehicle with license plate T679966C is in the middle of the road, slightly to the right. Therefore, the safety sign is to the right of the vehicle.",
+      "inference_time_sec": 8.17,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to the highway direction sign pointing toward the wait area?",
+      "ground_truth": "4",
+      "prediction": "2",
+      "inference_time_sec": 3.662,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the airport facility sign, the highway direction sign, and the license plate are encountered between 0.9 and 5.0 seconds?",
+      "ground_truth": "1st: AMERICAN [entity_001] AIRLINES [entity_002], 2nd: Long [entity_003] Term [entity_004] Wait [entity_005] Area [entity_006], 3rd: T679966C [entity_007]",
+      "prediction": "Between 0.9 and 5.0 seconds, the order in which the airport facility sign, the highway direction sign, and the license plate are encountered is as follows:\n\n1. **Airport facility sign** — This is seen first, likely at the beginning of the 0.9–5.0 second window, as it is a prominent, stationary sign on the right side of the highway, indicating directions to Terminal A and parking areas.\n\n2. **Highway direction sign** — This appears next, as the camera vehicle moves forward and the highway signs (e.g., “EXIT 11” or “EXIT",
+      "inference_time_sec": 13.447,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint? If so, what does it say and where is it located?",
+      "ground_truth": "AMER [entity_008] on a construction notice at the airport construction site",
+      "prediction": "Yes, there is visible text indicating a hazard or driving constraint.\n\nThe text reads: **“EMERGENCY ONLY”**.\n\nIt is displayed on a **digital sign** located on the **left side of the highway**, mounted on a bridge or overpass structure above the lanes. The sign is illuminated in orange or red, which typically indicates a warning or restriction.\n\nThis sign is positioned to alert drivers that the lane or area ahead is restricted to emergency vehicles only, likely due to construction or an incident. It is visible in the frames from 0:00 to 0:04, particularly clear at 0:0",
+      "inference_time_sec": 13.473,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible text mentioning airlines and long term wait area, what type of driving environment is depicted?",
+      "ground_truth": "Airport access road",
+      "prediction": "The driving environment depicted is an airport access road or highway leading to an airport terminal, likely near a major airport such as JFK or LaGuardia in New York, given the visible signage for “American Airlines” and “Long Term Wait Area.” The presence of construction equipment and traffic congestion further suggests this is a high-traffic area near an airport, where drivers are likely heading to or from the airport.",
+      "inference_time_sec": 9.936,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is the visible text on the airport hangar and highway direction sign written in?",
+      "ground_truth": "English",
+      "prediction": "The visible text on the airport hangar and highway direction sign is written in **English**.\n\n- The airport hangar sign clearly reads “AMERICAN AIRLINES,” which is an English phrase.\n- The highway direction signs, such as “Term A” and “P” for parking, are standard English abbreviations and labels used in the United States.\n\nThese signs are typical of U.S. highway and airport infrastructure, where English is the primary language used for navigation and signage.",
+      "inference_time_sec": 11.13,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the gold lead SUV become clearly visible?",
+      "ground_truth": "4.0 seconds for T679966C [entity_007]",
+      "prediction": "0.3 seconds",
+      "inference_time_sec": 3.875,
+      "error": ""
+    }
+  ]
+}

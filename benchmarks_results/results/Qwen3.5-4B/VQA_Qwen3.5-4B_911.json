@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the storefront displaying Clifton Tile relative to the sports facility operated by SDA?",
       "ground_truth": "To the right of SDA [entity_007]",
-      "prediction": "The user wants to know the spatial relationship between two specific storefronts visible in the video.\n\n1.  **Identify the \"Clifton Tile\" storefront:**\n    *   I need to scan the video for a sign that says \"Clifton Tile\".\n    *   Looking at the frames, specifically around 00:01 and 00:02, on the right side of the road, there is a building with a sign.\n    *   At 00:01, I see a sign that says \"CLIFTON TILE\". It's a brick building.\n\n2.",
-      "inference_time_sec": 13.064,
+      "prediction": "to the right",
+      "inference_time_sec": 2.477,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances containing numbers are visible on the buildings and billboard between House 46 and the parked minivan?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count distinct text instances containing numbers.\nThe location is specified as \"between House 46 and the parked minivan\".\n\n1.  **Identify \"House 46\":** Looking at the first few frames, specifically around 00:00 to 00:01, on the right side, there's a building with a sign that says \"PUBLIC HOUSE 46\". This is the starting point.\n2.  **Identify \"parked minivan\":** Looking further down the road on the right side, past the \"PUBLIC HOUSE 46\", there",
-      "inference_time_sec": 12.65,
+      "prediction": "1",
+      "inference_time_sec": 2.265,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the locations House 46, the building at 1075, and Clifton Tile are encountered between 0.40 and 2.40 seconds?",
       "ground_truth": "1st: HOUSE 46 [entity_001], 2nd: 1075 [entity_004], 3rd: CLIFTON [entity_010] TILE [entity_011]",
-      "prediction": "The user wants to know the order of three specific locations based on the video frames provided.\n\n1.  **Identify the locations:**\n    *   **House 46:** I need to look for a sign that says \"House 46\".\n    *   **Building at 1075:** I need to look for a sign with \"1075\" on it.\n    *   **Clifton Tile:** I need to look for a sign that says \"Clifton Tile\".\n\n2.  **Scan the video frames chronologically:**\n\n    *   **0.0s -",
-      "inference_time_sec": 12.663,
+      "prediction": "House 46, the building at 1075, Clifton Tile",
+      "inference_time_sec": 3.527,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text indicates a driving restriction or direction constraint at the driveway located between building 1033 and the entrance way displaying 35-37?",
       "ground_truth": "EXIT [entity_031] ONLY [entity_032], DO NOT [entity_033] ENTRY [entity_034]",
-      "prediction": "The user wants to identify specific text on a sign related to a driveway.\n\n1.  **Identify the location:** The user mentions \"driveway located between building 1033 and the entrance way displaying 35-37\".\n2.  **Scan the images for these landmarks:**\n    *   I see a building with \"1033-35-37\" on it in the later frames (0.3s, 0.4s). This is likely the \"entrance way displaying 35-37\" part, or at least the building with those",
-      "inference_time_sec": 12.729,
+      "prediction": "DO NOT ENTER",
+      "inference_time_sec": 2.462,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the density of storefronts, tile shops, and commercial billboards, what kind of driving environment does this clip depict?",
       "ground_truth": "Commercial business district",
-      "prediction": "The user wants me to identify the type of driving environment shown in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Road:** It's a multi-lane road, likely a highway or a major arterial road. There are concrete barriers on the left, suggesting it might be a divided highway or a major road with opposing traffic separated.\n    *   **Buildings:** On the right side, there are various commercial buildings. I see signs for \"Public House,\" \"Lifton Tiles,\" and other businesses. There are also billboards.\n    *   **Traffic:** There are cars driving",
-      "inference_time_sec": 12.691,
+      "prediction": "Commercial area",
+      "inference_time_sec": 2.31,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Do any business names visible in the clip suggest a specific regional location or city name?",
       "ground_truth": "CLIFTON [entity_010] TILE [entity_011]",
-      "prediction": "The user wants to know if any business names in the video suggest a specific location or city.\n\n1.  **Scan the video for signs:** I need to look at the buildings and signs on the right side of the road as the camera moves forward.\n2.  **Identify specific signs:**\n    *   At the very beginning (00:00 - 00:01), on the right, there's a sign that says \"PUBLIC HOUSE\". This is a common name, not specific.\n    *   Around 00:01 - 00:02, further down",
-      "inference_time_sec": 12.642,
+      "prediction": "No",
+      "inference_time_sec": 2.33,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the building at address 1075 first come into view?",
       "ground_truth": "Between 1.6 and 1.86 seconds",
-      "prediction": "The user wants to find the timestamp when a building with the address \"1075\" first appears.\n\n1.  **Analyze the frames:** I will scan the video frames from left to right, looking for a building with the number \"1075\" on it.\n2.  **Frame 1 (00:00):** I see a building on the right with \"PUBLIC HOUSE\" visible. No \"1075\".\n3.  **Frame 2 (00:01):** The camera has moved forward. I see a building on the right with a sign that says",
-      "inference_time_sec": 12.587,
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 2.384,
       "error": ""
     }
   ]

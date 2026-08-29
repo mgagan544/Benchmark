@@ -1,0 +1,70 @@
+{
+  "video_id": 976,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/976.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located to the left of the MDX vehicle with license plate GTR-8482?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50 sign to the left of MDX [entity_008]",
+      "prediction": "The regulatory sign to the left of the MDX vehicle with license plate GTR-8482 indicates the direction and exit number for \"Eastern Long Island\" and \"Exit 25A.\" The sign also mentions \"Loisaida Blvd E - 29E\" and \"Exit 25A.\"",
+      "inference_time_sec": 7.626,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "2",
+      "prediction": "In the image, there are two distinct license plates visible on the vehicles:\n\n1. The license plate on the silver car directly ahead.\n2. The license plate on the black SUV to the left of the silver car.\n\nSo, there are 2 distinct license plates visible in this clip.",
+      "inference_time_sec": 7.329,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered?",
+      "ground_truth": "1st: T1711804C [entity_001], 2nd: GTR-8482 [entity_009], 3rd: SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The order in which these elements are first encountered from the perspective of the driver in the image is as follows:\n\n1. The license plate T1711804C: This is the license plate on the silver car directly ahead.\n2. The license plate GTR-8482: This is the license plate on the black SUV to the left.\n3. The speed limit sign: This is the green sign with white text that indicates the speed limit for the Eastern Long Island exit (30E - 29E - 25A).\n\nSo, the sequence is:\n1. License plate T1",
+      "inference_time_sec": 11.065,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text visible near the end of the clip indicates a speed restriction on this road?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The text visible near the end of the clip that indicates a speed restriction on this road is \"SPEED LIMIT 55.\"",
+      "inference_time_sec": 5.54,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of highway exit signs and speed limit signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a highway. This can be inferred from the presence of multiple lanes, highway exit signs indicating \"Eastern Long Island\" and \"Exit 25A,\" and speed limit signs, which are typical features of highways. The signs also suggest that this is a major road with multiple exits, which is characteristic of highways designed for long-distance travel and intercity connections.",
+      "inference_time_sec": 8.272,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region in New York is suggested by the text on the green highway sign?",
+      "ground_truth": "Long Island [entity_003]",
+      "prediction": "The green highway sign in the image indicates that the region being referred to is Eastern Long Island. The sign reads \"Eastern Long Island\" and provides directions to various exits, including \"Exit 25A\" and \"30E.\"",
+      "inference_time_sec": 6.75,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the license plate GTR-8482 on the overtaking MDX vehicle visible?",
+      "ground_truth": "4.5 to 4.767 seconds",
+      "prediction": "The license plate GTR-8482 on the overtaking MDX vehicle is visible throughout the entire sequence of the video frames provided. The video does not show any specific time range for when this license plate is in view; it appears consistently as the vehicle moves past the camera's perspective.",
+      "inference_time_sec": 7.391,
+      "error": ""
+    }
+  ]
+}

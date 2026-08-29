@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What instruction is located directly to the left of the SERVICE signboard?",
       "ground_truth": "PERMIT [entity_014] to the left of SERVICE [entity_013]",
-      "prediction": "The user wants to identify a specific instruction sign located to the left of a \"SERVICE\" signboard.\n\n1.  **Locate the \"SERVICE\" signboard:** I need to scan the video frames for a sign that says \"SERVICE\".\n    *   Looking at the first few frames (00:00 - 00:02), I see a green sign on the right side of the road.\n    *   In frame 00:00, there's a green sign that says \"SERVICE\". It's partially visible but readable.\n    *   In frame 00:0",
-      "inference_time_sec": 16.002,
+      "prediction": "FOR NORTH TRIBECA",
+      "inference_time_sec": 2.563,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct vehicle-mounted text instances are visible on the white transport van between 1.133s and 1.767s?",
       "ground_truth": "5",
-      "prediction": "The user wants me to count distinct vehicle-mounted text instances on a white transport van.\nThe time range is 1.133s to 1.767s.\n\n1.  **Analyze the frames:**\n    *   **Frame at 1.133s:** I see a white van on the left side of the road. It's partially visible. The rear doors have a mesh pattern. There's text on the rear doors. Let's look closer. It says \"NYC CHILDREN'S SERVICE...\". Wait, looking at the crop images might help.\n    *   **",
-      "inference_time_sec": 15.65,
+      "prediction": "0",
+      "inference_time_sec": 2.266,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the overhead sign texts are encountered at the very beginning of the clip?",
       "ground_truth": "1st: 7314 [entity_001], 2nd: EXIT [entity_002]",
-      "prediction": "The user wants to know the order of overhead sign texts at the very beginning of the clip.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a green overhead sign on the right side of the road.\n    *   The text on it is vertical. It reads \"E 34 St Midtown Run\". Wait, let me look closer. It looks like \"E 34 St Midtown Run\" or maybe \"E 34 St Midtown Run\". Actually, looking at the crop, it's a vertical sign. Let's re-examine.",
-      "inference_time_sec": 15.648,
+      "prediction": "1. 34 St Midtown Run\n2. 70th St North Triboro\n3. Weight Limit 8000 Lbs",
+      "inference_time_sec": 4.812,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What weight limit restriction is displayed on the gantry to restrict vehicle weight?",
       "ground_truth": "8000 Lbs [entity_022]",
-      "prediction": "The user wants to identify a specific weight limit restriction from the video.\n\n1.  **Scan the video for gantries and signs:** I need to look for overhead signs, particularly those that look like weight limit signs.\n2.  **Locate the relevant frame:**\n    *   At 00:00, there's a green sign on the right, but it's too far away to read clearly.\n    *   At 00:01, the camera car is moving forward. There's a gantry ahead.\n    *   At 00:02, the gantry",
-      "inference_time_sec": 15.613,
+      "prediction": "8000 lbs",
+      "inference_time_sec": 2.619,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of overhead exit signs, lane-use restrictions, and weight limits, what type of driving environment is depicted?",
       "ground_truth": "Highway",
-      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Overhead exit signs:** I see green signs hanging over the road. One clearly says \"FOR NORTH TRIBECA\" with an arrow. Another sign further back says \"34 St Midtown Fun\". These are typical highway or expressway exit signs.\n    *   **Lane-use restrictions:** There are signs like \"PASSENGER CARS ONLY\" and \"WEIGHT LIMIT 8000 LBS\". This indicates a controlled access road",
-      "inference_time_sec": 15.599,
+      "prediction": "Urban highway",
+      "inference_time_sec": 2.354,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What specific city is indicated by the markings on the white transport van?",
       "ground_truth": "NYC [entity_003]",
-      "prediction": "The user wants to identify the city marked on the white transport van.\n\n1.  **Locate the van:** In the first few frames (00:00 - 00:01), there is a large white van on the left side of the road.\n2.  **Zoom in on the markings:** I need to look closely at the side of the van.\n3.  **Read the text:** In the frame at 00:00 and 00:01, on the side door of the white van, there is text. It reads \"NYC CHILDREN'S",
-      "inference_time_sec": 12.691,
+      "prediction": "New York City",
+      "inference_time_sec": 2.609,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range are the vehicle-mounted markings NYC, CHILDREN'S, SERVICES, DIV, and OF SOUTH AND FAMILY JUSTICE continuously visible on the white transport van?",
       "ground_truth": "1.133s to 1.767s",
-      "prediction": "The user wants to find the time range where specific text is visible on a white van.\n\n1.  **Identify the vehicle:** A white van is present in the left lane.\n2.  **Identify the text:** The text is \"NYC CHILDREN'S SERVICES DIV OF SOUTH AND FAMILY JUSTICE\".\n3.  **Scan the video frames:**\n    *   **00:00:** The van is clearly visible on the left. The text \"NYC CHILDREN'S SERVICES DIV OF SOUTH AND FAMILY JUSTICE\" is visible on the side door.\n    *   **00:",
-      "inference_time_sec": 12.668,
+      "prediction": "0.0s - 0.5s",
+      "inference_time_sec": 3.028,
       "error": ""
     }
   ]

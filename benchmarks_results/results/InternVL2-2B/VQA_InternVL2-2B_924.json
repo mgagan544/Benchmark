@@ -1,0 +1,70 @@
+{
+  "video_id": 924,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/924.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry?",
+      "ground_truth": "Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "The readable text located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry is \"B C D Terminals.\"",
+      "inference_time_sec": 4.95,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the green overhead exit sign located on the left side of the roadway?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances visible on the green overhead exit sign located on the left side of the roadway. The first instance is the word \"EXIT\" in white capital letters, and the second instance is the word \"EXIT\" in yellow capital letters.",
+      "inference_time_sec": 5.021,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the overhead gantry, the roadside infrastructure, and the green exit sign are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: B C D [entity_001] Terminals [entity_003] RIGHT LANE [entity_002], 2nd: RIZZO [entity_004], 3rd: Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "The text on the overhead gantry is first encountered as the vehicle moves forward. It is positioned at the top of the bridge, where it is clearly visible against the blue sky. The roadside infrastructure, including the orange and white traffic cones, is also seen as the vehicle moves forward. The green exit sign is first encountered as the vehicle approaches the bridge, and it is positioned on the right side of the road, indicating the direction to the exit.",
+      "inference_time_sec": 6.795,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or instructional text is displayed on the large overhead gantry above the multi-lane roadway?",
+      "ground_truth": "RIGHT LANE [entity_002]",
+      "prediction": "The large overhead gantry above the multi-lane roadway displays text in both English and French. The English text reads \"EXIT ONLY,\" indicating that vehicles must exit the roadway to the right. The French text is not clearly visible in the provided video, so the specific instructions in French cannot be determined from the given content.",
+      "inference_time_sec": 5.613,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs indicating terminals and parking, what type of facility is this roadway accessing?",
+      "ground_truth": "Airport access road",
+      "prediction": "The roadway is accessing a transportation facility, likely a terminal or airport, as indicated by the presence of signs for terminals and parking. The specific type of facility is not clear from the video alone, but the presence of construction equipment and the scale of the construction project suggest that it could be a major airport or a large transportation hub.",
+      "inference_time_sec": 5.686,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language and script is the text on the overhead gantry and exit signs written?",
+      "ground_truth": "English in Latin script",
+      "prediction": "The text on the overhead gantry and exit signs is written in both English and what appears to be a non-Latin script, possibly a language like Japanese or Chinese. The specific script and language cannot be determined with certainty without additional context or a closer examination of the text.",
+      "inference_time_sec": 5.203,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text B C D first become visible, and when does the full layout of that gantry sign become readable?",
+      "ground_truth": "Visible at 5.1 seconds, fully readable at 5.233 seconds",
+      "prediction": "The text \"B C D\" first becomes visible at the beginning of the video, and the full layout of the gantry sign becomes readable towards the end of the video.",
+      "inference_time_sec": 4.248,
+      "error": ""
+    }
+  ]
+}

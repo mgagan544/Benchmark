@@ -1,0 +1,70 @@
+{
+  "video_id": 958,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/958.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+      "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
+      "prediction": "The parking sign text located to the left of the license registration AT * 665J is \"PARKING ONLY.\"",
+      "inference_time_sec": 4.57,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+      "ground_truth": "6",
+      "prediction": "There are two distinct text instances located on the automotive service building on the left side of the street. One is a yellow sign with black lettering that reads \"CAR WASH,\" and the other is a red and white sign with black lettering that says \"CAR WASH.\"",
+      "inference_time_sec": 5.191,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+      "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
+      "prediction": "The chronological order of the first three text instances encountered on the right side of the street is as follows: \"FAME,\" \"FAME,\" and \"FAME.\"",
+      "inference_time_sec": 4.375,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+      "ground_truth": "TURNS [entity_010]",
+      "prediction": "The text on the regulatory traffic sign is not clearly visible in the video, so it is not possible to determine the specific driving constraint or instruction it indicates from the given information.",
+      "inference_time_sec": 4.391,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The driving environment suggested by the storefronts, digital billboards, and commercial signs is one of a bustling urban commercial area. The presence of a variety of storefronts, including a restaurant with a red and white sign, indicates a commercial district with retail and dining options. The digital billboards and signs, such as the one displaying a cartoon character, suggest a modern and possibly entertainment-oriented area. The mix of commercial establishments and the presence of traffic lights and pedestrian crossings further imply a busy, active urban setting where commercial and pedestrian traffic coexist.",
+      "inference_time_sec": 7.745,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+      "ground_truth": "New York City, New York State",
+      "prediction": "The phone number area code \"212\" and the text \"INSPECTION\" suggest that the location is in New York City, specifically in the borough of Manhattan. The area code is commonly associated with New York City, and the term \"INSPECTION\" is a common term used in the city to refer to the city's public health department.",
+      "inference_time_sec": 5.903,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+      "ground_truth": "0.0s to 0.233s",
+      "prediction": "The digital billboard texts \"THE,\" \"DISPLAYERS,\" and \"Snycom\" are tracked at the start of the clip, indicating that the billboards are active and displaying their respective texts.",
+      "inference_time_sec": 4.568,
+      "error": ""
+    }
+  ]
+}

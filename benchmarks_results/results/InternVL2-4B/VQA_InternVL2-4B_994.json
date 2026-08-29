@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located to the right of the green directional sign.",
+      "inference_time_sec": 5.335,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are two distinct text entities visible on the signs in this clip.",
+      "inference_time_sec": 5.246,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "As the vehicle moves forward between 2.5 and 4.0 seconds, the first sign encountered is the green sign with white lettering indicating the direction to the right. The second sign is a green sign with white lettering, and the third sign is a green sign with white lettering.",
+      "inference_time_sec": 8.501,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The sign that indicates a weight restriction for vehicles near the overpass structure reads \"WEIGHT 10 TONS.\"",
+      "inference_time_sec": 5.937,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names and weight limit signs suggests that the road segment is a multi-lane highway designed to accommodate a variety of vehicles, including heavy trucks. The presence of different highway names indicates that this is a complex network of roads, possibly a major thoroughfare or an interchange where multiple highways converge. The weight limit signs imply that the road is built to handle significant loads, which is typical for highways that serve as major transportation routes for commercial and freight traffic.",
+      "inference_time_sec": 11.365,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The green directional sign in the video displays the abbreviation \"NYC,\" which suggests that the city or region is New York City. This is further supported by the urban setting, the style of the vehicles, and the architecture, which are consistent with New York City's urban landscape.",
+      "inference_time_sec": 8.394,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text DELIVERIES ENTRANCE 9 first becomes visible at the timestamp 00:00:00 in the clip.",
+      "inference_time_sec": 6.313,
+      "error": ""
+    }
+  ]
+}

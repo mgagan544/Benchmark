@@ -1,0 +1,70 @@
+{
+  "video_id": 940,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/940.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
+      "ground_truth": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]",
+      "prediction": "Directly adjacent to the parking area on the right side of the driving lane, there are two signs. The first sign is for \"Dance\" and the second sign is for \"MODELL'S.\" These signs are positioned above the storefronts, indicating the presence of these businesses within the shopping center.",
+      "inference_time_sec": 10.201,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct pieces of text belonging to storefront signs or banners on the left side of the driving lane. The first is the \"SUPPLY\" sign, the second is the \"PALLAS\" sign, and the third is the \"Dance\" sign.",
+      "inference_time_sec": 9.896,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
+      "ground_truth": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]",
+      "prediction": "The storefront of FALLAS is first encountered by the camera vehicle, followed by the signs for Danice.",
+      "inference_time_sec": 7.762,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
+      "ground_truth": "Stop",
+      "prediction": "The painted road marking adjacent to the concrete sidewalk on the left implies that the area is designated for loading or unloading, as indicated by the \"PULL IN\" sign. This suggests that vehicles are allowed to park temporarily to load or unload goods, but not to park for extended periods.",
+      "inference_time_sec": 10.066,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
+      "ground_truth": "Commercial strip mall",
+      "prediction": "The driving environment depicted in the video is a commercial retail area with multiple stores, including a Walmart, a Pallad's, and a Dancie's, which suggests a suburban or urban commercial district. The presence of a parking lot with numerous cars indicates a busy shopping area where customers are likely to park and visit the stores. The clear weather and the absence of any traffic congestion suggest a typical day with moderate activity.",
+      "inference_time_sec": 11.648,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
+      "ground_truth": "English",
+      "prediction": "The storefront signs and promotional banners visible in the clip use English language. This can be inferred from the text on the signs, which includes words like \"SUPPLY,\" \"PALLAS,\" and \"Dance,\" which are all English words. Additionally, the promotional banner for \"School Uniforms\" is in English, indicating that the store caters to an English-speaking clientele.",
+      "inference_time_sec": 11.439,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
+      "ground_truth": "5.233s to 5.6s",
+      "prediction": "The camera vehicle approaches the storefront windows of FALLAS showing promotional text at the beginning of the video.",
+      "inference_time_sec": 7.747,
+      "error": ""
+    }
+  ]
+}

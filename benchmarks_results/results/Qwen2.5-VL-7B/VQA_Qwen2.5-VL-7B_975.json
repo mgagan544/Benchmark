@@ -1,0 +1,70 @@
+{
+  "video_id": 975,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/975.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead road sign located adjacent to the sign showing 20 AV?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007] adjacent to 20 AV [entity_001]",
+      "prediction": "The overhead road sign adjacent to the \"20 AV\" sign displays the text \"Parsons Blvd.\"",
+      "inference_time_sec": 5.212,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in the clip are mounted on vehicles?",
+      "ground_truth": "3",
+      "prediction": "In the video, there is one distinct piece of text visible that is mounted on a vehicle. The text \"star\" is visible on the back of a black SUV.",
+      "inference_time_sec": 5.833,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the ego vehicle encounters the intersection street names and the highway directional signs?",
+      "ground_truth": "1st: 20 AV [entity_001] and Parsons Blvd [entity_002], 2nd: WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The ego vehicle encounters the intersection street names and the highway directional signs in the following chronological order:\n\n1. **Intersection Street Names:**\n   - The first street name encountered is \"20th Ave.\"\n   - The second street name encountered is \"Parsons Blvd.\"\n\n2. **Highway Directional Signs:**\n   - The highway directional signs are not visible in the provided image, so they cannot be determined from this image alone.\n\nIf you have additional images or information about the highway directional signs, please provide them for further analysis.",
+      "inference_time_sec": 10.076,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional text is displayed on the overhead sign near the traffic lights to guide drivers toward the expressway?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The overhead sign near the traffic lights displays the directional text \"20 AV\" and \"Parsons Blvd,\" which indicates the names of the streets at this intersection. There is no specific text for an expressway in the image provided.",
+      "inference_time_sec": 6.647,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential homes, hedges, and apartment buildings suggest about the driving environment?",
+      "ground_truth": "Residential area",
+      "prediction": "The mix of residential homes, hedges, and apartment buildings suggests that the driving environment is in an urban or suburban area with a blend of residential and commercial zones. The presence of apartment buildings indicates a higher density of housing, which is typical in areas where people live in close proximity to each other. The hedges and trees add a touch of greenery, which is common in neighborhoods designed to provide a more pleasant living environment. The street signs and traffic lights indicate that this is a well-regulated area with organized traffic flow, likely catering to both residents and visitors. The overall scene reflects a balanced community with a mix of residential and possibly",
+      "inference_time_sec": 11.101,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and expressway abbreviations suggest this clip is set in New York City?",
+      "ground_truth": "20 AV [entity_001], Parsons Blvd [entity_002], and WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The street names \"20th Avenue\" and \"Parsons Boulevard\" along with the expressway abbreviation \"BQE\" (which stands for Belt Parkway Expressway) suggest that this clip is set in New York City. The Belt Parkway Expressway is a major highway in Brooklyn, connecting the borough to the Brooklyn-Queens Expressway (BQE), which is part of the New York City highway system.",
+      "inference_time_sec": 8.638,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle carrying the license plate GKD-4491 begin to accelerate through the intersection?",
+      "ground_truth": "2.367 seconds",
+      "prediction": "The vehicle with the license plate GKD-4491 begins to accelerate through the intersection at approximately 2 seconds into the video. This is indicated by the change in the position of the vehicle relative to the crosswalk and the road markings, showing that it has started moving forward after the traffic light turned green.",
+      "inference_time_sec": 7.589,
+      "error": ""
+    }
+  ]
+}

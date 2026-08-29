@@ -1,0 +1,70 @@
+{
+  "video_id": 971,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/971.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead sign adjacent to the Prospect Expwy sign?",
+      "ground_truth": "WEST [entity_006] Verrazano Br [entity_007] Staten is [entity_008]",
+      "prediction": "The overhead sign adjacent to the Prospect Expwy sign displays the text 'NEW LOWER PRICES START HERE'.",
+      "inference_time_sec": 3.731,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the roadside billboard on the right side of the highway?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances displayed on the roadside billboard on the right side of the highway. The first one reads 'NEW LOWER PRICES START HERE', and the second one is partially visible and appears to say 'NEW...'.",
+      "inference_time_sec": 4.833,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate, the billboard text, and the overhead highway signs are first encountered in the clip?",
+      "ground_truth": "1st: license plate, 2nd: billboard text, 3rd: overhead highway signs",
+      "prediction": "The license plate is first encountered on the black car in the right lane. Following that, the billboard text 'NEW LOWER PRICES START HERE' is displayed. Finally, the overhead highway signs are encountered, with the left sign indicating directions to 'Hackwood Dr' and 'Hackwood Dr South', and the right sign providing directions to 'Hackwood Dr South' and 'Hackwood Dr North'.",
+      "inference_time_sec": 6.601,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the overhead signs, what direction should a driver follow for the Prospect Expwy?",
+      "ground_truth": "EAST [entity_011]",
+      "prediction": "A driver should follow the direction indicated by the green overhead sign for Prospect Expwy, which is to the right.",
+      "inference_time_sec": 3.814,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, a steel guardrail, and a license plate, what type of driving environment is depicted?",
+      "ground_truth": "highway",
+      "prediction": "The driving environment depicted is a multi-lane highway with a focus on the road ahead, which is likely a freeway or a major arterial road. The presence of overhead exit signs indicates that the road is designed for high-speed travel and is intended for long-distance traffic. The steel guardrail seen in the video suggests that the road has barriers to prevent vehicles from veering off the road, which is common in areas where there is a risk of accidents or where the road is prone to flooding. The license plate of the car in the video is also a sign of a regulated traffic environment, where vehicles are required to have a",
+      "inference_time_sec": 8.365,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any names on the overhead highway signs suggest a specific region, and what text supports this?",
+      "ground_truth": "New York, supported by Verrazano Br [entity_007] and Staten is [entity_008]",
+      "prediction": "Yes, the names on the overhead highway signs suggest a specific region. The green sign reads 'EXIT 24' with 'BROOKLYN' written below it, indicating that the location is likely in Brooklyn, New York. The white sign reads 'EXIT 24' with 'BROOKLYN' written below it as well, reinforcing the same location. The text 'NEW LOWER PRICES START HERE' on the billboard also supports the idea that this is in Brooklyn, as it is a common slogan for New York City.",
+      "inference_time_sec": 7.604,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the billboard slogan More Saving, More doing. first become clearly visible?",
+      "ground_truth": "6.6 seconds",
+      "prediction": "The billboard slogan \"More Saving, More doing.\" first becomes clearly visible in the second frame.",
+      "inference_time_sec": 3.575,
+      "error": ""
+    }
+  ]
+}

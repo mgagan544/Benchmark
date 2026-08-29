@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What store is located to the left of the pharmacy named PIEKIELKO ONE PHARMACY?",
       "ground_truth": "Walgreen [entity_022] to the left of PIEKIELKO [entity_021] ONE [entity_019] PHARMACY [entity_020]",
-      "prediction": "The user wants to identify a store located to the left of a specific pharmacy.\n\n1.  **Identify the pharmacy:** I need to find \"PIEKIELKO ONE PHARMACY\" in the video.\n    *   Looking at the frames, specifically around 00:02 and 00:03, I see a building on the left side of the street.\n    *   At 00:02, there's a sign that says \"PIEKIELKO ONE PHARMACY\". It's a white building with blue awnings.\n    *   Wait, let me look",
-      "inference_time_sec": 13.305,
+      "prediction": "WALGREENS",
+      "inference_time_sec": 3.077,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text entities are displayed on the corner building featuring BUFFALO JO'S?",
       "ground_truth": "11",
-      "prediction": "The user wants me to count the distinct text entities on the corner building with \"BUFFALO JO'S\".\n\n1.  **Identify the building:** I see a building on the left corner in the first frame (00:00) and a clearer view in the second frame (00:01). It's a brick building with a red sign.\n2.  **Locate the text:**\n    *   There's a large red sign that says \"BUFFALO JO'S\".\n    *   Below that, there's smaller text. Let's look closely at frame 00:01.",
-      "inference_time_sec": 13.256,
+      "prediction": "2",
+      "inference_time_sec": 2.852,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which FOREST, BUFFALO JO'S, and SPEED are encountered by the vehicle?",
       "ground_truth": "1st: FOREST [entity_001], 2nd: BUFFALO JO'S [entity_003], 3rd: SPEED [entity_016]",
-      "prediction": "The user wants to determine the order of appearance for three specific text elements: \"FOREST\", \"BUFFALO JO'S\", and \"SPEED\".\n\n1.  **Analyze the first frame (00:00):**\n    *   Looking at the street sign on the left pole, I can clearly see the word \"FOREST\". This is the first element encountered.\n    *   Looking further down the street on the left, there is a red sign that says \"BUFFALO JO'S\". This is the second element.\n    *   Looking at the traffic light pole on the right, there is a green",
-      "inference_time_sec": 13.356,
+      "prediction": "FOREST, BUFFALO JO'S, SPEED",
+      "inference_time_sec": 3.54,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the road sign indicates a speed restriction after the vehicle turns left past the corner building?",
       "ground_truth": "SPEED [entity_016] LIMIT [entity_014] 25",
-      "prediction": "The user wants to identify a speed limit sign visible after the car turns left.\n\n1.  **Analyze the video sequence:**\n    *   **00:00 - 00:01:** The car is approaching an intersection. There's a \"Buffalo Jo's\" building on the left. The car is in the right lane.\n    *   **00:01:** The car turns left. The view shifts to the left side of the street.\n    *   **00:02:** The car is now driving down the street. On the right side of the road",
-      "inference_time_sec": 13.287,
+      "prediction": "25",
+      "inference_time_sec": 2.928,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the density of storefronts, pharmacies, and medical offices, what type of driving environment is depicted?",
       "ground_truth": "commercial district",
-      "prediction": "The user wants me to identify the type of driving environment based on the visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Storefronts:** I see \"Buffalo Jo's\", \"Pureless Wings\", \"Wegmans Pharmacy\", \"Medical Office\", \"Sylvans\". These are small businesses, likely local shops and services.\n    *   **Density:** The buildings are close together. There are no large open spaces or highways. It's a continuous line of buildings.\n    *   **Traffic:** There are cars parked along the curb and moving slowly in traffic",
-      "inference_time_sec": 13.203,
+      "prediction": "Urban",
+      "inference_time_sec": 2.908,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which telephone area code visible on the corner building's signage suggests the driving location is in New York City?",
       "ground_truth": "718-366 [entity_012]",
-      "prediction": "The user wants me to identify a specific phone number area code from the video that points to New York City.\n\n1.  **Scan the video for phone numbers:** I need to look at the signs on the buildings, especially on the corners.\n2.  **Focus on the first few seconds:** The camera pans left at the beginning.\n3.  **Identify the building:** At 00:00 and 00:01, there's a building on the left corner with a red sign that says \"BUFFALO JO'S\".\n4.  **Look for a phone number:** Next to",
-      "inference_time_sec": 13.259,
+      "prediction": "212",
+      "inference_time_sec": 3.181,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During which time range is the speed limit sign displaying SPEED visible as the vehicle continues forward?",
       "ground_truth": "3.1s to 5.0s",
-      "prediction": "The user wants to find the time range where a speed limit sign is visible.\n\n1.  **Analyze the video:** I'll scan through the frames to locate a speed limit sign.\n2.  **Frame 00:00:** No speed limit sign visible. Just traffic lights and street signs.\n3.  **Frame 00:01:** The car is turning or moving past a corner. No speed limit sign.\n4.  **Frame 00:02:** As the car moves forward down the street, a white rectangular sign on a pole appears on the right side of",
-      "inference_time_sec": 13.287,
+      "prediction": "0.2 - 0.3 seconds",
+      "inference_time_sec": 3.74,
       "error": ""
     }
   ]

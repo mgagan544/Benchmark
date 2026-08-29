@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the MUST EXIT sign relative to the WORK ZONE sign that appears around 0.467 seconds?",
       "ground_truth": "To the right of WORK [entity_006] ZONE [entity_007] sign",
-      "prediction": "The user wants to know the spatial relationship between two specific signs visible in the video.\n\n1.  **Identify the \"MUST EXIT\" sign:** Looking at the first frame (00:00), on the far right side, there is a white rectangular sign that says \"RIGHT LANE MUST EXIT\".\n2.  **Identify the \"WORK ZONE\" sign:** Looking at the first frame (00:00), slightly to the left of the \"MUST EXIT\" sign, there is a brown sign that says \"CONSTRUCTION ENTRANCE AHEAD\". Wait, let me look closer at the",
-      "inference_time_sec": 13.185,
+      "prediction": "The MUST EXIT sign is at the right side of the WORK ZONE sign.",
+      "inference_time_sec": 4.121,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct license plates are visible in this video clip?",
       "ground_truth": "2",
-      "prediction": "The user wants me to count the distinct license plates visible in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify vehicles and their license plates.\n    *   **Frame 1 (00:00):**\n        *   There's a black SUV in the left lane. Its license plate is visible but blurry. Let's call this Plate 1.\n        *   There's a car further ahead in the distance. Too blurry to read.\n    *   **Frame 2 (00:01):**\n        *   The black SUV is still there",
-      "inference_time_sec": 13.097,
+      "prediction": "3",
+      "inference_time_sec": 2.843,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of signs encountered on the right side of the road between 0.0 and 1.0 seconds?",
       "ground_truth": "1st: SPEED [entity_004] LIMIT [entity_005], 2nd: WORK [entity_006] ZONE [entity_007], 3rd: MUST [entity_008] EXIT [entity_009]",
-      "prediction": "The user wants to identify the order of signs on the right side of the road between 0.0 and 1.0 seconds.\n\n1.  **Analyze the video frames:**\n    *   **0.0s:** I see a sign on the far right pole. It's a green sign with white text. It says \"B Wait Area\" at the top, \"Long Term Parking\" below it, and an arrow pointing diagonally up-right. Below that is a smaller white sign that says \"RIGHT LANE MUST EXIT\".\n    *   **0.1s:** The car is moving forward.",
-      "inference_time_sec": 13.206,
+      "prediction": "Construction Entrance Ahead, Speed Limit 20, Airport Exit",
+      "inference_time_sec": 4.131,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What warning sign is located beside the construction flagger holding the STOP paddle near the end of the clip?",
       "ground_truth": "ROAD [entity_031] WORK [entity_006] AHEAD [entity_012] sign",
-      "prediction": "The user wants to identify a specific warning sign in the video.\n\n1.  **Analyze the user's request:**\n    *   **Target:** A warning sign.\n    *   **Location:** Beside the construction flagger holding a STOP paddle.\n    *   **Timing:** Near the end of the clip.\n\n2.  **Scan the video for the relevant scene:**\n    *   The video starts with a car driving on a highway.\n    *   Around 00:03, the car approaches an exit ramp area with construction.\n    *   At 00:0",
-      "inference_time_sec": 13.238,
+      "prediction": "STOP",
+      "inference_time_sec": 2.854,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of area does the mix of airport terminal, parking, and exit signs suggest?",
       "ground_truth": "Airport access road",
-      "prediction": "The user wants to identify the type of area based on the signs visible in the video.\n\n1.  **Analyze the signs:**\n    *   I see signs for \"Terminals C D\", \"Daily Parking\", \"Wait Area\".\n    *   I see signs for \"Central Terminal\", \"Departing Flights\".\n    *   I see signs for \"Airport Exit\".\n    *   I see signs for \"Long Term Parking\".\n    *   I see signs for \"B Wait Area\".\n\n2.  **Synthesize the information:**\n    *   \"Terminals\", \"Departing Fl",
-      "inference_time_sec": 13.247,
+      "prediction": "Airport",
+      "inference_time_sec": 2.769,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used on the signs such as ROAD WORK AHEAD and MUST EXIT?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language used on the signs in the video.\n\n1.  **Analyze the visible text:** I need to look at the signs mentioned in the prompt (\"ROAD WORK AHEAD\", \"MUST EXIT\") and other visible signs.\n    *   **Sign 1 (Right side, early frames):** \"CONSTRUCTION ENTRANCE AHEAD\". This is English.\n    *   **Sign 2 (Right side, early frames):** \"VISITORS MUST EXIT\". This is English.\n    *   **Sign 3 (Overhead, later frames):** \"Terminals C D Daily Parking",
-      "inference_time_sec": 13.324,
+      "prediction": "English",
+      "inference_time_sec": 2.815,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range is the RAMP speed limit sign visible in the clip?",
       "ground_truth": "6.333 seconds to 9.733 seconds",
-      "prediction": "The user wants to find the time range for the \"RAMP speed limit sign\".\n\n1.  **Analyze the video:** I'll scan through the frames to locate a sign that indicates a speed limit specifically for a ramp.\n2.  **Frame 00:00:** I see a sign on the left side of the road. It's an orange diamond-shaped sign with \"SPEED LIMIT 20\" written on it. This is typically placed on ramps or construction zones.\n3.  **Frame 00:01:** The sign is still visible on the left, slightly further away as",
-      "inference_time_sec": 13.248,
+      "prediction": "0.0 - 0.4",
+      "inference_time_sec": 3.397,
       "error": ""
     }
   ]

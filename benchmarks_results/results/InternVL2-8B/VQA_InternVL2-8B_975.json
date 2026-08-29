@@ -1,0 +1,70 @@
+{
+  "video_id": 975,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/975.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead road sign located adjacent to the sign showing 20 AV?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007] adjacent to 20 AV [entity_001]",
+      "prediction": "The overhead road sign adjacent to the 20 AV sign displays the text \"20 AV\" in white letters on a green background.",
+      "inference_time_sec": 7.973,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in the clip are mounted on vehicles?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct pieces of text visible on vehicles in the clip. One is on the side of a white van, and the other is on the back of a black SUV.",
+      "inference_time_sec": 8.624,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the ego vehicle encounters the intersection street names and the highway directional signs?",
+      "ground_truth": "1st: 20 AV [entity_001] and Parsons Blvd [entity_002], 2nd: WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The chronological order in which the ego vehicle encounters the intersection street names and the highway directional signs is as follows: First, the \"20 AV\" street sign is seen on the left side of the road. Next, the \"24 AV\" street sign is visible on the right side of the road. Then, the \"20 AV\" street sign reappears on the right side of the road. Finally, the \"20 AV\" street sign is seen on the left side of the road again. The highway directional signs are not visible in the video.",
+      "inference_time_sec": 13.476,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional text is displayed on the overhead sign near the traffic lights to guide drivers toward the expressway?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The overhead sign near the traffic lights displays the text \"20 AV\" and \"20 AV NORTH,\" indicating the direction to the expressway.",
+      "inference_time_sec": 8.278,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential homes, hedges, and apartment buildings suggest about the driving environment?",
+      "ground_truth": "Residential area",
+      "prediction": "The mix of residential homes, hedges, and apartment buildings in the video suggests a diverse and possibly densely populated driving environment. The presence of both single-family homes and apartment buildings indicates a neighborhood that caters to a variety of living situations, from families to individuals or couples. The hedges and trees lining the streets add to the residential feel, providing a sense of privacy and greenery. This combination of elements implies that the area is likely a suburban or urban neighborhood where traffic is expected to be moderate to high, requiring drivers to be attentive to pedestrians, cyclists, and other vehicles.",
+      "inference_time_sec": 13.837,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and expressway abbreviations suggest this clip is set in New York City?",
+      "ground_truth": "20 AV [entity_001], Parsons Blvd [entity_002], and WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The street names and expressway abbreviations that suggest this clip is set in New York City include \"20 AV\" and \"21 AV,\" which are indicative of the city's grid system. Additionally, the presence of the \"I-95\" sign, which stands for Interstate 95, a major north-south highway in the United States, further supports the location being in New York City. These details are consistent with the urban environment and road signage typically found in New York City.",
+      "inference_time_sec": 12.573,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle carrying the license plate GKD-4491 begin to accelerate through the intersection?",
+      "ground_truth": "2.367 seconds",
+      "prediction": "The vehicle carrying the license plate GKD-4491 begins to accelerate through the intersection at the timestamp of 00:00:00, as it is the first vehicle to be captured in the video.",
+      "inference_time_sec": 8.961,
+      "error": ""
+    }
+  ]
+}

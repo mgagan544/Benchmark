@@ -1,0 +1,70 @@
+{
+  "video_id": 913,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/913.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the right of the orange construction signboard containing the word ROAD?",
+      "ground_truth": "SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] on the digital display sign",
+      "prediction": "The readable text to the right of the orange construction signboard containing the word ROAD is \"ROAD WORK AHEAD.\"",
+      "inference_time_sec": 8.016,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?",
+      "ground_truth": "3",
+      "prediction": "The orange construction signboard mounted on the left side of the ramp displays two distinct pieces of text. The first line reads \"ROAD WORK AHEAD,\" and the second line, which is partially obscured, appears to read \"ROAD WORK AHEAD.\"",
+      "inference_time_sec": 9.591,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?",
+      "ground_truth": "1st: ROAD [entity_001], 2nd: WORK [entity_002], 3rd: AHEAD [entity_003]",
+      "prediction": "The text on the orange construction signboard is encountered in the following order from timestamp 0.0 to 0.5: \"ROAD WORK AHEAD.\"",
+      "inference_time_sec": 8.557,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?",
+      "ground_truth": "ROAD [entity_001] WORK [entity_002] AHEAD [entity_003] on the left side of the ramp",
+      "prediction": "Yes, there is a visible text in the clip that indicates a hazard or road condition ahead. The text is located on a sign attached to the metal railing on the left side of the bridge. It reads \"ROAD WORK AHEAD,\" which is a clear warning to drivers and pedestrians about potential construction or maintenance activities ahead.",
+      "inference_time_sec": 10.515,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "An elevated highway construction zone",
+      "prediction": "The driving environment depicted in the clip is one that requires caution and attention to road conditions. The presence of a \"ROAD WORK AHEAD\" sign indicates that there may be construction or maintenance activities ahead, which could include lane changes, reduced speed limits, or temporary road closures. The speed display sign suggests that the area is monitored for speed compliance, which is common in urban environments where traffic congestion and pedestrian safety are concerns. The combination of these signs implies that drivers should be prepared for potential changes in traffic flow and be mindful of their speed to ensure a safe driving experience.",
+      "inference_time_sec": 13.618,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction signboard and the digital display sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction signboard and the digital display sign is in English.",
+      "inference_time_sec": 7.526,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the word SPEED first become legible on the digital display sign?",
+      "ground_truth": "7.967",
+      "prediction": "The word SPEED first becomes legible on the digital display sign at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.967,
+      "error": ""
+    }
+  ]
+}

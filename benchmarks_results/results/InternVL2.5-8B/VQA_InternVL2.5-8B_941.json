@@ -1,0 +1,70 @@
+{
+  "video_id": 941,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/941.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located directly below the overhead sign that says \"To Belt Pkwy\"?",
+      "ground_truth": "KEEP RIGHT [entity_005] below To Belt Pkwy [entity_004]",
+      "prediction": "Directly below the overhead sign that says \"To Belt Pkwy\", there is a regulatory sign that reads \"JFK Expwy To Belt Pkwy KEEP RIGHT\". This sign is positioned to the right of the road, indicating that vehicles should keep to the right lane to proceed towards the Belt Parkway via the JFK Expressway.",
+      "inference_time_sec": 10.555,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are painted on the road surface or function as regulatory signs in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct text instances visible in the video. The first is the 'JFK Expwy' sign on the right side of the road, the second is the 'Airport Exit' sign on the overhead gantry, and the third is the 'Keep Right' sign on the right side of the road.",
+      "inference_time_sec": 10.217,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the first overhead sign structure, the road marking, and the second overhead gantry?",
+      "ground_truth": "1st: Airport Exit [entity_001], 2nd: ONLY [entity_006], 3rd: Long Term Parking [entity_007]",
+      "prediction": "The first overhead sign structure is encountered first, followed by the road marking, and then the second overhead gantry.",
+      "inference_time_sec": 8.107,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory instruction is displayed on the lane surface below the sign that says \"KEEP RIGHT\"?",
+      "ground_truth": "ONLY [entity_006]",
+      "prediction": "The lane surface below the 'KEEP RIGHT' sign displays the regulatory instruction 'NO TRUCKS' in white letters. This sign is intended to inform truck drivers that they are not permitted to use the rightmost lane, which is designated for vehicles with a maximum height of 13 feet 6 inches. The sign is a standard regulatory marker used in many countries to manage traffic flow and ensure safety on highways and toll roads.",
+      "inference_time_sec": 12.723,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of transportation hub is the vehicle navigating, based on the visible signs?",
+      "ground_truth": "Airport",
+      "prediction": "The vehicle is navigating towards an airport transportation hub. This is indicated by the presence of signs directing to 'Airport Exit via Van Wyck Expwy' and 'Airport Exit via JFK Expwy', which are common routes leading to airport terminals. The signs also mention 'Airport Exit to Belt Pkwy', which is another common route to an airport. The infrastructure, including the overpass and the directional signage, is consistent with what one would expect to find at an airport's approach or exit area.",
+      "inference_time_sec": 12.669,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific New York airport expressway is indicated by the signs on the first overhead structure?",
+      "ground_truth": "JFK Expwy [entity_003]",
+      "prediction": "The signs on the first overhead structure indicate the 'JFK Expwy' as the specific New York airport expressway.",
+      "inference_time_sec": 7.813,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass over the road marking that says \"ONLY\"?",
+      "ground_truth": "5.367 seconds",
+      "prediction": "The vehicle passes over the road marking that says \"ONLY\" at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.78,
+      "error": ""
+    }
+  ]
+}

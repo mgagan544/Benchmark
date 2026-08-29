@@ -1,0 +1,70 @@
+{
+  "video_id": 929,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/929.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the signboard displaying Gabinst relative to the signboard displaying Natural?",
+      "ground_truth": "To the left of Natural [entity_003]",
+      "prediction": "The signboard displaying Gabinst is positioned to the left of the signboard displaying Natural. It is closer to the camera's perspective, while the Natural signboard is further away and to the right.",
+      "inference_time_sec": 8.927,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text belonging to storefront or real estate signboards are visible in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are two distinct pieces of text belonging to storefront or real estate signboards visible in the clip. One is a yellow sign with black text on the left side of the street, and the other is a white sign with black text on the right side of the street.",
+      "inference_time_sec": 9.753,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signboards displaying TILE, Gabinst, and KAPLON are encountered by the vehicle?",
+      "ground_truth": "1st: TILE [entity_002], 2nd: Gabinst [entity_005], 3rd: KAPLON [entity_006]",
+      "prediction": "The signboard for TILE is the first to be encountered by the vehicle, followed by the signboard for Gabinst, and then the signboard for KAPLON.",
+      "inference_time_sec": 8.599,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "No regulatory or warning text is visible in the clip.",
+      "prediction": "Yes, there is a visible text in the clip that indicates a driving constraint. The text \"P\" is painted on the wall, which typically stands for \"parking\" and suggests that parking is allowed in that area.",
+      "inference_time_sec": 9.258,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of storefront signboards and real estate signs suggest about this driving environment?",
+      "ground_truth": "An urban commercial or industrial district",
+      "prediction": "The mix of storefront signboards and real estate signs suggests that this driving environment is a commercial area with a blend of local businesses and possibly a real estate market. The presence of these signs indicates that the area is active and possibly undergoing some level of development or change. It may also suggest that the area is a hub for both commercial activity and residential or investment opportunities.",
+      "inference_time_sec": 10.977,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional convention is suggested by the phone number format containing the area code (718)?",
+      "ground_truth": "North American numbering plan, specifically New York City",
+      "prediction": "The phone number format containing the area code (718) suggests that the location is in the New York City metropolitan area. The area code 718 is specific to Brooklyn, indicating that the street scene is likely from a neighborhood within that borough.",
+      "inference_time_sec": 9.442,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the real estate sign displaying KAPLON first align with the camera, and when does the vehicle pass the area code (718)?",
+      "ground_truth": "KAPLON [entity_006] aligns at 6.6 seconds; (718) [entity_010] is passed at 8.2 seconds",
+      "prediction": "The real estate sign displaying KAPLON first aligns with the camera at the beginning of the video, and the vehicle passes the area code (718) as the video progresses.",
+      "inference_time_sec": 8.851,
+      "error": ""
+    }
+  ]
+}

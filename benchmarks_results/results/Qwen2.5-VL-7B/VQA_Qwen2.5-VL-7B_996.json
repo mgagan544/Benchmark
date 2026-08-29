@@ -1,0 +1,70 @@
+{
+  "video_id": 996,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/996.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of Messubim relative to NEXT EXITS on the overhead gantry?",
+      "ground_truth": "To the left of NEXT EXITS [entity_006]",
+      "prediction": "The overhead gantry sign indicates that Messubim is located 29 kilometers away from the next exits. The sign also mentions \"NEXT EXITS\" which suggests that Messubim is further down the road, beyond these specific exits. Therefore, Messubim is positioned spatially after the next exits on the overhead gantry.",
+      "inference_time_sec": 8.774,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles throughout the entire clip?",
+      "ground_truth": "3",
+      "prediction": "In the video, there are several vehicles visible, and each vehicle has a distinct license plate. However, due to the motion blur and the angle of the camera, it is challenging to count the exact number of distinct license plates. From what can be seen, there appear to be at least 5 distinct license plates visible in the frames provided.",
+      "inference_time_sec": 7.879,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the code 67. 487. 75, the roadside sign showing Mesubim, and the overhead gantry displaying NEXT EXITS are encountered?",
+      "ground_truth": "1st: 67. 487. 75 [entity_002], 2nd: Mesubim [entity_003], 3rd: NEXT EXITS [entity_006]",
+      "prediction": "The chronological order in which these elements are encountered in the image is as follows:\n\n1. **Roadside Sign Showing Mesubim**: This is the first element that appears on the right side of the road.\n2. **Overhead Gantry Displaying NEXT EXITS**: This is the second element that appears above the road, providing information about upcoming exits.\n3. **Code 67. 487. 75**: This code does not appear in the image provided. It seems to be an unrelated piece of information and cannot be determined from the image.\n\nTherefore, the correct chronological order based on what is visible in",
+      "inference_time_sec": 11.105,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the roadside sign visible on the right, what driving action is indicated at a distance of 1000 meters?",
+      "ground_truth": "Exit at the Mesubim [entity_003] interchange [entity_005]",
+      "prediction": "The roadside sign on the right indicates that in 1000 meters, there will be an interchange for the direction to \"Mevaseret Zion\" and \"Airport.\" This suggests that drivers should prepare to exit or change lanes to reach these destinations.",
+      "inference_time_sec": 6.914,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of overhead gantries, exit signs, and multiple license plates?",
+      "ground_truth": "Multi-lane highway",
+      "prediction": "The presence of overhead gantries, exit signs, and multiple license plates suggests that the driving environment is a highway or a major road with multiple lanes. These features are typical in areas where there is significant traffic flow, such as urban or suburban areas with high population density. The overhead gantries provide clear signage for drivers to navigate through different exits and directions, while the multiple license plates indicate that this is likely a region where vehicles from various countries or regions are common, possibly due to international travel or a diverse local population. The overall scene indicates a busy and structured driving environment designed to manage large volumes of traffic efficiently.",
+      "inference_time_sec": 10.795,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific location names visible on the overhead gantry suggest the region or country this highway is located in?",
+      "ground_truth": "Messubim [entity_007], Gannot [entity_008], and HaShiv's [entity_009]",
+      "prediction": "The overhead gantry signs in the image include \"Haifa\" and \"Netanya,\" which are cities in Israel. The presence of these city names, along with the style of the road signs and the vehicles' license plates, strongly suggests that this highway is located in Israel.",
+      "inference_time_sec": 7.135,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate 55:007 34 first become visible in the clip?",
+      "ground_truth": "6.933 seconds",
+      "prediction": "The license plate 55:007 34 becomes visible at approximately 1 second into the video.",
+      "inference_time_sec": 5.307,
+      "error": ""
+    }
+  ]
+}

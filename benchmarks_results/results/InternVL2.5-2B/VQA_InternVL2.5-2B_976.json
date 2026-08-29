@@ -1,0 +1,70 @@
+{
+  "video_id": 976,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/976.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located to the left of the MDX vehicle with license plate GTR-8482?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50 sign to the left of MDX [entity_008]",
+      "prediction": "To the left of the MDX vehicle with license plate GTR-8482, there is a regulatory sign indicating 'No Stopping Anytime' with a corresponding speed limit sign of 50 MPH below it.",
+      "inference_time_sec": 4.776,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are at least three distinct license plates visible on vehicles in this clip.",
+      "inference_time_sec": 3.493,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered?",
+      "ground_truth": "1st: T1711804C [entity_001], 2nd: GTR-8482 [entity_009], 3rd: SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The license plate T1711804C is first encountered, followed by the license plate GTR-8482, and finally the speed limit sign indicating 50 MPH.",
+      "inference_time_sec": 4.354,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text visible near the end of the clip indicates a speed restriction on this road?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "Near the end of the clip, a speed limit sign indicating '50' is visible, which suggests that the speed limit on this road is 50 miles per hour.",
+      "inference_time_sec": 4.304,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of highway exit signs and speed limit signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a highway, as indicated by the presence of exit signs and speed limit signs, as well as the multiple lanes and the fact that it is a multi-lane road.",
+      "inference_time_sec": 4.554,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region in New York is suggested by the text on the green highway sign?",
+      "ground_truth": "Long Island [entity_003]",
+      "prediction": "The text on the green highway sign suggests that the region in New York is the Eastern Long Island area.",
+      "inference_time_sec": 3.773,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the license plate GTR-8482 on the overtaking MDX vehicle visible?",
+      "ground_truth": "4.5 to 4.767 seconds",
+      "prediction": "The license plate GTR-8482 on the overtaking MDX vehicle is visible from 0 to 23 seconds into the video.",
+      "inference_time_sec": 4.058,
+      "error": ""
+    }
+  ]
+}

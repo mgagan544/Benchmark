@@ -1,0 +1,70 @@
+{
+  "video_id": 909,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/909.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the THRU road text relative to the LANE road text?",
+      "ground_truth": "To the left of LANE [entity_003]",
+      "prediction": "The THRU road text is positioned to the right of the LANE road text, indicating a directional flow where vehicles can either go through the THRU lane or turn left into the LANE.",
+      "inference_time_sec": 8.935,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct mounted signs are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct mounted signs visible in this clip.",
+      "inference_time_sec": 7.065,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the three road text markings are first encountered in the clip?",
+      "ground_truth": "THRU [entity_001] 1st, BUS [entity_002] 2nd, LANE [entity_003] 3rd",
+      "prediction": "The three road text markings are first encountered in the following chronological order: the white text \"LANE THRU\" is seen first, followed by the white text \"LANE THRU BUS\" which includes the word \"BUS\" added to the end, and lastly, the white text \"LANE THRU BUS ONLY\" which includes the word \"ONLY\" to indicate exclusivity.",
+      "inference_time_sec": 11.367,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is required near the zebra-striped pedestrian crosswalk based on the visible signage?",
+      "ground_truth": "Stop at the STOP [entity_004] sign",
+      "prediction": "Near the zebra-striped pedestrian crosswalk, the explicit driving action required is to stop, as indicated by the red stop sign. This is a standard traffic control measure to ensure pedestrian safety by requiring vehicles to halt before proceeding.",
+      "inference_time_sec": 9.228,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment does the mix of waiting structures and road markings suggest?",
+      "ground_truth": "Airport shuttle terminal",
+      "prediction": "The mix of waiting structures and road markings suggests a controlled and organized driving environment, likely at a transportation hub such as an airport or a bus station. The presence of a bus stop and a taxi stand indicates that the area is designed to accommodate various modes of transportation, catering to both public and private vehicles. The road markings, including the \"LANE THRU\" and \"BUS\" lanes, imply a structured traffic flow, guiding drivers to their respective destinations. The overall setup indicates a well-organized area where traffic is managed to ensure smooth transit for passengers and vehicles.",
+      "inference_time_sec": 13.64,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the road markings and signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "The road markings and signs in the clip are in English.",
+      "inference_time_sec": 7.19,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the green directional EXIT sign first come into full view?",
+      "ground_truth": "EXIT [entity_005] sign at 5.933 seconds",
+      "prediction": "The green directional EXIT sign first comes into full view at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.796,
+      "error": ""
+    }
+  ]
+}

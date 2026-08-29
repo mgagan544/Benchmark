@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What overhead sign is located to the right of the exit sign for E 138 St?",
       "ground_truth": "Macombs [entity_003] Dam [entity_002] and E 161 St [entity_001] to the right of E 138 St [entity_005]",
-      "prediction": "The user wants to identify a specific overhead sign based on its position relative to another sign.\n\n1.  **Locate the \"E 138 St\" sign:** In the first frame (00:00), there is a large green overhead sign. The left part of this sign reads \"E 138 St\" and \"Madison Ave Br\". This is the reference point.\n2.  **Identify the sign to the right:** To the right of the \"E 138 St\" sign, there is another green overhead sign.\n3.  **Read the text on the",
-      "inference_time_sec": 13.098,
+      "prediction": "Exit 5",
+      "inference_time_sec": 2.411,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are mounted on the white commercial pickup truck?",
       "ground_truth": "10",
-      "prediction": "The user wants me to count the distinct text instances on the white commercial pickup truck.\n\n1.  **Identify the truck:** It's the white pickup truck in the center lane, directly ahead of the camera car.\n2.  **Scan for text:** I need to look at the rear of the truck, specifically the tailgate and the sides.\n3.  **Locate text instances:**\n    *   **Left side of tailgate:** There's a logo and text \"LONGO\". Below that is a phone number \"973-537-0400\". Below that is a",
-      "inference_time_sec": 12.651,
+      "prediction": "3",
+      "inference_time_sec": 2.258,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What text is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass?",
       "ground_truth": "WORK [entity_008] ZONE [entity_009] SPEED [entity_010] LIMIT [entity_011] 35",
-      "prediction": "The user wants to identify text visible on the left side of the highway just before the vehicle passes under the green pedestrian overpass.\n\n1.  **Identify the relevant timeframe:** The vehicle passes under the green pedestrian overpass between the 0.0s and 0.1s mark. The question asks for text \"right before\" this.\n2.  **Scan the left side of the highway:** In the first frame (0.0s), on the left side, there is a white sign attached to a pole.\n3.  **Read the text on the sign:**\n    *   Top part",
-      "inference_time_sec": 12.661,
+      "prediction": "NO TRUCKS BUSES TRAILERS LEFT LANE",
+      "inference_time_sec": 3.035,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the concrete median barrier restricts certain vehicles from using the left lane?",
       "ground_truth": "TRUCKS [entity_025], BUSES [entity_026], and TRAILERS [entity_027] from the LEFT LANE [entity_028]",
-      "prediction": "The user wants to identify specific text on a concrete median barrier.\n\n1.  **Scan the images for a concrete median barrier.**\n    *   In the first few frames (0.0s - 0.1s), there's a barrier on the left, but it's mostly obscured or just a wall.\n    *   In frame 0.2s, there's a barrier on the left.\n    *   In frame 0.3s, there's a barrier on the left.\n    *   In frame 0.4s, there's a barrier on the left.",
-      "inference_time_sec": 12.701,
+      "prediction": "NO TRUCKS BUSES TRAILERS LEFT LANE",
+      "inference_time_sec": 3.155,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the presence of overhead exit signs, route shields, and speed limit signs, what kind of driving environment does this clip depict?",
       "ground_truth": "Highway through-route",
-      "prediction": "The user wants me to identify the driving environment based on visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Overhead signs:** I see large green signs hanging above the road.\n        *   One sign says \"EXIT 3\" and lists \"E 138 St\", \"Madison Ave Br\", and \"1 MILE\".\n        *   Another sign says \"EXIT 5\" and lists \"E 161 St\", \"Macombs Dam Br\".\n        *   There's a smaller sign under the bridge saying \"W 161",
-      "inference_time_sec": 12.657,
+      "prediction": "Highway",
+      "inference_time_sec": 2.298,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which street names and bridge names visible in the clip suggest the setting is in New York City?",
       "ground_truth": "E 138 St [entity_005], Madison [entity_006] Ave Br [entity_007], and W 161 St [entity_013]",
-      "prediction": "The user wants me to identify specific street names and bridge names from the video that indicate the location is New York City.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a large green overhead sign.\n    *   Left side: \"EXIT 3\", \"E 138 St\", \"Madison Ave Br\", \"1 MILE\".\n    *   Right side: \"EXIT 5\", \"E 161 St\", \"Macombs Dam Br\".\n    *   These are very specific NYC locations. \"Madison Ave Br\" is",
-      "inference_time_sec": 12.676,
+      "prediction": "E 138 St, Madison Ave Br, E 161 St, Macombs Dam Br, W 161 St",
+      "inference_time_sec": 4.536,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range is the white pickup truck's contact number visible in the clip?",
       "ground_truth": "0.833 to 4.267 seconds",
-      "prediction": "The user wants to find the time range where the contact number on the white pickup truck is visible.\n\n1.  **Identify the truck:** It's a white pickup truck in the center lane, directly ahead of the camera car. It has \"LONGO\" written on the back.\n2.  **Locate the contact number:** I need to look closely at the rear of the truck.\n    *   **00:00:** The truck is visible, but the back is a bit blurry and distant. The number isn't clearly readable.\n    *   **00:01:** The truck",
-      "inference_time_sec": 12.717,
+      "prediction": "0.0-0.5 seconds",
+      "inference_time_sec": 2.854,
       "error": ""
     }
   ]

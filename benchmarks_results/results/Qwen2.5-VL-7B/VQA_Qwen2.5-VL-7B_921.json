@@ -1,0 +1,70 @@
+{
+  "video_id": 921,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/921.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the MUST EXIT sign relative to the WORK ZONE sign that appears around 0.467 seconds?",
+      "ground_truth": "To the right of WORK [entity_006] ZONE [entity_007] sign",
+      "prediction": "The MUST EXIT sign appears before the WORK ZONE sign in the video sequence. Specifically, the MUST EXIT sign is visible at approximately 0.358 seconds, while the WORK ZONE sign appears around 0.467 seconds. Therefore, the MUST EXIT sign is positioned earlier in the sequence than the WORK ZONE sign.",
+      "inference_time_sec": 8.873,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible in this video clip?",
+      "ground_truth": "2",
+      "prediction": "In the video clip, there are two distinct license plates visible:\n\n1. The black SUV in the left lane.\n2. The silver car directly ahead of the camera.\n\nThe other vehicles in the scene do not have clearly visible license plates due to the angle and distance from the camera.",
+      "inference_time_sec": 7.246,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of signs encountered on the right side of the road between 0.0 and 1.0 seconds?",
+      "ground_truth": "1st: SPEED [entity_004] LIMIT [entity_005], 2nd: WORK [entity_006] ZONE [entity_007], 3rd: MUST [entity_008] EXIT [entity_009]",
+      "prediction": "Between 0.0 and 1.0 seconds, the order of signs encountered on the right side of the road is:\n\n1. A sign indicating \"B Wait Area\" with an arrow pointing to the right.\n2. A sign indicating \"Long Term Parking\" with an arrow pointing to the right.\n3. A sign indicating \"Construction Ahead\" with a warning symbol.\n\nThese signs are visible in sequence as the vehicle moves forward.",
+      "inference_time_sec": 8.925,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning sign is located beside the construction flagger holding the STOP paddle near the end of the clip?",
+      "ground_truth": "ROAD [entity_031] WORK [entity_006] AHEAD [entity_012] sign",
+      "prediction": "The warning sign located beside the construction flagger holding the STOP paddle near the end of the clip reads \"EXIT ONLY.\"",
+      "inference_time_sec": 5.414,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of area does the mix of airport terminal, parking, and exit signs suggest?",
+      "ground_truth": "Airport access road",
+      "prediction": "The mix of airport terminal, parking, and exit signs suggests that this is an area near an airport where vehicles can access different parts of the airport complex. The signs indicate directions to \"Terminals C D,\" which are likely the main passenger terminals for boarding flights. There are also signs for \"Daily Parking\" and \"Wait Area,\" indicating that this location is designed to accommodate both short-term and long-term parking needs for visitors who may be waiting for their flights or have already arrived at the airport. The presence of construction equipment and workers further suggests that there might be ongoing maintenance or expansion work in the area.",
+      "inference_time_sec": 10.797,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used on the signs such as ROAD WORK AHEAD and MUST EXIT?",
+      "ground_truth": "English",
+      "prediction": "The signs in the image use English. The text \"ROAD WORK AHEAD\" and \"MUST EXIT\" are clearly written in English.",
+      "inference_time_sec": 5.611,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the RAMP speed limit sign visible in the clip?",
+      "ground_truth": "6.333 seconds to 9.733 seconds",
+      "prediction": "The RAMP speed limit sign is visible in the upper right corner of the frames, indicating a speed limit of 20 mph. This sign is typically placed at the entrance to ramps leading to highways or airports, and it remains visible throughout the video as the car approaches the airport exit ramp.",
+      "inference_time_sec": 7.354,
+      "error": ""
+    }
+  ]
+}

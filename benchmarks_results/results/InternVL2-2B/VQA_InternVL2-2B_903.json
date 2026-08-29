@@ -1,0 +1,70 @@
+{
+  "video_id": 903,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/903.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What manufacturer name is located to the left of the license plate 63:816.70. on the rear of the grey bus?",
+      "ground_truth": "MERKAVIM [entity_011] to the left of 63:816.70. [entity_007]",
+      "prediction": "The manufacturer name located to the left of the license plate 63:816.70. on the rear of the grey bus is \"Suzuki.\"",
+      "inference_time_sec": 4.075,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on the transit buses in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are three distinct license plates visible on the transit buses in the clip. One is on the bus in the foreground, another is on the bus in the background, and the third is on the bus in the middle.",
+      "inference_time_sec": 4.651,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plates of the two Metropoline transit buses are encountered by the camera vehicle?",
+      "ground_truth": "1st: 63:816.70. [entity_007], 2nd: 63:709:70 [entity_018]",
+      "prediction": "The license plates of the two Metropoline transit buses are encountered in the following order by the camera vehicle: The first bus is seen with a plate that reads \"5444 63.6170,\" and the second bus is with a plate that reads \"5444 63.6170.\"",
+      "inference_time_sec": 5.439,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text in the scene, are there any explicit driving constraints or speed limits indicated?",
+      "ground_truth": "None",
+      "prediction": "Yes, there are explicit driving constraints and speed limits indicated in the scene. The road signs visible in the video include a \"No U-turn\" sign, which is a common traffic regulation to prevent drivers from reversing their vehicles. Additionally, there is a speed limit sign indicating \"25 km/h\" on the right side of the road, which is a standard speed limit for urban areas. These signs are essential for ensuring the safety of the drivers and pedestrians on the road.",
+      "inference_time_sec": 6.975,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text on the transit buses suggest about the type of driving environment?",
+      "ground_truth": "Urban transit corridor",
+      "prediction": "The mix of text on the transit buses suggests a driving environment that is likely to be busy and possibly congested. The presence of advertisements and the variety of text styles indicate that the buses are in a setting where advertising is common, which is typical of urban areas where public transportation is a primary mode of transport. The text on the buses is not uniform, which could imply that the buses are part of a fleet that operates in different areas or that they are used for different purposes, such as advertising or public information. This diversity in text suggests a dynamic and possibly high-traffic environment where the buses are used to convey information or promote services to",
+      "inference_time_sec": 8.323,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which website link on the grey bus advertisement suggests a specific country of origin or region?",
+      "ground_truth": "Suzuki.co.ill [entity_006]",
+      "prediction": "The website link on the grey bus advertisement suggests a specific country of origin or region through the use of the Hebrew script. The text \"עוד עוד עוד עוד עוד עוד עוד עוד עוד עוד עוד עוד עוד עוד עוד עוד עוד",
+      "inference_time_sec": 8.218,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range does the white bus identifier 2443 first become revealed to the camera vehicle?",
+      "ground_truth": "4.467 seconds to 5.0 seconds",
+      "prediction": "The white bus identifier 2443 first becomes visible to the camera vehicle at approximately 1.5 seconds into the video.",
+      "inference_time_sec": 3.812,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 919,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/919.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located across the street relative to the overhead crossing sign displaying AHE?",
+      "ground_truth": "CASH 4 [entity_003] to the left of AHE [entity_002]",
+      "prediction": "The text \"NO PARKING\" is located across the street relative to the overhead crossing sign displaying AHE.",
+      "inference_time_sec": 5.291,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?",
+      "ground_truth": "7",
+      "prediction": "2",
+      "inference_time_sec": 3.654,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?",
+      "ground_truth": "1st: SCHOOL [entity_001], 2nd: AHE [entity_002], 3rd: CASH 4 [entity_003]",
+      "prediction": "1. \"SCHOOL BUS\" (visible at 0.0 seconds)\n2. \"NO PARKING\" (visible at 0.4 seconds)\n3. \"SCHOOL BUS\" (visible again at 0.4 seconds, as the bus moves)",
+      "inference_time_sec": 7.743,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?",
+      "ground_truth": "PARKING [entity_011]",
+      "prediction": "NO PARKING",
+      "inference_time_sec": 3.833,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?",
+      "ground_truth": "School zone",
+      "prediction": "The mix of text visible between 0.267 seconds and 3.200 seconds — including “NO PARKING,” “SCHOOL ZONE,” “SCHOOL BUS,” “SCHOOL,” “SCHOOL BUS STOP,” “SCHOOL BUS ROUTE,” “SCHOOL BUS ONLY,” “SCHOOL BUS STOP,” “SCHOOL BUS ROUTE,” “SCHOOL BUS ONLY,” “SCHOOL BUS STOP,” “SCHOOL BUS ROUTE,” “SCHOOL BUS ONLY,” “SCHOOL BUS STOP,” “SCHOOL BUS ROUTE,” “SCHOOL BUS ONLY,” “SCHOOL BUS STOP,” “SCHOOL",
+      "inference_time_sec": 13.437,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the contact number displayed on the side of the school bus?",
+      "ground_truth": "New York City",
+      "prediction": "The contact number displayed on the side of the school bus, “(212) 367-7777,” suggests that the bus is operating in New York City. The area code 212 is specifically associated with Manhattan in New York City.",
+      "inference_time_sec": 8.021,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the regulatory parking sign remain continuously visible in the clip?",
+      "ground_truth": "6.400 seconds to 7.367 seconds",
+      "prediction": "The regulatory parking sign remains continuously visible from 0:00 to 0:04.",
+      "inference_time_sec": 5.205,
+      "error": ""
+    }
+  ]
+}

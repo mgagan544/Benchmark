@@ -1,0 +1,70 @@
+{
+  "video_id": 906,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/906.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
+      "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
+      "prediction": "The warning text on the vehicle to the left of the black Chevrolet SUV reads \"KEEP BACK.\"",
+      "inference_time_sec": 6.637,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the parked white box truck?",
+      "ground_truth": "4",
+      "prediction": "The parked white box truck displays two distinct text instances. The first is \"Soundtone FLOORS, INC.\" and the second is a phone number \"718-392-4001.\"",
+      "inference_time_sec": 7.573,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
+      "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The ATM sign is passed by the ego vehicle first, followed by the address 43-02 37th ST., and finally, the yellow warning sign is encountered.",
+      "inference_time_sec": 6.89,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
+      "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The warning text on the utility pole indicates a \"DRIVER WAIT\" sign, suggesting a change in traffic conditions ahead.",
+      "inference_time_sec": 6.055,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial and industrial district",
+      "prediction": "The mix of text visible between 3.0 seconds and 7.0 seconds, including \"DRIVER WAIT\" and \"DRIVER WAIT,\" suggests that the driving environment is one where drivers are being instructed to wait, possibly due to traffic conditions or road work. This indicates that there may be a temporary disruption in the normal flow of traffic, requiring drivers to pause and wait before proceeding.",
+      "inference_time_sec": 10.346,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
+      "ground_truth": "L.I.C., N.Y. [entity_016]",
+      "prediction": "The specific text on the brick commercial building's facade that suggests the city or region where this clip was filmed is \"NYC.\" This indicates that the scene is likely set in New York City.",
+      "inference_time_sec": 7.156,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
+      "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
+      "prediction": "The ambulance displaying the identifier 592 starts moving forward at the timestamp 00:00:00.",
+      "inference_time_sec": 6.087,
+      "error": ""
+    }
+  ]
+}

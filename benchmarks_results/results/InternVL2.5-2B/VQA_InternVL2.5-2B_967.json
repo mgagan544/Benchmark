@@ -1,0 +1,70 @@
+{
+  "video_id": 967,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/967.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the left of MARTIAL?",
+      "ground_truth": "RESTAURANT BAR [entity_008]",
+      "prediction": "The text located directly to the left of MARTIAL is HALAL.",
+      "inference_time_sec": 3.49,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are associated with the EL TEQ storefront?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct text instances containing numbers associated with the EL TEQ storefront. These are '718-538-0020', '718-538-0115', and '718-538-0206'.",
+      "inference_time_sec": 4.726,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for DENTIST, CHURCH, and BUSES ONLY are encountered between 1.3s and 2.8s?",
+      "ground_truth": "1st: DENTIST [entity_009], 2nd: CHURCH [entity_010], 3rd: BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The signs for DENTIST, CHURCH, and BUSES ONLY are encountered in the following order: 1.3s - DENTIST, 2.8s - CHURCH, 3.1s - BUSES ONLY.",
+      "inference_time_sec": 5.233,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the signs near the DENTIST sign constrains vehicle movement or lane usage?",
+      "ground_truth": "ONE WAY [entity_013], BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The text on the signs near the DENTIST sign reads 'NO TRUCKS OR TOWING PERMITTED IN THIS AREA'. This indicates that vehicles larger than a certain height, such as trucks, are not allowed to pass through this particular section of the street, and vehicles that have a towing permit, like cars, are permitted. This restriction is likely in place to prevent potential damage to the dentist's premises or to ensure the safety of the dentist and staff.",
+      "inference_time_sec": 7.037,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible text, such as MARTIAL ARTS, HALAL, and PARA TI, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts a busy urban driving environment with a variety of businesses and services, suggesting a mixed-use area with commercial and possibly residential buildings.",
+      "inference_time_sec": 4.07,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location is suggested by the area codes in the phone numbers on the storefronts?",
+      "ground_truth": "New York City",
+      "prediction": "The area codes '718' and '718' in the phone numbers on the storefronts suggest that the location is in the San Francisco Bay Area, as these are the area codes for San Francisco, California.",
+      "inference_time_sec": 4.64,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AC-91331 first become legible in the clip?",
+      "ground_truth": "0.5s",
+      "prediction": "The license plate AC-91331 first becomes legible in the clip at the timestamp 0:00.",
+      "inference_time_sec": 4.073,
+      "error": ""
+    }
+  ]
+}

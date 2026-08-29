@@ -1,0 +1,70 @@
+{
+  "video_id": 964,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/964.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What overhead sign is located to the right of the exit sign for E 138 St?",
+      "ground_truth": "Macombs [entity_003] Dam [entity_002] and E 161 St [entity_001] to the right of E 138 St [entity_005]",
+      "prediction": "The overhead sign to the right of the exit sign for E 138 St is a green sign with white lettering that reads \"Madison Ave Br.\"",
+      "inference_time_sec": 8.355,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the white commercial pickup truck?",
+      "ground_truth": "10",
+      "prediction": "There are three distinct text instances mounted on the white commercial pickup truck. The first is the company name \"LONGO\" in large, bold letters on the side of the truck. The second is a smaller text below the company name, which is not clearly legible. The third text is on the back of the truck, which appears to be a phone number, but the exact digits are not discernible from the image.",
+      "inference_time_sec": 11.702,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What text is visible on the left side of the highway right before the vehicle passes the green pedestrian overpass?",
+      "ground_truth": "WORK [entity_008] ZONE [entity_009] SPEED [entity_010] LIMIT [entity_011] 35",
+      "prediction": "The text visible on the left side of the highway right before the vehicle passes the green pedestrian overpass reads \"WORK ZONE SPEED LIMIT 35.\"",
+      "inference_time_sec": 8.327,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the concrete median barrier restricts certain vehicles from using the left lane?",
+      "ground_truth": "TRUCKS [entity_025], BUSES [entity_026], and TRAILERS [entity_027] from the LEFT LANE [entity_028]",
+      "prediction": "The text on the concrete median barrier restricts vehicles from using the left lane, stating \"WORK ZONE SPEED LIMIT 35.\"",
+      "inference_time_sec": 8.083,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead exit signs, route shields, and speed limit signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The driving environment depicted in the clip is a controlled urban highway with multiple lanes, designed for moderate to heavy traffic flow. The presence of overhead exit signs and route shields indicates that this is a multi-lane road with multiple destinations, likely a major thoroughfare within a city. The speed limit of 35 mph suggests that the road is not a high-speed expressway but rather a city or suburban highway where traffic is regulated to maintain safety and efficiency. The presence of a work zone sign also indicates that there may be construction or maintenance activities ahead, which could affect the flow of traffic.",
+      "inference_time_sec": 13.613,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and bridge names visible in the clip suggest the setting is in New York City?",
+      "ground_truth": "E 138 St [entity_005], Madison [entity_006] Ave Br [entity_007], and W 161 St [entity_013]",
+      "prediction": "The street names \"Madison Ave Br\" and \"E 161 St\" visible in the clip suggest the setting is in New York City. These names are indicative of the city's grid system, which is a characteristic feature of Manhattan. Additionally, the presence of the \"Long Island Expressway\" sign, which is a major highway in New York City, further supports the location.",
+      "inference_time_sec": 11.213,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the white pickup truck's contact number visible in the clip?",
+      "ground_truth": "0.833 to 4.267 seconds",
+      "prediction": "The white pickup truck's contact number is visible from the beginning of the video until the end, as the truck remains in the frame throughout the entire sequence.",
+      "inference_time_sec": 8.368,
+      "error": ""
+    }
+  ]
+}

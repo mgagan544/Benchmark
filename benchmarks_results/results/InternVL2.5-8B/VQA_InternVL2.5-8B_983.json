@@ -1,0 +1,70 @@
+{
+  "video_id": 983,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/983.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What commercial restaurant billboard is located to the right of the gantry displaying Gilespie St?",
+      "ground_truth": "ROBERT [entity_033] IRVINE'S [entity_032] LOCATED AT [entity_035] Tropicana [entity_034]",
+      "prediction": "To the right of the gantry displaying Gilespie St, there is a billboard for 'ROBERT IWINE'S' which advertises a commercial restaurant.",
+      "inference_time_sec": 8.416,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct billboards advertising commercial services, events, or businesses are mentioned in the scene description?",
+      "ground_truth": "3",
+      "prediction": "There are four distinct billboards mentioned in the scene description. They advertise a personal injury law firm, a concert by Rick Ross, a rental car return service, and a business named 'THE MOB.'",
+      "inference_time_sec": 8.804,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order are the DALLAS HORTON billboard, the first 215 gantry, and the RICK ROSS billboard encountered?",
+      "ground_truth": "1st: DALLAS HORTON [entity_002], 2nd: 215 [entity_005] gantry, 3rd: RICK ROSS [entity_016]",
+      "prediction": "The DALLAS HORTON billboard is encountered first, followed by the first 215 gantry, and then the RICK ROSS billboard.",
+      "inference_time_sec": 8.471,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What advisory speed limit is indicated on the yellow sign located below the RICK ROSS billboard?",
+      "ground_truth": "45 M P H [entity_018] for the RAMP [entity_017]",
+      "prediction": "The yellow sign located below the RICK ROSS billboard indicates an advisory speed limit of 45 mph. This sign is positioned on the right side of the highway, adjacent to the billboard, and is clearly visible as the vehicle approaches the billboard. The sign's purpose is to advise drivers to reduce their speed to ensure safety, likely due to the proximity of the billboard or other potential hazards in the area.",
+      "inference_time_sec": 11.457,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is indicated by the presence of multiple overhead gantries and exit signs?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of multiple overhead gantries and exit signs indicates a highway or expressway environment. These structures are typically used to provide drivers with clear directions and information about upcoming exits, which is essential in high-speed roadways where drivers need to make quick and informed decisions. The gantries are strategically placed to ensure that drivers can see the signs from a distance, allowing them to plan their route and speed adjustments accordingly. The exit signs, in particular, are crucial for directing traffic to specific destinations or exits, which is a common feature in highway systems designed to handle a large volume of traffic efficiently.",
+      "inference_time_sec": 13.529,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which city and resort mentioned on the signs and billboards suggest the location is in Nevada?",
+      "ground_truth": "Las Vegas [entity_011] and MANDALAY BAY [entity_020]",
+      "prediction": "The signs and billboards mention 'Las Vegas' and 'Warm Springs Road', which are indicative of the location being in Nevada.",
+      "inference_time_sec": 8.059,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what duration is the billboard featuring DALLAS HORTON continuously visible at the beginning of the video?",
+      "ground_truth": "0.0 seconds to 0.4 seconds",
+      "prediction": "The billboard featuring DALLAS HORTON is continuously visible at the beginning of the video for the duration of the first two frames.",
+      "inference_time_sec": 8.036,
+      "error": ""
+    }
+  ]
+}

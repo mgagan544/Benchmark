@@ -1,0 +1,70 @@
+{
+  "video_id": 945,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/945.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located to the left of the regulatory notice warning about doubled speeding fines?",
+      "ground_truth": "ROAD [entity_011] WORK [entity_012] AHEAD [entity_004] sign",
+      "prediction": "The sign located to the left of the regulatory notice warning about doubled speeding fines is a red and white sign with the text \"Doubling Speed Limits.\"",
+      "inference_time_sec": 5.407,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 0.2 seconds and 2.0 seconds?",
+      "ground_truth": "4",
+      "prediction": "Between 0.2 seconds and 2.0 seconds, there are three distinct, legible text instances encountered by the vehicle. These include a red sign with white text that reads \"NO LANE CLOSING AHEAD,\" a green sign with white text that says \"30,\" and a red sign with white text that says \"SPEED LIMIT 30.\"",
+      "inference_time_sec": 6.09,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the sequence in which the speed limit sign, the sidewalk closed placard, and the road work warning sign are encountered?",
+      "ground_truth": "1st: ROAD [entity_011] WORK [entity_012] AHEAD [entity_004], 2nd: SPEED [entity_013] LIMIT [entity_014], 3rd: SIDEWALK [entity_015] closed FOR CONST [entity_016]",
+      "prediction": "The sequence of events in the video begins with the speed limit sign, which is placed on the right side of the road. It is followed by the sidewalk closed placard, which is placed on the left side of the road. The road work warning sign is then seen on the right side of the road, indicating that there is ongoing construction or maintenance work.",
+      "inference_time_sec": 5.938,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the speed limit sign located to the left of the sidewalk closed placard?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014] of 30",
+      "prediction": "The speed limit sign located to the left of the sidewalk closed placard indicates a speed limit of 30 miles per hour. This is a common speed limit for urban areas, especially in areas with pedestrian crossings and sidewalks that are closed for maintenance or construction.",
+      "inference_time_sec": 5.179,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the signs for exits, street names, and work zones, what kind of driving environment is depicted?",
+      "ground_truth": "Urban highway construction zone",
+      "prediction": "The driving environment depicted in the video is one of a busy urban area undergoing construction or maintenance. The presence of orange traffic cones, the construction barriers, and the \"No Stopping Except for Emergency Vehicles\" sign indicate that the road is closed to regular traffic, likely for safety reasons. The street names and signs for exits suggest that this is a well-organized urban area with multiple routes and exits, which is typical of a city's main thoroughfares. The overcast sky and the snow on the ground suggest that the area experiences cold weather, which is common in many urban settings. The overall impression is that of a city",
+      "inference_time_sec": 8.34,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Do any street names visible on the overhead gantry suggest a specific city? What text supports this?",
+      "ground_truth": "New York City, supported by E 125 St [entity_019] and 2Ave [entity_021]",
+      "prediction": "Yes, the street name \"BROOKLYN\" is visible on the overhead gantry, which suggests that the video was taken in Brooklyn, New York City. This is supported by the distinctive green sign with white lettering that reads \"BROOKLYN\" on the right side of the road.",
+      "inference_time_sec": 5.661,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the regulatory sign warning about doubled speeding fines first become legible, and when does it become illegible?",
+      "ground_truth": "Legible at 0.467 seconds, illegible at 0.6 seconds",
+      "prediction": "The regulatory sign warning about doubled speeding fines first becomes legible at around 1:30 into the video. It becomes illegible as the video progresses, as the sign is no longer visible due to the camera angle and the distance from the sign to the camera.",
+      "inference_time_sec": 5.153,
+      "error": ""
+    }
+  ]
+}

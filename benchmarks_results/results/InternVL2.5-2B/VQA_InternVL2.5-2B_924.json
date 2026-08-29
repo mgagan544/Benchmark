@@ -1,0 +1,70 @@
+{
+  "video_id": 924,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/924.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry?",
+      "ground_truth": "Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "The readable text located to the left of the B C D Terminals RIGHT LANE sign on the overhead gantry is 'B C D Terminals'.",
+      "inference_time_sec": 4.17,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the green overhead exit sign located on the left side of the roadway?",
+      "ground_truth": "3",
+      "prediction": "There are three distinct text instances visible on the green overhead exit sign. The first sign indicates 'EXIT 12', the second sign reads 'EXIT 12A', and the third sign displays 'EXIT 12B'. These signs provide directions for drivers to follow when exiting the highway.",
+      "inference_time_sec": 5.291,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the overhead gantry, the roadside infrastructure, and the green exit sign are first encountered as the vehicle moves forward?",
+      "ground_truth": "1st: B C D [entity_001] Terminals [entity_003] RIGHT LANE [entity_002], 2nd: RIZZO [entity_004], 3rd: Long [entity_005] Term [entity_006] Parking [entity_007]",
+      "prediction": "As the vehicle moves forward, the text on the overhead gantry is first encountered, followed by the roadside infrastructure, and finally the green exit sign.",
+      "inference_time_sec": 4.215,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or instructional text is displayed on the large overhead gantry above the multi-lane roadway?",
+      "ground_truth": "RIGHT LANE [entity_002]",
+      "prediction": "The large overhead gantry above the multi-lane roadway displays the text 'LANE 1 LANE 1' in white letters on a green background, indicating the lane configuration for the roadway.",
+      "inference_time_sec": 4.607,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs indicating terminals and parking, what type of facility is this roadway accessing?",
+      "ground_truth": "Airport access road",
+      "prediction": "The roadway is accessing a transportation hub, likely an airport, as indicated by the signs for terminals and parking.",
+      "inference_time_sec": 3.75,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language and script is the text on the overhead gantry and exit signs written?",
+      "ground_truth": "English in Latin script",
+      "prediction": "The text on the overhead gantry and exit signs is written in both English and Spanish. The English text reads 'EXIT 4', 'EXIT 5', and 'EXIT 6', while the Spanish text reads 'CERRERA EXIT 4', 'CERRERA EXIT 5', and 'CERRERA EXIT 6'. This bilingual signage indicates the presence of a significant number of international travelers, suggesting that the location is likely a major airport or transportation hub frequented by people from various countries. The use of both languages also reflects a commitment to accessibility and inclusivity for all travelers, regardless of their native language.",
+      "inference_time_sec": 8.332,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text B C D first become visible, and when does the full layout of that gantry sign become readable?",
+      "ground_truth": "Visible at 5.1 seconds, fully readable at 5.233 seconds",
+      "prediction": "The text 'B C D' first becomes visible in the third frame, at the beginning of the video. The full layout of the gantry sign for 'B C D' becomes readable in the sixth frame.",
+      "inference_time_sec": 4.757,
+      "error": ""
+    }
+  ]
+}

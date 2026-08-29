@@ -1,0 +1,70 @@
+{
+  "video_id": 994,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/994.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the deliveries sign located relative to the green directional sign?",
+      "ground_truth": "Below the green directional sign containing GRAND CENTRAL [entity_001] PKWY [entity_002]",
+      "prediction": "The deliveries sign is located on the right side of the green directional sign. It is positioned to the right of the green sign, which is mounted on a pole. The sign itself is rectangular with white lettering on a green background, and it is placed on the right side of the road, slightly to the right of the center, as the camera view moves forward.",
+      "inference_time_sec": 7.052,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities are visible on the signs in this clip?",
+      "ground_truth": "9",
+      "prediction": "There are three distinct text entities visible on the signs in the clip. The first sign reads \"NEW YORK CITY,\" the second sign says \"NEW YORK CITY,\" and the third sign is partially obscured but appears to say \"NEW YORK CITY\" as well.",
+      "inference_time_sec": 5.099,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the three signs are encountered as the vehicle moves forward between 2.5 and 4.0 seconds?",
+      "ground_truth": "1st: GRAND CENTRAL [entity_001] PKWY [entity_002], 2nd: DELIVERIES [entity_007] ENTRANCE 9 [entity_008], 3rd: 25 TONE [entity_009]",
+      "prediction": "The three signs are encountered in the following order as the vehicle moves forward between 2.5 and 4.0 seconds: The first sign is seen at the beginning of the video, the second sign is at the 2.5-second mark, and the third sign is at the 4.0-second mark.",
+      "inference_time_sec": 5.67,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a sign indicates a weight restriction for vehicles near the overpass structure?",
+      "ground_truth": "25 TONE [entity_009]",
+      "prediction": "The text on the sign that indicates a weight restriction for vehicles near the overpass structure is \"NO TRUCKS OVER 3,000 LBS.\" This sign is visible on a green sign attached to a metal pole near the overpass.",
+      "inference_time_sec": 4.891,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of highway names and weight limit signs suggest about the type of road segment?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The mix of highway names and weight limit signs suggests that this is a multi-use road segment that accommodates both vehicular traffic and possibly pedestrian or bicycle traffic. The presence of weight limit signs indicates that the road is designed to manage the weight of vehicles, which is common in urban areas where traffic density is high. The highway names, such as \"Downtown\" and \"South,\" imply that this road is part of a larger network of roads that connect different parts of the city or region. This type of road is typically found in urban settings where traffic management is crucial due to the high volume of vehicles and pedestrians.",
+      "inference_time_sec": 8.171,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the abbreviations on the green directional sign?",
+      "ground_truth": "New York City",
+      "prediction": "The green directional sign in the video displays the abbreviation \"PITTSBURGH,\" which is a city in the United States. This suggests that the video was taken in or near Pittsburgh, a city in the state of Pennsylvania.",
+      "inference_time_sec": 4.919,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text DELIVERIES ENTRANCE 9 first become visible in the clip?",
+      "ground_truth": "3.033 seconds",
+      "prediction": "The text \"DELIVERIES ENTRANCE 9\" first becomes visible in the clip at the timestamp 1.5 seconds into the video.",
+      "inference_time_sec": 4.065,
+      "error": ""
+    }
+  ]
+}

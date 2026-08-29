@@ -1,0 +1,70 @@
+{
+  "video_id": 976,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/976.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What regulatory sign is located to the left of the MDX vehicle with license plate GTR-8482?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50 sign to the left of MDX [entity_008]",
+      "prediction": "The regulatory sign located to the left of the MDX vehicle with license plate GTR-8482 is a speed limit sign. It is white with a black border and displays the number \"55,\" indicating the maximum speed allowed on the road.",
+      "inference_time_sec": 9.54,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are at least four distinct license plates visible on the vehicles in the clip. The first is on the black SUV in the left lane, the second is on the silver SUV in the right lane, the third is on the black car in the middle lane, and the fourth is on the white car in the left lane.",
+      "inference_time_sec": 10.511,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the license plate T1711804C, the license plate GTR-8482, and the speed limit sign are first encountered?",
+      "ground_truth": "1st: T1711804C [entity_001], 2nd: GTR-8482 [entity_009], 3rd: SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "The license plate T1711804C is first encountered on the black SUV, the license plate GTR-8482 is seen on the silver sedan, and the speed limit sign is first encountered after the license plates.",
+      "inference_time_sec": 9.293,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text visible near the end of the clip indicates a speed restriction on this road?",
+      "ground_truth": "SPEED [entity_010] LIMIT [entity_011] 50",
+      "prediction": "Near the end of the clip, a sign with the text \"SPEED LIMIT 55\" is visible, indicating the speed restriction on this road.",
+      "inference_time_sec": 8.391,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of highway exit signs and speed limit signs, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a highway. This is indicated by the presence of multiple lanes, the overhead highway exit signs, and the speed limit signs visible in the video. The signs provide directions to various exits, which is typical for highways that serve as major thoroughfares connecting different parts of a city or region.",
+      "inference_time_sec": 10.354,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region in New York is suggested by the text on the green highway sign?",
+      "ground_truth": "Long Island [entity_003]",
+      "prediction": "The green highway sign suggests that the region in New York is the Eastern Long Island area. The sign indicates that the nearest exits are for the Eastern Long Island region, specifically for the areas of Long Island, ODE, and 29E-29A.",
+      "inference_time_sec": 9.727,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range is the license plate GTR-8482 on the overtaking MDX vehicle visible?",
+      "ground_truth": "4.5 to 4.767 seconds",
+      "prediction": "The license plate GTR-8482 on the overtaking MDX vehicle is visible from the beginning of the video until the overtaking vehicle is no longer in the frame, which occurs after the overtaking vehicle has passed the camera's perspective. This time range is from the start of the video to approximately the 10-second mark.",
+      "inference_time_sec": 10.613,
+      "error": ""
+    }
+  ]
+}

@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What parking sign text is located to the left of the license registration AT * 665J?",
       "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
-      "prediction": "The user wants me to identify the text on a parking sign.\n1.  **Locate the license plate:** I need to find a license plate ending in \"AT * 665J\". Looking at the first frame, there is a white car parked on the left side of the street, near the curb. Let's zoom in on that car.\n2.  **Identify the car:** It's a white sedan parked in front of a building with a \"PARK\" sign. Wait, let me look closer.\n3.  **Find the sign:** The user asks for the parking sign text *",
-      "inference_time_sec": 13.24,
+      "prediction": "PARK",
+      "inference_time_sec": 2.921,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
       "ground_truth": "6",
-      "prediction": "The user wants me to count the distinct text instances on the automotive service building on the left side of the street.\n\n1.  **Identify the building:** Looking at the left side of the street, there's a building with a red sign that says \"AUTO REPAIR\". This seems to be the automotive service building.\n2.  **Locate text instances:** I need to scan this specific building for text.\n    *   There's a large red sign above the entrance/windows. It says \"AUTO REPAIR\".\n    *   Below that, there's smaller text, possibly \"OPENING\". Wait, let",
-      "inference_time_sec": 13.26,
+      "prediction": "2",
+      "inference_time_sec": 2.812,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
       "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
-      "prediction": "The user wants me to identify the chronological order of text instances on the right side of the street.\n\n1.  **Analyze the video:** I need to watch the video from start to finish and look for text on the right side of the street.\n2.  **Identify text instances:**\n    *   **00:00 - 00:01:** There's a large digital billboard on the right. It shows a cartoon character and the word \"fame.\" below it. This is the first text instance.\n    *   **00:00 - 00:0",
-      "inference_time_sec": 13.19,
+      "prediction": "fame.\n6\n6",
+      "inference_time_sec": 3.346,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
       "ground_truth": "TURNS [entity_010]",
-      "prediction": "The user wants me to identify text on a regulatory traffic sign.\n1.  **Locate the \"DAK sign\":** In the first frame, on the left side, there is a white sign with black text that says \"DAK PARK\". This is likely the \"DAK sign\" referred to.\n2.  **Look across from it:** Directly across the street, on the right side, there is a traffic light pole.\n3.  **Identify the regulatory sign:** Attached to the pole, near the traffic light, there is a square white sign with a red circle and a slash through it",
-      "inference_time_sec": 13.207,
+      "prediction": "PARK",
+      "inference_time_sec": 2.91,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
       "ground_truth": "Commercial business district",
-      "prediction": "The user wants to identify the type of driving environment based on specific visual cues: storefronts, digital billboards, and commercial signs.\n\n1.  **Analyze the visual cues:**\n    *   **Storefronts:** I see businesses like \"The Displayers,\" \"Auto Repair,\" and \"Chuck E. Cheese\" (or similar signage, though partially obscured). These are typical commercial businesses found in urban areas.\n    *   **Digital Billboards:** There's a large digital billboard on the right side advertising \"fame.\" This is a common feature in busy city centers or major thoroughfares.\n    *",
-      "inference_time_sec": 13.265,
+      "prediction": "Urban",
+      "inference_time_sec": 2.817,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
       "ground_truth": "New York City, New York State",
-      "prediction": "The user wants me to identify the state and city based on visual cues in the video.\n\n1.  **Analyze the video for text:** I need to look for signs, billboards, or any text that contains location information.\n2.  **Scan the frames:**\n    *   **Frame 1:** I see a billboard on the right. It says \"fame.\" and has a phone number. Let's look closer. The number is partially visible but looks like an area code. Wait, let's look at other signs.\n    *   **Frame 2:** On the left, there's a",
-      "inference_time_sec": 13.29,
+      "prediction": "New York",
+      "inference_time_sec": 2.882,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
       "ground_truth": "0.0s to 0.233s",
-      "prediction": "The user wants to find the time range for specific text on a digital billboard.\n1.  **Identify the billboard:** Looking at the first frame (00:00), on the left side, there is a large white billboard.\n2.  **Read the text:** The text on the billboard says \"THE DISPLAYERS\" and below it \"Snycom\".\n3.  **Determine visibility:**\n    *   At 00:00, the billboard is clearly visible on the left.\n    *   At 00:01, the camera has moved forward and the billboard",
-      "inference_time_sec": 13.329,
+      "prediction": "0.0 - 0.1",
+      "inference_time_sec": 3.401,
       "error": ""
     }
   ]

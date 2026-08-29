@@ -1,0 +1,70 @@
+{
+  "video_id": 907,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/907.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the text 25 A on the overhead street sign?",
+      "ground_truth": "Northern [entity_012] Bird [entity_013]",
+      "prediction": "The text directly to the right of the text 25 A on the overhead street sign is \"North Ave.\"",
+      "inference_time_sec": 8.153,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the parked white box truck?",
+      "ground_truth": "6",
+      "prediction": "Based on the video, there are two distinct text instances mounted on the parked white box truck. One is a logo or emblem on the side of the truck, and the other is a sign with text on the front of the truck.",
+      "inference_time_sec": 10.147,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the text groups on the brick industrial building's banner are encountered?",
+      "ground_truth": "1st: DRIVERS [entity_001] and WANTED [entity_002], 2nd: 718 [entity_003] and 729-7777 [entity_004]",
+      "prediction": "The chronological order in which the text groups on the brick industrial building's banner are encountered is as follows: \"DRIVERS WANTED\" is first, followed by \"CONTRACTORS WANTED,\" and then \"ELECTRICAL WANTED.\"",
+      "inference_time_sec": 10.221,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional or regulatory text is visible on the sign near the traffic light at the intersection?",
+      "ground_truth": "ENTER [entity_016]",
+      "prediction": "The sign near the traffic light at the intersection contains the text \"No Left Turn,\" indicating that vehicles are not permitted to make a left turn at this intersection.",
+      "inference_time_sec": 8.356,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of contractor vehicle text and industrial building banners suggest about the driving environment?",
+      "ground_truth": "Industrial and commercial district",
+      "prediction": "The presence of the \"CONTRACTORS\" text on the white truck and the industrial building banners suggests that the driving environment is likely in a commercial or industrial area where construction or maintenance work is taking place. This could indicate that the road is in a transitional phase, with ongoing development or repair work, which might affect traffic flow and require drivers to be cautious. The banners also imply that the area is subject to commercial activity, possibly with businesses or warehouses nearby.",
+      "inference_time_sec": 12.301,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city or region is suggested by the area code 718 found on the visible signs?",
+      "ground_truth": "New York City",
+      "prediction": "The area code 718 is commonly associated with the New York City metropolitan area, specifically Brooklyn. This suggests that the video was taken in or around Brooklyn, New York.",
+      "inference_time_sec": 8.482,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the phone number 718.786.2505 on the parked white box truck visible?",
+      "ground_truth": "4.8 seconds to 6.233 seconds",
+      "prediction": "The phone number 718.786.2505 is visible on the parked white box truck for the entire duration of the video.",
+      "inference_time_sec": 8.045,
+      "error": ""
+    }
+  ]
+}

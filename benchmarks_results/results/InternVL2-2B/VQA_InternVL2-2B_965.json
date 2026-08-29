@@ -1,0 +1,70 @@
+{
+  "video_id": 965,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/965.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the word BUSES on the regulatory sign?",
+      "ground_truth": "TRAILERS [entity_003]",
+      "prediction": "The text located directly to the right of the word BUSES on the regulatory sign is \"20.\"",
+      "inference_time_sec": 4.702,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible on vehicles in this video clip?",
+      "ground_truth": "2",
+      "prediction": "Based on the video, there are at least four distinct license plates visible on vehicles. One is on a white van, another on a black sedan, a third on a white truck, and a fourth on a black SUV.",
+      "inference_time_sec": 4.76,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the driver encounter the text TRUCKS, Macombs Dam Br, and EXIT as the vehicle travels forward?",
+      "ground_truth": "1st: TRUCKS [entity_001], 2nd: Macombs Dam Br [entity_006], 3rd: EXIT [entity_011]",
+      "prediction": "The driver encounters the text TRUCKS, Macombs Dam Br, and EXIT in the following order as the vehicle travels forward: The driver first encounters the word TRUCKS, which is located on the green sign indicating the exit. Following that, the driver encounters the word Macombs Dam Br, which is also on the green sign. Finally, the driver encounters the word EXIT, which is on the green sign at the top of the highway.",
+      "inference_time_sec": 6.796,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What specific text on the regulatory sign on the left side of the road restricts certain vehicles from the left lane?",
+      "ground_truth": "TRUCKS [entity_001], BUSES [entity_002], TRAILERS [entity_003], LEFT [entity_004], LANE [entity_005]",
+      "prediction": "The specific text on the regulatory sign on the left side of the road that restricts certain vehicles from the left lane is not clearly visible in the video. However, the sign typically contains information about lane restrictions, speed limits, and other traffic regulations. It is common for such signs to include specific instructions or warnings to drivers, such as \"No Left Turn\" or \"Speed Limit 55,\" which are not discernible in the video.",
+      "inference_time_sec": 6.631,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of regulatory lane signs, overhead exit gantry signs, and multiple lanes of traffic, what type of road is the vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The vehicle is traveling on a multi-lane road, likely a highway or a major arterial road, as indicated by the presence of regulatory lane signs, overhead exit gantry signs, and the number of lanes. The presence of a toll road sign also suggests that it is a road that is used for both vehicular and possibly non-vehicular traffic, which is common in urban or suburban areas.",
+      "inference_time_sec": 6.346,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location in New York is suggested by the overhead exit signage text?",
+      "ground_truth": "Macombs Dam Br [entity_006]",
+      "prediction": "The overhead exit signage text \"E 161 St Macombs Dam Br\" suggests that the video was taken in New York City, specifically in the vicinity of Macombs Dam Br, which is a neighborhood in the Bronx. This is further supported by the presence of the highway sign indicating the exit to Macombs Dam Br, which is a well-known area in the Bronx.",
+      "inference_time_sec": 6.299,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the yellow advisory exit sign displaying EXIT first come clearly into view, and what text is located directly below it?",
+      "ground_truth": "4.633s, M P H [entity_012]",
+      "prediction": "The yellow advisory exit sign displaying EXIT first comes into view at the beginning of the video. Directly below the sign, the text \"20\" is visible, indicating the number of the exit.",
+      "inference_time_sec": 4.524,
+      "error": ""
+    }
+  ]
+}

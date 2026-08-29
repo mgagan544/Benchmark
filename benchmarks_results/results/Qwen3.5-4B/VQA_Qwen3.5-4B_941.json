@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What regulatory sign is located directly below the overhead sign that says \"To Belt Pkwy\"?",
       "ground_truth": "KEEP RIGHT [entity_005] below To Belt Pkwy [entity_004]",
-      "prediction": "The user wants to identify a specific regulatory sign.\n\n1.  **Locate the overhead sign:** I need to find the overhead sign that says \"To Belt Pkwy\". Looking at the images, specifically around 0.0s to 0.3s, there is a large overhead gantry.\n2.  **Read the sign:** The sign on the far left of the gantry says \"Airport Exit via JFK Expwy To Belt Pkwy\". Wait, let me look closer.\n    *   At 0.0s, there's a vertical sign on the right: \"Airport Exit via",
-      "inference_time_sec": 13.056,
+      "prediction": "Green light",
+      "inference_time_sec": 2.334,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are painted on the road surface or function as regulatory signs in this clip?",
       "ground_truth": "2",
-      "prediction": "The user wants me to count distinct text instances painted on the road surface or functioning as regulatory signs.\n\n1.  **Analyze the video:**\n    *   **00:00 - 00:01:** The car is approaching an intersection/exit. There's a large sign on the right: \"Airport Exit via JFK Expwy To Belt Pkwy KEEP RIGHT\". This is a regulatory sign.\n    *   **00:01 - 00:02:** The car passes under overhead gantries.\n        *   Left gantry: \"Airport Exit via Van Wyck",
-      "inference_time_sec": 12.602,
+      "prediction": "3",
+      "inference_time_sec": 2.247,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of encounter for the first overhead sign structure, the road marking, and the second overhead gantry?",
       "ground_truth": "1st: Airport Exit [entity_001], 2nd: ONLY [entity_006], 3rd: Long Term Parking [entity_007]",
-      "prediction": "The user wants me to identify the order in which three specific elements appear in the video:\n1.  **First overhead sign structure:** This is the large gantry with multiple signs hanging from it.\n2.  **Road marking:** This likely refers to the white arrows painted on the road surface.\n3.  **Second overhead gantry:** This is the structure further down the road, closer to the exit ramp.\n\nLet's break down the video chronologically:\n\n*   **00:00 - 00:02:** The car is driving on a highway. There's a sign on the",
-      "inference_time_sec": 12.693,
+      "prediction": "first overhead sign structure, second overhead gantry, road marking",
+      "inference_time_sec": 3.527,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What regulatory instruction is displayed on the lane surface below the sign that says \"KEEP RIGHT\"?",
       "ground_truth": "ONLY [entity_006]",
-      "prediction": "The user wants to identify a regulatory instruction painted on the road surface.\n\n1.  **Locate the sign:** I see a sign on the right side of the road in the first few frames (0.0s - 0.1s) that says \"Airport Exit via JFK Expwy To Belt Pkwy KEEP RIGHT\".\n2.  **Follow the lane:** The car is driving straight. As it approaches the overhead signs (0.2s - 0.4s), I need to look at the lane markings.\n3.  **Identify the marking:** In the later frames (0.",
-      "inference_time_sec": 12.712,
+      "prediction": "Keep Right",
+      "inference_time_sec": 2.343,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of transportation hub is the vehicle navigating, based on the visible signs?",
       "ground_truth": "Airport",
-      "prediction": "The user wants to identify the type of transportation hub based on the signs in the video.\n\n1.  **Analyze the first frame (00:00):**\n    *   There is a large blue sign on the right.\n    *   The text reads: \"Airport Exit via JFK Expwy To Belt Pkwy KEEP RIGHT\".\n    *   This explicitly mentions \"Airport Exit\" and \"JFK Expwy\" (John F. Kennedy Expressway).\n\n2.  **Analyze subsequent frames (00:01 - 00:05):**\n    *   As the car",
-      "inference_time_sec": 12.678,
+      "prediction": "Airport",
+      "inference_time_sec": 2.265,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific New York airport expressway is indicated by the signs on the first overhead structure?",
       "ground_truth": "JFK Expwy [entity_003]",
-      "prediction": "The user wants to identify a specific expressway from the signs in the video.\n\n1.  **Analyze the first overhead structure:** I need to look at the very first frame or the early frames where the overhead signs are clearly visible.\n2.  **Locate the signs:** In the first frame (00:00), there is a large overhead gantry with multiple signs.\n3.  **Read the signs:**\n    *   The leftmost sign says: \"Airport Exit via JFK Expwy To Belt Pkwy\".\n    *   The middle sign says: \"Airport Exit via Van Wy",
-      "inference_time_sec": 12.645,
+      "prediction": "Van Wyck Expressway",
+      "inference_time_sec": 2.599,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the vehicle pass over the road marking that says \"ONLY\"?",
       "ground_truth": "5.367 seconds",
-      "prediction": "The user wants to find the timestamp when the vehicle passes over a road marking that says \"ONLY\".\n\n1.  **Analyze the frames:** I'll look through the provided video frames to spot the text \"ONLY\" painted on the road.\n2.  **Frame 1 (00:00):** The car is approaching an exit ramp. No \"ONLY\" marking is visible on the road surface yet.\n3.  **Frame 2 (00:01):** Still approaching. No \"ONLY\" marking.\n4.  **Frame 3 (00:02):** The car is",
-      "inference_time_sec": 12.66,
+      "prediction": "0.3",
+      "inference_time_sec": 2.44,
       "error": ""
     }
   ]

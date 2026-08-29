@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "Which storefront text, passed by the vehicle before 3.9 seconds, is located between the party hall and the deli grocery?",
       "ground_truth": "HONG [entity_005] KONG [entity_006]",
-      "prediction": "The user wants to identify a specific storefront text based on its location relative to other landmarks.\n\n1.  **Identify the landmarks:**\n    *   **Party Hall:** In the first frame (00:00), there is a black storefront with \"The Venue Party Hall\" written on it.\n    *   **Deli Grocery:** In the second frame (00:01), as the car moves forward, a green storefront with \"DELJ GROCERY\" becomes visible.\n\n2.  **Locate the storefront between them:**\n    *   Looking at the sequence of frames:",
-      "inference_time_sec": 12.973,
+      "prediction": "KONG TONG",
+      "inference_time_sec": 2.498,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct storefront or sign text instances are passed by the vehicle between 3.9 and 5.6 seconds?",
       "ground_truth": "3",
-      "prediction": "The user wants to count distinct storefront or sign text instances passed by the vehicle between 3.9 and 5.6 seconds.\n\n1.  **Analyze the video:**\n    *   The video starts at 0.0s.\n    *   The camera is inside a car driving down a street.\n    *   I need to look at the frames around 3.9s to 5.6s.\n    *   Wait, the provided frames only go up to 0.4 seconds. The prompt asks for a range of 3.9 to 5.6 seconds. This",
-      "inference_time_sec": 12.652,
+      "prediction": "0",
+      "inference_time_sec": 2.284,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What sign text is encountered immediately after the vehicle passes the sign for The Best?",
       "ground_truth": "Best [entity_009]",
-      "prediction": "The user wants to identify the sign text that appears immediately after \"The Best\".\n\n1.  **Locate \"The Best\" sign:** I need to scan the video frames to find a sign that says \"The Best\".\n    *   Looking at the first few frames (00:00 - 00:01), I see a yellow sign on the left that says \"RESTAURANT\".\n    *   Looking at the next frames (00:01 - 00:02), as the car moves forward, I see a green sign on the left corner. It says \"",
-      "inference_time_sec": 12.64,
+      "prediction": "The Venue Party Hall",
+      "inference_time_sec": 2.5,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What driving constraints, hazards, or speed limits are indicated by the visible text in this clip?",
       "ground_truth": "None",
-      "prediction": "The user wants to identify driving constraints, hazards, or speed limits based on the text visible in the video.\n\n1.  **Analyze the video for text:** I need to scan the frames for any signs, street signs, or vehicle markings that convey information relevant to driving.\n\n    *   **Frame 1:**\n        *   \"RESTAURANT\" sign on the left. Not a driving constraint.\n        *   \"The Venue Party Hall\" sign. Not a driving constraint.\n        *   \"KONG LONG\" sign. Not a driving constraint.\n        *   Street sign: \"1",
-      "inference_time_sec": 12.687,
+      "prediction": "No driving constraints, hazards, or speed limits are indicated by the visible text in this clip.",
+      "inference_time_sec": 3.745,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the density and type of storefront signs visible throughout the clip, what kind of driving environment is depicted?",
       "ground_truth": "Commercial district",
-      "prediction": "The user wants me to identify the type of driving environment based on the storefront signs.\n\n1.  **Analyze the signs:**\n    *   **00:00 - 00:01:** I see \"The Venue Party Hall\", \"KONG TONG\" (Chinese restaurant), and a \"RESTAURANT\" sign with a blue shutter.\n    *   **00:01 - 00:02:** I see \"The Venue Party Hall\" again, \"KONG TONG\", and a green sign for \"DELICATESSEN DELI GROCERY\".",
-      "inference_time_sec": 12.679,
+      "prediction": "Urban commercial district",
+      "inference_time_sec": 2.388,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for all the storefront signs encountered by the vehicle?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language used on the storefront signs seen in the video.\n\n1.  **Analyze the first storefront (00:00 - 00:01):**\n    *   Sign: \"The Venue Party Hall\". This is English.\n    *   Sign: \"KONG LONG\". This is English (likely a transliteration of a Chinese name, but the script is English).\n    *   Sign: \"RESTAURANT\". This is English.\n\n2.  **Analyze the second storefront (00:01 - 00:02):**",
-      "inference_time_sec": 12.635,
+      "prediction": "English",
+      "inference_time_sec": 2.243,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During what time range is the sign for The Best continuously visible to the camera vehicle?",
       "ground_truth": "3.9 to 4.8 seconds",
-      "prediction": "The user wants to find the time range where the sign \"The Best\" is visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The camera is facing a corner. On the left, there's a yellow sign that says \"RESTAURANT\". In the center, there's a black sign \"The Venue Party Hall\". To the right, a red sign \"KONG LOON\". The sign \"The Best\" is not visible.\n    *   **00:01:** The camera is panning right. The \"The Venue Party Hall\" sign is",
-      "inference_time_sec": 12.608,
+      "prediction": "0.0 - 0.5 seconds",
+      "inference_time_sec": 2.849,
       "error": ""
     }
   ]

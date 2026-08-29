@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "As the vehicle moves forward, the spatial position of CHECKSCASH relative to SHED appears to be on the same side of the road but further ahead. The CHECKSCASH sign is visible in the background, indicating that it is located across the street from the SHED sign, which is closer to the foreground of the image. As the vehicle continues to move forward, the CHECKSCASH sign will likely become more prominent and closer to the viewer's perspective.",
+      "inference_time_sec": 9.01,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "Between 4.0 and 7.0 seconds, there are two distinct, legible text instances encountered by the vehicle:\n\n1. \"Rockaway Pkwy\" (on the street sign)\n2. \"Boost\" (on the billboard)",
+      "inference_time_sec": 7.667,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "As the vehicle moves forward, the order in which the storefronts SHED, boost, and CHECKSCASH are encountered is:\n\n1. SHED\n2. boost\n3. CHECKSCASH\n\nThis can be observed from the perspective of the vehicle's movement through the intersection and down the road. The SHED store is on the left side of the road, followed by the boost store, and then the CHECKSCASH store further ahead.",
+      "inference_time_sec": 9.096,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The traffic regulator sign located to the right of the \"4CAR\" signboard implies that vehicles should proceed with caution, likely indicating a need for reduced speed or careful navigation through the intersection. The specific details of the sign would depend on its design and any accompanying text or symbols, but generally, such signs are used to alert drivers to potential hazards or to guide them through complex intersections.",
+      "inference_time_sec": 8.388,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The image depicts an urban or suburban driving environment characterized by a mix of commercial and residential areas. The presence of multiple storefronts such as \"SHED,\" \"boost,\" and \"MARKET\" suggests that this is likely a commercial district with businesses catering to local residents. The traffic light and pedestrian crossing indicate that it is a busy intersection, which is typical in areas where people frequently shop, work, or live. The overall scene suggests a lively and active community setting.",
+      "inference_time_sec": 10.575,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The street name \"Rockaway Pkwy\" suggests that the video is filmed in New York City, specifically in the Rockaway neighborhood of Queens. The phone area code visible on the license plate of the car in the foreground is 718, which is the area code for New York City.",
+      "inference_time_sec": 7.467,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The vehicle passes the storefront of SHED, which is located to the right of CHECKSCASH, around the 10-second mark in the video.",
+      "inference_time_sec": 5.742,
+      "error": ""
+    }
+  ]
+}

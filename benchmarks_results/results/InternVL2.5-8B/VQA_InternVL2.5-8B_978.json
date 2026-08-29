@@ -1,0 +1,70 @@
+{
+  "video_id": 978,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/978.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory road marking near the commercial building relative to the pavement marking on the multi-lane avenue?",
+      "ground_truth": "To the right of ONLY [entity_001] across the access road",
+      "prediction": "The regulatory road marking near the commercial building is positioned on the right side of the pavement marking on the multi-lane avenue. It is adjacent to the lane where the black SUV is traveling, indicating a lane change or exit point.",
+      "inference_time_sec": 9.285,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct road markings containing painted text are mentioned in the scene description?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct road markings containing painted text mentioned in the scene description. The first is the 'ONLY' marking on the road, which is painted in white and indicates a lane restriction. The second is the 'MERGING TRAFFIC' marking, which is also painted in white and serves as a warning to drivers of the merging traffic ahead.",
+      "inference_time_sec": 10.654,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the distinct road markings are encountered by the camera vehicle?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: STOP [entity_002]",
+      "prediction": "The camera vehicle first encounters the 'ONLY' road markings, followed by the 'LEFT LANE' marking, and finally the 'ONLY' markings again.",
+      "inference_time_sec": 8.36,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving action is implied by the regulatory road marking located near the modern commercial building?",
+      "ground_truth": "Stop, as indicated by STOP [entity_002]",
+      "prediction": "The regulatory road marking, which is a solid white line, is typically used to indicate a lane that is not to be crossed or to denote a no-passing zone. In the context of the video, this marking suggests that the lane is reserved for a specific purpose, such as a bus lane or a lane for a particular type of vehicle, and that it is not to be used by other vehicles. The presence of this marking implies that the driver should not cross into this lane unless it is explicitly permitted by traffic signals or signs.",
+      "inference_time_sec": 12.678,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential high-rises, commercial buildings, and multi-lane avenues suggest about the driving environment?",
+      "ground_truth": "Urban commercial and residential district",
+      "prediction": "The mix of residential high-rises, commercial buildings, and multi-lane avenues suggests a diverse and possibly urban environment. The presence of high-rise buildings indicates a developed area with a significant population density, while the commercial buildings suggest a bustling business district. The multi-lane avenues imply a well-structured road network designed to accommodate a high volume of traffic, which is typical of urban settings. This combination of elements points to a city that is both residential and commercial, with a well-organized infrastructure to support the movement of people and goods.",
+      "inference_time_sec": 13.054,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language or script is used for the road markings in this scene?",
+      "ground_truth": "English",
+      "prediction": "The road markings in the scene are in English, as indicated by the words 'ONLY' and the directional arrows.",
+      "inference_time_sec": 7.866,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp is the first pavement marking driven over, and at what timestamp is the regulatory road marking passed?",
+      "ground_truth": "ONLY [entity_001] at 0.1 seconds, STOP [entity_002] around 5.7 seconds",
+      "prediction": "The first pavement marking, which is the 'ONLY' lane marking, is driven over at timestamp 00:00:00. The regulatory road marking, which is the 'ONLY' lane marking, is passed at timestamp 00:00:05.",
+      "inference_time_sec": 9.473,
+      "error": ""
+    }
+  ]
+}

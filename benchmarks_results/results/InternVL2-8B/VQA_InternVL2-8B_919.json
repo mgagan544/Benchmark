@@ -1,0 +1,70 @@
+{
+  "video_id": 919,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/919.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located across the street relative to the overhead crossing sign displaying AHE?",
+      "ground_truth": "CASH 4 [entity_003] to the left of AHE [entity_002]",
+      "prediction": "The text located across the street relative to the overhead crossing sign displaying AHE is not clearly visible in the video. The camera's angle and the distance of the text from the viewpoint make it difficult to discern any specific textual content.",
+      "inference_time_sec": 9.363,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?",
+      "ground_truth": "7",
+      "prediction": "Based on the video, there are at least two distinct text instances marked on the yellow school bus. One is a number \"14\" visible on the side of the bus, and the other is a word or phrase that is not fully legible due to the angle and distance.",
+      "inference_time_sec": 9.926,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?",
+      "ground_truth": "1st: SCHOOL [entity_001], 2nd: AHE [entity_002], 3rd: CASH 4 [entity_003]",
+      "prediction": "The chronological order of the first three text instances from the start of the clip up to 3.0 seconds is as follows: \"SCHOOL\" on the yellow bus, \"SCHOOL\" on the yellow bus, and \"SCHOOL\" on the yellow bus.",
+      "inference_time_sec": 9.806,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?",
+      "ground_truth": "PARKING [entity_011]",
+      "prediction": "The regulatory text on the utility post on the right sidewalk indicates a no parking zone, as seen in the final frame of the video. This sign is typically used to restrict parking in certain areas, likely to ensure unobstructed traffic flow or to prevent congestion in specific zones.",
+      "inference_time_sec": 9.883,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?",
+      "ground_truth": "School zone",
+      "prediction": "The mix of text visible between 0.267 seconds and 3.200 seconds, which includes a \"PARKING\" sign and a \"SCHOOL\" sign, suggests that the area is a school zone. This is further supported by the presence of a yellow school bus, which is a common sight in school zones. The combination of these signs indicates that the area is likely to have a school nearby, and the traffic regulations are in place to ensure the safety of children and pedestrians in the vicinity.",
+      "inference_time_sec": 12.834,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the contact number displayed on the side of the school bus?",
+      "ground_truth": "New York City",
+      "prediction": "The contact number displayed on the side of the school bus is \"718-560-5000.\" This number is a common area code for New York City, particularly for Brooklyn. Therefore, it suggests that the video was taken in a city within the New York metropolitan area, likely in Brooklyn.",
+      "inference_time_sec": 10.139,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the regulatory parking sign remain continuously visible in the clip?",
+      "ground_truth": "6.400 seconds to 7.367 seconds",
+      "prediction": "The regulatory parking sign remains continuously visible from the beginning of the video until the end, indicating that it is a permanent fixture in the area.",
+      "inference_time_sec": 8.15,
+      "error": ""
+    }
+  ]
+}

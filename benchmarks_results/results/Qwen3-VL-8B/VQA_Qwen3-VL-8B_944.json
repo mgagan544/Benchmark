@@ -1,0 +1,70 @@
+{
+  "video_id": 944,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/944.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the PASSENGER CARS ONLY sign located relative to the Drive SOUTH sign?",
+      "ground_truth": "Adjacent to Drive [entity_006] SOUTH [entity_007]",
+      "prediction": "The PASSENGER CARS ONLY sign is located to the right of the Drive SOUTH sign.",
+      "inference_time_sec": 5.195,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text entities make up the construction warning sign visible at the start of the clip?",
+      "ground_truth": "4",
+      "prediction": "The construction warning sign visible at the start of the clip contains three distinct text entities:\n\n1. \"RIGHT\"\n2. \"LANE\"\n3. \"CLOSED\"\n\nThese are the individual words that make up the message on the sign.",
+      "inference_time_sec": 7.396,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle encounter the low clearance warning sign, the construction warning signs, and the PASSENGER CARS ONLY sign?",
+      "ground_truth": "1st: 12-6 [entity_005] and construction signs, 2nd: PASSENGER CARS ONLY [entity_009]",
+      "prediction": "The vehicle encounters the **construction warning signs** first, then the **low clearance warning sign**, and finally the **PASSENGER CARS ONLY** sign.",
+      "inference_time_sec": 6.28,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What low clearance limit is indicated by the warning sign to the right of the concrete barrier?",
+      "ground_truth": "12-6 [entity_005]",
+      "prediction": "The warning sign to the right of the concrete barrier indicates a low clearance limit of **12 feet 6 inches**.",
+      "inference_time_sec": 5.45,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the transition from a curved ramp with construction signs to a highway depict?",
+      "ground_truth": "Highway transition zone",
+      "prediction": "The transition from a curved ramp with construction signs to a highway depicts a **urban driving environment**.\n\nHere’s why:\n\n- **Curved Ramp with Construction Signs**: This is typical of urban or suburban areas where roadways are being modified or maintained. The presence of construction signs, barriers, and snow suggests a city or town setting, likely during winter. The ramp itself is likely part of an interchange or a road that connects to a larger thoroughfare.\n\n- **Highway**: While highways are often associated with rural or suburban areas, in an urban context, they can be part of major city arteries (e.g., expressways or fre",
+      "inference_time_sec": 13.589,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction warning signs and overhead directional signs?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction warning signs and overhead directional signs is in **English**.\n\n- The orange construction sign says: **“RIGHT LANE CLOSED 500 FT”** — this is standard English used for road construction warnings.\n- The green overhead directional sign says: **“N & W Drive”** — this is also in English, indicating road names.\n- The yellow pedestrian crossing sign says: **“PEDESTRIAN CROSSING”** — again, standard English for traffic signage.\n\nAll visible text is in English, consistent with typical U.S. road signage.",
+      "inference_time_sec": 12.908,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the Drive SOUTH sign first come into view, and when does the vehicle pass it?",
+      "ground_truth": "First visible at 3.767 seconds, passed at 5.133 seconds",
+      "prediction": "The \"Drive SOUTH\" sign first comes into view at **0:02**. The vehicle passes it at **0:03**.",
+      "inference_time_sec": 5.944,
+      "error": ""
+    }
+  ]
+}

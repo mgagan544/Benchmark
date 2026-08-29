@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "As the vehicle approaches the junction, the road markings of the zebra crossing become visible on the right side of the frame. The crossing is indicated by white stripes on the asphalt, which is part of the traffic management system to ensure the safety of pedestrians. The crossing is designed to allow vehicles and pedestrians to cross safely at an intersection.",
+      "inference_time_sec": 5.824,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "There are two distinct signboards containing numbers visible on the right side of the road at the start of the clip.",
+      "inference_time_sec": 3.779,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "After passing the signboard 9999, the vehicle encounters a roundabout on the far left.",
+      "inference_time_sec": 3.632,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "No, there are no explicit driving actions or constraints implied by the visible text on the signboard 9999. The signboard appears to be advertising something, but it does not provide any information about driving actions or restrictions.",
+      "inference_time_sec": 4.775,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road, a gas station, and a signboard suggests that the driving environment is a well-developed urban area with infrastructure catering to both vehicular and pedestrian traffic. The gas station indicates the presence of a service station, which is essential for refueling vehicles, while the signboard could be providing directions, traffic information, or advertisements. These elements together imply that the area is designed to support a variety of transportation needs, including fueling up for a journey and possibly providing information for safe and efficient navigation through the city.",
+      "inference_time_sec": 9.058,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The signboard on the right displays text in a script that appears to be Hebrew, using the Latin alphabet. The numbering system on the signboard is not clear enough to determine the exact numbering system used, but it seems to follow a numerical format, possibly indicating a sequence or a list of items.",
+      "inference_time_sec": 5.513,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard 9999 first becomes visible in the second frame, and it is passed by the ego vehicle in the third frame.",
+      "inference_time_sec": 3.934,
+      "error": ""
+    }
+  ]
+}

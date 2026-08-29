@@ -1,0 +1,70 @@
+{
+  "video_id": 958,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/958.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+      "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
+      "prediction": "The parking sign to the left of the license registration AT * 665J reads \"PARKING\".",
+      "inference_time_sec": 5.422,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+      "ground_truth": "6",
+      "prediction": "2",
+      "inference_time_sec": 3.664,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+      "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
+      "prediction": "The chronological order of the first three text instances encountered on the right side of the street is:\n\n1. **\"fame.\"** — This appears on a large billboard at the very beginning of the video, visible at 0:00.\n2. **\"THE DISPLAYERS\"** — This appears on a sign on the left side of the street at 0:00, but since the question asks for the right side, this is not included.\n3. **\"AUTO REPAIR\"** — This appears on a sign on the left side of the street at 0:01, but again, this is",
+      "inference_time_sec": 13.526,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+      "ground_truth": "TURNS [entity_010]",
+      "prediction": "The text on the regulatory traffic sign across from the DAK sign is “NO TURN ON RED.” This sign indicates that drivers are not permitted to make a turn on red light at that intersection.",
+      "inference_time_sec": 6.679,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The driving environment suggested by the storefronts, digital billboards, and commercial signs is a **commercial urban area**.\n\nHere’s why:\n\n- **Storefronts**: The presence of businesses like “Auto Repair,” “Chuck E. Cheese,” and “The Displays” indicates a mix of services and retail, typical of a commercial district.\n- **Digital Billboards**: These are commonly found in high-traffic urban areas to attract attention and promote advertising, suggesting a bustling, media-saturated environment.\n- **Commercial Signs**: Signs for businesses and services are a hallmark of commercial zones, where the focus is on commerce and consumer activity.\n\nTogether",
+      "inference_time_sec": 13.543,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+      "ground_truth": "New York City, New York State",
+      "prediction": "The phone number area code **212** and the text **“N.Y.S. INSPECTION STATION”** strongly suggest **New York City, New York**.\n\n### Breakdown:\n- **Area Code 212**: This is one of the most well-known area codes in the United States, exclusively assigned to **New York City** (specifically Manhattan). It’s famously associated with iconic landmarks like Times Square and the Empire State Building.\n- **“N.Y.S. INSPECTION STATION”**: “N.Y.S.” stands for **New York State**. This indicates the inspection station is located",
+      "inference_time_sec": 13.491,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+      "ground_truth": "0.0s to 0.233s",
+      "prediction": "The digital billboard texts THE, DISPLAYERS, and Snycom are tracked from 0:00 to 0:00.",
+      "inference_time_sec": 5.682,
+      "error": ""
+    }
+  ]
+}

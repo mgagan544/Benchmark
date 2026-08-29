@@ -1,0 +1,70 @@
+{
+  "video_id": 986,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/986.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the address number located relative to the residential house on the right side of the street?",
+      "ground_truth": "On the residential house displaying the address number 149 [entity_001]",
+      "prediction": "The address number is located on the right side of the street, attached to a white post on the sidewalk, adjacent to the residential house. It is positioned at the edge of the sidewalk, near the curb, and is visible from the perspective of the driver's view in the video.",
+      "inference_time_sec": 9.947,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many address signs or house numbers are visible on the residential houses in this clip?",
+      "ground_truth": "1",
+      "prediction": "Based on the given video, there are at least three visible address signs or house numbers on the residential houses. One is on the white house on the right side of the street, another is on the red house further down the street, and a third is on the white house with a green roof, which is also on the right side of the street. These signs are typically located near the front of the houses, making them easily visible to passersby.",
+      "inference_time_sec": 12.148,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order does the vehicle cross the intersection and the address sign come into focus?",
+      "ground_truth": "1st: cross intersection, 2nd: residential house displaying the address number 149 [entity_001] comes into focus",
+      "prediction": "The vehicle crosses the intersection first, and then the address sign comes into focus.",
+      "inference_time_sec": 7.368,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraints or regulatory instructions are written on the signs visible in this clip?",
+      "ground_truth": "None",
+      "prediction": "The signs visible in the clip include a traffic light showing a green signal, indicating that vehicles are permitted to proceed. There is also a sign with a white arrow pointing to the right, which likely indicates a turn or lane direction. Additionally, there is a sign with a white letter 'P' on a blue background, which is universally recognized as a parking sign. These signs provide regulatory instructions for drivers, guiding them on when to proceed, where to turn, and where to park.",
+      "inference_time_sec": 12.44,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of a residential house displaying address number 149, what type of environment is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The presence of a residential house displaying the address number 149 suggests that this environment is a residential neighborhood. The house is typical of suburban or urban residential areas, with a well-maintained lawn and a white picket fence, which are common features in such neighborhoods. The street is lined with parked cars, indicating that it is a residential area where people live and park their vehicles. The overall setting appears to be a quiet, possibly affluent neighborhood, given the well-kept appearance of the houses and the orderly arrangement of the street.",
+      "inference_time_sec": 13.304,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the address number displayed on the residential house?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The address number displayed on the residential house is \"1600.\" This suggests a numerical system where the street name is followed by a number, which is a common format for residential addresses in many urban areas.",
+      "inference_time_sec": 8.978,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what specific time range does the address sign 149 come into focus in the clip?",
+      "ground_truth": "Between 6.4 and 6.8 seconds",
+      "prediction": "The address sign 149 comes into focus at the 8-second mark of the video.",
+      "inference_time_sec": 7.529,
+      "error": ""
+    }
+  ]
+}

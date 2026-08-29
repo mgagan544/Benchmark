@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What lane indicator is visible overhead at 0.0 seconds to the right of the Airport Exit sign?",
       "ground_truth": "EXIT [entity_004] to the right of Airport Exit [entity_002]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.932,
+      "prediction": "The lane indicator is a green sign with white text that reads 'Airport Exit'.",
+      "inference_time_sec": 4.099,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct street, regulatory, or warning text elements are visible in this clip?",
       "ground_truth": "7",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.899,
+      "prediction": "10",
+      "inference_time_sec": 2.566,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of the text elements on the orange warning sign encountered after passing the concrete overpass?",
       "ground_truth": "1st: ROAD [entity_005], 2nd: WORK [entity_006], 3rd: AHEAD [entity_007]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.919,
+      "prediction": "The order of the text elements on the orange warning sign is 'pedestrian crossing' and 'caution'.",
+      "inference_time_sec": 3.631,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint?",
       "ground_truth": "STOP [entity_001]",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.925,
+      "prediction": "The sign held by the construction flagger at 0.0 seconds indicates a stop sign, which is a clear and immediate driving constraint.",
+      "inference_time_sec": 3.902,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the visible signs like Airport Exit and ROAD WORK AHEAD, what kind of driving environment is depicted?",
       "ground_truth": "Highway construction zone",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.974,
+      "prediction": "The video depicts a construction zone with roadwork and traffic control measures in place.",
+      "inference_time_sec": 3.298,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the text on the overhead and warning signs in this clip?",
       "ground_truth": "English",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.943,
+      "prediction": "English",
+      "inference_time_sec": 2.513,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During what time range is the STOP sign held by the construction flagger visible and legible?",
       "ground_truth": "0.0 to 2.633 seconds",
-      "prediction": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      "inference_time_sec": 5.901,
+      "prediction": "The STOP sign is visible and legible throughout the entire video, from the beginning to the end.",
+      "inference_time_sec": 3.696,
       "error": ""
     }
   ]

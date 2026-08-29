@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What street sign text is located beside the price signboard displaying 299, CASH, and 9/10?",
       "ground_truth": "Citrus Ave [entity_008]",
-      "prediction": "The user wants to identify the text on a street sign located near a specific price signboard.\n\n1.  **Locate the price signboard:** I need to find the sign with \"299\", \"CASH\", and \"9/10\". Looking through the frames, specifically around 0.3s and 0.4s, there is a blue sign on the right side of the road, near the building.\n2.  **Examine the sign:** In frame 0.3s and 0.4s, I can see a blue sign with white text. It clearly shows \"",
-      "inference_time_sec": 13.203,
+      "prediction": "Tibbs Ave",
+      "inference_time_sec": 2.529,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct pieces of text visible in the clip are mounted on the white moving truck?",
       "ground_truth": "2",
-      "prediction": "The user wants me to count the distinct pieces of text visible on the white moving truck.\n\n1.  **Identify the truck:** It's the large white box truck in the center lane, ahead of the blue car.\n2.  **Scan for text on the truck:**\n    *   **Top/Back:** There's a large logo/text on the back doors. It says \"BEKINS\".\n    *   **Below \"BEKINS\":** There's smaller text underneath. It looks like \"Movers & Storage\".\n    *   **Side of the truck:** Looking at the side visible in",
-      "inference_time_sec": 12.643,
+      "prediction": "1",
+      "inference_time_sec": 2.294,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the moving truck text, the gas station brand, and the cross street sign are encountered?",
       "ground_truth": "1st: BEKINS [entity_003] and USA [entity_004], 2nd: FLYERS [entity_005], 3rd: Citrus Ave [entity_008]",
-      "prediction": "The user wants me to identify the order of three specific visual elements in the video.\n\n1.  **Moving truck text:** I see a large white truck with \"BEKINS\" written on the back. It's visible right from the start, but becomes clearer as the car moves forward.\n2.  **Gas station brand:** I see a gas station on the right side. The brand \"Rally's\" is visible on the sign.\n3.  **Cross street sign:** I see a blue street sign hanging over the intersection. It says \"Tiburon Ave\".\n\nLet's trace their appearance chronologically",
-      "inference_time_sec": 12.684,
+      "prediction": "moving truck text, gas station brand, cross street sign",
+      "inference_time_sec": 2.974,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What regulatory text visible at the start of the clip indicates a speed restriction on the roadway?",
       "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
-      "prediction": "The user wants to identify a specific regulatory text visible at the beginning of the video clip.\n1.  **Analyze the request:** The user is asking for \"regulatory text\" that indicates a \"speed restriction\". This usually means a speed limit sign.\n2.  **Scan the video frames:** I need to look at the first few seconds of the video, specifically around the 00:00 to 00:01 mark.\n3.  **Locate the sign:** In the first frame (00:00), on the right side of the road, attached to a pole near",
-      "inference_time_sec": 12.699,
+      "prediction": "SPEED LIMIT 35",
+      "inference_time_sec": 2.737,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment does the presence of a gas station, price signboard, and street sign suggest?",
       "ground_truth": "commercial strip",
-      "prediction": "The user wants to identify the type of driving environment based on specific visual cues: a gas station, a price signboard, and a street sign.\n\n1.  **Analyze the visual cues:**\n    *   **Gas Station:** In the first few frames (0.0s - 0.3s), on the right side, there's a building with a blue sign that looks like a gas station logo (possibly \"Shell\" or similar, though partially obscured). There are pumps visible.\n    *   **Price Signboard:** Next to the gas station, there's a blue sign with numbers like \"2",
-      "inference_time_sec": 12.662,
+      "prediction": "Urban",
+      "inference_time_sec": 2.312,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is the visible text on the speed limit sign and street sign written in?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the text on the speed limit sign and street sign.\n\n1.  **Analyze the speed limit sign:**\n    *   I see a white rectangular sign on the right side of the road.\n    *   The text reads \"SPEED LIMIT 35\".\n    *   \"SPEED LIMIT\" and \"35\" are English words and numbers.\n\n2.  **Analyze the street sign:**\n    *   Looking further ahead, there's a blue street sign hanging over the intersection.\n    *   The text is a bit blurry but looks like \"",
-      "inference_time_sec": 12.696,
+      "prediction": "English",
+      "inference_time_sec": 2.302,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During what time range does the price board displaying 299, CASH, and 9/10 become clearly visible as the vehicle approaches the intersection?",
       "ground_truth": "7.1 seconds to 8.333 seconds",
-      "prediction": "The user wants to find the specific time range where a price board with \"299\", \"CASH\", and \"9/10\" is clearly visible.\n\n1.  **Analyze the frames:**\n    *   **00:00 - 00:02:** The vehicle is approaching an intersection. There's a building on the right, but no clear price board is visible yet.\n    *   **00:03:** As the vehicle gets closer to the intersection, a blue sign on the right side of the road becomes visible. It has \"299\" at the",
-      "inference_time_sec": 12.638,
+      "prediction": "0.2 - 0.4 seconds",
+      "inference_time_sec": 2.97,
       "error": ""
     }
   ]

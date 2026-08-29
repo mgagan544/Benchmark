@@ -1,0 +1,70 @@
+{
+  "video_id": 943,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/943.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the Lexington Avenue sign relative to the 2 Avenue sign when they become visible between timestamps 4.433 and 4.500?",
+      "ground_truth": "To the right of 2 Avenue [entity_004]",
+      "prediction": "The Lexington Avenue sign is to the right of the 2 Avenue sign.",
+      "inference_time_sec": 4.792,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many height clearance signs are visible on the right side of the road after the bridge ends between timestamps 8.600 and 8.800?",
+      "ground_truth": "2",
+      "prediction": "There are no height clearance signs visible on the right side of the road after the bridge ends between timestamps 8.600 and 8.800. The right side of the road shows a concrete barrier and some construction equipment, but no height clearance signs are present.",
+      "inference_time_sec": 7.932,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the 12-0 clearance sign and the 15 M P H speed sign are encountered after the bridge ends?",
+      "ground_truth": "1st: 12-0 [entity_007], 2nd: 15 M P H [entity_009]",
+      "prediction": "The 12-0 clearance sign is encountered first, followed by the 15 M P H speed sign.",
+      "inference_time_sec": 5.974,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text indicates a lane closure ahead near the end of the clip at timestamp 9.733, and where is it located?",
+      "ground_truth": "RIGHT [entity_010] LANE [entity_011] CLOSED [entity_012] 500 FT [entity_013] on the right shoulder",
+      "prediction": "The warning text indicating a lane closure ahead is \"RIGHT LANE CLOSED 500 FT\", and it is located on the right side of the road, near the end of the clip at timestamp 9.733.",
+      "inference_time_sec": 7.325,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of overhead lane guidance, exit signs, and clearance signs visible throughout the clip suggest about the type of road?",
+      "ground_truth": "Highway or major urban expressway",
+      "prediction": "The mix of overhead lane guidance, exit signs, and clearance signs visible throughout the clip suggests that this is a **highway or major arterial road**—likely a controlled-access highway or a multi-lane urban expressway.\n\nHere’s why:\n\n1. **Overhead Lane Guidance Signs** (e.g., “2 Avenue LEFT 2 LANES ONLY,” “Lexington Avenue,” “FOR Drive SOUTH”) — These are typical of highways or major roads where traffic is directed through multiple lanes and exits, helping drivers navigate complex interchanges or urban corridors.\n\n2. **Exit Signs** — Indicate upcoming exits, which are standard on highways",
+      "inference_time_sec": 13.514,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street and highway names visible in the clip suggest this is located in New York City?",
+      "ground_truth": "2 Avenue [entity_004], Lexington Avenue [entity_003], and FDR Drive SOUTH [entity_001]",
+      "prediction": "The street and highway names visible in the clip — “Lexington Avenue” and “I-95” — suggest this is located in New York City. Lexington Avenue is a major thoroughfare in Manhattan, and I-95 runs through the city, connecting it to other major metropolitan areas. The combination of these names, along with the urban infrastructure and signage, confirms the location is in New York City.",
+      "inference_time_sec": 9.987,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the overhead exit signs for FDR Drive SOUTH and EXIT ONLY first become legible?",
+      "ground_truth": "3.967",
+      "prediction": "0.2 seconds",
+      "inference_time_sec": 3.895,
+      "error": ""
+    }
+  ]
+}

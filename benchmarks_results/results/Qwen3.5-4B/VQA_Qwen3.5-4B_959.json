@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is visible on the green utility post located to the left of the OUTFRONT media branding?",
       "ground_truth": "West Side [entity_006] way [entity_007] to the left of OUTFRONT [entity_003]",
-      "prediction": "The user wants me to identify text on a specific object.\n1.  **Locate the object:** The user specifies a \"green utility post located to the left of the OUTFRONT media branding\".\n2.  **Find the branding:** In the first few frames (0.0s - 0.2s), there is a large billboard on the right side of the road. The text \"OUTFRONT\" is visible at the bottom of the billboard structure.\n3.  **Locate the post:** To the left of this billboard structure, there is a green utility pole or post.\n4",
-      "inference_time_sec": 13.052,
+      "prediction": "GATE C",
+      "inference_time_sec": 2.386,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are visible on the vehicles in the active roadway lanes?",
       "ground_truth": "6",
-      "prediction": "The user wants me to count distinct text instances on vehicles in the active roadway lanes.\n\n1.  **Analyze the scene:** The video shows a car driving down a city street. There are construction barriers on the left.\n2.  **Identify vehicles:**\n    *   There's a white car on the far left, partially visible.\n    *   There's a red SUV further ahead in the left lane.\n    *   There's a large garbage truck in the right lane.\n    *   There are other vehicles behind the garbage truck (a black SUV, a white van).\n    *",
-      "inference_time_sec": 15.72,
+      "prediction": "1",
+      "inference_time_sec": 2.309,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "In what order does the vehicle encounter the text on the construction fence, the FDNY SUV, and the garbage truck?",
       "ground_truth": "1st: GATE [entity_008], 2nd: FDNY [entity_012], 3rd: DON'T [entity_013] LITTER [entity_014]",
-      "prediction": "The user wants to know the order in which three specific things appear in the video:\n1.  **Text on the construction fence:** I need to look for a fence with writing on it.\n2.  **FDNY SUV:** I need to spot a red SUV with \"FDNY\" on the back.\n3.  **Garbage truck:** I need to see a large white truck, likely a garbage truck.\n\n**Step 1: Analyze the video chronologically.**\n\n*   **00:00 - 00:01:** The car is approaching an intersection. On the left",
-      "inference_time_sec": 12.649,
+      "prediction": "construction fence, FDNY SUV, garbage truck",
+      "inference_time_sec": 2.775,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What warning text is displayed on the rear right side of the silver garbage truck?",
       "ground_truth": "DON'T [entity_013] LITTER [entity_014]",
-      "prediction": "The user wants to identify warning text on the rear right side of a silver garbage truck.\n\n1.  **Locate the garbage truck:** I need to find the silver garbage truck in the video. It appears clearly in the later frames, specifically around 00:40 and 00:41. It's a large truck in the right lane, facing away from the camera.\n2.  **Focus on the rear right side:** I need to look at the back of the truck, specifically the right side (from the viewer's perspective, it's the left side of the truck's rear, but the",
-      "inference_time_sec": 15.606,
+      "prediction": "CAUTION: DO NOT OPEN",
+      "inference_time_sec": 2.686,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of driving environment is suggested by the presence of a construction fence, municipal vehicles, and a large billboard?",
       "ground_truth": "Urban city street",
-      "prediction": "The user wants me to identify the type of driving environment based on specific visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Construction fence:** I see a tall green fence on the left side of the road, with scaffolding and building materials visible behind it. This indicates active construction or development.\n    *   **Municipal vehicles:** In the later frames (00:3 onwards), I see a large white truck that looks like a garbage truck or municipal service vehicle. There are also other trucks ahead.\n    *   **Large billboard:** There is a large billboard",
-      "inference_time_sec": 12.696,
+      "prediction": "Urban environment",
+      "inference_time_sec": 2.348,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which text on the emergency SUV suggests the clip is filmed in New York City?",
       "ground_truth": "FDNY [entity_012]",
-      "prediction": "The user wants to identify specific text on an emergency vehicle that indicates the location is New York City.\n\n1.  **Scan the video for an emergency SUV.**\n    *   At the beginning (00:00 - 00:02), there are vehicles in the distance, but they are too far to read clearly.\n    *   Around 00:03, the camera car gets closer to a line of traffic.\n    *   At 00:04, a red SUV becomes clearly visible in the left lane. It has emergency lights on top.\n    *   At",
-      "inference_time_sec": 12.654,
+      "prediction": "911",
+      "inference_time_sec": 2.379,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During which time range is the billboard text simple ingredients not a lot of sugar visible?",
       "ground_truth": "0.0s to 1.3s",
-      "prediction": "The user wants to find the time range where the billboard text \"simple ingredients, not a lot of sugar\" is visible.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The billboard is clearly visible on the right side. The text \"simple ingredients, not a lot of sugar\" is legible.\n    *   **00:01:** The car is moving forward. The billboard is still visible on the right, though slightly further away. The text is still readable.\n    *   **00:02:** The car has passed the billboard. It",
-      "inference_time_sec": 12.661,
+      "prediction": "0.0 - 0.1 seconds",
+      "inference_time_sec": 2.933,
       "error": ""
     }
   ]

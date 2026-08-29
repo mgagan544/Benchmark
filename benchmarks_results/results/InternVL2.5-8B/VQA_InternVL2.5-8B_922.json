@@ -1,0 +1,70 @@
+{
+  "video_id": 922,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/922.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lane indicator is visible overhead at 0.0 seconds to the right of the Airport Exit sign?",
+      "ground_truth": "EXIT [entity_004] to the right of Airport Exit [entity_002]",
+      "prediction": "The lane indicator visible overhead to the right of the Airport Exit sign reads 'EXIT ONLY' in white text on a green background.",
+      "inference_time_sec": 7.901,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct street, regulatory, or warning text elements are visible in this clip?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct text elements visible in the clip: 'STOP', 'Airport Exit', and 'EXIT ONLY'.",
+      "inference_time_sec": 7.829,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the text elements on the orange warning sign encountered after passing the concrete overpass?",
+      "ground_truth": "1st: ROAD [entity_005], 2nd: WORK [entity_006], 3rd: AHEAD [entity_007]",
+      "prediction": "The order of the text elements on the orange warning sign is 'SLOW', 'SLOW', and 'SLOW'.",
+      "inference_time_sec": 8.297,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the sign held by the construction flagger at 0.0 seconds indicates an immediate driving constraint?",
+      "ground_truth": "STOP [entity_001]",
+      "prediction": "The sign held by the construction flagger at 0.0 seconds has the text 'STOP' in white letters on a red background, indicating an immediate driving constraint.",
+      "inference_time_sec": 8.968,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs like Airport Exit and ROAD WORK AHEAD, what kind of driving environment is depicted?",
+      "ground_truth": "Highway construction zone",
+      "prediction": "The driving environment depicted in the video is a construction zone, specifically an area undergoing road work. This is indicated by the presence of construction barriers, road signs such as 'ROAD WORK AHEAD' and 'Airport Exit', and the presence of construction vehicles like the red dump truck. The environment is likely to be busy with traffic, as evidenced by the multiple vehicles present, and the road is partially obstructed by construction materials and equipment. The driver is required to navigate through this area with caution, as indicated by the stop sign held by the construction worker and the various warning signs.",
+      "inference_time_sec": 13.611,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead and warning signs in this clip?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead and warning signs in the clip is in English. The overhead sign reads 'Airport Exit' and 'Exit Only', and the warning sign says 'Road Work Ahead'.",
+      "inference_time_sec": 8.795,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the STOP sign held by the construction flagger visible and legible?",
+      "ground_truth": "0.0 to 2.633 seconds",
+      "prediction": "The STOP sign held by the construction flagger is visible and legible throughout the entire sequence of the video. It is consistently held by the flagger in the orange safety vest and white hard hat, positioned on the right side of the road, directing traffic. The sign's visibility is not obstructed by any other objects or changes in the environment, and it remains a constant element in the scene as the video progresses.",
+      "inference_time_sec": 11.476,
+      "error": ""
+    }
+  ]
+}

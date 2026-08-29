@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What promotional signs are located directly overhead of the Big K mart storefront?",
       "ground_truth": "NOBODY HAS [entity_012] and MORE PARTY FOR LESS [entity_013] above BIG K [entity_003] mart [entity_010]",
-      "prediction": "The user wants to identify promotional signs located directly above the \"Big K Mart\" storefront.\n\n1.  **Locate the Big K Mart storefront:** I see the large \"BIG K mart\" sign in the center of the building facade.\n2.  **Look directly above it:** Above the \"BIG K mart\" sign, there is a section of the building with large windows.\n3.  **Identify signs in that area:**\n    *   To the left of the Big K Mart sign, there is a large \"Party City\" sign.\n    *   Underneath the \"Party City\" sign,",
-      "inference_time_sec": 15.975,
+      "prediction": "NOW OPEN!",
+      "inference_time_sec": 2.422,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct promotional text instances are associated with the Danice storefront?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the distinct promotional text instances associated with the Danice storefront.\n\n1.  **Identify the Danice storefront:** I need to scan the video to find a store called \"Danice\".\n2.  **Locate the storefront:** Looking at the frames, specifically around 00:04, I see a store on the right side of the frame. The sign says \"Danice\".\n3.  **Identify promotional text:** I need to look for text on the storefront that is promotional in nature (e.g., \"NOW OPEN\", \"SALE\", \"50%",
-      "inference_time_sec": 15.626,
+      "prediction": "2",
+      "inference_time_sec": 2.271,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of the first three storefronts passed by the vehicle starting from 4.8 seconds?",
       "ground_truth": "1st: NAILS [entity_009] Essence [entity_011] SPA [entity_016], 2nd: JIMMY JAZZ [entity_006], 3rd: FALLAS [entity_023]",
-      "prediction": "The user wants to identify the first three storefronts passed by the vehicle starting from the 4.8-second mark.\n\n1.  **Analyze the video:**\n    *   The video starts with a view of a strip mall.\n    *   The camera is inside a car, moving forward.\n    *   At the beginning (00:00 - 00:03), the car is facing a row of stores: Party City, Big K Mart, Payless Kids, Payless Shoesource, Nails Essence, etc.\n    *   The car drives forward and turns right.",
-      "inference_time_sec": 15.615,
+      "prediction": "Payless Kids, Payless Shoesource, Big K Mart",
+      "inference_time_sec": 3.046,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the visible text, are there any explicit driving actions or constraints implied near the storefronts? If none is present, state that.",
       "ground_truth": "None is present",
-      "prediction": "The user is asking about driving actions or constraints based on the text visible in the video. I need to scan the storefronts for any signs related to parking, driving, or traffic rules.\n\n1.  **Scan the storefronts:**\n    *   **Party City:** \"NOBODY HAS MORE PARTY FOR LESS\", \"NOW OPEN!\". No driving instructions.\n    *   **Big K Mart:** Just the logo.\n    *   **Payless Kids:** \"WE MOVED\". No driving instructions.\n    *   **Payless Shoesource:** \"SHOESOURCE\", \"OWN YOUR STYLE\", \"9.",
-      "inference_time_sec": 12.716,
+      "prediction": "No",
+      "inference_time_sec": 2.269,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the density and type of legible storefront text, what kind of driving environment does this clip depict?",
       "ground_truth": "Commercial shopping center parking lot",
-      "prediction": "The user wants me to identify the driving environment based on the storefront text.\n\n1.  **Analyze the text:** I see \"Party City\", \"Big K Mart\", \"Payless Kids\", \"Payless Shoosource\", \"Nails Essence\", \"Nails Express\", \"Jimmy Jazz\", \"Danice\", \"Modell's\".\n2.  **Identify the type of businesses:** These are all retail stores. Specifically, they are discount retailers, party supply stores, shoe stores, nail salons, and clothing stores.\n3.  **Determine the setting:** This collection of businesses is characteristic of",
-      "inference_time_sec": 12.692,
+      "prediction": "Shopping center",
+      "inference_time_sec": 2.313,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language or script is the visible text written in?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language or script of the visible text in the image.\n\n1.  **Analyze the text:** I see several store signs.\n    *   \"Party City\" - English.\n    *   \"BIG K mart\" - English.\n    *   \"Payless Kids\" - English.\n    *   \"Payless SHOESOURCE\" - English.\n    *   \"NAILS Essence\" - English.\n    *   \"NAILS Express\" - English.\n    *   \"JIMMY JAZZ\" - English.\n    *   \"Danice",
-      "inference_time_sec": 12.587,
+      "prediction": "English",
+      "inference_time_sec": 2.29,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "During what time range is the vehicle passing and parallel to the storefront of NAILS Essence SPA?",
       "ground_truth": "4.8 seconds to 6.1 seconds",
-      "prediction": "The user wants to find the specific time range where the vehicle is passing the \"NAILS Essence SPA\" storefront.\n\n1.  **Identify the storefront:** I need to look for a sign that says \"NAILS Essence SPA\".\n2.  **Scan the video:**\n    *   At `00:00`, I see \"Party City\", \"BIG K mart\", \"Payless Kids\", \"Payless SHOESOURCE\", \"NAILS Essence SPA\" (partially visible on the right), and \"NAILS Essence SPA\" again further right. Wait, let's look closer.\n    *",
-      "inference_time_sec": 12.679,
+      "prediction": "0.0 - 0.5 seconds",
+      "inference_time_sec": 2.889,
       "error": ""
     }
   ]

@@ -1,0 +1,70 @@
+{
+  "video_id": 984,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/984.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly above the identifier 91204-MD on the white shredding truck?",
+      "ground_truth": "DRIVERS WANTED [entity_009]",
+      "prediction": "The text located directly above the identifier 91204-MD on the white shredding truck is \"AMERICAN SECURITY SHREDDING.\"",
+      "inference_time_sec": 5.279,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the commercial delivery van branded with GoodMart?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances visible on the commercial delivery van branded with GoodMart. The first is the GoodMart logo, which is a blue circle with a white \"G\" inside, followed by the word \"GOOD\" in white capital letters. The second instance is the phone number \"1-800-882-1979\" displayed in blue text on a white background.",
+      "inference_time_sec": 6.273,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the two delivery van brands are encountered on the right side of the road?",
+      "ground_truth": "1st: GoodMart [entity_012], 2nd: IBC [entity_017]",
+      "prediction": "The two delivery van brands encountered on the right side of the road are the white van with the \"GOO\" logo and the white van with the \"Goodyear\" logo. The white van with the \"GOO\" logo is first seen in the video, followed by the white van with the \"Goodyear\" logo.",
+      "inference_time_sec": 5.822,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text near the intersection indicates a direction restriction for drivers?",
+      "ground_truth": "KEEP [entity_021] RIGHT [entity_022]",
+      "prediction": "The regulatory text near the intersection that indicates a direction restriction for drivers is a yellow traffic sign with a black arrow pointing to the right. This sign is typically used to direct drivers to a specific lane or to indicate a turn or a change in traffic flow.",
+      "inference_time_sec": 5.055,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggest about the driving environment?",
+      "ground_truth": "Busy urban commercial district",
+      "prediction": "The presence of multiple commercial delivery vans, a shredding truck, a taxi, and construction scaffolding suggests that the driving environment is a busy urban area with a mix of commercial and public transportation. The commercial delivery vans indicate a high volume of goods being transported, which is common in urban settings where businesses need to move products quickly. The shredding truck, a service that is often used for recycling or waste management, implies that the area may have a need for such services, possibly due to the presence of construction or industrial activities. The taxi, a common mode of public transportation in urban areas, suggests that the area is accessible and",
+      "inference_time_sec": 8.42,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the shredding truck and delivery vans written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the shredding truck and delivery vans is written in English.",
+      "inference_time_sec": 3.469,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what time range is the GoodMart delivery van text visible before being replaced by the IBC van?",
+      "ground_truth": "0.000 seconds to 5.967 seconds",
+      "prediction": "The GoodMart delivery van text is visible before being replaced by the IBC van. This can be inferred from the video, where the GoodMart van is seen with the text \"GOODMART\" on its side, while the IBC van is shown with the text \"IBC\" on its side. This suggests that the GoodMart van was in the process of being delivered or was already on the road when the IBC van was parked nearby.",
+      "inference_time_sec": 6.977,
+      "error": ""
+    }
+  ]
+}

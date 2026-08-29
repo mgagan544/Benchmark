@@ -1,0 +1,70 @@
+{
+  "video_id": 916,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/916.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the overhead Terminal sign located relative to the delivery truck?",
+      "ground_truth": "To the left of GOLDEN RULE [entity_001] and PRODUCE INC [entity_002]",
+      "prediction": "The overhead Terminal sign is located above the delivery truck, slightly to the right of the truck's position in the frame. It is positioned at the end of the tunnel, indicating the exit or the end of the drop-off area.",
+      "inference_time_sec": 9.295,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this clip are mounted on vehicles?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct text instances mounted on vehicles in this clip. One is on the side of a white truck, and the other is on the side of a white van.",
+      "inference_time_sec": 8.592,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds?",
+      "ground_truth": "1st: Terminal [entity_004], 2nd: BUS [entity_005], 3rd: STOP [entity_006]",
+      "prediction": "Between 2.0 and 5.0 seconds, the legible text instances encountered by the vehicle include \"Terminal\" on a sign at 2.0 seconds, \"Terminal\" on a sign at 3.0 seconds, and \"Terminal\" on a sign at 4.0 seconds.",
+      "inference_time_sec": 10.378,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What road markings indicating driving constraints or lane designations are painted on the road surface just before passing the shuttle van?",
+      "ground_truth": "BUS [entity_005] and STOP [entity_006]",
+      "prediction": "The road markings just before passing the shuttle van include a red line on the left side of the road, which likely indicates a no-passing zone or a lane boundary. There is also a white line on the right side of the road, which could be a lane divider or a parking space boundary. Additionally, there are white dashed lines on the road surface, which typically denote the edge of the road or the boundary of a parking area.",
+      "inference_time_sec": 12.058,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment is suggested by the presence of terminal, bus, and cell phone lot signs?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "The presence of terminal, bus, and cell phone lot signs suggests a driving environment that is likely to be busy and frequented by travelers. These signs indicate that the area is part of a larger transportation hub, possibly an airport or a major transit station, where various services and facilities are available for passengers. The environment is likely to be structured to accommodate a high volume of traffic, with designated areas for different types of vehicles and passengers. The signs also imply that the area is well-organized and that there are specific parking and drop-off zones for different types of vehicles, which is typical of a busy transportation hub.",
+      "inference_time_sec": 14.106,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language are all the legible signs and road markings written?",
+      "ground_truth": "English",
+      "prediction": "The legible signs and road markings in the video are written in English.",
+      "inference_time_sec": 7.324,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the phone number 1-800-497-4972 first become legible on the delivery truck?",
+      "ground_truth": "1.367 seconds",
+      "prediction": "The phone number 1-800-497-4972 first becomes legible on the delivery truck at the beginning of the video.",
+      "inference_time_sec": 8.094,
+      "error": ""
+    }
+  ]
+}

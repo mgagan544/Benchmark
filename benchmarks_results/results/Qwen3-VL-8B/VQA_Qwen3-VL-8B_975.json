@@ -1,0 +1,70 @@
+{
+  "video_id": 975,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/975.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is displayed on the overhead road sign located adjacent to the sign showing 20 AV?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007] adjacent to 20 AV [entity_001]",
+      "prediction": "The text displayed on the overhead road sign adjacent to the sign showing \"20 AV\" is \"Patrons Blvd\".",
+      "inference_time_sec": 5.46,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text visible in the clip are mounted on vehicles?",
+      "ground_truth": "3",
+      "prediction": "1",
+      "inference_time_sec": 3.665,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the ego vehicle encounters the intersection street names and the highway directional signs?",
+      "ground_truth": "1st: 20 AV [entity_001] and Parsons Blvd [entity_002], 2nd: WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The ego vehicle encounters the intersection street names first, followed by the highway directional signs.",
+      "inference_time_sec": 4.887,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional text is displayed on the overhead sign near the traffic lights to guide drivers toward the expressway?",
+      "ground_truth": "WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The directional text displayed on the overhead sign near the traffic lights is “EXIT 10A TO EXPRESSWAY.”",
+      "inference_time_sec": 5.299,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of residential homes, hedges, and apartment buildings suggest about the driving environment?",
+      "ground_truth": "Residential area",
+      "prediction": "The mix of residential homes, hedges, and apartment buildings suggests a **residential neighborhood with a blend of housing types**, likely in an urban or suburban area. Here’s what this combination implies about the driving environment:\n\n1. **Mixed-Use or Transition Zone**: The presence of both single-family homes (residential homes) and apartment buildings indicates a neighborhood that may be transitioning from a more suburban to an urban setting, or simply a diverse residential area where different housing styles coexist.\n\n2. **Lower-Speed, Neighborhood Driving**: The presence of hedges, sidewalks, and pedestrian activity (e.g., a person walking across the street",
+      "inference_time_sec": 13.508,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street names and expressway abbreviations suggest this clip is set in New York City?",
+      "ground_truth": "20 AV [entity_001], Parsons Blvd [entity_002], and WHITESTONE [entity_006] EXPWY [entity_007]",
+      "prediction": "The street names and expressway abbreviations that suggest this clip is set in New York City are:\n\n- **20 Av** (20th Avenue)\n- **Patersons Blvd** (Patersons Boulevard)\n- **I-87** (Interstate 87, also known as the Hudson Palisades Parkway)\n\nThese are all common street and highway names found in New York City, particularly in areas like the Bronx or Westchester County, which are adjacent to NYC. The presence of a bus with “MTA” (Metropolitan Transportation Authority) branding further confirms the location is within the New York City metropolitan",
+      "inference_time_sec": 13.42,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle carrying the license plate GKD-4491 begin to accelerate through the intersection?",
+      "ground_truth": "2.367 seconds",
+      "prediction": "The vehicle carrying the license plate GKD-4491 begins to accelerate through the intersection at 0:01.",
+      "inference_time_sec": 5.574,
+      "error": ""
+    }
+  ]
+}

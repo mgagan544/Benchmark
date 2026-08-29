@@ -1,0 +1,70 @@
+{
+  "video_id": 990,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/990.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the Linden Blvd and JUNIUS street signs relative to the white commuter van?",
+      "ground_truth": "Directly above HAPPY [entity_019] ISLAND [entity_020] SENOR [entity_021] CENTER [entity_022]",
+      "prediction": "The Linden Blvd and JUNIUS street signs are located on the right side of the image, positioned above the Burger King restaurant. The white commuter van is in the left lane, moving towards the camera, and it is positioned behind the car with the license plate \"T679792C.\" The street signs are further ahead on the road, indicating the intersection where Linden Blvd and JUNIUS Street meet.",
+      "inference_time_sec": 8.765,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances belong to street or regulatory signs in this scene?",
+      "ground_truth": "9",
+      "prediction": "In the image, there are several street and regulatory signs visible. Here is a count of the distinct text instances:\n\n1. \"JUNIUS ST\"\n2. \"ONE WAY\"\n3. \"STOP HERE ON RED SIGNAL\"\n4. \"NO STANDING ANYTIME\"\n\nThere are 4 distinct text instances belonging to street or regulatory signs in this scene.",
+      "inference_time_sec": 8.009,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the DRIVE sign, the Linden Plaza sign, and the DO NOT ENTER sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: DRIVE [entity_002], 2nd: Linden Plaza [entity_006], 3rd: DO NOT [entity_017] ENTER [entity_016]",
+      "prediction": "As the vehicle moves forward, the order in which the signs are encountered is:\n\n1. The DRIVE THRU sign for BURGER KING.\n2. The Linden Plaza sign.\n3. The DO NOT ENTER sign.",
+      "inference_time_sec": 6.5,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text constrains movement near the drive-thru lane entrance?",
+      "ground_truth": "DO NOT [entity_017] ENTER [entity_016]",
+      "prediction": "The warning text on the sign near the drive-thru lane entrance reads \"NO STANDING ANYTIME.\" This indicates that vehicles are not allowed to stand in the area at any time, likely to ensure smooth traffic flow and safety for pedestrians and other drivers.",
+      "inference_time_sec": 6.877,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of storefront signs like Burger King and Family Dollar, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The clip depicts an urban or suburban driving environment characterized by commercial activity. The presence of well-known fast-food chains like Burger King and retail stores such as Family Dollar suggests that the area is likely a mixed-use zone with both residential and commercial spaces. The traffic includes a variety of vehicles, indicating a busy street with moderate to heavy traffic flow. The presence of traffic lights and road signs further supports the idea that this is a regulated urban or suburban road where drivers need to be attentive to traffic signals and other vehicles. The overall scene reflects a typical day in a bustling area where people are engaged in daily activities such as shopping and commuting.",
+      "inference_time_sec": 11.05,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the area code in the phone number displayed on the commuter van?",
+      "ground_truth": "New York City",
+      "prediction": "The area code 347 is associated with New York City, specifically the borough of Queens. Therefore, it suggests that the commuter van is likely operating within or near New York City.",
+      "inference_time_sec": 6.102,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range does the Linden Plaza sign remain continuously visible in the clip?",
+      "ground_truth": "0.6s to 1.33s for Linden Plaza [entity_006]",
+      "prediction": "The Linden Plaza sign remains continuously visible throughout the entire clip, from the beginning to the end of the video. It is located on the right side of the street and is clearly visible as the camera moves forward through the intersection.",
+      "inference_time_sec": 6.602,
+      "error": ""
+    }
+  ]
+}

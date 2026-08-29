@@ -1,0 +1,70 @@
+{
+  "video_id": 981,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/981.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What temporary sign is located to the left of the concrete retaining wall on the shoulder beneath the overpass?",
+      "ground_truth": "TRS [entity_009] NOW [entity_010] OPEN [entity_011] to the left of the concrete retaining wall",
+      "prediction": "There is no temporary sign visible to the left of the concrete retaining wall on the shoulder beneath the overpass in the provided video frames. The area appears to be clear of any temporary signage.",
+      "inference_time_sec": 6.542,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct overhead highway signs or route markers are mentioned on the two overpasses?",
+      "ground_truth": "3",
+      "prediction": "There are **two** distinct overhead highway signs or route markers mentioned on the two overpasses:\n\n1. The first overpass has two signs:\n   - One for **I-215 East** to **Henderson**.\n   - One for **I-215 West** to **Las Vegas**.\n\n2. The second overpass has one sign:\n   - A sign indicating **I-215 East** to **Henderson** and **I-215 West** to **Las Vegas**, with a **1/4 mile** distance marker for both directions.\n\nAlthough the second overpass",
+      "inference_time_sec": 13.568,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the SPEED LIMIT sign, the RTC transit sign, and the TRS NOW OPEN sign are encountered by the vehicle?",
+      "ground_truth": "1st: SPEED [entity_001] LIMIT [entity_002], 2nd: RTC [entity_008], 3rd: TRS [entity_009] NOW [entity_010] OPEN [entity_011]",
+      "prediction": "The order in which the vehicle encounters the signs is:\n\n1. **SPEED LIMIT 55** sign — This is seen first on the right side of the highway, near the shoulder.\n2. **RTC transit sign** — This appears next, also on the right side, further down the road.\n3. **TRS NOW OPEN** sign — This is encountered last, still on the right side, further along the highway.\n\nSo, the sequence is: **SPEED LIMIT 55 → RTC transit sign → TRS NOW OPEN**.",
+      "inference_time_sec": 12.267,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed at the beginning of the clip?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002]",
+      "prediction": "The regulatory text that constrains the vehicle's speed at the beginning of the clip is \"SPEED LIMIT 55\".",
+      "inference_time_sec": 5.538,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multi-lane overhead gantries, route markers, and speed limit signs, what kind of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a **highway or freeway**.\n\nHere’s why:\n\n- **Multi-lane overhead gantries**: These are common on freeways to support large, standardized directional and route signs for multiple lanes of traffic.\n- **Route markers (e.g., “I-215 East” and “I-215 West”)**: These are standard for interstate highways and major freeways, indicating direction and route number.\n- **Speed limit signs (e.g., “SPEED LIMIT 55”)**: Freeways and highways have posted speed limits to regulate traffic flow and safety.\n- **Multiple",
+      "inference_time_sec": 13.566,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional cities or destinations are indicated by the overhead highway signs?",
+      "ground_truth": "Henderson [entity_005] and Las Vegas [entity_007]",
+      "prediction": "The overhead highway signs indicate the following regional cities or destinations:\n\n- **Henderson** (to the east)\n- **Las Vegas** (to the west)\n\nThese are both major cities in the Las Vegas Valley region of Nevada, USA. The signs are for **Interstate 215 (I-215)**, which connects these two cities.",
+      "inference_time_sec": 9.332,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the SPEED LIMIT sign first become legible to the vehicle?",
+      "ground_truth": "0.3 seconds",
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.906,
+      "error": ""
+    }
+  ]
+}

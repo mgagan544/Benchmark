@@ -1,0 +1,70 @@
+{
+  "video_id": 961,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/961.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below Sheridan Expwy on the right overhead signboard?",
+      "ground_truth": "RFK Br [entity_005] directly below Sheridan Expwy [entity_004]",
+      "prediction": "The text located directly below \"Sheridan Expwy\" on the right overhead signboard is \"RFK Br\".",
+      "inference_time_sec": 5.315,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the left overhead signboard between 1.833 seconds and 3.967 seconds?",
+      "ground_truth": "5",
+      "prediction": "Between 1.833 seconds and 3.967 seconds, there are four distinct text instances visible on the left overhead signboard:\n\n1. \"Cross Bronx Expwy\"\n2. \"Throgs Neck Br\"\n3. \"G Washington Br\"\n4. \"1/4 MILE\"",
+      "inference_time_sec": 7.604,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs, the yellow warning sign, and the speed limit sign are encountered?",
+      "ground_truth": "1st: overhead signs, 2nd: yellow warning sign, 3rd: SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The order in which the overhead signs, the yellow warning sign, and the speed limit sign are encountered is as follows:\n\n1. **Overhead Signs**: The first set of overhead signs is encountered first.\n2. **Yellow Warning Sign**: The yellow warning sign is encountered next.\n3. **Speed Limit Sign**: The speed limit sign is encountered last.\n\nThis sequence is based on the typical layout of highway signage where overhead signs provide general directions and information, followed by specific warnings or instructions, and finally, the speed limit sign to inform drivers of the legal speed limit.",
+      "inference_time_sec": 10.208,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the left concrete barrier indicates a speed restriction near the end of the clip?",
+      "ground_truth": "SPEED [entity_013] LIMIT [entity_014]",
+      "prediction": "The text on the left concrete barrier indicates a speed limit of 45 mph, as seen in the image.",
+      "inference_time_sec": 5.335,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of multiple overhead guide signs, exit indicators, and highway numbers?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of multiple overhead guide signs, exit indicators, and highway numbers suggests that the road environment is a multi-lane highway or expressway. These features are typically found on major roads designed to handle high volumes of traffic efficiently. The signs provide directions for drivers to navigate to different exits and destinations, indicating that this is likely a well-maintained and organized roadway system, possibly in an urban or suburban area where such infrastructure is common.",
+      "inference_time_sec": 8.829,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific bridge names visible on the overhead signs suggest this clip is filmed in the New York City region?",
+      "ground_truth": "Throgs Neck Br [entity_008], G Washington Br [entity_009], RFK Br [entity_005]",
+      "prediction": "The specific bridge names visible on the overhead signs that suggest this clip is filmed in the New York City region are \"Cross Bronx Expwy,\" \"Throgs Neck Br,\" and \"G Washington Br.\" These bridges are located in the Bronx, which is one of the five boroughs of New York City. The presence of these bridges indicates that the video was likely taken on a highway system within or near the New York City area.",
+      "inference_time_sec": 8.833,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During what specific time range do the overhead green guide signs remain continuously visible in the clip?",
+      "ground_truth": "1.833 seconds to 3.967 seconds",
+      "prediction": "The overhead green guide signs remain continuously visible throughout the entire duration of the video clip, from the beginning to the end.",
+      "inference_time_sec": 5.332,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 974,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/974.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What landmark is located to the left of the yellow directional sign pointing to Terminal C?",
+      "ground_truth": "Hilton [entity_003] to the left of Terminal [entity_004] C",
+      "prediction": "The landmark located to the left of the yellow directional sign pointing to Terminal C appears to be a large industrial or commercial building with a distinctive cylindrical structure, which could be part of a factory or a similar facility. The exact name or purpose of this building cannot be determined from the image alone, but it is clearly visible and stands out due to its size and shape.",
+      "inference_time_sec": 9.356,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct destinations are listed to the right of the Food and Gas signs?",
+      "ground_truth": "4",
+      "prediction": "To determine how many distinct destinations are listed to the right of the \"Food & Gas\" signs, let's analyze the image:\n\n1. The first sign reads \"Food & Gas\" with an arrow pointing to the right.\n2. To the right of this sign, there is another sign that lists several destinations:\n   - Newark Airport\n   - Terminal A\n   - Terminal B\n   - Terminal C\n\nThese are all distinct destinations listed under the \"Food & Gas\" sign.\n\nTherefore, there are 4 distinct destinations listed to the right of the \"Food & Gas\" signs.",
+      "inference_time_sec": 12.281,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the Hilton hotel, the Terminal C sign, and the Clellan street exit sign are encountered by the vehicle?",
+      "ground_truth": "1st: Hilton [entity_003], 2nd: Terminal [entity_004] C, 3rd: Clellan [entity_007]",
+      "prediction": "The vehicle encounters the signs in the following order:\n\n1. The Hilton hotel is on the left side of the highway.\n2. The Terminal C sign is further ahead on the right side of the highway.\n3. The Clellan Street exit sign is also on the right side of the highway, but it is closer to the viewer than the Terminal C sign.\n\nSo, the order is: Hilton hotel, Terminal C sign, Clellan street exit sign.",
+      "inference_time_sec": 10.515,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instruction is given to drivers on the overhead green gantry signs directing to Newark Airport?",
+      "ground_truth": "USE BOTH LANES [entity_011]",
+      "prediction": "The overhead green gantry signs direct drivers to Newark Airport with the following instructions:\n\n- **Terminals A, B, C**: Use the left lanes.\n- **Economy Parking**: Use the right lane.\n- **Value Parking**: Use the right lane.\n\nThese signs help drivers navigate to their desired destination efficiently by indicating which lanes to use for different purposes at Newark Airport.",
+      "inference_time_sec": 9.284,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by signs for airport terminals, parking, and rental car returns?",
+      "ground_truth": "Airport access highway",
+      "prediction": "The presence of signs for airport terminals (A, B, C), parking, and rental car returns suggests that the driving environment is near an airport. The signs indicate that the driver is likely on a highway or major road leading to or from the airport. This area typically has multiple lanes, clear signage, and infrastructure designed to facilitate the flow of traffic to and from the airport, including parking facilities and rental car services. The signs also suggest that there might be a significant number of vehicles in the vicinity, as these services cater to a large volume of travelers.",
+      "inference_time_sec": 11.833,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific airport is indicated by the overhead green directional signs?",
+      "ground_truth": "Newark Airport [entity_012]",
+      "prediction": "The overhead green directional signs indicate Newark Airport. The signs specify \"Terminals A, B, C\" and \"Newark Airport,\" along with directions for Economy Parking and Valet Parking.",
+      "inference_time_sec": 6.713,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "Between what timestamps is the yellow directional sign for Terminal C visible to the driver?",
+      "ground_truth": "2.3 seconds to 3.433 seconds",
+      "prediction": "The yellow directional sign for Terminal C is visible to the driver between approximately 0:00 and 0:15 in the video. This can be inferred from the sequence of frames where the sign is clearly visible on the right side of the road, indicating the direction to Terminal C.",
+      "inference_time_sec": 7.371,
+      "error": ""
+    }
+  ]
+}

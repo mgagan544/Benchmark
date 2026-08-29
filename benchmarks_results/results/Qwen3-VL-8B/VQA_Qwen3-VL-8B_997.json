@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "To the right of the marked zebra crossing as the vehicle approaches the junction, there is a **bus**. The bus is visible ahead of the car, and it appears to be turning or navigating the junction. The zebra crossing is marked with white stripes, and the bus is positioned to the right of this crossing as the vehicle approaches.",
+      "inference_time_sec": 10.25,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "Two",
+      "inference_time_sec": 3.626,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "After passing the signboard with the number 9999, the vehicle encounters a large billboard on the far left. This billboard features an image of a palm tree and some text, which is likely an advertisement or informational sign. The presence of palm trees and the overall setting suggest a warm, possibly tropical or subtropical location. The billboard is a prominent landmark in this part of the journey, standing out against the backdrop of the road and surrounding greenery.",
+      "inference_time_sec": 12.696,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "No, there are no explicit driving actions or constraints implied by the visible text on the signboard. The signboard displays “9999,” which appears to be a numerical sequence without any contextual or regulatory meaning related to driving. It does not indicate speed limits, traffic rules, or any other driving-related instructions. The number may be part of an advertisement, a placeholder, or unrelated to traffic regulations. Therefore, no driving actions or constraints can be inferred from it.",
+      "inference_time_sec": 12.9,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road, a gas station, and a signboard suggests that the driving environment is urban or suburban, with infrastructure designed to accommodate moderate to heavy traffic flow. The multi-lane curved road indicates a well-developed roadway system, likely in a city or town where traffic volume requires multiple lanes and curves to manage flow efficiently. The gas station implies that the area is accessible and supports daily commuting or travel needs, as drivers can refuel along their route. The signboard, which appears to be in Hebrew, further suggests that this is a location in Israel, where road signs are typically in Hebrew and often",
+      "inference_time_sec": 13.436,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The text on the signboard on the right is written in Hebrew script. The sign also includes the number \"99\" and some other symbols or text, but the primary script used is Hebrew.",
+      "inference_time_sec": 6.595,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard 9999 first becomes visible at 0:00 and is passed by the ego vehicle at 0:02.",
+      "inference_time_sec": 5.915,
+      "error": ""
+    }
+  ]
+}

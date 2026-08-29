@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the text New Jersey relative to the G W Bridge text?",
       "ground_truth": "Below G W Bridge [entity_003]",
-      "prediction": "The user wants to know the spatial relationship between the text \"New Jersey\" and \"G W Bridge\".\n\n1.  **Identify the relevant text:** I need to find \"New Jersey\" and \"G W Bridge\" in the image.\n2.  **Locate \"G W Bridge\":** Looking at the signs, I see \"G W Bridge\" on the left sign (top left) and the right sign (top right).\n    *   Left sign: \"95 SOUTH G W Bridge New Jersey\"\n    *   Right sign: \"95 SOUTH G W Bridge New Jersey\"\n3.",
-      "inference_time_sec": 12.744,
+      "prediction": "below",
+      "inference_time_sec": 2.259,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are displayed on the overhead gantry signs in this clip?",
       "ground_truth": "9",
-      "prediction": "The user wants me to count the distinct text instances on the overhead gantry signs.\n\n1.  **Identify the signs:** I see three main green overhead signs hanging from a gantry.\n    *   Left sign: \"ALL TRUCKS TO N.J.\", \"95 SOUTH\", \"G W Bridge\", \"New Jersey\", \"LOWER LEVEL\".\n    *   Middle sign: \"95 NORTH\", \"Cr Bronx Expy\", \"W 178 St\".\n    *   Right sign: \"NO TRUCKS\", \"95 SOUTH\", \"G W Bridge\", \"New Jersey\", \"",
-      "inference_time_sec": 15.639,
+      "prediction": "3",
+      "inference_time_sec": 2.163,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of visibility for the texts NORTH and New Jersey as the vehicle drives?",
       "ground_truth": "1st: NORTH [entity_002]; 2nd: New Jersey [entity_008]",
-      "prediction": "The user wants to know the order in which the texts \"NORTH\" and \"New Jersey\" become visible as the vehicle moves forward.\n\n1.  **Analyze the first frame (00:00):**\n    *   I see three main green highway signs overhead.\n    *   Left sign: \"95 SOUTH\", \"G W Bridge\", \"New Jersey\".\n    *   Middle sign: \"95 NORTH\", \"Cr Bronx Expy\", \"W 178 St\".\n    *   Right sign: \"95 SOUTH\", \"G W Bridge\", \"New Jersey\".",
-      "inference_time_sec": 12.664,
+      "prediction": "NORTH, New Jersey",
+      "inference_time_sec": 2.471,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What specific text on the overhead gantry indicates driving restrictions or instructions for trucks?",
       "ground_truth": "NO TRUCKS [entity_006] and ALL TRUCKS TO NJ [entity_007]",
-      "prediction": "The user wants to identify specific text on the overhead gantry related to truck restrictions.\n\n1.  **Analyze the images:** I need to look at the overhead signs in the provided video frames.\n2.  **Locate the relevant sign:** In the first frame (00:00), there are three main green signs.\n    *   The leftmost sign says \"ALL TRUCKS TO N.J.\" at the very top.\n    *   The middle sign says \"95 NORTH Cr Bronx Expy W 178 St\".\n    *   The rightmost sign says \"NO TR",
-      "inference_time_sec": 12.635,
+      "prediction": "ALL TRUCKS TO N.J.",
+      "inference_time_sec": 3.093,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the density and type of overhead text suggest about the driving environment?",
       "ground_truth": "Highway through-route",
-      "prediction": "The user wants me to interpret the driving environment based on the overhead signs.\n\n1.  **Analyze the signs:**\n    *   **Sign 1 (Left):** \"ALL TRUCKS TO N.J. G W Bridge New Jersey\". This indicates a specific lane restriction or a major route for trucks heading to New Jersey.\n    *   **Sign 2 (Center):** \"95 NORTH Cr Bronx Expy W 178 St\". This is a standard interstate highway sign (I-95 North) pointing towards the Bronx Expressway and West 178th Street.\n    *   **",
-      "inference_time_sec": 12.669,
+      "prediction": "Highway",
+      "inference_time_sec": 2.447,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which metropolitan area is suggested by the visible overhead signs, and what text supports this?",
       "ground_truth": "New York metropolitan area, supported by Cr Bronx Expy [entity_004] and New Jersey [entity_008]",
-      "prediction": "The user wants me to identify the metropolitan area based on the overhead signs in the video.\n\n1.  **Analyze the signs:** I need to look closely at the green highway signs visible in the first few frames.\n    *   **Left Sign:** It says \"95 SOUTH\", \"G W Bridge\", \"New Jersey\". It also has a yellow strip at the bottom.\n    *   **Middle Sign:** It says \"95 NORTH\", \"Cr Bronx Expy\", \"W 178 St\".\n    *   **Right Sign:** It says \"95 SOUTH\", \"G W Bridge\",",
-      "inference_time_sec": 12.635,
+      "prediction": "New York City, indicated by the \"Cr Bronx Expy\" and \"G W Bridge\" signs.",
+      "inference_time_sec": 3.875,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp do the texts New Jersey, LOWER LEVEL, NO TRUCKS, and ALL TRUCKS TO NJ first become legible?",
       "ground_truth": "0.033s",
-      "prediction": "The user wants to find the timestamp where specific text becomes legible.\nThe text elements are:\n1.  \"New Jersey\"\n2.  \"LOWER LEVEL\"\n3.  \"NO TRUCKS\"\n4.  \"ALL TRUCKS TO NJ\"\n\nLet's look at the frames.\n-   **00:00**: The image is very clear.\n    -   Left sign: \"ALL TRUCKS TO NJ\" is visible at the top. \"95 SOUTH\", \"G W Bridge\", \"New Jersey\" are visible below.\n    -   Middle sign:",
-      "inference_time_sec": 12.65,
+      "prediction": "0.0",
+      "inference_time_sec": 2.592,
       "error": ""
     }
   ]

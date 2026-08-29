@@ -1,0 +1,70 @@
+{
+  "video_id": 934,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/934.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is located to the left of the pavement marking 'ONLY' as the vehicle moves forward?",
+      "ground_truth": "A prominent chain-link fence to the left of 'ONLY' [entity_001]",
+      "prediction": "To the left of the pavement marking 'ONLY', there is a parked vehicle with its brake lights on.",
+      "inference_time_sec": 3.706,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many pavement markings with legible text are visible in the lane after the vehicle completes its left turn?",
+      "ground_truth": "1",
+      "prediction": "There are two pavement markings with legible text visible in the lane after the vehicle completes its left turn. One is 'ONLY' indicating a lane dedicated to a specific direction, and the other is 'ONLY' on the right side of the lane, suggesting a right-turn-only lane.",
+      "inference_time_sec": 5.363,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the legible text instances encountered on the road surface during the clip?",
+      "ground_truth": "1st: 'ONLY' [entity_001]",
+      "prediction": "The legible text encountered on the road surface in chronological order is 'ONLY', 'ONLY', and 'ONLY'.",
+      "inference_time_sec": 3.749,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What instructional text is painted on the lane surface to guide the driver's lane choice after turning?",
+      "ground_truth": "'ONLY' [entity_001]",
+      "prediction": "The instructional text painted on the lane surface is 'ONLY', instructing the driver to choose the lane that is intended for turning.",
+      "inference_time_sec": 3.919,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggest about the driving environment?",
+      "ground_truth": "Residential or urban fringe area",
+      "prediction": "The presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggests that the driving environment is urban and possibly cold. The snow indicates winter conditions, while the parked vehicles and fence suggest a developed area with infrastructure. The open space could be a park or a public area, which is common in urban settings. The combination of these elements creates a scene that is typical of a city during the winter months.",
+      "inference_time_sec": 6.647,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the pavement marking 'ONLY' written in?",
+      "ground_truth": "English",
+      "prediction": "The pavement marking 'ONLY' is written in both English and Spanish, as 'NÚCLEA ÚNICA' in Spanish.",
+      "inference_time_sec": 4.1,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the pavement marking 'ONLY' first become visible in the clip?",
+      "ground_truth": "00:05",
+      "prediction": "The pavement marking 'ONLY' first becomes visible in the first frame of the video, as the traffic light turns red and the vehicle comes to a stop at the intersection.",
+      "inference_time_sec": 4.275,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 962,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/962.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located to the right of the ONLY lane marking?",
+      "ground_truth": "LINK-SHUT [entity_010] to the right of ONLY [entity_009]",
+      "prediction": "To the right of the ONLY lane marking, there is a sign that reads \"PARKING ONLY.\"",
+      "inference_time_sec": 6.017,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many vehicle-mounted text instances are visible in this clip?",
+      "ground_truth": "2",
+      "prediction": "There are two instances of vehicle-mounted text visible in this clip.",
+      "inference_time_sec": 5.281,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of encounter for the text instances AHEAD, SCHOOL, and Hampton Inv between 3.767s and 4.433s?",
+      "ground_truth": "1st: AHEAD [entity_011], 2nd: SCHOOL [entity_012], 3rd: Hampton Inv [entity_013]",
+      "prediction": "The order of encounter for the text instances AHEAD, SCHOOL, and Hampton Inv between 3.767s and 4.433s is AHEAD, SCHOOL, and Hampton Inv.",
+      "inference_time_sec": 7.748,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text indicating a driving constraint is visible between the Starbucks Coffee storefront and the Diner outlet?",
+      "ground_truth": "ONE WAY [entity_020]",
+      "prediction": "The regulatory text indicating a driving constraint visible between the Starbucks Coffee storefront and the Diner outlet is \"SCHOOL ZONE.\"",
+      "inference_time_sec": 6.62,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of environment does the high density of storefronts and business signs suggest?",
+      "ground_truth": "commercial district",
+      "prediction": "The high density of storefronts and business signs suggests a commercial environment, likely a downtown area of a city where businesses are concentrated. The presence of a variety of signs, including one that reads \"PARKING,\" indicates that this is a place where people come to shop, work, or dine, and parking is a necessary amenity for these activities. The variety of businesses, from what appears to be a restaurant to a store with a large sign, implies a diverse commercial district catering to a wide range of needs and interests.",
+      "inference_time_sec": 12.337,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the text on the storefronts and street signs written in?",
+      "ground_truth": "English",
+      "prediction": "The text on the storefronts and street signs is written in English.",
+      "inference_time_sec": 5.257,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the ONLY lane marking visible in the clip?",
+      "ground_truth": "0.6s to 1.333s",
+      "prediction": "The ONLY lane marking is visible in the clip during the daytime.",
+      "inference_time_sec": 5.378,
+      "error": ""
+    }
+  ]
+}

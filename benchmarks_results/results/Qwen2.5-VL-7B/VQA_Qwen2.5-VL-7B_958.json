@@ -1,0 +1,70 @@
+{
+  "video_id": 958,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/958.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What parking sign text is located to the left of the license registration AT * 665J?",
+      "ground_truth": "PARK [entity_004] to the left of AT * 665J [entity_006]",
+      "prediction": "The parking sign text located to the left of the license registration \"AT * 665J\" reads \"PARK\".",
+      "inference_time_sec": 5.538,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are located on the automotive service building on the left side of the street?",
+      "ground_truth": "6",
+      "prediction": "There are three distinct text instances on the automotive service building on the left side of the street:\n\n1. \"AUTO REPAIR\"\n2. \"INSPECTION STATION\"\n3. \"CHECK ENGINE\"",
+      "inference_time_sec": 6.313,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the first three text instances encountered on the right side of the street?",
+      "ground_truth": "1st: THE [entity_001], 2nd: DISPLAYERS [entity_002], 3rd: Snycom [entity_003]",
+      "prediction": "The chronological order of the first three text instances encountered on the right side of the street, from top to bottom, is:\n\n1. \"fame\"\n2. \"UNTIL MAY 17, 2023\"\n3. \"PARK\" (on a sign)",
+      "inference_time_sec": 7.231,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on a regulatory traffic sign indicates a driving constraint or instruction across from the DAK sign?",
+      "ground_truth": "TURNS [entity_010]",
+      "prediction": "The regulatory traffic sign across from the \"DAK\" sign appears to have the text \"NO TURN ON RED.\" This sign indicates that vehicles are not allowed to make a turn when the traffic light is red.",
+      "inference_time_sec": 6.591,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the storefronts, digital billboards, and commercial signs?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The image suggests an urban driving environment. The presence of storefronts, digital billboards, and commercial signs indicates that this is likely a downtown or city center area where businesses are concentrated. The tall buildings and modern architecture further support this, as they are typical features of a bustling urban setting. The street appears to be relatively empty, which could suggest it was taken during a time of low traffic, possibly early in the morning or late at night.",
+      "inference_time_sec": 9.04,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which state and city are suggested by the phone number area code and inspection sign text?",
+      "ground_truth": "New York City, New York State",
+      "prediction": "The phone number area code in the image is \"717,\" which corresponds to Pennsylvania (PA). The inspection sign text mentions \"N.Y.S. INSPECTION STATION,\" indicating that this is likely in New York State (NY), but the presence of the 717 area code suggests it's in Pennsylvania. Therefore, the most accurate suggestion based on the given information would be that the location is in Pennsylvania, possibly near the border with New York.",
+      "inference_time_sec": 9.323,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range are the digital billboard texts THE, DISPLAYERS, and Snycom tracked at the start of the clip?",
+      "ground_truth": "0.0s to 0.233s",
+      "prediction": "The digital billboard texts \"THE,\" \"DISPLAYERS,\" and \"Snycom\" are tracked from 10:30 AM to 12:30 PM at the start of the clip.",
+      "inference_time_sec": 6.442,
+      "error": ""
+    }
+  ]
+}

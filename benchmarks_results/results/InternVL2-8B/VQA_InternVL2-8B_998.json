@@ -1,0 +1,70 @@
+{
+  "video_id": 998,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/998.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Which restaurant is located to the right of the BARBERSHOP on the left side of the street?",
+      "ground_truth": "DELI MEXICAN FOOD [entity_003]",
+      "prediction": "The restaurant located to the right of the BARBERSHOP on the left side of the street is the 'Merry' restaurant.",
+      "inference_time_sec": 8.153,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are mentioned on the grey vehicles in the traffic lane?",
+      "ground_truth": "2",
+      "prediction": "Based on the video, there are two distinct license plates mentioned on the grey vehicles in the traffic lane. One is a black license plate with white text, and the other is a white license plate with black text.",
+      "inference_time_sec": 9.194,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the license plates HJG-2334 and FHN-9486 are encountered or approached by the camera vehicle?",
+      "ground_truth": "1st: HJG-2334 [entity_004], 2nd: FHN-9486 [entity_009]",
+      "prediction": "The license plate HJG-2334 is first encountered as the camera vehicle approaches the intersection, and it is visible on the rear of a black sedan. The license plate FHN-9486 is then seen on the rear of a silver sedan that is in front of the black sedan with the HJG-2334 license plate.",
+      "inference_time_sec": 10.901,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a driving hazard, speed limit, or regulatory constraint?",
+      "ground_truth": "None is present",
+      "prediction": "Yes, there is a visible text in the clip that indicates a regulatory constraint. The sign with the number '30' is a speed limit sign, indicating that the speed limit in this area is 30 miles per hour. This is a common regulatory constraint in urban areas to ensure safety and manage traffic flow.",
+      "inference_time_sec": 10.272,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of storefronts, a gas station, and a car wash?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The presence of storefronts, a gas station, and a car wash suggests a commercial and possibly residential driving environment. These establishments are typically found in areas with a mix of commercial and residential use, indicating that the area is likely a busy urban or suburban neighborhood where people live, work, and visit for various services. The variety of businesses also implies that the area is well-served and frequented by a diverse population.",
+      "inference_time_sec": 11.809,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional area code is shared by the phone numbers visible on the storefronts in this scene?",
+      "ground_truth": "718",
+      "prediction": "The phone numbers visible on the storefronts in the scene are 718 and 718-1. These numbers suggest that the area code shared by the phone numbers is 718.",
+      "inference_time_sec": 8.792,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the car wash facility displaying the CAR and WASH signs first become clearer on the right?",
+      "ground_truth": "4.967 seconds",
+      "prediction": "The car wash facility displaying the CAR and WASH signs first becomes clearer on the right at the timestamp of 00:00:00.",
+      "inference_time_sec": 8.158,
+      "error": ""
+    }
+  ]
+}

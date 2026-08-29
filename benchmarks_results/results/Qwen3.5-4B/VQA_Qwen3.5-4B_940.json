@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What signs are located directly adjacent to the parking area on the right side of the driving lane?",
       "ground_truth": "Danice [entity_006] and MODELL'S [entity_001] SPORTING [entity_002] GOODS [entity_003]",
-      "prediction": "The user wants to identify signs located on the right side of the driving lane, adjacent to the parking area.\n\n1.  **Analyze the scene:** The video shows a view from inside a car driving through a strip mall parking lot.\n2.  **Identify the \"right side\":** Looking at the video, the car is driving forward. To the right of the driving lane, there is a row of parked cars and then the storefronts.\n3.  **Locate signs:** I need to look at the storefronts on the right side.\n    *   There's a sign for \"FALL",
-      "inference_time_sec": 12.952,
+      "prediction": "Danice",
+      "inference_time_sec": 2.349,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct pieces of text belong to storefront signs or banners on the left side of the driving lane?",
       "ground_truth": "6",
-      "prediction": "The user wants me to count distinct pieces of text on storefront signs or banners on the left side of the driving lane.\n\n1.  **Identify the left side:** The camera is in a car driving through a parking lot. The left side is the row of stores closest to the camera on the left.\n2.  **Scan for signs/banners:** I need to look at the storefronts on the left.\n    *   **Store 1 (Leftmost visible):** There's a sign that says \"THE HOME DEPOT\". Wait, looking closer at the first few frames (0.0s - 0",
-      "inference_time_sec": 12.628,
+      "prediction": "3",
+      "inference_time_sec": 2.262,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the storefront of FALLAS and the signs for Danice are first encountered by the camera vehicle?",
       "ground_truth": "1st: Danice [entity_006], 2nd: FALLAS [entity_004]",
-      "prediction": "The user wants to know the order in which two specific storefronts/signs are seen by the camera vehicle.\n\n1.  **Identify the storefronts:**\n    *   **FALLAS:** I see a sign that says \"FALLAS\" in red letters on a beige background. It's located towards the center-right of the initial view.\n    *   **Danice:** I see a sign that says \"Danice\" in white letters on a red background. It's located to the right of the FALLAS sign.\n\n2.  **Analyze the video timeline:**\n    *   **0",
-      "inference_time_sec": 12.651,
+      "prediction": "FALLAS, Danice",
+      "inference_time_sec": 2.604,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What explicit driving action is implied by the painted road marking adjacent to the concrete sidewalk on the left?",
       "ground_truth": "Stop",
-      "prediction": "The user wants to identify a specific driving action based on a road marking.\n\n1.  **Analyze the video:** I need to look at the left side of the video, specifically near the sidewalk.\n2.  **Locate the marking:** In the first few frames (00:00 - 00:02), as the car moves forward, I can see a white painted marking on the asphalt next to the curb/sidewalk area.\n3.  **Identify the marking:** The marking clearly says \"STOP\". It is painted in large white letters.\n4.  **Inter",
-      "inference_time_sec": 12.681,
+      "prediction": "STOP",
+      "inference_time_sec": 2.26,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the storefront signs and parking area visible throughout the clip, what type of driving environment is depicted?",
       "ground_truth": "Commercial strip mall",
-      "prediction": "The user wants me to identify the type of driving environment shown in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Storefronts:** I see signs for \"The Home Depot\", \"Fallas\", \"Danice\", and \"Modell's Sporting Goods\". These are all retail stores.\n    *   **Parking Area:** There are rows of parked cars. The cars are parked in designated spots.\n    *   **Road Markings:** There are painted lines on the asphalt, including \"STOP\" and directional arrows.\n    *   **Perspective:** The view is from inside",
-      "inference_time_sec": 12.713,
+      "prediction": "Shopping center parking lot",
+      "inference_time_sec": 2.41,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the storefront signs and promotional banners visible in this clip?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the text on the storefront signs and banners in the video.\n\n1.  **Analyze the video:** I'll scan the video frames to read the text on the signs.\n    *   **Frame 0.0s - 0.1s:**\n        *   Left side: \"THE HOME DEPOT\" (blue text).\n        *   Center: \"FALLAS\" (red text).\n        *   Right side: \"Danice\" (red text), \"MODELL'S SPORTING GOODS\" (red text).\n    *   **Frame",
-      "inference_time_sec": 12.671,
+      "prediction": "English",
+      "inference_time_sec": 2.271,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range does the camera vehicle approach the storefront windows of FALLAS showing promotional text?",
       "ground_truth": "5.233s to 5.6s",
-      "prediction": "The user wants to identify the time range where the camera vehicle approaches the storefront windows of a store named \"FALLAS\" which has promotional text.\n\n1.  **Analyze the video:** I'll scan through the frames to locate the \"FALLAS\" store and its promotional text.\n2.  **Locate \"FALLAS\":**\n    *   At 00:00, I see \"FALLAS\" on the building in the distance. There's a yellow sign below it that says \"School Uniforms\".\n    *   At 00:01, the car is",
-      "inference_time_sec": 12.657,
+      "prediction": "0.0s - 0.5s",
+      "inference_time_sec": 2.97,
       "error": ""
     }
   ]

@@ -1,0 +1,70 @@
+{
+  "video_id": 955,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/955.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly below the word OVER on the weight limit sign to the left of Waterside Plaza?",
+      "ground_truth": "VEHICLES [entity_002]",
+      "prediction": "The text located directly below the word OVER on the weight limit sign to the left of Waterside Plaza is '2000 LBS'.",
+      "inference_time_sec": 4.291,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 1.500 and 3.000 seconds?",
+      "ground_truth": "4",
+      "prediction": "Between 1.500 and 3.000 seconds, there are three distinct, legible text instances encountered by the vehicle. The texts are 'EXIT 9', 'E 34 St', and 'Midtown Tun'.",
+      "inference_time_sec": 5.317,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the signs encountered by the vehicle between 3.500 and 4.500 seconds?",
+      "ground_truth": "1st: E 25 ST [entity_005], 2nd: E 34 ST [entity_006] FERRY [entity_007] HELIPORT [entity_009] LANDING [entity_008], 3rd: ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "Between 3.500 and 4.500 seconds, the vehicle first encounters a sign indicating 'Vehicles over 6000 lbs' and then a 'Vehicles over 8000 lbs' sign.",
+      "inference_time_sec": 5.115,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the orange construction sign passed at 4.367 seconds?",
+      "ground_truth": "ROAD [entity_010] WORK [entity_011] 1MILE [entity_012]",
+      "prediction": "The orange construction sign displayed the text 'CAUTION - SLOW DOWN - ON YOUR KEEP.' This warning is intended to caution drivers to reduce their speed and be cautious while driving through the construction area. The sign is a standard warning used in road construction to ensure the safety of both drivers and pedestrians.",
+      "inference_time_sec": 6.145,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of multiple exit signs, route markers, and overpasses, what driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted in the video is a busy urban area with multiple exits and overpasses. The presence of exit signs indicating directions to various locations such as 'E 42 St' and 'E 34 St' suggests that the highway is part of a larger network of roads that provide access to different parts of the city. The overpasses and the directional signs indicate that the highway is designed to facilitate traffic flow between different areas of the city, with exits leading to various destinations. The urban setting is further suggested by the tall buildings and the density of traffic, which is typical of a city environment.",
+      "inference_time_sec": 9.677,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street names and route markers suggest this clip is filmed in New York City?",
+      "ground_truth": "E 25 ST [entity_005], E 34 ST [entity_006], E 42 ST [entity_017], 495 [entity_016]",
+      "prediction": "The street names and route markers that suggest this clip is filmed in New York City include 'E 42 St' and 'W 42 St' visible on the green highway signs, indicating the route to Midtown Manhattan. Additionally, the presence of the 'Vehicles Over 6000 LBS' bridge, which is a notable feature in New York City's infrastructure, further supports the location being within the city.",
+      "inference_time_sec": 7.402,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the weight-limit sign containing the text 8000 Lbs first appear in view?",
+      "ground_truth": "2.633 seconds, as 8000 Lbs [entity_004] becomes visible.",
+      "prediction": "The weight-limit sign containing the text 8000 Lbs first appears in view at the timestamp 2:43 in the video.",
+      "inference_time_sec": 4.021,
+      "error": ""
+    }
+  ]
+}

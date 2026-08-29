@@ -1,0 +1,70 @@
+{
+  "video_id": 915,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/915.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
+      "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
+      "prediction": "The text located directly to the right of the ARROWHEAD brand on the red delivery truck reads \"1-800-ARROWHEAD.\"",
+      "inference_time_sec": 4.831,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
+      "ground_truth": "5",
+      "prediction": "There are three distinct text instances visible on delivery trucks in the video. One truck has the text \"Codwall\" on its side, another has \"Arrowhead direct\" written on its side, and the third truck has \"Codwall\" written on its side as well.",
+      "inference_time_sec": 5.265,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
+      "prediction": "The text instances TAXI, Odwalla, and ARROWHEAD are encountered in the following order as the vehicle moves forward: TAXI is first seen on the left side of the road, followed by Odwalla on the right side, and finally, ARROWHEAD is seen on the right side of the road.",
+      "inference_time_sec": 5.758,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
+      "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
+      "prediction": "The overhead warning signs indicate height clearance limits for vehicles entering the covered underpass. These signs are yellow and black, with a black arrow pointing upwards, indicating the maximum height that vehicles can reach before they are required to stop. The specific height clearance limits are not visible in the video, but the presence of these signs suggests that the underpass is designed to accommodate vehicles of various sizes and that there is a specific clearance requirement for vehicles to enter.",
+      "inference_time_sec": 6.705,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
+      "ground_truth": "Airport terminal and cargo loading zone",
+      "prediction": "The mix of text and landmarks visible in the video suggests a driving environment that is likely busy and possibly in a commercial or urban area. The presence of signs and the layout of the road indicate that this is a well-organized area, possibly a transportation hub or a commercial district. The mix of text and landmarks could be a result of the area's design to accommodate various types of vehicles and services, such as commercial trucks, taxis, and possibly public transportation. The variety of signs and the layout of the road suggest that the area is designed to handle a high volume of traffic, which is typical of urban or commercial areas.",
+      "inference_time_sec": 8.367,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What country's measurement system and phone format are indicated by the visible text?",
+      "ground_truth": "United States",
+      "prediction": "The visible text on the phone indicates that the country is the United States, as the text \"1-800\" is commonly associated with the United States' phone numbering system. The format of the phone number is a combination of a country code (1) followed by a 800 number.",
+      "inference_time_sec": 5.429,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
+      "ground_truth": "3.467 seconds",
+      "prediction": "The TAXI sign first becomes visible in the segregated transit lane at the beginning of the video. It is positioned on the right side of the lane, near the entrance to the transit area, and is clearly marked with the number \"3\" and the word \"TAXI\" in bold letters.",
+      "inference_time_sec": 5.487,
+      "error": ""
+    }
+  ]
+}

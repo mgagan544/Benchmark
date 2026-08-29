@@ -1,0 +1,70 @@
+{
+  "video_id": 916,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/916.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the overhead Terminal sign located relative to the delivery truck?",
+      "ground_truth": "To the left of GOLDEN RULE [entity_001] and PRODUCE INC [entity_002]",
+      "prediction": "The overhead Terminal sign is located on the right side of the image, above the delivery truck that is parked or moving along the road. The sign appears to be part of the terminal's infrastructure, likely indicating the direction or location of Terminal B.",
+      "inference_time_sec": 6.791,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this clip are mounted on vehicles?",
+      "ground_truth": "5",
+      "prediction": "In the provided image, there is one distinct text instance that appears to be mounted on a vehicle. The text \"Falck\" is visible on the side of an ambulance. Therefore, the answer is:\n\n1",
+      "inference_time_sec": 6.29,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds?",
+      "ground_truth": "1st: Terminal [entity_004], 2nd: BUS [entity_005], 3rd: STOP [entity_006]",
+      "prediction": "Between 2.0 seconds and 5.0 seconds, the legible text instances encountered by the vehicle are:\n\n1. \"20\" - This appears on the road marking.\n2. \"Terminal\" - This appears on the sign indicating the terminal location.\n\nThe text \"20\" is likely part of a lane number or speed limit indication, while \"Terminal\" indicates the direction to the terminal building.",
+      "inference_time_sec": 8.69,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What road markings indicating driving constraints or lane designations are painted on the road surface just before passing the shuttle van?",
+      "ground_truth": "BUS [entity_005] and STOP [entity_006]",
+      "prediction": "The road markings visible in the image include:\n\n1. **Lane Designation Markings**: The lanes are clearly marked with white lines, indicating the direction of traffic flow and lane boundaries.\n2. **Speed Limit Markings**: There is a speed limit marking \"20\" painted on the road, which likely indicates the maximum speed allowed in that area.\n3. **Turn Indicators**: There are yellow diamond-shaped signs with arrows, which typically indicate a mandatory turn or a recommended turning lane.\n\nThese markings help guide drivers to navigate through the area safely and efficiently.",
+      "inference_time_sec": 10.249,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment is suggested by the presence of terminal, bus, and cell phone lot signs?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "The presence of \"Terminal,\" \"Bus,\" and \"Cell Phone Lot\" signs suggests that the driving environment is within an airport or a similar transportation hub. These signs indicate areas where passengers can wait for buses to their destinations, park their vehicles in designated lots, and use their cell phones while waiting. The setting appears to be indoors, as indicated by the ceiling lights and the structured layout of the area. This type of environment typically requires careful driving due to the presence of other vehicles, pedestrians, and potential obstacles like luggage carts and other airport equipment.",
+      "inference_time_sec": 10.133,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language are all the legible signs and road markings written?",
+      "ground_truth": "English",
+      "prediction": "The legible signs and road markings in the image appear to be written in English. The signs include directions, such as \"Terminal,\" and other information that is typically provided in English at airports. The road markings also seem to follow standard English conventions for traffic direction and lane indicators.",
+      "inference_time_sec": 7.195,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the phone number 1-800-497-4972 first become legible on the delivery truck?",
+      "ground_truth": "1.367 seconds",
+      "prediction": "The image provided is a still from a video, and it shows a view from inside a vehicle moving through an airport terminal. The image is blurry and does not clearly display any phone numbers or text that would allow for precise timestamping of when a specific phone number becomes legible.\n\nIf you have a specific part of the video where this phone number appears, please provide the timestamp or a clearer image so I can assist you further.",
+      "inference_time_sec": 8.734,
+      "error": ""
+    }
+  ]
+}

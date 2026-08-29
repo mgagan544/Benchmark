@@ -1,0 +1,70 @@
+{
+  "video_id": 931,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/931.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck?",
+      "ground_truth": "S E [entity_005]",
+      "prediction": "The text located between RAY'S TRUCKS and Elizabeth N.J. on the semi-truck is 'ELECTRIC & HYDRAULIC'.",
+      "inference_time_sec": 8.335,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct vehicle-mounted text elements are visible on the semi-truck on the right side of the host vehicle?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct vehicle-mounted text elements visible on the semi-truck. The first is the word 'MILEA' on the side of the truck, the second is the word 'PARTS DELIVERY' on the rear door, and the third is the website 'www.mileablog.com' also on the rear door.",
+      "inference_time_sec": 10.556,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text elements FUEL CO, milea, and HINO as the host vehicle moves forward?",
+      "ground_truth": "1st: FUEL CO [entity_006], 2nd: milea [entity_008], 3rd: HINO [entity_016]",
+      "prediction": "As the host vehicle moves forward, the text elements appear in the following order: first, the text 'FUEL CO' is visible on the side of the truck in the right lane. Then, as the host vehicle progresses, the text'milea' appears on the side of the white truck in the right lane. Finally, the text 'HINO' becomes visible on the side of the white truck in the right lane.",
+      "inference_time_sec": 11.866,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard, warning, or driving constraint?",
+      "ground_truth": "None",
+      "prediction": "No, there is no visible text in the clip that indicates a hazard, warning, or driving constraint. The video primarily shows the vehicles and the bridge without any textual information.",
+      "inference_time_sec": 8.431,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of route number 278 and multiple commercial trucks, what type of road is the host vehicle traveling on?",
+      "ground_truth": "Highway",
+      "prediction": "The host vehicle is traveling on a highway, as indicated by the presence of route number 278, which is a common way to denote highway routes, and the presence of multiple commercial trucks, which are typically found on highways due to their size and the need for dedicated lanes.",
+      "inference_time_sec": 9.603,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the semi-truck suggests the vehicle is associated with a city in New Jersey?",
+      "ground_truth": "Elizabeth N.J. [entity_003]",
+      "prediction": "The text 'ELECTRIC EQUIPMENT' and 'ELECTRIC EQUIPMENT CO., INC.' on the semi-truck's trailer, along with the website 'www.electricequip.com', suggests that the vehicle is associated with a company that likely operates in or around a city in New Jersey.",
+      "inference_time_sec": 10.097,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "During which time range do the text elements FUEL CO and S J first become visible on the semi-truck?",
+      "ground_truth": "1.2s to 1.3s",
+      "prediction": "The text elements FUEL CO and S J first become visible on the semi-truck in the second frame of the video.",
+      "inference_time_sec": 7.9,
+      "error": ""
+    }
+  ]
+}

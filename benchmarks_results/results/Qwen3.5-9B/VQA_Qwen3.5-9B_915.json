@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located directly to the right of the ARROWHEAD brand on the red delivery truck?",
       "ground_truth": "direct [entity_004] to the right of ARROWHEAD [entity_002]",
-      "prediction": "The user wants to identify text on a specific truck.\n1.  **Locate the truck:** I need to find the \"red delivery truck\" mentioned. Looking at the frames, specifically around 00:02 and 00:03, there is a large red truck on the right side of the road.\n2.  **Identify the brand:** The brand \"ARROWHEAD\" is clearly visible in large white letters on the side of this red truck.\n3.  **Find the text to the right:** Directly to the right of the word \"ARROWHEAD\" (and slightly",
-      "inference_time_sec": 13.293,
+      "prediction": "direct",
+      "inference_time_sec": 2.815,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances visible in the clip are mounted on delivery trucks?",
       "ground_truth": "5",
-      "prediction": "The user wants me to count the distinct text instances visible on delivery trucks in the video.\n\n1.  **Analyze the video:** I'll scan through the frames to identify delivery trucks and any text on them.\n2.  **Frame 00:00 - 00:01:**\n    *   There's a white truck on the left. No clear text visible on the back.\n    *   There's a red truck further ahead. Text is blurry but looks like \"Arrowhead\".\n    *   There's an orange truck on the right. Text is blurry.\n3.",
-      "inference_time_sec": 13.213,
+      "prediction": "2",
+      "inference_time_sec": 2.811,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the text instances TAXI, Odwalla, and ARROWHEAD are encountered as the vehicle moves forward?",
       "ground_truth": "1st: TAXI [entity_001], 2nd: Odwalla [entity_003], 3rd: ARROWHEAD [entity_002]",
-      "prediction": "The user wants to determine the order of appearance for three specific text instances: \"TAXI\", \"Odwalla\", and \"ARROWHEAD\".\n\n1.  **Scan for \"TAXI\":**\n    *   Looking at the first frame (00:00), on the far left, there is a blue sign. It's partially visible but looks like a taxi sign.\n    *   Looking at the second frame (00:01), the blue sign on the left is clearer. It says \"TAXI\". This is the first instance encountered as the vehicle moves forward from the start",
-      "inference_time_sec": 13.236,
+      "prediction": "Odwalla, ARROWHEAD, TAXI",
+      "inference_time_sec": 3.571,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What overhead warning signs indicate height clearance limits for vehicles entering the covered underpass?",
       "ground_truth": "13 FT 0 IN [entity_007] and 12FT 3IN [entity_008]",
-      "prediction": "The user wants to identify overhead warning signs related to height clearance.\n\n1.  **Analyze the video:** I'll scan the video frames, specifically looking for overhead signs as the vehicle approaches and enters the underpass area.\n2.  **Locate signs:**\n    *   In the first few frames (00:00 - 00:01), I see yellow pedestrian crossing signs on posts, but no overhead clearance signs yet.\n    *   As the vehicle moves forward (00:02), I see a blue sign on the left pillar, but it's not a clearance sign.",
-      "inference_time_sec": 13.256,
+      "prediction": "blue",
+      "inference_time_sec": 2.813,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of text and landmarks visible in this clip suggest about the driving environment?",
       "ground_truth": "Airport terminal and cargo loading zone",
-      "prediction": "The user wants me to analyze the driving environment based on the text and landmarks visible in the video.\n\n1.  **Identify key visual elements:**\n    *   **Architecture:** Large, modern buildings with glass canopies and covered walkways. This looks like a transportation hub, specifically an airport terminal.\n    *   **Vehicles:**\n        *   A white truck with a slatted back (looks like a livestock or general cargo truck).\n        *   A red truck with \"Arrowhead direct\" branding.\n        *   A smaller trailer with \"odwalla\" branding.\n        *   A",
-      "inference_time_sec": 13.231,
+      "prediction": "urban",
+      "inference_time_sec": 2.784,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What country's measurement system and phone format are indicated by the visible text?",
       "ground_truth": "United States",
-      "prediction": "The user wants me to identify the country based on visual cues in the video.\n\n1.  **Analyze the video for text:** I need to look closely at the trucks and signs.\n2.  **Frame 00:02:** I see a red truck on the right. The text on the side says \"Arrowhead direct\". Below that, there's a phone number.\n3.  **Frame 00:03:** The truck is clearer. The text \"Arrowhead direct\" is visible. Below it, there is a phone number: \"1-800-4...\".",
-      "inference_time_sec": 13.301,
+      "prediction": "USA",
+      "inference_time_sec": 2.818,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the TAXI sign first become visible in the segregated transit lane?",
       "ground_truth": "3.467 seconds",
-      "prediction": "The user wants to find the timestamp when a \"TAXI\" sign first appears in a segregated lane.\n\n1.  **Analyze the video:** I'll scan through the frames to locate a sign that says \"TAXI\".\n2.  **Frame 00:00:** I see a covered area, some trucks, and a white car. No clear \"TAXI\" sign yet.\n3.  **Frame 00:01:** The camera moves forward. On the left side, under the overhang, there's a blue sign. It's partially visible but looks like it",
-      "inference_time_sec": 13.172,
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 3.053,
       "error": ""
     }
   ]

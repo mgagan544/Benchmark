@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located across the street relative to the overhead crossing sign displaying AHE?",
       "ground_truth": "CASH 4 [entity_003] to the left of AHE [entity_002]",
-      "prediction": "The user wants to identify text across the street relative to a specific sign.\n\n1.  **Identify the sign:** The user mentions an \"overhead crossing sign displaying AHE\". Looking at the first frame (00:00), there is a yellow diamond-shaped sign on a pole on the right side of the road. It has a symbol of two children walking and the text \"AHEAD\". Wait, let me look closer. The sign says \"AHEAD\" with a symbol of two children walking. The user says \"AHE\". This is likely a typo for \"AHEAD\" or they are referring to the",
-      "inference_time_sec": 13.269,
+      "prediction": "AHE",
+      "inference_time_sec": 3.038,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are marked or mounted on the yellow school bus parked along the right curb?",
       "ground_truth": "7",
-      "prediction": "The user wants me to count the distinct text instances on the yellow school bus.\n\n1.  **Identify the bus:** The bus is parked on the right side of the road, visible in the first few frames.\n2.  **Scan for text:** I need to look for any readable text on the bus.\n    *   **Rear:** There's text on the back. It looks like \"SCHOOL BUS\" or similar, but it's blurry. Wait, looking closely at the first frame, there's text on the back door area. It's hard to read clearly but there are letters. Let's",
-      "inference_time_sec": 13.316,
+      "prediction": "2",
+      "inference_time_sec": 2.99,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order of the first three text instances encountered from the start of the clip up to 3.0 seconds?",
       "ground_truth": "1st: SCHOOL [entity_001], 2nd: AHE [entity_002], 3rd: CASH 4 [entity_003]",
-      "prediction": "The user wants me to identify the chronological order of the first three text instances in the video.\n\n1.  **Analyze the video from 00:00 to 00:03.**\n    *   **00:00 - 00:01:** I see a yellow school bus stopped on the right side of the road. There's a sign on a pole near it. The sign has text. Let's look closer. It looks like a \"SCHOOL BUS\" sign or similar warning sign. Wait, looking at the very first frame, there's a yellow diamond sign with a",
-      "inference_time_sec": 13.356,
+      "prediction": "School Bus\nSchool Bus\nSchool Bus",
+      "inference_time_sec": 3.657,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What regulatory text on the utility post on the right sidewalk constrains parking near the end of the clip?",
       "ground_truth": "PARKING [entity_011]",
-      "prediction": "The user wants to identify regulatory text on a utility post on the right sidewalk.\n1.  **Analyze the video:** I need to look at the right side of the street, specifically at the utility posts.\n2.  **Scan through the frames:**\n    *   00:00 - 00:01: There's a yellow school bus stopped on the right. There's a utility pole near it. I see a sign, but it's blurry.\n    *   00:02: The camera car is moving forward. The school bus is now on the right edge",
-      "inference_time_sec": 13.226,
+      "prediction": "No Parking",
+      "inference_time_sec": 2.941,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of text visible between 0.267 seconds and 3.200 seconds suggest about the type of area?",
       "ground_truth": "School zone",
-      "prediction": "The user wants to know what the text visible in the video suggests about the area.\n\n1.  **Identify the relevant timeframe:** The user specifies \"between 0.267 seconds and 3.200 seconds\".\n2.  **Scan the video for text in that timeframe:**\n    *   **0.0s - 0.2s:** I see a yellow school bus. The text on the back says \"SCHOOL BUS\".\n    *   **0.2s - 0.3s:** The camera pans slightly. I see a sign on the right. It's",
-      "inference_time_sec": 13.256,
+      "prediction": "Urban",
+      "inference_time_sec": 2.808,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What city is suggested by the contact number displayed on the side of the school bus?",
       "ground_truth": "New York City",
-      "prediction": "The user wants to identify the city based on a phone number on a school bus.\n\n1.  **Locate the school bus:** In the first few frames (00:00 - 00:02), there is a yellow school bus parked on the right side of the road.\n2.  **Zoom in on the text:** I need to look closely at the side of the bus.\n3.  **Identify the text:** In the first frame (00:00), on the side of the bus, there is text that reads \"SCHOOL TRANSPORTATION DIVISION\". Below",
-      "inference_time_sec": 13.187,
+      "prediction": "New York",
+      "inference_time_sec": 2.891,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range does the regulatory parking sign remain continuously visible in the clip?",
       "ground_truth": "6.400 seconds to 7.367 seconds",
-      "prediction": "The user wants to find the time range where a regulatory parking sign is continuously visible.\n\n1.  **Analyze the video:** I'll scan through the frames to locate a parking sign.\n2.  **Frame 00:00 - 00:01:** I see a yellow school bus stopped on the right. There's a sign on a pole near the bus, but it's partially obscured or hard to read. Wait, looking closely at the pole near the bus, there's a blue sign and a white sign. The white sign has a \"P\" with a red circle and slash, indicating",
-      "inference_time_sec": 13.162,
+      "prediction": "0.3 - 0.5",
+      "inference_time_sec": 3.507,
       "error": ""
     }
   ]

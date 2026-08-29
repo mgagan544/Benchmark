@@ -1,0 +1,70 @@
+{
+  "video_id": 997,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/997.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies to the right of the marked zebra crossing as the vehicle approaches the junction?",
+      "ground_truth": "A paved pedestrian sidewalk adjacent to signboard 9999 [entity_001]",
+      "prediction": "To the right of the marked zebra crossing, there is a bus stop with a bus parked at it. The bus appears to be waiting for passengers, and there are palm trees lining the road on the right side. Additionally, there is a grassy area with some red and white barriers, which might indicate a pedestrian or bike lane.",
+      "inference_time_sec": 7.83,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct signboards containing numbers are visible on the right side of the road at the start of the clip?",
+      "ground_truth": "1",
+      "prediction": "At the start of the clip, there is one distinct signboard containing numbers visible on the right side of the road. The signboard displays the number \"99\" and some additional text that appears to be in Hebrew.",
+      "inference_time_sec": 6.426,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What landmark is encountered on the far left after the vehicle passes the signboard 9999?",
+      "ground_truth": "A distant gas station",
+      "prediction": "The image shows a road scene with vehicles and infrastructure, but it does not provide enough detail to identify specific landmarks or signs that would indicate a particular location. The signboard \"9999\" appears to be a placeholder or a generic number rather than a recognizable landmark name. Without additional context or clearer signage, it's not possible to determine what landmark might be encountered on the far left after passing this sign. If you have more details about the location or the purpose of the journey, it could help in identifying the landmark.",
+      "inference_time_sec": 9.969,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the visible text on the signboard 9999, are there any explicit driving actions or constraints implied?",
+      "ground_truth": "None is present",
+      "prediction": "The image shows a road with multiple lanes and vehicles, including a bus and several cars. There is a signboard visible in the background with the number \"99\" prominently displayed. However, the specific text or instructions on the signboard are not clearly legible from this perspective. Therefore, it's not possible to determine any explicit driving actions or constraints based solely on the visible part of the signboard. The focus appears to be more on the general traffic scene rather than any specific driving instructions related to the number \"99.\"",
+      "inference_time_sec": 9.971,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a multi-lane curved road, a gas station, and a signboard suggest about the driving environment?",
+      "ground_truth": "Suburban commercial thoroughfare",
+      "prediction": "The presence of a multi-lane curved road suggests that the driving environment is likely in an urban or suburban area with moderate to heavy traffic. The curved road indicates that there might be turns or bends ahead, which could require drivers to be cautious and adjust their speed accordingly.\n\nThe gas station implies that this area has facilities for refueling vehicles, which is common in areas where drivers need to stop frequently, such as near residential zones, commercial areas, or tourist spots. This also suggests that the area is accessible and frequented by vehicles.\n\nThe signboard, while not fully visible, typically indicates directions, warnings, or information relevant to the road",
+      "inference_time_sec": 11.098,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What script or numbering system is used for the text on the signboard on the right?",
+      "ground_truth": "Arabic numerals",
+      "prediction": "The text on the signboard on the right appears to be in Hebrew. The characters \"99\" and other symbols that follow are likely part of a Hebrew script, which includes letters and numbers. The presence of Hebrew script suggests that this signboard is located in a region where Hebrew is commonly used, such as Israel.",
+      "inference_time_sec": 7.646,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the signboard 9999 first become visible, and when is it passed by the ego vehicle?",
+      "ground_truth": "First visible at 0.0 seconds, passed by 2.533 seconds",
+      "prediction": "The signboard with the number \"9999\" becomes visible at approximately 0:02 seconds into the video. The ego vehicle passes by this signboard around 0:04 seconds.",
+      "inference_time_sec": 6.389,
+      "error": ""
+    }
+  ]
+}

@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the THRU road text relative to the LANE road text?",
       "ground_truth": "To the left of LANE [entity_003]",
-      "prediction": "The user wants to know the spatial relationship between the text \"THRU\" and \"LANE\" painted on the road.\n\n1.  **Identify the relevant frames:** I need to look for frames where both \"LANE\" and \"THRU\" are visible.\n    *   Frame at 00:00: Shows \"LANE\" and \"THRU\" clearly.\n    *   Frame at 00:01: Shows \"LANE\" and \"THRU\" clearly.\n    *   Frame at 00:02: Shows \"LANE\" and \"THRU",
-      "inference_time_sec": 12.922,
+      "prediction": "below",
+      "inference_time_sec": 2.273,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct mounted signs are visible in this clip?",
       "ground_truth": "2",
-      "prediction": "The user wants me to count the distinct mounted signs visible in the video.\n\n1.  **Scan the video for signs:** I'll go through the frames chronologically and identify any signs attached to poles, buildings, or structures.\n\n    *   **Frame 0.0s - 0.1s:**\n        *   There's a blue booth on the left. It has a sign on top: \"PORT SHUTTLE\". That's one.\n        *   Next to it is a green booth. It has a sign on top: \"PORT SHUTTLE\". That's two.\n        *",
-      "inference_time_sec": 12.625,
+      "prediction": "2",
+      "inference_time_sec": 2.18,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order in which the three road text markings are first encountered in the clip?",
       "ground_truth": "THRU [entity_001] 1st, BUS [entity_002] 2nd, LANE [entity_003] 3rd",
-      "prediction": "The user wants me to identify the chronological order of three road text markings.\n\n1.  **Identify the markings:** I need to look for text painted on the road.\n    *   Looking at the first few frames, I see \"LANE\" and \"THRU\" painted on the road surface. Wait, let me look closer.\n    *   Frame 0.0s: No text visible on the road yet, just crosswalk markings.\n    *   Frame 0.1s: The car is moving. I see \"LANE\" and \"THRU\" painted on the road. Wait",
-      "inference_time_sec": 12.645,
+      "prediction": "LANE THRU, EXIT, PORT SHUTTLE",
+      "inference_time_sec": 2.975,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What explicit driving action is required near the zebra-striped pedestrian crosswalk based on the visible signage?",
       "ground_truth": "Stop at the STOP [entity_004] sign",
-      "prediction": "The user wants to identify a specific driving action based on the visual evidence in the video.\n\n1.  **Analyze the scene:** The video is taken from inside a vehicle at night. The vehicle is approaching a pedestrian crossing area.\n2.  **Identify key elements:**\n    *   **Zebra-striped crosswalk:** Visible in the first few frames (00:00 - 00:01). It's a series of white stripes painted on the road.\n    *   **Signage:**\n        *   In the first frame (00:00), there's a green",
-      "inference_time_sec": 12.605,
+      "prediction": "STOP",
+      "inference_time_sec": 2.256,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What kind of driving environment does the mix of waiting structures and road markings suggest?",
       "ground_truth": "Airport shuttle terminal",
-      "prediction": "The user wants me to identify the driving environment based on the visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Waiting structures:** I see a blue booth labeled \"PORT SHUTTLE\" and a green booth labeled \"PORT SHUTTLE\". These look like ticket booths or information kiosks.\n    *   **Road markings:**\n        *   \"LANE THRU\" painted on the asphalt.\n        *   \"BUS ONLY\" painted on the asphalt.\n        *   A large white cross-hatching pattern (gore area) separating lanes.\n        *",
-      "inference_time_sec": 12.646,
+      "prediction": "Airport",
+      "inference_time_sec": 2.17,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the road markings and signs in this clip?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language used for the road markings and signs in the video.\n\n1.  **Analyze the video frames:**\n    *   **Frame 1:** Shows a bus stop area. There's a green structure. No clear text yet.\n    *   **Frame 2:** Shows a blue booth and a green structure. Text on the green structure says \"PORT SMITH\". This is a place name, but \"Port Smith\" is an English name.\n    *   **Frame 3:** The car is driving. On the road surface, large white letters spell out \"LANE TH",
-      "inference_time_sec": 12.69,
+      "prediction": "English",
+      "inference_time_sec": 2.146,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the green directional EXIT sign first come into full view?",
       "ground_truth": "EXIT [entity_005] sign at 5.933 seconds",
-      "prediction": "The user wants to find the timestamp when the green directional EXIT sign first comes into full view.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The car is approaching a bus stop area. No green EXIT sign is visible yet.\n    *   **00:01:** The car is moving past the bus stop. Still no green EXIT sign.\n    *   **00:02:** The car is turning or driving past an intersection. There's a green sign in the distance, but it's partially obscured and not fully clear yet. Wait, looking closely",
-      "inference_time_sec": 12.695,
+      "prediction": "0.4 seconds",
+      "inference_time_sec": 2.507,
       "error": ""
     }
   ]

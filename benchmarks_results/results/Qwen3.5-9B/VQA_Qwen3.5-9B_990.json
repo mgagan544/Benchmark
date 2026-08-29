@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the Linden Blvd and JUNIUS street signs relative to the white commuter van?",
       "ground_truth": "Directly above HAPPY [entity_019] ISLAND [entity_020] SENOR [entity_021] CENTER [entity_022]",
-      "prediction": "The user wants to know the spatial relationship between the street signs (\"Linden Blvd\" and \"JUNIUS\") and the white commuter van.\n\n1.  **Identify the objects:**\n    *   **White commuter van:** This is the large white vehicle on the left side of the road, labeled \"HAPPY ISLAND SENIOR CENTER\". It's visible in frames 00:01, 00:02, 00:03, 00:04.\n    *   **Linden Blvd sign:** This is a green street sign. Looking at frame",
-      "inference_time_sec": 13.247,
+      "prediction": "to the right of",
+      "inference_time_sec": 3.063,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances belong to street or regulatory signs in this scene?",
       "ground_truth": "9",
-      "prediction": "The user wants me to count the distinct text instances on street or regulatory signs.\n\n1.  **Scan the scene for signs:** I'll look for street signs, traffic signs, and regulatory signs.\n2.  **Identify specific signs:**\n    *   There's a green street sign on a pole on the right side of the road, near the Burger King. It says \"Linden Blvd\".\n    *   Below that, there's another green street sign pointing left, saying \"Junius St\".\n    *   Further down the road, there's a green street sign on a pole on the left side",
-      "inference_time_sec": 13.253,
+      "prediction": "3",
+      "inference_time_sec": 2.808,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the DRIVE sign, the Linden Plaza sign, and the DO NOT ENTER sign are encountered as the vehicle moves forward?",
       "ground_truth": "1st: DRIVE [entity_002], 2nd: Linden Plaza [entity_006], 3rd: DO NOT [entity_017] ENTER [entity_016]",
-      "prediction": "The user wants to determine the order of appearance for three specific signs: \"DRIVE\", \"Linden Plaza\", and \"DO NOT ENTER\".\n\n1.  **Identify the signs in the video:**\n    *   **Linden Plaza sign:** This is visible on the right side of the road in the very first frame (00:00). It's a vertical sign attached to a pole.\n    *   **DRIVE sign:** This is part of the Burger King sign on the right. It says \"DRIVE THRU\". It's visible in the first frame (00:00) but",
-      "inference_time_sec": 13.215,
+      "prediction": "DO NOT ENTER sign, Linden Plaza sign, DRIVE sign",
+      "inference_time_sec": 3.747,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What warning text constrains movement near the drive-thru lane entrance?",
       "ground_truth": "DO NOT [entity_017] ENTER [entity_016]",
-      "prediction": "The user wants to identify a specific warning text visible in the video.\n\n1.  **Analyze the user's request:** The user is asking for \"warning text\" that \"constrains movement near the drive-thru lane entrance\". This implies I need to look for a sign, likely near the Burger King drive-thru, that tells drivers something they shouldn't do (like \"No U-Turn\" or \"No Left Turn\").\n\n2.  **Scan the video frames:**\n    *   **Frame 1 (00:00):** I see a Burger King on the right. There's a sign",
-      "inference_time_sec": 13.285,
+      "prediction": "NO PARKING",
+      "inference_time_sec": 3.015,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the density and type of storefront signs like Burger King and Family Dollar, what kind of driving environment does this clip depict?",
       "ground_truth": "Commercial business district",
-      "prediction": "The user wants me to identify the type of driving environment based on the visual cues in the video.\n\n1.  **Analyze the visual cues:**\n    *   **Storefronts:** I see a Burger King, a Family Dollar, and a \"Linden Plaza\" sign. These are typical big-box or chain stores found in commercial areas.\n    *   **Traffic:** There are multiple lanes of traffic moving in the same direction. There are cars, trucks, and vans. The traffic seems moderate to heavy, especially near the intersection.\n    *   **Infrastructure:** There are traffic lights, crosswalks,",
-      "inference_time_sec": 13.187,
+      "prediction": "Urban",
+      "inference_time_sec": 2.775,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What city is suggested by the area code in the phone number displayed on the commuter van?",
       "ground_truth": "New York City",
-      "prediction": "The user wants me to identify a city based on a phone number visible on a van in the video.\n\n1.  **Locate the van:** I need to find the commuter van. Looking at the frames, specifically from 00:01 onwards, there is a white van on the left side of the road.\n2.  **Read the text on the van:**\n    *   Frame 00:01: The back of the van says \"HAPPY ISLAND SENIOR CENTER\". Below that, there's a phone number.\n    *   Frame 00:02:",
-      "inference_time_sec": 13.177,
+      "prediction": "New York",
+      "inference_time_sec": 2.872,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range does the Linden Plaza sign remain continuously visible in the clip?",
       "ground_truth": "0.6s to 1.33s for Linden Plaza [entity_006]",
-      "prediction": "The user wants to find the time range where the \"Linden Plaza\" sign is visible.\n\n1.  **Scan the video for the sign:** I'll look at the beginning of the video.\n2.  **00:00 - 00:01:** The sign is clearly visible on the right side, attached to a pole. It says \"Linden Plaza\" at the top.\n3.  **00:01 - 00:02:** As the car moves forward, the sign is still visible but getting smaller and further away. It's partially obscured by the pole",
-      "inference_time_sec": 13.269,
+      "prediction": "0.0 - 0.1",
+      "inference_time_sec": 3.454,
       "error": ""
     }
   ]

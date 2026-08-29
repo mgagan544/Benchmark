@@ -1,0 +1,70 @@
+{
+  "video_id": 947,
+  "model": "InternVL2-4B",
+  "video": "/home2/gagandeep/benchmark/videos/900/947.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the sign containing the text STATE relative to the speed warning sign?",
+      "ground_truth": "To the right of SPEED [entity_005]",
+      "prediction": "The sign containing the text \"STATE LAW\" is positioned to the right of the speed warning sign.",
+      "inference_time_sec": 5.771,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are mounted on the silver minivan?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct text instances mounted on the silver minivan.",
+      "inference_time_sec": 5.069,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the green exit sign, the white regulatory sign, and the minivan's license plate are first encountered?",
+      "ground_truth": "1st: EXIT [entity_001], 2nd: STATE [entity_006], 3rd: HEG-1344 [entity_010]",
+      "prediction": "The green exit sign for Atlantic Ave is first encountered at the beginning of the video, followed by the white regulatory sign indicating a speed limit of 45 mph. The minivan's license plate is seen towards the end of the video.",
+      "inference_time_sec": 7.818,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign indicates a financial penalty for driving too fast?",
+      "ground_truth": "STATE [entity_006] LAW [entity_007] fines DOUBLED FOR [entity_008] SPEEDING [entity_009]",
+      "prediction": "The regulatory sign indicates a financial penalty for driving too fast with the text \"SPEED LIMIT 45\" and \"FAIL TO Obey $100.\"",
+      "inference_time_sec": 6.734,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of road environment is suggested by the presence of exit signs, speed warning signs, and regulatory signs?",
+      "ground_truth": "Highway",
+      "prediction": "The presence of exit signs, speed warning signs, and regulatory signs suggests that the road environment is a controlled-access highway or a major road with multiple lanes, where traffic is regulated by specific rules and guidelines. The exit signs indicate that drivers are approaching a junction where they can leave the main road, while the speed warning sign indicates that there is a speed limit in place to ensure safety. The regulatory signs, such as the one indicating a 45 mph speed limit, are typical of highways where vehicles are moving at higher speeds and where adherence to speed limits is crucial for",
+      "inference_time_sec": 13.168,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific state or region is indicated by the text on the silver minivan's license plate?",
+      "ground_truth": "NEW YORK [entity_011]",
+      "prediction": "The text on the silver minivan's license plate reads \"NJ,\" which stands for New Jersey. This indicates that the vehicle is registered in the state of New Jersey.",
+      "inference_time_sec": 6.7,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the license plate HEG-1344 clearly legible on the silver minivan?",
+      "ground_truth": "6.167s to 9.2s",
+      "prediction": "The license plate HEG-1344 on the silver minivan is clearly legible in the video, indicating that the time range of the video is during the night.",
+      "inference_time_sec": 6.777,
+      "error": ""
+    }
+  ]
+}

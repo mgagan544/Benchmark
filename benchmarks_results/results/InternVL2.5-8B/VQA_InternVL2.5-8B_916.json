@@ -1,0 +1,70 @@
+{
+  "video_id": 916,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/916.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the overhead Terminal sign located relative to the delivery truck?",
+      "ground_truth": "To the left of GOLDEN RULE [entity_001] and PRODUCE INC [entity_002]",
+      "prediction": "The overhead Terminal sign is located above the delivery truck, indicating the direction to the terminal.",
+      "inference_time_sec": 7.655,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances in this clip are mounted on vehicles?",
+      "ground_truth": "5",
+      "prediction": "There are two distinct text instances mounted on vehicles in the video. One is on the side of a white truck, and the other is on the back of a red and white ambulance.",
+      "inference_time_sec": 9.025,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order of the legible text instances encountered by the vehicle between 2.0 seconds and 5.0 seconds?",
+      "ground_truth": "1st: Terminal [entity_004], 2nd: BUS [entity_005], 3rd: STOP [entity_006]",
+      "prediction": "Between 2.0 seconds and 5.0 seconds, the vehicle encounters the following legible text instances in chronological order: 'GOLDEN GATE BREWING CO.', 'Terminal 3', 'BAGGAGE', 'BUS', 'SFO', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', 'Baggage Claim', '",
+      "inference_time_sec": 15.862,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What road markings indicating driving constraints or lane designations are painted on the road surface just before passing the shuttle van?",
+      "ground_truth": "BUS [entity_005] and STOP [entity_006]",
+      "prediction": "The road markings just before passing the shuttle van include a 'BUS' lane designation, indicating that the lane is reserved for buses. Additionally, there are white dashed lines that likely denote the boundaries of the lanes, and a red line that could be a no-parking or no-stopping zone. These markings are essential for guiding traffic and ensuring the safe and efficient movement of vehicles within the airport's transportation system.",
+      "inference_time_sec": 11.539,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What kind of driving environment is suggested by the presence of terminal, bus, and cell phone lot signs?",
+      "ground_truth": "Airport terminal area",
+      "prediction": "The presence of terminal, bus, and cell phone lot signs suggests that the driving environment is a busy, multi-use area, likely near an airport or a transportation hub. These signs indicate designated areas for different types of vehicles and passengers, which is typical in such environments to manage the flow of traffic and direct people to their respective destinations. The signs also imply that the area is well-organized and designed to accommodate various modes of transportation and the needs of travelers.",
+      "inference_time_sec": 11.869,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language are all the legible signs and road markings written?",
+      "ground_truth": "English",
+      "prediction": "All the legible signs and road markings in the video are written in English. This can be confirmed by the text on the signs, such as 'Terminal 3', 'Bus', and 'Arrivals', as well as the road markings like 'BUS LANE' and 'BUS ONLY'.",
+      "inference_time_sec": 9.967,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the phone number 1-800-497-4972 first become legible on the delivery truck?",
+      "ground_truth": "1.367 seconds",
+      "prediction": "The phone number 1-800-497-4972 first becomes legible on the delivery truck at the timestamp of 00:00:00.",
+      "inference_time_sec": 8.63,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 954,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/954.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the text EXIT relative to the word Ave on the overhead sign?",
+      "ground_truth": "directly below Ave [entity_002]",
+      "prediction": "The text EXIT is positioned to the right of the word Ave on the overhead sign.",
+      "inference_time_sec": 3.504,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are visible on the overhead green exit sign?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct pieces of text visible on the overhead green exit sign. The first is 'Bradley Av', the second is 'Exit Only', and the third is '2/4 Mile'.",
+      "inference_time_sec": 4.54,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of events between passing the overhead exit sign and coming to a slow crawl behind the red sedan?",
+      "ground_truth": "1st: passing Bradley [entity_001], 2nd: slow crawl behind red sedan",
+      "prediction": "After passing the overhead exit sign, the vehicles continue to move slowly in traffic. The red sedan is seen in the middle lane, and as the traffic progresses, the vehicles in the same lane as the red sedan begin to slow down, indicating a slow crawl behind the red sedan.",
+      "inference_time_sec": 5.178,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Based on the text on the overhead sign, what driving action is indicated for the lane below it?",
+      "ground_truth": "EXIT [entity_003] only [entity_004]",
+      "prediction": "The text on the overhead sign indicates that the lane below is for an exit only, which means that vehicles in that lane are not allowed to proceed further down the road. They are expected to turn left or remain in their current lane to follow the correct path to the exit.",
+      "inference_time_sec": 5.82,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the overhead exit sign and the multi-lane road layout?",
+      "ground_truth": "highway",
+      "prediction": "The overhead exit sign, which indicates 'Bradley Ave' with an 'EXIT ONLY' sign, suggests that the video is taken on a multi-lane highway, likely in an urban or suburban area. The presence of the exit sign implies that the road is designed for high-speed travel and that the exit is a significant point of interest, possibly leading to a major city or commercial area. The layout of the road, with multiple lanes and clear demarcations, indicates a well-maintained highway system, which is typical for areas with significant traffic flow and where drivers need to navigate efficiently to reach their destinations.",
+      "inference_time_sec": 9.627,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the overhead exit sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the overhead exit sign is in both English and Spanish. The English text reads 'Exit Only', and the Spanish translation is 'Salida Sólo por la Carretera'.",
+      "inference_time_sec": 4.898,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text Bradley first become clearly displayed on the overhead sign?",
+      "ground_truth": "Bradley [entity_001] at 2.7 seconds",
+      "prediction": "The text Bradley first becomes clearly displayed on the overhead sign at the 5-second mark.",
+      "inference_time_sec": 3.541,
+      "error": ""
+    }
+  ]
+}

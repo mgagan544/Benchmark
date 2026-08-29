@@ -1,0 +1,70 @@
+{
+  "video_id": 906,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/906.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What warning text is located on the vehicle to the left of the black Chevrolet SUV with license plate HPW-2922?",
+      "ground_truth": "KEEP [entity_006] BACK [entity_008] on the AMBULANCE [entity_007]",
+      "prediction": "The vehicle to the left of the black Chevrolet SUV with license plate HPW-2922 has a warning text that reads \"KEEP BACK.\"",
+      "inference_time_sec": 5.506,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the parked white box truck?",
+      "ground_truth": "4",
+      "prediction": "There are four distinct text instances displayed on the parked white box truck:\n\n1. \"Soundtone Floors, Inc.\"\n2. \"718-392-4001\"\n3. \"43-05 37th St., L.I.C., NY\"\n4. \"ATM\" (on a sign next to the truck)",
+      "inference_time_sec": 8.163,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle?",
+      "ground_truth": "1st: ATM [entity_002], 2nd: 43-02 37th ST. [entity_014], 3rd: TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The order in which the ATM sign, the address 43-02 37th ST., and the yellow warning sign are passed by the ego vehicle is as follows:\n\n1. The ATM sign is passed first.\n2. Then, the address 43-02 37th ST. is passed.\n3. Finally, the yellow warning sign is passed.\n\nThis sequence can be inferred from the perspective of the driver's view through the windshield, where these elements appear in that order as the vehicle moves forward.",
+      "inference_time_sec": 10.338,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is posted on a utility pole to indicate a change in traffic conditions ahead?",
+      "ground_truth": "TWO [entity_020] WAY [entity_023] TRAFFIC [entity_024] AHEAD [entity_025]",
+      "prediction": "The warning text on the utility pole indicates \"KEEP BACK\" and \"SLOW DOWN,\" which are typically used to warn drivers to maintain a safe distance from an ambulance or other emergency vehicle, and to slow down as they approach an intersection or area where there may be a change in traffic conditions.",
+      "inference_time_sec": 7.384,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of text visible between 3.0 seconds and 7.0 seconds suggest about the driving environment?",
+      "ground_truth": "Commercial and industrial district",
+      "prediction": "The mix of text visible in the image, such as \"AMBULANCE\" on the side of an ambulance vehicle and \"Soundtone Floors Inc.\" on a truck, suggests that the driving environment is urban or semi-urban with commercial activity. The presence of both emergency vehicles and commercial trucks indicates a mix of public services and business operations, which is typical in areas where there is a need for both emergency response and local commerce. The clear sky and daylight also imply that it's a normal day with good visibility, which could affect traffic flow and the behavior of other drivers.",
+      "inference_time_sec": 12.075,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific text on the brick commercial building's facade suggests the city or region where this clip was filmed?",
+      "ground_truth": "L.I.C., N.Y. [entity_016]",
+      "prediction": "The text \"L.I.C., NY\" on the brick commercial building's facade suggests that the video was filmed in Long Island City, New York (L.I.C.).",
+      "inference_time_sec": 6.439,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the ambulance displaying the identifier 592 start moving forward?",
+      "ground_truth": "2.867 seconds for AMBULANCE [entity_007] displaying 592 [entity_009]",
+      "prediction": "The ambulance displaying the identifier 592 starts moving forward at approximately 10 seconds into the video.",
+      "inference_time_sec": 5.307,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "video_id": 928,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/928.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly to the right of the guide sign indicating Bron EXPWY?",
+      "ground_truth": "178 [entity_007] and NORTH [entity_008] to the right of Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The sign located directly to the right of the guide sign indicating Bron EXPWY is a \"Speed Limit 30\" sign.",
+      "inference_time_sec": 5.592,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are visible in this clip?",
+      "ground_truth": "4",
+      "prediction": "2",
+      "inference_time_sec": 3.606,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered?",
+      "ground_truth": "1st: 3030 [entity_001], 2nd: SPEED [entity_002] LIMIT [entity_003], 3rd: Bron [entity_004] EXPWY [entity_005]",
+      "prediction": "The order in which the roadside marker, the speed limit sign, and the Bron EXPWY guide sign are first encountered is: roadside marker, speed limit sign, Bron EXPWY guide sign.",
+      "inference_time_sec": 6.724,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning text is displayed on the overhead structure to indicate a height restriction?",
+      "ground_truth": "CLEARANCE 13-6 [entity_006]",
+      "prediction": "The warning text displayed on the overhead structure is \"CLEARANCE 13' 6\".\"",
+      "inference_time_sec": 5.015,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of guide signs, speed limits, and clearance warnings, what type of driving environment is depicted?",
+      "ground_truth": "Highway",
+      "prediction": "The driving environment depicted is a highway or freeway at night. The presence of guide signs (like “Cr Bronx Expwy” and “W 170 St”), speed limit signs (“Speed Limit 30”), and clearance warnings (“CLEARANCE 13’-6”) are all typical features of a controlled-access highway or freeway, designed for high-speed, multi-lane traffic. The nighttime setting, illuminated by streetlights and vehicle headlights, further confirms this is a major road designed for continuous, high-volume traffic.",
+      "inference_time_sec": 13.976,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What region or city is suggested by the guide sign indicating Bron EXPWY?",
+      "ground_truth": "Bronx, New York",
+      "prediction": "The guide sign indicating \"Bron EXPWY\" suggests the region or city of **Bronx**, which is one of the five boroughs of **New York City**. The term \"EXPWY\" likely stands for \"Expressway,\" indicating a major highway or road within the Bronx area. This is consistent with the presence of major highways like the Bronx Expressway (I-95) in New York City.",
+      "inference_time_sec": 11.899,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate on the vehicle directly ahead become clearly readable?",
+      "ground_truth": "8.7",
+      "prediction": "The license plate on the vehicle directly ahead becomes clearly readable at 0:04.",
+      "inference_time_sec": 5.003,
+      "error": ""
+    }
+  ]
+}

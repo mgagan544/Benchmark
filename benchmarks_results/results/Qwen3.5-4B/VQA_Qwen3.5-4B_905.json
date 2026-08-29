@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What readable text is located directly below the BEDROOM sign on the commercial storefront?",
       "ground_truth": "MATTRESS [entity_009] directly below BEDROOM [entity_010]",
-      "prediction": "The user wants me to identify text below a specific sign.\n\n1.  **Locate the sign:** I need to find the \"BEDROOM\" sign. Looking at the first few frames (0.0s, 0.1s), there is a blue sign on the right side of the street.\n2.  **Read the sign:** The sign says \"BEDROOM & MATTRESS\".\n3.  **Identify text below it:** Directly underneath \"BEDROOM & MATTRESS\", there is smaller text.\n4.  **Zoom in/Analyze:** In the first frame (0",
-      "inference_time_sec": 12.983,
+      "prediction": "MATTRESS",
+      "inference_time_sec": 2.452,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are mounted on the semi-truck trailer and cab?",
       "ground_truth": "10",
-      "prediction": "The user wants me to count the distinct text instances on the semi-truck trailer and cab.\n\n1.  **Identify the truck:** The truck is on the left side of the frame, taking up a significant portion of the left side.\n2.  **Scan for text on the trailer:**\n    *   There's a large \"BEKINS\" logo in green and white on the side.\n    *   Below that, there's a phone number \"660-3-016\".\n    *   Further down, there's a yellow sign that says \"DRIVE WITH US TODAY\".",
-      "inference_time_sec": 12.693,
+      "prediction": "2",
+      "inference_time_sec": 2.286,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the text instances Sign-On Bonus, LOGISTICS-010, and myBekins.com are first encountered as the vehicle moves forward?",
       "ground_truth": "1st: Sign-On Bonus [entity_006], 2nd: LOGISTICS-010 [entity_007], 3rd: myBekins.com [entity_008]",
-      "prediction": "The user wants to know the order of appearance for three specific text instances: \"Sign-On Bonus\", \"LOGISTICS-010\", and \"myBekins.com\".\n\n1.  **Analyze the first frame (00:00):**\n    *   I see a large white truck on the left.\n    *   On the back of the truck, there is a green sign.\n    *   The text \"SIGN-ON BONUS\" is clearly visible at the top of the green sign.\n    *   Below that, there is text \"LOGISTICS-010\".",
-      "inference_time_sec": 12.643,
+      "prediction": "Sign-On Bonus, LOGISTICS-010, myBekins.com",
+      "inference_time_sec": 3.584,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Based on the regulatory sign near the roadside sidewalk, what explicit driving action is required for vehicles in the right lane?",
       "ground_truth": "TURN RIGHT [entity_019]",
-      "prediction": "The user wants to identify a specific driving action based on a regulatory sign.\n\n1.  **Locate the sign:** I need to look at the right side of the road, near the sidewalk, as requested.\n2.  **Analyze the sign:** In the first few frames (00:00 - 00:02), there is a blue rectangular sign on a pole near the sidewalk on the right.\n3.  **Read the sign:** The sign says \"PARKING\" in white letters on a blue background. Below that, it says \"ONLY\" in smaller letters.\n4",
-      "inference_time_sec": 12.622,
+      "prediction": "Right lane must be used for right turn only",
+      "inference_time_sec": 2.953,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of text visible between 0.6s and 2.0s suggest about the type of area?",
       "ground_truth": "commercial retail zone",
-      "prediction": "The user wants to know what the mix of text visible between 0.6s and 2.0s suggests about the type of area.\n\n1.  **Analyze the frames:**\n    *   **0.6s:** I see a large white truck on the left with \"BEKINS\" and \"DRIVE WITH US TODAY\" text. On the right, there's a sign for \"BEDROOM & MATTRESS\". Further down, there's a sign for \"DUGGAN'S\".\n    *   **0.7s:** The truck is still visible on the left. The \"BED",
-      "inference_time_sec": 12.683,
+      "prediction": "Commercial",
+      "inference_time_sec": 2.247,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language or script is the visible text in this clip written in?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language or script of the visible text in the video.\n\n1.  **Analyze the text in the video:**\n    *   **Truck (0:00 - 0:02):** \"BEKINS\", \"DRIVE WITH US TODAY\", \"800-5-BEKINS\", \"www.mybekins.com\". This is English.\n    *   **Sign (0:00 - 0:02):** \"BEDROOM & MATTRESS\". This is English.\n    *   **Sign (0:01):** \"PARKING",
-      "inference_time_sec": 12.695,
+      "prediction": "English",
+      "inference_time_sec": 2.183,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the website myBekins.com first become legible as the host vehicle passes the semi-truck?",
       "ground_truth": "0.2s",
-      "prediction": "The user wants to find the timestamp when the website \"myBekins.com\" becomes legible on the back of the semi-truck.\n\n1.  **Analyze the first frame (00:00):** The truck is right next to the camera car. The text \"DRIVE WITH US TODAY\" and \"HIRING DRIVERS\" are visible. Below that, there is a phone number \"800-5-BEKINS\". Below the phone number, there is a website address. It looks like \"www.myBekins.com\". It is somewhat blurry but the letters \"myBekins.com",
-      "inference_time_sec": 12.649,
+      "prediction": "0.0",
+      "inference_time_sec": 2.358,
       "error": ""
     }
   ]

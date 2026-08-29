@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What numbers are located directly to the right of the address number 1033 on the low stone retaining wall?",
       "ground_truth": "The numbers '35' and '37' beside 1033 [entity_001]",
-      "prediction": "The user wants me to identify numbers on a stone wall.\n1.  **Locate the wall:** I need to find the \"low stone retaining wall\" mentioned. Looking at the video, specifically towards the end, there's a wall on the right side.\n2.  **Find the address number:** The prompt mentions \"address number 1033\". I see \"1033\" painted on the wall in the later frames (around 00:03 and 00:04).\n3.  **Identify the numbers to the right:** To the right of \"10",
-      "inference_time_sec": 13.224,
+      "prediction": "35-37",
+      "inference_time_sec": 3.119,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct numeric text instances are displayed on the low stone retaining wall?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count the distinct numeric text instances on the low stone retaining wall.\n\n1.  **Identify the wall:** Looking at the video, specifically towards the end, there is a low stone wall on the right side of the road, in front of the car dealership.\n2.  **Locate the text:** On this wall, there are white numbers painted or attached.\n3.  **Read the text:** The numbers appear to be \"1033-35-37\".\n4.  **Count the instances:**\n    *   \"1033\" is one",
-      "inference_time_sec": 13.231,
+      "prediction": "2",
+      "inference_time_sec": 2.789,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "In what order are the distinct numbers on the stone wall encountered as the vehicle drives forward?",
       "ground_truth": "1st: 1033 [entity_001], 2nd: '35', 3rd: '37'",
-      "prediction": "The user wants to identify the order of distinct numbers on a stone wall as the vehicle moves forward.\n\n1.  **Analyze the video:** I need to watch the video and look for a stone wall with numbers on it.\n2.  **Scan for the wall:**\n    *   00:00 - 00:02: The camera is moving down a road. There are cars parked on the right. No stone wall with numbers yet.\n    *   00:03: A stone wall appears on the right side. It has numbers on it. Let's look closely",
-      "inference_time_sec": 13.239,
+      "prediction": "1033-35-37",
+      "inference_time_sec": 3.864,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "Does any visible text on the stone wall or near the dealership indicate a driving constraint or hazard?",
       "ground_truth": "No driving constraints or hazards are indicated by the visible text.",
-      "prediction": "The user is asking about text on a stone wall or near the dealership that might indicate a driving constraint or hazard.\n\n1.  **Analyze the video:** I'll scan the video, particularly the later frames where the camera pans right and reveals more of the dealership area.\n2.  **Locate the stone wall:** In the later frames (around 00:03 and 00:04), a low stone wall becomes visible on the right side, separating the road/grass area from the dealership lot.\n3.  **Identify text:** On this stone wall, there are large white numbers",
-      "inference_time_sec": 13.206,
+      "prediction": "No.",
+      "inference_time_sec": 2.884,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of a car dealership and address numbers suggest about the driving environment?",
       "ground_truth": "Suburban commercial roadway",
-      "prediction": "The user wants me to interpret the visual cues in the video to describe the driving environment.\n\n1.  **Identify the key elements:**\n    *   **Car Dealership:** I see rows of parked cars on the right side, typical of a car lot. There are flags and light poles.\n    *   **Address Numbers:** In the later frames (around 00:03 and 00:04), I see a stone wall with the numbers \"1033-35-37\" painted on it. This is a block range of addresses.\n    *   **Road",
-      "inference_time_sec": 13.232,
+      "prediction": "The mix of a car dealership and address numbers suggests a suburban or commercial area where businesses are located alongside residential or mixed-use properties.",
+      "inference_time_sec": 4.92,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What script is used for the address and numbers displayed on the stone wall?",
       "ground_truth": "Latin script and Arabic numerals",
-      "prediction": "The user wants to identify the script used for the numbers on the stone wall.\n\n1.  **Locate the stone wall:** I need to look at the later frames where the camera pans right.\n2.  **Find the numbers:** In the frames around 00:03 and 00:04, a stone wall comes into view on the right side.\n3.  **Read the numbers:** The numbers visible are \"1033-35-37\".\n4.  **Analyze the script:** The characters are standard Arabic numerals (0, 1,",
-      "inference_time_sec": 13.228,
+      "prediction": "Latin",
+      "inference_time_sec": 2.801,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the address number 1033 first become visible on the stone wall?",
       "ground_truth": "At timestamp 6.0",
-      "prediction": "The user wants to find the timestamp when the address number \"1033\" first appears on a stone wall.\n\n1.  **Analyze the video frames:** I will look through the provided frames in chronological order to spot the stone wall and the numbers on it.\n2.  **Frame 00:00 - 00:02:** The camera is moving down a road. On the right, there's a car dealership with many cars parked. No stone wall with numbers is visible yet.\n3.  **Frame 00:03:** As the camera moves forward, a stone",
-      "inference_time_sec": 13.307,
+      "prediction": "0.3",
+      "inference_time_sec": 2.965,
       "error": ""
     }
   ]

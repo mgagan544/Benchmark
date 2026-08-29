@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is the spatial position of the THRU road text relative to the LANE road text?",
       "ground_truth": "To the left of LANE [entity_003]",
-      "prediction": "The user wants to know the spatial relationship between the text \"THRU\" and \"LANE\" on the road.\n\n1.  **Identify the text:** I need to look at the frames where the road markings are visible.\n    *   Frame 00:00: Shows \"LANE\" and \"THRU\" partially.\n    *   Frame 00:01: Shows \"LANE\" and \"THRU\" clearly.\n    *   Frame 00:02: Shows \"LANE\" and \"THRU\" clearly.\n\n2.  **Determine relative",
-      "inference_time_sec": 13.23,
+      "prediction": "below",
+      "inference_time_sec": 2.788,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct mounted signs are visible in this clip?",
       "ground_truth": "2",
-      "prediction": "The user wants me to count the distinct mounted signs visible in the video.\n\n1.  **Scan the video for signs:** I'll look through the frames to identify any signs that are mounted on poles or structures.\n2.  **Frame 00:00:**\n    *   On the far left, there's a blue sign structure, looks like a bus stop or ticket booth. It has a sign on top. Let's call this Sign 1.\n    *   Next to it, slightly right, is a green structure (another booth). It also has a sign on top. Let's call this",
-      "inference_time_sec": 13.135,
+      "prediction": "3",
+      "inference_time_sec": 2.805,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order in which the three road text markings are first encountered in the clip?",
       "ground_truth": "THRU [entity_001] 1st, BUS [entity_002] 2nd, LANE [entity_003] 3rd",
-      "prediction": "The user wants me to identify the chronological order of three road text markings.\n\n1.  **Identify the markings:** I need to look for text painted on the road surface.\n    *   Looking at the first few frames (00:00 - 00:01), I see \"LANE\" and \"THRU\" painted on the road. Wait, let me look closer.\n    *   Frame 00:00: No clear text yet, just crosswalk lines.\n    *   Frame 00:01: As the car moves forward, I see \"LAN",
-      "inference_time_sec": 13.337,
+      "prediction": "THRU, BUS, LANE",
+      "inference_time_sec": 3.326,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What explicit driving action is required near the zebra-striped pedestrian crosswalk based on the visible signage?",
       "ground_truth": "Stop at the STOP [entity_004] sign",
-      "prediction": "The user wants to identify a specific driving action based on signage near a crosswalk.\n\n1.  **Analyze the video:**\n    *   **00:00 - 00:01:** The car is approaching a toll plaza or bus station area. There are booths on the left. A zebra-striped crosswalk is visible on the road surface.\n    *   **00:01 - 00:02:** The car is driving past the booths. The text \"LANE THRU\" is painted on the road.\n    *   **00:02 -",
-      "inference_time_sec": 13.202,
+      "prediction": "stop",
+      "inference_time_sec": 2.836,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What kind of driving environment does the mix of waiting structures and road markings suggest?",
       "ground_truth": "Airport shuttle terminal",
-      "prediction": "The user wants to identify the type of driving environment based on the visual cues in the video.\n\n1.  **Analyze the visual elements:**\n    *   **Waiting structures:** I see blue and green glass structures. These look like bus stops or ticket booths. Specifically, the blue one says \"PORT SHUTTLE\" and the green one says \"PORT SHUTTLE\" as well. This strongly suggests a transportation hub, likely a ferry terminal or a port.\n    *   **Road markings:**\n        *   \"LANE THRU\" painted on the road.\n        *   \"BUS\" painted on",
-      "inference_time_sec": 13.184,
+      "prediction": "Toll plaza",
+      "inference_time_sec": 2.988,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is used for the road markings and signs in this clip?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the road markings and signs in the video.\n\n1.  **Analyze the video frames:**\n    *   **Frame 1:** Shows a bus stop area. There are signs, but the text is blurry. I see \"PORT SHUTTLE\" on a blue sign.\n    *   **Frame 2:** The car is moving. I see \"LANE\" and \"THRU\" painted on the road. There's a blue sign that says \"PORT SHUTTLE\".\n    *   **Frame 3:** The car is driving past a bus. The road",
-      "inference_time_sec": 13.324,
+      "prediction": "English",
+      "inference_time_sec": 2.86,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the green directional EXIT sign first come into full view?",
       "ground_truth": "EXIT [entity_005] sign at 5.933 seconds",
-      "prediction": "The user wants to find the timestamp when the green directional EXIT sign first comes into full view.\n\n1.  **Analyze the frames:**\n    *   **00:00:** I see a bus stop area, a green shelter, and a blue shelter. No exit sign.\n    *   **00:01:** The car is moving forward. I see \"LANE THRU\" painted on the road. To the right, there's a bus. No exit sign yet.\n    *   **00:02:** The car is approaching an intersection. There's a stop sign.",
-      "inference_time_sec": 13.217,
+      "prediction": "0.4 seconds",
+      "inference_time_sec": 3.105,
       "error": ""
     }
   ]

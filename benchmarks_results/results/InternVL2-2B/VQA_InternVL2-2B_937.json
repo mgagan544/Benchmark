@@ -1,0 +1,70 @@
+{
+  "video_id": 937,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/937.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the ONE WAY sign relative to the word RIGHT near the intersection?",
+      "ground_truth": "To the right of RIGHT [entity_002]",
+      "prediction": "The ONE WAY sign is located to the left of the word RIGHT, which is positioned on the right side of the road. The sign is positioned at a slight angle to the road, with the word \"RIGHT\" clearly visible on the right side of the sign.",
+      "inference_time_sec": 5.725,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the large promotional billboard structure on the left side of the road?",
+      "ground_truth": "7",
+      "prediction": "There are three distinct text instances displayed on the large promotional billboard structure on the left side of the road. The first is the word \"LIFE\" in large, bold letters, the second is a smaller text that reads \"MARCH 1,\" and the third is a smaller text that says \"OFFICIAL.\"",
+      "inference_time_sec": 5.615,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of the words on the street-side pole sign passed at the 6.533s mark?",
+      "ground_truth": "1st: Mount [entity_012], 2nd: Sinai [entity_013], 3rd: Queens [entity_014]",
+      "prediction": "The order of the words on the street-side pole sign passed at the 6.533s mark is as follows: \"LIFE,\" \"MARCH,\" and \"ON.\"",
+      "inference_time_sec": 4.324,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What directional or regulatory text must the driver follow near the Vernon Blvd intersection at the start of the clip?",
+      "ground_truth": "KEEP [entity_001] RIGHT [entity_002] and ONE WAY [entity_003]",
+      "prediction": "Near the Vernon Blvd intersection at the start of the clip, the driver must follow the regulatory text \"ONE WAY\" on the traffic light. This indicates that vehicles must proceed in the direction of the arrow on the traffic light, which is to the right.",
+      "inference_time_sec": 5.026,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the presence of a large movie billboard and multiple street signs suggest about the driving environment?",
+      "ground_truth": "Urban commercial area",
+      "prediction": "The presence of a large movie billboard and multiple street signs suggests that the driving environment is likely a busy urban area with a mix of commercial and residential zones. The billboard indicates that there is a significant amount of media consumption in the area, which could be due to the presence of a movie theater or a similar entertainment venue. The street signs, including the one for the \"LIFE\" billboard, imply that the area is well-marked and navigable, with clear directions for drivers. This combination of elements suggests a bustling city with a variety of activities and services available to its residents and visitors.",
+      "inference_time_sec": 8.101,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific borough or region is suggested by the street-side pole sign passed at 6.533s?",
+      "ground_truth": "Queens [entity_014]",
+      "prediction": "The specific borough or region suggested by the street-side pole sign is not explicitly mentioned in the video. However, the sign appears to be a standard street sign, possibly indicating a direction or a location, but without additional context or text, it is not possible to determine the exact borough or region it refers to.",
+      "inference_time_sec": 5.526,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what time range do the movie tagline and release date on the billboard come into full view?",
+      "ground_truth": "1.967s to 2.367s",
+      "prediction": "The movie tagline and release date on the billboard come into full view as the video progresses. The tagline \"HERE'S BETTER OFF ALONE\" is prominently displayed at the top of the billboard, and the release date \"MARCH 1\" is clearly visible below it.",
+      "inference_time_sec": 5.414,
+      "error": ""
+    }
+  ]
+}

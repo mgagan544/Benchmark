@@ -1,0 +1,70 @@
+{
+  "video_id": 967,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/967.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is located directly to the left of MARTIAL?",
+      "ground_truth": "RESTAURANT BAR [entity_008]",
+      "prediction": "The text located directly to the left of \"MARTIAL\" is \"HALAL.\"",
+      "inference_time_sec": 5.091,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances containing numbers are associated with the EL TEQ storefront?",
+      "ground_truth": "3",
+      "prediction": "There are two distinct text instances containing numbers associated with the EL TEQ storefront:\n\n1. \"718-558-0020\"\n2. \"718-739-9390\"",
+      "inference_time_sec": 7.512,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the signs for DENTIST, CHURCH, and BUSES ONLY are encountered between 1.3s and 2.8s?",
+      "ground_truth": "1st: DENTIST [entity_009], 2nd: CHURCH [entity_010], 3rd: BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "Between 1.3 seconds and 2.8 seconds, the signs encountered in the video are:\n\n1. **DENTIST** - This sign is visible on the left side of the street.\n2. **CHURCH** - This sign is visible further down the street, after passing the DENTIST sign.\n3. **BUSES ONLY** - This sign is visible on the right side of the street, after passing the CHURCH sign.\n\nSo, the order in which these signs are encountered is: DENTIST, CHURCH, then BUSES ONLY.",
+      "inference_time_sec": 12.376,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the signs near the DENTIST sign constrains vehicle movement or lane usage?",
+      "ground_truth": "ONE WAY [entity_013], BUSES [entity_011] ONLY [entity_012]",
+      "prediction": "The sign near the DENTIST sign has a \"ONE WAY\" sign that constrains vehicle movement, indicating that vehicles can only move in one direction along that particular lane.",
+      "inference_time_sec": 5.767,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density and type of legible text, such as MARTIAL ARTS, HALAL, and PARA TI, what kind of driving environment does this clip depict?",
+      "ground_truth": "Commercial business district",
+      "prediction": "The image depicts an urban commercial area with a mix of businesses, including martial arts studios, halal restaurants, and other eateries. The presence of multiple signs, such as \"MARTIAL ARTS,\" \"HALAL,\" and \"PARA TI,\" suggests a busy and diverse shopping district. The street is lined with parked cars and some pedestrians, indicating a lively but not overly congested environment. The clear sky and daylight suggest it's a pleasant day, which might contribute to the activity in the area. Overall, the scene portrays a typical bustling city street with a variety of local businesses catering to different needs and preferences.",
+      "inference_time_sec": 10.906,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What regional location is suggested by the area codes in the phone numbers on the storefronts?",
+      "ground_truth": "New York City",
+      "prediction": "The area codes in the phone numbers on the storefronts suggest that the location is in New York City, specifically in the borough of Brooklyn. The area code 718 is commonly associated with Brooklyn and parts of Queens.",
+      "inference_time_sec": 6.522,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the license plate AC-91331 first become legible in the clip?",
+      "ground_truth": "0.5s",
+      "prediction": "The license plate \"AC-91331\" becomes legible at approximately 0:02 seconds into the video.",
+      "inference_time_sec": 5.996,
+      "error": ""
+    }
+  ]
+}

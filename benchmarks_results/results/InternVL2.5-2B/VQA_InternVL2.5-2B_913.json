@@ -1,0 +1,70 @@
+{
+  "video_id": 913,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/913.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What readable text is located to the right of the orange construction signboard containing the word ROAD?",
+      "ground_truth": "SPEED [entity_004], YOUR [entity_005], and M P H [entity_006] on the digital display sign",
+      "prediction": "The readable text located to the right of the orange construction signboard is 'ROAD WORK AHEAD'.",
+      "inference_time_sec": 3.772,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of text are displayed on the orange construction signboard mounted on the left side of the ramp?",
+      "ground_truth": "3",
+      "prediction": "The orange construction signboard displays two distinct pieces of text. The upper text reads '20 MPH' indicating a speed limit, and the lower text reads 'ROAD WORK AHEAD,' alerting drivers to potential construction activities ahead.",
+      "inference_time_sec": 4.94,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the text on the orange construction signboard is encountered from timestamp 0.0 to 0.5?",
+      "ground_truth": "1st: ROAD [entity_001], 2nd: WORK [entity_002], 3rd: AHEAD [entity_003]",
+      "prediction": "The text on the orange construction signboard is encountered in the following order from timestamp 0.0 to 0.5: 1) 'ROAD WORK AHEAD', 2) '20 MPH', 3) 'YIELD', 4) 'YIELD', 5) 'YIELD', 6) 'YIELD'.",
+      "inference_time_sec": 5.985,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Does any visible text in the clip indicate a hazard or road condition ahead, and where is it located?",
+      "ground_truth": "ROAD [entity_001] WORK [entity_002] AHEAD [entity_003] on the left side of the ramp",
+      "prediction": "Yes, there is a visible road sign indicating a 20 mph speed limit ahead. It is located on the left side of the bridge, just above the snowy ground.",
+      "inference_time_sec": 4.425,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the visible signs, including construction and speed display signs, what kind of driving environment does this clip depict?",
+      "ground_truth": "An elevated highway construction zone",
+      "prediction": "The clip depicts a driving environment that is likely undergoing construction or roadwork, as indicated by the 'ROAD WORK AHEAD' sign. Additionally, there is a speed limit sign showing '20 MPH', which suggests that the area is regulated for speed, likely due to the construction or to ensure safety.",
+      "inference_time_sec": 5.603,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the construction signboard and the digital display sign?",
+      "ground_truth": "English",
+      "prediction": "The text on the construction signboard and the digital display sign is in Spanish. The signboard has the word 'CONSTRUCCIÓN' which means 'construction' in English, and the digital display sign has the word 'CONSTRUCCIÓN' which is the Spanish translation of 'construction'.",
+      "inference_time_sec": 5.682,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the word SPEED first become legible on the digital display sign?",
+      "ground_truth": "7.967",
+      "prediction": "The word SPEED first becomes legible on the digital display sign at the timestamp of 00:00:07.",
+      "inference_time_sec": 4.128,
+      "error": ""
+    }
+  ]
+}

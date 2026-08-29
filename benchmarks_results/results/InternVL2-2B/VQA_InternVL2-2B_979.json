@@ -1,0 +1,70 @@
+{
+  "video_id": 979,
+  "model": "InternVL2-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/979.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "Where is the DUNKIN DONUTS signboard located relative to the Speedway gas station sign?",
+      "ground_truth": "to the right of Speedway [entity_002] sign",
+      "prediction": "The DUNKIN DONUTS signboard is located on the right side of the Speedway gas station sign, which is on the left side of the frame.",
+      "inference_time_sec": 4.498,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct price numbers are displayed on the Speedway gas station sign?",
+      "ground_truth": "4",
+      "prediction": "There are three distinct price numbers displayed on the Speedway gas station sign: 1.89, 2.89, and 3.89.",
+      "inference_time_sec": 4.111,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the speed limit sign, the PENSKE truck, and the CAR WASH sign are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: speed limit 25, 2nd: PENSKE [entity_010], 3rd: CAR [entity_011] WASH [entity_012]",
+      "prediction": "The order in which the speed limit sign, the PENSKE truck, and the CAR WASH sign are encountered as the vehicle moves forward is as follows: The speed limit sign is first seen on the left side of the road, followed by the PENSKE truck, and then the CAR WASH sign is seen on the right side of the road.",
+      "inference_time_sec": 5.93,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What regulatory text constrains the vehicle's speed near the road ramp?",
+      "ground_truth": "speed limit 25",
+      "prediction": "The regulatory text near the road ramp that constrains the vehicle's speed is \"25 MPH\" and \"25 MPH,\" which is visible on the road surface. This indicates that the speed limit for vehicles approaching the ramp is 25 miles per hour.",
+      "inference_time_sec": 5.034,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment does the mix of gas station, donut shop, and car wash signs suggest?",
+      "ground_truth": "commercial strip",
+      "prediction": "The mix of gas station, donut shop, and car wash signs suggests a suburban or urban environment where convenience and service are readily available. The presence of a gas station indicates a need for fuel, while the donut shop and car wash suggest amenities for daily commuting and vehicle maintenance. This combination of services is typical in areas where residents and visitors need to travel frequently and require quick access to basic amenities.",
+      "inference_time_sec": 6.376,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What city is suggested by the combination of 39 St, yellow taxicabs, and US commercial brands?",
+      "ground_truth": "New York City",
+      "prediction": "The combination of 39 St, yellow taxicabs, and US commercial brands suggests that the city is likely New York City. This is a common street name in New York, and the presence of yellow taxicabs is characteristic of the city's transportation system. Additionally, the US commercial brands are indicative of the city's commercial and business district.",
+      "inference_time_sec": 5.909,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the parked PENSKE truck first become visible in the clip?",
+      "ground_truth": "2.433 seconds",
+      "prediction": "The parked PENSKE truck first becomes visible in the clip at the timestamp 0:00.",
+      "inference_time_sec": 3.66,
+      "error": ""
+    }
+  ]
+}

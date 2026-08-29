@@ -1,0 +1,70 @@
+{
+  "video_id": 989,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/989.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What lies between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks?",
+      "ground_truth": "A residential concrete pathway and sidewalk between the driveways and the crosswalks.",
+      "prediction": "Between the private concrete driveways on the right side of the intersection and the zebra-stripe pedestrian crosswalks, there is a white picket fence. This fence separates the residential area from the road and the pedestrian crossing.",
+      "inference_time_sec": 6.633,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct moving vehicles cross the intersection between 00:01 and 00:08?",
+      "ground_truth": "3",
+      "prediction": "Between 00:01 and 00:08, there are four distinct moving vehicles that cross the intersection. These can be seen in the sequence of frames provided.",
+      "inference_time_sec": 5.9,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the white SUV, black SUV, and large black pickup truck clear the intersection?",
+      "ground_truth": "1st: white SUV, 2nd: black SUV, 3rd: large black pickup truck",
+      "prediction": "The sequence of vehicles clearing the intersection appears to be as follows:\n\n1. The white SUV is the first vehicle to clear the intersection.\n2. Following the white SUV, the black SUV clears the intersection.\n3. Lastly, the large black pickup truck clears the intersection.\n\nThis order is based on the visible movement of the vehicles in the image.",
+      "inference_time_sec": 7.818,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What signal hanging in the center of the intersection indicates that the driver should proceed with caution?",
+      "ground_truth": "The overhead flashing yellow traffic light.",
+      "prediction": "The signal hanging in the center of the intersection is a traffic light. The red light indicates that the driver should stop and wait for the light to turn green before proceeding.",
+      "inference_time_sec": 5.9,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the surrounding environment, including houses, lawns, and private driveways, what type of area is this?",
+      "ground_truth": "Residential area",
+      "prediction": "The image shows a street scene with houses, lawns, and private driveways, indicating that this is likely a residential area. The presence of parked cars along the sides of the road and the well-maintained appearance of the houses suggest a suburban neighborhood. The traffic light and pedestrian crosswalk also imply that it is an area where vehicles and pedestrians coexist, which is typical in residential zones.",
+      "inference_time_sec": 8.506,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What written language or script is visible on the signs in this intersection?",
+      "ground_truth": "No signs with visible text are present in the clip.",
+      "prediction": "The image shows an intersection with traffic lights and a crosswalk, but there are no visible signs with written language or script that can be clearly identified in the provided image. The focus of the image is on the traffic flow and the road infrastructure rather than any signage.",
+      "inference_time_sec": 6.969,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the large black pickup truck visible crossing the intersection?",
+      "ground_truth": "00:06 to 00:08",
+      "prediction": "The large black pickup truck is visible crossing the intersection in the second frame of the video. It appears to be moving from left to right across the crosswalk, indicating that it is in the process of crossing the intersection at that moment.",
+      "inference_time_sec": 6.543,
+      "error": ""
+    }
+  ]
+}

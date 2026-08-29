@@ -1,0 +1,70 @@
+{
+  "video_id": 921,
+  "model": "InternVL2.5-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/921.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the MUST EXIT sign relative to the WORK ZONE sign that appears around 0.467 seconds?",
+      "ground_truth": "To the right of WORK [entity_006] ZONE [entity_007] sign",
+      "prediction": "The MUST EXIT sign is positioned to the right of the WORK ZONE sign. The MUST EXIT sign is mounted on a pole and is placed above the road, while the WORK ZONE sign is also mounted on a pole but is positioned further back, closer to the camera's perspective. The spatial relationship between the two signs is such that the MUST EXIT sign is closer to the camera and the road, indicating an immediate exit requirement, whereas the WORK ZONE sign is further away, indicating a cautionary area ahead.",
+      "inference_time_sec": 12.73,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct license plates are visible in this video clip?",
+      "ground_truth": "2",
+      "prediction": "There are two distinct license plates visible in the video clip. One is on a black SUV, and the other is on a black sedan.",
+      "inference_time_sec": 8.052,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of signs encountered on the right side of the road between 0.0 and 1.0 seconds?",
+      "ground_truth": "1st: SPEED [entity_004] LIMIT [entity_005], 2nd: WORK [entity_006] ZONE [entity_007], 3rd: MUST [entity_008] EXIT [entity_009]",
+      "prediction": "The order of signs encountered on the right side of the road between 0.0 and 1.0 seconds is as follows: a speed limit sign indicating 20 mph, a sign for the 'Airport Exit' with an arrow pointing to the right, and a sign for the 'Airport Exit' with an arrow pointing to the right and a 'Stop' sign.",
+      "inference_time_sec": 11.098,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What warning sign is located beside the construction flagger holding the STOP paddle near the end of the clip?",
+      "ground_truth": "ROAD [entity_031] WORK [entity_006] AHEAD [entity_012] sign",
+      "prediction": "Beside the construction flagger holding the STOP paddle, there is a warning sign that reads 'VEHICLES OVER 8 FT KEEP CLEAR.' This sign is positioned on the left side of the road, indicating a clearance height restriction for vehicles passing through the area. The sign is yellow with black lettering, which is a common color scheme for warning signs to ensure high visibility. The presence of this sign suggests that the roadway may have low clearance areas or overhead structures that could pose a hazard to taller vehicles.",
+      "inference_time_sec": 12.57,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of area does the mix of airport terminal, parking, and exit signs suggest?",
+      "ground_truth": "Airport access road",
+      "prediction": "The mix of signs for airport terminals, daily parking, and exits suggests that the area is a transportation hub, likely near an airport. The presence of multiple directions for different facilities indicates a complex network designed to manage the flow of vehicles to various destinations within the airport premises.",
+      "inference_time_sec": 9.676,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used on the signs such as ROAD WORK AHEAD and MUST EXIT?",
+      "ground_truth": "English",
+      "prediction": "The signs use both English and French. For example, 'ROAD WORK AHEAD' is in English, and 'TRAVAIL ROUTIER AHEAD' is the French translation. Similarly, 'MUST EXIT' is in English, and 'DOIT SORTIR' is the French equivalent.",
+      "inference_time_sec": 9.991,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "For what time range is the RAMP speed limit sign visible in the clip?",
+      "ground_truth": "6.333 seconds to 9.733 seconds",
+      "prediction": "The RAMP speed limit sign is visible throughout the entire clip, indicating that the speed limit is 20 mph for the duration of the video.",
+      "inference_time_sec": 8.095,
+      "error": ""
+    }
+  ]
+}

@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What is located to the left of the pavement marking 'ONLY' as the vehicle moves forward?",
       "ground_truth": "A prominent chain-link fence to the left of 'ONLY' [entity_001]",
-      "prediction": "The user wants to identify what is to the left of the pavement marking 'ONLY' as the vehicle moves forward.\n\n1.  **Analyze the video:**\n    *   **00:00 - 00:01:** The car is approaching an intersection. There's a crosswalk.\n    *   **00:02:** The car is turning left or going straight. The view shifts.\n    *   **00:03:** The car is now driving down a road. I see the word \"ONLY\" painted on the pavement. It's in a lane. To the",
-      "inference_time_sec": 13.304,
+      "prediction": "A left turn lane.",
+      "inference_time_sec": 3.152,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many pavement markings with legible text are visible in the lane after the vehicle completes its left turn?",
       "ground_truth": "1",
-      "prediction": "The user wants to count pavement markings with legible text visible in the lane after the vehicle completes its left turn.\n\n1.  **Identify the turn:** The video starts with the car approaching an intersection. At 00:00, the lights are green. The car proceeds through the intersection.\n2.  **Identify the lane:** The car is in a left-turn lane or a lane that allows left turns. Wait, looking closely at 00:00, the car is going straight through a green light. But let's look at the subsequent frames.\n3.  **Analyze the",
-      "inference_time_sec": 13.179,
+      "prediction": "2",
+      "inference_time_sec": 2.899,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the chronological order of the legible text instances encountered on the road surface during the clip?",
       "ground_truth": "1st: 'ONLY' [entity_001]",
-      "prediction": "The user wants me to identify the chronological order of legible text on the road surface.\n\n1.  **Analyze the video:** I'll scan through the frames to find text painted on the road.\n2.  **Frame 00:00 - 00:01:** The car is approaching an intersection. There are crosswalk markings, but no legible text yet.\n3.  **Frame 00:02:** The car is turning or changing lanes. I see \"ONLY\" painted on the road. Wait, let me look closer. It looks like \"ONLY\" is visible",
-      "inference_time_sec": 13.22,
+      "prediction": "ONLY",
+      "inference_time_sec": 2.82,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What instructional text is painted on the lane surface to guide the driver's lane choice after turning?",
       "ground_truth": "'ONLY' [entity_001]",
-      "prediction": "The user wants to identify instructional text painted on the road surface.\n\n1.  **Analyze the video frames:** I need to look for frames where the road surface is clearly visible and text is present.\n2.  **Frame 00:00:** The car is approaching an intersection. There are crosswalk markings. No lane text is visible yet.\n3.  **Frame 00:01:** The car is turning left. The view is blurry and moving fast.\n4.  **Frame 00:02:** The car is driving down a street. There are red traffic lights",
-      "inference_time_sec": 13.311,
+      "prediction": "ONLY",
+      "inference_time_sec": 2.884,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggest about the driving environment?",
       "ground_truth": "Residential or urban fringe area",
-      "prediction": "The user wants me to interpret the visual cues in the video to describe the driving environment.\n\n1.  **Analyze the visual elements:**\n    *   **Snow-covered sidewalks:** I see piles of snow along the curbs and sidewalks in almost every frame (00:00, 00:01, 00:02, 00:03, 00:04). This indicates it is winter or late autumn/early spring. The snow is piled up, suggesting it has been plowed.\n    *   **Parked vehicles:** In frames 00:",
-      "inference_time_sec": 13.142,
+      "prediction": "The presence of snow-covered sidewalks, parked vehicles, and a chain-link fence bordering an open space suggests that the driving environment is likely in a suburban or semi-urban area during winter. The snow indicates cold weather conditions, which may affect road traction and visibility. The parked vehicles suggest that this is a residential or commercial area where people live or work. The chain-link fence bordering an open space could indicate a park, sports field, or other recreational area nearby. Overall, these elements suggest a typical winter driving scenario in a populated area.",
+      "inference_time_sec": 12.03,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What language is the pavement marking 'ONLY' written in?",
       "ground_truth": "English",
-      "prediction": "The user wants to identify the language of the word 'ONLY' seen on the pavement.\n\n1.  **Analyze the image:** I see a car driving at night.\n2.  **Locate the text:** In the later frames (around 00:03 and 00:04), the word \"ONLY\" is clearly painted on the road surface in the lane the car is approaching.\n3.  **Identify the word:** The word is \"ONLY\".\n4.  **Determine the language:** \"Only\" is an English word. It is commonly used in traffic markings in",
-      "inference_time_sec": 13.132,
+      "prediction": "English",
+      "inference_time_sec": 2.888,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the pavement marking 'ONLY' first become visible in the clip?",
       "ground_truth": "00:05",
-      "prediction": "The user wants to find the timestamp when the pavement marking 'ONLY' first appears.\n\n1.  **Analyze the frames:**\n    *   **00:00:** The car is approaching an intersection. There are crosswalk markings. No 'ONLY' text is visible yet.\n    *   **00:01:** The car is turning or moving past the intersection. The view is blurry and dark. No clear pavement markings.\n    *   **00:02:** The car is driving down a road. There are red traffic lights ahead. On the road surface, I can see the",
-      "inference_time_sec": 13.251,
+      "prediction": "0.3 seconds",
+      "inference_time_sec": 3.098,
       "error": ""
     }
   ]

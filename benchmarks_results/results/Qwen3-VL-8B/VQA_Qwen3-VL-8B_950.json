@@ -1,0 +1,70 @@
+{
+  "video_id": 950,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/950.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of CHECKSCASH relative to SHED as the vehicle moves forward?",
+      "ground_truth": "to the left of SHED [entity_002]",
+      "prediction": "CHECKSCASH is on the right side of SHED.",
+      "inference_time_sec": 4.488,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct, legible text instances are encountered by the vehicle between 4.0 and 7.0 seconds?",
+      "ground_truth": "5",
+      "prediction": "2",
+      "inference_time_sec": 3.673,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the storefronts SHED, boost, and CHECKSCASH are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: SHED [entity_002], 2nd: CHECKSCASH [entity_003], 3rd: boost [entity_004]",
+      "prediction": "As the vehicle moves forward, the order in which the storefronts are encountered is:\n\n1. **SHED** — appears first on the left side of the road.\n2. **boost** — appears next, also on the left side, after passing SHED.\n3. **CHECKSCASH** — appears last, on the right side of the road, after passing both SHED and boost.\n\nThis sequence is based on the visual progression of the storefronts as seen from the vehicle’s perspective in the video frames.",
+      "inference_time_sec": 11.736,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What explicit driving action is implied by the traffic regulator sign located to the right of the signboard displaying 4CAR?",
+      "ground_truth": "STOP [entity_015]",
+      "prediction": "The traffic regulator sign located to the right of the signboard displaying \"4CAR\" is a **traffic light**. \n\nThe explicit driving action implied by a traffic light depends on its current color:\n\n- **Red light**: Drivers must **stop**.\n- **Yellow light**: Drivers should **prepare to stop** (unless it’s unsafe to do so).\n- **Green light**: Drivers may **proceed** (after ensuring it’s safe to do so).\n\nSince the video frames show the traffic light as **green** (at 0:00 and 0:01), the implied driving action is to **proceed",
+      "inference_time_sec": 13.571,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the density of storefronts like SHED, boost, and MARKET, what kind of driving environment is depicted?",
+      "ground_truth": "urban commercial district",
+      "prediction": "The driving environment depicted is an urban or suburban commercial area with moderate traffic and a mix of residential and commercial buildings. The presence of multiple storefronts like “SHED,” “boost,” and “MARKET,” along with visible pedestrian activity and a billboard, suggests a bustling neighborhood with commercial activity. The elevated train tracks and street signs (e.g., “Rockaway Pkwy”) further indicate a developed, populated area likely in a city or its outskirts. The density of storefronts and the mix of vehicles and pedestrians point to a lively, accessible commercial corridor rather than a quiet residential or rural setting.",
+      "inference_time_sec": 13.024,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which street name and phone area code suggest this clip is filmed in New York City?",
+      "ground_truth": "Rockaway pkwy [entity_001] and (917) [entity_012]",
+      "prediction": "The street name “Rockaway Pkwy” and the phone area code “718” suggest this clip is filmed in New York City. Rockaway Parkway is a major thoroughfare in Queens, and 718 is the area code for Queens and parts of Brooklyn.",
+      "inference_time_sec": 8.055,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the vehicle pass the storefront of SHED, which is located to the right of CHECKSCASH?",
+      "ground_truth": "4.7 seconds",
+      "prediction": "The vehicle passes the storefront of SHED at 0:00.",
+      "inference_time_sec": 4.752,
+      "error": ""
+    }
+  ]
+}

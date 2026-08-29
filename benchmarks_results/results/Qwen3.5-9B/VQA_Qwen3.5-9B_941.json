@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What regulatory sign is located directly below the overhead sign that says \"To Belt Pkwy\"?",
       "ground_truth": "KEEP RIGHT [entity_005] below To Belt Pkwy [entity_004]",
-      "prediction": "The user wants to identify a specific regulatory sign based on its location relative to another sign.\n\n1.  **Locate the reference sign:** I need to find the overhead sign that says \"To Belt Pkwy\".\n    *   Looking at the first frame (00:00), there is a large overhead gantry sign.\n    *   The third panel from the left says \"Airport Exit via JFK Expwy\" and below it \"To Belt Pkwy\". Wait, let me look closer.\n    *   Actually, let's look at the standalone sign on the right side of the road in the",
-      "inference_time_sec": 13.211,
+      "prediction": "Keep Right",
+      "inference_time_sec": 2.878,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances are painted on the road surface or function as regulatory signs in this clip?",
       "ground_truth": "2",
-      "prediction": "The user wants me to count distinct text instances that are either painted on the road surface or function as regulatory signs.\n\n1.  **Analyze the video:** I'll scan through the frames to identify text on the road and regulatory signs.\n    *   **Frame 1:**\n        *   Road signs: \"Airport Exit via JFK Expwy To Belt Pkwy KEEP RIGHT\" (This is a regulatory/informational sign).\n        *   Road markings: None clearly visible yet.\n    *   **Frame 2:**\n        *   Road signs: Overhead gantry signs. \"Airport Exit via",
-      "inference_time_sec": 13.266,
+      "prediction": "3",
+      "inference_time_sec": 2.843,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order of encounter for the first overhead sign structure, the road marking, and the second overhead gantry?",
       "ground_truth": "1st: Airport Exit [entity_001], 2nd: ONLY [entity_006], 3rd: Long Term Parking [entity_007]",
-      "prediction": "The user wants me to determine the order in which three specific things appear in the video:\n1.  **First overhead sign structure:** This is the large sign structure visible right at the beginning.\n2.  **Road marking:** This likely refers to the white arrow painted on the road surface.\n3.  **Second overhead gantry:** This is the second large sign structure further down the road.\n\nLet's break down the video timeline:\n-   **00:00 - 00:01:** The car is approaching a sign on the right (\"Airport Exit via JFK Expwy...\"). This",
-      "inference_time_sec": 13.19,
+      "prediction": "first overhead sign structure, road marking, second overhead gantry",
+      "inference_time_sec": 3.742,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What regulatory instruction is displayed on the lane surface below the sign that says \"KEEP RIGHT\"?",
       "ground_truth": "ONLY [entity_006]",
-      "prediction": "The user wants to identify a specific regulatory instruction painted on the road surface.\n\n1.  **Locate the sign:** I need to find the sign that says \"KEEP RIGHT\". Looking at the first frame (00:00), there is a large green sign on the right side of the road. The text reads:\n    *   Airport Exit\n    *   VIA\n    *   JFK Expwy\n    *   To Belt Pkwy\n    *   KEEP RIGHT\n\n2.  **Look below the sign:** The user is asking about the lane surface *below* this sign. Wait, looking closely",
-      "inference_time_sec": 13.26,
+      "prediction": "Keep Right",
+      "inference_time_sec": 2.916,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What type of transportation hub is the vehicle navigating, based on the visible signs?",
       "ground_truth": "Airport",
-      "prediction": "The user wants to identify the type of transportation hub based on the signs in the video.\n\n1.  **Analyze the signs:**\n    *   **00:00:** There's a sign on the right that says \"Airport Exit via JFK Expwy To Belt Pkwy KEEP RIGHT\". This is a strong indicator.\n    *   **00:01:** The overhead gantry signs are becoming visible. They are blurry but seem to have multiple panels.\n    *   **00:02:** The overhead signs are clearer. I can see \"Airport Exit via Van Wyck Expwy",
-      "inference_time_sec": 13.279,
+      "prediction": "Airport",
+      "inference_time_sec": 2.797,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which specific New York airport expressway is indicated by the signs on the first overhead structure?",
       "ground_truth": "JFK Expwy [entity_003]",
-      "prediction": "The user wants to identify a specific New York airport expressway mentioned on the signs.\n\n1.  **Analyze the video:** I need to look at the first overhead structure visible in the video.\n2.  **Locate the signs:** In the first few frames (00:00 - 00:02), there is a large overhead gantry with multiple signs.\n3.  **Read the signs:**\n    *   The signs are black with white text.\n    *   One sign says \"Airport Exit via JFK Expwy\".\n    *   Another sign says \"Airport Exit via",
-      "inference_time_sec": 13.253,
+      "prediction": "JFK",
+      "inference_time_sec": 2.883,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the vehicle pass over the road marking that says \"ONLY\"?",
       "ground_truth": "5.367 seconds",
-      "prediction": "The user wants to find the timestamp where the vehicle passes over a specific road marking.\n\n1.  **Analyze the video:** I need to look at the road surface markings as the car drives forward.\n2.  **Scan for \"ONLY\":**\n    *   00:00 - 00:02: The car is approaching an overhead sign. No \"ONLY\" marking is visible on the road yet.\n    *   00:03: The car is getting closer to the overhead sign. The road markings are becoming clearer. I see arrows.\n    *",
-      "inference_time_sec": 13.314,
+      "prediction": "0.4 seconds",
+      "inference_time_sec": 3.104,
       "error": ""
     }
   ]

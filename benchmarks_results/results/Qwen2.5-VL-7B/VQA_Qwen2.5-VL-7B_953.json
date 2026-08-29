@@ -1,0 +1,70 @@
+{
+  "video_id": 953,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/953.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What sign is located directly below the REWARDS sign on the main promotion board?",
+      "ground_truth": "STATUS [entity_002] sign directly below REWARDS [entity_003] sign",
+      "prediction": "The sign located directly below the \"REWARDS\" sign on the main promotion board appears to be for \"GOLD STATUS.\"",
+      "inference_time_sec": 5.422,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct fuel price text instances are displayed on the gas station signs during the clip?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct fuel price text instances displayed on the gas station signs in the video. The first instance shows \"GOLD STATUS\" and the second instance shows \"GOLD STATUS\" again, indicating the same fuel price.",
+      "inference_time_sec": 6.556,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the chronological order in which the price signs showing 3591 and 359 are encountered?",
+      "ground_truth": "1st: 3591 [entity_006], 2nd: 359 [entity_007]",
+      "prediction": "The image shows a street scene from inside a vehicle, with various vehicles and buildings visible. The price signs showing \"3591\" and \"359\" are not directly visible in this image. However, based on the typical placement of such signs, they might be located at gas stations or other commercial establishments along the road.\n\nIf we assume that the first sign seen is the one showing \"3591,\" followed by the one showing \"359,\" then the chronological order would be:\n\n1. Price sign showing \"3591\"\n2. Price sign showing \"359\"\n\nSince these signs are",
+      "inference_time_sec": 11.319,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "Is there any directional or instructional text that a driver must act on near the Shell Gas Station?",
+      "ground_truth": "None is present",
+      "prediction": "From the image, it appears that there is no visible directional or instructional text specifically for drivers near the Shell Gas Station. The view shows a typical urban intersection with traffic lights, street signs, and a Shell gas station in the background. However, the specific details of any signage or instructions related to the Shell Gas Station itself are not clearly visible in this particular frame. Drivers would typically look for signs indicating directions, parking, or other relevant information at the gas station entrance or along the road.",
+      "inference_time_sec": 9.315,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What type of driving environment is suggested by the presence of a gas station, tire shop, and sheet metal business?",
+      "ground_truth": "Commercial district",
+      "prediction": "The presence of a gas station, tire shop, and sheet metal business suggests an urban or suburban area where these services are commonly found. These businesses typically cater to the needs of local residents and commuters who require regular maintenance and repairs for their vehicles. The gas station provides fuel, the tire shop offers tire services such as replacements and rotations, and the sheet metal business deals with bodywork and repairs on vehicles. This type of environment often indicates a busy area with a mix of residential and commercial activity, where people frequently drive and need access to these essential services.",
+      "inference_time_sec": 10.097,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "In what language is the text on the Action Sheetmetal building written?",
+      "ground_truth": "English",
+      "prediction": "The text on the Action Sheetmetal building appears to be in English. The words \"ACTION SHEETMETAL\" and \"ACTION SHEETMETAL\" are clearly visible, which are written in English.",
+      "inference_time_sec": 6.331,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp range do the flat fix related signs first become visible in the clip?",
+      "ground_truth": "From 9.5 seconds onwards",
+      "prediction": "The flat fix related signs first become visible in the clip around the 10-second mark.",
+      "inference_time_sec": 5.437,
+      "error": ""
+    }
+  ]
+}

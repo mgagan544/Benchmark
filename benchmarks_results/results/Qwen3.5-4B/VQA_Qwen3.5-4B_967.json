@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "What text is located directly to the left of MARTIAL?",
       "ground_truth": "RESTAURANT BAR [entity_008]",
-      "prediction": "The user wants to identify the text directly to the left of the word \"MARTIAL\" on the storefront sign.\n\n1.  **Locate the sign:** I see a blue sign on the building facade that says \"MARTIAL ARTS\".\n2.  **Identify the word \"MARTIAL\":** It's the first word on the left side of that blue sign.\n3.  **Look to the left of \"MARTIAL\":** To the immediate left of the word \"MARTIAL\", there is a smaller sign or text block.\n4.  **Read the text:** Looking",
-      "inference_time_sec": 13.029,
+      "prediction": "ARTS",
+      "inference_time_sec": 2.333,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances containing numbers are associated with the EL TEQ storefront?",
       "ground_truth": "3",
-      "prediction": "The user wants me to count distinct text instances containing numbers associated with the \"EL TEQ\" storefront.\n\n1.  **Identify the storefront:** I need to locate the \"EL TEQ\" sign. Looking at the images, specifically from 0.3s onwards, there is a storefront on the right with a large white sign that says \"EL TEQ RESTAURANT\".\n2.  **Locate text with numbers:** I need to scan the signage for numbers.\n    *   On the white sign above \"EL TEQ RESTAURANT\", there is a phone number: \"718",
-      "inference_time_sec": 12.655,
+      "prediction": "2",
+      "inference_time_sec": 2.306,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the signs for DENTIST, CHURCH, and BUSES ONLY are encountered between 1.3s and 2.8s?",
       "ground_truth": "1st: DENTIST [entity_009], 2nd: CHURCH [entity_010], 3rd: BUSES [entity_011] ONLY [entity_012]",
-      "prediction": "The user wants to know the order of three specific signs: DENTIST, CHURCH, and BUSES ONLY.\nI need to look at the video frames between 1.3s and 2.8s.\n\n1.  **Analyze the frames:**\n    *   **Frame at 1.3s:** I see a blue sign on a pole. It says \"DENTIST\" at the top and \"CHURCH\" below it. Wait, let me look closer. Ah, actually, looking at the crop images or the main image, there's a blue sign on a pole.",
-      "inference_time_sec": 12.628,
+      "prediction": "DENTIST, CHURCH, BUSES ONLY",
+      "inference_time_sec": 3.097,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What text on the signs near the DENTIST sign constrains vehicle movement or lane usage?",
       "ground_truth": "ONE WAY [entity_013], BUSES [entity_011] ONLY [entity_012]",
-      "prediction": "The user wants to identify specific text on signs near a \"DENTIST\" sign that relates to vehicle movement or lane usage.\n\n1.  **Locate the \"DENTIST\" sign:** I need to scan the storefronts.\n    *   In the first frame (00:00), I see a blue sign that says \"MARTIAL ARTS\". To its left, there's a smaller sign.\n    *   Looking closely at the blue sign in the first frame, it says \"MARTIAL ARTS\" in large letters. Above it, in smaller text, it says \"DENT",
-      "inference_time_sec": 12.646,
+      "prediction": "ONE WAY",
+      "inference_time_sec": 2.411,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "Based on the density and type of legible text, such as MARTIAL ARTS, HALAL, and PARA TI, what kind of driving environment does this clip depict?",
       "ground_truth": "Commercial business district",
-      "prediction": "The user wants me to identify the driving environment based on the text visible in the video.\n\n1.  **Analyze the text:**\n    *   \"MARTIAL ARTS\": This is a common type of business in urban areas, often found in neighborhoods with a mix of demographics.\n    *   \"HALAL\": This indicates a restaurant serving food according to Islamic dietary laws. This is a strong indicator of a diverse, likely immigrant-heavy or multicultural neighborhood.\n    *   \"PARA TI COLOMBIA CON SABOR\": This is Spanish for \"For you, Colombia with flavor.\" This explicitly points to",
-      "inference_time_sec": 12.663,
+      "prediction": "Urban commercial district",
+      "inference_time_sec": 2.411,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "What regional location is suggested by the area codes in the phone numbers on the storefronts?",
       "ground_truth": "New York City",
-      "prediction": "The user wants to identify the regional location based on the phone numbers visible on the storefronts.\n\n1.  **Analyze the phone numbers:** I need to look closely at the signs in the video frames.\n    *   Frame 0.0s: I see a sign for \"MARTIAL ARTS\". Further right, there's a sign for \"HALAL DINING\".\n    *   Frame 0.3s: This frame gives a clearer view.\n        *   \"HALAL DINING\" sign: The phone numbers are `212-738-8380`,",
-      "inference_time_sec": 12.612,
+      "prediction": "New York",
+      "inference_time_sec": 2.37,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "At what timestamp does the license plate AC-91331 first become legible in the clip?",
       "ground_truth": "0.5s",
-      "prediction": "The user wants to find the timestamp when the license plate AC-91331 becomes legible.\n\n1.  **Analyze the video:** I'll scan through the frames to locate the car with the license plate AC-91331.\n2.  **Locate the car:**\n    *   00:00: The camera car is stopped or moving slowly. There's a silver SUV on the right. No clear license plate visible yet.\n    *   00:01: The camera car starts moving forward. A white car is crossing the intersection from right to",
-      "inference_time_sec": 12.699,
+      "prediction": "0.0 seconds",
+      "inference_time_sec": 2.441,
       "error": ""
     }
   ]

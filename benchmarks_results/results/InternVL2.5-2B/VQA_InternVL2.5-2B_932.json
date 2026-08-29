@@ -1,0 +1,70 @@
+{
+  "video_id": 932,
+  "model": "InternVL2.5-2B",
+  "video": "/home2/gagandeep/benchmark/videos/900/932.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What business name is located adjacent to the storefront of COAST FOR GOLD on the right side of the street?",
+      "ground_truth": "CLEANERS [entity_019]",
+      "prediction": "Adjacent to the storefront of COAST FOR GOLD on the right side of the street is a business named 'CITY CAFE'.",
+      "inference_time_sec": 4.127,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are visible on the regulatory sign post to the right of the lane marking?",
+      "ground_truth": "4",
+      "prediction": "There are two distinct text instances visible on the regulatory sign post to the right of the lane marking. The sign post has a yellow background with black lettering that reads 'ONLY BUS' and 'SCHOOL BUS' respectively.",
+      "inference_time_sec": 4.882,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of appearance of the text instances ONLY, BUSES ONLY, and SCHOOL BUS in the clip?",
+      "ground_truth": "1st: ONLY [entity_001], 2nd: BUSES ONLY [entity_002], 3rd: SCHOOL BUS [entity_006]",
+      "prediction": "The text 'ONLY' first appears on the road, followed by 'BUSES ONLY' and finally 'SCHOOL BUS'.",
+      "inference_time_sec": 3.988,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign post indicates a direction restriction for vehicle movement?",
+      "ground_truth": "ONE WAY [entity_004]",
+      "prediction": "The regulatory sign post in the video displays the text 'ONLY' on the left side of the road, indicating that vehicles are not allowed to turn left at that particular junction.",
+      "inference_time_sec": 4.432,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on storefronts like COAST FOR GOLD and CLEANERS, what type of driving environment is depicted?",
+      "ground_truth": "Commercial urban street",
+      "prediction": "The storefronts suggest a mixed-use urban environment with commercial and possibly residential areas. The presence of a cleaners' shop indicates a community with access to services for daily living, while the 'COAST FOR GOLD' store hints at a more specialized or tourist-oriented area. This combination of businesses points to a neighborhood that caters to both local residents and visitors.",
+      "inference_time_sec": 6.057,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What specific phone number on the first school bus suggests a New York City location?",
+      "ground_truth": "(718)852-0286 [entity_011]",
+      "prediction": "The first school bus in the video displays the phone number '212-720-5000', which is a specific phone number for the New York City Department of Education's transportation services. This number is associated with the New York City Department of Education, which administers public school transportation services in New York City. The presence of this number on the school bus indicates that the video is likely set in New York City, as it is a unique identifier for the city's public transportation system.",
+      "inference_time_sec": 7.114,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text BUSES ONLY first become visible in the clip?",
+      "ground_truth": "4.267 seconds",
+      "prediction": "The text BUSES ONLY first becomes visible in the middle of the clip, after the initial view of the street with the school bus and cars.",
+      "inference_time_sec": 4.223,
+      "error": ""
+    }
+  ]
+}

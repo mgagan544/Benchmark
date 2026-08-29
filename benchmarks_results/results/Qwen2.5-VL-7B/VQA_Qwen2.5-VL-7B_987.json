@@ -1,0 +1,70 @@
+{
+  "video_id": 987,
+  "model": "Qwen2.5-VL-7B",
+  "video": "/home2/gagandeep/benchmark/videos/900/987.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory sign displaying the word STANDING relative to the parked dark green SUV?",
+      "ground_truth": "Adjacent to the dark green SUV, as STANDING [entity_001]",
+      "prediction": "The regulatory sign displaying the word \"STANDING\" is located on the right side of the road, positioned above and slightly behind the parked dark green SUV. It appears to be a no-parking zone sign, indicating that vehicles cannot park in that area.",
+      "inference_time_sec": 6.896,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct regulatory signs are visible in this clip?",
+      "ground_truth": "1",
+      "prediction": "In the provided image, there is one distinct regulatory sign visible on the right side of the road. It appears to be a \"No Parking\" sign, which is typically used to indicate that parking is not allowed in certain areas.",
+      "inference_time_sec": 6.512,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order of vehicles passed by the ego vehicle on the right side of the road between 00:00 and 00:06?",
+      "ground_truth": "1st: white sedan, 2nd: dark sedan, 3rd: silver sedan, 4th: grey minivan",
+      "prediction": "Between 00:00 and 00:06, the ego vehicle passes the following vehicles on the right side of the road:\n\n1. A white SUV.\n2. A black sedan.\n3. A silver sedan.\n\nThese vehicles are visible as they move from the right side of the road to the left side of the road relative to the ego vehicle's perspective.",
+      "inference_time_sec": 9.527,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What driving constraint is indicated by the regulatory sign visible at the intersection near the end of the clip?",
+      "ground_truth": "STANDING [entity_001] indicates a standing restriction",
+      "prediction": "The regulatory sign visible at the intersection near the end of the clip indicates a \"No U-turn\" constraint. This means that vehicles are not allowed to make a U-turn at this particular location, and drivers must follow the traffic flow in the direction indicated by the road markings and other signs.",
+      "inference_time_sec": 7.391,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the environment and the parked vehicles, what type of area is the vehicle traveling through?",
+      "ground_truth": "Residential area",
+      "prediction": "The vehicle appears to be traveling through a residential or suburban area. This is indicated by the presence of single-family homes with driveways and garages along the sides of the road, as well as the parked cars lining both sides of the street. The trees and the overall layout of the houses suggest a more residential setting rather than a commercial or industrial area. Additionally, the traffic light and the general layout of the streets further support the idea that this is a neighborhood where residents live and park their vehicles close to their homes.",
+      "inference_time_sec": 9.717,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is the regulatory sign at the intersection written in?",
+      "ground_truth": "English",
+      "prediction": "The regulatory sign at the intersection appears to be written in English. The sign reads \"STOP\" and \"YIELD,\" which are standard traffic control signs in English.",
+      "inference_time_sec": 5.863,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the text on the regulatory sign first become visible to the ego vehicle?",
+      "ground_truth": "00:08",
+      "prediction": "The text on the regulatory sign becomes visible to the ego vehicle at approximately 10 seconds into the video. This is when the camera starts to move forward, and the sign comes into view on the right side of the road.",
+      "inference_time_sec": 7.315,
+      "error": ""
+    }
+  ]
+}

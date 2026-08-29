@@ -1,0 +1,70 @@
+{
+  "video_id": 972,
+  "model": "InternVL2-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/972.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What is the spatial position of the regulatory text MON WED FRI relative to the commercial sign VIDE?",
+      "ground_truth": "To the right of VIDE [entity_002]",
+      "prediction": "The regulatory text \"MON WED FRI\" is positioned to the left of the commercial sign \"VIDE.\" The regulatory text is on a yellow sign, while the commercial sign is on a white background. The regulatory text is located closer to the camera's perspective, while the commercial sign is further away.",
+      "inference_time_sec": 10.241,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct pieces of vehicle-mounted text are visible on the dark grey pickup truck?",
+      "ground_truth": "5",
+      "prediction": "On the dark grey pickup truck, there are two distinct pieces of vehicle-mounted text visible. The first is a license plate that reads \"4X4,\" and the second is a sticker on the rear window that appears to be a dealership or manufacturer's logo, but the specific text is not legible in the image.",
+      "inference_time_sec": 10.401,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "In what order do the markings F150, 4X4, and P150 on the pickup truck become visible?",
+      "ground_truth": "1st: F150 [entity_007], 2nd: 4X4 [entity_009], 3rd: P150 [entity_010]",
+      "prediction": "The markings F150, 4X4, and P150 on the pickup truck become visible in the following order: first, the F150 marking is seen on the side of the truck. Then, the 4X4 marking appears on the rear side of the truck. Finally, the P150 marking is visible on the rear side of the truck, completing the sequence of the markings.",
+      "inference_time_sec": 11.426,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What text on the regulatory sign near the commercial building constrains parking actions?",
+      "ground_truth": "MON WED FRI [entity_001] and STREET CLEANING [entity_008]",
+      "prediction": "The regulatory sign near the commercial building has text that reads \"NO PARKING ANYTIME,\" which indicates that parking is not allowed at any time in that area.",
+      "inference_time_sec": 8.382,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "What does the mix of commercial signs and parking regulations suggest about the driving environment?",
+      "ground_truth": "Commercial district",
+      "prediction": "The mix of commercial signs and parking regulations suggests a commercial and possibly residential area where there is a need to manage both vehicular traffic and pedestrian activity. The presence of commercial signs indicates that the area is likely a business district or a neighborhood with shops and services. The parking regulations, such as the \"NO STANDING ANYTIME\" sign, imply that there is a need to control parking to ensure smooth traffic flow and to prevent congestion. This indicates that the driving environment is one where traffic management is crucial to maintain order and safety.",
+      "inference_time_sec": 13.017,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "What language is used for the text on the regulatory parking sign and the commercial building?",
+      "ground_truth": "English",
+      "prediction": "The text on the regulatory parking sign and the commercial building is in Chinese.",
+      "inference_time_sec": 7.244,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp does the STREET CLEANING sign first become clearly readable in the clip?",
+      "ground_truth": "3.033s",
+      "prediction": "The STREET CLEANING sign first becomes clearly readable in the clip at the timestamp of 00:00:00.",
+      "inference_time_sec": 7.844,
+      "error": ""
+    }
+  ]
+}

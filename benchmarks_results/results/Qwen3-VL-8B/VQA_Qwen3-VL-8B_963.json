@@ -1,0 +1,70 @@
+{
+  "video_id": 963,
+  "model": "Qwen3-VL-8B",
+  "video": "/home2/gagandeep/benchmark/videos/900/963.mp4",
+  "qa_pairs": [
+    {
+      "category_id": 1,
+      "category_name": "spatial_ordinal_navigation",
+      "question": "What text is visible on the orange sign located to the left of the EXIT 3 marker across the lanes?",
+      "ground_truth": "WORK [entity_015] ZONE [entity_016]",
+      "prediction": "The text visible on the orange sign located to the left of the EXIT 3 marker across the lanes is \"SPEED LIMIT 35\".",
+      "inference_time_sec": 6.223,
+      "error": ""
+    },
+    {
+      "category_id": 2,
+      "category_name": "entity_aggregation_semantic_filtering",
+      "question": "How many distinct text instances are displayed on the billboard that comes into view around 4.7 seconds?",
+      "ground_truth": "5",
+      "prediction": "2",
+      "inference_time_sec": 3.682,
+      "error": ""
+    },
+    {
+      "category_id": 3,
+      "category_name": "temporal_sequencing_order",
+      "question": "What is the order in which the overhead signs for E 138 St and E 161 St are encountered as the vehicle moves forward?",
+      "ground_truth": "1st: E 138 St [entity_008], 2nd: E 161 St [entity_010]",
+      "prediction": "As the vehicle moves forward, the overhead signs are encountered in this order:\n\n1. **E 138 St Madison Ave Br** — This sign appears first, indicating the exit for E 138 St and Madison Ave Bridge, which is 1 mile ahead.\n2. **E 161 St Macombs Dam Br** — This sign appears next, indicating the exit for E 161 St and Macombs Dam Bridge, which is 1 mile ahead.\n\nThe vehicle passes under the E 138 St sign first, then the E 161 St sign, as it continues forward on",
+      "inference_time_sec": 13.502,
+      "error": ""
+    },
+    {
+      "category_id": 4,
+      "category_name": "navigational_reasoning_hazard_awareness",
+      "question": "What speed limit constraint is indicated by the regulatory sign passed on the left shoulder at 1.867 seconds?",
+      "ground_truth": "SPEED [entity_001] LIMIT [entity_002] 35",
+      "prediction": "The regulatory sign passed on the left shoulder at 1.867 seconds indicates a speed limit of 35 mph.",
+      "inference_time_sec": 6.115,
+      "error": ""
+    },
+    {
+      "category_id": 5,
+      "category_name": "semantic_area_inference",
+      "question": "Based on the presence of overhead signs for E 138 St and E 161 St, what type of driving environment is depicted?",
+      "ground_truth": "Highway through-route",
+      "prediction": "The driving environment depicted is a **highway or freeway with multiple exits and directional signage**, likely in an **urban or suburban area**.\n\nHere’s why:\n\n- **Overhead directional signs**: The presence of large green overhead signs indicating “E 138 St” and “E 161 St” (with distances and exit numbers) is typical of highways or major arterial roads designed for long-distance or regional travel, not local streets.\n- **Exit numbers**: Signs like “EXIT 3” and “EXIT 5” indicate a structured highway system with planned exits.\n- **Traffic flow**: The vehicles (including trucks",
+      "inference_time_sec": 15.932,
+      "error": ""
+    },
+    {
+      "category_id": 6,
+      "category_name": "cultural_language_inference",
+      "question": "Which specific street and bridge names visible on the overhead signs suggest this clip is filmed in New York City?",
+      "ground_truth": "E 138 St [entity_008] and Madison Ave Br [entity_009]",
+      "prediction": "The overhead signs indicate **E 138 St Madison Ave Br** and **E 161 St Macombs Dam Br**. These are specific street and bridge names located in New York City, particularly in the Bronx. The \"E\" prefix denotes East, and the names refer to major thoroughfares and bridges in the area. The presence of these signs, along with the urban infrastructure and traffic patterns, confirms the location is in New York City.",
+      "inference_time_sec": 12.749,
+      "error": ""
+    },
+    {
+      "category_id": 7,
+      "category_name": "entity_tracking_persistence",
+      "question": "At what timestamp do the signs displaying 1 MILE, EXIT, and EXIT 3 become fully legible?",
+      "ground_truth": "Near 7.4 seconds",
+      "prediction": "0.3 seconds",
+      "inference_time_sec": 3.876,
+      "error": ""
+    }
+  ]
+}
