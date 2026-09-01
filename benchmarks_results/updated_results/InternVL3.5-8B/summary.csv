@@ -1,0 +1,2 @@
+model,videos_evaluated,questions_evaluated,Exact_Match,ANLS,ANLS_star,BLEU_1,BERTScore_F1,mean_inference_time_sec
+InternVL3.5-8B,1,7,0.0,0.12227095641690736,0.14841434481651047,0.05899977215766689,0.8219379697527204,9.724070242473058

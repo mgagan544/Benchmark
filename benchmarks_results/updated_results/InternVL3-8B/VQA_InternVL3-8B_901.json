@@ -1,6 +1,6 @@
 {
   "video_id": 901,
-  "model": "Qwen3.5-9B",
+  "model": "InternVL3-8B",
   "video": "/home2/gagandeep/benchmark/videos/900/901.mp4",
   "qa_pairs": [
     {
@@ -8,8 +8,8 @@
       "category_name": "spatial_ordinal_navigation",
       "question": "Which readable text instances appear between the ONE WAY sign and the CARS CASH sign on the commercial facade?",
       "ground_truth": "BREAKFAST [entity_004], FREE DELIV [entity_002], and 718-392-6 [entity_003]",
-      "prediction": "DRIVERS WANTED",
-      "inference_time_sec": 4.47,
+      "prediction": "The readable text instances that appear between the ONE WAY sign and the CARS CASH sign on the commercial facade are 'DRIVERS WANTED' and '7 7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7",
+      "inference_time_sec": 13.914,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "category_name": "entity_aggregation_semantic_filtering",
       "question": "How many distinct text instances representing phone numbers or parts of phone numbers are visible on the commercial facade and the brick building?",
       "ground_truth": "7",
-      "prediction": "2",
-      "inference_time_sec": 2.93,
+      "prediction": "Theredistinct text instances representing phone numbers[[7, 26, 9, 26]]",
+      "inference_time_sec": 6.958,
       "error": ""
     },
     {
@@ -26,8 +26,8 @@
       "category_name": "temporal_sequencing_order",
       "question": "What is the order in which the address markers 35-11 and 42-11 are encountered as the vehicle drives forward?",
       "ground_truth": "1st: 35-11 [entity_017], 2nd: 42-11 [entity_018]",
-      "prediction": "35-11, 42-11",
-      "inference_time_sec": 3.827,
+      "prediction": "The vehicle first encounters the address marker 35-11 on the right side of the road, and then it passes by the address marker 42-11 on the left side of the road.",
+      "inference_time_sec": 8.175,
       "error": ""
     },
     {
@@ -35,8 +35,8 @@
       "category_name": "navigational_reasoning_hazard_awareness",
       "question": "What instructional or regulatory text is visible on the road surface and adjacent sign near the end of the clip?",
       "ground_truth": "SLOW [entity_020] and STOP [entity_019]",
-      "prediction": "ONE WAY",
-      "inference_time_sec": 2.977,
+      "prediction": "The road surface has a white arrow indicating a right turn, and there is a sign on a pole that reads 'NO STANDING ANYTIME' with an arrow pointing to the right.",
+      "inference_time_sec": 7.641,
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
       "category_name": "semantic_area_inference",
       "question": "What does the mix of text visible between 0.0s and 2.10s suggest about the type of area?",
       "ground_truth": "Commercial district",
-      "prediction": "Commercial",
-      "inference_time_sec": 2.855,
+      "prediction": "The mix of text, including 'DRIVERS WANTED' and 'FREE', suggests to a commercial or industrial area where businesses are actively seeking employees and offering services.",
+      "inference_time_sec": 7.416,
       "error": ""
     },
     {
@@ -53,8 +53,8 @@
       "category_name": "cultural_language_inference",
       "question": "Which regional telephone area codes visible in the clip suggest the video was filmed in New York City?",
       "ground_truth": "718 [entity_015] and (917) [entity_012]",
-      "prediction": "212",
-      "inference_time_sec": 3.121,
+      "prediction": "The telephone area codes '778' and '778' visible on the signs in the video are associated with New York City, indicating that the video was likely filmed in that region.",
+      "inference_time_sec": 7.835,
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "category_name": "entity_tracking_persistence",
       "question": "For what time range is the license plate of the lead vehicle visible in the clip?",
       "ground_truth": "0.0s to 1.37s",
-      "prediction": "0.0 - 0.4",
-      "inference_time_sec": 3.5,
+      "prediction": "The license plate of the lead vehicle is visible from the beginning of the clip until the end, as the vehicle is consistently in the frame.",
+      "inference_time_sec": 7.173,
       "error": ""
     }
   ]
